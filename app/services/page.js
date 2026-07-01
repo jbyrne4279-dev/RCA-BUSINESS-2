@@ -143,7 +143,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 02 */}
-      <section id="on-site-survey" className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section id="on-site-survey" className="bg-[#e8f0fe] py-16 md:py-20 px-6 md:px-10 border-t border-[#c8d8f8]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
@@ -166,20 +166,20 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 03 */}
-      <section id="three-year-protection" className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+      <section id="three-year-protection" className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               03. Protection Plan
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">3-Year Protection Plan</h2>
-            <p className="text-white/60 text-base leading-relaxed mb-4">
+            <p className="text-white/80 text-base leading-relaxed mb-4">
               Single instruction. Three years of RICS compliance. Full assessment in year one, then annual BCIS-indexed renewal reports delivered before each renewal date, without re-instructing.
             </p>
-            <p className="text-white/60 text-base leading-relaxed mb-6">
+            <p className="text-white/80 text-base leading-relaxed mb-6">
               The correct structure for managing agents, RTM companies and freeholders who must meet RICS review guidance and maintain an accurate insurance figure across the three-year cycle.
             </p>
-            <Link href="/contact?service=3year#contact-form" className="btn-shine">Enquire About 3-Year Plan</Link>
+            <Link href="/contact?service=3year#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Enquire About 3-Year Plan</Link>
           </div>
           <div>
             <CheckItem title="Full assessment in year one" desc="Complete RICS-aligned assessment establishing the baseline declared value." dark />
