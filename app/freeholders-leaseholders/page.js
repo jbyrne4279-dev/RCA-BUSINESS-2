@@ -9,11 +9,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is the difference between reinstatement cost and market value?', answer: 'Market value is what the property might sell for on the open market. Reinstatement cost is what it would cost to rebuild it from scratch after total loss. The two figures are often very different, and only the reinstatement cost is relevant for setting the buildings sum insured.' },
-  { question: 'Who is responsible for insuring to the correct reinstatement cost?', answer: 'It depends on the lease. Most long leases place the obligation to insure to full reinstatement cost on the freeholder or the managing agent acting on their behalf. Some leases require leaseholders to contribute or arrange separate cover for their demise. Reading the lease carefully is the starting point.' },
-  { question: 'Can a leaseholder commission their own reinstatement cost assessment?', answer: 'Yes. Leaseholders who believe the sum insured arranged for their block is incorrect can instruct an independent reinstatement cost assessment. Our report can be used to raise a formal concern with the freeholder or managing agent, or to support a service charge dispute.' },
-  { question: 'What if our building has not been valued for several years?', answer: 'Construction costs have risen substantially in recent years. A reinstatement cost figure that has not been formally reviewed, even with annual index-linking, may no longer reflect the actual cost to rebuild. A fresh assessment is the safest approach.' },
-  { question: 'What information do you need to get started?', answer: 'Usually the address, property type, approximate size, any previous valuation or assessment, and details of any recent alterations or extensions. We can often begin with very little information and ask for more as needed.' },
+  { question: 'What is the difference between reinstatement cost and market value?', answer: 'Market value is the price a property achieves on the open market. Reinstatement cost is the cost to rebuild it from scratch after total loss. The two figures are frequently very different. Only reinstatement cost is relevant for setting the buildings sum insured.' },
+  { question: 'Who is responsible for insuring to the correct reinstatement cost?', answer: 'The lease governs this. Most long leases place the obligation to insure to full reinstatement cost on the freeholder or the managing agent acting on their behalf. Some leases require leaseholders to contribute or arrange separate cover for their demise. The starting point is always the lease.' },
+  { question: 'Can a leaseholder commission their own reinstatement cost assessment?', answer: 'Yes. Leaseholders with grounds to question the sum insured arranged for their block may instruct an independent reinstatement cost assessment. Our report can be used to raise a formal concern with the freeholder or managing agent, or as evidence in a service charge dispute.' },
+  { question: 'What if our building has not been valued for several years?', answer: 'UK construction costs rose substantially between 2020 and 2024. A reinstatement figure not formally reviewed in that period, regardless of annual index-linking, may no longer reflect actual rebuild cost. A fresh assessment is the correct step.' },
+  { question: 'What information do you need to get started?', answer: 'Address, property type, approximate floor area, any previous valuation or assessment, and details of recent alterations or extensions. We can begin with limited information and request further detail as needed.' },
 ]
 
 export default function FreeholdersLeaseholdersPage() {
@@ -58,8 +58,8 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
           <div className="grid grid-cols-1 gap-5 mt-4">
             {[
-              { label: 'Market value', desc: 'Reflects demand, location, comparable sales and market conditions. Not relevant for insurance purposes.' },
-              { label: 'Reinstatement cost', desc: 'Reflects the actual cost to demolish, clear and rebuild. This is the correct basis for setting the buildings sum insured.' },
+              { label: 'Market value', desc: 'Determined by location, demand and comparable sales. Not relevant for insurance purposes.' },
+              { label: 'Reinstatement cost', desc: 'The actual cost to demolish, clear and rebuild. The only correct basis for the buildings sum insured.' },
             ].map(({ label, desc }) => (
               <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{label}</p>
@@ -115,10 +115,10 @@ export default function FreeholdersLeaseholdersPage() {
             {[
               'The insurance figure has not been formally reviewed in three or more years.',
               'The building has been extended, altered or refurbished since the last assessment.',
-              'You have concerns that the current sum insured may not reflect actual rebuild cost.',
+              'The current sum insured does not appear to reflect actual rebuild cost.',
               'You are taking on new management responsibility for a block.',
-              'An RTM company has taken over and the insurance is being renewed for the first time.',
-              'A leaseholder or insurer has raised a question about the adequacy of cover.',
+              'An RTM company has assumed control and insurance is being renewed for the first time.',
+              'A leaseholder or insurer has questioned the adequacy of cover.',
             ].map((point, i) => (
               <div key={i} className="bg-white/[0.06] rounded-xl border border-white/10 p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>

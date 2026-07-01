@@ -29,7 +29,7 @@ export default function WhenUpdatePage() {
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">When Three Years Is the Maximum, Not the Target</p>
-            <p>The three-year interval is the maximum recommended gap between formal assessments under stable conditions. In practice, several circumstances should prompt a reassessment earlier.</p>
+            <p>The three-year interval is the maximum recommended gap under stable conditions. Several circumstances require reassessment before that interval expires.</p>
           </div>
 
           <div className="grid grid-cols-1 gap-5">
@@ -50,7 +50,7 @@ export default function WhenUpdatePage() {
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">The Practical Solution</p>
-            <p>Our 3-Year Protection plan provides the correct structure: a full RICS assessment as the base, with annual BCIS-indexed updates in years two and three, and a new base assessment at the start of each three-year cycle. For managing agents with multiple blocks, this can be managed as a single portfolio instruction with staggered renewal dates.</p>
+            <p>Our 3-Year Protection plan provides the correct structure: a full RICS assessment as the base, annual BCIS-indexed updates in years two and three, and a new base assessment at the start of each three-year cycle. For managing agents with multiple blocks, the instruction is managed as a single portfolio engagement with staggered renewal dates.</p>
           </div>
 
         </div>
@@ -59,8 +59,8 @@ export default function WhenUpdatePage() {
       <section className="bg-[#f8f9fa] py-16 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
-            <p className="font-semibold text-[#202124] mb-1">Is your reinstatement figure current?</p>
-            <p className="text-[#5f6368] text-sm">We respond within 24 hours.</p>
+            <p className="font-semibold text-[#202124] mb-1">Confirm your reinstatement figure is current.</p>
+            <p className="text-[#5f6368] text-sm">We respond within 24 hours on business days.</p>
           </div>
           <Link href="/contact#contact-form" className="btn-shine shrink-0">Get a Quote</Link>
         </div>

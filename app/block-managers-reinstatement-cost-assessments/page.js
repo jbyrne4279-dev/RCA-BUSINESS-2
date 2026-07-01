@@ -9,10 +9,10 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why do block managers need a RICS assessment rather than an insurer tool?', answer: 'Insurer rebuild calculators carry no professional accountability and no RICS regulation. In any dispute about underinsurance, they offer no defence. A RICS-regulated assessment provides a documented, professionally accountable figure.' },
-  { question: 'How do we order assessments for multiple blocks?', answer: 'Contact us with your portfolio details. We will provide a consolidated quote covering all blocks, with individual reports for each property and a portfolio summary schedule.' },
-  { question: 'What information do you need to get started?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features (listed status, unusual specification). We provide a simple instruction form once you confirm.' },
-  { question: 'Can leaseholders challenge the assessment?', answer: 'A RICS-regulated report is the standard of evidence accepted by UK courts, tribunals, and the Property Ombudsman. Our reports stand up to that level of scrutiny.' },
+  { question: 'Why do block managers need a RICS assessment rather than an insurer tool?', answer: 'Insurer rebuild calculators carry no professional accountability and no RICS regulation. In any underinsurance dispute, they provide no documented methodology and no defence. A RICS-regulated assessment delivers a professionally accountable figure that stands up to challenge.' },
+  { question: 'How do we order assessments for multiple blocks?', answer: 'Contact us with your portfolio details. We provide a consolidated quote covering all blocks, with individual reports per property and a portfolio summary schedule under a single engagement.' },
+  { question: 'What information do you need to get started?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or unusual specification. We issue a simple instruction form on confirmation.' },
+  { question: 'Can leaseholders challenge the assessment?', answer: 'A RICS-regulated report is the standard of evidence accepted by UK courts, tribunals and the Property Ombudsman. Our reports are produced to that standard and are defensible to that level of scrutiny.' },
 ]
 
 export default function BlockManagersPage() {
@@ -30,7 +30,7 @@ export default function BlockManagersPage() {
           </div>
           <div>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              Consistent, RICS-compliant assessments across every block under your management, accepted at renewal without question.
+              RICS-regulated assessments across every block under your management. Consistent, documented, and accepted at renewal without challenge.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
@@ -46,7 +46,7 @@ export default function BlockManagersPage() {
               The lease puts it on you.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Most residential long leases require the party responsible for buildings insurance to maintain it at full reinstatement cost. For block managers acting under a management agreement, that obligation transfers directly to them.
+              Most residential long leases require the party responsible for buildings insurance to maintain cover at full reinstatement cost. Where a block manager acts under a management agreement, that obligation transfers directly. Failure to comply exposes the manager to personal liability.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get Started</Link>
           </div>
@@ -76,9 +76,9 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Per-Block Assessment', desc: 'Individual RICS-regulated assessment for each block. Desktop in 24 hours. On-site available for listed or complex properties.', href: '/contact?service=desktop#contact-form' },
-              { title: 'Portfolio Assessment', desc: 'Consolidated assessment across all blocks. Individual reports per property, portfolio summary schedule, single-invoice billing.', href: '/contact#contact-form' },
-              { title: '3-Year Protection', desc: 'Base assessment plus three years of annual BCIS-indexed renewal reports, delivered before each renewal date.', href: '/contact?service=3year#contact-form' },
+              { title: 'Per-Block Assessment', desc: 'Individual RICS-regulated assessment per block. Desktop delivered in 24 hours. On-site assessment available for listed, complex or high-value properties.', href: '/contact?service=desktop#contact-form' },
+              { title: 'Portfolio Assessment', desc: 'Consolidated instruction across all blocks under management. Individual reports per property, portfolio summary schedule and single-invoice billing.', href: '/contact#contact-form' },
+              { title: '3-Year Protection', desc: 'Full base assessment with three years of annual BCIS-indexed renewal reports, each delivered before the relevant renewal date.', href: '/contact?service=3year#contact-form' },
             ].map(({ title, desc, href }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-8 flex flex-col">
                 <h3 className="text-xl font-bold text-[#202124] mb-4">{title}</h3>
@@ -101,12 +101,12 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'RICS-regulated', desc: 'Conducted by or under the supervision of a RICS-registered member.' },
-              { title: 'Live BCIS data', desc: 'Reinstatement figures from current Building Cost Information Service indices.' },
-              { title: 'Broker-ready format', desc: 'Formatted for direct submission, no amendments required.' },
-              { title: 'PI cover', desc: 'Comprehensive professional indemnity on every instruction.' },
-              { title: 'Named surveyor', desc: 'One contact manages your instruction across your entire portfolio.' },
-              { title: 'Full methodology', desc: 'Documented basis of assessment, defensible at tribunal.' },
+              { title: 'RICS-regulated', desc: 'Conducted by or under the direct supervision of a RICS-registered member.' },
+              { title: 'Live BCIS data', desc: 'Reinstatement figures derived from current Building Cost Information Service indices.' },
+              { title: 'Broker-ready format', desc: 'Formatted for direct broker submission. No amendments required.' },
+              { title: 'PI cover', desc: 'Comprehensive professional indemnity cover on every instruction.' },
+              { title: 'Named surveyor', desc: 'A single named contact manages your instruction across your full portfolio.' },
+              { title: 'Full methodology', desc: 'Fully documented basis of assessment. Defensible at tribunal.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white/[0.06] rounded-xl p-6">
                 <p className="font-semibold text-white text-sm mb-2">{title}</p>

@@ -11,28 +11,28 @@ const resources = [
   {
     tag: 'Case Study',
     title: 'Block of flats undervalued by £340,000: how it was discovered and corrected',
-    excerpt: 'A 24-unit residential block had been insured using the developer’s original rebuild estimate for eleven years. Our RICS assessment revealed a £340,000 shortfall.',
+    excerpt: "A 24-unit residential block had been insured on the developer's original rebuild estimate for eleven years. Our RICS assessment identified a £340,000 shortfall.",
     href: '/resources/case-study-block-of-flats-undervalued',
     date: 'March 2025',
   },
   {
     tag: 'Guide',
     title: 'Index-linking vs professional revaluation: what the difference means for your liability',
-    excerpt: 'Annual index-linking adjusts your sum insured by a percentage derived from construction cost movements. It does not replace a RICS assessment. Here is why the distinction matters when a claim arises.',
+    excerpt: 'Annual index-linking adjusts the sum insured by a percentage derived from construction cost movements. It does not replace a RICS assessment. The distinction creates a specific liability exposure that managing agents and freeholders must understand.',
     href: '/resources/index-linking-vs-professional-valuation',
     date: 'February 2025',
   },
   {
     tag: 'Guide',
     title: 'Top five underinsurance risks for managing agents, and how to eliminate each one',
-    excerpt: 'Managing agents face specific underinsurance exposures that arise from the nature of leasehold property management. This guide covers each risk and the assessment type that removes it.',
+    excerpt: 'Managing agents face specific underinsurance exposures arising from the nature of leasehold property management. This guide identifies each risk and the assessment type that eliminates it.',
     href: '/resources/top-risks-of-underinsurance-for-managing-agents',
     date: 'January 2025',
   },
   {
     tag: 'Guidance',
     title: 'When should block buildings insurance valuations be updated?',
-    excerpt: 'RICS guidance recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice, and when you should instruct earlier.',
+    excerpt: 'RICS guidance requires formal reinstatement cost assessments at least every three years. This note explains what that means in practice and identifies the circumstances that require earlier reassessment.',
     href: '/resources/when-should-block-insurance-valuations-be-updated',
     date: 'December 2024',
   },
@@ -57,7 +57,7 @@ export default function ResourcesPage() {
             </h1>
           </div>
           <p className="text-white/60 text-lg leading-relaxed">
-            Practical guidance on reinstatement cost assessments, RICS compliance, and underinsurance risk, written for managing agents, block managers, and property investors.
+            Technical guidance on reinstatement cost assessments, RICS compliance and underinsurance risk, written for managing agents, block managers and property professionals.
           </p>
         </div>
       </section>

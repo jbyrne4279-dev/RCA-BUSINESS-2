@@ -8,10 +8,10 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'How quickly will you respond?', answer: 'We aim to respond to all enquiries within 24 hours on business days. For urgent instructions, call us directly.' },
+  { question: 'How quickly will you respond?', answer: 'We respond to all enquiries within 24 hours on business days. For urgent instructions, call us directly.' },
   { question: 'What information should I have ready?', answer: 'Property address, approximate floor area, construction type, number of storeys, and whether you require a desktop or on-site assessment.' },
-  { question: 'Do you provide quotes before instructing?', answer: 'Yes. We provide a written fee estimate for all instructions before any work begins. No obligation.' },
-  { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will provide a consolidated quote for the whole portfolio.' },
+  { question: 'Do you provide quotes before instructing?', answer: 'Yes. A written fee estimate is provided for every instruction before any work commences.' },
+  { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will issue a consolidated quote covering the whole portfolio.' },
 ]
 
 export default function ContactPage() {
