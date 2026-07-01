@@ -137,7 +137,7 @@ export default function FreeholdersLeaseholdersPage() {
             {[
               { stat: '£500k → £1.5m', label: 'real-world DV gap at a residential block: a 3× shortfall that would have reduced every claim payout by two thirds' },
               { stat: '15–20%', label: 'professional fees typically added on top of rebuild cost for a block: architect, structural engineer, quantity surveyor and consultants' },
-              { stat: '12–24 months', label: 'loss-of-rent and alternative-accommodation cover required given block reinstatement timescales, commonly omitted from the declared value' },
+              { stat: '12–24 months', label: 'loss-of-rent and alternative-accommodation cover that may be required for a significant loss given block reinstatement timescales, commonly omitted from the declared value' },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
                 <p className="text-2xl font-bold text-[#202124] leading-none shrink-0 w-36">{stat}</p>
@@ -189,7 +189,7 @@ export default function FreeholdersLeaseholdersPage() {
               Post-2024 reforms make a defensible reinstatement cost assessment more important, not less.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Post-Grenfell, leasehold buildings insurance premiums rose significantly. The FCA found average per-policy broker commission had risen 46%, with brokers paying over £80,000,000 to third parties, usually the freeholder or managing agent, with little evidence of value to leaseholders.
+              Post-Grenfell, leasehold buildings insurance premiums rose significantly. The FCA's 2022 leasehold buildings insurance market study found that average per-policy broker commission had risen 46%, with brokers paying over £80,000,000 to third parties, usually the freeholder or managing agent, with little evidence of value to leaseholders.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               From 1 January 2024 the FCA reforms took effect: leaseholders are now defined as customers, firms must act in their best interests, policies must provide fair value, and commission must be disclosed. The Leasehold and Freehold Reform Act 2024 goes further: it moves to ban commissions charged to leaseholders altogether, replacing them with a transparent permitted fee reflective of work actually done.

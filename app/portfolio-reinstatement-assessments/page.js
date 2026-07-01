@@ -66,8 +66,8 @@ export default function PortfolioPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { n: '80%+', label: 'of UK blocks estimated to carry an inaccurate sum insured' },
-              { n: '30%+', label: 'rise in UK construction costs 2020–2024' },
+              { n: 'Most', label: 'UK blocks estimated to carry an inaccurate sum insured' },
+              { n: 'Higher', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
               <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center">

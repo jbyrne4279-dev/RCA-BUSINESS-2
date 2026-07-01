@@ -52,8 +52,8 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { n: '80%+', label: 'of UK blocks carry an inaccurate reinstatement figure' },
-              { n: '30%+', label: 'rise in UK build costs since 2020 (BCIS)' },
+              { n: 'Most', label: 'UK blocks carry an inaccurate reinstatement figure' },
+              { n: 'Higher', label: 'UK build costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'maximum recommended interval between formal assessments' },
             ].map(({ n, label }) => (
               <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center">

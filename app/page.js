@@ -58,8 +58,8 @@ export default function HomePage() {
       <div className="bg-[#f8f9fa] border-b border-[#dadce0] py-8 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            { n: '80', suffix: '%', label: 'of UK buildings carry an inaccurate sum insured' },
-            { n: '30', suffix: '%', label: 'rise in UK construction costs 2020–2024' },
+            { n: 'Most', suffix: '', label: 'UK buildings carry an inaccurate sum insured — underinsurance is endemic across UK building stock' },
+            { n: 'Higher', suffix: '', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
             { n: '24', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
             { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
           ].map(({ n, suffix, label }) => (
@@ -131,7 +131,7 @@ export default function HomePage() {
             {[
               { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders bear the gap.', icon: '⚠' },
               { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖' },
-              { title: 'Outdated figures', desc: 'Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱' },
+              { title: 'Outdated figures', desc: 'UK construction costs rose significantly between 2020 and 2023 according to BCIS data and remain materially higher than pre-pandemic levels. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱' },
             ].map(({ title, desc, icon }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
                 <div className="w-10 h-10 rounded-full bg-[#fce8e6] flex items-center justify-center mb-4 text-lg">{icon}</div>

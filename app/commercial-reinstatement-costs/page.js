@@ -34,7 +34,7 @@ export default function CommercialPage() {
           </div>
           <div className="grid grid-cols-2 gap-5">
             {[
-              { n: '35%+', label: 'rise in commercial build costs 2020–2024' },
+              { n: 'Higher', label: 'commercial build costs vs pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '24 hrs', label: 'desktop assessment turnaround' },
               { n: '100%', label: 'of reports accepted by UK insurers' },
               { n: 'RICS', label: 'regulated, every assessment, every time' },
@@ -65,7 +65,7 @@ export default function CommercialPage() {
             {[
               { title: 'Online calculators', sub: 'Cannot capture tenant fitout, specialist plant or complex service installations.', ok: false },
               { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not validate the base.', ok: false },
-              { title: 'Old inherited valuations', sub: '35%+ cost increase since 2020 makes pre-pandemic figures materially wrong.', ok: false },
+              { title: 'Old inherited valuations', sub: 'Significant cost increases since 2020 make pre-pandemic figures materially wrong.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based where required, accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>

@@ -60,7 +60,7 @@ export default function BlocksOfFlatsPage() {
               If the declared value is too low, every claim is reduced in proportion to the shortfall, on a partial loss as much as a total one. A block insured for 70% of its true rebuild cost has every claim paid at 70 pence in the pound. Escape of water and fire are the two most common block claims. Both are typically partial losses. That is exactly where the average clause bites hardest.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              One RMC owner declared approximately £500,000 based on aggregated flat market values. A builder then priced the rebuild at £1,500,000 because the block had to go back up in local stone, a three-times gap that would have reduced every single claim payout by two thirds.
+              For regional period blocks in particular, the gap between market value and rebuild cost can be dramatic — a sale price that looks modest can mask a reinstatement cost two or three times higher, once local stone, period specification and heritage contractor rates are properly accounted for.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed">
               Market value of a block bears no relation to rebuild cost. A central-London block with a £4,000,000 rebuild cost can command £10,000,000 or more on the open market. The reverse is equally true for converted mills, warehouses and regional stock.
@@ -93,7 +93,7 @@ export default function BlocksOfFlatsPage() {
               Four costs that most block owners don't know they're missing.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              Each one independently creates underinsurance. Together they explain why 80% of UK blocks are estimated to carry an inaccurate declared value.
+              Each one independently creates underinsurance. Together they explain why the majority of UK blocks are estimated to carry an inaccurate declared value.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
@@ -133,8 +133,7 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 gap-5">
             {[
-              { to: 80, suffix: '%', label: 'of UK blocks estimated to carry an inaccurate declared value, too high or too low' },
-              { to: 30, suffix: '%', label: 'rise in UK construction costs between 2020 and 2024. A stale figure compounds this entirely' },
+              { to: 3, suffix: '×', label: 'a typical gap between market value and rebuild cost on regional period blocks, where a £300,000 sale price can mask a £900,000 reinstatement cost' },
               { to: 3, suffix: ' yrs', label: 'RICS recommended maximum review period for a formal reassessment' },
             ].map(({ to, suffix, label }) => (
               <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
