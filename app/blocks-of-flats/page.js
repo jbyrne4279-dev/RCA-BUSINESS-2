@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import CountUp from '../components/CountUp'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessment for Blocks of Flats | RCA Survey',
@@ -116,12 +117,14 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 gap-5">
             {[
-              { n: '80%', label: 'of UK blocks estimated to carry an inaccurate sum insured' },
-              { n: '30%', label: 'rise in UK construction costs between 2020 and 2024' },
-              { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
-            ].map(({ n, label }) => (
-              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
-                <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">{n}</p>
+              { to: 80, suffix: '%', label: 'of UK blocks estimated to carry an inaccurate sum insured' },
+              { to: 30, suffix: '%', label: 'rise in UK construction costs between 2020 and 2024' },
+              { to: 3, suffix: ' yrs', label: 'RICS recommended review period for a formal assessment' },
+            ].map(({ to, suffix, label }) => (
+              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
+                <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">
+                  <CountUp to={to} suffix={suffix} />
+                </p>
                 <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
               </div>
             ))}
