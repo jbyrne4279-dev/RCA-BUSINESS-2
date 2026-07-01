@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -10,6 +10,13 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-display',
+})
+
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
@@ -17,7 +24,7 @@ export const metadata = {
     template: '%s | RCA Ltd',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by homeowners, landlords and asset managers across England.',
+    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   keywords: [
     'reinstatement cost assessment',
     'rebuild cost assessment',
@@ -25,6 +32,9 @@ export const metadata = {
     'rebuild cost assessment UK',
     'reinstatement cost assessment London',
     'rebuild cost assessment London',
+    'managing agents reinstatement cost assessment',
+    'RTM company insurance valuation',
+    'block of flats reinstatement cost',
     'RICS surveyor London',
     'building insurance valuation London',
     'RICS regulated reinstatement cost assessment',
@@ -49,7 +59,7 @@ export const metadata = {
     siteName: 'RCA Ltd',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | RCA Ltd',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 48 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
@@ -80,7 +90,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-GB" className={`${inter.variable} light`}>
+    <html lang="en-GB" className={`${inter.variable} ${cormorant.variable} light`}>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MHVWR8FGB"></script>
         <script dangerouslySetInnerHTML={{ __html: `

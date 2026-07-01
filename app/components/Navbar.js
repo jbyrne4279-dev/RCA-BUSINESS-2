@@ -16,8 +16,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 w-full bg-white z-50 border-b border-zinc-200">
-      <nav aria-label="Main navigation" className="flex items-center px-6 md:px-8 py-4 max-w-full mx-auto">
+    <header className="sticky top-0 w-full bg-white z-50 border-b border-[#0e1b36]/10">
+      <nav aria-label="Main navigation" className="flex items-center px-6 md:px-10 py-4 max-w-full mx-auto">
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
           <span className="logo-shine">
             <Image
@@ -26,12 +26,12 @@ export default function Navbar() {
               width={80}
               height={64}
               priority
-              className="h-12 w-auto object-contain logo-levitate"
+              className="h-11 w-auto object-contain"
             />
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center justify-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-10">
           {links.map(({ href, label }) => {
             const isActive = pathname === href
             return (
@@ -40,8 +40,8 @@ export default function Navbar() {
                 href={href}
                 className={
                   isActive
-                    ? 'text-emerald-700 border-b-2 border-emerald-700 pb-1 font-semibold tracking-tight'
-                    : 'text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight'
+                    ? 'text-[#0e1b36] border-b border-[#c4a35a] pb-0.5 font-medium text-sm tracking-wide'
+                    : 'text-[#0e1b36]/60 hover:text-[#0e1b36] transition-all font-medium text-sm tracking-wide'
                 }
               >
                 {label}
@@ -50,13 +50,16 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden md:flex flex-1 justify-end items-center">
+        <div className="hidden md:flex flex-1 justify-end items-center gap-6">
+          <a href="tel:+442031788099" className="text-sm font-medium text-[#0e1b36]/60 hover:text-[#0e1b36] transition-colors tracking-wide">
+            020 3178 8099
+          </a>
           <Image
             src="/rics-logo.png"
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="h-11 lg:h-12 w-auto object-contain"
+            className="h-10 w-auto object-contain"
           />
         </div>
 
@@ -66,16 +69,16 @@ export default function Navbar() {
             alt="Regulated by RICS"
             width={900}
             height={600}
-            className="h-9 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
           <button
             type="button"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="inline-flex items-center justify-center w-10 h-10 rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors"
+            className="inline-flex items-center justify-center w-9 h-9 text-[#0e1b36] hover:bg-[#0e1b36]/5 transition-colors"
           >
-            <span className="material-symbols-outlined" style={{ fontSize: '1.6rem' }}>
+            <span className="material-symbols-outlined" style={{ fontSize: '1.4rem' }}>
               {open ? 'close' : 'menu'}
             </span>
           </button>
@@ -83,8 +86,8 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-[#1A6B4A]" style={{ backgroundColor: '#1A6B4A' }}>
-          <div className="flex flex-col px-6 py-4 gap-1">
+        <div className="md:hidden border-t border-[#0e1b36]/10 bg-[#0e1b36]">
+          <div className="flex flex-col px-6 py-5 gap-0.5">
             {links.map(({ href, label }) => {
               const isActive = pathname === href
               return (
@@ -94,14 +97,17 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={
                     isActive
-                      ? 'text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-white bg-white/10'
-                      : 'text-white/80 hover:text-white font-semibold tracking-tight py-3 px-2 border-l-4 border-transparent hover:border-white/40'
+                      ? 'text-[#c4a35a] font-medium tracking-wide py-3 px-3 border-l-2 border-[#c4a35a] text-sm'
+                      : 'text-white/70 hover:text-white font-medium tracking-wide py-3 px-3 border-l-2 border-transparent hover:border-white/20 text-sm transition-all'
                   }
                 >
                   {label}
                 </Link>
               )
             })}
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <a href="tel:+442031788099" className="text-white/50 text-xs tracking-wider">020 3178 8099</a>
+            </div>
           </div>
         </div>
       )}
