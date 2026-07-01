@@ -12,87 +12,74 @@ export default function ContactFormInner({ heading }) {
   const preselected = SERVICE_MAP[params.get('service')] ?? ''
 
   return (
-    <div className="liquid-glass p-8 md:p-12 border border-[#c47c1e]/20 shadow-[0_0_40px_4px_rgba(196,163,90,0.06)]">
-      <div id="contact-form" className="mb-12 space-y-5 scroll-mt-28 text-center">
-        <div className="flex items-center justify-center gap-3">
-          <div className="h-px w-6 bg-[#c47c1e]" />
-          <span className="text-[#c47c1e] text-xs font-medium uppercase tracking-[0.25em]">Get In Touch</span>
-          <div className="h-px w-6 bg-[#c47c1e]" />
-        </div>
-        <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-semibold leading-[1.1] text-primary">{heading}</h2>
-        <div className="inline-flex items-center gap-2 bg-[#c47c1e]/8 px-3 py-1.5 border border-[#c47c1e]/20">
-          <span className="material-symbols-outlined text-[#c47c1e]" style={{ fontSize: '0.8rem' }}>bolt</span>
-          <span className="text-[#c47c1e] font-semibold text-[0.65rem] tracking-widest uppercase">24 Hour Response Time</span>
-        </div>
+    <div>
+      <div id="contact-form" className="mb-12 text-center scroll-mt-20">
+        <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">Get In Touch</p>
+        <h2 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight mb-4"
+          style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)' }}>
+          {heading}
+        </h2>
+        <p className="text-[#6e6e73] text-sm uppercase tracking-widest">24-hour response on business days</p>
       </div>
 
-      <form action="https://formspree.io/f/xkokvlpr" method="POST" className="space-y-10">
+      <form action="https://formspree.io/f/xkokvlpr" method="POST" className="max-w-2xl mx-auto space-y-8">
         <input type="hidden" name="_next" value="https://reinstatementcostassessment.org/thank-you" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-name" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">
+            <label htmlFor="contact-name" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
               Full Name <span className="text-red-400">*</span>
             </label>
             <input
-              id="contact-name"
-              name="name"
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
+              id="contact-name" name="name" required type="text"
               placeholder="John Smith"
-              type="text"
+              className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-email" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">
-              Email Address <span className="text-red-400">*</span>
+            <label htmlFor="contact-email" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+              Email <span className="text-red-400">*</span>
             </label>
             <input
-              id="contact-email"
-              name="email"
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
+              id="contact-email" name="email" required type="email"
               placeholder="john@example.com"
-              type="email"
+              className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 transition-colors"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-phone" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">Phone Number <span className="text-red-400">*</span></label>
+            <label htmlFor="contact-phone" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+              Phone <span className="text-red-400">*</span>
+            </label>
             <input
-              id="contact-phone"
-              name="phone"
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
+              id="contact-phone" name="phone" required type="tel"
               placeholder="+44 7700 900000"
-              type="tel"
+              className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-company" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">Company <span className="text-red-400">*</span></label>
+            <label htmlFor="contact-company" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+              Company <span className="text-red-400">*</span>
+            </label>
             <input
-              id="contact-company"
-              name="company"
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
+              id="contact-company" name="company" required type="text"
               placeholder="London Estates Ltd"
-              type="text"
+              className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 transition-colors"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-property-type" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">Property Type <span className="text-red-400">*</span></label>
+            <label htmlFor="contact-property-type" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+              Property Type <span className="text-red-400">*</span>
+            </label>
             <div className="relative">
               <select
-                id="contact-property-type"
-                name="property_type"
-                defaultValue=""
-                required
-                className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base appearance-none cursor-pointer py-2 transition-all"
+                id="contact-property-type" name="property_type" defaultValue="" required
+                className="w-full bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base appearance-none cursor-pointer py-2.5 transition-colors"
               >
                 <option value="" disabled>Select type</option>
                 <option>Commercial</option>
@@ -102,32 +89,29 @@ export default function ContactFormInner({ heading }) {
                 <option>Mixed-Use</option>
                 <option>Other</option>
               </select>
-              <span className="material-symbols-outlined text-[#c47c1e] absolute right-0 top-1.5 pointer-events-none" style={{ fontSize: '1rem' }}>expand_more</span>
+              <span className="absolute right-0 top-2.5 text-[#6e6e73] pointer-events-none text-sm">▾</span>
             </div>
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="contact-num-properties" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">No. of Properties <span className="text-red-400">*</span></label>
+            <label htmlFor="contact-num-properties" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+              No. of Properties <span className="text-red-400">*</span>
+            </label>
             <input
-              id="contact-num-properties"
-              name="num_properties"
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all"
+              id="contact-num-properties" name="num_properties" required type="number" min="1"
               placeholder="1"
-              type="number"
-              min="1"
+              className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 transition-colors"
             />
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="contact-service" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">Service Needed <span className="text-red-400">*</span></label>
+          <label htmlFor="contact-service" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+            Service Needed <span className="text-red-400">*</span>
+          </label>
           <div className="relative">
             <select
-              id="contact-service"
-              name="service"
-              defaultValue={preselected}
-              required
-              className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base appearance-none cursor-pointer py-2 transition-all"
+              id="contact-service" name="service" defaultValue={preselected} required
+              className="w-full bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base appearance-none cursor-pointer py-2.5 transition-colors"
             >
               <option value="" disabled>Select a service</option>
               <option>Desktop Reinstatement Cost Assessment</option>
@@ -136,27 +120,26 @@ export default function ContactFormInner({ heading }) {
               <option>Portfolio Assessment</option>
               <option>Not Sure</option>
             </select>
-            <span className="material-symbols-outlined text-[#c47c1e] absolute right-0 top-1.5 pointer-events-none" style={{ fontSize: '1rem' }}>expand_more</span>
+            <span className="absolute right-0 top-2.5 text-[#6e6e73] pointer-events-none text-sm">▾</span>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="contact-notes" className="text-[10px] font-bold text-[#c47c1e] uppercase tracking-widest">Notes <span className="text-red-400">*</span></label>
+          <label htmlFor="contact-notes" className="text-[0.65rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em]">
+            Notes <span className="text-red-400">*</span>
+          </label>
           <textarea
-            id="contact-notes"
-            name="notes"
-            required
-            className="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#c47c1e] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none"
+            id="contact-notes" name="notes" required rows="4"
             placeholder="Briefly describe your property and requirements..."
-            rows="4"
+            className="bg-transparent border-b-2 border-[#d2d2d7] focus:border-[#1d1d1f] outline-none text-[#1d1d1f] text-base placeholder:text-[#6e6e73]/40 py-2.5 resize-none transition-colors"
           />
         </div>
 
-        <p className="text-[10px] text-secondary/50 -mt-4">All fields are required.</p>
+        <p className="text-[0.68rem] text-[#6e6e73]/50">All fields are required.</p>
 
-        <div>
-          <button className="btn-shine w-full text-white py-4 rounded-full font-bold text-base active:scale-[0.97] transition-transform sovereign-shadow cursor-pointer">
-            Request Your Reinstatement Cost Assessment
+        <div className="text-center">
+          <button type="submit" className="btn-shine cursor-pointer">
+            Request Your Assessment
           </button>
         </div>
       </form>

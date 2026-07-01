@@ -3,8 +3,8 @@ import ContactFormInner from './ContactFormInner'
 
 export default function ContactSection({ heading = 'Get In Touch' }) {
   return (
-    <section className="bg-surface-container-low py-20 mb-0 mx-4 md:mx-8 rounded-t-3xl">
-      <div className="max-w-4xl mx-auto px-8">
+    <section className="bg-white py-24 md:py-32 px-6 md:px-10">
+      <div className="max-w-5xl mx-auto">
         <Suspense fallback={null}>
           <ContactFormInner heading={heading} />
         </Suspense>
