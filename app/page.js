@@ -236,15 +236,19 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Desktop Assessment', tag: '48-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for most standard residential and commercial properties.', href: '/services#desktop-rca', featured: false },
-              { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Recommended for listed buildings, non-standard construction, and high-value properties.', href: '/services#on-site-survey', featured: false },
-              { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, plus annual BCIS-indexed renewal reports for three years. Single instruction, ongoing compliance.', href: '/services#three-year-protection', featured: true },
-            ].map(({ title, tag, desc, href, featured }) => (
-              <div key={title} className={`rounded-xl p-7 flex flex-col border scroll-reveal hover-lift ${featured ? 'bg-[#1a73e8] border-[#1a73e8] text-white' : 'bg-white border-[#dadce0]'}`}>
-                <span className={`text-xs font-semibold uppercase tracking-[0.08em] mb-4 ${featured ? 'text-white/70' : 'text-[#5f6368]'}`}>{tag}</span>
-                <h3 className={`font-bold text-xl mb-3 ${featured ? 'text-white' : 'text-[#202124]'}`}>{title}</h3>
-                <p className={`text-sm leading-relaxed flex-1 mb-6 ${featured ? 'text-white/80' : 'text-[#5f6368]'}`}>{desc}</p>
-                <Link href={href} className={`text-sm font-medium inline-flex items-center gap-1 transition-colors ${featured ? 'text-white hover:text-white/80' : 'text-[#1a73e8] hover:text-[#1557b0]'}`}>
+              { title: 'Desktop Assessment', tag: '48-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for most standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
+              { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Recommended for listed buildings, non-standard construction, and high-value properties.', href: '/services#on-site-survey', variant: 'light' },
+              { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, plus annual BCIS-indexed renewal reports for three years. Single instruction, ongoing compliance.', href: '/services#three-year-protection', variant: 'featured' },
+            ].map(({ title, tag, desc, href, variant }) => (
+              <div key={title} className={`rounded-xl p-7 flex flex-col border scroll-reveal hover-lift ${
+                variant === 'featured' ? 'bg-[#1a73e8] border-[#1a73e8]' :
+                variant === 'light'    ? 'bg-[#e8f0fe] border-[#c8d8f8]' :
+                                        'bg-white border-[#dadce0]'
+              }`}>
+                <span className={`text-xs font-semibold uppercase tracking-[0.08em] mb-4 ${variant === 'featured' ? 'text-white/70' : 'text-[#5f6368]'}`}>{tag}</span>
+                <h3 className={`font-bold text-xl mb-3 ${variant === 'featured' ? 'text-white' : 'text-[#202124]'}`}>{title}</h3>
+                <p className={`text-sm leading-relaxed flex-1 mb-6 ${variant === 'featured' ? 'text-white/80' : 'text-[#5f6368]'}`}>{desc}</p>
+                <Link href={href} className={`text-sm font-medium inline-flex items-center gap-1 transition-colors ${variant === 'featured' ? 'text-white hover:text-white/80' : 'text-[#1a73e8] hover:text-[#1557b0]'}`}>
                   View service →
                 </Link>
               </div>
