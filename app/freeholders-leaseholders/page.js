@@ -50,10 +50,10 @@ export default function FreeholdersLeaseholdersPage() {
               Market value and rebuild cost are not the same.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A building may be worth one figure on the open market but cost something very different to rebuild from scratch after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild, including demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable.
+              A building's market value and its reinstatement cost are separate figures and frequently differ substantially. After fire, flood or total loss, the relevant question is the cost to demolish, clear and rebuild: structure, professional fees, statutory fees, and VAT where applicable.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed">
-              Leasehold arrangements often place a clear responsibility on someone to insure the building to the correct level. A specialist reinstatement cost assessment helps make sure that obligation is supported by a proper, documented rebuild-cost figure.
+              Most leasehold arrangements place an obligation on someone to insure to full reinstatement cost. A specialist assessment provides the documented, professionally accountable figure that satisfies that obligation.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-5 mt-4">
@@ -79,10 +79,10 @@ export default function FreeholdersLeaseholdersPage() {
               A clearer basis for insurance decisions.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Most long leases require the freeholder to insure the block to full reinstatement cost. A specialist reinstatement cost assessment provides a documented, defensible figure that satisfies that lease obligation and gives you a clearer basis for insurance decisions and renewal discussions.
+              Most long leases require the freeholder to insure the block to full reinstatement cost. A specialist assessment produces the documented, professionally accountable figure that satisfies the lease obligation and supports insurance decisions and renewal discussions with brokers.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Best for individual blocks, portfolio reviews and buildings where the insurance figure has not been updated for several years.
+              Appropriate for individual blocks, portfolio reviews and buildings where the insurance figure has not been formally reviewed in three or more years.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Instruct an Assessment</Link>
           </div>
@@ -92,10 +92,10 @@ export default function FreeholdersLeaseholdersPage() {
               More confidence in the cover arranged for your building.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              For leaseholders, a more accurate sum insured can mean less chance of disputes after a claim and more confidence that the policy reflects the real rebuild cost. If you believe the figure being used is incorrect, you can commission an independent reinstatement cost assessment.
+              Where the declared sum insured is adequate, leaseholders are properly protected at the point of a claim. Where it is not, the average clause reduces the payout and the gap falls on those whose property is affected. Leaseholders who have grounds to question the figure in use may commission an independent assessment.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Our report can be used to raise a formal concern with your freeholder or managing agent, or to support a service charge dispute where the insurance figure is in question.
+              Our report provides documented evidence that can be used to raise a formal concern with the freeholder or managing agent, or to support a service charge dispute where the insurance figure is in question.
             </p>
             <Link href="/contact#contact-form" className="link-amber">Get independent advice →</Link>
           </div>

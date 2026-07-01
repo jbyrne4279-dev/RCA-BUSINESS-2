@@ -91,10 +91,10 @@ export default function ManagingAgentsPage() {
           <div className="grid grid-cols-1 gap-5">
             {[
               { title: 'Clear declared value', desc: 'A specific, documented reinstatement cost figure for use with your insurer or broker.' },
-              { title: 'Methodology statement', desc: 'Explains how the figure was calculated and what assumptions were made.' },
-              { title: 'Review date and guidance', desc: 'When the figure should next be reviewed and how to apply annual indexation.' },
-              { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers without challenge.' },
-              { title: 'Professional indemnity', desc: 'PI insurance on every instruction, you are protected if the figure is challenged.' },
+              { title: 'Methodology statement', desc: 'A clear explanation of how the figure was calculated and what assumptions apply.' },
+              { title: 'Review date and guidance', desc: 'The date the figure should next be reviewed and how annual indexation should be applied.' },
+              { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers, without amendment.' },
+              { title: 'Professional indemnity', desc: 'PI insurance on every instruction. The figure is professionally backed if challenged.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
@@ -126,10 +126,10 @@ export default function ManagingAgentsPage() {
           </div>
           <div className="grid grid-cols-1 gap-5">
             {[
-              { title: 'Individual block reports', desc: 'Each property receives a separate assessment with its own declared value and methodology statement.' },
-              { title: 'Portfolio summary', desc: 'A consolidated schedule showing every asset, its reinstatement figure, and its next review date.' },
+              { title: 'Individual block reports', desc: 'Each property is assessed separately, with its own declared value and methodology statement.' },
+              { title: 'Portfolio summary', desc: 'A consolidated schedule recording every asset, its reinstatement figure, and its next review date.' },
               { title: 'Annual indexation', desc: 'Under our 3-Year Protection plan, each figure is updated annually using live BCIS data.' },
-              { title: 'Single point of contact', desc: 'One surveyor manages your entire portfolio instruction from receipt to delivery.' },
+              { title: 'Single point of contact', desc: 'One surveyor manages the entire portfolio instruction from receipt through to delivery.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
