@@ -4,15 +4,15 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Listed and Heritage Buildings | RCA',
+  title: 'Reinstatement Cost Assessments for Listed and Heritage Buildings',
   description: 'Specialist reinstatement cost assessments for listed buildings. Listed properties carry 20–50% higher rebuild costs than standard construction. Accurate, site-based valuations for buildings insurance.',
   alternates: { canonical: '/listed-buildings' },
 }
 
 const faqItems = [
   { question: 'Why do listed buildings need a specialist assessment?', answer: 'Listed buildings must be reinstated in original style and materials under the Planning (Listed Buildings and Conservation Areas) Act 1990. Standard calculators calibrated to modern construction cannot account for lime mortar, handmade brick, heritage contractor rates, conservation consents or extended programme timescales. The result is systematic underinsurance.' },
-  { question: 'Can you assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site surveys for all listed building categories. Grade I and Grade II* buildings cannot be assessed by desktop — they require a physical inspection by a specialist surveyor. We confirm the programme and fee on receipt of your enquiry.' },
-  { question: 'Does a standard online calculator work for listed buildings?', answer: 'No. Generic calculators apply standard construction rates and miss specialist materials, heritage labour premiums, conservation consents and extended programme costs entirely. Listed properties are underinsured by approximately 40% on average — the gap is significantly wider than for standard buildings.' },
+  { question: 'Can you assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site surveys for all listed building categories. Grade I and Grade II* buildings cannot be assessed by desktop. They require a physical inspection by a specialist surveyor. We confirm the programme and fee on receipt of your enquiry.' },
+  { question: 'Does a standard online calculator work for listed buildings?', answer: 'No. Generic calculators apply standard construction rates and miss specialist materials, heritage labour premiums, conservation consents and extended programme costs entirely. Listed properties are underinsured by approximately 40% on average, a gap significantly wider than for standard buildings.' },
   { question: 'What is the VAT position on listed building reinstatement?', answer: 'A full rebuild after total loss is zero-rated. But demolition, professional fees and partial-damage repairs attract 20% VAT. Since most real claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance work. Getting VAT treatment right is a material element of the declared value.' },
   { question: 'How often should a listed building be reassessed?', answer: 'A full specialist reassessment is required at least every three years, with annual BCIS-indexed inflation reviews in intervening years. Where material works have been carried out, or where the building has not been assessed since before 2020, a fresh site-based assessment should be commissioned before the next renewal.' },
 ]
@@ -78,7 +78,7 @@ export default function ListedBuildingsPage() {
               </div>
             ))}
             <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 mt-2">
-              <p className="text-xs text-[#5f6368] leading-relaxed"><span className="font-semibold text-[#202124]">Per square metre context.</span> Standard BCIS rates in 2025 run approximately £1,700–£2,400/m². For complex listed properties, realistic figures climb to £3,000–£5,000/m² or more — before professional fees, consents and VAT.</p>
+              <p className="text-xs text-[#5f6368] leading-relaxed"><span className="font-semibold text-[#202124]">Per square metre context.</span> Standard BCIS rates in 2025 run approximately £1,700–£2,400/m². For complex listed properties, realistic figures climb to £3,000–£5,000/m² or more, before professional fees, consents and VAT.</p>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function ListedBuildingsPage() {
             {[
               { title: 'Specialist materials.', desc: 'Handmade brick, lime mortar, natural stone, traditional timber and period roofing materials carry significant cost premiums. Lime mortar is slower to work with; stone is highly variable and must be individually priced rather than applied as a standard rate.' },
               { title: 'Heritage contractors.', desc: 'Stonemasons, lime plasterers, heritage carpenters and master thatchers command premium rates and are often booked months ahead. Standard contractor rates do not apply. Around 80% of thatched homes are listed, adding a further layer of specialist labour and material cost.' },
-              { title: 'Conservation consents and professional fees.', desc: 'Listed Building Consent, conservation officer involvement and sometimes archaeological recording conditions all add to programme duration and cost. Professional fees run higher than standard — conservation architects and heritage consultants extend the team significantly beyond the standard build.' },
+              { title: 'Conservation consents and professional fees.', desc: 'Listed Building Consent, conservation officer involvement and sometimes archaeological recording conditions all add to programme duration and cost. Professional fees run higher than standard, as conservation architects and heritage consultants extend the team significantly beyond the standard build.' },
               { title: 'Extended programme.', desc: 'Longer reinstatement timescales increase preliminaries and expose projects to construction cost inflation. Index-linking on an insurance policy does not fully capture this exposure.' },
               { title: 'VAT treatment.', desc: 'A full rebuild after total loss is zero-rated. Demolition, professional fees and partial-damage repairs attract 20% VAT. Most real claims are partial rather than total-loss, so VAT at 20% applies in the majority of cases. This is frequently excluded from desktop figures.' },
               { title: 'Curtilage structures.', desc: 'Listing frequently extends beyond the main building to boundary walls, ancillary buildings and structures within the historic curtilage. These are easily missed in an inherited or desktop figure and can represent material additional cost.' },
@@ -126,7 +126,7 @@ export default function ListedBuildingsPage() {
               Listed properties are underinsured by approximately 40% on average.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Across UK property broadly, around 70% of buildings carry an inaccurate sum insured. For listed buildings the gap is wider — BCIS-linked analysis suggests an average underinsurance of approximately 40%, driven by the systematic failure of standard assessment methods to account for heritage rebuild costs.
+              Across UK property broadly, around 70% of buildings carry an inaccurate sum insured. For listed buildings the gap is wider: BCIS-linked analysis suggests an average underinsurance of approximately 40%, driven by the systematic failure of standard assessment methods to account for heritage rebuild costs.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               When the average clause applies, the payout is reduced in proportion to the shortfall. A building insured for £1,000,000 against a true rebuild cost of £1,500,000 is covered for 67%. A £300,000 claim is paid at £200,000. The £100,000 gap falls on the owner.
@@ -159,7 +159,7 @@ export default function ListedBuildingsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Grade II listed buildings', desc: '91% of all listed buildings fall into this category. A site-based specialist assessment is required to establish an accurate rebuild cost — desktop rates do not apply.' },
+              { title: 'Grade II listed buildings', desc: '91% of all listed buildings fall into this category. A site-based specialist assessment is required to establish an accurate rebuild cost. Desktop rates do not apply.' },
               { title: 'Grade II* listed buildings', desc: 'Buildings of more than special interest. Grade II* and Grade I buildings cannot be assessed by desktop and require an on-site inspection.' },
               { title: 'Grade I listed buildings', desc: 'Buildings of exceptional interest. Reinstatement demands the highest level of specialist expertise and commands the highest cost per m².' },
               { title: 'Conservation area buildings', desc: 'Unlisted buildings within a conservation area may carry significant material and planning cost constraints depending on local authority requirements.' },

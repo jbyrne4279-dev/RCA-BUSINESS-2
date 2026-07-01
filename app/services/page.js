@@ -4,7 +4,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment | RCA Survey for Buildings Insurance',
+  title: 'Reinstatement Cost Assessment Survey for Buildings Insurance',
   description: 'Specialist reinstatement cost assessments for blocks of flats, managing agents, freeholders and leaseholders. RICS-aligned rebuild valuations for buildings insurance.',
   alternates: { canonical: '/services' },
 }
@@ -105,7 +105,7 @@ export default function ServicesPage() {
               { title: 'Online calculators', sub: 'No professional accountability. Not defensible in a dispute.', ok: false },
               { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a formal review.', ok: false },
               { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures create underinsurance.', ok: false },
-              { title: 'RICS-aligned RCA', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
+              { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
