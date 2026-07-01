@@ -11,7 +11,7 @@ export const metadata = {
 const faqItems = [
   { question: 'Can managing agents be held personally liable for underinsurance?', answer: 'Yes. Where the lease obliges insurance at full reinstatement cost and the managing agent arranges the insurance, they may be exposed to a claim by leaseholders for any shortfall at the point of claim. A RICS-regulated assessment is the standard way to discharge that obligation.' },
   { question: 'How often should we instruct a reinstatement cost assessment?', answer: 'RICS guidance recommends a formal assessment at least every three years, with annual index-linking in between. Our 3-Year Protection plan handles both requirements under a single instruction.' },
-  { question: 'We rely on the insurer's rebuild calculator. Is that sufficient?', answer: 'Online calculators carry no RICS regulation and provide no formal documentation of methodology. In a dispute, they offer no professional accountability. A RICS assessment does.' },
+  { question: `We rely on the insurer's rebuild calculator. Is that sufficient?`, answer: 'Online calculators carry no RICS regulation and provide no formal documentation of methodology. In a dispute, they offer no professional accountability. A RICS assessment does.' },
   { question: 'Can you assess multiple blocks under a single instruction?', answer: 'Yes. We specialise in portfolio assessments for managing agents with multiple mandates, providing individual reports for each block and a consolidated summary.' },
   { question: 'How quickly do you turn around a desktop assessment?', answer: 'Standard desktop assessments are delivered within 48 hours of instruction.' },
 ]
