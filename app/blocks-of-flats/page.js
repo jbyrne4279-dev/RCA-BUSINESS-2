@@ -10,11 +10,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why do blocks of flats need a specialist assessment?', answer: 'Blocks of flats can be more complex than they first appear. Communal areas, shared services, external fabric, car parks and landscaping all contribute to the rebuild cost. A specialist reinstatement cost assessment considers these elements properly rather than relying on a generic figure.' },
-  { question: 'Who should commission the reinstatement cost assessment for a block of flats?', answer: 'Typically the managing agent, RTM company or freeholder, whoever is responsible for arranging buildings insurance. Leaseholders can also commission an independent assessment if they have concerns about the figure being used.' },
-  { question: 'What happens if our block is underinsured?', answer: 'If the declared value is too low and a major claim arises, the insurer may apply the average clause and reduce the payout proportionately. Leaseholders may then pursue the party responsible for arranging insurance for the shortfall.' },
-  { question: 'Can you assess converted houses and mansion blocks?', answer: 'Yes. We assess all types of residential block including purpose-built flats, converted houses, mansion blocks, mixed-use developments and large residential portfolios.' },
-  { question: 'How often should the insurance figure be reviewed?', answer: 'RICS guidance recommends annual inflation adjustment and a more detailed review at least every three years. Our 3-Year Protection plan handles both requirements under a single instruction.' },
+  { question: 'Why do blocks of flats need a specialist assessment?', answer: 'Blocks of flats contain elements, communal areas, shared services, external fabric, car parks and landscaping, that generic calculators miss or undervalue. A specialist reinstatement cost assessment accounts for all of them in a documented, RICS-regulated output.' },
+  { question: 'Who should commission the reinstatement cost assessment for a block of flats?', answer: 'The managing agent, RTM company or freeholder responsible for arranging buildings insurance. Leaseholders may also commission an independent assessment where they have grounds to question the declared value in use.' },
+  { question: 'What happens if our block is underinsured?', answer: 'Where the declared value is inadequate and a major claim arises, the insurer applies the average clause and reduces the payout in proportion to the shortfall. Leaseholders may then pursue the party responsible for arranging the insurance.' },
+  { question: 'Can you assess converted houses and mansion blocks?', answer: 'Yes. We assess all residential block types: purpose-built flats, converted houses, mansion blocks, mixed-use developments and large residential portfolios.' },
+  { question: 'How often should the insurance figure be reviewed?', answer: 'RICS guidance requires annual inflation adjustment and a formal reassessment at least every three years. Our 3-Year Protection plan covers both requirements under a single instruction.' },
 ]
 
 export default function BlocksOfFlatsPage() {
@@ -33,7 +33,7 @@ export default function BlocksOfFlatsPage() {
               Reinstatement cost assessments for blocks of flats.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              Blocks of flats often need a more careful approach because one incorrect insurance figure can affect many people at once. Our specialist service helps set a realistic buildings sum insured for apartment buildings, mixed-use blocks and developments with shared areas.
+              Blocks of flats require a rigorous approach. One incorrect insurance figure exposes every leaseholder in the building. Our assessments establish a documented, RICS-aligned sum insured for apartment buildings, mixed-use blocks and developments with shared areas.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
@@ -54,10 +54,10 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
             {[
-              { title: 'Communal areas matter.', desc: 'Entrance halls, stairwells, lifts, plant rooms and shared lobbies all form part of the rebuild cost. Generic estimates often miss or undervalue these.' },
+              { title: 'Communal areas matter.', desc: 'Entrance halls, stairwells, lifts, plant rooms and shared lobbies form part of the rebuild cost. Generic estimates routinely miss or undervalue these elements.' },
               { title: 'Shared services add up.', desc: 'Heating systems, drainage, telecommunications infrastructure and electrical installations serving the whole block must be included in the declared value.' },
-              { title: 'External works count.', desc: 'Car parks, landscaping, bin stores, boundary walls and paths all contribute to the reinstatement cost and should be assessed as part of the building.' },
-              { title: 'One figure, many people.', desc: 'In a block of flats, all leaseholders depend on the same insurance figure. Getting it wrong once affects everyone who lives or owns property there.' },
+              { title: 'External works count.', desc: 'Car parks, landscaping, bin stores, boundary walls and paths all contribute to the reinstatement cost and must be assessed as part of the building.' },
+              { title: 'One figure, many people.', desc: 'Every leaseholder in a block depends on the same insurance figure. An incorrect declared value exposes all of them simultaneously.' },
             ].map(({ title, desc }) => (
               <div key={title} className="py-8 flex gap-6">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
@@ -80,10 +80,10 @@ export default function BlocksOfFlatsPage() {
               What happens when the figure is wrong.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              If the building is underinsured at the point of a major claim, the insurer may apply the average clause and reduce the payout in proportion to the degree of underinsurance. In a block of flats, that shortfall is shared across every leaseholder who depends on the policy.
+              Where the building is underinsured at the point of a major claim, the insurer applies the average clause and reduces the payout in proportion to the degree of underinsurance. In a block of flats, that shortfall falls across every leaseholder covered by the policy.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              The people responsible for arranging cover, managing agents, RTM companies, freeholders, may be exposed to complaints or liability concerns. A detailed reinstatement cost assessment reduces that risk by giving a stronger, documented basis for the insurance figure.
+              Managing agents, RTM companies and freeholders responsible for arranging cover face direct liability exposure to leaseholders for any unrecovered loss. A specialist reinstatement cost assessment provides the documented, professionally accountable basis that satisfies the lease obligation.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>
@@ -113,12 +113,12 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK.' },
-              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats, with shared areas and services.' },
-              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and communal facilities.' },
-              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises.' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership.' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a portfolio summary.' },
+              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.' },
+              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.' },
+              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.' },
+              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises, assessed as a single instruction.' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction. Individual reports per property with a portfolio summary schedule.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
@@ -137,7 +137,7 @@ export default function BlocksOfFlatsPage() {
             Suitable for managing agents, RTM companies, freeholders and leaseholders.
           </h2>
           <p className="text-[#5f6368] text-lg leading-relaxed mb-10">
-            Ideal for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals. If your current insurance figure is based on an old valuation, an online calculator or has not been reviewed in several years, now is the right time to act.
+            Appropriate for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals. Where the current insurance figure is based on an inherited estimate, an online calculator or has not been formally reviewed in three or more years, the exposure is material and should be addressed at the next opportunity.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact#contact-form" className="btn-shine">Book an Assessment</Link>

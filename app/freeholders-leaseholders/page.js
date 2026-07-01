@@ -31,7 +31,7 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
           <div>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              If you own a leasehold interest or hold the freehold of a block, the insurance figure should be based on the cost to rebuild the building, not the value you might sell it for. That difference matters because underinsurance can become expensive very quickly.
+              Whether you hold the freehold or a leasehold interest in a block, the buildings sum insured must reflect the cost to rebuild, not the market value. Underinsurance creates a documented financial exposure that falls directly on those responsible for arranging cover.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>

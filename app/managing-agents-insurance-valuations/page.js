@@ -10,12 +10,12 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Can managing agents be held responsible for underinsurance?', answer: 'Where the lease requires insurance at full reinstatement cost and the managing agent arranges that cover, they may be exposed to a claim by leaseholders for any shortfall not covered at the point of claim. A specialist reinstatement cost assessment is the standard way to discharge that obligation with a documented, defensible figure.' },
-  { question: 'How often should we commission a reinstatement cost assessment?', answer: 'RICS guidance recommends annual inflation adjustment and a more detailed review at least every three years. Our 3-Year Protection plan covers both requirements under a single instruction.' },
-  { question: `We rely on the insurer's rebuild calculator. Is that sufficient?`, answer: 'Online calculators and insurer-provided tools carry no professional accountability. In a dispute, they offer no documented methodology or professional responsibility. A specialist RCA does.' },
-  { question: 'Can you assess multiple blocks for us under one instruction?', answer: 'Yes. We specialise in portfolio assessments for managing agents with multiple blocks, providing individual reports for each property and a consolidated summary for your records.' },
-  { question: 'How quickly do you turn around a desktop assessment?', answer: 'Standard desktop assessments are delivered within 24 hours of instruction. On-site surveys are scheduled promptly and we confirm a timeline on instruction.' },
-  { question: 'What do RTM companies need to know about reinstatement cost assessments?', answer: 'When leaseholders exercise the Right to Manage, the responsibility for arranging buildings insurance typically transfers with it. RTM companies should establish the correct reinstatement figure before the first renewal to evidence their compliance from the outset.' },
+  { question: 'Can managing agents be held responsible for underinsurance?', answer: 'Where the lease requires insurance at full reinstatement cost and the managing agent arranges that cover, a shortfall at the point of claim creates direct liability exposure to leaseholders. A specialist reinstatement cost assessment is the standard means of discharging that obligation with a documented, professionally accountable figure.' },
+  { question: 'How often should we commission a reinstatement cost assessment?', answer: 'RICS guidance requires annual inflation adjustment and a formal review at least every three years. Our 3-Year Protection plan covers both requirements under a single instruction.' },
+  { question: `We rely on the insurer's rebuild calculator. Is that sufficient?`, answer: 'Online calculators and insurer-provided tools carry no professional accountability and no RICS regulation. In a dispute, they provide no documented methodology and no professional indemnity. A specialist RCA does.' },
+  { question: 'Can you assess multiple blocks for us under one instruction?', answer: 'Yes. Portfolio assessments for managing agents with multiple blocks are a standard instruction for us. Each property receives its own report, with a consolidated summary schedule for your records.' },
+  { question: 'How quickly do you turn around a desktop assessment?', answer: 'Desktop assessments are delivered within 24 hours of instruction. On-site surveys are scheduled promptly and the programme is confirmed on instruction.' },
+  { question: 'What do RTM companies need to know about reinstatement cost assessments?', answer: 'When leaseholders exercise the Right to Manage, the obligation to arrange buildings insurance transfers with it. RTM companies should establish the correct reinstatement figure before the first renewal to demonstrate compliance from the outset.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -34,7 +34,7 @@ export default function ManagingAgentsPage() {
               Insurance valuations for managing agents and RTM companies.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              Managing agents and RTM companies need a reliable reinstatement cost assessment to support the insurance process and protect themselves from getting the figure wrong.
+              Managing agents and RTM companies carry a direct obligation to insure blocks to full reinstatement cost. An incorrect declared value creates documented liability. A RICS-regulated assessment is the only defensible basis for the insurance figure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
@@ -81,10 +81,10 @@ export default function ManagingAgentsPage() {
               A report that works for brokers, insurers and leaseholders.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              You need a report that is clear, practical and easy to use with brokers, insurers and leaseholders. It should explain the declared value, the key assumptions, the review date and the scope of the assessment.
+              The report must state the declared value, the assumptions applied, the review date and the scope of assessment in terms that brokers, insurers and leaseholders can rely on.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              RICS-aligned guidance stresses the importance of professional diligence because an understated insurance value can lead to proportionate settlement issues under the average clause. That is exactly why many managing agents prefer a specialist reinstatement cost assessment instead of relying on outdated figures or online tools.
+              RICS guidance is unambiguous: an understated sum insured leads to proportionate settlement under the average clause. A specialist reinstatement cost assessment is the standard way to discharge the insurance obligation with a documented, professionally accountable figure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -117,10 +117,10 @@ export default function ManagingAgentsPage() {
               Managing multiple blocks?
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              We provide consolidated portfolio assessments for managing agents with multiple blocks, individual reports for each property, a portfolio summary schedule, and a managed annual update service.
+              Portfolio instructions are managed as a single engagement: individual RICS-regulated reports for each block, a consolidated summary schedule, and an annual update service under our 3-Year Protection plan.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Suitable for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals where multiple properties need a consistent, professional approach.
+              The correct approach for routine portfolio reviews, new management mandates, refinancing due diligence and insurance renewals where multiple properties require a consistent, documented reinstatement basis.
             </p>
             <Link href="/contact#contact-form" className="link-amber">Discuss your portfolio →</Link>
           </div>

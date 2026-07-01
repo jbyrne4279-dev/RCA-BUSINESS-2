@@ -103,8 +103,8 @@ export default function ServicesPage() {
           <div className="space-y-3">
             {[
               { title: 'Online calculators', sub: 'No professional accountability. Not defensible in a dispute.', ok: false },
-              { title: 'Index-linking alone', sub: 'Adjusts the figure but does not replace a formal review.', ok: false },
-              { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures underinsure.', ok: false },
+              { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a formal review.', ok: false },
+              { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures create underinsurance.', ok: false },
               { title: 'RICS-aligned RCA', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
@@ -133,7 +133,7 @@ export default function ServicesPage() {
             <Link href="/contact?service=desktop#contact-form" className="btn-shine">Instruct Desktop Assessment</Link>
           </div>
           <div>
-            <CheckItem title="24-hour turnaround" desc="Delivered within two working days of instruction." />
+            <CheckItem title="24-hour turnaround" desc="Delivered within 24 hours of instruction." />
             <CheckItem title="BCIS-indexed modelling" desc="Live construction cost data from the Building Cost Information Service." />
             <CheckItem title="RICS-aligned output" desc="Produced by or under supervision of a RICS-registered member." />
             <CheckItem title="Broker-ready format" desc="Accepted without challenge by UK insurers and brokers." />
@@ -157,9 +157,9 @@ export default function ServicesPage() {
           </div>
           <div>
             <CheckItem title="Physical RICS inspection" desc="Full on-site measurement by a RICS-registered surveyor." />
-            <CheckItem title="Listed and heritage buildings" desc="Specialist knowledge of authentic materials and traditional construction." />
-            <CheckItem title="Non-standard construction" desc="Complex structures, unusual specification and high-value properties." />
-            <CheckItem title="Full measurement record" desc="Complete dimensional survey retained as part of the assessment." />
+            <CheckItem title="Listed and heritage buildings" desc="Specialist knowledge of authentic materials and traditional construction methods." />
+            <CheckItem title="Non-standard construction" desc="Complex structures, unusual specifications and high-value properties assessed in full." />
+            <CheckItem title="Full measurement record" desc="Complete dimensional survey retained as part of the assessment file." />
             <CheckItem title="PI insured" desc="Comprehensive professional indemnity insurance on every instruction." />
           </div>
         </div>
@@ -174,19 +174,19 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">3-Year Protection Plan</h2>
             <p className="text-white/60 text-base leading-relaxed mb-4">
-              Single instruction. Three years of compliance. Full assessment in year one, then annual BCIS-indexed renewal reports before each renewal date, without re-instructing.
+              Single instruction. Three years of RICS compliance. Full assessment in year one, then annual BCIS-indexed renewal reports delivered before each renewal date, without re-instructing.
             </p>
             <p className="text-white/60 text-base leading-relaxed mb-6">
-              Ideal for managing agents, RTM companies and freeholders who want to meet RICS review guidance and keep the insurance figure accurate without repeated instructions.
+              The correct structure for managing agents, RTM companies and freeholders who must meet RICS review guidance and maintain an accurate insurance figure across the three-year cycle.
             </p>
             <Link href="/contact?service=3year#contact-form" className="btn-shine">Enquire About 3-Year Plan</Link>
           </div>
           <div>
-            <CheckItem title="Full assessment in year one" desc="Complete RICS-aligned assessment as the baseline declared value." dark />
-            <CheckItem title="Annual BCIS indexation" desc="Your figure updated each year using live construction cost indices." dark />
-            <CheckItem title="Renewal-ready reports" desc="Fresh broker-ready report delivered before each renewal date." dark />
-            <CheckItem title="Three-year RICS compliance" desc="Single instruction covering the RICS recommended review period." dark />
-            <CheckItem title="Managed service" desc="We contact you ahead of each update, no chasing required." dark />
+            <CheckItem title="Full assessment in year one" desc="Complete RICS-aligned assessment establishing the baseline declared value." dark />
+            <CheckItem title="Annual BCIS indexation" desc="The figure updated each year using live construction cost indices." dark />
+            <CheckItem title="Renewal-ready reports" desc="Fresh broker-ready report issued before each renewal date." dark />
+            <CheckItem title="Three-year RICS compliance" desc="A single instruction covering the full RICS recommended review period." dark />
+            <CheckItem title="Managed service" desc="We contact you before each update. No administration required from you." dark />
           </div>
         </div>
       </section>
