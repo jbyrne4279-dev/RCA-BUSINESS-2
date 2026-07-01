@@ -20,7 +20,7 @@ const faqItems = [
 function CheckItem({ title, desc, dark }) {
   return (
     <div className={`flex gap-3 py-3 border-b ${dark ? 'border-white/10' : 'border-[#dadce0]'}`}>
-      <span className="text-[#1a73e8] text-sm shrink-0 mt-0.5 font-bold tick-glow">✓</span>
+      <span className={`text-sm shrink-0 mt-0.5 font-bold tick-glow ${dark ? 'text-white' : 'text-[#1a73e8]'}`}>✓</span>
       <div>
         <p className={`font-medium text-sm mb-0.5 ${dark ? 'text-white' : 'text-[#202124]'}`}>{title}</p>
         <p className={`text-xs leading-relaxed ${dark ? 'text-white/55' : 'text-[#5f6368]'}`}>{desc}</p>
