@@ -57,13 +57,15 @@ export default function HomePage() {
       <div className="bg-[#f8f9fa] border-b border-[#dadce0] py-8 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            { n: '80%+', label: 'of UK buildings carry an inaccurate sum insured' },
-            { n: '30%+', label: 'rise in UK construction costs 2020–2024' },
-            { n: '48 hrs', label: 'standard turnaround for a desktop assessment' },
-            { n: '3 yrs', label: 'RICS recommended review period' },
-          ].map(({ n, label }) => (
+            { n: '80', suffix: '%+', label: 'of UK buildings carry an inaccurate sum insured' },
+            { n: '30', suffix: '%+', label: 'rise in UK construction costs 2020–2024' },
+            { n: '48', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
+            { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
+          ].map(({ n, suffix, label }) => (
             <div key={n} className="bg-white rounded-xl p-5 border border-[#dadce0] hover-lift">
-              <p className="text-2xl md:text-3xl font-bold text-[#1a73e8] mb-1">{n}</p>
+              <p className="text-2xl md:text-3xl font-bold text-[#1a73e8] mb-1 leading-none">
+                {n}<span className="text-base font-semibold align-baseline">{suffix}</span>
+              </p>
               <p className="text-xs text-[#5f6368] leading-snug">{label}</p>
             </div>
           ))}
