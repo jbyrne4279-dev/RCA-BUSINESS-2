@@ -58,8 +58,8 @@ export default function HomePage() {
       <div className="bg-[#f8f9fa] border-b border-[#dadce0] py-8 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            { n: '80', suffix: '%+', label: 'of UK buildings carry an inaccurate sum insured' },
-            { n: '30', suffix: '%+', label: 'rise in UK construction costs 2020–2024' },
+            { n: '80', suffix: '%', label: 'of UK buildings carry an inaccurate sum insured' },
+            { n: '30', suffix: '%', label: 'rise in UK construction costs 2020–2024' },
             { n: '24', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
             { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
           ].map(({ n, suffix, label }) => (

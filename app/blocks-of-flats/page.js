@@ -116,8 +116,8 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 gap-5">
             {[
-              { n: '80%+', label: 'of UK blocks estimated to carry an inaccurate sum insured' },
-              { n: '30%+', label: 'rise in UK construction costs between 2020 and 2024' },
+              { n: '80%', label: 'of UK blocks estimated to carry an inaccurate sum insured' },
+              { n: '30%', label: 'rise in UK construction costs between 2020 and 2024' },
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
               <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
