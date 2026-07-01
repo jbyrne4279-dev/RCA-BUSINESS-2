@@ -131,9 +131,9 @@ export default function FreeholdersLeaseholdersPage() {
               'An RTM company has assumed control and insurance is being renewed for the first time.',
               'A leaseholder or insurer has questioned the adequacy of cover.',
             ].map((point, i) => (
-              <div key={i} className="bg-white/10 rounded-xl border border-white/20 p-6 flex gap-4">
-                <span className="text-white font-bold text-sm shrink-0 mt-0.5">✓</span>
-                <p className="text-white/80 text-sm leading-relaxed">{point}</p>
+              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4">
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
+                <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
