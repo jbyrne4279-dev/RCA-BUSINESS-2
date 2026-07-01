@@ -69,7 +69,7 @@ export default function ListedBuildingsPage() {
               { label: 'Online calculator or inherited estimate', desc: 'Applies standard modern construction rates. Misses specialist materials, heritage labour, conservation consents and VAT exposure. Not defensible in a dispute.', ok: false },
               { label: 'Specialist site-based assessment', desc: 'Accounts for authentic materials, heritage contractor rates, conservation requirements, extended programme costs and VAT treatment. Accepted by all UK insurers.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -77,7 +77,7 @@ export default function ListedBuildingsPage() {
                 </div>
               </div>
             ))}
-            <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 mt-2">
+            <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 mt-2 card-hover">
               <p className="text-xs text-[#5f6368] leading-relaxed"><span className="font-semibold text-[#202124]">Per square metre context.</span> Current approximate BCIS rates run £1,700–£2,400/m² for standard construction. For complex listed properties, realistic figures can reach £3,000–£5,000/m² or more, before professional fees, consents and VAT.</p>
             </div>
           </div>
@@ -133,15 +133,15 @@ export default function ListedBuildingsPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>
-          <div className="grid grid-cols-1 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { stat: 'Substantial', label: 'underinsurance gap typical for listed buildings — wider than for standard properties due to heritage rebuild costs' },
+              { stat: 'Wider', label: 'underinsurance gap for listed buildings vs standard properties, due to heritage rebuild costs' },
               { stat: '20–50%', label: 'typical rebuild cost uplift over standard construction for listed properties' },
-              { stat: '£3–5k+', label: 'approximate current rebuild cost per m² for complex listed properties, vs approximate £1,700–2,400 for standard (BCIS)' },
+              { stat: '£3–5k+', label: 'approximate rebuild cost per m² for complex listed properties, vs £1,700–2,400 for standard (BCIS)' },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
-                <p className="text-3xl font-bold text-[#202124] leading-none shrink-0 w-28">{stat}</p>
-                <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
+              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center card-hover">
+                <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
             ))}
           </div>
@@ -166,7 +166,7 @@ export default function ListedBuildingsPage() {
               { title: 'Thatched and period properties', desc: 'Thatched properties frequently carry listed status. Specialist thatch rates, heritage materials and conservation consents all require individual pricing.' },
               { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
@@ -196,7 +196,7 @@ export default function ListedBuildingsPage() {
               'Significant works, alterations or extensions have been carried out.',
               'Your insurer or broker has queried the adequacy of the declared value.',
             ].map((point, i) => (
-              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4">
+              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4 card-hover">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>

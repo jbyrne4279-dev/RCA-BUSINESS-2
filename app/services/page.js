@@ -46,7 +46,7 @@ export default function ServicesPage() {
             <p className="text-[#5f6368] text-lg leading-relaxed mb-6">
               A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. The declared figure sets the buildings sum insured and determines the adequacy of cover at the point of any claim.
             </p>
-            <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5">
+            <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 card-hover">
               <p className="text-sm font-semibold text-[#202124] mb-3">A proper reinstatement cost assessment considers:</p>
               <div className="space-y-0">
                 {[
@@ -107,7 +107,7 @@ export default function ServicesPage() {
               { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures create underinsurance.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#202124] text-sm">{title}</p>

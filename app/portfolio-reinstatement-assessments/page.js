@@ -39,7 +39,7 @@ export default function PortfolioPage() {
               { title: 'Managed annual updates', desc: 'Annual BCIS indexation applied across all assets under our 3-Year Protection plan.' },
               { title: 'Single point of contact', desc: 'A single dedicated surveyor manages the full portfolio from instruction to annual update.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-3">
+              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-3 card-hover">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
               { n: 'Higher', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center">
+              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center card-hover">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>

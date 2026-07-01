@@ -72,7 +72,7 @@ export default function BlocksOfFlatsPage() {
               { label: 'Aggregated flat values', desc: 'What the individual flats are worth. Not what the building costs to rebuild. One of the most common sources of a wrong declared value.', ok: false },
               { label: 'Specialist reinstatement cost assessment', desc: 'The actual cost to demolish, clear and rebuild: structure, communal areas, professional fees, VAT where applicable. The only correct basis for the declared value.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -136,7 +136,7 @@ export default function BlocksOfFlatsPage() {
               { to: 3, suffix: '×', label: 'a typical gap between market value and rebuild cost on regional period blocks, where a £300,000 sale price can mask a £900,000 reinstatement cost' },
               { to: 3, suffix: ' yrs', label: 'RICS recommended maximum review period for a formal reassessment' },
             ].map(({ to, suffix, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
+              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6 card-hover">
                 <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">
                   <CountUp to={to} suffix={suffix} />
                 </p>
@@ -165,7 +165,7 @@ export default function BlocksOfFlatsPage() {
               { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.' },
               { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction. Individual reports per property with a portfolio summary schedule and staggered scheduling.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
@@ -195,7 +195,7 @@ export default function BlocksOfFlatsPage() {
               'You are acquiring a block or taking on the insuring obligation for the first time.',
               'You are refinancing or preparing the block for sale and need a clean valuation in the data room.',
             ].map((point, i) => (
-              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4">
+              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4 card-hover">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>

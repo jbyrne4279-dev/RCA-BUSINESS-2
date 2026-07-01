@@ -102,7 +102,7 @@ export default function ManagingAgentsPage() {
               { label: 'Online calculator or functional-unit rate', desc: 'No professional accountability, no RICS regulation, no PI backing. A loss adjuster on a large claim will challenge it immediately.', ok: false },
               { label: 'Specialist reinstatement cost assessment on the RICS cycle', desc: 'Full assessment every three years. Annual BCIS indexation between reassessments. Fresh instruction after material works. A defensible file at every stage.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-5 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`rounded-xl border p-5 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -139,7 +139,7 @@ export default function ManagingAgentsPage() {
               { title: 'Professional indemnity', desc: 'PI insurance on every instruction. The figure is professionally backed if challenged by a loss adjuster or at tribunal.' },
               { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers without amendment. Accepted across the UK market.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-4">
+              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-4 card-hover">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
@@ -175,7 +175,7 @@ export default function ManagingAgentsPage() {
               { title: 'Staggered scheduling', desc: 'Assessments phased to smooth cost across service-charge years. No spike in one year\'s budget.' },
               { title: 'Single point of contact', desc: 'One surveyor manages the entire portfolio instruction from receipt through to delivery and annual update.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white/10 rounded-xl border border-white/20 p-5 flex gap-4">
+              <div key={title} className="bg-white/10 rounded-xl border border-white/20 p-5 flex gap-4 card-hover">
                 <span className="text-white font-bold text-sm shrink-0 mt-0.5">✓</span>
                 <div>
                   <p className="font-semibold text-white text-sm mb-1">{title}</p>

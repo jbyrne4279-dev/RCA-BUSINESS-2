@@ -39,7 +39,7 @@ export default function CommercialPage() {
               { n: '100%', label: 'of reports accepted by UK insurers' },
               { n: 'RICS', label: 'regulated, every assessment, every time' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center">
+              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center card-hover">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -68,7 +68,7 @@ export default function CommercialPage() {
               { title: 'Old inherited valuations', sub: 'Significant cost increases since 2020 make pre-pandemic figures materially wrong.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based where required, accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#202124] text-sm">{title}</p>
@@ -96,7 +96,7 @@ export default function CommercialPage() {
               { title: 'Listed Commercial', desc: 'Period office buildings, listed retail premises and heritage industrial structures.' },
               { title: 'Development Sites', desc: 'Post-completion reinstatement cost assessments for newly completed commercial developments.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>

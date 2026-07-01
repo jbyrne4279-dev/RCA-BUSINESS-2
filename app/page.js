@@ -58,12 +58,12 @@ export default function HomePage() {
       <div className="bg-[#f8f9fa] border-b border-[#dadce0] py-8 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5">
           {[
-            { n: 'Most', suffix: '', label: 'UK buildings carry an inaccurate sum insured — underinsurance is endemic across UK building stock' },
-            { n: 'Higher', suffix: '', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
+            { n: 'Most', suffix: '', label: 'UK buildings estimated to carry an inaccurate sum insured' },
+            { n: 'Higher', suffix: '', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
             { n: '24', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
             { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
           ].map(({ n, suffix, label }) => (
-            <div key={n} className="bg-white rounded-xl p-5 border border-[#dadce0] hover-lift">
+            <div key={n} className="bg-white rounded-xl p-5 border border-[#dadce0] hover-lift card-hover">
               <p className="text-2xl md:text-3xl font-bold text-[#1a73e8] mb-1 leading-none">
                 {n}<span className="text-base font-semibold align-baseline">{suffix}</span>
               </p>
@@ -94,14 +94,14 @@ export default function HomePage() {
               <Link href="/services" className="link-amber">About reinstatement cost assessments →</Link>
             </div>
             <div className="space-y-4 scroll-reveal">
-              <div className="border border-[#dadce0] rounded-xl p-6 bg-white hover-lift">
+              <div className="border border-[#dadce0] rounded-xl p-6 bg-white hover-lift card-hover">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="w-8 h-8 rounded-full bg-[#fce8e6] flex items-center justify-center text-sm">✕</span>
                   <p className="font-semibold text-[#202124]">Market value</p>
                 </div>
                 <p className="text-[#5f6368] text-sm leading-relaxed">What the property sells for on the open market. Determined by location, demand and comparable transactions. Irrelevant for insurance purposes.</p>
               </div>
-              <div className="border-2 border-[#1a73e8] rounded-xl p-6 bg-[#e8f0fe]/30 hover-lift">
+              <div className="border-2 border-[#1a73e8] rounded-xl p-6 bg-[#e8f0fe]/30 hover-lift card-hover">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="w-8 h-8 rounded-full bg-[#e6f4ea] flex items-center justify-center text-sm text-[#1e8e3e]">✓</span>
                   <p className="font-semibold text-[#202124]">Reinstatement cost</p>
@@ -133,7 +133,7 @@ export default function HomePage() {
               { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖' },
               { title: 'Outdated figures', desc: 'UK construction costs rose significantly between 2020 and 2023 according to BCIS data and remain materially higher than pre-pandemic levels. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱' },
             ].map(({ title, desc, icon }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift card-hover">
                 <div className="w-10 h-10 rounded-full bg-[#fce8e6] flex items-center justify-center mb-4 text-lg">{icon}</div>
                 <h3 className="font-semibold text-[#202124] mb-2">{title}</h3>
                 <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
@@ -207,7 +207,7 @@ export default function HomePage() {
               { n: '03', title: 'We assess the rebuild cost', desc: 'A structured assessment covering materials, structure, services, external works, professional fees and statutory fees.' },
               { n: '04', title: 'You receive your report', desc: 'A broker-ready report stating the declared value, methodology, assumptions and next review date.' },
             ].map(({ n, title, desc }) => (
-              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
+              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift card-hover">
                 <div className="w-9 h-9 rounded-full bg-[#1a73e8] flex items-center justify-center text-white text-xs font-bold mb-4">{n}</div>
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
@@ -235,7 +235,7 @@ export default function HomePage() {
               { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Required for listed buildings, non-standard construction and high-value assets.', href: '/services#on-site-survey', variant: 'light' },
               { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, then annual BCIS-indexed renewal reports for three years. Single instruction covering the RICS recommended review period.', href: '/services#three-year-protection', variant: 'featured' },
             ].map(({ title, tag, desc, href, variant }) => (
-              <div key={title} className={`rounded-xl p-7 flex flex-col border scroll-reveal hover-lift ${
+              <div key={title} className={`rounded-xl p-7 flex flex-col border scroll-reveal hover-lift card-hover ${
                 variant === 'featured' ? 'bg-[#1a73e8] border-[#1a73e8]' :
                 variant === 'light'    ? 'bg-[#e8f0fe] border-[#c8d8f8]' :
                                         'bg-white border-[#dadce0]'

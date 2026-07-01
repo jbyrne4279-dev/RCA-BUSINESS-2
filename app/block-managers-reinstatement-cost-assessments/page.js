@@ -56,7 +56,7 @@ export default function BlockManagersPage() {
               { n: 'Higher', label: 'UK build costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'maximum recommended interval between formal assessments' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center">
+              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center card-hover">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -80,7 +80,7 @@ export default function BlockManagersPage() {
               { title: 'Portfolio Assessment', desc: 'Consolidated instruction across all blocks under management. Individual reports per property, portfolio summary schedule and single-invoice billing.', href: '/contact#contact-form' },
               { title: '3-Year Protection', desc: 'Full base assessment with three years of annual BCIS-indexed renewal reports, each delivered before the relevant renewal date.', href: '/contact?service=3year#contact-form' },
             ].map(({ title, desc, href }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-8 flex flex-col">
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-8 flex flex-col card-hover">
                 <h3 className="text-xl font-bold text-[#202124] mb-4">{title}</h3>
                 <p className="text-[#5f6368] text-sm leading-relaxed flex-1 mb-6">{desc}</p>
                 <Link href={href} className="link-amber text-sm">Enquire →</Link>
