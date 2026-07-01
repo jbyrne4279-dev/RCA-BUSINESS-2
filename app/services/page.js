@@ -96,7 +96,7 @@ export default function ServicesPage() {
               Cavendish &amp; Rowe practises exclusively in reinstatement cost assessment. We do not offer general surveying, valuation advice or any other service. Every instruction we accept is a RICS-regulated rebuild valuation, carried out by or under the supervision of a RICS-registered member.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              That focus means a deeper methodology, more consistent output and a report your broker can rely on. Construction costs rose over 30% between 2020 and 2024. A figure not formally reviewed in that period is almost certainly wrong.
+              That focus means deeper methodology, more consistent output and a report brokers and insurers accept without question. UK construction costs rose over 30% between 2020 and 2024. A figure not formally reviewed in that period is materially inaccurate.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
@@ -128,7 +128,7 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              BCIS-indexed rebuild cost modelling without a site visit. Efficient, accurate, and delivered within 24 hours. Suitable for most standard residential blocks and commercial properties.
+              BCIS-indexed rebuild cost modelling without a site visit. Delivered within 24 hours. Appropriate for most standard residential blocks and commercial properties.
             </p>
             <Link href="/contact?service=desktop#contact-form" className="btn-shine">Instruct Desktop Assessment</Link>
           </div>
@@ -151,7 +151,7 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">On-Site Survey</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A RICS surveyor attends in person. Full measurement, material assessment and construction analysis on-site. Recommended for listed buildings, non-standard construction, and high-value assets.
+              A RICS surveyor attends in person and carries out full measurement, material assessment and construction analysis on-site. Required for listed buildings, non-standard construction and high-value assets.
             </p>
             <Link href="/contact?service=onsite#contact-form" className="btn-shine">Request On-Site Survey</Link>
           </div>
