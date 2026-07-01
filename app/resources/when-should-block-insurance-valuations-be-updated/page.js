@@ -15,7 +15,7 @@ export default function WhenUpdatePage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
             When should block insurance valuations be updated?
           </h1>
-          <p className="text-[#5f6368] text-lg leading-relaxed">RICS guidance, established practice, and the circumstances that require an early reassessment.</p>
+          <p className="text-[#5f6368] text-lg leading-relaxed">RICS guidance, professional best practice and the circumstances that require an earlier reassessment.</p>
         </div>
       </section>
 
@@ -24,12 +24,12 @@ export default function WhenUpdatePage() {
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">The RICS Position</p>
-            <p>RICS guidance notes on building reinstatement cost assessments state that formal professional assessments should be carried out at least every three years. In the intervening years, annual index-linking based on BCIS construction cost indices may be applied, but only as an interim measure between formal assessments, not as a permanent replacement for them.</p>
+            <p>RICS guidance on building reinstatement cost assessments requires formal professional assessments at least every three years. In the intervening years, annual index-linking based on BCIS construction cost indices may be applied, but only as an interim measure between formal assessments, not as a permanent replacement for them.</p>
           </div>
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">When Three Years Is the Maximum, Not the Target</p>
-            <p>The three-year interval is the maximum recommended gap under stable conditions. Several circumstances require reassessment before that interval expires.</p>
+            <p>The three-year interval is the maximum recommended gap under stable conditions. Several circumstances require a reassessment to be instructed earlier.</p>
           </div>
 
           <div className="grid grid-cols-1 gap-5">

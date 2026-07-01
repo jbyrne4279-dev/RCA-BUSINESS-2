@@ -15,7 +15,7 @@ export default function TopRisksPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
             Top five underinsurance risks for managing agents.
           </h1>
-          <p className="text-[#5f6368] text-lg leading-relaxed">And how to eliminate each one before it becomes a claim.</p>
+          <p className="text-[#5f6368] text-lg leading-relaxed">How to eliminate each one before it becomes a claim.</p>
         </div>
       </section>
 
