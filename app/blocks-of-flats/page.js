@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -21,19 +22,23 @@ export default function BlocksOfFlatsPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/rca-for-my-property.png" alt="Block of flats reinstatement cost assessment" fill className="object-cover opacity-15" />
+        </div>
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Blocks of Flats</span>
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Reinstatement cost assessments for blocks of flats.
             </h1>
-          </div>
-          <div>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
               Blocks of flats often need a more careful approach because one incorrect insurance figure can affect many people at once. Our specialist service helps set a realistic buildings sum insured for apartment buildings, mixed-use blocks and developments with shared areas.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden h-72 md:h-80 lg:h-96 shadow-xl">
+            <Image src="/rca-for-my-property-london-rebuild.png" alt="London block of flats — reinstatement cost assessment" fill className="object-cover" priority />
           </div>
         </div>
       </section>

@@ -69,15 +69,15 @@
 }
 .link-amber:hover { color: #1557b0; gap: 0.5em; }
 
-/* ── Fade-up on scroll ── */
+/* ── Fade-up on scroll (CSS scroll-driven, Chrome 115+; graceful fallback elsewhere) ── */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(16px); }
+  from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 .scroll-reveal {
-  animation: fade-up 0.5s ease both;
+  animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-timeline: view();
-  animation-range: entry 0% entry 30%;
+  animation-range: entry 0% entry 28%;
 }
 @media (prefers-reduced-motion: reduce) {
   .scroll-reveal { animation: none !important; opacity: 1 !important; }
@@ -85,11 +85,37 @@
 
 /* ── Hover lift ── */
 .hover-lift {
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
 }
 .hover-lift:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(60,64,67,0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(60,64,67,0.18);
+}
+
+/* ── Button press ripple feel ── */
+.btn-shine, .btn-ghost {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after, .btn-ghost::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.btn-shine:hover::after { opacity: 1; }
+.btn-ghost:hover::after { background: radial-gradient(circle, rgba(26,115,232,0.08) 0%, transparent 70%); opacity: 1; }
+
+/* ── Card border glow on hover ── */
+.card-glow {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-glow:hover {
+  border-color: #1a73e8 !important;
+  box-shadow: 0 0 0 3px rgba(26,115,232,0.12);
 }
 
 /* ── Logo shimmer ── */

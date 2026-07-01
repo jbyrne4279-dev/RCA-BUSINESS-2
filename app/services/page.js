@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -33,7 +34,7 @@ export default function ServicesPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="bg-white py-12 md:py-16 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
@@ -45,24 +46,37 @@ export default function ServicesPage() {
             <p className="text-[#5f6368] text-lg leading-relaxed mb-6">
               A reinstatement cost assessment calculates the cost of rebuilding your property from scratch for insurance purposes. It helps set the buildings sum insured so the policy reflects real rebuild cost.
             </p>
+            <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5">
+              <p className="text-sm font-semibold text-[#202124] mb-3">A proper RCA considers:</p>
+              <div className="space-y-0">
+                {[
+                  'Demolition and site clearance',
+                  'Rebuild costs for the main structure',
+                  'Professional fees (architect, structural engineer)',
+                  'Statutory and local authority fees',
+                  'VAT where applicable',
+                  'External works, car parks and landscaping',
+                ].map(item => (
+                  <div key={item} className="flex gap-3 py-2 border-b border-[#dadce0] last:border-0">
+                    <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                    <span className="text-[#3c4043] text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
             <Link href="/contact#contact-form" className="btn-shine">Request an RCA</Link>
           </div>
-          <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6">
-            <p className="text-sm font-semibold text-[#202124] mb-4">A proper RCA considers:</p>
-            <div className="space-y-0">
-              {[
-                'Demolition and site clearance',
-                'Rebuild costs for the main structure',
-                'Professional fees (architect, structural engineer)',
-                'Statutory and local authority fees',
-                'VAT where applicable',
-                'External works, car parks and landscaping',
-              ].map(item => (
-                <div key={item} className="flex gap-3 py-2.5 border-b border-[#dadce0] last:border-0">
-                  <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
-                  <span className="text-[#3c4043] text-sm">{item}</span>
-                </div>
-              ))}
+          <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[520px]">
+            <Image
+              src="/services-hero.jpeg"
+              alt="RICS reinstatement cost assessment — building survey"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-white/90 text-sm font-medium">RICS-aligned assessments delivered within 48 hours for most standard properties.</p>
             </div>
           </div>
         </div>

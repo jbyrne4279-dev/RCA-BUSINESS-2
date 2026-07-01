@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -22,19 +23,23 @@ export default function ManagingAgentsPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/uk-rca-rics-surveyor.png" alt="RICS surveyor for managing agents" fill className="object-cover opacity-15" />
+        </div>
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Managing Agents &amp; RTM Companies</span>
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Insurance valuations for managing agents and RTM companies.
             </h1>
-          </div>
-          <div>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              Managing agents and RTM companies need a reliable reinstatement cost assessment to support the insurance process and protect themselves from getting the figure wrong. Our service is designed to make that process easier, clearer and more defensible.
+              Managing agents and RTM companies need a reliable reinstatement cost assessment to support the insurance process and protect themselves from getting the figure wrong.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden h-72 md:h-80 lg:h-96 shadow-xl">
+            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment" fill className="object-cover" priority />
           </div>
         </div>
       </section>

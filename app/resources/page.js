@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessment Resources | Guides & Case Studies',
@@ -42,17 +43,20 @@ export default function ResourcesPage() {
     <main>
 
       {/* HEADER */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image src="/resources-hero.jpeg" alt="RCA resources and guides" fill className="object-cover opacity-20" priority />
+        </div>
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Knowledge Base
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight">
-              Guides & resources.
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+              Guides &amp; resources.
             </h1>
           </div>
-          <p className="text-[#5f6368] text-lg leading-relaxed">
+          <p className="text-white/60 text-lg leading-relaxed">
             Practical guidance on reinstatement cost assessments, RICS compliance, and underinsurance risk — written for managing agents, block managers, and property investors.
           </p>
         </div>
