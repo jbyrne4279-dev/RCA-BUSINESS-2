@@ -131,7 +131,7 @@ export default function HomePage() {
             {[
               { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders bear the gap.', icon: '⚠' },
               { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖' },
-              { title: 'Outdated figures', desc: 'Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is materially inaccurate.', icon: '📊' },
+              { title: 'Outdated figures', desc: 'Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱' },
             ].map(({ title, desc, icon }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
                 <div className="w-10 h-10 rounded-full bg-[#fce8e6] flex items-center justify-center mb-4 text-lg">{icon}</div>
