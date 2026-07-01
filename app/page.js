@@ -27,7 +27,7 @@ export default function HomePage() {
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Reinstatement Cost Assessment Specialists
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.05] mb-5">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.1] mb-5">
               The reinstatement figure your portfolio depends on.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
