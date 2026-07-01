@@ -71,8 +71,35 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* THE RISK */}
+      {/* PROPERTY TYPES */}
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
+              What we assess.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.' },
+              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.' },
+              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.' },
+              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises, assessed as a single instruction.' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction. Individual reports per property with a portfolio summary schedule.' },
+            ].map(({ title, desc }) => (
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* THE RISK */}
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Risk of Underinsurance</span>
@@ -96,33 +123,6 @@ export default function BlocksOfFlatsPage() {
               <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
                 <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">{n}</p>
                 <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* PROPERTY TYPES */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
-              What we assess.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.' },
-              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.' },
-              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.' },
-              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises, assessed as a single instruction.' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction. Individual reports per property with a portfolio summary schedule.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
-                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>

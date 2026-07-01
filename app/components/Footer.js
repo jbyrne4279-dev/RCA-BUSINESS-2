@@ -66,6 +66,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-4">Who We Help</p>
             <ul className="space-y-3 text-sm text-[#9aa0a6]">
               <li><Link href="/managing-agents-insurance-valuations" className="hover:text-[#7baaf7] transition-colors">Managing Agents</Link></li>
+              <li><Link href="/block-managers-reinstatement-cost-assessments" className="hover:text-[#7baaf7] transition-colors">Block Managers</Link></li>
               <li><Link href="/blocks-of-flats" className="hover:text-[#7baaf7] transition-colors">Blocks of Flats</Link></li>
               <li><Link href="/freeholders-leaseholders" className="hover:text-[#7baaf7] transition-colors">Freeholders &amp; Leaseholders</Link></li>
               <li><Link href="/listed-buildings" className="hover:text-[#7baaf7] transition-colors">Listed Buildings</Link></li>

@@ -8,6 +8,8 @@ const links = [
   { href: '/services', label: 'Services' },
   { href: '/blocks-of-flats', label: 'Blocks of Flats' },
   { href: '/managing-agents-insurance-valuations', label: 'Managing Agents' },
+  { href: '/freeholders-leaseholders', label: 'Freeholders' },
+  { href: '/listed-buildings', label: 'Listed Buildings' },
   { href: '/resources', label: 'Resources' },
 ]
 
@@ -94,15 +96,7 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
-            <Link href="/freeholders-leaseholders" onClick={() => setOpen(false)}
-              className="px-3 py-3 rounded-md text-sm font-medium text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors border-t border-[#f8f9fa]">
-              Freeholders & Leaseholders
-            </Link>
-            <Link href="/listed-buildings" onClick={() => setOpen(false)}
-              className="px-3 py-3 rounded-md text-sm font-medium text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors border-t border-[#f8f9fa]">
-              Listed Buildings
-            </Link>
-            <div className="px-3 py-4 border-t border-[#dadce0] mt-1">
+<div className="px-3 py-4 border-t border-[#dadce0] mt-1">
               <a href="tel:+442031788099" className="text-sm text-[#5f6368]">020 3178 8099</a>
             </div>
           </div>

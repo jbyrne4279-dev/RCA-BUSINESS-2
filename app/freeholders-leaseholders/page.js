@@ -107,9 +107,12 @@ export default function FreeholdersLeaseholdersPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">When to Act</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               When should you review the figure?
             </h2>
+            <p className="text-white/50 text-base leading-relaxed max-w-2xl mx-auto">
+              Any of the following circumstances creates a material risk that the current sum insured is inadequate. Each one warrants a formal reassessment before the next renewal.
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
