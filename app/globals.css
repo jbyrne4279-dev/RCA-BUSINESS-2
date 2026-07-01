@@ -173,3 +173,12 @@
   color: #2979ff;
   animation: tick-pulse 2s ease-in-out infinite;
 }
+
+/* ── Infinite review marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}

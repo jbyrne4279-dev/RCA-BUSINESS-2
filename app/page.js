@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
+import ReviewCarousel from './components/ReviewCarousel'
 
 const faqItems = [
   { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment estimates the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
@@ -269,37 +270,14 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-10 scroll-reveal">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              Client Feedback
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">What our clients say.</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              { quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
-              { quote: 'After our RTM we needed to establish the correct reinstatement figure from scratch. The team came back quickly with a robust RICS report and real confidence going into our first renewal.', name: 'Michael T.', role: 'RTM Company Director, Surrey' },
-              { quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. The assessment was sorted within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
-            ].map(({ quote, name, role }) => (
-              <div key={name} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 flex flex-col scroll-reveal hover-lift">
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-[#fbbc04]" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-[#3c4043] text-sm leading-relaxed flex-1 mb-5">&ldquo;{quote}&rdquo;</p>
-                <div>
-                  <p className="font-semibold text-[#202124] text-sm">{name}</p>
-                  <p className="text-[#5f6368] text-xs mt-0.5">{role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="bg-white py-14 md:py-20 border-t border-[#dadce0] overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 mb-10 scroll-reveal">
+          <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            Client Feedback
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">What our clients say.</h2>
         </div>
+        <ReviewCarousel />
       </section>
 
       {/* RESOURCES */}
