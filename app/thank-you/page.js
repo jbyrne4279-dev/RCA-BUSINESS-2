@@ -8,27 +8,23 @@ export const metadata = {
 export default function ThankYouPage() {
   return (
     <main>
-      <section className="min-h-[70vh] bg-white flex items-center py-20 px-6 md:px-12">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-[#c47c1e] text-[0.65rem] font-semibold uppercase tracking-[0.3em] mb-8">Enquiry Received</p>
-          <h1 className="font-headline text-5xl md:text-6xl font-semibold text-[#111318] leading-[1.05] mb-6">
+      <section className="min-h-[80vh] bg-[#f5f5f7] flex items-center py-20 px-6 md:px-10">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-8">Enquiry Received</p>
+          <h1 className="font-headline font-semibold text-[#1d1d1f] leading-[1.0] tracking-tight mb-8"
+            style={{ fontSize: 'clamp(2.8rem, 7vw, 6rem)' }}>
             We have your enquiry.
           </h1>
-          <div className="w-12 h-px bg-[#c47c1e] mb-8" />
-          <p className="text-[#374151] text-lg leading-relaxed mb-4">
-            A member of our team will review your instruction and respond within 24 hours on business days.
+          <p className="text-[#6e6e73] text-xl leading-relaxed mb-4">
+            A member of our team will respond within 24 hours on business days.
           </p>
-          <p className="text-[#6b7280] text-base leading-relaxed mb-12">
-            If you need to reach us urgently in the meantime, call us on{' '}
-            <a href="tel:+442031788099" className="text-[#c47c1e] font-semibold hover:text-[#111318] transition-colors">020 3178 8099</a>.
+          <p className="text-[#6e6e73] text-base leading-relaxed mb-12">
+            For urgent instructions call{' '}
+            <a href="tel:+442031788099" className="text-[#1d1d1f] font-semibold hover:text-[#c47c1e] transition-colors">020 3178 8099</a>.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/" className="btn-shine text-white px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-center inline-block">
-              Return Home
-            </Link>
-            <Link href="/resources" className="border border-[#111318]/20 text-[#111318] hover:border-[#c47c1e] hover:text-[#c47c1e] px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-center inline-block transition-all">
-              Read Our Guides
-            </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link href="/" className="btn-shine">Return Home</Link>
+            <Link href="/resources" className="btn-ghost">Read Our Guides</Link>
           </div>
         </div>
       </section>
