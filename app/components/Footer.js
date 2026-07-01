@@ -89,9 +89,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-[#9aa0a6]/50">
-          <p>&copy; 2025 Cavendish &amp; Rowe &middot; Company No. 17101918</p>
-          <p>RICS Regulated Firm &middot; Part of RiskSTOP Group</p>
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-white/40">
+          <p className="font-medium tracking-wide">&copy; 2025 Cavendish &amp; Rowe. All rights reserved. Registered in England &amp; Wales &middot; Company No. 17101918</p>
+          <p className="tracking-wide">RICS Regulated Firm &middot; All assessments carried out by or under the supervision of a RICS-registered member</p>
         </div>
       </div>
 
