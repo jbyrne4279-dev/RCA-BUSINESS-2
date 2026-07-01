@@ -6,15 +6,15 @@ export default function Footer() {
     <footer className="bg-[#202124]">
 
       {/* CTA bar */}
-      <div className="border-t border-white/10 border-b border-white/10 py-8 px-6 md:px-10">
+      <div className="bg-[#1a73e8] py-8 px-6 md:px-10">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
             <p className="font-semibold text-white text-base mb-1">Need a reinstatement cost assessment?</p>
-            <p className="text-[#9aa0a6] text-sm">We respond within 24 hours on business days.</p>
+            <p className="text-white/70 text-sm">We respond within 24 hours on business days.</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <a href="tel:+442031788099" className="text-sm text-white/70 hover:text-white transition-colors font-medium">020 3178 8099</a>
-            <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">Get a Quote</Link>
+            <a href="tel:+442031788099" className="text-sm text-white/80 hover:text-white transition-colors font-medium">020 3178 8099</a>
+            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-medium text-sm px-5 py-2 rounded-md hover:bg-white/90 transition-colors">Get a Quote</Link>
           </div>
         </div>
       </div>
