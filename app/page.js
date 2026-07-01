@@ -73,16 +73,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* PROOF STRIP */}
-      <div className="bg-white border-b border-[#dadce0] py-4 px-6">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
-          {['RCA Specialists Only', 'RICS Regulated Firm', 'PI Insured', 'National Coverage', 'Broker-Ready Reports'].map(t => (
-            <span key={t} className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.1em]">{t}</span>
-          ))}
-        </div>
-      </div>
 
-      {/* REBUILD VS MARKET VALUE */}
+{/* REBUILD VS MARKET VALUE */}
       <section className="bg-white py-14 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
