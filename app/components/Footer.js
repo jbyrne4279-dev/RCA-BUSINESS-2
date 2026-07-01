@@ -70,7 +70,6 @@ export default function Footer() {
               <li><Link href="/blocks-of-flats" className="hover:text-[#7baaf7] transition-colors">Blocks of Flats</Link></li>
               <li><Link href="/freeholders-leaseholders" className="hover:text-[#7baaf7] transition-colors">Freeholders &amp; Leaseholders</Link></li>
               <li><Link href="/listed-buildings" className="hover:text-[#7baaf7] transition-colors">Listed Buildings</Link></li>
-              <li><Link href="/resources" className="hover:text-[#7baaf7] transition-colors">Resources &amp; Guides</Link></li>
             </ul>
           </div>
 

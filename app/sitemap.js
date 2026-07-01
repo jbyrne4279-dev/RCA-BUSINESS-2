@@ -15,12 +15,6 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/resources`,
-      lastModified: new Date('2026-06-04'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${SITE_URL}/contact`,
       lastModified: new Date('2026-06-04'),
       changeFrequency: 'monthly',

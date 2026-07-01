@@ -278,34 +278,6 @@ export default function HomePage() {
 
       <ContactSection heading="Check your sum insured. Commission an assessment." />
 
-      {/* RESOURCES */}
-      <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4 scroll-reveal">
-            <div>
-              <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-4">
-                Knowledge Base
-              </span>
-              <h2 className="text-3xl font-bold text-[#202124]">Resources.</h2>
-            </div>
-            <Link href="/resources" className="link-amber shrink-0">All resources →</Link>
-          </div>
-          <div className="bg-white rounded-xl border border-[#dadce0] divide-y divide-[#dadce0]">
-            {[
-              { tag: 'Case Study', title: 'Block of flats undervalued by £340,000: how it was discovered and corrected', href: '/resources/case-study-block-of-flats-undervalued' },
-              { tag: 'Guide', title: 'Index-linking vs professional revaluation: what the difference means for your liability', href: '/resources/index-linking-vs-professional-valuation' },
-              { tag: 'Guide', title: 'Top five underinsurance risks for managing agents, and how to eliminate each one', href: '/resources/top-risks-of-underinsurance-for-managing-agents' },
-              { tag: 'Guidance', title: 'When should block buildings insurance valuations be updated?', href: '/resources/when-should-block-insurance-valuations-be-updated' },
-            ].map(({ tag, title, href }) => (
-              <Link key={href} href={href} className="flex items-center gap-5 px-6 py-4 group hover:bg-[#f8f9fa] transition-colors">
-                <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold px-2.5 py-1 rounded-full w-24 shrink-0 justify-center">{tag}</span>
-                <span className="flex-1 text-sm font-medium text-[#202124] group-hover:text-[#1a73e8] transition-colors leading-snug">{title}</span>
-                <span className="text-[#1a73e8] text-sm shrink-0 group-hover:translate-x-1 transition-transform">→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
       <FaqSection
         description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."
         items={faqItems}

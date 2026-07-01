@@ -10,7 +10,6 @@ const links = [
   { href: '/managing-agents-insurance-valuations', label: 'Managing Agents' },
   { href: '/freeholders-leaseholders', label: 'Freeholders' },
   { href: '/listed-buildings', label: 'Listed Buildings' },
-  { href: '/resources', label: 'Resources' },
 ]
 
 export default function Navbar() {

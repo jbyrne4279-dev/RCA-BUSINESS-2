@@ -28,7 +28,7 @@ export default function ThankYouPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/" className="btn-shine">Return Home</Link>
-            <Link href="/resources" className="btn-ghost">Read Our Guides</Link>
+            <Link href="/services" className="btn-ghost">Our Services</Link>
           </div>
         </div>
       </section>
