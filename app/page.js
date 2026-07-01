@@ -28,7 +28,7 @@ export default function HomePage() {
               Reinstatement Cost Assessment Specialists
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.05] mb-5">
-              Accurate reinstatement cost assessments for managing agents and freeholders.
+              The reinstatement figure your portfolio depends on.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               Reinstatement cost assessments are all we do. Our practice is dedicated exclusively to RICS-regulated rebuild valuations for managing agents, freeholders and property professionals across the UK. Broker-ready. Delivered within 24 hours.
