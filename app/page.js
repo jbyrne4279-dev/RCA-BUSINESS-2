@@ -6,14 +6,14 @@ import FaqSection from './components/FaqSection'
 import ReviewCarousel from './components/ReviewCarousel'
 
 const faqItems = [
-  { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment estimates the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
-  { question: 'Is reinstatement cost the same as market value?', answer: 'No. Market value is what the property might sell for. Reinstatement cost is what it would cost to rebuild. The two are often very different, and only the reinstatement cost is relevant for setting the buildings sum insured.' },
-  { question: 'How often should a reinstatement cost assessment be updated?', answer: 'RICS guidance supports annual inflation adjustment and a more detailed review every three years, or sooner if the building changes significantly.' },
-  { question: 'Why do managing agents and RTM companies need one?', answer: 'Managing agents and RTM companies arrange buildings insurance for blocks. If the declared value is wrong and a claim arises, the insurer may reduce the payout under the average clause, and leaseholders may hold the managing agent responsible.' },
-  { question: 'What happens if the building is underinsured?', answer: 'The insurer can apply the condition of average and reduce the payout in proportion to the degree of underinsurance. Leaseholders may then pursue the party responsible for the shortfall.' },
-  { question: 'Do you carry out a site inspection?', answer: 'A proper reinstatement cost assessment is site-based where appropriate. We inspect the property, consider materials, structure, services and external works, and deliver a clear, broker-ready report.' },
-  { question: 'Can you assess listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist attention: special materials, conservation requirements and detailed finishes significantly affect rebuild cost. We carry out site-based surveys for all listed property types.' },
-  { question: 'What areas do you cover?', answer: 'We cover the whole of the UK including London, Liverpool and throughout the North West. Desktop assessments are available nationally; on-site surveys cover England, Scotland, Wales and Northern Ireland.' },
+  { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
+  { question: 'Is reinstatement cost the same as market value?', answer: 'No. Market value reflects what the property sells for on the open market. Reinstatement cost reflects what it costs to rebuild. The two figures frequently differ substantially, and only reinstatement cost is relevant for setting the buildings sum insured.' },
+  { question: 'How often should a reinstatement cost assessment be updated?', answer: 'RICS guidance requires annual inflation adjustment and a formal review at least every three years, or sooner where the building has been extended, altered or significantly refurbished.' },
+  { question: 'Why do managing agents and RTM companies need one?', answer: 'Managing agents and RTM companies arranging buildings insurance for blocks carry a direct obligation to insure to full reinstatement cost. Where the declared value is inadequate and a claim arises, the insurer applies the average clause and reduces the payout. Leaseholders may then hold the managing agent liable for the shortfall.' },
+  { question: 'What happens if the building is underinsured?', answer: 'The insurer applies the condition of average and reduces the payout in proportion to the degree of underinsurance. Leaseholders may pursue the party responsible for arranging insurance for any unrecovered loss.' },
+  { question: 'Do you carry out a site inspection?', answer: 'Site-based assessment is carried out where appropriate. We inspect the property, assess materials, structure, services and external works, and deliver a documented, broker-ready report.' },
+  { question: 'Can you assess listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist assessment: authentic materials, conservation requirements and period finishes all affect rebuild cost materially. We carry out site-based surveys for all listed property categories.' },
+  { question: 'What areas do you cover?', answer: 'We cover the whole of the UK, including London, Liverpool and throughout the North West. Desktop assessments are available nationally. On-site surveys cover England, Scotland, Wales and Northern Ireland.' },
 ]
 
 export default function HomePage() {
@@ -25,13 +25,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              RICS Regulated · UK Specialist
+              Reinstatement Cost Assessment Specialists
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.05] mb-5">
               Accurate reinstatement cost assessments for managing agents and freeholders.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Specialist reinstatement cost assessments for managing agents, freeholders and property professionals. RICS-aligned, broker-ready, and delivered within 24 hours.
+              Reinstatement cost assessments are all we do. Our practice is dedicated exclusively to RICS-regulated rebuild valuations for managing agents, freeholders and property professionals across the UK. Broker-ready. Delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -76,7 +76,7 @@ export default function HomePage() {
       {/* PROOF STRIP */}
       <div className="bg-white border-b border-[#dadce0] py-4 px-6">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
-          {['RICS Regulated Firm', 'PI Insured', 'National Coverage', 'Broker-Ready Reports', 'Site-Based Assessments'].map(t => (
+          {['RCA Specialists Only', 'RICS Regulated Firm', 'PI Insured', 'National Coverage', 'Broker-Ready Reports'].map(t => (
             <span key={t} className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.1em]">{t}</span>
           ))}
         </div>
@@ -94,10 +94,10 @@ export default function HomePage() {
                 Reinstatement cost is not the same as market value.
               </h2>
               <p className="text-[#5f6368] text-base leading-relaxed mb-4">
-                A building may be worth one figure on the open market, but cost something very different to rebuild after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild, not what you could sell for.
+                A building's market value and its reinstatement cost are distinct figures and often differ substantially. After fire, flood or other total loss, what matters is the cost to demolish and rebuild, not the price the property would fetch on the open market.
               </p>
               <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-                Leaseholders, freeholders, managing agents and RTM companies rely on specialist reinstatement cost assessments to set the correct declared value and reduce the risk of underinsurance.
+                Freeholders, managing agents and RTM companies arranging buildings insurance must base the sum insured on reinstatement cost. A RICS-regulated assessment is the only documented, defensible way to establish that figure. Reinstatement cost assessment is the sole focus of our practice.
               </p>
               <Link href="/services" className="link-amber">About reinstatement cost assessments →</Link>
             </div>
@@ -170,8 +170,11 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Built for the people responsible for getting it right.
             </h2>
+            <p className="text-white/60 text-base leading-relaxed mb-4">
+              Reinstatement cost assessment is the only service we provide. We do not offer general surveying, mortgage valuations or any other practice. Every instruction is a RICS-regulated rebuild valuation, carried out with a single focus: establishing the correct sum insured.
+            </p>
             <p className="text-white/60 text-base leading-relaxed mb-8">
-              Managing agents, RTM companies, freeholders, leaseholders and block managers instruct us to establish the correct buildings sum insured and create a documented, defensible basis for the insurance figure.
+              Managing agents, RTM companies, freeholders, leaseholders and block managers rely on that focus to protect themselves and the people they represent.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -236,9 +239,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Desktop Assessment', tag: '24-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for most standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
-              { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Recommended for listed buildings, non-standard construction, and high-value properties.', href: '/services#on-site-survey', variant: 'light' },
-              { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, plus annual BCIS-indexed renewal reports for three years. Single instruction, ongoing compliance.', href: '/services#three-year-protection', variant: 'featured' },
+              { title: 'Desktop Assessment', tag: '24-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
+              { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Required for listed buildings, non-standard construction and high-value assets.', href: '/services#on-site-survey', variant: 'light' },
+              { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, then annual BCIS-indexed renewal reports for three years. Single instruction covering the RICS recommended review period.', href: '/services#three-year-protection', variant: 'featured' },
             ].map(({ title, tag, desc, href, variant }) => (
               <div key={title} className={`rounded-xl p-7 flex flex-col border scroll-reveal hover-lift ${
                 variant === 'featured' ? 'bg-[#1a73e8] border-[#1a73e8]' :
@@ -315,7 +318,7 @@ export default function HomePage() {
 
       <ContactSection heading="Check your sum insured. Commission an assessment." />
       <FaqSection
-        description="Common questions about reinstatement cost assessments, underinsurance risk, and how we work with managing agents, freeholders and leaseholders."
+        description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."
         items={faqItems}
       />
     </main>

@@ -10,10 +10,10 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Which service is right for my property?', answer: 'Desktop assessments suit most standard residential blocks and commercial properties. On-site surveys are recommended for listed buildings, non-standard construction, and high-value properties. The 3-Year Protection plan suits managing agents and freeholders who want ongoing compliance without re-instructing each year.' },
-  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 24 hours of instruction. On-site surveys depend on survey scheduling, we confirm a timeline on instruction.' },
-  { question: 'Are your reports accepted by all UK insurers?', answer: 'Yes. Our RICS-aligned, broker-ready reports are accepted across the UK market without challenge.' },
-  { question: 'Do you cover listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist knowledge of authentic materials, conservation requirements and traditional construction methods. We carry out site-based surveys for all listed property types.' },
+  { question: 'Which service is right for my property?', answer: 'Desktop assessments are appropriate for most standard residential blocks and commercial properties. On-site surveys are required for listed buildings, non-standard construction and high-value assets. The 3-Year Protection plan is the correct structure for managing agents and freeholders who need ongoing RICS compliance without re-instructing annually.' },
+  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 24 hours of instruction. For on-site surveys, we confirm the programme on instruction.' },
+  { question: 'Are your reports accepted by all UK insurers?', answer: 'Yes. Our RICS-aligned, broker-ready reports are accepted across the UK market.' },
+  { question: 'Do you cover listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist knowledge of authentic materials, conservation requirements and traditional construction methods. We carry out site-based surveys for all listed property categories.' },
   { question: 'Can you assess a portfolio of blocks under one instruction?', answer: 'Yes. We provide consolidated portfolio assessments with individual reports per property and a portfolio summary schedule.' },
 ]
 
@@ -44,7 +44,7 @@ export default function ServicesPage() {
               A specialist valuation for buildings insurance.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-6">
-              A reinstatement cost assessment calculates the cost of rebuilding your property from scratch for insurance purposes. It helps set the buildings sum insured so the policy reflects real rebuild cost.
+              A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. The declared figure sets the buildings sum insured and determines the adequacy of cover at the point of any claim.
             </p>
             <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5">
               <p className="text-sm font-semibold text-[#202124] mb-3">A proper reinstatement cost assessment considers:</p>
@@ -93,10 +93,10 @@ export default function ServicesPage() {
               Reinstatement cost assessment is a specialist discipline.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-4">
-              RICS guidance says reinstatement cost assessment should be handled as a specialist discipline, with clear instructions, site-based assessment where appropriate, and proper documentation. Relying on rough averages or online calculators can leave a building significantly underinsured.
+              Cavendish &amp; Rowe practises exclusively in reinstatement cost assessment. We do not offer general surveying, valuation advice or any other service. Every instruction we accept is a RICS-regulated rebuild valuation, carried out by or under the supervision of a RICS-registered member.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is almost certainly inaccurate.
+              That focus means a deeper methodology, more consistent output and a report your broker can rely on. Construction costs rose over 30% between 2020 and 2024. A figure not formally reviewed in that period is almost certainly wrong.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
