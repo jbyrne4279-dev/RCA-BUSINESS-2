@@ -139,8 +139,8 @@ export default function FreeholdersLeaseholdersPage() {
               { stat: '15–20%', label: 'professional fees typically added on top of rebuild cost for a block: architect, structural engineer, quantity surveyor and consultants' },
               { stat: '12–24 Months', label: 'loss-of-rent and alternative-accommodation cover that may be required for a significant loss given block reinstatement timescales, commonly omitted from the declared value' },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6 card-hover">
-                <p className="text-2xl font-bold text-[#202124] leading-none shrink-0 w-36 whitespace-nowrap">{stat}</p>
+              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
+                <p className="text-2xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
                 <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
               </div>
             ))}
