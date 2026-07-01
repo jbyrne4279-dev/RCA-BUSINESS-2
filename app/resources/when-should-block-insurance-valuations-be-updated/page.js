@@ -15,7 +15,7 @@ export default function WhenUpdatePage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
             When should block insurance valuations be updated?
           </h1>
-          <p className="text-[#5f6368] text-lg leading-relaxed">RICS guidance, good practice, and the circumstances that should trigger an early reassessment.</p>
+          <p className="text-[#5f6368] text-lg leading-relaxed">RICS guidance, established practice, and the circumstances that require an early reassessment.</p>
         </div>
       </section>
 

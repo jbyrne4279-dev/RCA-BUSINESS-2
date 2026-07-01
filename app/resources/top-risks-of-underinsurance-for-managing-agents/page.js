@@ -40,7 +40,7 @@ export default function TopRisksPage() {
             {
               n: '04',
               title: 'Failing to account for building improvements',
-              body: 'Where leaseholders have carried out material improvements to their flats, such as high-specification kitchens, bathrooms or structural alterations, the reinstatement cost of the building increases. A figure based on the original specification will not capture this. Our assessments can include an allowance for internal improvements based on your records or a physical inspection.',
+              body: 'Where leaseholders have carried out significant improvements (high-specification kitchens, bathrooms, structural alterations), the reinstatement cost of the building increases accordingly. A figure derived from the original specification does not capture this. Our assessments include an allowance for internal improvements based on your records or a physical inspection.',
             },
             {
               n: '05',
@@ -59,7 +59,7 @@ export default function TopRisksPage() {
 
           <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-8">
             <p className="font-semibold text-[#202124] text-sm mb-3">Eliminate all five risks in one instruction.</p>
-            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated assessment from Cavendish &amp; Rowe establishes the correct figure from scratch using live BCIS data and a documented professional methodology. Our 3-Year Protection plan maintains compliance across the RICS-recommended review cycle without requiring annual re-instruction.</p>
+            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated assessment from Cavendish &amp; Rowe establishes the correct figure from the ground up, using live BCIS data and a documented professional methodology. Our 3-Year Protection plan maintains compliance without the need to re-instruct annually.</p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
         </div>
