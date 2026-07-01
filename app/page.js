@@ -6,12 +6,12 @@ import FaqSection from './components/FaqSection'
 
 const faqItems = [
   { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment estimates the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
-  { question: 'Is reinstatement cost the same as market value?', answer: 'No. Market value is what the property might sell for. Reinstatement cost is what it would cost to rebuild. The two are often very different — and only the reinstatement cost is relevant for setting the buildings sum insured.' },
+  { question: 'Is reinstatement cost the same as market value?', answer: 'No. Market value is what the property might sell for. Reinstatement cost is what it would cost to rebuild. The two are often very different, and only the reinstatement cost is relevant for setting the buildings sum insured.' },
   { question: 'How often should a reinstatement cost assessment be updated?', answer: 'RICS guidance supports annual inflation adjustment and a more detailed review every three years, or sooner if the building changes significantly.' },
   { question: 'Why do managing agents and RTM companies need one?', answer: 'Managing agents and RTM companies arrange buildings insurance for blocks. If the declared value is wrong and a claim arises, the insurer may reduce the payout under the average clause, and leaseholders may hold the managing agent responsible.' },
   { question: 'What happens if the building is underinsured?', answer: 'The insurer can apply the condition of average and reduce the payout in proportion to the degree of underinsurance. Leaseholders may then pursue the party responsible for the shortfall.' },
   { question: 'Do you carry out a site inspection?', answer: 'A proper reinstatement cost assessment is site-based where appropriate. We inspect the property, consider materials, structure, services and external works, and deliver a clear, broker-ready report.' },
-  { question: 'Can you assess listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist attention — special materials, conservation requirements and detailed finishes significantly affect rebuild cost. We carry out site-based surveys for all listed property types.' },
+  { question: 'Can you assess listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist attention: special materials, conservation requirements and detailed finishes significantly affect rebuild cost. We carry out site-based surveys for all listed property types.' },
   { question: 'What areas do you cover?', answer: 'We cover the whole of the UK including London, Liverpool and throughout the North West. Desktop assessments are available nationally; on-site surveys cover England, Scotland, Wales and Northern Ireland.' },
 ]
 
@@ -40,7 +40,7 @@ export default function HomePage() {
           <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[480px]">
             <Image
               src="/rebuild-cost-assessment-london.jpeg"
-              alt="Reinstatement cost assessment — London block of flats"
+              alt="Reinstatement cost assessment. London block of flats"
               fill
               className="object-cover"
               priority
@@ -91,7 +91,7 @@ export default function HomePage() {
                 Reinstatement cost is not the same as market value.
               </h2>
               <p className="text-[#5f6368] text-base leading-relaxed mb-4">
-                A building may be worth one figure on the open market, but cost something very different to rebuild after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild — not what you could sell for.
+                A building may be worth one figure on the open market, but cost something very different to rebuild after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild, not what you could sell for.
               </p>
               <p className="text-[#5f6368] text-base leading-relaxed mb-6">
                 Leaseholders, freeholders, managing agents and RTM companies rely on specialist reinstatement cost assessments to set the correct declared value and reduce the risk of underinsurance.
@@ -111,7 +111,7 @@ export default function HomePage() {
                   <span className="w-8 h-8 rounded-full bg-[#e6f4ea] flex items-center justify-center text-sm text-[#1e8e3e]">✓</span>
                   <p className="font-semibold text-[#202124]">Reinstatement cost</p>
                 </div>
-                <p className="text-[#5f6368] text-sm leading-relaxed">What it costs to rebuild from scratch — demolition, structure, professional fees, statutory fees, and VAT. This is what should set your sum insured.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">What it costs to rebuild from scratch: demolition, structure, professional fees, statutory fees, and VAT. This is what should set your sum insured.</p>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function HomePage() {
             &ldquo;Reinstatement cost assessments should be carried out regularly by a competent professional to ensure the sum insured remains adequate.&rdquo;
           </blockquote>
           <p className="text-sm text-[#5f6368] uppercase tracking-widest">
-            RICS Guidance Note — Building Reinstatement Cost Assessments
+            RICS Guidance Note: Building Reinstatement Cost Assessments
           </p>
         </div>
       </section>
@@ -314,9 +314,9 @@ export default function HomePage() {
           </div>
           <div className="bg-white rounded-xl border border-[#dadce0] divide-y divide-[#dadce0]">
             {[
-              { tag: 'Case Study', title: 'Block of flats undervalued by £340,000 — how it was discovered and corrected', href: '/resources/case-study-block-of-flats-undervalued' },
+              { tag: 'Case Study', title: 'Block of flats undervalued by £340,000: how it was discovered and corrected', href: '/resources/case-study-block-of-flats-undervalued' },
               { tag: 'Guide', title: 'Index-linking vs professional revaluation: what the difference means for your liability', href: '/resources/index-linking-vs-professional-valuation' },
-              { tag: 'Guide', title: 'Top five underinsurance risks for managing agents — and how to eliminate each one', href: '/resources/top-risks-of-underinsurance-for-managing-agents' },
+              { tag: 'Guide', title: 'Top five underinsurance risks for managing agents, and how to eliminate each one', href: '/resources/top-risks-of-underinsurance-for-managing-agents' },
               { tag: 'Guidance', title: 'When should block buildings insurance valuations be updated?', href: '/resources/when-should-block-insurance-valuations-be-updated' },
             ].map(({ tag, title, href }) => (
               <Link key={href} href={href} className="flex items-center gap-5 px-6 py-4 group hover:bg-[#f8f9fa] transition-colors">

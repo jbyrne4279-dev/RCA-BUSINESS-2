@@ -10,7 +10,7 @@ export const metadata = {
 const resources = [
   {
     tag: 'Case Study',
-    title: 'Block of flats undervalued by £340,000 — how it was discovered and corrected',
+    title: 'Block of flats undervalued by £340,000: how it was discovered and corrected',
     excerpt: 'A 24-unit residential block had been insured using the developer’s original rebuild estimate for eleven years. Our RICS assessment revealed a £340,000 shortfall.',
     href: '/resources/case-study-block-of-flats-undervalued',
     date: 'March 2025',
@@ -24,7 +24,7 @@ const resources = [
   },
   {
     tag: 'Guide',
-    title: 'Top five underinsurance risks for managing agents — and how to eliminate each one',
+    title: 'Top five underinsurance risks for managing agents, and how to eliminate each one',
     excerpt: 'Managing agents face specific underinsurance exposures that arise from the nature of leasehold property management. This guide covers each risk and the assessment type that removes it.',
     href: '/resources/top-risks-of-underinsurance-for-managing-agents',
     date: 'January 2025',
@@ -32,7 +32,7 @@ const resources = [
   {
     tag: 'Guidance',
     title: 'When should block buildings insurance valuations be updated?',
-    excerpt: 'RICS guidance recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice — and when you should instruct earlier.',
+    excerpt: 'RICS guidance recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice, and when you should instruct earlier.',
     href: '/resources/when-should-block-insurance-valuations-be-updated',
     date: 'December 2024',
   },
@@ -57,7 +57,7 @@ export default function ResourcesPage() {
             </h1>
           </div>
           <p className="text-white/60 text-lg leading-relaxed">
-            Practical guidance on reinstatement cost assessments, RICS compliance, and underinsurance risk — written for managing agents, block managers, and property investors.
+            Practical guidance on reinstatement cost assessments, RICS compliance, and underinsurance risk, written for managing agents, block managers, and property investors.
           </p>
         </div>
       </section>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Top 5 Underinsurance Risks for Managing Agents | RCA Ltd',
-  description: 'The five most common underinsurance risks managing agents face — and the assessment type that eliminates each one.',
+  description: 'The five most common underinsurance risks managing agents face, and the assessment type that eliminates each one.',
   alternates: { canonical: '/resources/top-risks-of-underinsurance-for-managing-agents' },
 }
 
@@ -25,12 +25,12 @@ export default function TopRisksPage() {
             {
               n: '01',
               title: 'Using the developer’s original build cost figure',
-              body: 'Many blocks are insured using the rebuild figure provided by the developer at the time of construction. This figure typically excludes demolition costs, debris removal, and professional fees — and is immediately out of date from the point of completion. After several years of index-linking, it can be substantially wrong. A RICS desktop assessment establishes the correct current figure from scratch.',
+              body: 'Many blocks are insured using the rebuild figure provided by the developer at the time of construction. This figure typically excludes demolition costs, debris removal, and professional fees, and is immediately out of date from the point of completion. After several years of index-linking, it can be substantially wrong. A RICS desktop assessment establishes the correct current figure from scratch.',
             },
             {
               n: '02',
               title: 'Relying on index-linking as a substitute for reassessment',
-              body: 'Annual index-linking adjusts an existing figure — it does not validate it. If the underlying sum insured is wrong, index-linking perpetuates and compounds the error. RICS guidance requires a formal professional assessment at least every three years. Our 3-Year Protection plan provides the correct combination of base assessment and annual indexation.',
+              body: 'Annual index-linking adjusts an existing figure. It does not validate it. If the underlying sum insured is wrong, index-linking perpetuates and compounds the error. RICS guidance requires a formal professional assessment at least every three years. Our 3-Year Protection plan provides the correct combination of base assessment and annual indexation.',
             },
             {
               n: '03',
@@ -40,12 +40,12 @@ export default function TopRisksPage() {
             {
               n: '04',
               title: 'Failing to account for building improvements',
-              body: 'Where leaseholders have carried out significant improvements to their flats — high-specification kitchens, bathrooms, structural alterations — the reinstatement cost of the building increases. A figure calculated from the original specification will not capture this. Our assessments can include an allowance for internal improvements based on your records or a physical inspection.',
+              body: 'Where leaseholders have carried out significant improvements to their flats (high-specification kitchens, bathrooms, structural alterations), the reinstatement cost of the building increases. A figure calculated from the original specification will not capture this. Our assessments can include an allowance for internal improvements based on your records or a physical inspection.',
             },
             {
               n: '05',
               title: 'Not reassessing after significant construction cost inflation',
-              body: 'UK construction costs rose by over 30% between 2020 and 2024 — the sharpest sustained increase in decades. A RICS assessment from 2019 or earlier will be materially inadequate. Managing agents who have not instructed a reassessment since before 2020 should treat this as a priority at the next renewal.',
+              body: 'UK construction costs rose by over 30% between 2020 and 2024, the sharpest sustained increase in decades. A RICS assessment from 2019 or earlier will be materially inadequate. Managing agents who have not instructed a reassessment since before 2020 should treat this as a priority at the next renewal.',
             },
           ].map(({ n, title, body }) => (
             <div key={n} className="flex gap-6">
@@ -59,7 +59,7 @@ export default function TopRisksPage() {
 
           <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-8">
             <p className="font-semibold text-[#202124] text-sm mb-3">Eliminate all five risks in one instruction.</p>
-            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from RCA Ltd establishes the correct figure from scratch, using live BCIS data and a documented professional methodology &mdash; and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
+            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from RCA Ltd establishes the correct figure from scratch, using live BCIS data and a documented professional methodology, and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
         </div>

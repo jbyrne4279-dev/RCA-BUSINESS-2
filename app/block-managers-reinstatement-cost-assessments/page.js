@@ -30,7 +30,7 @@ export default function BlockManagersPage() {
           </div>
           <div>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              Consistent, RICS-compliant assessments across every block under your management — accepted at renewal without question.
+              Consistent, RICS-compliant assessments across every block under your management, accepted at renewal without question.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
@@ -78,7 +78,7 @@ export default function BlockManagersPage() {
             {[
               { title: 'Per-Block Assessment', desc: 'Individual RICS-regulated assessment for each block. Desktop in 48 hours. On-site available for listed or complex properties.', href: '/contact?service=desktop#contact-form' },
               { title: 'Portfolio Assessment', desc: 'Consolidated assessment across all blocks. Individual reports per property, portfolio summary schedule, single-invoice billing.', href: '/contact#contact-form' },
-              { title: '3-Year Protection', desc: 'Base assessment plus three years of annual BCIS-indexed renewal reports — delivered before each renewal date.', href: '/contact?service=3year#contact-form' },
+              { title: '3-Year Protection', desc: 'Base assessment plus three years of annual BCIS-indexed renewal reports, delivered before each renewal date.', href: '/contact?service=3year#contact-form' },
             ].map(({ title, desc, href }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-8 flex flex-col">
                 <h3 className="text-xl font-bold text-[#202124] mb-4">{title}</h3>
@@ -103,10 +103,10 @@ export default function BlockManagersPage() {
             {[
               { title: 'RICS-regulated', desc: 'Conducted by or under the supervision of a RICS-registered member.' },
               { title: 'Live BCIS data', desc: 'Reinstatement figures from current Building Cost Information Service indices.' },
-              { title: 'Broker-ready format', desc: 'Formatted for direct submission — no amendments required.' },
+              { title: 'Broker-ready format', desc: 'Formatted for direct submission, no amendments required.' },
               { title: 'PI cover', desc: 'Comprehensive professional indemnity on every instruction.' },
               { title: 'Named surveyor', desc: 'One contact manages your instruction across your entire portfolio.' },
-              { title: 'Full methodology', desc: 'Documented basis of assessment — defensible at tribunal.' },
+              { title: 'Full methodology', desc: 'Documented basis of assessment, defensible at tribunal.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white/[0.06] rounded-xl p-6">
                 <p className="font-semibold text-white text-sm mb-2">{title}</p>

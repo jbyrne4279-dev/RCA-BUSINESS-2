@@ -50,7 +50,7 @@ export default function ListedBuildingsPage() {
               Special materials, conservation requirements, access constraints and detailed finishes can significantly affect the rebuild cost of a listed or heritage building. A generic online calculator is built around standard modern construction and will not properly reflect any of these factors.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              The result is often a declared value that substantially understates the real cost of reinstatement — leaving the building significantly underinsured at exactly the moment when accurate cover matters most.
+              The result is often a declared value that substantially understates the real cost of reinstatement, leaving the building significantly underinsured at exactly the moment when accurate cover matters most.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>

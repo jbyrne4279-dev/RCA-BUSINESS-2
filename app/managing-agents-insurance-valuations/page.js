@@ -94,7 +94,7 @@ export default function ManagingAgentsPage() {
               { title: 'Methodology statement', desc: 'Explains how the figure was calculated and what assumptions were made.' },
               { title: 'Review date and guidance', desc: 'When the figure should next be reviewed and how to apply annual indexation.' },
               { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers without challenge.' },
-              { title: 'Professional indemnity', desc: 'PI insurance on every instruction — you are protected if the figure is challenged.' },
+              { title: 'Professional indemnity', desc: 'PI insurance on every instruction, you are protected if the figure is challenged.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
@@ -117,7 +117,7 @@ export default function ManagingAgentsPage() {
               Managing multiple blocks?
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              We provide consolidated portfolio assessments for managing agents with multiple blocks — individual reports for each property, a portfolio summary schedule, and a managed annual update service.
+              We provide consolidated portfolio assessments for managing agents with multiple blocks, individual reports for each property, a portfolio summary schedule, and a managed annual update service.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               Suitable for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals where multiple properties need a consistent, professional approach.

@@ -11,7 +11,7 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Which service is right for my property?', answer: 'Desktop assessments suit most standard residential blocks and commercial properties. On-site surveys are recommended for listed buildings, non-standard construction, and high-value properties. The 3-Year Protection plan suits managing agents and freeholders who want ongoing compliance without re-instructing each year.' },
-  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 48 hours of instruction. On-site surveys depend on survey scheduling — we confirm a timeline on instruction.' },
+  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 48 hours of instruction. On-site surveys depend on survey scheduling, we confirm a timeline on instruction.' },
   { question: 'Are your reports accepted by all UK insurers?', answer: 'Yes. Our RICS-aligned, broker-ready reports are accepted across the UK market without challenge.' },
   { question: 'Do you cover listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist knowledge of authentic materials, conservation requirements and traditional construction methods. We carry out site-based surveys for all listed property types.' },
   { question: 'Can you assess a portfolio of blocks under one instruction?', answer: 'Yes. We provide consolidated portfolio assessments with individual reports per property and a portfolio summary schedule.' },
@@ -69,7 +69,7 @@ export default function ServicesPage() {
           <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[520px]">
             <Image
               src="/services-hero.jpeg"
-              alt="RICS reinstatement cost assessment — building survey"
+              alt="RICS reinstatement cost assessment, building survey"
               fill
               className="object-cover"
               priority
@@ -93,7 +93,7 @@ export default function ServicesPage() {
               RCA is a specialist discipline.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-4">
-              RICS guidance says reinstatement cost assessment should be handled as a specialist discipline — with clear instructions, site-based assessment where appropriate, and proper documentation. Relying on rough averages or online calculators can leave a building significantly underinsured.
+              RICS guidance says reinstatement cost assessment should be handled as a specialist discipline, with clear instructions, site-based assessment where appropriate, and proper documentation. Relying on rough averages or online calculators can leave a building significantly underinsured.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is almost certainly inaccurate.
@@ -124,7 +124,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              01 — Desktop
+              01. Desktop
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
@@ -147,7 +147,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              02 — On-Site
+              02. On-Site
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">On-Site Survey</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
@@ -170,11 +170,11 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              03 — Protection Plan
+              03. Protection Plan
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">3-Year Protection Plan</h2>
             <p className="text-white/60 text-base leading-relaxed mb-4">
-              Single instruction. Three years of compliance. Full assessment in year one, then annual BCIS-indexed renewal reports before each renewal date — without re-instructing.
+              Single instruction. Three years of compliance. Full assessment in year one, then annual BCIS-indexed renewal reports before each renewal date, without re-instructing.
             </p>
             <p className="text-white/60 text-base leading-relaxed mb-6">
               Ideal for managing agents, RTM companies and freeholders who want to meet RICS review guidance and keep the insurance figure accurate without repeated instructions.
@@ -186,7 +186,7 @@ export default function ServicesPage() {
             <CheckItem title="Annual BCIS indexation" desc="Your figure updated each year using live construction cost indices." dark />
             <CheckItem title="Renewal-ready reports" desc="Fresh broker-ready report delivered before each renewal date." dark />
             <CheckItem title="Three-year RICS compliance" desc="Single instruction covering the RICS recommended review period." dark />
-            <CheckItem title="Managed service" desc="We contact you ahead of each update — no chasing required." dark />
+            <CheckItem title="Managed service" desc="We contact you ahead of each update, no chasing required." dark />
           </div>
         </div>
       </section>

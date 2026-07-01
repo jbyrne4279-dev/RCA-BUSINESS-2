@@ -11,7 +11,7 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Why do blocks of flats need a specialist assessment?', answer: 'Blocks of flats can be more complex than they first appear. Communal areas, shared services, external fabric, car parks and landscaping all contribute to the rebuild cost. A specialist reinstatement cost assessment considers these elements properly rather than relying on a generic figure.' },
-  { question: 'Who should commission the RCA for a block of flats?', answer: 'Typically the managing agent, RTM company or freeholder — whoever is responsible for arranging buildings insurance. Leaseholders can also commission an independent assessment if they have concerns about the figure being used.' },
+  { question: 'Who should commission the RCA for a block of flats?', answer: 'Typically the managing agent, RTM company or freeholder, whoever is responsible for arranging buildings insurance. Leaseholders can also commission an independent assessment if they have concerns about the figure being used.' },
   { question: 'What happens if our block is underinsured?', answer: 'If the declared value is too low and a major claim arises, the insurer may apply the average clause and reduce the payout proportionately. Leaseholders may then pursue the party responsible for arranging insurance for the shortfall.' },
   { question: 'Can you assess converted houses and mansion blocks?', answer: 'Yes. We assess all types of residential block including purpose-built flats, converted houses, mansion blocks, mixed-use developments and large residential portfolios.' },
   { question: 'How often should the insurance figure be reviewed?', answer: 'RICS guidance recommends annual inflation adjustment and a more detailed review at least every three years. Our 3-Year Protection plan handles both requirements under a single instruction.' },
@@ -38,7 +38,7 @@ export default function BlocksOfFlatsPage() {
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
           <div className="relative rounded-2xl overflow-hidden h-72 md:h-80 lg:h-96 shadow-xl">
-            <Image src="/rca-for-my-property-london-rebuild.png" alt="London block of flats — reinstatement cost assessment" fill className="object-cover" priority />
+            <Image src="/rca-for-my-property-london-rebuild.png" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
           </div>
         </div>
       </section>
@@ -83,7 +83,7 @@ export default function BlocksOfFlatsPage() {
               If the building is underinsured at the point of a major claim, the insurer may apply the average clause and reduce the payout in proportion to the degree of underinsurance. In a block of flats, that shortfall is shared across every leaseholder who depends on the policy.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              The people responsible for arranging cover — managing agents, RTM companies, freeholders — may be exposed to complaints or liability concerns. A detailed reinstatement cost assessment reduces that risk by giving a stronger, documented basis for the insurance figure.
+              The people responsible for arranging cover, managing agents, RTM companies, freeholders, may be exposed to complaints or liability concerns. A detailed reinstatement cost assessment reduces that risk by giving a stronger, documented basis for the insurance figure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>

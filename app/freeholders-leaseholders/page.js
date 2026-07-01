@@ -12,7 +12,7 @@ const faqItems = [
   { question: 'What is the difference between reinstatement cost and market value?', answer: 'Market value is what the property might sell for on the open market. Reinstatement cost is what it would cost to rebuild it from scratch after total loss. The two figures are often very different, and only the reinstatement cost is relevant for setting the buildings sum insured.' },
   { question: 'Who is responsible for insuring to the correct reinstatement cost?', answer: 'It depends on the lease. Most long leases place the obligation to insure to full reinstatement cost on the freeholder or the managing agent acting on their behalf. Some leases require leaseholders to contribute or arrange separate cover for their demise. Reading the lease carefully is the starting point.' },
   { question: 'Can a leaseholder commission their own RCA?', answer: 'Yes. Leaseholders who believe the sum insured arranged for their block is incorrect can instruct an independent reinstatement cost assessment. Our report can be used to raise a formal concern with the freeholder or managing agent, or to support a service charge dispute.' },
-  { question: 'What if our building has not been valued for several years?', answer: 'Construction costs have risen substantially in recent years. A reinstatement cost figure that has not been formally reviewed — even with annual index-linking — may no longer reflect the actual cost to rebuild. A fresh assessment is the safest approach.' },
+  { question: 'What if our building has not been valued for several years?', answer: 'Construction costs have risen substantially in recent years. A reinstatement cost figure that has not been formally reviewed, even with annual index-linking, may no longer reflect the actual cost to rebuild. A fresh assessment is the safest approach.' },
   { question: 'What information do you need to get started?', answer: 'Usually the address, property type, approximate size, any previous valuation or assessment, and details of any recent alterations or extensions. We can often begin with very little information and ask for more as needed.' },
 ]
 
@@ -31,7 +31,7 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
           <div>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              If you own a leasehold interest or hold the freehold of a block, the insurance figure should be based on the cost to rebuild the building — not the value you might sell it for. That difference matters because underinsurance can become expensive very quickly.
+              If you own a leasehold interest or hold the freehold of a block, the insurance figure should be based on the cost to rebuild the building, not the value you might sell it for. That difference matters because underinsurance can become expensive very quickly.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -50,7 +50,7 @@ export default function FreeholdersLeaseholdersPage() {
               Market value and rebuild cost are not the same.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A building may be worth one figure on the open market but cost something very different to rebuild from scratch after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild — including demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable.
+              A building may be worth one figure on the open market but cost something very different to rebuild from scratch after fire, flood or other major damage. The sum insured on a buildings policy should reflect what it costs to rebuild, including demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed">
               Leasehold arrangements often place a clear responsibility on someone to insure the building to the correct level. A specialist reinstatement cost assessment helps make sure that obligation is supported by a proper, documented rebuild-cost figure.

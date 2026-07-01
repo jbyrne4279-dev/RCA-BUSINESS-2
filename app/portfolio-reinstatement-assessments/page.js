@@ -28,7 +28,7 @@ export default function PortfolioPage() {
               Every asset. One instruction.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Individual RICS-regulated reports per property, consolidated summary schedule, and managed annual indexation &mdash; under a single engagement.
+              Individual RICS-regulated reports per property, consolidated summary schedule, and managed annual indexation, under a single engagement.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
           </div>
@@ -88,7 +88,7 @@ export default function PortfolioPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Managing Agents', desc: 'Portfolio assessments across all blocks under management — individual reports and consolidated schedule.' },
+              { title: 'Managing Agents', desc: 'Portfolio assessments across all blocks under management, individual reports and consolidated schedule.' },
               { title: 'Institutional Investors', desc: 'Property funds and REITs requiring consistent RICS-regulated assessments across all UK assets.' },
               { title: 'Family Offices', desc: 'Private property portfolios requiring thorough, discreet, and professionally accountable assessments.' },
               { title: 'Freeholders', desc: 'Multiple freehold titles assessed under a single consolidated instruction with annual update service.' },

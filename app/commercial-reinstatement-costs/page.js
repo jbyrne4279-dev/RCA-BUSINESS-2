@@ -37,7 +37,7 @@ export default function CommercialPage() {
               { n: '35%+', label: 'rise in commercial build costs 2020–2024' },
               { n: '48 hrs', label: 'desktop assessment turnaround' },
               { n: '100%', label: 'of reports accepted by UK insurers' },
-              { n: 'RICS', label: 'regulated — every assessment, every time' },
+              { n: 'RICS', label: 'regulated, every assessment, every time' },
             ].map(({ n, label }) => (
               <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>

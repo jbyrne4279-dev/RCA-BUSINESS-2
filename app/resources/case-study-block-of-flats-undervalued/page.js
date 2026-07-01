@@ -15,7 +15,7 @@ export default function CaseStudyPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
             Block of flats undervalued by &pound;340,000.
           </h1>
-          <p className="text-[#5f6368] text-lg leading-relaxed">How it was discovered &mdash; and corrected &mdash; before a claim exposed the shortfall.</p>
+          <p className="text-[#5f6368] text-lg leading-relaxed">How it was discovered, and corrected, before a claim exposed the shortfall.</p>
         </div>
       </section>
 
@@ -24,19 +24,19 @@ export default function CaseStudyPage() {
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">Background</p>
-            <p>A 24-unit residential block in the South East had been insured using the original rebuild figure provided by the developer at the time of construction &mdash; eleven years earlier. The figure had been index-linked annually by the insurer, but had never been subject to a formal RICS reinstatement cost assessment. When the incoming managing agent instructed us to provide an assessment at the point of taking on the management mandate, the scale of the discrepancy became clear.</p>
+            <p>A 24-unit residential block in the South East had been insured using the original rebuild figure provided by the developer at the time of construction, eleven years earlier. The figure had been index-linked annually by the insurer, but had never been subject to a formal RICS reinstatement cost assessment. When the incoming managing agent instructed us to provide an assessment at the point of taking on the management mandate, the scale of the discrepancy became clear.</p>
           </div>
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">What We Found</p>
-            <p>Our desktop assessment &mdash; using current BCIS construction cost indices, a full floor area analysis, and regional build cost modelling &mdash; produced a reinstatement figure of &pound;2.34 million. The sum insured on the existing policy was &pound;2.00 million.</p>
-            <p className="mt-4">The shortfall was &pound;340,000 &mdash; a 17% underinsurance gap. Under the condition of average, which is standard in UK block building policies, any claim would have been reduced by 17% before settlement. On a total loss, leaseholders would have been exposed to a &pound;340,000 gap. On a partial claim of, say, &pound;150,000 for fire damage to one flat, they would have received only &pound;124,500.</p>
+            <p>Our desktop assessment, using current BCIS construction cost indices, a full floor area analysis, and regional build cost modelling, produced a reinstatement figure of &pound;2.34 million. The sum insured on the existing policy was &pound;2.00 million.</p>
+            <p className="mt-4">The shortfall was &pound;340,000, a 17% underinsurance gap. Under the condition of average, which is standard in UK block building policies, any claim would have been reduced by 17% before settlement. On a total loss, leaseholders would have been exposed to a &pound;340,000 gap. On a partial claim of, say, &pound;150,000 for fire damage to one flat, they would have received only &pound;124,500.</p>
           </div>
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">Why Index-Linking Was Not Enough</p>
-            <p>The insurer had applied their own annual index factor each year. This sounds prudent &mdash; and is better than no adjustment at all. But insurer index factors are generic: they reflect average build cost movements across the UK, not the specific construction type, specification, or location of this particular building. They also carry no RICS regulation and provide no professional accountability.</p>
-            <p className="mt-4">In this case, the original developer figure had also been calculated without including demolition costs, debris removal, and professional fees &mdash; which together typically add 15&ndash;20% to the bare rebuild cost. Index-linking an already-deficient base figure each year had simply compounded the gap.</p>
+            <p>The insurer had applied their own annual index factor each year. This sounds prudent, and is better than no adjustment at all. But insurer index factors are generic: they reflect average build cost movements across the UK, not the specific construction type, specification, or location of this particular building. They also carry no RICS regulation and provide no professional accountability.</p>
+            <p className="mt-4">In this case, the original developer figure had also been calculated without including demolition costs, debris removal, and professional fees, which together typically add 15&ndash;20% to the bare rebuild cost. Index-linking an already-deficient base figure each year had simply compounded the gap.</p>
           </div>
 
           <div>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'When Should Block Insurance Valuations Be Updated? | RCA Ltd',
-  description: 'RICS recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice — and when to instruct earlier.',
+  description: 'RICS recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice, and when to instruct earlier.',
   alternates: { canonical: '/resources/when-should-block-insurance-valuations-be-updated' },
 }
 
@@ -24,7 +24,7 @@ export default function WhenUpdatePage() {
 
           <div>
             <p className="text-xs font-semibold text-[#5f6368] uppercase tracking-[0.15em] mb-4">The RICS Position</p>
-            <p>RICS guidance notes on building reinstatement cost assessments state that formal professional assessments should be carried out at least every three years. In the intervening years, annual index-linking based on BCIS construction cost indices may be applied &mdash; but only as an interim measure between formal assessments, not as a permanent replacement for them.</p>
+            <p>RICS guidance notes on building reinstatement cost assessments state that formal professional assessments should be carried out at least every three years. In the intervening years, annual index-linking based on BCIS construction cost indices may be applied, but only as an interim measure between formal assessments, not as a permanent replacement for them.</p>
           </div>
 
           <div>
@@ -34,7 +34,7 @@ export default function WhenUpdatePage() {
 
           <div className="grid grid-cols-1 gap-5">
             {[
-              { title: 'Change of managing agent', desc: 'When a new managing agent takes on a block, they should establish the correct reinstatement figure independently — rather than inheriting a number they cannot vouch for.' },
+              { title: 'Change of managing agent', desc: 'When a new managing agent takes on a block, they should establish the correct reinstatement figure independently, rather than inheriting a number they cannot vouch for.' },
               { title: 'Significant construction cost inflation', desc: 'UK build costs rose over 30% between 2020 and 2024. Any figure assessed before 2022 should be treated as a priority for reassessment.' },
               { title: 'RTM or change of control', desc: 'When leaseholders exercise the Right to Manage and the insurance obligation transfers, a fresh RICS assessment should be the first action before the next renewal.' },
               { title: 'Material building works', desc: 'Extensions, structural alterations, significant communal area refurbishments, or major roof replacements all change the reinstatement cost and should trigger a reassessment.' },
