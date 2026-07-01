@@ -68,7 +68,7 @@ export default function ServicesPage() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[520px]">
             <Image
-              src="/services-hero.jpeg"
+              src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment, building survey"
               fill
               className="object-cover"

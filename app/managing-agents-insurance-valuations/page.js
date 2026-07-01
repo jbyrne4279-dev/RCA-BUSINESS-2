@@ -25,7 +25,7 @@ export default function ManagingAgentsPage() {
       {/* HERO */}
       <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/uk-rca-rics-surveyor.png" alt="RICS surveyor for managing agents" fill className="object-cover opacity-15" />
+          <Image src="/AdobeStock_544083541.jpeg" alt="RICS surveyor for managing agents" fill className="object-cover opacity-15" />
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

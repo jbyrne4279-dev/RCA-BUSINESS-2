@@ -26,7 +26,7 @@ export default function BlocksOfFlatsPage() {
       {/* HERO */}
       <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/rca-for-my-property.png" alt="Block of flats reinstatement cost assessment" fill className="object-cover opacity-15" />
+          <Image src="/AdobeStock_258095379.jpeg" alt="Block of flats reinstatement cost assessment" fill className="object-cover opacity-15" />
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -43,7 +43,7 @@ export default function BlocksOfFlatsPage() {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden h-72 md:h-80 lg:h-96 shadow-xl">
-            <Image src="/rca-for-my-property-london-rebuild.png" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
+            <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
           </div>
         </div>
       </section>

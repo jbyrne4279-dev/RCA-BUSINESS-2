@@ -40,7 +40,7 @@ export default function HomePage() {
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[480px]">
             <Image
-              src="/rebuild-cost-assessment-london.jpeg"
+              src="/AdobeStock_1477785304.jpeg"
               alt="Reinstatement cost assessment. London block of flats"
               fill
               className="object-cover"
@@ -150,7 +150,7 @@ export default function HomePage() {
       <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/rca-rics-surveyor.png"
+            src="/AdobeStock_1956380728.jpeg"
             alt="RICS surveyor carrying out a reinstatement cost assessment"
             fill
             className="object-cover opacity-20"
