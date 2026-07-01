@@ -6,6 +6,7 @@ import { useState } from 'react'
 
 const links = [
   { href: '/services', label: 'Services' },
+  { href: '/blocks-of-flats', label: 'Blocks of Flats' },
   { href: '/managing-agents-insurance-valuations', label: 'Managing Agents' },
   { href: '/resources', label: 'Resources' },
 ]
@@ -95,6 +96,20 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
+            <Link
+              href="/freeholders-leaseholders"
+              onClick={() => setOpen(false)}
+              className="py-3 text-sm font-medium text-[#1d1d1f]/70 hover:text-[#1d1d1f] transition-colors border-t border-black/[0.05]"
+            >
+              Freeholders & Leaseholders
+            </Link>
+            <Link
+              href="/listed-buildings"
+              onClick={() => setOpen(false)}
+              className="py-3 text-sm font-medium text-[#1d1d1f]/70 hover:text-[#1d1d1f] transition-colors border-t border-black/[0.05]"
+            >
+              Listed Buildings
+            </Link>
             <div className="pt-4 border-t border-black/[0.05]">
               <a href="tel:+442031788099" className="text-xs text-[#1d1d1f]/35 tracking-wide">020 3178 8099</a>
             </div>
