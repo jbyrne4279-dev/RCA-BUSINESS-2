@@ -1,0 +1,752 @@
+﻿
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3MHVWR8FGB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3MHVWR8FGB');
+  gtag('config', 'AW-11028386067');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#000000",
+                    "on-tertiary-fixed-variant": "#005235",
+                    "on-background": "#1a1c1d",
+                    "tertiary-fixed-dim": "#8ad6ae",
+                    "surface-container-low": "#f3f3f5",
+                    "surface-container-high": "#e8e8ea",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#e0dfe4",
+                    "surface-container-highest": "#e2e2e4",
+                    "surface-dim": "#d9dadc",
+                    "on-surface-variant": "#444748",
+                    "primary-container": "#1c1b1b",
+                    "tertiary-container": "#002113",
+                    "on-primary-fixed": "#1c1b1b",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "surface-variant": "#e2e2e4",
+                    "inverse-surface": "#2f3132",
+                    "primary": "#000000",
+                    "on-error-container": "#93000a",
+                    "on-error": "#ffffff",
+                    "on-surface": "#1a1c1d",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary-container": "#626267",
+                    "on-secondary-fixed-variant": "#46464b",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#a5f3c9",
+                    "on-tertiary-fixed": "#002113",
+                    "secondary-fixed": "#e3e2e7",
+                    "surface-container": "#eeeef0",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#c8c6c5",
+                    "primary-fixed": "#e5e2e1",
+                    "inverse-on-surface": "#f0f0f2",
+                    "background": "#f9f9fb",
+                    "outline": "#747878",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-secondary-fixed": "#1a1b1f",
+                    "secondary": "#5e5e63",
+                    "surface-bright": "#f9f9fb",
+                    "secondary-fixed-dim": "#c7c6cb",
+                    "surface": "#f9f9fb",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#5f5e5e",
+                    "on-primary-container": "#858383",
+                    "error": "#ba1a1a",
+                    "on-tertiary-container": "#46926e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .liquid-glass {
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(24px) saturate(180%);
+      }
+      .liquid-glass-dark {
+        background: rgba(26, 26, 26, 0.45);
+        backdrop-filter: blur(24px) saturate(180%);
+      }
+      .sovereign-shadow {
+        box-shadow: 0 8px 40px rgba(26, 26, 26, 0.08);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation -->
+<header class="sticky top-0 w-full bg-white/55 dark:bg-neutral-900/55 backdrop-blur-[24px] saturate-[180%] z-50 transition-colors duration-300">
+<nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold text-zinc-900 dark:text-white tracking-tighter">
+                RCA-LTD
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-700 dark:border-emerald-400 pb-1 font-semibold tracking-tight" href="index.html">Home</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all font-semibold tracking-tight" href="services.html">Services</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all font-semibold tracking-tight" href="resources.html">Resources</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all font-semibold tracking-tight" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform">
+                Get a Quote
+            </a>
+</nav>
+</header>
+<main>
+<!-- Section 1: Hero -->
+<style>
+  @keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .btn-shine {
+    background: linear-gradient(105deg, #1A6B4A 40%, #4ade80 50%, #1A6B4A 60%);
+    background-size: 200% auto;
+    animation: shine 20s linear infinite;
+  }
+</style>
+
+<!-- Section 1: Hero -->
+<section class="bg-surface-container-low py-24 md:py-32 px-8">
+  <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-8">
+    <h1 class="text-5xl md:text-[5rem] font-bold leading-[1.05] tracking-tight text-primary">
+      <span class="text-shine-red">80%</span> of UK buildings are <span class="text-shine-red">underinsured.</span><br>
+      <span class="text-3xl md:text-4xl font-semibold text-secondary mt-4 block">Is yours one of them?</span>
+    </h1>
+    <p class="text-xl text-secondary max-w-lg leading-relaxed">
+      We provide RICS-regulated Reinstatement Cost Assessments. Giving you the exact figure that protects your assets.
+    </p>
+    <div class="flex flex-wrap gap-4 justify-center pt-4">
+      <a href="contact.html" class="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow">
+        Get your RCA
+      </a>
+      <a href="resources.html" class="bg-white/50 backdrop-blur-md px-8 py-4 rounded-full font-bold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-primary/10">
+        Do I need a RCA?
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Decorative back element -->
+<div class="absolute -z-10 -bottom-6 -right-6 w-full h-full bg-[#1A6B4A]/5 rounded-xl"></div>
+</div>
+</div>
+</section>
+
+<style>
+  .text-shine-slow {
+    background: linear-gradient(
+      105deg,
+      #1A6B4A 40%,
+      #4ade80 50%,
+      #1A6B4A 60%
+    );
+    background-size: 200% auto;
+    animation: shine 20s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
+
+<!-- Section 3: What is an RCA -->
+<section class="bg-surface py-32 px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+    <div class="space-y-12">
+      <div class="space-y-6">
+        <span class="text-sm font-bold text-[#1A6B4A] uppercase tracking-[0.2em]">The Framework</span>
+<h2 class="text-4xl md:text-[3.25rem] font-semibold leading-tight text-primary">What is a <span class="text-shine-slow">Rebuild Cost Assessment?</span></h2>
+        <p class="text-lg text-secondary leading-relaxed">
+          A Rebuild Cost Assessment (RCA) is a detailed professional calculation of the exact cost to rebuild a property from scratch after total destruction.
+        </p>
+        <p class="text-lg text-secondary leading-relaxed">
+          Unlike generic valuations, our RICS-regulated process accounts for regional labor costs, current material inflation, and professional fees, ensuring your insurance policy is built on facts, not estimates.
+        </p>
+      </div>
+      <img class="w-full h-80 object-cover rounded-xl sovereign-shadow" data-alt="architectural blueprint overlay on a modern sustainable timber building structure under construction with clear blue sky background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjNFcUmx4iVvKMaS5g4eXg4Y_kYPhasFXI9CfrwkuXePz-zXktmWxY_8A6eoHAZ7b-9pc3OeQ86ld0lqAe_FJnUqQKX3KS7-FSvhAzRA5LQN11WgNDP46WcOj7VHd0Sb3fHYdzX2HtSxealWxBV5G-mHdGLmAiGWF4IplVSfjeC0t5C2UkC75dXoYETgDQj156ib13jDhbSSXCYt_pJbE7TwlTdIoCyruaS5_R-BmDJ1fnx7aq1ePMjk5MYgKfxisK9uGQjVGy3t4"/>
+    </div>
+    <div class="space-y-6">
+      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+        <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">1</span>
+        <h4 class="text-xl font-bold mb-2">Instruct</h4>
+        <p class="text-secondary">Provide basic property details through our secure digital portal or request an on-site survey.</p>
+      </div>
+      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+        <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">2</span>
+        <h4 class="text-xl font-bold mb-2">Assess</h4>
+        <p class="text-secondary">Our experts use RICS-certified data to analyze structural elements, materials, and external site features.</p>
+      </div>
+      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+        <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">3</span>
+        <h4 class="text-xl font-bold mb-2">Report</h4>
+        <p class="text-secondary">Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.</p>
+      </div>
+      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+        <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">4</span>
+        <h4 class="text-xl font-bold mb-2">Correct</h4>
+        <p class="text-secondary">Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes shine-red {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .text-shine-red {
+    background: linear-gradient(105deg, #991b1b 40%, #f87171 50%, #991b1b 60%);
+    background-size: 200% auto;
+    animation: shine-red 20s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
+
+
+
+
+
+
+
+<!-- The Problem Section -->
+<section class="py-24 px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="liquid-glass rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-16 border border-[#1A6B4A]/30 shadow-[0_0_40px_6px_rgba(26,107,74,0.10)] sovereign-shadow">
+
+      <div class="absolute top-0 right-0 w-96 h-96 bg-[#1A6B4A]/08 rounded-full -mr-48 -mt-48 blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#1A6B4A]/06 rounded-full -ml-32 mb-[-8rem] blur-3xl pointer-events-none"></div>
+
+      <!-- Left: Copy -->
+      <div class="md:w-1/2 space-y-6 relative z-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">The Problem</span>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">The Risk of <span class="text-[#1A6B4A]">Underinsurance.</span></h2>
+        <p class="text-lg text-secondary leading-relaxed">
+          Recent data suggests that over <span class="font-semibold text-primary">80%</span> of UK commercial properties are inadequately insured. In the event of a total loss, the financial gap can be catastrophic for owners and investors alike.
+        </p>
+        <div class="grid grid-cols-2 gap-8 pt-4">
+          <div class="space-y-2">
+            <span class="text-4xl font-bold text-shine-red">£425bn</span>
+            <p class="text-xs font-bold text-secondary uppercase tracking-widest">Estimated Gap</p>
+          </div>
+          <div class="space-y-2">
+            <span class="text-4xl font-bold text-shine-red">80%+</span>
+            <p class="text-xs font-bold text-secondary uppercase tracking-widest">Underinsured</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Info cards -->
+      <div class="md:w-1/2 space-y-5 relative z-10">
+
+        <div class="liquid-glass rounded-2xl p-7 border border-red-400/20 shadow-[0_0_18px_2px_rgba(239,68,68,0.08)] hover:shadow-[0_0_28px_4px_rgba(239,68,68,0.15)] hover:border-red-400/40 transition-all duration-300 flex items-start gap-5">
+          <div class="shrink-0 w-10 h-10 rounded-full bg-red-500/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-red-400 text-xl">report</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-1">Financial Consequences</h4>
+            <p class="text-sm text-secondary leading-relaxed">The 'Condition of Average' clause means if you are <span class="font-semibold text-primary">20% underinsured</span>, your claim payout could be reduced by the same amount, even for partial damage.</p>
+          </div>
+        </div>
+
+        <div class="liquid-glass rounded-2xl p-7 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300 flex items-start gap-5">
+          <div class="shrink-0 w-10 h-10 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[#1A6B4A] text-xl" style="font-variation-settings:'FILL' 1;">verified</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-primary mb-1">Our Resolution</h4>
+            <p class="text-sm text-secondary leading-relaxed">We provide RICS-regulated Reinstatement Cost Assessments that align with current construction costs and inflationary trends, giving you a figure you can rely on.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Why RCA Ltd -->
+
+<style>
+  @keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .text-shine {
+    background: linear-gradient(
+      105deg,
+      #1A6B4A 40%,
+      #4ade80 50%,
+      #1A6B4A 60%
+    );
+    background-size: 200% auto;
+    animation: shine 20s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+</style>
+
+
+<section class="py-24 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="relative">
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+        <img class="rounded-xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]" data-alt="Professional chartered surveyor in business attire reviewing architectural blueprints in a bright modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWItcC8v66o-s9bC9mNHI66TaDd3NFgyOp2ibu_8afpGEuK9j9erHt0Amq7E8BKl3IhxLVcHFN8fE7GaEf_iFn8tth3VSRSmsOrH81GqWMT7ow9RgHZOoAwZ_QSVox8E2GiZxblnD_FmK2Z5AMVuC-tcfKvRXFcLa-DSjLtruJ1xLV6XmgES9Arz03vSBpr1p2S_Xrw3HI3JP8AvkH3euKbvezG9g9-l8euF2k8PuL7vyHH8rzfKhT4erkdbWvEK8emFBYU8aPOek">
+        <div class="absolute -bottom-6 -right-6 liquid-glass p-6 rounded-lg z-20 hidden md:block">
+          <div class="flex items-center gap-4">
+            <div class="btn-shine w-12 h-12 rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">verified_user</span>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest text-secondary font-bold">Regulation</p>
+              <p class="font-bold text-primary">RICS Authenticated</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-12">
+        <div>
+<h2 class="text-4xl font-bold tracking-tight mb-6">Why <span class="text-shine">RCA Ltd?</span></h2>
+          <p class="text-secondary text-lg leading-relaxed">
+            With over 50 years of collective experience, we have refined a methodology that balances technical precision with high-end client care.
+          </p>
+        </div>
+
+        <div class="space-y-8">
+
+          <div class="flex gap-6">
+            <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">history</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl mb-2 text-[#1A6B4A]">50+ Years Experience</h4>
+              <p class="text-secondary">Decades of navigating evolving building codes, material costs, and insurance market shifts.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">precision_manufacturing</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl mb-2 text-[#1A6B4A]">Technical Precision</h4>
+              <p class="text-secondary">Utilising proprietary BCIS data and advanced surveying technology to eliminate guesswork.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">policy</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-xl mb-2 text-[#1A6B4A]">Liability Protection</h4>
+              <p class="text-secondary">Our reports are legally robust, providing a definitive shield against professional indemnity disputes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Who We Serve -->
+<section class="py-24 px-8 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-4xl font-extrabold tracking-tight mb-4" style="">Who We Serve</h2>
+<p class="text-on-surface-variant leading-relaxed" style="">Dedicated expertise for every tier of the property market, from individual legacy homes to sprawling institutional portfolios.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-xl h-96">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxurious traditional British country home with manicured lawns at dusk with warm internal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-white text-2xl font-bold mb-2" style="">Homeowners</h4>
+<p class="text-white/80 text-sm" style="">Protecting your legacy and ensuring accurate coverage for bespoke architectural features.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-96">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end modern office interior with glass partitions, sleek furniture and reflective marble floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-white text-2xl font-bold mb-2" style="">Commercial Landlords</h4>
+<p class="text-white/80 text-sm" style="">Minimizing business interruption risks and maintaining rigorous compliance standards.</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-96">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional boardroom table with architectural plans and digital tablets indicating asset management work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU" style="">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-white text-2xl font-bold mb-2" style="">Asset Managers</h4>
+<p class="text-white/80 text-sm" style="">Streamlined reporting and audit-ready data for multi-national property portfolios.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section class="bg-surface-container-low py-20 my-16 mx-4 md:mx-8 rounded-3xl">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+
+      <!-- Left: Contact Form -->
+      <div>
+        <div class="mb-12 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] block">Get In Touch</span>
+          <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-primary">Start Your Assessment</h2>
+          <div class="inline-flex items-center gap-3 bg-[#1A6B4A]/10 px-5 py-2.5 rounded-full border border-[#1A6B4A]/20">
+            <span class="material-symbols-outlined text-[#1A6B4A]" style="font-size:1rem;">bolt</span>
+            <span class="text-[#1A6B4A] font-bold text-xs tracking-widest uppercase">24 Hour Response Promise</span>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/xkokvlpr" method="POST" class="space-y-10">
+          <input type="hidden" name="_next" value="https://reinstatementcostassessment.org/thank-you">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Full Name <span class="text-red-400">*</span></label>
+              <input name="name" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" placeholder="John Smith" type="text"/>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Email Address <span class="text-red-400">*</span></label>
+              <input name="email" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" placeholder="john@example.com" type="email"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Phone Number</label>
+              <input name="phone" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" placeholder="+44 7700 900000" type="tel"/>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Company</label>
+              <input name="company" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" placeholder="London Estates Ltd" type="text"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Property Type</label>
+              <div class="relative">
+                <select name="property_type" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base appearance-none bg-none cursor-pointer py-2 transition-all">
+                  <option value="" disabled selected>Select type</option>
+                  <option>Commercial</option>
+                  <option>Residential</option>
+                  <option>Industrial</option>
+                  <option>Listed Building</option>
+                  <option>Mixed-Use</option>
+                  <option>Other</option>
+                </select>
+                <span class="material-symbols-outlined text-[#1A6B4A] absolute right-0 top-1.5 pointer-events-none" style="font-size:1rem;">expand_more</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">No. of Properties</label>
+              <input name="num_properties" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all" placeholder="1" type="number" min="1"/>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Service Needed</label>
+            <div class="relative">
+              <select name="service" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base appearance-none bg-none cursor-pointer py-2 transition-all">
+                <option value="" disabled selected>Select a service</option>
+                <option>Desktop Assessment - £210</option>
+                <option>3-Year Protection - £298.15</option>
+                <option>On-Site Survey - From £675</option>
+                <option>Portfolio Assessment</option>
+                <option>Not Sure</option>
+              </select>
+              <span class="material-symbols-outlined text-[#1A6B4A] absolute right-0 top-1.5 pointer-events-none" style="font-size:1rem;">expand_more</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <label class="text-[10px] font-bold text-[#1A6B4A] uppercase tracking-widest">Notes</label>
+            <textarea name="notes" class="w-full bg-transparent border-b-2 border-outline-variant focus:border-[#1A6B4A] outline-none text-primary text-base placeholder:text-secondary/30 py-2 transition-all resize-none" placeholder="Briefly describe your property and requirements..." rows="4"></textarea>
+          </div>
+
+          <p class="text-[10px] text-secondary/50 -mt-4"><span class="text-red-400">*</span> Required fields</p>
+
+          <div>
+            <button class="btn-shine w-full text-white py-4 rounded-full font-bold text-base active:scale-[0.97] transition-transform sovereign-shadow">
+              Request Consultation
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="space-y-6">
+
+        <!-- Surveyor card -->
+        <div class="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
+          <div class="flex items-center gap-5 mb-8">
+            <img class="w-16 h-16 rounded-xl object-cover sovereign-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d72qR4-i-yGafkqrWIDL9pAhkvGNZCOrFhVLpv9083wCMx7sq2Y2KV38gNwy8EdxBiZ2J_jWdh6tNDVhMdT3OK-c-oiztkFuFnoJJsOAaQr6QZv-MySrs3nM_LeLRvGYkQvog11s67XHENlLCLFUqs0oPgKM_ZmvrR10m7AFruj0qVfsUyVkyPg5SKZSe0-gWL43p-9jzQi-3rGljOYSHpv8AdVW8sABDM0tNXww5XJ1smfQySJcH_lUjGdo2lMlAYVmcw74gg"/>
+            <div>
+              <h4 class="text-lg font-bold text-primary">Expert Lead Surveyor</h4>
+              <p class="text-[#1A6B4A] text-sm font-semibold">Head of Practice</p>
+            </div>
+          </div>
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#1A6B4A]" style="font-size:1rem;">call</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">Phone</p>
+                <p class="text-primary font-medium">+44 (0) 20 7946 0123</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#1A6B4A]" style="font-size:1rem;">mail</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">Email</p>
+                <p class="text-primary font-medium">consult@rcasurveying.co.uk</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="shrink-0 w-9 h-9 rounded-full bg-[#1A6B4A]/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-[#1A6B4A]" style="font-size:1rem;">location_on</span>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-secondary uppercase tracking-widest mb-0.5">London HQ</p>
+                <p class="text-primary font-medium">15 Savile Row, Mayfair, London W1S 3PJ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- Mapbox Map -->
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+<div id="rca-map" class="relative h-[280px] w-full rounded-2xl overflow-hidden sovereign-shadow border border-[#1A6B4A]/20"></div>
+<script>
+  mapboxgl.accessToken = 'YOUR_MAPBOX_TOKEN';
+  const map = new mapboxgl.Map({
+    container: 'rca-map',
+    style: 'mapbox://styles/mapbox/satellite-streets-v12',
+    center: [-0.14765, 51.51358],
+    zoom: 17,
+    pitch: 0,
+    bearing: 0,
+    attributionControl: false
+  });
+  map.addControl(new mapboxgl.AttributionControl({ compact: true }));
+  map.scrollZoom.disable();
+  map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+  const el = document.createElement('div');
+  el.innerHTML = `
+    <div style="
+      background: linear-gradient(105deg, #1A6B4A 40%, #4ade80 50%, #1A6B4A 60%);
+      background-size: 200% auto;
+      animation: shine 20s linear infinite;
+      color: white;
+      font-family: Inter, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      box-shadow: 0 4px 20px rgba(26,107,74,0.4);
+      cursor: pointer;
+    ">RCA Ltd</div>
+    <div style="width:2px;height:10px;background:#1A6B4A;margin:0 auto;"></div>
+    <div style="width:8px;height:8px;background:#1A6B4A;border-radius:50%;margin:0 auto;box-shadow:0 0 0 3px rgba(26,107,74,0.3);"></div>
+  `;
+  new mapboxgl.Marker({ element: el, anchor: 'bottom' })
+    .setLngLat([-0.14765, 51.51358])
+    .addTo(map);
+</script>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 my-16 mx-4 md:mx-8 bg-surface-container-low rounded-3xl">
+<div class="max-w-6xl mx-auto px-8">
+    <div class="text-center mb-20">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4 block">Got Questions?</span>
+      <h2 class="text-5xl font-bold tracking-tight text-primary">Frequently Asked Questions</h2>
+      <p class="text-secondary mt-4 max-w-xl mx-auto leading-relaxed">Everything you need to know about Reinstatement Cost Assessments, RICS compliance, and how we protect your assets.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">How much does a typical RCA cost?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">How often should I update my RCA?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">RICS recommends a full RCA every 3 years, with annual desktop indexing in between, accounting for sharp rises in construction materials and labour rates.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">What are the risks of under-insurance?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20%, leaving a major shortfall in a total loss scenario.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Does a market valuation work for insurance?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild, including demolition, fees, and modern materials. They are rarely the same.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Are VAT costs included in the assessment?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Do you assess listed buildings?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Absolutely. Listed buildings require specialist RCA knowledge, authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">How long does a site visit take?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Can you provide RCAs for a multi-asset portfolio?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Do RCAs cover outbuildings and fences?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">Yes. Our assessments include curtilage assets, external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
+        <h3 class="text-base font-bold text-primary leading-snug">Is the 48-hour turnaround guaranteed?</h3>
+        <div>
+          <p class="text-secondary text-sm leading-relaxed">For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-[#0A0A0F] text-zinc-500 py-20 px-12 rounded-t-[24px]">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="text-lg font-bold text-white uppercase tracking-widest">REBUILDCOST</div>
+<p class="text-sm leading-relaxed">Providing the standard for building reinstatement valuations across the UK insurance market.</p>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Services</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Residential Services</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Commercial Services</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Valuation Guides</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6">Audiences</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-emerald-400 transition-colors" href="#">For Insurers</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">For Brokers</a></li>
+<li><a class="hover:text-emerald-400 transition-colors" href="#">Contact Support</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-white font-bold mb-6">Regulation</h5>
+<p class="text-xs">Regulated by RICS. Professional indemnity cover in place for all assessments.</p>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">shield</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
+<p>© 2024 RebuildCostAssessment.com. RICS Regulated. Part of RiskSTOP Group.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+</div>
+</div>
+</footer>
+</body></html>

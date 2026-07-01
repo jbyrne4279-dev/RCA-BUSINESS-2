@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  /* Google Material Design 3 colour tokens */
+  --color-primary:          #1a73e8;
+  --color-primary-dark:     #1557b0;
+  --color-primary-light:    #e8f0fe;
+  --color-surface:          #ffffff;
+  --color-surface-variant:  #f8f9fa;
+  --color-on-surface:       #202124;
+  --color-secondary-text:   #5f6368;
+  --color-outline:          #dadce0;
+  --color-dark:             #202124;
+
+  /* Font tokens — Inter throughout, no serif */
+  --font-headline: var(--font-inter), system-ui, sans-serif;
+  --font-body:     var(--font-inter), system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+/* ── Filled primary button (Google style) ── */
+.btn-shine {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.625rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+.btn-shine:hover  { background: #1557b0; box-shadow: 0 1px 4px rgba(26,115,232,0.4); }
+.btn-shine:active { transform: scale(0.98); }
+
+/* ── Outlined button ── */
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #1a73e8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.625rem 1.5rem;
+  border-radius: 6px;
+  border: 1.5px solid #dadce0;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+.btn-ghost:hover  { background: #e8f0fe; border-color: #1a73e8; }
+.btn-ghost:active { transform: scale(0.98); }
+
+/* ── Text link / inline CTA ── */
+.link-amber {
+  color: #1a73e8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  transition: color 0.15s ease, gap 0.15s ease;
+}
+.link-amber:hover { color: #1557b0; gap: 0.5em; }
+
+/* ── Fade-up on scroll (CSS scroll-driven, Chrome 115+; graceful fallback elsewhere) ── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.scroll-reveal {
+  animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 28%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal { animation: none !important; opacity: 1 !important; }
+}
+
+/* ── Hover lift ── */
+.hover-lift {
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(60,64,67,0.18);
+}
+
+/* ── Button press ripple feel ── */
+.btn-shine, .btn-ghost {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::after, .btn-ghost::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.btn-shine:hover::after { opacity: 1; }
+.btn-ghost:hover::after { background: radial-gradient(circle, rgba(26,115,232,0.08) 0%, transparent 70%); opacity: 1; }
+
+/* ── Card border glow on hover ── */
+.card-glow {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.card-glow:hover {
+  border-color: #1a73e8 !important;
+  box-shadow: 0 0 0 3px rgba(26,115,232,0.12);
+}
+
+/* ── Logo shimmer ── */
+@keyframes logo-sheen {
+  0%        { transform: translateX(-140%) skewX(-18deg); }
+  60%, 100% { transform: translateX(260%)  skewX(-18deg); }
+}
+.logo-shine { position: relative; display: inline-block; overflow: hidden; }
+.logo-shine::after {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 40%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5) 50%, transparent);
+  transform: translateX(-140%) skewX(-18deg);
+  animation: logo-sheen 5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ── Legacy aliases ── */
+.btn-amber        { background: #1a73e8; color: #fff; border-radius: 6px; }
+.rule-amber       { height: 2px; width: 32px; background: #1a73e8; display: block; }
+.step-circle      { width: 2rem; height: 2rem; border-radius: 50%; background: #1a73e8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; flex-shrink: 0; }
+.grow-card        {}
+.card-shadow      { box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px rgba(60,64,67,0.15); }
+.sovereign-shadow { box-shadow: 0 2px 8px rgba(60,64,67,0.2); }
+.hover-grow       { transition: transform 0.2s ease; }
+.hover-grow:hover { transform: translateY(-2px); }
+.pricing-card     { transition: box-shadow 0.2s ease, transform 0.2s ease; border-radius: 12px; }
+.pricing-card:hover { box-shadow: 0 4px 16px rgba(60,64,67,0.2); transform: translateY(-2px); }
+.text-shine       { color: #1a73e8; }
+.text-shine-slow  { color: #1a73e8; }
+.liquid-glass     { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); }
+.animate-scroll-reviews { display: flex; }
+[class^="lifecycle-ring-"]   {}
+[class^="lifecycle-border-"] {}
+[class^="method-ring-"]      {}
+
+/* ── Electric blue tick glow ── */
+@keyframes tick-pulse {
+  0%, 100% {
+    text-shadow:
+      0 0 4px rgba(41, 121, 255, 0.9),
+      0 0 10px rgba(41, 121, 255, 0.6),
+      0 0 20px rgba(41, 121, 255, 0.3);
+  }
+  50% {
+    text-shadow:
+      0 0 8px rgba(41, 121, 255, 1),
+      0 0 20px rgba(41, 121, 255, 0.85),
+      0 0 40px rgba(41, 121, 255, 0.55),
+      0 0 60px rgba(41, 121, 255, 0.25);
+  }
+}
+.tick-glow {
+  color: #2979ff;
+  animation: tick-pulse 2s ease-in-out infinite;
+}
+
+/* ── Card hover enlarge ── */
+.card-hover {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  will-change: transform;
+}
+.card-hover:hover {
+  transform: scale(1.025);
+  box-shadow: 0 4px 20px rgba(60,64,67,0.13);
+}
+
+/* ── Infinite review marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
