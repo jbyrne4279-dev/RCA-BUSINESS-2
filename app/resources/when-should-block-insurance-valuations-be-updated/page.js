@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'When Should Block Insurance Valuations Be Updated? | RCA Ltd',
+  title: 'When Should Block Insurance Valuations Be Updated? | Cavendish & Rowe',
   description: 'RICS recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice, and when to instruct earlier.',
   alternates: { canonical: '/resources/when-should-block-insurance-valuations-be-updated' },
 }

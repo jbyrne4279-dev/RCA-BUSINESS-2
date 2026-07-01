@@ -24,7 +24,7 @@ export default function Navbar() {
         <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2 logo-shine">
           <Image
             src="/rca-logo-reinstatement-cost-assessment.png"
-            alt="RCA Ltd"
+            alt="Cavendish & Rowe"
             width={80}
             height={64}
             priority

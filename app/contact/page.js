@@ -2,8 +2,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Contact RCA Ltd | Instruct a Reinstatement Cost Assessment',
-  description: 'Contact Reinstatement Cost Assessment Ltd to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
+  title: 'Contact Cavendish & Rowe | Instruct a Reinstatement Cost Assessment',
+  description: 'Contact Cavendish & Rowe to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
   alternates: { canonical: '/contact' },
 }
 
@@ -48,7 +48,7 @@ export default function ContactPage() {
       </section>
 
       <ContactSection heading="Send us your instruction." />
-      <FaqSection description="Common questions about instructing Reinstatement Cost Assessment Ltd." items={faqItems} />
+      <FaqSection description="Common questions about instructing Cavendish & Rowe." items={faqItems} />
     </main>
   )
 }

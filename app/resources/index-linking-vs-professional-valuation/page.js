@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Index-Linking vs Professional Revaluation | RCA Ltd',
+  title: 'Index-Linking vs Professional Revaluation | Cavendish & Rowe',
   description: 'Annual index-linking adjusts your sum insured but does not replace a RICS assessment. Here is what the difference means for managing agents and freeholders.',
   alternates: { canonical: '/resources/index-linking-vs-professional-valuation' },
 }

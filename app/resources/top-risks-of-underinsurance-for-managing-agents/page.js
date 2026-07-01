@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Top 5 Underinsurance Risks for Managing Agents | RCA Ltd',
+  title: 'Top 5 Underinsurance Risks for Managing Agents | Cavendish & Rowe',
   description: 'The five most common underinsurance risks managing agents face, and the assessment type that eliminates each one.',
   alternates: { canonical: '/resources/top-risks-of-underinsurance-for-managing-agents' },
 }
@@ -59,7 +59,7 @@ export default function TopRisksPage() {
 
           <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-8">
             <p className="font-semibold text-[#202124] text-sm mb-3">Eliminate all five risks in one instruction.</p>
-            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from RCA Ltd establishes the correct figure from scratch, using live BCIS data and a documented professional methodology, and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
+            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from Cavendish &amp; Rowe establishes the correct figure from scratch, using live BCIS data and a documented professional methodology, and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
         </div>

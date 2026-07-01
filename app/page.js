@@ -279,7 +279,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { quote: 'Instructing Reinstatement Cost Assessment Ltd has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
+              { quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
               { quote: 'After our RTM we needed to establish the correct reinstatement figure from scratch. The team came back quickly with a robust RICS report and real confidence going into our first renewal.', name: 'Michael T.', role: 'RTM Company Director, Surrey' },
               { quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. The assessment was sorted within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
             ].map(({ quote, name, role }) => (

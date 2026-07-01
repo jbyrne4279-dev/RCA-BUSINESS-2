@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Enquiry Received | Reinstatement Cost Assessment Ltd',
-  description: 'Thank you for your enquiry. RCA Ltd will respond within 24 hours.',
+  title: 'Enquiry Received | Cavendish & Rowe',
+  description: 'Thank you for your enquiry. Cavendish & Rowe will respond within 24 hours.',
 }
 
 export default function ThankYouPage() {

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Block of Flats Undervalued by £340,000 | RCA Ltd Case Study',
+  title: 'Block of Flats Undervalued by £340,000 | Cavendish & Rowe Case Study',
   description: 'A 24-unit residential block had been insured using the developer’s original rebuild estimate for eleven years. Our RICS assessment revealed a £340,000 shortfall.',
   alternates: { canonical: '/resources/case-study-block-of-flats-undervalued' },
 }

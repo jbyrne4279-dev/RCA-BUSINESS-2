@@ -3,7 +3,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Block Managers | RCA Ltd',
+  title: 'Reinstatement Cost Assessments for Block Managers | Cavendish & Rowe',
   description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
 }

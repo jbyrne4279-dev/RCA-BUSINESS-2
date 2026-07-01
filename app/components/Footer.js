@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <Image
               src="/rca-logo-reinstatement-cost-assessment.png"
-              alt="RCA Ltd"
+              alt="Cavendish &amp; Rowe"
               width={80}
               height={64}
               className="h-9 w-auto object-contain invert opacity-80"
@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-[#9aa0a6]/50">
-          <p>&copy; 2025 Reinstatement Cost Assessment Ltd &middot; Company No. 17101918</p>
+          <p>&copy; 2025 Cavendish &amp; Rowe &middot; Company No. 17101918</p>
           <p>RICS Regulated Firm &middot; Part of RiskSTOP Group</p>
         </div>
       </div>
