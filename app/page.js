@@ -276,6 +276,8 @@ export default function HomePage() {
         <ReviewCarousel />
       </section>
 
+      <ContactSection heading="Check your sum insured. Commission an assessment." />
+
       {/* RESOURCES */}
       <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
@@ -304,8 +306,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <ContactSection heading="Check your sum insured. Commission an assessment." />
       <FaqSection
         description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."
         items={faqItems}
