@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)",
+      "Read(//c/Users/jbyrn/Desktop/**)",
+      "Bash(git commit -m ' *)",
+      "Bash(cp \"C:/Users/jbyrn/Desktop/reinstatement-cost-assessment-uk.png\" \"C:/Users/jbyrn/Desktop/joe-website/.claude/worktrees/quizzical-carson-cf8ea2/public/reinstatement-cost-assessment-uk.png\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)"
+    ]
+  }
+}

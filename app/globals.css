@@ -1,0 +1,518 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom brand colors */
+  --color-tertiary: #000000;
+  --color-on-tertiary-fixed-variant: #005235;
+  --color-on-background: #1a1c1d;
+  --color-tertiary-fixed-dim: #8ad6ae;
+  --color-surface-container-low: #f3f3f5;
+  --color-surface-container-high: #e8e8ea;
+  --color-on-primary: #ffffff;
+  --color-secondary-container: #e0dfe4;
+  --color-surface-container-highest: #e2e2e4;
+  --color-surface-dim: #d9dadc;
+  --color-on-surface-variant: #444748;
+  --color-primary-container: #1c1b1b;
+  --color-tertiary-container: #002113;
+  --color-on-primary-fixed: #1c1b1b;
+  --color-primary-fixed-dim: #c8c6c5;
+  --color-surface-variant: #e2e2e4;
+  --color-inverse-surface: #2f3132;
+  --color-primary: #000000;
+  --color-on-error-container: #93000a;
+  --color-on-error: #ffffff;
+  --color-on-surface: #1a1c1d;
+  --color-outline-variant: #c4c7c7;
+  --color-on-secondary-container: #626267;
+  --color-on-secondary-fixed-variant: #46464b;
+  --color-on-tertiary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-tertiary-fixed: #a5f3c9;
+  --color-on-tertiary-fixed: #002113;
+  --color-secondary-fixed: #e3e2e7;
+  --color-surface-container: #eeeef0;
+  --color-error-container: #ffdad6;
+  --color-inverse-primary: #c8c6c5;
+  --color-primary-fixed: #e5e2e1;
+  --color-inverse-on-surface: #f0f0f2;
+  --color-background: #f9f9fb;
+  --color-outline: #747878;
+  --color-on-primary-fixed-variant: #474746;
+  --color-on-secondary-fixed: #1a1b1f;
+  --color-secondary: #5e5e63;
+  --color-surface-bright: #f9f9fb;
+  --color-secondary-fixed-dim: #c7c6cb;
+  --color-surface: #f9f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-tint: #5f5e5e;
+  --color-on-primary-container: #858383;
+  --color-error: #ba1a1a;
+  --color-on-tertiary-container: #46926e;
+
+  /* Custom border radius */
+  --radius: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+
+  /* Custom font families */
+  --font-headline: var(--font-inter), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  --font-label: var(--font-inter), sans-serif;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glass effect */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px) saturate(180%);
+}
+
+.liquid-glass-dark {
+  background: rgba(26, 26, 26, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+}
+
+/* Shadow */
+.sovereign-shadow {
+  box-shadow: 0 8px 40px rgba(26, 26, 26, 0.08);
+}
+
+/* Keyframes */
+@keyframes shine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes shine-red {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pill-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(26, 107, 74, 0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(26, 107, 74, 0.08); }
+}
+
+/* Animated gradient classes */
+.btn-shine {
+  background: linear-gradient(105deg, #1A6B4A 40%, #4ade80 50%, #1A6B4A 60%);
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+}
+
+.text-shine-slow {
+  background: linear-gradient(105deg, #1A6B4A 40%, #4ade80 50%, #1A6B4A 60%);
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-shine {
+  background: linear-gradient(105deg, #1A6B4A 40%, #4ade80 50%, #1A6B4A 60%);
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-shine-red {
+  background: linear-gradient(105deg, #991b1b 40%, #f87171 50%, #991b1b 60%);
+  background-size: 200% auto;
+  animation: shine-red 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-shine-yellow {
+  background: linear-gradient(105deg, #eab308 40%, #fef08a 50%, #eab308 60%);
+  background-size: 200% auto;
+  animation: shine 20s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pop-in {
+  animation: pop-in 0.5s ease-out forwards;
+}
+
+.pill-pulse {
+  animation: pill-pulse 3s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@keyframes float-card {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.float-card {
+  /* animation removed */
+}
+
+@keyframes scroll-reviews {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-reviews {
+  animation: scroll-reviews 40s linear infinite;
+}
+
+.animate-scroll-reviews:hover {
+  animation-play-state: paused;
+}
+
+@keyframes logo-sheen {
+  0% { transform: translateX(-140%) skewX(-18deg); }
+  60%, 100% { transform: translateX(260%) skewX(-18deg); }
+}
+
+.logo-levitate {
+  animation: levitate 3.5s ease-in-out infinite;
+}
+
+.logo-shine {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.75) 50%, transparent 100%);
+  transform: translateX(-140%) skewX(-18deg);
+  animation: logo-sheen 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes card-sheen {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.service-card-reveal {
+  transition: scale 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.service-card-reveal:hover,
+.service-card-shine:hover {
+  scale: 1.015;
+  transition: scale 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.service-card-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.07) 50%, transparent 100%);
+  transform: translateX(-160%) skewX(-18deg);
+  animation: logo-sheen 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes reveal-from-below {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.service-card-reveal {
+  animation: reveal-from-below linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+
+.service-subcard-reveal-1 {
+  animation: reveal-from-below linear both;
+  animation-timeline: view();
+  animation-range: entry 5% entry 42%;
+}
+
+.service-subcard-reveal-2 {
+  animation: reveal-from-below linear both;
+  animation-timeline: view();
+  animation-range: entry 10% entry 47%;
+}
+
+.service-subcard-reveal-3 {
+  animation: reveal-from-below linear both;
+  animation-timeline: view();
+  animation-range: entry 15% entry 52%;
+}
+
+.service-subcard-reveal-4 {
+  animation: reveal-from-below linear both;
+  animation-timeline: view();
+  animation-range: entry 20% entry 57%;
+}
+
+/* Scroll reveal — disabled */
+.reveal,
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Page transition — disabled */
+.page-enter {
+  /* animation removed */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.is-visible,
+  .page-enter {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Infinite horizontal marquee */
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-x var(--marquee-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-viewport {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* Service card sequential pulse — left, middle, right, repeat (9s cycle) */
+@keyframes card-pulse-left {
+  0%   { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  10%  { transform: scale(1.06); box-shadow: 0 20px 40px rgba(26,107,74,0.18); }
+  22%  { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  100% { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+}
+@keyframes card-pulse-middle {
+  0%   { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  33%  { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  43%  { transform: scale(1.06); box-shadow: 0 20px 40px rgba(26,107,74,0.18); }
+  55%  { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  100% { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+}
+@keyframes card-pulse-right {
+  0%   { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  66%  { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  76%  { transform: scale(1.06); box-shadow: 0 20px 40px rgba(26,107,74,0.18); }
+  88%  { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+  100% { transform: scale(1);    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+}
+
+.service-grow-card-left   { animation: card-pulse-left   9s ease-in-out infinite; }
+.service-grow-card-middle { animation: card-pulse-middle 9s ease-in-out infinite; }
+.service-grow-card-right  { animation: card-pulse-right  9s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .service-grow-card-left,
+  .service-grow-card-middle,
+  .service-grow-card-right { animation: none !important; }
+}
+
+.service-pulse-card:hover {
+  animation-play-state: paused;
+}
+
+/* Lifecycle circuit animation — each step lights up in sequence */
+@keyframes circuit-card-glow {
+  0%, 10%  { box-shadow: 0 0 0 2px rgba(74,222,128,0.7), 0 0 24px 4px rgba(26,107,74,0.25); background: rgba(237,247,241,1); }
+  22%, 100% { box-shadow: 0 1px 4px rgba(0,0,0,0.06); background: white; }
+}
+@keyframes circuit-icon-glow {
+  0%, 10%  { background: #1A6B4A; box-shadow: 0 0 14px 4px rgba(74,222,128,0.55); }
+  22%, 100% { background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.10); }
+}
+@keyframes circuit-icon-color {
+  0%, 10%  { color: white; }
+  22%, 100% { color: #1A6B4A; }
+}
+
+.lifecycle-card-1 { animation: circuit-card-glow 16s ease-in-out infinite; animation-delay: 0s; }
+.lifecycle-card-2 { animation: circuit-card-glow 16s ease-in-out infinite; animation-delay: 4s; }
+.lifecycle-card-3 { animation: circuit-card-glow 16s ease-in-out infinite; animation-delay: 8s; }
+.lifecycle-card-4 { animation: circuit-card-glow 16s ease-in-out infinite; animation-delay: 12s; }
+.lifecycle-icon-1 { animation: circuit-icon-glow 16s ease-in-out infinite; animation-delay: 0s; }
+.lifecycle-icon-2 { animation: circuit-icon-glow 16s ease-in-out infinite; animation-delay: 4s; }
+.lifecycle-icon-3 { animation: circuit-icon-glow 16s ease-in-out infinite; animation-delay: 8s; }
+.lifecycle-icon-4 { animation: circuit-icon-glow 16s ease-in-out infinite; animation-delay: 12s; }
+.lifecycle-icon-sym-1 { animation: circuit-icon-color 16s ease-in-out infinite; animation-delay: 0s; }
+.lifecycle-icon-sym-2 { animation: circuit-icon-color 16s ease-in-out infinite; animation-delay: 4s; }
+.lifecycle-icon-sym-3 { animation: circuit-icon-color 16s ease-in-out infinite; animation-delay: 8s; }
+.lifecycle-icon-sym-4 { animation: circuit-icon-color 16s ease-in-out infinite; animation-delay: 12s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class^="lifecycle-card-"],
+  [class^="lifecycle-icon-"] { animation: none !important; }
+}
+
+/* Lifecycle glow variant — for cards/icons that already have their own background (e.g. btn-shine circles) */
+@keyframes circuit-ring-glow {
+  0%, 10%  { box-shadow: 0 0 0 4px rgba(74,222,128,0.5), 0 0 18px 4px rgba(26,107,74,0.35); transform: scale(1.12); }
+  22%, 100% { box-shadow: none; transform: scale(1); }
+}
+@keyframes circuit-border-glow {
+  0%, 10%  { box-shadow: 0 0 0 2px rgba(74,222,128,0.65), 0 0 24px 6px rgba(26,107,74,0.18); }
+  22%, 100% { box-shadow: none; }
+}
+
+.lifecycle-ring-1 { animation: circuit-ring-glow 16s ease-in-out infinite; animation-delay: 0s; }
+.lifecycle-ring-2 { animation: circuit-ring-glow 16s ease-in-out infinite; animation-delay: 4s; }
+.lifecycle-ring-3 { animation: circuit-ring-glow 16s ease-in-out infinite; animation-delay: 8s; }
+.lifecycle-ring-4 { animation: circuit-ring-glow 16s ease-in-out infinite; animation-delay: 12s; }
+.lifecycle-border-1 { animation: circuit-border-glow 16s ease-in-out infinite; animation-delay: 0s; }
+.lifecycle-border-2 { animation: circuit-border-glow 16s ease-in-out infinite; animation-delay: 4s; }
+.lifecycle-border-3 { animation: circuit-border-glow 16s ease-in-out infinite; animation-delay: 8s; }
+.lifecycle-border-4 { animation: circuit-border-glow 16s ease-in-out infinite; animation-delay: 12s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class^="lifecycle-ring-"],
+  [class^="lifecycle-border-"] { animation: none !important; }
+}
+
+/* Service sub-card number badge circuit — 1→2→3→4 sequence, 12s cycle */
+@keyframes subnum-circuit {
+  0%, 10%  { background: #1A6B4A; color: white; box-shadow: 0 0 10px 3px rgba(26,107,74,0.4); }
+  20%, 100% { background: rgba(26,107,74,0.1); color: #1A6B4A; box-shadow: none; }
+}
+.sub-num-1 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 0s; }
+.sub-num-2 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 3s; }
+.sub-num-3 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 6s; }
+.sub-num-4 { animation: subnum-circuit 12s ease-in-out infinite; animation-delay: 9s; }
+
+/* Methodology step circles — 3-step circuit, 12s cycle */
+.method-ring-1 { animation: circuit-ring-glow 12s ease-in-out infinite; animation-delay: 0s; }
+.method-ring-2 { animation: circuit-ring-glow 12s ease-in-out infinite; animation-delay: 4s; }
+.method-ring-3 { animation: circuit-ring-glow 12s ease-in-out infinite; animation-delay: 8s; }
+
+@media (prefers-reduced-motion: reduce) {
+  [class^="sub-num-"],
+  [class^="method-ring-"] { animation: none !important; }
+}
+
+/* ── Card grow-shake on scroll entry ── */
+@keyframes card-grow-shake {
+  0%   { opacity: 0; transform: scale(0.52) translateY(36px); filter: blur(6px); }
+  35%  { opacity: 0.6; filter: blur(2px); }
+  58%  { opacity: 1; transform: scale(1.09) translateY(-7px); filter: blur(0px); }
+  70%  { transform: scale(0.96) translateY(4px) rotate(-0.7deg); }
+  81%  { transform: scale(1.04) translateY(-3px) rotate(0.5deg); }
+  90%  { transform: scale(0.99) translateY(1px) rotate(-0.15deg); }
+  96%  { transform: scale(1.01) translateY(-0.5px); }
+  100% { opacity: 1; transform: scale(1) translateY(0) rotate(0deg); filter: blur(0px); }
+}
+
+.grow-card {
+  opacity: 0;
+  transform: scale(0.52) translateY(36px);
+  filter: blur(6px);
+}
+.grow-card.is-visible {
+  animation: card-grow-shake 1.05s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+.grow-card.is-visible:nth-child(2) { animation-delay: 0.16s; }
+.grow-card.is-visible:nth-child(3) { animation-delay: 0.32s; }
+.grow-card.is-visible:nth-child(4) { animation-delay: 0.48s; }
+.grow-card.is-visible:nth-child(5) { animation-delay: 0.64s; }
+.grow-card.is-visible:nth-child(6) { animation-delay: 0.80s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .grow-card { opacity: 1 !important; transform: none !important; }
+  .grow-card.is-visible { animation: none !important; }
+}
+
+/* ── Hover grow — uses standalone `scale` so it composes with transform animations ── */
+.grow-card,
+.service-pulse-card,
+.hover-grow {
+  transition: scale 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.grow-card.is-visible:hover,
+.service-pulse-card:hover,
+.hover-grow:hover {
+  scale: 1.025;
+}
+.btn-shine {
+  transition: scale 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+              background-position 20s linear;
+}
+.btn-shine:hover {
+  scale: 1.04;
+}
+
+/* ── Pricing card shadow — darker than default shadow-md ── */
+.pricing-card {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13), 0 1px 6px rgba(0,0,0,0.08);
+  transition: box-shadow 0.25s ease, scale 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pricing-card:hover {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.18), 0 2px 10px rgba(0,0,0,0.10);
+  scale: 1.025;
+}
+
+/* ── Section scroll-reveal ── */
+@keyframes section-fade-up {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-reveal {
+  animation: section-fade-up 0.6s ease-out both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 30%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
