@@ -262,9 +262,6 @@ export default function HomePage() {
           <blockquote className="text-2xl md:text-3xl font-bold text-[#202124] leading-snug mb-6">
             &ldquo;Reinstatement cost assessments should be carried out regularly by a competent professional to ensure the sum insured remains adequate.&rdquo;
           </blockquote>
-          <p className="text-sm text-[#5f6368] uppercase tracking-widest">
-            RICS Guidance Note: Building Reinstatement Cost Assessments
-          </p>
         </div>
       </section>
 
