@@ -30,7 +30,6 @@ export default function Navbar() {
             priority
             className="h-10 w-10 object-contain"
           />
-          <span className="text-[#202124] font-semibold text-sm tracking-wide hidden sm:block">Cavendish <span className="text-[#9aa0a6] font-light">&amp;</span> Rowe</span>
         </Link>
 
         {/* Desktop nav */}
