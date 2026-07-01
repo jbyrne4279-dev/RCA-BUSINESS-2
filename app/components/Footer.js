@@ -25,13 +25,16 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
-            <Image
-              src="/rca-logo-reinstatement-cost-assessment.png"
-              alt="Cavendish &amp; Rowe"
-              width={80}
-              height={64}
-              className="h-9 w-auto object-contain invert opacity-80"
-            />
+            <div className="flex items-center gap-3">
+              <Image
+                src="/cr-monogram.svg"
+                alt="Cavendish &amp; Rowe"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain invert opacity-90"
+              />
+              <span className="text-white font-semibold text-sm tracking-wide">Cavendish <span className="text-white/40 font-light">&amp;</span> Rowe</span>
+            </div>
             <p className="text-[#9aa0a6] text-sm leading-relaxed max-w-xs">
               RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
             </p>

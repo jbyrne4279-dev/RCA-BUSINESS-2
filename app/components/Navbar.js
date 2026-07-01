@@ -21,15 +21,16 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
 
         {/* Logo */}
-        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2 logo-shine">
+        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-3 logo-shine">
           <Image
-            src="/rca-logo-reinstatement-cost-assessment.png"
+            src="/cr-monogram.svg"
             alt="Cavendish & Rowe"
-            width={80}
-            height={64}
+            width={40}
+            height={40}
             priority
-            className="h-8 w-auto object-contain"
+            className="h-10 w-10 object-contain"
           />
+          <span className="text-[#202124] font-semibold text-sm tracking-wide hidden sm:block">Cavendish <span className="text-[#9aa0a6] font-light">&amp;</span> Rowe</span>
         </Link>
 
         {/* Desktop nav */}
