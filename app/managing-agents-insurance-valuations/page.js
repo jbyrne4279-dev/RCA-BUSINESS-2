@@ -176,7 +176,7 @@ export default function ManagingAgentsPage() {
               { title: 'Single point of contact', desc: 'One surveyor manages the entire portfolio instruction from receipt through to delivery and annual update.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white/10 rounded-xl border border-white/20 p-5 flex gap-4">
-                <span className="text-white font-bold text-sm shrink-0 tick-glow mt-0.5">✓</span>
+                <span className="text-white font-bold text-sm shrink-0 mt-0.5">✓</span>
                 <div>
                   <p className="font-semibold text-white text-sm mb-1">{title}</p>
                   <p className="text-white/60 text-xs leading-relaxed">{desc}</p>
