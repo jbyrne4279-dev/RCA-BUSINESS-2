@@ -21,17 +21,16 @@ export default function BlocksOfFlatsPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#1d1d1f] pt-20 pb-28 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
-            <p className="text-[#c47c1e] text-[0.65rem] font-semibold uppercase tracking-[0.3em] mb-8">Blocks of Flats</p>
-            <h1 className="font-headline font-semibold text-white leading-[1.05] tracking-tight"
-              style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)' }}>
-              Reinstatement cost<br />assessments for<br />blocks of flats.
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Blocks of Flats</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+              Reinstatement cost assessments for blocks of flats.
             </h1>
           </div>
           <div>
-            <p className="text-white/50 text-lg leading-relaxed mb-8">
+            <p className="text-white/60 text-lg leading-relaxed mb-8">
               Blocks of flats often need a more careful approach because one incorrect insurance figure can affect many people at once. Our specialist service helps set a realistic buildings sum insured for apartment buildings, mixed-use blocks and developments with shared areas.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -40,16 +39,15 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* WHY BLOCKS NEED SPECIALIST WORK */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">Why It Matters</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Why It Matters</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Blocks are more complex than they look.
             </h2>
           </div>
-          <div className="lg:col-span-8 space-y-0 divide-y divide-black/[0.06]">
+          <div className="lg:col-span-8 divide-y divide-[#dadce0]">
             {[
               { title: 'Communal areas matter.', desc: 'Entrance halls, stairwells, lifts, plant rooms and shared lobbies all form part of the rebuild cost. Generic estimates often miss or undervalue these.' },
               { title: 'Shared services add up.', desc: 'Heating systems, drainage, telecommunications infrastructure and electrical installations serving the whole block must be included in the declared value.' },
@@ -57,10 +55,10 @@ export default function BlocksOfFlatsPage() {
               { title: 'One figure, many people.', desc: 'In a block of flats, all leaseholders depend on the same insurance figure. Getting it wrong once affects everyone who lives or owns property there.' },
             ].map(({ title, desc }) => (
               <div key={title} className="py-8 flex gap-6">
-                <span className="text-[#c47c1e] text-sm shrink-0 mt-1">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
                 <div>
-                  <h3 className="font-semibold text-[#1d1d1f] text-sm mb-2">{title}</h3>
-                  <p className="text-[#6e6e73] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
+                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -69,18 +67,17 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* THE RISK */}
-      <section className="bg-[#f5f5f7] py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">The Risk of Underinsurance</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Risk of Underinsurance</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               What happens when the figure is wrong.
             </h2>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               If the building is underinsured at the point of a major claim, the insurer may apply the average clause and reduce the payout in proportion to the degree of underinsurance. In a block of flats, that shortfall is shared across every leaseholder who depends on the policy.
             </p>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               The people responsible for arranging cover — managing agents, RTM companies, freeholders — may be exposed to complaints or liability concerns. A detailed reinstatement cost assessment reduces that risk by giving a stronger, documented basis for the insurance figure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
@@ -91,10 +88,9 @@ export default function BlocksOfFlatsPage() {
               { n: '30%+', label: 'rise in UK construction costs between 2020 and 2024' },
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-white p-8 flex items-center gap-6">
-                <p className="font-headline font-semibold text-[#1d1d1f] leading-none shrink-0 w-20"
-                  style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>{n}</p>
-                <p className="text-[#6e6e73] text-sm leading-relaxed">{label}</p>
+              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6">
+                <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">{n}</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
               </div>
             ))}
           </div>
@@ -102,12 +98,11 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-[0.7rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em] mb-6">Property Types</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight"
-              style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)' }}>
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
               What we assess.
             </h2>
           </div>
@@ -120,9 +115,9 @@ export default function BlocksOfFlatsPage() {
               { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership.' },
               { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a portfolio summary.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-[#f5f5f7] p-8">
-                <p className="font-semibold text-[#1d1d1f] text-sm mb-2">{title}</p>
-                <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -130,14 +125,13 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* WHO SHOULD INSTRUCT */}
-      <section className="bg-[#f5f5f7] py-24 md:py-32 px-6 md:px-10">
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[0.7rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em] mb-8">Who Should Instruct</p>
-          <h2 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight mb-8"
-            style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)' }}>
+          <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Who Should Instruct</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-6">
             Suitable for managing agents, RTM companies, freeholders and leaseholders.
           </h2>
-          <p className="text-[#6e6e73] text-lg leading-relaxed mb-10">
+          <p className="text-[#5f6368] text-lg leading-relaxed mb-10">
             Ideal for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals. If your current insurance figure is based on an old valuation, an online calculator or has not been reviewed in several years, now is the right time to act.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

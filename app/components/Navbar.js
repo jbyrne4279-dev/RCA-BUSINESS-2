@@ -16,33 +16,35 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-black/[0.06]">
-      <nav className="max-w-7xl mx-auto px-6 md:px-10 h-14 flex items-center gap-8">
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-[#dadce0]"
+      style={{ boxShadow: '0 1px 3px rgba(60,64,67,0.12)' }}>
+      <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
+
         {/* Logo */}
-        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5 logo-shine">
+        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2 logo-shine">
           <Image
             src="/rca-logo-reinstatement-cost-assessment.png"
             alt="RCA Ltd"
             width={80}
             height={64}
             priority
-            className="h-9 w-auto object-contain"
+            className="h-8 w-auto object-contain"
           />
         </Link>
 
-        {/* Desktop nav — centered */}
-        <div className="hidden md:flex flex-1 items-center justify-center gap-8">
+        {/* Desktop nav */}
+        <div className="hidden md:flex flex-1 items-center gap-1 ml-4">
           {links.map(({ href, label }) => {
             const active = pathname === href || pathname.startsWith(href + '/')
             return (
               <Link
                 key={href}
                 href={href}
-                className={
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   active
-                    ? 'text-[0.8rem] font-medium text-[#1d1d1f] tracking-wide'
-                    : 'text-[0.8rem] font-medium text-[#1d1d1f]/50 hover:text-[#1d1d1f] transition-colors tracking-wide'
-                }
+                    ? 'text-[#1a73e8] bg-[#e8f0fe]'
+                    : 'text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124]'
+                }`}
               >
                 {label}
               </Link>
@@ -51,21 +53,19 @@ export default function Navbar() {
         </div>
 
         {/* Desktop right */}
-        <div className="hidden md:flex items-center gap-5 ml-auto">
-          <a href="tel:+442031788099" className="text-[0.78rem] text-[#1d1d1f]/45 hover:text-[#1d1d1f] transition-colors font-medium">
+        <div className="hidden md:flex items-center gap-3 ml-auto">
+          <a href="tel:+442031788099"
+            className="text-sm text-[#5f6368] hover:text-[#202124] transition-colors font-medium">
             020 3178 8099
           </a>
-          <Link
-            href="/contact#contact-form"
-            className="btn-shine !py-2 !px-5 !text-[0.72rem]"
-          >
+          <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">
             Get a Quote
           </Link>
         </div>
 
         {/* Mobile toggle */}
-        <div className="md:hidden ml-auto flex items-center gap-3">
-          <Link href="/contact#contact-form" className="btn-shine !py-1.5 !px-4 !text-[0.68rem]">
+        <div className="md:hidden ml-auto flex items-center gap-2">
+          <Link href="/contact#contact-form" className="btn-shine !text-xs !py-1.5 !px-4">
             Quote
           </Link>
           <button
@@ -73,45 +73,37 @@ export default function Navbar() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="w-8 h-8 flex items-center justify-center text-[#1d1d1f]"
+            className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-[#f8f9fa] text-[#5f6368] transition-colors"
           >
             <span className="text-xl leading-none">{open ? '✕' : '☰'}</span>
           </button>
         </div>
       </nav>
 
+      {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-black/[0.06] bg-white">
-          <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col gap-1">
-            <Link href="/" onClick={() => setOpen(false)} className="py-3 text-sm font-medium text-[#1d1d1f]/50 hover:text-[#1d1d1f] transition-colors">
+        <div className="md:hidden bg-white border-t border-[#dadce0]">
+          <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col">
+            <Link href="/" onClick={() => setOpen(false)}
+              className="px-3 py-3 rounded-md text-sm font-medium text-[#5f6368] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors">
               Home
             </Link>
             {links.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                onClick={() => setOpen(false)}
-                className="py-3 text-sm font-medium text-[#1d1d1f]/70 hover:text-[#1d1d1f] transition-colors border-t border-black/[0.05]"
-              >
+              <Link key={href} href={href} onClick={() => setOpen(false)}
+                className="px-3 py-3 rounded-md text-sm font-medium text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors border-t border-[#f8f9fa]">
                 {label}
               </Link>
             ))}
-            <Link
-              href="/freeholders-leaseholders"
-              onClick={() => setOpen(false)}
-              className="py-3 text-sm font-medium text-[#1d1d1f]/70 hover:text-[#1d1d1f] transition-colors border-t border-black/[0.05]"
-            >
+            <Link href="/freeholders-leaseholders" onClick={() => setOpen(false)}
+              className="px-3 py-3 rounded-md text-sm font-medium text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors border-t border-[#f8f9fa]">
               Freeholders & Leaseholders
             </Link>
-            <Link
-              href="/listed-buildings"
-              onClick={() => setOpen(false)}
-              className="py-3 text-sm font-medium text-[#1d1d1f]/70 hover:text-[#1d1d1f] transition-colors border-t border-black/[0.05]"
-            >
+            <Link href="/listed-buildings" onClick={() => setOpen(false)}
+              className="px-3 py-3 rounded-md text-sm font-medium text-[#3c4043] hover:bg-[#f8f9fa] hover:text-[#202124] transition-colors border-t border-[#f8f9fa]">
               Listed Buildings
             </Link>
-            <div className="pt-4 border-t border-black/[0.05]">
-              <a href="tel:+442031788099" className="text-xs text-[#1d1d1f]/35 tracking-wide">020 3178 8099</a>
+            <div className="px-3 py-4 border-t border-[#dadce0] mt-1">
+              <a href="tel:+442031788099" className="text-sm text-[#5f6368]">020 3178 8099</a>
             </div>
           </div>
         </div>

@@ -22,17 +22,16 @@ export default function ManagingAgentsPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#1d1d1f] pt-20 pb-28 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
-            <p className="text-[#c47c1e] text-[0.65rem] font-semibold uppercase tracking-[0.3em] mb-8">Managing Agents & RTM Companies</p>
-            <h1 className="font-headline font-semibold text-white leading-[1.05] tracking-tight"
-              style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)' }}>
-              Insurance valuations<br />for managing agents<br />and RTM companies.
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Managing Agents &amp; RTM Companies</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+              Insurance valuations for managing agents and RTM companies.
             </h1>
           </div>
           <div>
-            <p className="text-white/50 text-lg leading-relaxed mb-8">
+            <p className="text-white/60 text-lg leading-relaxed mb-8">
               Managing agents and RTM companies need a reliable reinstatement cost assessment to support the insurance process and protect themselves from getting the figure wrong. Our service is designed to make that process easier, clearer and more defensible.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -41,16 +40,15 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* THE EXPOSURE */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">The Exposure</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Exposure</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               What happens when you get it wrong.
             </h2>
           </div>
-          <div className="lg:col-span-8 space-y-0 divide-y divide-[#e5e7eb]">
+          <div className="lg:col-span-8 divide-y divide-[#dadce0]">
             {[
               { n: '01', title: 'The average clause applies.', desc: 'If the building is underinsured at the point of a major claim, the insurer can reduce the payout in proportion to the degree of underinsurance. Standard UK policies routinely include this clause and insurers enforce it.' },
               { n: '02', title: 'Leaseholders can pursue you.', desc: 'Where a lease requires insurance at full reinstatement cost and the managing agent arranges inadequate cover, leaseholders may bring a claim for the shortfall. The lease creates the obligation. You accept it when you take on the management.' },
@@ -58,10 +56,10 @@ export default function ManagingAgentsPage() {
               { n: '04', title: 'Calculators offer no protection.', desc: 'Online calculators and insurer rebuild tools carry no professional accountability. In a dispute, they provide no documented methodology and no professional indemnity. A specialist RCA report does.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="py-8 flex gap-6">
-                <span className="text-[#c47c1e] text-[0.65rem] font-semibold uppercase tracking-[0.25em] mt-1 w-8 shrink-0">{n}</span>
+                <span className="text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.2em] mt-1 w-8 shrink-0">{n}</span>
                 <div>
-                  <h3 className="font-semibold text-[#1d1d1f] text-sm mb-2">{title}</h3>
-                  <p className="text-[#6e6e73] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
+                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -70,18 +68,17 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* WHAT YOU NEED */}
-      <section className="bg-[#f5f5f7] py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">What You Need</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What You Need</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               A report that works for brokers, insurers and leaseholders.
             </h2>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               You need a report that is clear, practical and easy to use with brokers, insurers and leaseholders. It should explain the declared value, the key assumptions, the review date and the scope of the assessment.
             </p>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               RICS-aligned guidance stresses the importance of professional diligence because an understated insurance value can lead to proportionate settlement issues under the average clause. That is exactly why many managing agents prefer a specialist RCA instead of relying on outdated figures or online tools.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
@@ -94,11 +91,11 @@ export default function ManagingAgentsPage() {
               { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers without challenge.' },
               { title: 'Professional indemnity', desc: 'PI insurance on every instruction — you are protected if the figure is challenged.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white p-6 flex gap-4">
-                <span className="text-[#c47c1e] text-sm shrink-0 mt-0.5">✓</span>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-4">
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
                 <div>
-                  <p className="font-semibold text-[#1d1d1f] text-sm mb-1">{title}</p>
-                  <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -107,32 +104,31 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* PORTFOLIO */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">Portfolio Service</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Portfolio Service</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Managing multiple blocks?
             </h2>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               We provide consolidated portfolio assessments for managing agents with multiple blocks — individual reports for each property, a portfolio summary schedule, and a managed annual update service.
             </p>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               Suitable for routine portfolio reviews, new management instructions, refinancing support and buildings insurance renewals where multiple properties need a consistent, professional approach.
             </p>
             <Link href="/contact#contact-form" className="link-amber">Discuss your portfolio →</Link>
           </div>
-          <div className="grid grid-cols-1 gap-px bg-[#f5f5f7]">
+          <div className="grid grid-cols-1 gap-5">
             {[
               { title: 'Individual block reports', desc: 'Each property receives a separate assessment with its own declared value and methodology statement.' },
               { title: 'Portfolio summary', desc: 'A consolidated schedule showing every asset, its reinstatement figure, and its next review date.' },
               { title: 'Annual indexation', desc: 'Under our 3-Year Protection plan, each figure is updated annually using live BCIS data.' },
               { title: 'Single point of contact', desc: 'One surveyor manages your entire portfolio instruction from receipt to delivery.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white p-8">
-                <p className="font-semibold text-[#1d1d1f] text-sm mb-2">{title}</p>
-                <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>

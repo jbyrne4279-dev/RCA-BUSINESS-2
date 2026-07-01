@@ -7,10 +7,34 @@ export const metadata = {
 }
 
 const resources = [
-  { tag: 'Case Study', title: 'Block of flats undervalued by £340,000 — how it was discovered and corrected', excerpt: 'A 24-unit residential block had been insured using the developer’s original rebuild estimate for eleven years. Our RICS assessment revealed a £340,000 shortfall.', href: '/resources/case-study-block-of-flats-undervalued', date: 'March 2025' },
-  { tag: 'Guide', title: 'Index-linking vs professional revaluation: what the difference means for your liability', excerpt: 'Annual index-linking adjusts your sum insured by a percentage derived from construction cost movements. It does not replace a RICS assessment. Here is why the distinction matters at the point of claim.', href: '/resources/index-linking-vs-professional-valuation', date: 'February 2025' },
-  { tag: 'Guide', title: 'Top five underinsurance risks for managing agents — and how to eliminate each one', excerpt: 'Managing agents face specific underinsurance exposures that arise from the nature of leasehold property management. This guide covers each risk and the assessment type that removes it.', href: '/resources/top-risks-of-underinsurance-for-managing-agents', date: 'January 2025' },
-  { tag: 'Guidance', title: 'When should block buildings insurance valuations be updated?', excerpt: 'RICS guidance recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice — and when you should instruct earlier.', href: '/resources/when-should-block-insurance-valuations-be-updated', date: 'December 2024' },
+  {
+    tag: 'Case Study',
+    title: 'Block of flats undervalued by £340,000 — how it was discovered and corrected',
+    excerpt: 'A 24-unit residential block had been insured using the developer’s original rebuild estimate for eleven years. Our RICS assessment revealed a £340,000 shortfall.',
+    href: '/resources/case-study-block-of-flats-undervalued',
+    date: 'March 2025',
+  },
+  {
+    tag: 'Guide',
+    title: 'Index-linking vs professional revaluation: what the difference means for your liability',
+    excerpt: 'Annual index-linking adjusts your sum insured by a percentage derived from construction cost movements. It does not replace a RICS assessment. Here is why the distinction matters when a claim arises.',
+    href: '/resources/index-linking-vs-professional-valuation',
+    date: 'February 2025',
+  },
+  {
+    tag: 'Guide',
+    title: 'Top five underinsurance risks for managing agents — and how to eliminate each one',
+    excerpt: 'Managing agents face specific underinsurance exposures that arise from the nature of leasehold property management. This guide covers each risk and the assessment type that removes it.',
+    href: '/resources/top-risks-of-underinsurance-for-managing-agents',
+    date: 'January 2025',
+  },
+  {
+    tag: 'Guidance',
+    title: 'When should block buildings insurance valuations be updated?',
+    excerpt: 'RICS guidance recommends formal reinstatement cost assessments at least every three years. Here is what that means in practice — and when you should instruct earlier.',
+    href: '/resources/when-should-block-insurance-valuations-be-updated',
+    date: 'December 2024',
+  },
 ]
 
 export default function ResourcesPage() {
@@ -18,37 +42,40 @@ export default function ResourcesPage() {
     <main>
 
       {/* HEADER */}
-      <section className="bg-[#f5f5f7] pt-20 pb-28 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em] mb-8">Knowledge Base</p>
-            <h1 className="font-headline font-semibold text-[#1d1d1f] leading-[1.0] tracking-tight"
-              style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              Knowledge Base
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight">
               Guides & resources.
             </h1>
           </div>
-          <p className="text-[#6e6e73] text-lg leading-relaxed">
+          <p className="text-[#5f6368] text-lg leading-relaxed">
             Practical guidance on reinstatement cost assessments, RICS compliance, and underinsurance risk — written for managing agents, block managers, and property investors.
           </p>
         </div>
       </section>
 
       {/* ARTICLES */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto divide-y divide-black/[0.06]">
-          {resources.map(({ tag, title, excerpt, href, date }) => (
-            <Link key={href} href={href} className="flex flex-col sm:flex-row gap-8 py-10 group">
-              <div className="sm:w-40 shrink-0">
-                <span className="text-[0.65rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] block mb-1">{tag}</span>
-                <span className="text-[#6e6e73] text-xs">{date}</span>
-              </div>
-              <div className="flex-1">
-                <h2 className="font-headline text-2xl font-semibold text-[#1d1d1f] leading-tight mb-4 group-hover:text-[#c47c1e] transition-colors">{title}</h2>
-                <p className="text-[#6e6e73] text-sm leading-relaxed mb-4">{excerpt}</p>
-                <span className="link-amber">Read article →</span>
-              </div>
-            </Link>
-          ))}
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-xl border border-[#dadce0] divide-y divide-[#dadce0]">
+            {resources.map(({ tag, title, excerpt, href, date }) => (
+              <Link key={href} href={href} className="flex flex-col sm:flex-row gap-6 px-6 py-7 group hover:bg-[#f8f9fa] transition-colors">
+                <div className="sm:w-44 shrink-0">
+                  <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold px-2.5 py-1 rounded-full mb-2 block w-fit">{tag}</span>
+                  <span className="text-[#9aa0a6] text-xs">{date}</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="font-bold text-xl text-[#202124] leading-snug mb-3 group-hover:text-[#1a73e8] transition-colors">{title}</h2>
+                  <p className="text-[#5f6368] text-sm leading-relaxed mb-3">{excerpt}</p>
+                  <span className="link-amber text-sm">Read article →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -19,25 +19,26 @@ export default function ContactPage() {
     <main>
 
       {/* HEADER */}
-      <section className="bg-[#1d1d1f] pt-20 pb-28 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-8">Get In Touch</p>
-            <h1 className="font-headline font-semibold text-white leading-[1.0] tracking-tight"
-              style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)' }}>
-              Let&rsquo;s get your<br />assessment underway.
+            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              Get In Touch
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+              Let&rsquo;s get your assessment underway.
             </h1>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-6 mt-4">
             {[
               { label: 'Telephone', value: '020 3178 8099', href: 'tel:+442031788099' },
               { label: 'Email', value: 'info@rca-ltd.com', href: 'mailto:info@rca-ltd.com' },
               { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
             ].map(({ label, value, href }) => (
-              <div key={label} className="border-t border-white/[0.08] pt-6">
-                <p className="text-[0.65rem] font-semibold text-white/30 uppercase tracking-[0.2em] mb-2">{label}</p>
+              <div key={label} className="border-t border-white/10 pt-5">
+                <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-1.5">{label}</p>
                 {href
-                  ? <a href={href} className="text-white text-lg font-semibold hover:text-[#c47c1e] transition-colors">{value}</a>
+                  ? <a href={href} className="text-white text-lg font-semibold hover:text-[#7baaf7] transition-colors">{value}</a>
                   : <p className="text-white text-lg font-semibold">{value}</p>
                 }
               </div>

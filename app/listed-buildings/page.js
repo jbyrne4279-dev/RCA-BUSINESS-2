@@ -21,17 +21,16 @@ export default function ListedBuildingsPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#1d1d1f] pt-20 pb-28 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
-            <p className="text-[#c47c1e] text-[0.65rem] font-semibold uppercase tracking-[0.3em] mb-8">Listed & Heritage Buildings</p>
-            <h1 className="font-headline font-semibold text-white leading-[1.05] tracking-tight"
-              style={{ fontSize: 'clamp(2.8rem, 6vw, 5rem)' }}>
-              Reinstatement cost<br />assessments for listed<br />and heritage buildings.
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Listed &amp; Heritage Buildings</span>
+            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+              Reinstatement cost assessments for listed and heritage buildings.
             </h1>
           </div>
           <div>
-            <p className="text-white/50 text-lg leading-relaxed mb-8">
+            <p className="text-white/60 text-lg leading-relaxed mb-8">
               Listed and heritage buildings need special attention because reinstatement can be more complex and costly than standard construction. Our approach considers the features that make these buildings different, so the insurance figure is based on realistic rebuild assumptions.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -40,32 +39,31 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* WHY IT MATTERS */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">Why Specialist Work Matters</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Why Specialist Work Matters</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Standard calculators rarely capture the real cost.
             </h2>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               Special materials, conservation requirements, access constraints and detailed finishes can significantly affect the rebuild cost of a listed or heritage building. A generic online calculator is built around standard modern construction and will not properly reflect any of these factors.
             </p>
-            <p className="text-[#6e6e73] text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               The result is often a declared value that substantially understates the real cost of reinstatement — leaving the building significantly underinsured at exactly the moment when accurate cover matters most.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>
-          <div className="grid grid-cols-1 gap-px bg-[#f5f5f7]">
+          <div className="grid grid-cols-1 gap-5">
             {[
               { title: 'Specialist materials', desc: 'Handmade brick, lime mortar, natural slate, traditional roof coverings and period ironwork carry significant cost premiums over standard materials.' },
               { title: 'Skilled contractors', desc: 'Conservation and heritage work requires specialist craftspeople. Standard builder rates do not apply.' },
               { title: 'Planning and consent', desc: 'Listed building consent, conservation area requirements and Historic England involvement add cost and time to any rebuild.' },
               { title: 'Access constraints', desc: 'Town centre locations, tight sites and restricted access can significantly increase the cost of demolition and reconstruction.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white p-6">
-                <p className="font-semibold text-[#1d1d1f] text-sm mb-1">{title}</p>
-                <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+                <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -73,12 +71,11 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* WHAT WE ASSESS */}
-      <section className="bg-[#f5f5f7] py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="text-[0.7rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em] mb-6">Property Types</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight"
-              style={{ fontSize: 'clamp(2rem, 4.5vw, 3.5rem)' }}>
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
               What we assess.
             </h2>
           </div>
@@ -91,9 +88,9 @@ export default function ListedBuildingsPage() {
               { title: 'Period conversions', desc: 'Victorian and Edwardian houses converted into flats, where original features and traditional construction affect rebuild cost.' },
               { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas and period features to consider.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white p-8">
-                <p className="font-semibold text-[#1d1d1f] text-sm mb-2">{title}</p>
-                <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -101,19 +98,18 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* WHAT WE INCLUDE */}
-      <section className="bg-white py-24 md:py-32 px-6 md:px-10">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">What We Include</p>
-            <h2 className="font-headline font-semibold text-[#1d1d1f] leading-tight mb-6"
-              style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What We Include</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               A thorough assessment of the real rebuild cost.
             </h2>
-            <p className="text-[#6e6e73] text-sm leading-relaxed">
+            <p className="text-[#5f6368] text-sm leading-relaxed">
               Our listed building assessments are site-based. We inspect the property in person, assess the materials, construction method and condition, and consider all the relevant cost factors before producing a clear, documented report.
             </p>
           </div>
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#f5f5f7]">
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {[
               { title: 'Specialist materials', desc: 'Lime mortar, natural stone, traditional timber, handmade brick and period roofing.' },
               { title: 'Conservation requirements', desc: 'Listed building consent, planning conditions and Historic England considerations.' },
@@ -122,11 +118,11 @@ export default function ListedBuildingsPage() {
               { title: 'Professional and statutory fees', desc: 'Architect, structural engineer, planning fees and building control.' },
               { title: 'VAT where applicable', desc: 'VAT treatment for listed buildings depends on use and ownership structure.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white p-6 flex gap-3">
-                <span className="text-[#c47c1e] text-sm shrink-0 mt-0.5">✓</span>
+              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-3">
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
                 <div>
-                  <p className="font-semibold text-[#1d1d1f] text-sm mb-1">{title}</p>
-                  <p className="text-[#6e6e73] text-xs leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}

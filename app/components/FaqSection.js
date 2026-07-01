@@ -5,36 +5,37 @@ export default function FaqSection({ description, items }) {
   const [open, setOpen] = useState(null)
 
   return (
-    <section className="bg-[#f5f5f7] py-24 md:py-32 px-6 md:px-10">
+    <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-14">
-          <p className="text-[0.7rem] font-semibold text-[#6e6e73] uppercase tracking-[0.2em] mb-6">FAQ</p>
-          <h2 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight mb-6"
-            style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
-            Common Questions.
+        <div className="mb-10">
+          <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            FAQ
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-4">
+            Common questions.
           </h2>
           {description && (
-            <p className="text-[#6e6e73] text-base leading-relaxed max-w-xl mx-auto">{description}</p>
+            <p className="text-[#5f6368] text-base leading-relaxed max-w-xl">{description}</p>
           )}
         </div>
 
-        <div className="divide-y divide-black/[0.08]">
+        <div className="divide-y divide-[#dadce0] bg-white rounded-xl border border-[#dadce0] overflow-hidden">
           {items.map((item, i) => (
             <div key={i}>
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between gap-6 py-5 text-left group"
+                className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left group hover:bg-[#f8f9fa] transition-colors"
               >
-                <span className="font-medium text-[#1d1d1f] text-sm leading-snug group-hover:text-[#c47c1e] transition-colors">
+                <span className="font-medium text-[#202124] text-sm leading-snug group-hover:text-[#1a73e8] transition-colors">
                   {item.question}
                 </span>
-                <span className="text-[#6e6e73] text-lg leading-none shrink-0 transition-transform duration-200"
+                <span className="text-[#5f6368] text-xl leading-none shrink-0 transition-transform duration-200"
                   style={{ transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)' }}>
                   +
                 </span>
               </button>
               {open === i && (
-                <p className="pb-6 text-[#6e6e73] text-sm leading-relaxed">
+                <p className="px-6 pb-5 text-[#5f6368] text-sm leading-relaxed border-t border-[#f8f9fa]">
                   {item.answer}
                 </p>
               )}

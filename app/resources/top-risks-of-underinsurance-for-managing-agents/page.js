@@ -9,19 +9,18 @@ export const metadata = {
 export default function TopRisksPage() {
   return (
     <main>
-      <section className="bg-[#f5f5f7] pt-20 pb-16 px-6 md:px-10">
+      <section className="bg-[#f8f9fa] pt-16 pb-12 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-[0.7rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mb-6">Guide</p>
-          <h1 className="font-headline font-semibold text-[#1d1d1f] leading-[1.05] tracking-tight mb-6"
-            style={{ fontSize: 'clamp(2.2rem, 5vw, 4rem)' }}>
+          <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Guide</span>
+          <h1 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
             Top five underinsurance risks for managing agents.
           </h1>
-          <p className="text-[#6e6e73] text-lg leading-relaxed">And how to eliminate each one before it becomes a claim.</p>
+          <p className="text-[#5f6368] text-lg leading-relaxed">And how to eliminate each one before it becomes a claim.</p>
         </div>
       </section>
 
       <section className="bg-white py-16 px-6 md:px-10">
-        <div className="max-w-3xl mx-auto space-y-14">
+        <div className="max-w-3xl mx-auto space-y-12">
           {[
             {
               n: '01',
@@ -49,18 +48,18 @@ export default function TopRisksPage() {
               body: 'UK construction costs rose by over 30% between 2020 and 2024 — the sharpest sustained increase in decades. A RICS assessment from 2019 or earlier will be materially inadequate. Managing agents who have not instructed a reassessment since before 2020 should treat this as a priority at the next renewal.',
             },
           ].map(({ n, title, body }) => (
-            <div key={n}>
-              <div className="flex items-start gap-6 mb-4">
-                <span className="text-[0.65rem] font-semibold text-[#c47c1e] uppercase tracking-[0.2em] mt-1 shrink-0 w-6">{n}</span>
-                <h2 className="font-headline text-2xl font-semibold text-[#1d1d1f] leading-tight">{title}</h2>
+            <div key={n} className="flex gap-6">
+              <span className="text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.2em] mt-1 shrink-0 w-8">{n}</span>
+              <div>
+                <h2 className="text-xl font-bold text-[#202124] leading-tight mb-3">{title}</h2>
+                <p className="text-[#5f6368] text-base leading-relaxed">{body}</p>
               </div>
-              <p className="text-[#6e6e73] text-base leading-relaxed pl-12">{body}</p>
             </div>
           ))}
 
-          <div className="bg-[#f5f5f7] p-8">
-            <p className="font-semibold text-[#1d1d1f] text-sm mb-3">Eliminate all five risks in one instruction.</p>
-            <p className="text-[#6e6e73] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from RCA Ltd establishes the correct figure from scratch, using live BCIS data and a documented professional methodology — and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
+          <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-8">
+            <p className="font-semibold text-[#202124] text-sm mb-3">Eliminate all five risks in one instruction.</p>
+            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">A RICS-regulated reinstatement cost assessment from RCA Ltd establishes the correct figure from scratch, using live BCIS data and a documented professional methodology &mdash; and our 3-Year Protection plan keeps you compliant without having to re-instruct annually.</p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
         </div>
