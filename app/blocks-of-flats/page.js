@@ -5,8 +5,8 @@ import FaqSection from '../components/FaqSection'
 import CountUp from '../components/CountUp'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment for Blocks of Flats | RCA Survey',
-  description: 'Specialist reinstatement cost assessments for blocks of flats. The number you\'re insured for is almost certainly wrong — and the average clause means the shortfall comes out of your pocket.',
+  title: 'Reinstatement Cost Assessments for Property Investors | Blocks of Flats | RCA',
+  description: 'Specialist reinstatement cost assessments for property investors and block owners. The number you\'re insured for is almost certainly wrong — and the average clause means the shortfall comes out of your pocket.',
   alternates: { canonical: '/blocks-of-flats' },
 }
 
@@ -30,7 +30,7 @@ export default function BlocksOfFlatsPage() {
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Blocks of Flats</span>
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Investors</span>
             <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Insured for the market value? Then you're insured for the wrong number.
             </h1>
