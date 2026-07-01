@@ -35,7 +35,7 @@ export default function CommercialPage() {
           <div className="grid grid-cols-2 gap-5">
             {[
               { n: '35%+', label: 'rise in commercial build costs 2020–2024' },
-              { n: '48 hrs', label: 'desktop assessment turnaround' },
+              { n: '24 hrs', label: 'desktop assessment turnaround' },
               { n: '100%', label: 'of reports accepted by UK insurers' },
               { n: 'RICS', label: 'regulated, every assessment, every time' },
             ].map(({ n, label }) => (

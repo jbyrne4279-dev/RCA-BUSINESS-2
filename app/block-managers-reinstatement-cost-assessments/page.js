@@ -76,7 +76,7 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Per-Block Assessment', desc: 'Individual RICS-regulated assessment for each block. Desktop in 48 hours. On-site available for listed or complex properties.', href: '/contact?service=desktop#contact-form' },
+              { title: 'Per-Block Assessment', desc: 'Individual RICS-regulated assessment for each block. Desktop in 24 hours. On-site available for listed or complex properties.', href: '/contact?service=desktop#contact-form' },
               { title: 'Portfolio Assessment', desc: 'Consolidated assessment across all blocks. Individual reports per property, portfolio summary schedule, single-invoice billing.', href: '/contact#contact-form' },
               { title: '3-Year Protection', desc: 'Base assessment plus three years of annual BCIS-indexed renewal reports, delivered before each renewal date.', href: '/contact?service=3year#contact-form' },
             ].map(({ title, desc, href }) => (

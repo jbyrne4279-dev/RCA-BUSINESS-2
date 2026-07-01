@@ -11,7 +11,7 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Which service is right for my property?', answer: 'Desktop assessments suit most standard residential blocks and commercial properties. On-site surveys are recommended for listed buildings, non-standard construction, and high-value properties. The 3-Year Protection plan suits managing agents and freeholders who want ongoing compliance without re-instructing each year.' },
-  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 48 hours of instruction. On-site surveys depend on survey scheduling, we confirm a timeline on instruction.' },
+  { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 24 hours of instruction. On-site surveys depend on survey scheduling, we confirm a timeline on instruction.' },
   { question: 'Are your reports accepted by all UK insurers?', answer: 'Yes. Our RICS-aligned, broker-ready reports are accepted across the UK market without challenge.' },
   { question: 'Do you cover listed and heritage buildings?', answer: 'Yes. Listed buildings require specialist knowledge of authentic materials, conservation requirements and traditional construction methods. We carry out site-based surveys for all listed property types.' },
   { question: 'Can you assess a portfolio of blocks under one instruction?', answer: 'Yes. We provide consolidated portfolio assessments with individual reports per property and a portfolio summary schedule.' },
@@ -76,7 +76,7 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="text-white/90 text-sm font-medium">RICS-aligned assessments delivered within 48 hours for most standard properties.</p>
+              <p className="text-white/90 text-sm font-medium">RICS-aligned assessments delivered within 24 hours for most standard properties.</p>
             </div>
           </div>
         </div>
@@ -128,12 +128,12 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              BCIS-indexed rebuild cost modelling without a site visit. Efficient, accurate, and delivered within 48 hours. Suitable for most standard residential blocks and commercial properties.
+              BCIS-indexed rebuild cost modelling without a site visit. Efficient, accurate, and delivered within 24 hours. Suitable for most standard residential blocks and commercial properties.
             </p>
             <Link href="/contact?service=desktop#contact-form" className="btn-shine">Instruct Desktop Assessment</Link>
           </div>
           <div>
-            <CheckItem title="48-hour turnaround" desc="Delivered within two working days of instruction." />
+            <CheckItem title="24-hour turnaround" desc="Delivered within two working days of instruction." />
             <CheckItem title="BCIS-indexed modelling" desc="Live construction cost data from the Building Cost Information Service." />
             <CheckItem title="RICS-aligned output" desc="Produced by or under supervision of a RICS-registered member." />
             <CheckItem title="Broker-ready format" desc="Accepted without challenge by UK insurers and brokers." />

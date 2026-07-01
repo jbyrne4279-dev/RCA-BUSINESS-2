@@ -31,7 +31,7 @@ export default function HomePage() {
               Accurate reinstatement cost assessments for managing agents and freeholders.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Protect your clients, residents and leaseholders with a specialist valuation that helps set the correct buildings sum insured. RICS-aligned. Broker-ready. Delivered in 48 hours.
+              Protect your clients, residents and leaseholders with a specialist valuation that helps set the correct buildings sum insured. RICS-aligned. Broker-ready. Delivered in 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -60,7 +60,7 @@ export default function HomePage() {
           {[
             { n: '80', suffix: '%+', label: 'of UK buildings carry an inaccurate sum insured' },
             { n: '30', suffix: '%+', label: 'rise in UK construction costs 2020–2024' },
-            { n: '48', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
+            { n: '24', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
             { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
           ].map(({ n, suffix, label }) => (
             <div key={n} className="bg-white rounded-xl p-5 border border-[#dadce0] hover-lift">
@@ -236,7 +236,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Desktop Assessment', tag: '48-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for most standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
+              { title: 'Desktop Assessment', tag: '24-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for most standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
               { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Recommended for listed buildings, non-standard construction, and high-value properties.', href: '/services#on-site-survey', variant: 'light' },
               { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, plus annual BCIS-indexed renewal reports for three years. Single instruction, ongoing compliance.', href: '/services#three-year-protection', variant: 'featured' },
             ].map(({ title, tag, desc, href, variant }) => (

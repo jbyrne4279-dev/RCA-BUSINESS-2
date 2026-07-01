@@ -14,7 +14,7 @@ const faqItems = [
   { question: 'How often should we commission a reinstatement cost assessment?', answer: 'RICS guidance recommends annual inflation adjustment and a more detailed review at least every three years. Our 3-Year Protection plan covers both requirements under a single instruction.' },
   { question: `We rely on the insurer's rebuild calculator. Is that sufficient?`, answer: 'Online calculators and insurer-provided tools carry no professional accountability. In a dispute, they offer no documented methodology or professional responsibility. A specialist RCA does.' },
   { question: 'Can you assess multiple blocks for us under one instruction?', answer: 'Yes. We specialise in portfolio assessments for managing agents with multiple blocks, providing individual reports for each property and a consolidated summary for your records.' },
-  { question: 'How quickly do you turn around a desktop assessment?', answer: 'Standard desktop assessments are delivered within 48 hours of instruction. On-site surveys are scheduled promptly and we confirm a timeline on instruction.' },
+  { question: 'How quickly do you turn around a desktop assessment?', answer: 'Standard desktop assessments are delivered within 24 hours of instruction. On-site surveys are scheduled promptly and we confirm a timeline on instruction.' },
   { question: 'What do RTM companies need to know about reinstatement cost assessments?', answer: 'When leaseholders exercise the Right to Manage, the responsibility for arranging buildings insurance typically transfers with it. RTM companies should establish the correct reinstatement figure before the first renewal to evidence their compliance from the outset.' },
 ]
 

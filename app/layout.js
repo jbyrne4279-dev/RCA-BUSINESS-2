@@ -24,7 +24,7 @@ export const metadata = {
     template: '%s | Cavendish & Rowe',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 48 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   keywords: [
     'reinstatement cost assessment',
     'rebuild cost assessment',
@@ -59,7 +59,7 @@ export const metadata = {
     siteName: 'Cavendish & Rowe',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Cavendish & Rowe',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
@@ -73,7 +73,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Cavendish & Rowe',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 48 hours.',
+      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
   robots: {

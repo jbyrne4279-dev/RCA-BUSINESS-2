@@ -61,7 +61,7 @@ export default function IndexLinkingPage() {
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div>
             <p className="font-semibold text-[#202124] mb-1">Commission a RICS reinstatement cost assessment.</p>
-            <p className="text-[#5f6368] text-sm">48-hour desktop turnaround. Broker-ready report.</p>
+            <p className="text-[#5f6368] text-sm">24-hour desktop turnaround. Broker-ready report.</p>
           </div>
           <Link href="/contact#contact-form" className="btn-shine shrink-0">Get a Quote</Link>
         </div>
