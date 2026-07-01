@@ -48,7 +48,7 @@ export default function ContactPage() {
       </section>
 
       <ContactSection heading="Send us your instruction." />
-      <FaqSection description="Common questions about instructing RCA Ltd." items={faqItems} />
+      <FaqSection description="Common questions about instructing Reinstatement Cost Assessment Ltd." items={faqItems} />
     </main>
   )
 }

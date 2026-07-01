@@ -44,7 +44,7 @@ export const metadata = {
     'commercial property reinstatement London',
     'desktop rebuild cost assessment',
     'on-site reinstatement survey London',
-    'RCA London',
+    'Reinstatement Cost Assessment London',
     'professional indemnity surveyor',
   ],
   icons: {

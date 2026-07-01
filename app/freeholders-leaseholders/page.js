@@ -11,7 +11,7 @@ export const metadata = {
 const faqItems = [
   { question: 'What is the difference between reinstatement cost and market value?', answer: 'Market value is what the property might sell for on the open market. Reinstatement cost is what it would cost to rebuild it from scratch after total loss. The two figures are often very different, and only the reinstatement cost is relevant for setting the buildings sum insured.' },
   { question: 'Who is responsible for insuring to the correct reinstatement cost?', answer: 'It depends on the lease. Most long leases place the obligation to insure to full reinstatement cost on the freeholder or the managing agent acting on their behalf. Some leases require leaseholders to contribute or arrange separate cover for their demise. Reading the lease carefully is the starting point.' },
-  { question: 'Can a leaseholder commission their own RCA?', answer: 'Yes. Leaseholders who believe the sum insured arranged for their block is incorrect can instruct an independent reinstatement cost assessment. Our report can be used to raise a formal concern with the freeholder or managing agent, or to support a service charge dispute.' },
+  { question: 'Can a leaseholder commission their own reinstatement cost assessment?', answer: 'Yes. Leaseholders who believe the sum insured arranged for their block is incorrect can instruct an independent reinstatement cost assessment. Our report can be used to raise a formal concern with the freeholder or managing agent, or to support a service charge dispute.' },
   { question: 'What if our building has not been valued for several years?', answer: 'Construction costs have risen substantially in recent years. A reinstatement cost figure that has not been formally reviewed, even with annual index-linking, may no longer reflect the actual cost to rebuild. A fresh assessment is the safest approach.' },
   { question: 'What information do you need to get started?', answer: 'Usually the address, property type, approximate size, any previous valuation or assessment, and details of any recent alterations or extensions. We can often begin with very little information and ask for more as needed.' },
 ]
@@ -121,7 +121,7 @@ export default function FreeholdersLeaseholdersPage() {
               'A leaseholder or insurer has raised a question about the adequacy of cover.',
             ].map((point, i) => (
               <div key={i} className="bg-white/[0.06] rounded-xl border border-white/10 p-6 flex gap-4">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <p className="text-white/60 text-sm leading-relaxed">{point}</p>
               </div>
             ))}

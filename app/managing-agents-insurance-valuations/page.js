@@ -5,7 +5,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessments for Managing Agents and RTM Companies',
-  description: 'Specialist RCA surveys for managing agents and RTM companies. Protect yourself and your leaseholders with accurate, RICS-aligned rebuild valuations for buildings insurance.',
+  description: 'Specialist reinstatement cost assessment surveys for managing agents and RTM companies. Protect yourself and your leaseholders with accurate, RICS-aligned rebuild valuations for buildings insurance.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
 }
 
@@ -15,7 +15,7 @@ const faqItems = [
   { question: `We rely on the insurer's rebuild calculator. Is that sufficient?`, answer: 'Online calculators and insurer-provided tools carry no professional accountability. In a dispute, they offer no documented methodology or professional responsibility. A specialist RCA does.' },
   { question: 'Can you assess multiple blocks for us under one instruction?', answer: 'Yes. We specialise in portfolio assessments for managing agents with multiple blocks, providing individual reports for each property and a consolidated summary for your records.' },
   { question: 'How quickly do you turn around a desktop assessment?', answer: 'Standard desktop assessments are delivered within 48 hours of instruction. On-site surveys are scheduled promptly and we confirm a timeline on instruction.' },
-  { question: 'What do RTM companies need to know about RCA?', answer: 'When leaseholders exercise the Right to Manage, the responsibility for arranging buildings insurance typically transfers with it. RTM companies should establish the correct reinstatement figure before the first renewal to evidence their compliance from the outset.' },
+  { question: 'What do RTM companies need to know about reinstatement cost assessments?', answer: 'When leaseholders exercise the Right to Manage, the responsibility for arranging buildings insurance typically transfers with it. RTM companies should establish the correct reinstatement figure before the first renewal to evidence their compliance from the outset.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -84,7 +84,7 @@ export default function ManagingAgentsPage() {
               You need a report that is clear, practical and easy to use with brokers, insurers and leaseholders. It should explain the declared value, the key assumptions, the review date and the scope of the assessment.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              RICS-aligned guidance stresses the importance of professional diligence because an understated insurance value can lead to proportionate settlement issues under the average clause. That is exactly why many managing agents prefer a specialist RCA instead of relying on outdated figures or online tools.
+              RICS-aligned guidance stresses the importance of professional diligence because an understated insurance value can lead to proportionate settlement issues under the average clause. That is exactly why many managing agents prefer a specialist reinstatement cost assessment instead of relying on outdated figures or online tools.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -97,7 +97,7 @@ export default function ManagingAgentsPage() {
               { title: 'Professional indemnity', desc: 'PI insurance on every instruction, you are protected if the figure is challenged.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-4">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
                   <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>

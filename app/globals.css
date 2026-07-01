@@ -152,3 +152,12 @@
 [class^="lifecycle-ring-"]   {}
 [class^="lifecycle-border-"] {}
 [class^="method-ring-"]      {}
+
+/* ── Electric blue tick glow ── */
+.tick-glow {
+  color: #2979ff;
+  text-shadow:
+    0 0 6px rgba(41, 121, 255, 0.9),
+    0 0 14px rgba(41, 121, 255, 0.6),
+    0 0 28px rgba(41, 121, 255, 0.3);
+}

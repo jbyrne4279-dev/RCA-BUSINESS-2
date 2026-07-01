@@ -119,7 +119,7 @@ export default function ListedBuildingsPage() {
               { title: 'VAT where applicable', desc: 'VAT treatment for listed buildings depends on use and ownership structure.' },
             ].map(({ title, desc }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 flex gap-3">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
                   <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>

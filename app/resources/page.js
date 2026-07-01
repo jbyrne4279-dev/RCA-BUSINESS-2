@@ -45,7 +45,7 @@ export default function ResourcesPage() {
       {/* HEADER */}
       <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="/resources-hero.jpeg" alt="RCA resources and guides" fill className="object-cover opacity-20" priority />
+          <Image src="/resources-hero.jpeg" alt="Reinstatement cost assessment resources and guides" fill className="object-cover opacity-20" priority />
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

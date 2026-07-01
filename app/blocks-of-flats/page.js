@@ -11,7 +11,7 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Why do blocks of flats need a specialist assessment?', answer: 'Blocks of flats can be more complex than they first appear. Communal areas, shared services, external fabric, car parks and landscaping all contribute to the rebuild cost. A specialist reinstatement cost assessment considers these elements properly rather than relying on a generic figure.' },
-  { question: 'Who should commission the RCA for a block of flats?', answer: 'Typically the managing agent, RTM company or freeholder, whoever is responsible for arranging buildings insurance. Leaseholders can also commission an independent assessment if they have concerns about the figure being used.' },
+  { question: 'Who should commission the reinstatement cost assessment for a block of flats?', answer: 'Typically the managing agent, RTM company or freeholder, whoever is responsible for arranging buildings insurance. Leaseholders can also commission an independent assessment if they have concerns about the figure being used.' },
   { question: 'What happens if our block is underinsured?', answer: 'If the declared value is too low and a major claim arises, the insurer may apply the average clause and reduce the payout proportionately. Leaseholders may then pursue the party responsible for arranging insurance for the shortfall.' },
   { question: 'Can you assess converted houses and mansion blocks?', answer: 'Yes. We assess all types of residential block including purpose-built flats, converted houses, mansion blocks, mixed-use developments and large residential portfolios.' },
   { question: 'How often should the insurance figure be reviewed?', answer: 'RICS guidance recommends annual inflation adjustment and a more detailed review at least every three years. Our 3-Year Protection plan handles both requirements under a single instruction.' },
@@ -60,7 +60,7 @@ export default function BlocksOfFlatsPage() {
               { title: 'One figure, many people.', desc: 'In a block of flats, all leaseholders depend on the same insurance figure. Getting it wrong once affects everyone who lives or owns property there.' },
             ].map(({ title, desc }) => (
               <div key={title} className="py-8 flex gap-6">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
                   <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>

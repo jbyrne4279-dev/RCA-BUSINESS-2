@@ -33,7 +33,7 @@ export default function HomePage() {
               Protect your clients, residents and leaseholders with a specialist valuation that helps set the correct buildings sum insured. RICS-aligned. Broker-ready. Delivered in 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an RCA</Link>
+              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/blocks-of-flats" className="link-amber">Blocks of flats RCA →</Link>
+            <Link href="/blocks-of-flats" className="link-amber">Blocks of flats assessment →</Link>
           </div>
         </div>
       </section>
@@ -279,9 +279,9 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { quote: 'Instructing RCA Ltd has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
-              { quote: 'After our RTM we needed to establish the correct reinstatement figure from scratch. RCA came back quickly with a robust RICS report and real confidence going into our first renewal.', name: 'Michael T.', role: 'RTM Company Director, Surrey' },
-              { quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. RCA sorted it within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
+              { quote: 'Instructing Reinstatement Cost Assessment Ltd has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
+              { quote: 'After our RTM we needed to establish the correct reinstatement figure from scratch. The team came back quickly with a robust RICS report and real confidence going into our first renewal.', name: 'Michael T.', role: 'RTM Company Director, Surrey' },
+              { quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. The assessment was sorted within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
             ].map(({ quote, name, role }) => (
               <div key={name} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 flex flex-col scroll-reveal hover-lift">
                 <div className="flex gap-0.5 mb-4">

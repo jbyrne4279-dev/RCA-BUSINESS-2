@@ -20,7 +20,7 @@ const faqItems = [
 function CheckItem({ title, desc, dark }) {
   return (
     <div className={`flex gap-3 py-3 border-b ${dark ? 'border-white/10' : 'border-[#dadce0]'}`}>
-      <span className="text-[#1a73e8] text-sm shrink-0 mt-0.5 font-bold">✓</span>
+      <span className="text-[#1a73e8] text-sm shrink-0 mt-0.5 font-bold tick-glow">✓</span>
       <div>
         <p className={`font-medium text-sm mb-0.5 ${dark ? 'text-white' : 'text-[#202124]'}`}>{title}</p>
         <p className={`text-xs leading-relaxed ${dark ? 'text-white/55' : 'text-[#5f6368]'}`}>{desc}</p>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
               A reinstatement cost assessment calculates the cost of rebuilding your property from scratch for insurance purposes. It helps set the buildings sum insured so the policy reflects real rebuild cost.
             </p>
             <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5">
-              <p className="text-sm font-semibold text-[#202124] mb-3">A proper RCA considers:</p>
+              <p className="text-sm font-semibold text-[#202124] mb-3">A proper reinstatement cost assessment considers:</p>
               <div className="space-y-0">
                 {[
                   'Demolition and site clearance',
@@ -58,13 +58,13 @@ export default function ServicesPage() {
                   'External works, car parks and landscaping',
                 ].map(item => (
                   <div key={item} className="flex gap-3 py-2 border-b border-[#dadce0] last:border-0">
-                    <span className="text-[#1a73e8] font-bold text-sm shrink-0">✓</span>
+                    <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                     <span className="text-[#3c4043] text-sm">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <Link href="/contact#contact-form" className="btn-shine">Request an RCA</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
           <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[520px]">
             <Image
@@ -90,7 +90,7 @@ export default function ServicesPage() {
               Why Choose a Specialist
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              RCA is a specialist discipline.
+              Reinstatement cost assessment is a specialist discipline.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-4">
               RICS guidance says reinstatement cost assessment should be handled as a specialist discipline, with clear instructions, site-based assessment where appropriate, and proper documentation. Relying on rough averages or online calculators can leave a building significantly underinsured.
@@ -108,7 +108,7 @@ export default function ServicesPage() {
               { title: 'RICS-aligned RCA', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8]' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#202124] text-sm">{title}</p>
                   <p className="text-[#5f6368] text-xs leading-relaxed mt-0.5">{sub}</p>
