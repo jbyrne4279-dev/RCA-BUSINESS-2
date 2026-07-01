@@ -1,5 +1,7 @@
-﻿import Link from 'next/link'
-import ContactSection from '../components/ContactSection'
+import { Suspense } from 'react'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import ContactFormInner from '../components/ContactFormInner'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
@@ -86,58 +88,160 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactFaqJsonLd) }}
       />
-    <main>
+      <Navbar />
+      <main>
 
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <img
-          src="/contact-hero.jpeg"
-          alt="Fire-damaged building — the hard way to find out you were underinsured"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
-        <div className="relative z-10 w-full flex items-center justify-center px-6 py-24 md:py-32">
-          <div className="w-full max-w-xl md:max-w-2xl bg-white/80 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)] text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold leading-[1.15] tracking-tight text-primary mb-6">
-              Don&rsquo;t find out<br />you&rsquo;re <span className="text-shine-red">underinsured</span><br />the hard way.
-            </h1>
-            <p className="text-sm text-secondary leading-relaxed mb-8">
-              Over <strong className="font-bold text-primary">80%</strong> of UK properties are insured for the wrong amount. A RICS reinstatement cost assessment takes less than <strong className="font-bold text-primary">48 hours</strong> and could save you hundreds of thousands in an uncapped claim.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mb-5">
-              <Link href="#contact-form" className="btn-shine text-white px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform sovereign-shadow text-center">
-                Contact Surveyor
-              </Link>
-              <Link href="/services" className="bg-zinc-900/10 border border-zinc-900/15 text-primary px-6 py-4 rounded-full font-semibold text-sm hover:bg-zinc-900/15 active:scale-[0.97] transition-all text-center">
-                Our Services
-              </Link>
+        {/* Hero */}
+        <section className="bg-white border-b border-[#111318]/8 py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-px w-8 bg-[#c47c1e]" />
+              <span className="text-[#c47c1e] text-xs font-body font-semibold uppercase tracking-widest">Get In Touch</span>
             </div>
-            <div className="flex justify-center">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-200 bg-white/60 text-xs font-semibold text-secondary">
-                <span className="w-2 h-2 rounded-full bg-[#1A6B4A] inline-block"></span>
-                RICS Regulated &middot; London &amp; UK
-              </span>
+            <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl text-[#111318] leading-[1.05] tracking-tight max-w-2xl">
+              Commission your assessment.
+            </h1>
+            <p className="font-body text-[#111318]/65 text-lg mt-6 max-w-xl leading-relaxed">
+              Speak directly with an RICS-regulated surveyor. We respond within 24 hours and issue desktop reports within 48 hours of instruction.
+            </p>
+          </div>
+        </section>
+
+        {/* Two-column contact section */}
+        <section className="bg-[#f4f5f7] py-20 md:py-28">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-start">
+
+              {/* Left: contact info */}
+              <div>
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="h-px w-8 bg-[#c47c1e]" />
+                  <span className="text-[#c47c1e] text-xs font-body font-semibold uppercase tracking-widest">Contact Details</span>
+                </div>
+                <h2 className="font-headline text-3xl md:text-4xl text-[#111318] leading-tight mb-10">
+                  Reach our surveyors directly.
+                </h2>
+
+                <div className="space-y-8">
+                  {/* Address */}
+                  <div className="flex gap-4 items-start">
+                    <div className="mt-1 flex-shrink-0 w-10 h-10 border border-[#c47c1e]/30 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c47c1e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-body text-xs font-semibold uppercase tracking-widest text-[#c47c1e] mb-1">Address</p>
+                      <p className="font-body text-[#111318] text-base leading-relaxed">
+                        17 Hanover Square<br />London, W1S 1BN
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Phone */}
+                  <div className="flex gap-4 items-start">
+                    <div className="mt-1 flex-shrink-0 w-10 h-10 border border-[#c47c1e]/30 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c47c1e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-body text-xs font-semibold uppercase tracking-widest text-[#c47c1e] mb-1">Telephone</p>
+                      <a href="tel:+442031788099" className="font-body text-[#111318] text-base hover:text-[#c47c1e] transition-colors">
+                        020 3178 8099
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div className="flex gap-4 items-start">
+                    <div className="mt-1 flex-shrink-0 w-10 h-10 border border-[#c47c1e]/30 flex items-center justify-center">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c47c1e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M2 8l10 6 10-6"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="font-body text-xs font-semibold uppercase tracking-widest text-[#c47c1e] mb-1">Email</p>
+                      <a href="mailto:info@rca-ltd.com" className="font-body text-[#111318] text-base hover:text-[#c47c1e] transition-colors">
+                        info@rca-ltd.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Key credentials */}
+                <div className="mt-12 pt-10 border-t border-[#111318]/10 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-5 bg-[#c47c1e]" />
+                    <span className="font-body text-sm text-[#111318]">RICS regulated surveyors</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-5 bg-[#c47c1e]" />
+                    <span className="font-body text-sm text-[#111318]">24-hour response guaranteed</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-5 bg-[#c47c1e]" />
+                    <span className="font-body text-sm text-[#111318]">Desktop reports issued within 48 hours</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <div className="h-px w-5 bg-[#c47c1e]" />
+                    <span className="font-body text-sm text-[#111318]">Reports accepted by all major UK insurers</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: contact form */}
+              <div id="contact-form" className="bg-white border border-[#111318]/8 p-8 md:p-10 card-shadow">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-px w-8 bg-[#c47c1e]" />
+                  <span className="text-[#c47c1e] text-xs font-body font-semibold uppercase tracking-widest">Instruct Online</span>
+                </div>
+                <h2 className="font-headline text-2xl md:text-3xl text-[#111318] leading-tight mb-8">
+                  Request your assessment.
+                </h2>
+                <Suspense fallback={
+                  <div className="py-12 text-center font-body text-[#111318]/50 text-sm">Loading form&hellip;</div>
+                }>
+                  <ContactFormInner />
+                </Suspense>
+              </div>
+
             </div>
           </div>
-        </div>
-      </section>
-      <div className="scroll-reveal">
-        <ContactSection
-          heading={
-            <>
-              Request Your UK <span className="text-shine">Rebuild Cost Assessment.</span>
-            </>
-          }
-        />
-      </div>
-      <div className="scroll-reveal">
-        <FaqSection
-          description="Everything you need to know about rebuild costs, RICS-regulated assessments, and protecting yourself from underinsurance."
-          items={contactFaqItems}
-        />
-      </div>
+        </section>
 
-    </main>
+        {/* Liability callout */}
+        <section className="bg-[#111318] py-16 md:py-20">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+              <div>
+                <p className="font-headline text-4xl md:text-5xl text-[#c47c1e] leading-none mb-3">80%+</p>
+                <p className="font-body text-white/70 text-sm leading-relaxed">of UK residential blocks are estimated to be underinsured at the point of claim</p>
+              </div>
+              <div>
+                <p className="font-headline text-4xl md:text-5xl text-[#c47c1e] leading-none mb-3">&pound;425bn</p>
+                <p className="font-body text-white/70 text-sm leading-relaxed">estimated underinsurance gap across UK commercial and residential property</p>
+              </div>
+              <div>
+                <p className="font-headline text-4xl md:text-5xl text-[#c47c1e] leading-none mb-3">48 hrs</p>
+                <p className="font-body text-white/70 text-sm leading-relaxed">desktop turnaround from instruction to RICS-certified reinstatement cost report</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <div className="scroll-reveal">
+          <FaqSection
+            description="Everything managing agents, RTM companies, and leaseholders need to know about reinstatement cost assessments, RICS regulation, and liability exposure."
+            items={contactFaqItems}
+          />
+        </div>
+
+      </main>
+      <Footer />
     </>
   )
 }

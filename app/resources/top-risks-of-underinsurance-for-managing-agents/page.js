@@ -15,19 +15,19 @@ export default function ArticlePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       <div className="mb-8 text-center">
-        <Link href="/resources" className="text-xs font-semibold text-[#1A6B4A] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
+        <Link href="/resources" className="text-xs font-semibold text-[#c47c1e] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
       </div>
       <div className="text-center mb-10">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Risk &amp; Compliance</span>
+        <span className="text-xs font-bold uppercase tracking-widest text-[#c47c1e]">Risk &amp; Compliance</span>
         <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Top Risks of Underinsurance for Managing Agents.</h1>
         <p className="text-secondary text-lg leading-relaxed">Research consistently shows that the majority of UK commercial and residential blocks carry insufficient reinstatement values on their insurance policies. For managing agents, this is not just a problem for property owners. It creates direct professional and financial risk.</p>
       </div>
 
       <div>
         <img
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=500&fit=crop&auto=format&q=80"
+          src="/rca-rics-surveyor.png"
           alt="Risk and compliance office documents"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          className="w-full h-[320px] md:h-[420px] object-cover mb-10 sovereign-shadow"
         />
       </div>
 
@@ -52,10 +52,10 @@ export default function ArticlePage() {
         <li>Use a firm that provides BCIS-indexed assessments accepted by all major insurers.</li>
       </ul>
 
-      <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
+      <div className="bg-[#111318] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Concerned about your managed portfolio?</h3>
         <p className="text-white/60 mb-5 text-sm">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 5 days.</p>
-        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
+        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 font-bold inline-block">Get in Touch</Link>
       </div>
     </main>
   )

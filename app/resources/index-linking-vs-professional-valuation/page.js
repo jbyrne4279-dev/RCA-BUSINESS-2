@@ -15,10 +15,10 @@ export default function ArticlePage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
       <div className="mb-8 text-center">
-        <Link href="/resources" className="text-xs font-semibold text-[#1A6B4A] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
+        <Link href="/resources" className="text-xs font-semibold text-[#c47c1e] uppercase tracking-widest hover:underline">&larr; All Resources</Link>
       </div>
       <div className="text-center mb-10">
-        <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A]">Guidance</span>
+        <span className="text-xs font-bold uppercase tracking-widest text-[#c47c1e]">Guidance</span>
         <h1 className="text-4xl font-bold text-primary mt-2 mb-6 leading-tight">Index Linking vs Professional Valuation: What Managing Agents Need to Know.</h1>
         <p className="text-secondary text-lg leading-relaxed">Many managing agents assume that because their insurer applies annual index linking, their buildings are adequately insured. This assumption is one of the most common and most expensive misunderstandings in UK property management.</p>
       </div>
@@ -27,7 +27,7 @@ export default function ArticlePage() {
         <img
           src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=500&fit=crop&auto=format&q=80"
           alt="Insurance documents and financial charts on a desk"
-          className="w-full h-[320px] md:h-[420px] object-cover rounded-2xl mb-10 sovereign-shadow"
+          className="w-full h-[320px] md:h-[420px] object-cover mb-10 sovereign-shadow"
         />
       </div>
 
@@ -59,10 +59,10 @@ export default function ArticlePage() {
         <li>Where the last assessment used a generic online calculator rather than a RICS surveyor, treat the figure as unverified and arrange a proper assessment at the next opportunity.</li>
       </ul>
 
-      <div className="bg-[#0f3d28] rounded-2xl p-8 text-center flex flex-col items-center">
+      <div className="bg-[#111318] rounded-2xl p-8 text-center flex flex-col items-center">
         <h3 className="text-xl font-bold text-white mb-2">Need a reinstatement assessment?</h3>
         <p className="text-white/60 mb-5 text-sm">RICS-regulated, BCIS-indexed, broker-ready. Delivered in 5 days.</p>
-        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 rounded-full font-bold inline-block">Get in Touch</Link>
+        <Link href="/contact#contact-form" className="btn-shine text-white px-8 py-3 font-bold inline-block">Get in Touch</Link>
       </div>
     </main>
   )

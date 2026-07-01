@@ -30,9 +30,9 @@ export default function ThankYouPage() {
         <div className="relative z-10 w-full max-w-2xl mx-auto px-6 py-16 md:py-24 text-center pop-in">
           <div className="bg-white/85 backdrop-blur-xl rounded-3xl px-8 py-10 md:px-14 md:py-14 border border-white/30 shadow-[0_8px_40px_rgba(0,0,0,0.2)]">
             <div className="btn-shine w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <span className="material-symbols-outlined text-white" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+              
             </div>
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>task_alt</span>Enquiry Received</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#c47c1e] flex items-center justify-center gap-2 mb-3">Enquiry Received</span>
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-5">Thank you.</h1>
             <p className="text-lg text-secondary leading-relaxed">
               We&rsquo;ve received your enquiry and will respond within{' '}
@@ -47,7 +47,7 @@ export default function ThankYouPage() {
       <section className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] flex items-center justify-center gap-2 mb-3"><span className="material-symbols-outlined" style={{fontSize:'1rem'}}>format_list_numbered</span>Your next steps</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#c47c1e] flex items-center justify-center gap-2 mb-3">Your next steps</span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">What happens next.</h2>
           </div>
 
@@ -87,17 +87,17 @@ export default function ThankYouPage() {
       {/* CTA */}
       <section className="pb-20 px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-surface-container-low rounded-3xl p-10 text-center border border-[#1A6B4A]/15 sovereign-shadow">
-            <span className="material-symbols-outlined text-[#1A6B4A] mb-4 block" style={{ fontSize: '2rem', fontVariationSettings: "'FILL' 1" }}>info</span>
+          <div className="bg-surface-container-low rounded-3xl p-10 text-center border border-[#c47c1e]/20 sovereign-shadow">
+            
             <h3 className="font-bold text-primary text-xl mb-3">While you wait.</h3>
             <p className="text-secondary leading-relaxed mb-8 max-w-md mx-auto">
               Explore our guide to understand why accurate rebuild costs matter and how underinsurance happens.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Link href="/resources" className="btn-shine text-white px-8 py-3.5 rounded-full font-semibold active:scale-[0.97] transition-transform">
+              <Link href="/resources" className="btn-shine text-white px-8 py-3.5 font-semibold active:scale-[0.97] transition-transform">
                 Read the guide
               </Link>
-              <Link href="/" className="bg-white px-8 py-3.5 rounded-full font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-black/10">
+              <Link href="/" className="bg-white px-8 py-3.5 font-semibold text-primary active:scale-[0.97] transition-transform outline outline-1 outline-black/10">
                 Back to home
               </Link>
             </div>
