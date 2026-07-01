@@ -16,7 +16,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 w-full bg-white z-50 border-b border-[#0e1b36]/10">
+    <header className="sticky top-0 w-full bg-white z-50 border-b border-[#111318]/10">
       <nav aria-label="Main navigation" className="flex items-center px-6 md:px-10 py-4 max-w-full mx-auto">
         <Link href="/" onClick={() => setOpen(false)} className="flex-1 flex items-center gap-2.5">
           <span className="logo-shine">
@@ -40,8 +40,8 @@ export default function Navbar() {
                 href={href}
                 className={
                   isActive
-                    ? 'text-[#0e1b36] border-b border-[#c4a35a] pb-0.5 font-medium text-sm tracking-wide'
-                    : 'text-[#0e1b36]/60 hover:text-[#0e1b36] transition-all font-medium text-sm tracking-wide'
+                    ? 'text-[#111318] border-b border-[#c47c1e] pb-0.5 font-medium text-sm tracking-wide'
+                    : 'text-[#111318]/50 hover:text-[#111318] transition-all font-medium text-sm tracking-wide'
                 }
               >
                 {label}
@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex flex-1 justify-end items-center gap-6">
-          <a href="tel:+442031788099" className="text-sm font-medium text-[#0e1b36]/60 hover:text-[#0e1b36] transition-colors tracking-wide">
+          <a href="tel:+442031788099" className="text-sm font-medium text-[#111318]/50 hover:text-[#111318] transition-colors tracking-wide">
             020 3178 8099
           </a>
           <Image
@@ -76,17 +76,15 @@ export default function Navbar() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="inline-flex items-center justify-center w-9 h-9 text-[#0e1b36] hover:bg-[#0e1b36]/5 transition-colors"
+            className="inline-flex items-center justify-center w-9 h-9 text-[#111318] hover:bg-[#111318]/5 transition-colors"
           >
-            <span className="material-symbols-outlined" style={{ fontSize: '1.4rem' }}>
-              {open ? 'close' : 'menu'}
-            </span>
+            <span style={{ fontSize: '1.4rem', fontWeight: 300 }}>{open ? '✕' : '☰'}</span>
           </button>
         </div>
       </nav>
 
       {open && (
-        <div className="md:hidden border-t border-[#0e1b36]/10 bg-[#0e1b36]">
+        <div className="md:hidden border-t border-[#111318]/10 bg-[#111318]">
           <div className="flex flex-col px-6 py-5 gap-0.5">
             {links.map(({ href, label }) => {
               const isActive = pathname === href
@@ -97,7 +95,7 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className={
                     isActive
-                      ? 'text-[#c4a35a] font-medium tracking-wide py-3 px-3 border-l-2 border-[#c4a35a] text-sm'
+                      ? 'text-[#c47c1e] font-medium tracking-wide py-3 px-3 border-l-2 border-[#c47c1e] text-sm'
                       : 'text-white/70 hover:text-white font-medium tracking-wide py-3 px-3 border-l-2 border-transparent hover:border-white/20 text-sm transition-all'
                   }
                 >

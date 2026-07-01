@@ -1,6 +1,6 @@
 ﻿export default function FaqSection({ description, items }) {
   return (
-    <section className="pt-16 pb-24 bg-[#0e1b36]">
+    <section className="pt-16 pb-24 bg-[#111318]">
       <div className="max-w-6xl mx-auto px-8">
         <div className="text-center mb-14 space-y-4">
           <div className="flex items-center justify-center gap-3 mb-2">
