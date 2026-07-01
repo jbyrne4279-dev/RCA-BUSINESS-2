@@ -31,7 +31,7 @@ export default function HomePage() {
               Accurate reinstatement cost assessments for managing agents and freeholders.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Protect your clients, residents and leaseholders with a specialist valuation that helps set the correct buildings sum insured. RICS-aligned. Broker-ready. Delivered in 24 hours.
+              Specialist reinstatement cost assessments for managing agents, freeholders and property professionals. RICS-aligned, broker-ready, and delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -107,14 +107,14 @@ export default function HomePage() {
                   <span className="w-8 h-8 rounded-full bg-[#fce8e6] flex items-center justify-center text-sm">✕</span>
                   <p className="font-semibold text-[#202124]">Market value</p>
                 </div>
-                <p className="text-[#5f6368] text-sm leading-relaxed">What the property might sell for. Affected by location, demand and comparable sales. Not relevant for insurance purposes.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">What the property sells for on the open market. Determined by location, demand and comparable transactions. Irrelevant for insurance purposes.</p>
               </div>
               <div className="border-2 border-[#1a73e8] rounded-xl p-6 bg-[#e8f0fe]/30 hover-lift">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="w-8 h-8 rounded-full bg-[#e6f4ea] flex items-center justify-center text-sm text-[#1e8e3e]">✓</span>
                   <p className="font-semibold text-[#202124]">Reinstatement cost</p>
                 </div>
-                <p className="text-[#5f6368] text-sm leading-relaxed">What it costs to rebuild from scratch: demolition, structure, professional fees, statutory fees, and VAT. This is what should set your sum insured.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">The cost to demolish, clear and rebuild: structure, professional fees, statutory fees, and VAT where applicable. This is the correct basis for the buildings sum insured.</p>
               </div>
             </div>
           </div>
@@ -132,14 +132,14 @@ export default function HomePage() {
               In a block of flats, one incorrect figure affects everyone.
             </h2>
             <p className="text-[#5f6368] text-lg leading-relaxed max-w-2xl mx-auto">
-              If the building is underinsured and a major claim arises, the insurer may apply the average clause and reduce the payout.
+              Where the building is underinsured at the point of a major claim, the insurer applies the average clause and reduces the payout in proportion to the shortfall.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders face the gap.', icon: '⚠' },
-              { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders may be held responsible by leaseholders for the shortfall.', icon: '⚖' },
-              { title: 'Outdated figures', desc: 'Construction costs rose over 30% between 2020 and 2024. An old valuation is almost certainly inaccurate.', icon: '📊' },
+              { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders bear the gap.', icon: '⚠' },
+              { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖' },
+              { title: 'Outdated figures', desc: 'Construction costs rose over 30% between 2020 and 2024. A valuation not formally reviewed in that period is materially inaccurate.', icon: '📊' },
             ].map(({ title, desc, icon }) => (
               <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
                 <div className="w-10 h-10 rounded-full bg-[#fce8e6] flex items-center justify-center mb-4 text-lg">{icon}</div>
@@ -171,7 +171,7 @@ export default function HomePage() {
               Built for the people responsible for getting it right.
             </h2>
             <p className="text-white/60 text-base leading-relaxed mb-8">
-              Managing agents, RTM companies, freeholders, leaseholders and block managers across the UK rely on our assessments to set the correct buildings sum insured and protect against underinsurance.
+              Managing agents, RTM companies, freeholders, leaseholders and block managers instruct us to establish the correct buildings sum insured and create a documented, defensible basis for the insurance figure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -207,10 +207,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { n: '01', title: 'Tell us about the building', desc: 'Share the address, property type, approximate size and any previous valuation or recent alterations.' },
-              { n: '02', title: 'We arrange inspection', desc: 'Where a site visit is required, we arrange it promptly. Desktop assessments begin on instruction.' },
-              { n: '03', title: 'We assess the rebuild cost', desc: 'Using a structured approach: materials, structure, services, external works, professional and statutory fees.' },
-              { n: '04', title: 'You receive your report', desc: 'A clear, broker-ready report with the declared value, methodology statement, and review guidance.' },
+              { n: '01', title: 'Tell us about the building', desc: 'Provide the address, property type, approximate size and any previous valuation or details of recent alterations.' },
+              { n: '02', title: 'We arrange inspection', desc: 'Where a site visit is required, we schedule it promptly. Desktop assessments commence on instruction.' },
+              { n: '03', title: 'We assess the rebuild cost', desc: 'A structured assessment covering materials, structure, services, external works, professional fees and statutory fees.' },
+              { n: '04', title: 'You receive your report', desc: 'A broker-ready report stating the declared value, methodology, assumptions and next review date.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 scroll-reveal hover-lift">
                 <div className="w-9 h-9 rounded-full bg-[#1a73e8] flex items-center justify-center text-white text-xs font-bold mb-4">{n}</div>
