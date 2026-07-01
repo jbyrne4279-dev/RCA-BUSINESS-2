@@ -56,10 +56,6 @@ export default function Navbar() {
 
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <a href="tel:+442031788099"
-            className="text-sm text-[#5f6368] hover:text-[#202124] transition-colors font-medium">
-            020 3178 8099
-          </a>
           <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">
             Get a Quote
           </Link>
@@ -96,9 +92,6 @@ export default function Navbar() {
                 {label}
               </Link>
             ))}
-<div className="px-3 py-4 border-t border-[#dadce0] mt-1">
-              <a href="tel:+442031788099" className="text-sm text-[#5f6368]">020 3178 8099</a>
-            </div>
           </div>
         </div>
       )}
