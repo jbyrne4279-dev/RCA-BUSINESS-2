@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const reviews = [
   { title: '"Standard practice at renewal"', quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
@@ -24,9 +24,16 @@ const StarRow = () => (
 
 export default function ReviewCarousel() {
   const [idx, setIdx] = useState(0)
+  const [paused, setPaused] = useState(false)
   const prev = () => setIdx(i => (i - 1 + reviews.length) % reviews.length)
   const next = () => setIdx(i => (i + 1) % reviews.length)
   const r = reviews[idx]
+
+  useEffect(() => {
+    if (paused) return
+    const t = setInterval(() => setIdx(i => (i + 1) % reviews.length), 5000)
+    return () => clearInterval(t)
+  }, [paused])
 
   return (
     <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
@@ -55,7 +62,9 @@ export default function ReviewCarousel() {
 
         {/* Card */}
         <div className="bg-white border border-[#e8eaed] rounded-2xl overflow-hidden"
-          style={{boxShadow:'0 4px 20px rgba(60,64,67,0.08)'}}>
+          style={{boxShadow:'0 4px 20px rgba(60,64,67,0.08)'}}
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}>
           <div className="p-8 md:p-10 flex flex-col justify-center">
             <StarRow />
             <h3 className="text-xl md:text-2xl font-bold text-[#202124] mb-4 leading-snug">{r.title}</h3>
