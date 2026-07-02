@@ -90,7 +90,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-GB" className={`${inter.variable} ${cormorant.variable} light`}>
+    <html lang="en-GB" className={`${inter.variable} ${cormorant.variable}`}>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MHVWR8FGB"></script>
         <script dangerouslySetInnerHTML={{ __html: `

@@ -21,14 +21,14 @@ export default function PortfolioPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
               Every asset. One instruction.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-white/50 text-lg leading-relaxed mb-8">
               Individual RICS-regulated reports per property, a consolidated summary schedule, and managed annual BCIS indexation, all under a single engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -36,7 +36,7 @@ export default function PortfolioPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 0 0 1px rgba(124,58,237,0.2), 0 24px 64px rgba(124,58,237,0.1), 0 4px 16px rgba(0,0,0,0.4)'}}>
             <Image
               src="/AdobeStock_1477785304.jpeg"
               alt="Portfolio reinstatement cost assessment"
@@ -44,23 +44,23 @@ export default function PortfolioPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07070f]/70 via-[#07070f]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Individual RICS reports per asset. One consolidated instruction.</p>
+              <p className="text-white/90 text-sm font-medium leading-snug">Individual RICS reports per asset. One consolidated instruction.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* PROBLEM */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06]" style={{ background: '#0d0d1e' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Problem</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               One wrong figure compounds across a portfolio.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
+            <p className="text-white/50 text-base leading-relaxed mb-8">
               For investors and fund managers holding multiple assets, underinsurance risk replicates across every property carrying an out-of-date reinstatement figure. A systematic portfolio assessment eliminates the exposure in a single instruction, producing a consolidated compliance record for the entire portfolio.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Portfolio Quote</Link>
@@ -72,8 +72,8 @@ export default function PortfolioPage() {
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
               <div key={n} className="stat-card p-6 text-center">
-                <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
+                <p className="text-3xl font-bold text-white leading-none mb-3">{n}</p>
+                <p className="text-white/50 text-xs leading-relaxed">{label}</p>
               </div>
             ))}
           </div>
@@ -81,7 +81,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CLIENTS */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
+      <section className="py-16 md:py-20 px-6 md:px-10" style={{ background: '#030308' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-dark">Portfolio Clients</span>
@@ -97,13 +97,13 @@ export default function PortfolioPage() {
               { title: 'RTM Companies', desc: 'RTM companies assuming insurance responsibility and requiring initial assessments across multiple blocks.', href: '/managing-agents-insurance-valuations' },
             ].map(({ title, desc, href }) => (
               <div key={title} className="brix-card">
-                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
-                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>
+                <div className="h-32 flex items-center justify-center" style={{background:'rgba(124,58,237,0.08)'}}>
+                  <svg className="w-9 h-9" fill="none" stroke="rgba(167,139,250,0.4)" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>
                 </div>
                 <div className="p-5">
-                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                  <p className="font-semibold text-white text-sm mb-2">{title}</p>
+                  <p className="text-white/50 text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#a78bfa] text-xs font-semibold hover:text-[#a78bfa] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}

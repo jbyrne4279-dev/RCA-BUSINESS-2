@@ -20,17 +20,17 @@ export default function ContactPage() {
     <main>
 
       {/* HEADER */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">
               Get In Touch
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
               Let&rsquo;s get your assessment underway.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              24-hour response on all enquiries. Speak to a specialist surveyor directly on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+            <p className="text-white/50 text-lg leading-relaxed mb-8">
+              24-hour response on all enquiries. Speak to a specialist surveyor directly on <a href="tel:+442031788099" className="text-[#a78bfa] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -39,10 +39,10 @@ export default function ContactPage() {
                 { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
               ].map(({ label, value, href }) => (
                 <div key={label} className="flex gap-3 items-baseline">
-                  <p className="text-xs font-semibold text-[#9aa0a6] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
+                  <p className="text-xs font-semibold text-white/35 uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
                   {href
-                    ? <a href={href} className="text-[#202124] font-semibold hover:text-[#1a73e8] transition-colors">{value}</a>
-                    : <p className="text-[#202124] font-semibold">{value}</p>
+                    ? <a href={href} className="text-white/80 font-semibold hover:text-[#a78bfa] transition-colors">{value}</a>
+                    : <p className="text-white/80 font-semibold">{value}</p>
                   }
                 </div>
               ))}
@@ -52,7 +52,7 @@ export default function ContactPage() {
               <a href="/services" className="btn-ghost">Our Services</a>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 0 0 1px rgba(124,58,237,0.2), 0 24px 64px rgba(124,58,237,0.1), 0 4px 16px rgba(0,0,0,0.4)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Cavendish and Rowe reinstatement cost assessment surveyors"
@@ -60,9 +60,9 @@ export default function ContactPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07070f]/70 via-[#07070f]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">All enquiries receive a response within 24 hours on business days.</p>
+              <p className="text-white/90 text-sm font-medium leading-snug">All enquiries receive a response within 24 hours on business days.</p>
             </div>
           </div>
         </div>

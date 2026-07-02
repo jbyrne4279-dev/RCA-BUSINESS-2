@@ -22,14 +22,14 @@ export default function ListedBuildingsPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Listed &amp; Heritage Buildings</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
               Listed buildings cost significantly more to rebuild than standard calculators suggest.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-white/50 text-lg leading-relaxed mb-8">
               A 20–50% rebuild cost uplift over standard construction is typical. For complex heritage properties it can be far higher. Generic tools miss specialist materials, heritage contractors, conservation consents and VAT exposure entirely. Our site-based assessments account for every factor.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -37,31 +37,31 @@ export default function ListedBuildingsPage() {
               <Link href="/services#on-site-survey" className="btn-ghost">On-Site Survey</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 0 0 1px rgba(124,58,237,0.2), 0 24px 64px rgba(124,58,237,0.1), 0 4px 16px rgba(0,0,0,0.4)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Listed building assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#07070f]/70 via-[#07070f]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Site-based specialist assessments for listed and heritage buildings across the UK.</p>
+              <p className="text-white/80 text-sm font-medium leading-snug">Site-based specialist assessments for listed and heritage buildings across the UK.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* THE COST GAP */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Cost Gap</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Rebuild cost regularly exceeds market value for listed properties.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <p className="text-white/50 text-base leading-relaxed mb-6">
               For a standard property, market value is often higher than rebuild cost. For listed buildings, the reverse is frequently true. Authentic materials, specialist contractors, conservation requirements and extended programme timescales combine to push rebuild cost well above what a comparable unlisted building would cost to replace.
             </p>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <p className="text-white/50 text-base leading-relaxed mb-6">
               A thatched cottage worth £500,000 on the open market can carry a reinstatement cost of £1,000,000 or more once listing requirements, conservation consents and specialist labour and materials are properly accounted for. A Victorian terrace valued at £400,000 may cost £800,000 to rebuild correctly.
             </p>
-            <p className="text-[#5f6368] text-base leading-relaxed">
+            <p className="text-white/50 text-base leading-relaxed">
               Generic calculators apply standard modern construction rates. They do not account for any of these factors, and the resulting figure systematically understates the true cost.
             </p>
           </div>
@@ -70,34 +70,34 @@ export default function ListedBuildingsPage() {
               { label: 'Online calculator or inherited estimate', desc: 'Applies standard modern construction rates. Misses specialist materials, heritage labour, conservation consents and VAT exposure. Not defensible in a dispute.', ok: false },
               { label: 'Specialist site-based assessment', desc: 'Accounts for authentic materials, heritage contractor rates, conservation requirements, extended programme costs and VAT treatment. Accepted by all UK insurers.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start`} style={ok ? {borderColor:'rgba(124,58,237,0.4)', background:'rgba(124,58,237,0.08)'} : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#a78bfa] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-white text-sm mb-1">{label}</p>
+                  <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
             <div className="ls-card p-5 mt-2">
-              <p className="text-xs text-[#5f6368] leading-relaxed"><span className="font-semibold text-[#202124]">Per square metre context.</span> Current approximate BCIS rates run £1,700–£2,400/m² for standard construction. For complex listed properties, realistic figures can reach £3,000–£5,000/m² or more, before professional fees, consents and VAT.</p>
+              <p className="text-xs text-white/50 leading-relaxed"><span className="font-semibold text-white">Per square metre context.</span> Current approximate BCIS rates run £1,700–£2,400/m² for standard construction. For complex listed properties, realistic figures can reach £3,000–£5,000/m² or more, before professional fees, consents and VAT.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* COST FACTORS */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#07070f' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <span className="badge badge-blue">What Drives the Cost</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Six factors that standard assessments miss.
             </h2>
-            <p className="text-[#5f6368] text-sm leading-relaxed">
+            <p className="text-white/50 text-sm leading-relaxed">
               Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must be carried out in original style and materials. That legal obligation drives every additional cost below.
             </p>
           </div>
-          <div className="lg:col-span-8 divide-y divide-[#dadce0]">
+          <div className="lg:col-span-8 divide-y divide-white/[0.06]">
             {[
               { title: 'Specialist materials.', desc: 'Handmade brick, lime mortar, natural stone, traditional timber and period roofing materials carry significant cost premiums. Lime mortar is slower to work with; stone is highly variable and must be individually priced rather than applied as a standard rate.' },
               { title: 'Heritage contractors.', desc: 'Stonemasons, lime plasterers, heritage carpenters and master thatchers command premium rates and are often booked months ahead. Standard contractor rates do not apply. Thatched properties in particular require specialist labour and materials that must be individually priced.' },
@@ -107,10 +107,10 @@ export default function ListedBuildingsPage() {
               { title: 'Curtilage structures.', desc: 'Listing frequently extends beyond the main building to boundary walls, ancillary buildings and structures within the historic curtilage. These are easily missed in an inherited or desktop figure and can represent material additional cost.' },
             ].map(({ title, desc }) => (
               <div key={title} className="py-8 flex gap-6">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
+                <span className="text-[#a78bfa] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
-                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-white text-sm mb-2">{title}</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -119,17 +119,17 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* UNDERINSURANCE RISK */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="badge badge-blue">The Underinsurance Risk</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Listed properties are frequently underinsured by a substantial margin.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <p className="text-white/50 text-base leading-relaxed mb-6">
               Underinsurance is endemic across UK building stock. For listed buildings the gap is typically wider than for standard properties, driven by the systematic failure of standard assessment methods to account for heritage rebuild costs.
             </p>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
+            <p className="text-white/50 text-base leading-relaxed mb-8">
               When the average clause applies, the payout is reduced in proportion to the shortfall. A building insured for £1,000,000 against a true rebuild cost of £1,500,000 is covered for 67%. A £300,000 claim is paid at £200,000. The £100,000 gap falls on the owner.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
@@ -141,8 +141,8 @@ export default function ListedBuildingsPage() {
               { stat: '£3–5k+', label: 'approximate rebuild cost per m² for complex listed properties, vs £1,700–2,400 for standard (BCIS)' },
             ].map(({ stat, label }) => (
               <div key={label} className="stat-card p-6 text-center">
-                <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
+                <p className="text-3xl font-bold text-white leading-none mb-3">{stat}</p>
+                <p className="text-white/50 text-xs leading-relaxed">{label}</p>
               </div>
             ))}
           </div>
@@ -150,11 +150,11 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#07070f' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
               What we assess.
             </h2>
           </div>
@@ -168,13 +168,13 @@ export default function ListedBuildingsPage() {
               { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.', href: '/blocks-of-flats' },
             ].map(({ title, desc, href }) => (
               <div key={title} className="brix-card">
-                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
-                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+                <div className="h-32 flex items-center justify-center" style={{background:'rgba(124,58,237,0.08)'}}>
+                  <svg className="w-9 h-9" fill="none" stroke="rgba(167,139,250,0.4)" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
                 </div>
                 <div className="p-5">
-                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                  <p className="font-semibold text-white text-sm mb-2">{title}</p>
+                  <p className="text-white/50 text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#a78bfa] text-xs font-semibold hover:text-[#a78bfa] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}
@@ -183,7 +183,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* WHEN TO INSTRUCT */}
-      <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
+      <section className="py-16 md:py-20 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#030308' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-dark">When to Act</span>
@@ -204,13 +204,13 @@ export default function ListedBuildingsPage() {
               'Your insurer or broker has queried the adequacy of the declared value.',
             ].map((point, i) => (
               <div key={i} className="ls-card p-6 flex gap-4">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
-                <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
+                <span className="text-[#a78bfa] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
+                <p className="text-white/60 text-sm leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Commission an Assessment</Link>
+            <Link href="/contact#contact-form" className="bg-white text-[#7c3aed] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Commission an Assessment</Link>
           </div>
         </div>
       </section>
