@@ -18,56 +18,61 @@ const faqItems = [
 
 export default function HomePage() {
   return (
-    <main style={{ background: '#07070f' }}>
+    <main>
 
       {/* HERO */}
-      <section className="hero-bg py-20 md:py-28 px-6 md:px-10 border-b border-white/[0.06]">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-blue">Reinstatement Cost Assessment Specialists</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
+            <span className="badge badge-blue">
+              Reinstatement Cost Assessment Specialists
+            </span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
               The reinstatement figure your portfolio depends on.
             </h1>
-            <p className="text-white/55 text-lg leading-relaxed mb-8">
-              Reinstatement cost assessments are all we do. RICS-regulated rebuild valuations for managing agents, freeholders and property professionals across the UK. Broker-ready. Delivered within 24 hours.
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+              Reinstatement cost assessments are all we do. Our practice is dedicated exclusively to RICS-regulated rebuild valuations for managing agents, freeholders and property professionals across the UK. Broker-ready. Delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]"
-            style={{ boxShadow: '0 0 0 1px rgba(124,58,237,0.2), 0 24px 64px rgba(124,58,237,0.12), 0 4px 16px rgba(0,0,0,0.4)' }}>
-            <Image src="/AdobeStock_1477785304.jpeg" alt="Reinstatement cost assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07070f]/70 via-[#07070f]/10 to-transparent" />
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+            <Image
+              src="/AdobeStock_1477785304.jpeg"
+              alt="Reinstatement cost assessment. London block of flats"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/80 text-sm font-medium leading-snug">RICS-regulated assessments for residential and commercial properties across the UK.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for residential and commercial properties across the UK.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* STAT STRIP */}
-      <div className="border-b border-white/[0.06] py-10 px-6 md:px-10" style={{ background: '#0d0d1e' }}>
+      <div className="bg-[#f8f9fa] border-b border-[#e4e8f0] py-10 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4 border border-white/[0.06]"
-            style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.18) 0%, rgba(109,40,217,0.1) 100%)' }}>
+          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'#1a73e8'}}>
             {[
               { iconD: 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z', n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
               { iconD: 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941', n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
               { iconD: 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z', n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
               { iconD: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99', n: '3 yrs', label: 'RICS recommended review period' },
             ].map(({ iconD, n, label }, i) => (
-              <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/[0.06]' : ''}`}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
-                  style={{ background: 'rgba(124,58,237,0.2)' }}>
-                  <svg className="w-5 h-5" fill="none" stroke="#a78bfa" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+              <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/15' : ''}`}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'rgba(255,255,255,0.15)'}}>
+                  <svg className="w-5 h-5" fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <path d={iconD} />
                   </svg>
                 </div>
                 <div>
                   <p className="text-white font-bold text-lg leading-none mb-1">{n}</p>
-                  <p className="text-xs leading-snug text-white/40">{label}</p>
+                  <p className="text-xs leading-snug" style={{color:'rgba(255,255,255,0.55)'}}>{label}</p>
                 </div>
               </div>
             ))}
@@ -75,20 +80,23 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* WHY IT MATTERS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#07070f' }}>
+
+{/* REBUILD VS MARKET VALUE */}
+      <section className="bg-white py-14 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="scroll-reveal">
-              <span className="badge badge-blue">Why It Matters</span>
-              <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+              <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+                Why It Matters
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
                 Reinstatement cost is not the same as market value.
               </h2>
-              <p className="text-white/50 text-base leading-relaxed mb-4">
-                A building&apos;s market value and its reinstatement cost are distinct figures and often differ substantially. After fire, flood or other total loss, what matters is the cost to demolish and rebuild — not the price the property would fetch on the open market.
+              <p className="text-[#5f6368] text-base leading-relaxed mb-4">
+                A building's market value and its reinstatement cost are distinct figures and often differ substantially. After fire, flood or other total loss, what matters is the cost to demolish and rebuild, not the price the property would fetch on the open market.
               </p>
-              <p className="text-white/50 text-base leading-relaxed mb-8">
-                Freeholders, managing agents and RTM companies arranging buildings insurance must base the sum insured on reinstatement cost. A RICS-regulated assessment is the only documented, defensible way to establish that figure.
+              <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+                Freeholders, managing agents and RTM companies arranging buildings insurance must base the sum insured on reinstatement cost. A RICS-regulated assessment is the only documented, defensible way to establish that figure. Reinstatement cost assessment is the sole focus of our practice.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
                 <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -98,17 +106,17 @@ export default function HomePage() {
             <div className="space-y-4 scroll-reveal">
               <div className="ls-card p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="icon-circle icon-circle-red text-red-400">✕</span>
-                  <p className="font-semibold text-white">Market value</p>
+                  <span className="icon-circle icon-circle-red text-[#d93025]">✕</span>
+                  <p className="font-semibold text-[#202124]">Market value</p>
                 </div>
-                <p className="text-white/50 text-sm leading-relaxed">What the property sells for on the open market. Determined by location, demand and comparable transactions. Irrelevant for insurance purposes.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">What the property sells for on the open market. Determined by location, demand and comparable transactions. Irrelevant for insurance purposes.</p>
               </div>
-              <div className="ls-card p-6" style={{ borderColor: 'rgba(124,58,237,0.4)', borderWidth: '1.5px', background: 'rgba(124,58,237,0.06)' }}>
+              <div className="ls-card p-6" style={{borderColor:'#1a73e8',borderWidth:'2px',background:'linear-gradient(135deg,#f6f9ff,#eef3fd)'}}>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="icon-circle icon-circle-blue text-[#a78bfa]">✓</span>
-                  <p className="font-semibold text-white">Reinstatement cost</p>
+                  <span className="icon-circle icon-circle-blue text-[#1e8e3e]">✓</span>
+                  <p className="font-semibold text-[#202124]">Reinstatement cost</p>
                 </div>
-                <p className="text-white/50 text-sm leading-relaxed">The cost to demolish, clear and rebuild: structure, professional fees, statutory fees, and VAT where applicable. This is the correct basis for the buildings sum insured.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">The cost to demolish, clear and rebuild: structure, professional fees, statutory fees, and VAT where applicable. This is the correct basis for the buildings sum insured.</p>
               </div>
             </div>
           </div>
@@ -116,14 +124,16 @@ export default function HomePage() {
       </section>
 
       {/* THE RISK */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
+      <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 scroll-reveal">
-            <span className="badge badge-blue">The Risk</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+          <div className="text-center mb-10 scroll-reveal">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              The Risk
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-4">
               In a block of flats, one incorrect figure affects everyone.
             </h2>
-            <p className="text-white/50 text-lg leading-relaxed max-w-2xl mx-auto">
+            <p className="text-[#5f6368] text-lg leading-relaxed max-w-2xl mx-auto">
               Where the building is underinsured at the point of a major claim, the insurer applies the average clause and reduces the payout in proportion to the shortfall.
             </p>
           </div>
@@ -131,12 +141,12 @@ export default function HomePage() {
             {[
               { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders bear the gap.', icon: '⚠', color: 'icon-circle-red' },
               { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖', color: 'icon-circle-amber' },
-              { title: 'Outdated figures', desc: 'UK construction costs rose significantly between 2020 and 2023 and remain materially higher than pre-pandemic levels. A valuation not reviewed in that period is materially inaccurate.', icon: '⏱', color: 'icon-circle-blue' },
+              { title: 'Outdated figures', desc: 'UK construction costs rose significantly between 2020 and 2023 according to BCIS data and remain materially higher than pre-pandemic levels. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱', color: 'icon-circle-blue' },
             ].map(({ title, desc, icon, color }) => (
               <div key={title} className="ls-card p-6 scroll-reveal">
                 <div className={`icon-circle ${color} mb-4 text-base`}>{icon}</div>
-                <h3 className="font-semibold text-white mb-2">{title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+                <h3 className="font-semibold text-[#202124] mb-2">{title}</h3>
+                <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -146,20 +156,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHO WE WORK WITH */}
-      <section className="relative py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06] overflow-hidden" style={{ background: '#030308' }}>
-        <div className="absolute inset-0 pointer-events-none"
-          style={{ background: 'radial-gradient(ellipse 60% 60% at 80% 50%, rgba(124,58,237,0.1) 0%, transparent 70%)' }} />
+      {/* SURVEYOR IMAGE STRIP */}
+      <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/AdobeStock_1956380728.jpeg"
+            alt="RICS surveyor carrying out a reinstatement cost assessment"
+            fill
+            className="object-cover opacity-20"
+          />
+        </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-blue">Who We Work With</span>
+            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Who We Work With</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               Built for the people responsible for getting it right.
             </h2>
-            <p className="text-white/50 text-base leading-relaxed mb-4">
-              Reinstatement cost assessment is the only service we provide. Every instruction is a RICS-regulated rebuild valuation carried out with a single focus: establishing the correct sum insured.
+            <p className="text-white/60 text-base leading-relaxed mb-4">
+              Reinstatement cost assessment is the only service we provide. We do not offer general surveying, mortgage valuations or any other practice. Every instruction is a RICS-regulated rebuild valuation, carried out with a single focus: establishing the correct sum insured.
             </p>
-            <p className="text-white/50 text-base leading-relaxed mb-8">
+            <p className="text-white/60 text-base leading-relaxed mb-8">
               Managing agents, RTM companies, freeholders, leaseholders and block managers rely on that focus to protect themselves and the people they represent.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
@@ -173,48 +189,29 @@ export default function HomePage() {
               { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block under management', href: '/block-managers-reinstatement-cost-assessments' },
               { title: 'Landlords', benefit: 'Right-size your declared value — over or underinsured', href: '/blocks-of-flats' },
             ].map(({ title, benefit, href }) => (
-              <Link key={title} href={href} className="ls-card-dark px-5 py-5 flex flex-col gap-1 group">
+              <Link key={title} href={href}
+                className="ls-card-dark px-5 py-5 text-white flex flex-col gap-1 group">
                 <div className="flex items-center justify-between">
-                  <span className="font-semibold text-white/80 text-sm group-hover:text-white transition-colors">{title}</span>
-                  <span className="text-white/25 group-hover:text-[#a78bfa] group-hover:translate-x-1 transition-all text-base">→</span>
+                  <span className="font-semibold text-sm">{title}</span>
+                  <span className="text-white/40 group-hover:text-white/90 group-hover:translate-x-1 transition-all text-base">→</span>
                 </div>
-                <p className="text-white/35 text-xs leading-snug group-hover:text-white/55 transition-colors">{benefit}</p>
+                <p className="text-white/50 text-xs leading-snug group-hover:text-white/70 transition-colors">{benefit}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* WHY US */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#07070f' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 scroll-reveal">
-            <span className="badge badge-blue">Why Cavendish &amp; Rowe</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">The specialist practice for reinstatement cost assessments.</h2>
-            <p className="text-white/45 text-base max-w-xl mx-auto">One practice. One focus. Every instruction carries the same RICS-regulated standard.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              { title: 'Specialist only', desc: 'Reinstatement cost assessment is the only service we offer. No general surveying, no valuations — one focus, done properly.' },
-              { title: 'RICS regulated', desc: 'Every assessment carried out by or under the direct supervision of a RICS-registered member. Defensible at tribunal.' },
-              { title: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction for most standard residential and commercial properties.' },
-              { title: 'PI insured', desc: 'Comprehensive professional indemnity insurance on every instruction. Every figure is professionally backed.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card p-6 scroll-reveal">
-                <p className="font-semibold text-white/90 text-sm mb-2">{title}</p>
-                <p className="text-white/45 text-xs leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* PROCESS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
+      <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 scroll-reveal">
-            <span className="badge badge-blue">How It Works</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Simple four-step process.</h2>
+          <div className="mb-10 scroll-reveal">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              How It Works
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
+              Simple four-step process.
+            </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
@@ -225,8 +222,8 @@ export default function HomePage() {
             ].map(({ n, title, desc }) => (
               <div key={n} className="ls-card p-6 scroll-reveal">
                 <div className="step-num mb-5">{n}</div>
-                <p className="font-semibold text-white/90 text-sm mb-2">{title}</p>
-                <p className="text-white/45 text-xs leading-relaxed">{desc}</p>
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -236,63 +233,92 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES / PRICING */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#07070f' }}>
+      {/* WHY US */}
+      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 scroll-reveal">
-            <span className="badge badge-blue">Our Assessments</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">Choose the right assessment.</h2>
-            <p className="text-white/45 text-base max-w-lg mx-auto">Select the assessment that fits your property and compliance needs.</p>
+          <div className="text-center mb-10 scroll-reveal">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              Why Cavendish &amp; Rowe
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">The specialist practice for reinstatement cost assessments.</h2>
+            <p className="text-[#5f6368] text-base max-w-xl mx-auto">One practice. One focus. Every instruction carries the same RICS-regulated standard.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { title: 'Specialist only', desc: 'Reinstatement cost assessment is the only service we offer. No general surveying, no valuations — one focus, done properly.' },
+              { title: 'RICS regulated', desc: 'Every assessment carried out by or under the direct supervision of a RICS-registered member. Defensible at tribunal.' },
+              { title: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction for most standard residential and commercial properties.' },
+              { title: 'PI insured', desc: 'Comprehensive professional indemnity insurance on every instruction. Every figure is professionally backed.' },
+            ].map(({ title, desc }) => (
+              <div key={title} className="ls-card p-6 scroll-reveal">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 scroll-reveal">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              Our Assessments
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Choose the right assessment.</h2>
+            <p className="text-[#5f6368] text-base max-w-lg mx-auto">Choose the assessment that fits your property and compliance needs.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <div className="ls-card p-7 flex flex-col scroll-reveal">
-              <p className="text-xs text-white/35 uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
-              <h3 className="font-bold text-2xl text-white mb-6">Desktop Assessment</h3>
+            {/* Desktop Assessment */}
+            <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
+              <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
+              <h3 className="font-bold text-2xl text-[#202124] mb-6">Desktop Assessment</h3>
               <ul className="space-y-3 flex-1 mb-7">
                 {['BCIS-indexed cost modelling', 'No site visit required', 'RICS-aligned methodology', 'Broker-ready report format', 'National coverage'].map(f => (
-                  <li key={f} className="flex items-center gap-2.5 text-sm text-white/60">
-                    <svg className="w-4 h-4 shrink-0 text-[#a78bfa]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                  <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
+                    <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#desktop-rca" className="block border border-white/[0.1] text-white/60 font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#7c3aed] hover:text-[#a78bfa] transition-colors">
+              <Link href="/services#desktop-rca" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
                 Instruct Desktop Assessment →
               </Link>
             </div>
 
-            <div className="ls-card p-7 flex flex-col scroll-reveal">
-              <p className="text-xs text-white/35 uppercase tracking-wider font-semibold mb-2">Full physical inspection</p>
-              <h3 className="font-bold text-2xl text-white mb-6">On-Site Survey</h3>
+            {/* On-Site Survey */}
+            <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
+              <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">Full physical inspection</p>
+              <h3 className="font-bold text-2xl text-[#202124] mb-6">On-Site Survey</h3>
               <ul className="space-y-3 flex-1 mb-7">
                 {['RICS surveyor attends in person', 'Listed & heritage buildings', 'Non-standard construction', 'Full dimensional measurement', 'PI insured every instruction'].map(f => (
-                  <li key={f} className="flex items-center gap-2.5 text-sm text-white/60">
-                    <svg className="w-4 h-4 shrink-0 text-[#a78bfa]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                  <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
+                    <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
                   </li>
                 ))}
               </ul>
-              <Link href="/services#on-site-survey" className="block border border-white/[0.1] text-white/60 font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#7c3aed] hover:text-[#a78bfa] transition-colors">
+              <Link href="/services#on-site-survey" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
                 Request On-Site Survey →
               </Link>
             </div>
 
-            <div className="rounded-2xl p-7 flex flex-col relative scroll-reveal border border-[rgba(124,58,237,0.35)]"
-              style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.25) 0%, rgba(91,33,182,0.18) 100%)', boxShadow: '0 0 40px rgba(124,58,237,0.15)' }}>
-              <span className="absolute top-5 right-5 text-xs font-semibold px-3 py-1 rounded-full text-[#a78bfa]"
-                style={{ background: 'rgba(124,58,237,0.2)', border: '1px solid rgba(124,58,237,0.3)' }}>Popular</span>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2 text-[#a78bfa]/60">Best value</p>
+            {/* 3-Year Protection — Popular */}
+            <div className="rounded-2xl p-7 flex flex-col relative scroll-reveal" style={{background:'#4a5568'}}>
+              <span className="absolute top-5 right-5 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
+              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Best value</p>
               <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection</h3>
               <ul className="space-y-3 flex-1 mb-7">
                 {['Full assessment in year one', 'Annual BCIS indexation updates', 'Renewal-ready reports', 'Three-year RICS compliance', 'Fully managed service'].map(f => (
-                  <li key={f} className="flex items-center gap-2.5 text-sm text-white/70">
-                    <svg className="w-4 h-4 shrink-0 text-[#a78bfa]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                  <li key={f} className="flex items-center gap-2.5 text-sm" style={{color:'rgba(255,255,255,0.85)'}}>
+                    <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
                   </li>
                 ))}
               </ul>
-              <Link href="/contact?service=3year#contact-form" className="btn-shine block text-center">
+              <Link href="/contact?service=3year#contact-form" className="bg-white font-semibold text-sm px-5 py-3 rounded-xl text-center hover:bg-white/90 transition-colors block" style={{color:'#4a5568'}}>
                 Enquire About 3-Year Plan →
               </Link>
             </div>
@@ -305,14 +331,14 @@ export default function HomePage() {
       </section>
 
       {/* RICS TRUST */}
-      <section className="py-14 md:py-20 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
+      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-3xl mx-auto scroll-reveal">
-          <div className="pl-8 border-l-4" style={{ borderColor: '#7c3aed' }}>
-            <p className="text-xs font-semibold text-[#a78bfa] uppercase tracking-[0.15em] mb-5">RICS Guidance</p>
-            <blockquote className="text-xl md:text-2xl font-semibold text-white leading-[1.5] mb-5">
+          <div className="border-l-4 border-[#1a73e8] pl-8">
+            <p className="text-xs font-semibold text-[#1a73e8] uppercase tracking-[0.15em] mb-5">RICS Guidance</p>
+            <blockquote className="text-xl md:text-2xl font-semibold text-[#202124] leading-[1.5] mb-5">
               &ldquo;Reinstatement cost assessments should be carried out regularly by a competent professional to ensure the sum insured remains adequate.&rdquo;
             </blockquote>
-            <cite className="text-white/35 text-sm not-italic font-medium">Royal Institution of Chartered Surveyors</cite>
+            <cite className="text-[#5f6368] text-sm not-italic font-medium">Royal Institution of Chartered Surveyors</cite>
           </div>
         </div>
       </section>
@@ -322,7 +348,7 @@ export default function HomePage() {
       <ContactSection heading="Check your sum insured. Commission an assessment." />
 
       <FaqSection
-        description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process."
+        description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."
         items={faqItems}
       />
     </main>

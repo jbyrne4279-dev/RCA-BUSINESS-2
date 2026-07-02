@@ -17,8 +17,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/[0.06]"
-      style={{ background: 'rgba(7,7,15,0.9)', backdropFilter: 'blur(24px) saturate(180%)' }}>
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-[#dadce0]"
+      style={{ boxShadow: '0 1px 0 rgba(60,64,67,0.08), 0 2px 12px rgba(60,64,67,0.06)' }}>
       <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
 
         {/* Logo */}
@@ -29,7 +29,7 @@ export default function Navbar() {
             width={36}
             height={36}
             priority
-            className="h-9 w-9 object-contain invert"
+            className="h-9 w-9 object-contain"
           />
         </Link>
 
@@ -43,8 +43,8 @@ export default function Navbar() {
                 href={href}
                 className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
                   active
-                    ? 'text-[#a78bfa] bg-[rgba(124,58,237,0.12)]'
-                    : 'text-white/60 hover:text-white hover:bg-white/[0.06]'
+                    ? 'text-[#1a73e8] bg-[#e8f0fe]'
+                    : 'text-[#3c4043] hover:bg-[#f3f6ff] hover:text-[#1a73e8]'
                 }`}
               >
                 {label}
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <a href="tel:+442031788099" className="text-sm text-white/40 hover:text-white/80 transition-colors font-medium hidden lg:block">020 3178 8099</a>
+          <a href="tel:+442031788099" className="text-sm text-[#5f6368] hover:text-[#202124] transition-colors font-medium hidden lg:block">020 3178 8099</a>
           <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">
             Get a Quote
           </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="w-10 h-10 flex items-center justify-center rounded-xl text-white/50 hover:text-white hover:bg-white/[0.06] transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#f3f6ff] text-[#5f6368] transition-colors"
           >
             <span className="text-lg leading-none">{open ? '✕' : '☰'}</span>
           </button>
@@ -80,21 +80,20 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-white/[0.06]"
-          style={{ background: 'rgba(7,7,15,0.96)', backdropFilter: 'blur(24px)' }}>
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-[#dadce0]/70">
           <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-0.5">
             <Link href="/" onClick={() => setOpen(false)}
-              className="px-3 py-2.5 rounded-lg text-sm font-medium text-white/50 hover:bg-white/[0.06] hover:text-white transition-colors">
+              className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#5f6368] hover:bg-[#f3f6ff] hover:text-[#1a73e8] transition-colors">
               Home
             </Link>
             {links.map(({ href, label }) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-sm font-medium text-white/60 hover:bg-white/[0.06] hover:text-white transition-colors">
+                className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#3c4043] hover:bg-[#f3f6ff] hover:text-[#1a73e8] transition-colors">
                 {label}
               </Link>
             ))}
-            <div className="border-t border-white/[0.06] mt-1 pt-2 pb-1">
-              <a href="tel:+442031788099" className="px-3 py-2.5 text-sm text-white/40 font-medium flex items-center gap-2">
+            <div className="border-t border-[#f0f0f0] mt-1 pt-2 pb-1">
+              <a href="tel:+442031788099" className="px-3 py-2.5 text-sm text-[#5f6368] font-medium flex items-center gap-2">
                 <span>📞</span> 020 3178 8099
               </a>
             </div>

@@ -23,14 +23,14 @@ export default function ManagingAgentsPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-white/[0.06]">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
               An underinsured block is not the freeholder's problem. It's your PI claim.
             </h1>
-            <p className="text-white/50 text-lg leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               Managing agents carry a duty of care to leaseholders. Where an underinsured block produces a shortfall at claim stage, the agent who advised on or placed the insurance is exposed to a professional negligence claim, regardless of who technically holds the insuring obligation. A specialist reinstatement cost assessment is the cheapest PI risk reduction you will buy all year.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -38,29 +38,29 @@ export default function ManagingAgentsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 0 0 1px rgba(124,58,237,0.2), 0 24px 64px rgba(124,58,237,0.1), 0 4px 16px rgba(0,0,0,0.4)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
             <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#07070f]/70 via-[#07070f]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/80 text-sm font-medium leading-snug">RICS-regulated assessments for managing agents and RTM companies across the UK.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for managing agents and RTM companies across the UK.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* THE EXPOSURE */}
-      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#07070f' }}>
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <span className="badge badge-blue">The Exposure</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Five ways an inadequate reinstatement cost assessment lands on the agent's file.
             </h2>
-            <p className="text-white/50 text-sm leading-relaxed">
+            <p className="text-[#5f6368] text-sm leading-relaxed">
               The managing agent is the practical decision-maker on the declared value, specifying, chasing renewals, managing the figure across a portfolio. That role carries the liability.
             </p>
           </div>
-          <div className="lg:col-span-8 divide-y divide-white/[0.06]">
+          <div className="lg:col-span-8 divide-y divide-[#dadce0]">
             {[
               { n: '01', title: 'Professional negligence.', desc: 'The agent carries a duty of care to leaseholders. Letting a valuation go stale, or relying on a desktop figure for a complex or altered building, is exactly the kind of oversight that becomes a negligence or E&O claim when a major loss hits and the average clause bites.' },
               { n: '02', title: 'The average clause.', desc: 'If the declared value is inadequate, the insurer pays pro rata. For larger claims the loss adjuster will scrutinise the DV and flag it if low. In the worst case the insurer can attempt to repudiate the claim entirely, and leaseholders look to the agent for the shortfall.' },
@@ -69,10 +69,10 @@ export default function ManagingAgentsPage() {
               { n: '05', title: 'LFRA commission ban.', desc: 'The Leasehold and Freehold Reform Act 2024 moves to ban insurance commissions charged to leaseholders altogether. Every cost recharged via service charge must now demonstrate real value. An independent reinstatement cost assessment does that; a commission clip does not.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="py-8 flex gap-6">
-                <span className="text-[#a78bfa] text-xs font-semibold uppercase tracking-[0.2em] mt-1 w-8 shrink-0">{n}</span>
+                <span className="text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.2em] mt-1 w-8 shrink-0">{n}</span>
                 <div>
-                  <h3 className="font-semibold text-white text-sm mb-2">{title}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
+                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -81,17 +81,17 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* WHAT AGENTS GET WRONG */}
-      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#0d0d1e' }}>
+      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">Where Agents Slip</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               The four inputs that move the declared value, and the errors that follow.
             </h2>
-            <p className="text-white/50 text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               Managing agents own the inputs and the cadence. These are the points where errors accumulate, and where a standing relationship with a specialist surveyor adds the most value.
             </p>
-            <p className="text-white/50 text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               The DV vs SI confusion matters most. Agents who misread the Sum Insured (DV plus insurer's inflation provision, typically 20–50%) as "over-insurance" push freeholders to under-declare. A DV of £5,000,000 correctly becomes a Sum Insured of approximately £6,500,000 after a 30% uplift. They are not the same figure and should not be treated as such.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
@@ -103,11 +103,11 @@ export default function ManagingAgentsPage() {
               { label: 'Online calculator or functional-unit rate', desc: 'No professional accountability, no RICS regulation, no PI backing. A loss adjuster on a large claim will challenge it immediately.', ok: false },
               { label: 'Specialist reinstatement cost assessment on the RICS cycle', desc: 'Full assessment every three years. Annual BCIS indexation between reassessments. Fresh instruction after material works. A defensible file at every stage.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-5 flex gap-4 items-start ${ok ? 'border-[#7c3aed]' : ''}`} style={ok ? { background: 'rgba(124,58,237,0.12)' } : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#a78bfa] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={label} className={`ls-card p-5 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-semibold text-white text-sm mb-1">{label}</p>
-                  <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
+                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -116,17 +116,17 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* WHAT YOU NEED */}
-      <section className="py-16 md:py-20 px-6 md:px-10 border-t border-white/[0.06] border-b border-white/[0.06]" style={{ background: '#07070f' }}>
+      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">What the Report Provides</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               A report that works for brokers, insurers, leaseholders, and your PI file.
             </h2>
-            <p className="text-white/50 text-base leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
               The reinstatement cost assessment must state the declared value, the assumptions applied, the review date and the scope of assessment in terms that brokers, insurers and leaseholders can rely on. For mixed-use blocks, the residential and commercial elements are itemised separately so each can be insured and recharged to the correct leaseholders.
             </p>
-            <p className="text-white/50 text-base leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
               A specialist surveyor will ask for the fire risk assessment and asbestos survey up front, as asbestos-bearing debris materially increases disposal costs and must be accounted for in the DV.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Instruct an Assessment</Link>
@@ -141,10 +141,10 @@ export default function ManagingAgentsPage() {
               { title: 'Broker-ready format', desc: 'Formatted for direct submission to insurers without amendment. Accepted across the UK market.' },
             ].map(({ title, desc }) => (
               <div key={title} className="ls-card p-5 flex gap-4">
-                <span className="text-[#a78bfa] font-bold text-sm shrink-0 tick-glow">✓</span>
+                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
-                  <p className="font-semibold text-white text-sm mb-1">{title}</p>
-                  <p className="text-white/50 text-xs leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -153,7 +153,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* PORTFOLIO */}
-      <section className="py-16 md:py-20 px-6 md:px-10 border-b border-white/[0.06]" style={{ background: 'linear-gradient(135deg, rgba(124,58,237,0.25) 0%, rgba(91,33,182,0.18) 100%)', border: '1px solid rgba(124,58,237,0.35)', boxShadow: '0 0 40px rgba(124,58,237,0.15)' }}>
+      <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="badge badge-dark">Portfolio Service</span>
@@ -166,7 +166,7 @@ export default function ManagingAgentsPage() {
             <p className="text-white/80 text-base leading-relaxed mb-8">
               We diarise the re-instruction triggers with you: an extension to a ground-floor flat nudges the DV upward; a new storey on top forces both a new reinstatement cost assessment and a service-charge re-apportionment. We flag both before the renewal date.
             </p>
-            <Link href="/contact#contact-form" className="bg-white text-[#7c3aed] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Discuss Your Portfolio</Link>
+            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Discuss Your Portfolio</Link>
           </div>
           <div className="grid grid-cols-1 gap-4">
             {[
