@@ -54,17 +54,9 @@ export default function ReviewCarousel() {
         </div>
 
         {/* Card */}
-        <div className="bg-white border border-[#e8eaed] rounded-2xl overflow-hidden flex flex-col md:flex-row"
+        <div className="bg-white border border-[#e8eaed] rounded-2xl overflow-hidden"
           style={{boxShadow:'0 4px 20px rgba(60,64,67,0.08)'}}>
-          {/* Left image placeholder */}
-          <div className="w-full md:w-64 h-48 md:h-auto flex items-center justify-center shrink-0" style={{background:'#f1f3f9'}}>
-            <svg className="w-14 h-14" fill="none" stroke="#c0c8d8" strokeWidth="1.25" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-          </div>
-
-          {/* Right content */}
-          <div className="flex-1 p-8 md:p-10 flex flex-col justify-center">
+          <div className="p-8 md:p-10 flex flex-col justify-center">
             <StarRow />
             <h3 className="text-xl md:text-2xl font-bold text-[#202124] mb-4 leading-snug">{r.title}</h3>
             <p className="text-[#5f6368] text-sm leading-relaxed mb-6">{r.quote}</p>
