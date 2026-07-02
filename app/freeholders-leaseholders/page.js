@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -10,11 +10,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is the difference between the declared value and the sum insured?', answer: 'The declared value is the cost to rebuild the whole building from scratch — that is what you (or your managing agent) are responsible for setting correctly. The sum insured is a higher figure shown on your policy schedule: the insurer adds an inflation buffer on top, usually 20–50%. They are not the same number, and confusing them is one of the most common causes of underinsurance.' },
-  { question: 'Who is responsible for making sure the insurance figure is correct?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC, or RTM company holds the insuring obligation — but the practical job is often handled by a managing agent. Whoever is responsible for setting the figure carries the liability if it turns out to be wrong.' },
-  { question: 'What happens if the building is underinsured and there is a big claim?', answer: 'The insurer applies what is known as the "average clause" and pays out only in proportion to how much of the true rebuild cost is covered. If a block is insured for £1m but the real rebuild cost is £1.5m, a £300,000 claim pays out just £200,000 — the other £100,000 has to come from somewhere else.' },
+  { question: 'What is the difference between the declared value and the sum insured?', answer: 'The declared value is the cost to rebuild the whole building from scratch - that is what you (or your managing agent) are responsible for setting correctly. The sum insured is a higher figure shown on your policy schedule: the insurer adds an inflation buffer on top, usually 20–50%. They are not the same number, and confusing them is one of the most common causes of underinsurance.' },
+  { question: 'Who is responsible for making sure the insurance figure is correct?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC, or RTM company holds the insuring obligation - but the practical job is often handled by a managing agent. Whoever is responsible for setting the figure carries the liability if it turns out to be wrong.' },
+  { question: 'What happens if the building is underinsured and there is a big claim?', answer: 'The insurer applies what is known as the "average clause" and pays out only in proportion to how much of the true rebuild cost is covered. If a block is insured for £1m but the real rebuild cost is £1.5m, a £300,000 claim pays out just £200,000 - the other £100,000 has to come from somewhere else.' },
   { question: 'As a leaseholder, can I get my own independent assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent assessment, and the report can be used as evidence in a formal concern or a service charge dispute at tribunal.' },
-  { question: 'How often should the figure be reviewed?', answer: 'RICS guidance recommends a full reassessment every three years. Index-linking the figure annually between assessments is good practice, but it does not replace a physical survey — it only adjusts the number already there, without catching changes to the building or errors in the original figure.' },
+  { question: 'How often should the figure be reviewed?', answer: 'RICS guidance recommends a full reassessment every three years. Index-linking the figure annually between assessments is good practice, but it does not replace a physical survey - it only adjusts the number already there, without catching changes to the building or errors in the original figure.' },
   { question: 'What do you need from me to get started?', answer: 'Just the address, property type, approximate size, and any previous assessment report if you have one. We can work with limited information and will let you know if we need anything else.' },
 ]
 
@@ -31,7 +31,7 @@ export default function FreeholdersLeaseholdersPage() {
               If the building is underinsured, every flat owner in it shares the loss.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building, not just whoever holds the insuring obligation. Check whether your current sum insured reflects the true rebuild cost.
+              When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building, not just whoever holds the insuring obligation. Check whether your current sum insured reflects the true rebuild cost.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
@@ -54,10 +54,10 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue">Declared Value vs Sum Insured</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              The number on your policy schedule is not the number you set — and the difference matters.
+              The number on your policy schedule is not the number you set - and the difference matters.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              The Declared Value is the day-one rebuild cost your assessment establishes — that is the figure you are responsible for. The insurer then adds an inflation provision (typically 20–50%) to reach the Sum Insured shown on your schedule. Assuming the higher figure means you are over-insured and trimming your declared value accordingly is how underinsurance happens.
+              The Declared Value is the day-one rebuild cost your assessment establishes - that is the figure you are responsible for. The insurer then adds an inflation provision (typically 20–50%) to reach the Sum Insured shown on your schedule. Assuming the higher figure means you are over-insured and trimming your declared value accordingly is how underinsurance happens.
             </p>
           </div>
           <div className="space-y-4 mt-4">
@@ -97,7 +97,7 @@ export default function FreeholdersLeaseholdersPage() {
               Know whether the insurance arranged on your building actually covers a full rebuild.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8 flex-1">
-              If the declared value is too low and a serious claim hits, the average clause reduces every payout — and the shortfall falls on you and your neighbours, not the insurer. Our independent report gives you the documented evidence to raise a formal concern or challenge the service charge if the figure looks wrong. If the insurance is managed by a professional agent, they can find out more on our <Link href="/managing-agents-insurance-valuations" className="text-[#1a73e8] underline underline-offset-2">managing agents page</Link>.
+              If the declared value is too low and a serious claim hits, the average clause reduces every payout - and the shortfall falls on you and your neighbours, not the insurer. Our independent report gives you the documented evidence to raise a formal concern or challenge the service charge if the figure looks wrong. If the insurance is managed by a professional agent, they can find out more on our <Link href="/managing-agents-insurance-valuations" className="text-[#1a73e8] underline underline-offset-2">managing agents page</Link>.
             </p>
             <Link href="/contact#contact-form" className="btn-shine w-fit">Get Independent Advice</Link>
           </div>
@@ -110,10 +110,10 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue">The Underinsurance Risk</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Underinsurance is a shared risk — when the payout is cut, every flat owner in the building loses.
+              Underinsurance is a shared risk - when the payout is cut, every flat owner in the building loses.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              If the declared value is inadequate, the average clause kicks in and the insurer pays only the proportion the building is covered for — the rest comes out of the building's pocket. One RMC director declared £500,000 based on flat market values; the actual rebuild cost was £1,500,000, a 3× shortfall that would have reduced every claim payout by two thirds.
+              If the declared value is inadequate, the average clause kicks in and the insurer pays only the proportion the building is covered for - the rest comes out of the building's pocket. One RMC director declared £500,000 based on flat market values; the actual rebuild cost was £1,500,000, a 3× shortfall that would have reduced every claim payout by two thirds.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-5">
@@ -137,10 +137,10 @@ export default function FreeholdersLeaseholdersPage() {
           <div className="lg:col-span-4">
             <span className="badge badge-blue">What Gets Valued</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              The rebuild cost is not what you paid for the flat — it covers far more than most people expect.
+              The rebuild cost is not what you paid for the flat - it covers far more than most people expect.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              A reinstatement cost assessment values the whole building to rebuild from scratch — not the sum of individual flat values. Every element below is typically included and commonly under-declared.
+              A reinstatement cost assessment values the whole building to rebuild from scratch - not the sum of individual flat values. Every element below is typically included and commonly under-declared.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
@@ -169,13 +169,13 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue">The Regulatory Backdrop</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Recent reforms give leaseholders new rights to challenge — and freeholders new obligations to meet.
+              Recent reforms give leaseholders new rights to challenge - and freeholders new obligations to meet.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              From January 2024, FCA rules define leaseholders as customers — every cost recharged via service charge must demonstrate fair value, and commissions must be disclosed. The Leasehold and Freehold Reform Act 2024 moves to ban insurance commissions charged to leaseholders entirely.
+              From January 2024, FCA rules define leaseholders as customers - every cost recharged via service charge must demonstrate fair value, and commissions must be disclosed. The Leasehold and Freehold Reform Act 2024 moves to ban insurance commissions charged to leaseholders entirely.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed">
-              An independent RICS-aligned assessment is the transparent, defensible evidence that shows the insurance cost is justified — and makes a tribunal challenge fail before it starts.
+              An independent RICS-aligned assessment is the transparent, defensible evidence that shows the insurance cost is justified - and makes a tribunal challenge fail before it starts.
             </p>
           </div>
           <div className="space-y-4 mt-4">

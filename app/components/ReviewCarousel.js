@@ -1,10 +1,10 @@
-'use client'
+﻿'use client'
 import { useState, useEffect } from 'react'
 
 const reviews = [
   { title: '"Standard practice at renewal"', quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
   { title: '"Confidence going into our first renewal"', quote: 'After our RTM we needed to establish the correct reinstatement figure from scratch. The team came back quickly with a robust RICS report and real confidence going into our first renewal.', name: 'Michael T.', role: 'RTM Company Director, Surrey' },
-  { title: '"Short by nearly £200k — sorted within the week"', quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. The assessment was sorted within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
+  { title: '"Short by nearly £200k - sorted within the week"', quote: 'Our insurer flagged we were underinsured at renewal. Turned out we were short by nearly £200k. The assessment was sorted within the week. Straightforward process, no drama.', name: 'James H.', role: 'Landlord, Manchester' },
   { title: '"RICS report back in 24 hours"', quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.', name: 'Sarah L.', role: 'Block Manager, Bristol' },
   { title: '"Accepted first time, no queries"', quote: 'Clear, professional report that our broker accepted first time. No back and forth, no queries. Exactly what we needed ahead of a tight renewal deadline.', name: 'David R.', role: 'Freeholder, Edinburgh' },
   { title: '"Takes the compliance burden off our desk"', quote: 'We manage over 40 blocks and Cavendish & Rowe now handles all our reinstatement cost assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.', name: 'Priya N.', role: 'Portfolio Manager, Birmingham' },

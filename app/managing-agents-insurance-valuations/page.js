@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -10,12 +10,12 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Can a managing agent be personally liable for underinsurance?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate valuation, the agent can face a professional negligence or E&O claim — independent of who holds the insuring obligation under the lease. A RICS-aligned assessment on the recommended three-year cycle is the defensible position that protects your PI cover.' },
-  { question: 'Will insurers and brokers accept your report?', answer: 'Yes. Our reports are accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions, and review date in the format brokers and insurers expect — you forward it directly.' },
+  { question: 'Can a managing agent be personally liable for underinsurance?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate valuation, the agent can face a professional negligence or E&O claim - independent of who holds the insuring obligation under the lease. A RICS-aligned assessment on the recommended three-year cycle is the defensible position that protects your PI cover.' },
+  { question: 'Will insurers and brokers accept your report?', answer: 'Yes. Our reports are accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions, and review date in the format brokers and insurers expect - you forward it directly.' },
   { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10–15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
   { question: 'Is index-linking the sum insured each year sufficient?', answer: 'No. Index-linking adjusts the figure but compounds any existing error and does not capture material works or specification changes. RICS requires a full reassessment at least every three years.' },
-  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer — DV plus an inflation provision, typically 20–50% uplift — so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
-  { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes — individual reports per property, residential and commercial split for mixed-use blocks, with a consolidated summary schedule and staggered scheduling to smooth service-charge cost across years.' },
+  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer - DV plus an inflation provision, typically 20–50% uplift - so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
+  { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes - individual reports per property, residential and commercial split for mixed-use blocks, with a consolidated summary schedule and staggered scheduling to smooth service-charge cost across years.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -28,7 +28,7 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              When the block is underinsured, the negligence claim lands on you — not the freeholder.
+              When the block is underinsured, the negligence claim lands on you - not the freeholder.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
@@ -57,7 +57,7 @@ export default function ManagingAgentsPage() {
               Five ways an inadequate valuation becomes your problem, not the freeholder's.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              You are the practical decision-maker on the declared value. That role carries the liability — regardless of where the insuring obligation sits in the lease.
+              You are the practical decision-maker on the declared value. That role carries the liability - regardless of where the insuring obligation sits in the lease.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
@@ -86,10 +86,10 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Where Agents Slip</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              The four valuation approaches — and the one that actually protects you.
+              The four valuation approaches - and the one that actually protects you.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              The DV vs SI confusion is the most common agent error. A DV of £5,000,000 correctly becomes a Sum Insured of approximately £6,500,000 after a 30% insurer uplift — treating the higher SI as proof of over-insurance and under-declaring the DV creates the very shortfall that triggers the average clause.
+              The DV vs SI confusion is the most common agent error. A DV of £5,000,000 correctly becomes a Sum Insured of approximately £6,500,000 after a 30% insurer uplift - treating the higher SI as proof of over-insurance and under-declaring the DV creates the very shortfall that triggers the average clause.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -118,10 +118,10 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">What the Report Provides</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              A report that satisfies brokers, insurers, leaseholders, and your PI file — without extra admin.
+              A report that satisfies brokers, insurers, leaseholders, and your PI file - without extra admin.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              We handle the assessment end-to-end and deliver a broker-ready report with the declared value, methodology and review date already documented. You forward it directly — no reworking, no chasing, no exposure.
+              We handle the assessment end-to-end and deliver a broker-ready report with the declared value, methodology and review date already documented. You forward it directly - no reworking, no chasing, no exposure.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
           </div>
@@ -155,7 +155,7 @@ export default function ManagingAgentsPage() {
               Managing multiple blocks? One instruction covers your entire portfolio.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
-              We assess every block individually, phase renewals to smooth service-charge cost, and flag material works before your next renewal date — removing the compliance admin burden across your whole book. Managing agents with large portfolios can learn more on our <Link href="/portfolio-reinstatement-assessments" className="underline underline-offset-2 hover:text-white">portfolio assessments page</Link>.
+              We assess every block individually, phase renewals to smooth service-charge cost, and flag material works before your next renewal date - removing the compliance admin burden across your whole book. Managing agents with large portfolios can learn more on our <Link href="/portfolio-reinstatement-assessments" className="underline underline-offset-2 hover:text-white">portfolio assessments page</Link>.
             </p>
             <Link href="/portfolio-reinstatement-assessments" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Explore Portfolio Assessments</Link>
           </div>

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -12,9 +12,9 @@ export const metadata = {
 const faqItems = [
   { question: 'As a block manager, am I personally liable for underinsurance?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full reinstatement cost, failure to do so exposes you to a personal liability claim from leaseholders. A RICS-regulated assessment is the documented evidence that you have discharged that duty.' },
   { question: 'Why does an insurer calculator not protect me?', answer: 'Insurer rebuild tools carry no professional accountability and no RICS regulation. In any underinsurance dispute they provide no documented methodology and no defence. Only a RICS-regulated assessment gives you a professionally defensible figure.' },
-  { question: 'How do we instruct assessments for multiple blocks at once?', answer: 'Contact us with your portfolio details. We issue a consolidated quote covering all blocks, with individual reports per property and a portfolio summary schedule under a single engagement — no repeat admin.' },
+  { question: 'How do we instruct assessments for multiple blocks at once?', answer: 'Contact us with your portfolio details. We issue a consolidated quote covering all blocks, with individual reports per property and a portfolio summary schedule under a single engagement - no repeat admin.' },
   { question: 'Can leaseholders or a tribunal challenge the figure?', answer: 'A RICS-regulated report is the standard of evidence accepted by UK courts, the First-tier Tribunal and the Property Ombudsman. Our reports are produced to that standard and are defensible to that level of scrutiny.' },
-  { question: 'What information do you need to get started?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status. We issue a simple instruction form on confirmation — the process takes minutes.' },
+  { question: 'What information do you need to get started?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status. We issue a simple instruction form on confirmation - the process takes minutes.' },
 ]
 
 export default function BlockManagersPage() {
@@ -30,7 +30,7 @@ export default function BlockManagersPage() {
               Underinsurance is your liability. Not your client&rsquo;s.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage — documented, defensible, and accepted at renewal without challenge.
+              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -62,16 +62,16 @@ export default function BlockManagersPage() {
               The lease obligation transfers directly to you.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Most long leases require buildings cover at full reinstatement cost. Under a standard management agreement that duty passes to you — and if the sum insured falls short, so does the liability for any shortfall.
+              Most long leases require buildings cover at full reinstatement cost. Under a standard management agreement that duty passes to you - and if the sum insured falls short, so does the liability for any shortfall.
             </p>
             <p className="text-[#5f6368] text-sm leading-relaxed mb-6">Managing more than one block? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#1a73e8] font-semibold hover:underline">portfolio service</Link> covers your entire managed estate under a single instruction.</p>
             <Link href="/contact#contact-form" className="btn-shine">Get Started</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { n: 'Most', label: 'UK blocks are estimated to carry an inaccurate sum insured — leaving managers exposed' },
+              { n: 'Most', label: 'UK blocks are estimated to carry an inaccurate sum insured - leaving managers exposed' },
               { n: '~40%', label: 'rise in UK construction costs since 2020, meaning stale figures from pre-pandemic are dangerously low (BCIS)' },
-              { n: '3 yrs', label: 'maximum recommended interval between formal RICS assessments — after which your compliance position weakens' },
+              { n: '3 yrs', label: 'maximum recommended interval between formal RICS assessments - after which your compliance position weakens' },
             ].map(({ n, label }) => (
               <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
@@ -97,7 +97,7 @@ export default function BlockManagersPage() {
               <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
               <h3 className="font-bold text-2xl text-[#202124] mb-6">Single-Block Assessment</h3>
               <ul className="space-y-3 flex-1 mb-7">
-                {['Individual RICS-regulated report', 'Desktop delivered in 24 hours', 'On-site survey for complex or high-value blocks', 'Broker-ready format — no amendments needed', 'PI insured'].map(f => (
+                {['Individual RICS-regulated report', 'Desktop delivered in 24 hours', 'On-site survey for complex or high-value blocks', 'Broker-ready format - no amendments needed', 'PI insured'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
                     <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
@@ -130,7 +130,7 @@ export default function BlockManagersPage() {
               <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Best value</p>
               <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection</h3>
               <ul className="space-y-3 flex-1 mb-7">
-                {['Full RICS base assessment in year one', 'Annual BCIS-indexed updates — we handle it', 'Renewal-ready reports delivered before each renewal', 'Three-year RICS compliance covered', 'Fully managed — no re-instruction required'].map(f => (
+                {['Full RICS base assessment in year one', 'Annual BCIS-indexed updates - we handle it', 'Renewal-ready reports delivered before each renewal', 'Three-year RICS compliance covered', 'Fully managed - no re-instruction required'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm" style={{color:'rgba(255,255,255,0.85)'}}>
                     <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -10,7 +10,7 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Which service is right for my property?', answer: 'Desktop covers most standard residential and commercial properties. On-site is required for listed buildings, non-standard construction and high-value assets. If you manage multiple properties or need ongoing RICS compliance, the 3-Year Protection Plan is the right choice — contact us if you are unsure and we will advise.' },
+  { question: 'Which service is right for my property?', answer: 'Desktop covers most standard residential and commercial properties. On-site is required for listed buildings, non-standard construction and high-value assets. If you manage multiple properties or need ongoing RICS compliance, the 3-Year Protection Plan is the right choice - contact us if you are unsure and we will advise.' },
   { question: 'How quickly will I receive my report?', answer: 'Desktop assessments are delivered within 24 hours of instruction. On-site survey programmes are confirmed on instruction.' },
   { question: 'Are your reports accepted by all UK insurers?', answer: 'Yes. Our RICS-aligned, broker-ready reports are accepted across the UK market without amendment.' },
   { question: 'Do you cover listed and heritage buildings?', answer: 'Yes. Our on-site survey service covers all listed property categories, including Grade I, Grade II* and Grade II.' },
@@ -61,7 +61,7 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection — RICS-aligned assessments for every property type.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection - RICS-aligned assessments for every property type.</p>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function ServicesPage() {
               Generic tools cannot replace a RICS specialist.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              We practise exclusively in reinstatement cost assessment — every instruction is a RICS-regulated rebuild valuation. UK construction costs rose over 30% between 2020 and 2024; any figure not formally reviewed in that period is materially inaccurate and leaves you exposed at claim.
+              We practise exclusively in reinstatement cost assessment - every instruction is a RICS-regulated rebuild valuation. UK construction costs rose over 30% between 2020 and 2024; any figure not formally reviewed in that period is materially inaccurate and leaves you exposed at claim.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
@@ -154,11 +154,11 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              03. Recommended — Protection Plan
+              03. Recommended - Protection Plan
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">3-Year Protection Plan</h2>
             <p className="text-white/80 text-base leading-relaxed mb-4">
-              Our recommended service for managing agents, freeholders and ongoing clients. One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date, with no re-instructing required.
+              Our recommended service for managing agents, freeholders and ongoing clients. One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date, with no re-instructing required.
             </p>
             <p className="text-white/60 text-xs mb-6">The RICS recommends formal reassessment every three years. This plan fulfils that requirement automatically.</p>
             <Link href="/contact?service=3year#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Enquire About 3-Year Plan</Link>
@@ -174,7 +174,7 @@ export default function ServicesPage() {
       </section>
 
       <ContactSection heading="Not sure which service you need? We'll advise." />
-      <FaqSection description="Still deciding? Use these answers to narrow it down — or contact us and we'll recommend the right service for your property." items={faqItems} />
+      <FaqSection description="Still deciding? Use these answers to narrow it down - or contact us and we'll recommend the right service for your property." items={faqItems} />
     </main>
   )
 }

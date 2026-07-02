@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -10,8 +10,8 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why does a commercial property need a RICS assessment rather than an online tool?', answer: 'Online tools cannot account for tenant fitout, specialist plant or complex M&E services — all of which form part of the reinstatement cost. A RICS assessment captures the full cost of rebuilding your specific building. An insurer will apply the average clause to any shortfall at claim.' },
-  { question: 'How often should a commercial property be reassessed?', answer: 'Formally every three years, with annual BCIS-indexed adjustment in between. Our 3-Year Protection Plan handles both under a single instruction — no re-instructing, no gaps in compliance.' },
+  { question: 'Why does a commercial property need a RICS assessment rather than an online tool?', answer: 'Online tools cannot account for tenant fitout, specialist plant or complex M&E services - all of which form part of the reinstatement cost. A RICS assessment captures the full cost of rebuilding your specific building. An insurer will apply the average clause to any shortfall at claim.' },
+  { question: 'How often should a commercial property be reassessed?', answer: 'Formally every three years, with annual BCIS-indexed adjustment in between. Our 3-Year Protection Plan handles both under a single instruction - no re-instructing, no gaps in compliance.' },
   { question: 'Do you assess listed commercial buildings?', answer: 'Yes. Our on-site survey service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises.' },
   { question: 'Can you assess a mixed-use development?', answer: 'Yes. Mixed-use developments containing both residential and commercial elements are assessed under a single instruction, with the output separated by use class.' },
   { question: 'Is a RICS assessment accepted by all UK commercial insurers?', answer: 'Yes. Our RICS-aligned reports are accepted without amendment by all UK commercial insurers and brokers.' },
@@ -30,7 +30,7 @@ export default function CommercialPage() {
               Commercial property underinsurance starts with the wrong figure.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex — and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
+              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -65,13 +65,13 @@ export default function CommercialPage() {
               Tenant fitout is rarely included in a standard valuation but must be reinstated in full. Specialist plant, complex M&amp;E services and non-standard construction materials add further costs that no online tool can capture.
             </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              An out-of-date or estimate-based figure will be enforced by the average clause at claim — reducing your settlement in direct proportion to the underinsurance gap. A RICS assessment eliminates that risk.
+              An out-of-date or estimate-based figure will be enforced by the average clause at claim - reducing your settlement in direct proportion to the underinsurance gap. A RICS assessment eliminates that risk.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a RICS Assessment</Link>
           </div>
           <div className="space-y-3">
             {[
-              { title: 'Online calculators', sub: 'Cannot account for tenant fitout, specialist plant or complex M&E — materially wrong for most commercial properties.', ok: false },
+              { title: 'Online calculators', sub: 'Cannot account for tenant fitout, specialist plant or complex M&E - materially wrong for most commercial properties.', ok: false },
               { title: 'Index-linking alone', sub: 'Adjusts an existing figure. If the base was wrong, the indexed figure is wrong. Not defensible.', ok: false },
               { title: 'Old or inherited valuations', sub: 'Construction costs rose over 30% between 2020 and 2024. Pre-pandemic figures are materially inaccurate.', ok: false },
               { title: 'RICS-regulated reinstatement cost assessment', sub: 'The only approach accepted without question by UK commercial insurers. Documented, defensible and PI-insured.', ok: true },
