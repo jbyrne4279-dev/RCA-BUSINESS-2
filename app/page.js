@@ -28,14 +28,14 @@ export default function HomePage() {
               Reinstatement Cost Assessment Specialists
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              The reinstatement figure your portfolio depends on.
+              The correct sum insured — for every block you manage.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Reinstatement cost assessments are all we do. Our practice is dedicated exclusively to RICS-regulated rebuild valuations for managing agents, freeholders and property professionals across the UK. Broker-ready. Delivered within 24 hours.
+              RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
+              <Link href="/contact#contact-form" className="btn-shine">Get a Compliant Assessment</Link>
+              <Link href="/services" className="btn-ghost">See Our Services</Link>
             </div>
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
@@ -90,17 +90,14 @@ export default function HomePage() {
                 Why It Matters
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-                Reinstatement cost is not the same as market value.
+                Reinstatement cost is not the same as market value — and your insurer knows the difference.
               </h2>
-              <p className="text-[#5f6368] text-base leading-relaxed mb-4">
-                A building's market value and its reinstatement cost are distinct figures and often differ substantially. After fire, flood or other total loss, what matters is the cost to demolish and rebuild, not the price the property would fetch on the open market.
-              </p>
               <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-                Freeholders, managing agents and RTM companies arranging buildings insurance must base the sum insured on reinstatement cost. A RICS-regulated assessment is the only documented, defensible way to establish that figure. Reinstatement cost assessment is the sole focus of our practice.
+                After a total loss, insurers pay to rebuild — not to match market value. A RICS-regulated assessment is the only defensible basis for the buildings sum insured.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
-                <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-                <Link href="/services" className="btn-ghost">How It Works</Link>
+                <Link href="/contact#contact-form" className="btn-shine">Get a Compliant Assessment</Link>
+                <Link href="/services" className="btn-ghost">See How It Works</Link>
               </div>
             </div>
             <div className="space-y-4 scroll-reveal">
@@ -109,14 +106,14 @@ export default function HomePage() {
                   <span className="icon-circle icon-circle-red text-[#d93025]">✕</span>
                   <p className="font-semibold text-[#202124]">Market value</p>
                 </div>
-                <p className="text-[#5f6368] text-sm leading-relaxed">What the property sells for on the open market. Determined by location, demand and comparable transactions. Irrelevant for insurance purposes.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">What the property sells for on the open market. Irrelevant for insurance purposes.</p>
               </div>
               <div className="ls-card p-6" style={{borderColor:'#1a73e8',borderWidth:'2px',background:'linear-gradient(135deg,#f6f9ff,#eef3fd)'}}>
                 <div className="flex items-center gap-3 mb-3">
                   <span className="icon-circle icon-circle-blue text-[#1e8e3e]">✓</span>
                   <p className="font-semibold text-[#202124]">Reinstatement cost</p>
                 </div>
-                <p className="text-[#5f6368] text-sm leading-relaxed">The cost to demolish, clear and rebuild: structure, professional fees, statutory fees, and VAT where applicable. This is the correct basis for the buildings sum insured.</p>
+                <p className="text-[#5f6368] text-sm leading-relaxed">Demolition, clearance and full rebuild costs including professional and statutory fees. The correct basis for the buildings sum insured.</p>
               </div>
             </div>
           </div>
@@ -131,17 +128,17 @@ export default function HomePage() {
               The Risk
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-4">
-              In a block of flats, one incorrect figure affects everyone.
+              One incorrect figure puts every leaseholder — and your PI cover — at risk.
             </h2>
             <p className="text-[#5f6368] text-lg leading-relaxed max-w-2xl mx-auto">
-              Where the building is underinsured at the point of a major claim, the insurer applies the average clause and reduces the payout in proportion to the shortfall.
+              Underinsurance triggers the average clause — the insurer cuts the payout in proportion to the shortfall. Managing agents and freeholders can be held personally liable for the gap.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { title: 'Claim shortfall', desc: 'The insurer reduces the payout in proportion to the degree of underinsurance. Leaseholders bear the gap.', icon: '⚠', color: 'icon-circle-red' },
-              { title: 'Liability exposure', desc: 'Managing agents, RTM companies and freeholders face claims from leaseholders for any shortfall not covered at settlement.', icon: '⚖', color: 'icon-circle-amber' },
-              { title: 'Outdated figures', desc: 'UK construction costs rose significantly between 2020 and 2023 according to BCIS data and remain materially higher than pre-pandemic levels. A valuation not formally reviewed in that period is materially inaccurate.', icon: '⏱', color: 'icon-circle-blue' },
+              { title: 'Reduced claim payout', desc: 'The insurer applies the average clause and cuts the payout proportionally — leaving leaseholders to fund the shortfall themselves.', icon: '⚠', color: 'icon-circle-red' },
+              { title: 'Personal liability', desc: 'Managing agents, RTM companies and freeholders face direct leaseholder claims for any unrecovered loss arising from underinsurance.', icon: '⚖', color: 'icon-circle-amber' },
+              { title: 'Stale figures', desc: 'UK build costs are materially higher than pre-pandemic levels (BCIS). Any figure not reviewed since 2021 is almost certainly inadequate.', icon: '⏱', color: 'icon-circle-blue' },
             ].map(({ title, desc, icon, color }) => (
               <div key={title} className="ls-card p-6 scroll-reveal">
                 <div className={`icon-circle ${color} mb-4 text-base`}>{icon}</div>
@@ -151,7 +148,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/contact#contact-form" className="btn-shine">Get a Compliant Assessment</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Protect Your PI File — Book an Assessment</Link>
           </div>
         </div>
       </section>
@@ -170,24 +167,21 @@ export default function HomePage() {
           <div>
             <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Who We Work With</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Built for the people responsible for getting it right.
+              Serving the professionals who carry the obligation.
             </h2>
-            <p className="text-white/60 text-base leading-relaxed mb-4">
-              Reinstatement cost assessment is the only service we provide. We do not offer general surveying, mortgage valuations or any other practice. Every instruction is a RICS-regulated rebuild valuation, carried out with a single focus: establishing the correct sum insured.
-            </p>
             <p className="text-white/60 text-base leading-relaxed mb-8">
-              Managing agents, RTM companies, freeholders, leaseholders and block managers rely on that focus to protect themselves and the people they represent.
+              We do one thing: RICS-regulated reinstatement cost assessments. No general surveying, no mortgage valuations — every instruction is focused on establishing the correct sum insured for the right audience.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Get a Free Quote</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { title: 'Managing Agents', benefit: 'Discharge your lease obligation and protect your PI file', href: '/managing-agents-insurance-valuations' },
-              { title: 'RTM Companies', benefit: 'Establish a compliant figure from the moment you assume responsibility', href: '/managing-agents-insurance-valuations' },
-              { title: 'Freeholders', benefit: 'Defend the insuring covenant with a RICS-regulated declared value', href: '/freeholders-leaseholders' },
-              { title: 'Leaseholders', benefit: 'Challenge an inadequate sum insured with documented evidence', href: '/freeholders-leaseholders' },
-              { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block under management', href: '/block-managers-reinstatement-cost-assessments' },
-              { title: 'Landlords', benefit: 'Right-size your declared value — over or underinsured', href: '/blocks-of-flats' },
+              { title: 'Managing Agents', benefit: 'Discharge your lease obligation and protect your PI file — view managing agent services', href: '/managing-agents-insurance-valuations' },
+              { title: 'RTM Companies', benefit: 'Establish a compliant figure from the moment you assume control of the building', href: '/managing-agents-insurance-valuations' },
+              { title: 'Freeholders', benefit: 'Defend the insuring covenant with a RICS-regulated declared value — view freeholder services', href: '/freeholders-leaseholders' },
+              { title: 'Leaseholders', benefit: 'Challenge an inadequate sum insured with independent, documented evidence', href: '/freeholders-leaseholders' },
+              { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block in your portfolio — view block manager services', href: '/block-managers-reinstatement-cost-assessments' },
+              { title: 'Portfolio Landlords', benefit: 'Right-size every declared value across your portfolio in a single instruction', href: '/blocks-of-flats' },
             ].map(({ title, benefit, href }) => (
               <Link key={title} href={href}
                 className="ls-card-dark px-5 py-5 text-white flex flex-col gap-1 group">
@@ -210,15 +204,15 @@ export default function HomePage() {
               How It Works
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
-              Simple four-step process.
+              From instruction to broker-ready report in four steps.
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { n: '01', title: 'Tell us about the building', desc: 'Provide the address, property type, approximate size and any previous valuation or details of recent alterations.' },
-              { n: '02', title: 'We arrange inspection', desc: 'Where a site visit is required, we schedule it promptly. Desktop assessments commence on instruction.' },
-              { n: '03', title: 'We assess the rebuild cost', desc: 'A structured assessment covering materials, structure, services, external works, professional fees and statutory fees.' },
-              { n: '04', title: 'You receive your report', desc: 'A broker-ready report stating the declared value, methodology, assumptions and next review date.' },
+              { n: '01', title: 'Tell us about the building', desc: 'Address, property type, approximate GIA and any previous valuation. Takes two minutes.' },
+              { n: '02', title: 'We confirm scope and fee', desc: 'We confirm whether a desktop or on-site survey is appropriate and agree a fixed fee.' },
+              { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, external works, professional fees — all captured in full.' },
+              { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, methodology, assumptions and next RICS review date — ready to submit.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="ls-card p-6 scroll-reveal">
                 <div className="step-num mb-5">{n}</div>
@@ -228,7 +222,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8">
-            <Link href="/contact#contact-form" className="btn-shine">Book an Assessment</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Start Your Assessment Today</Link>
           </div>
         </div>
       </section>
@@ -240,15 +234,15 @@ export default function HomePage() {
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Why Cavendish &amp; Rowe
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">The specialist practice for reinstatement cost assessments.</h2>
-            <p className="text-[#5f6368] text-base max-w-xl mx-auto">One practice. One focus. Every instruction carries the same RICS-regulated standard.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Why managing agents, freeholders and landlords trust Cavendish &amp; Rowe.</h2>
+            <p className="text-[#5f6368] text-base max-w-xl mx-auto">One practice. One focus. Every instruction carries the same RICS-regulated standard — no generalists, no shortcuts.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { title: 'Specialist only', desc: 'Reinstatement cost assessment is the only service we offer. No general surveying, no valuations — one focus, done properly.' },
-              { title: 'RICS regulated', desc: 'Every assessment carried out by or under the direct supervision of a RICS-registered member. Defensible at tribunal.' },
-              { title: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction for most standard residential and commercial properties.' },
-              { title: 'PI insured', desc: 'Comprehensive professional indemnity insurance on every instruction. Every figure is professionally backed.' },
+              { title: 'Specialist only', desc: 'Reinstatement cost assessments only — no general surveying, no mortgage work, no distraction.' },
+              { title: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member and fully defensible at leasehold tribunal.' },
+              { title: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction — ideal for renewal deadlines.' },
+              { title: 'PI insured', desc: 'Professional indemnity insurance on every instruction, giving you and your clients documented recourse.' },
             ].map(({ title, desc }) => (
               <div key={title} className="ls-card p-6 scroll-reveal">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
@@ -266,8 +260,8 @@ export default function HomePage() {
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Our Assessments
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Choose the right assessment.</h2>
-            <p className="text-[#5f6368] text-base max-w-lg mx-auto">Choose the assessment that fits your property and compliance needs.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Three assessments. Every property type covered.</h2>
+            <p className="text-[#5f6368] text-base max-w-lg mx-auto">From a single block to an entire portfolio — choose the service that matches your property type and compliance deadline.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
@@ -275,7 +269,7 @@ export default function HomePage() {
             <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
               <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
               <h3 className="font-bold text-2xl text-[#202124] mb-6">Desktop Assessment</h3>
-              <ul className="space-y-3 flex-1 mb-7">
+              <ul className="space-y-3 flex-1 mb-4">
                 {['BCIS-indexed cost modelling', 'No site visit required', 'RICS-aligned methodology', 'Broker-ready report format', 'National coverage'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
                     <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
@@ -283,8 +277,9 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
+              <p className="text-xs text-[#5f6368] mb-6 leading-snug">Managing a portfolio? <Link href="/block-managers-reinstatement-cost-assessments" className="text-[#1a73e8] hover:underline">See our portfolio assessment service →</Link></p>
               <Link href="/services#desktop-rca" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
-                Instruct Desktop Assessment →
+                Instruct a Desktop Assessment →
               </Link>
             </div>
 
@@ -292,7 +287,7 @@ export default function HomePage() {
             <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
               <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">Full physical inspection</p>
               <h3 className="font-bold text-2xl text-[#202124] mb-6">On-Site Survey</h3>
-              <ul className="space-y-3 flex-1 mb-7">
+              <ul className="space-y-3 flex-1 mb-4">
                 {['RICS surveyor attends in person', 'Listed & heritage buildings', 'Non-standard construction', 'Full dimensional measurement', 'PI insured every instruction'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
                     <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
@@ -300,32 +295,34 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
+              <p className="text-xs text-[#5f6368] mb-6 leading-snug">Own a listed or heritage property? <Link href="/freeholders-leaseholders" className="text-[#1a73e8] hover:underline">See freeholder services →</Link></p>
               <Link href="/services#on-site-survey" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
-                Request On-Site Survey →
+                Request an On-Site Survey →
               </Link>
             </div>
 
             {/* 3-Year Protection — Popular */}
             <div className="rounded-2xl p-7 flex flex-col relative scroll-reveal" style={{background:'#4a5568'}}>
-              <span className="absolute top-5 right-5 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Best value</p>
-              <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection</h3>
-              <ul className="space-y-3 flex-1 mb-7">
-                {['Full assessment in year one', 'Annual BCIS indexation updates', 'Renewal-ready reports', 'Three-year RICS compliance', 'Fully managed service'].map(f => (
+              <span className="absolute top-5 right-5 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">Recommended for Managing Agents</span>
+              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Full compliance. Zero admin.</p>
+              <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection Plan</h3>
+              <ul className="space-y-3 flex-1 mb-4">
+                {['Full assessment in year one', 'Annual BCIS indexation updates', 'Renewal-ready reports each year', 'Three-year RICS compliance — guaranteed', 'Fully managed — no chasing renewals'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm" style={{color:'rgba(255,255,255,0.85)'}}>
                     <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
                   </li>
                 ))}
               </ul>
+              <p className="text-xs mb-6 leading-snug" style={{color:'rgba(255,255,255,0.55)'}}>The default choice for managing agents with multiple blocks — one instruction covers three years of RICS compliance.</p>
               <Link href="/contact?service=3year#contact-form" className="bg-white font-semibold text-sm px-5 py-3 rounded-xl text-center hover:bg-white/90 transition-colors block" style={{color:'#4a5568'}}>
-                Enquire About 3-Year Plan →
+                Get 3-Year Protection →
               </Link>
             </div>
 
           </div>
           <div className="mt-6 text-center">
-            <Link href="/services" className="link-amber">View full service details →</Link>
+            <Link href="/services" className="link-amber">Compare all assessment options in full →</Link>
           </div>
         </div>
       </section>
@@ -345,7 +342,7 @@ export default function HomePage() {
 
       <ReviewCarousel />
 
-      <ContactSection heading="Check your sum insured. Commission an assessment." />
+      <ContactSection heading="Is your sum insured correct? Commission an assessment and find out." />
 
       <FaqSection
         description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."

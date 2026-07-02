@@ -10,10 +10,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why does my commercial property need a RICS assessment rather than an insurer tool?', answer: 'Commercial properties have specifications that online calculators cannot capture: tenant fitout, specialist plant, complex services and non-standard construction. A RICS-regulated assessment accounts for the full reinstatement cost of your specific building.' },
-  { question: 'How often should a commercial property be reassessed?', answer: 'RICS recommends a formal assessment at least every three years, with annual BCIS-indexed adjustment in between. Our 3-Year Protection plan covers both requirements under a single instruction.' },
-  { question: 'Do you assess listed commercial buildings?', answer: 'Yes. Listed commercial properties require specialist knowledge of authentic materials and traditional construction methods. Our on-site survey service covers all listed property categories.' },
-  { question: 'Can you assess a mixed-use development?', answer: 'Yes. Mixed-use buildings with both residential and commercial elements are assessed as a single instruction.' },
+  { question: 'Why does a commercial property need a RICS assessment rather than an online tool?', answer: 'Online tools cannot account for tenant fitout, specialist plant or complex M&E services — all of which form part of the reinstatement cost. A RICS assessment captures the full cost of rebuilding your specific building. An insurer will apply the average clause to any shortfall at claim.' },
+  { question: 'How often should a commercial property be reassessed?', answer: 'Formally every three years, with annual BCIS-indexed adjustment in between. Our 3-Year Protection Plan handles both under a single instruction — no re-instructing, no gaps in compliance.' },
+  { question: 'Do you assess listed commercial buildings?', answer: 'Yes. Our on-site survey service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises.' },
+  { question: 'Can you assess a mixed-use development?', answer: 'Yes. Mixed-use developments containing both residential and commercial elements are assessed under a single instruction, with the output separated by use class.' },
+  { question: 'Is a RICS assessment accepted by all UK commercial insurers?', answer: 'Yes. Our RICS-aligned reports are accepted without amendment by all UK commercial insurers and brokers.' },
 ]
 
 export default function CommercialPage() {
@@ -26,10 +27,10 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue">Commercial Property</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Commercial reinstatement cost assessments.
+              Commercial property underinsurance starts with the wrong figure.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              RICS-regulated assessments for offices, retail, industrial premises and mixed-use developments. Accepted by all UK commercial insurers without amendment.
+              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex — and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -46,7 +47,7 @@ export default function CommercialPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for all commercial property types.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments accepted by all UK commercial insurers without amendment.</p>
             </div>
           </div>
         </div>
@@ -58,19 +59,22 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Commercial underinsurance is structural.
+              Three hidden cost drivers that make commercial underinsurance so common.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Commercial properties are the most consistently underinsured asset class in the UK market. Construction costs in the commercial sector have risen faster than residential since 2020. Tenant fitout, specialist plant and complex service installations add reinstatement cost that standard indexation cannot capture. An out-of-date figure will be enforced by the average clause at the point of a claim.
+            <p className="text-[#5f6368] text-base leading-relaxed mb-4">
+              Tenant fitout is rarely included in a standard valuation but must be reinstated in full. Specialist plant, complex M&amp;E services and non-standard construction materials add further costs that no online tool can capture.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
+            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
+              An out-of-date or estimate-based figure will be enforced by the average clause at claim — reducing your settlement in direct proportion to the underinsurance gap. A RICS assessment eliminates that risk.
+            </p>
+            <Link href="/contact#contact-form" className="btn-shine">Get a RICS Assessment</Link>
           </div>
           <div className="space-y-3">
             {[
-              { title: 'Online calculators', sub: 'Cannot capture tenant fitout, specialist plant or complex service installations.', ok: false },
-              { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not validate the base.', ok: false },
-              { title: 'Old inherited valuations', sub: 'Significant cost increases since 2020 make pre-pandemic figures materially wrong.', ok: false },
-              { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based where required, accepted by every UK insurer.', ok: true },
+              { title: 'Online calculators', sub: 'Cannot account for tenant fitout, specialist plant or complex M&E — materially wrong for most commercial properties.', ok: false },
+              { title: 'Index-linking alone', sub: 'Adjusts an existing figure. If the base was wrong, the indexed figure is wrong. Not defensible.', ok: false },
+              { title: 'Old or inherited valuations', sub: 'Construction costs rose over 30% between 2020 and 2024. Pre-pandemic figures are materially inaccurate.', ok: false },
+              { title: 'RICS-regulated reinstatement cost assessment', sub: 'The only approach accepted without question by UK commercial insurers. Documented, defensible and PI-insured.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
@@ -81,6 +85,7 @@ export default function CommercialPage() {
               </div>
             ))}
           </div>
+          <p className="text-[#5f6368] text-sm mt-6">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">See our portfolio assessment service →</Link></p>
         </div>
       </section>
 
@@ -89,7 +94,7 @@ export default function CommercialPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">What we assess.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">Every commercial property type, covered.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -115,8 +120,8 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      <ContactSection heading="Instruct a commercial assessment." />
-      <FaqSection description="Common questions about commercial reinstatement cost assessments." items={faqItems} />
+      <ContactSection heading="Ready to protect your commercial asset? Instruct today." />
+      <FaqSection description="Direct answers to the most common questions about commercial reinstatement cost assessments." items={faqItems} />
     </main>
   )
 }

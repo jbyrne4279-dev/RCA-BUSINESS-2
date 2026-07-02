@@ -10,10 +10,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'How many properties can you assess under a single portfolio instruction?', answer: 'There is no maximum. Portfolio instructions typically cover between 5 and 200 properties. We issue a consolidated quote covering all assets under a single engagement letter.' },
-  { question: 'What does a portfolio report include?', answer: 'Each property receives its own RICS-regulated assessment report. The portfolio summary schedule sets out all assets, their reinstatement figures, assessment dates and recommended reassessment dates in a single broker-ready document.' },
-  { question: 'Can you manage the annual update process across our portfolio?', answer: 'Yes. Under our 3-Year Protection plan, we manage annual BCIS indexation updates across the entire portfolio and deliver updated reports before each relevant renewal date.' },
-  { question: 'Do you work with fund managers and institutional investors?', answer: 'Yes. We provide portfolio assessments for institutional property funds, real estate investment managers and family offices with multi-asset UK property portfolios.' },
+  { question: 'How many properties can you cover under a single portfolio instruction?', answer: 'There is no maximum. Portfolio instructions typically cover between 5 and 200 properties. We issue a consolidated quote and a single engagement letter — one instruction covers the entire portfolio.' },
+  { question: 'What exactly does the portfolio summary schedule contain?', answer: 'The schedule sets out every asset, its RICS-regulated reinstatement figure, the assessment date and the recommended reassessment date — all in a single broker-ready document that sits alongside the individual property reports.' },
+  { question: 'Is this just multiple desktop assessments bundled together?', answer: 'No. The portfolio service includes a consolidated summary schedule, a named surveyor managing the full instruction, single-invoice billing, and — under the 3-Year Protection plan — proactive annual indexation updates delivered before each renewal. It is a managed service, not a bulk order.' },
+  { question: 'How does the 3-Year Protection plan work for a portfolio?', answer: 'We carry out the full RICS base assessment in year one, then manage annual BCIS indexation updates across the entire portfolio and deliver updated reports before each relevant renewal date. You do not need to re-instruct.' },
+  { question: 'Do you work with institutional investors and fund managers?', answer: 'Yes. We provide portfolio assessments for property funds, REITs, real estate investment managers and family offices with multi-asset UK portfolios.' },
 ]
 
 export default function PortfolioPage() {
@@ -26,10 +27,10 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Every asset. One instruction.
+              Every asset. One instruction. Zero repeat admin.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Individual RICS-regulated reports per property, a consolidated summary schedule, and managed annual BCIS indexation, all under a single engagement.
+              A managed RICS assessment service for property portfolios — individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
@@ -58,18 +59,19 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              One wrong figure compounds across a portfolio.
+              Managing multiple assets separately costs more than money.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              For investors and fund managers holding multiple assets, underinsurance risk replicates across every property carrying an out-of-date reinstatement figure. A systematic portfolio assessment eliminates the exposure in a single instruction, producing a consolidated compliance record for the entire portfolio.
+              Piecemeal instructions mean mismatched assessment dates, inconsistent formats and annual re-instruction across every asset. A portfolio engagement replaces all of that with one consolidated service and a single compliance record.
             </p>
+            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">Add the <Link href="/three-year-protection" className="text-[#1a73e8] font-semibold hover:underline">3-Year Protection plan</Link> and we manage the annual updates too — no re-instruction ever required.</p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Portfolio Quote</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { n: 'Most', label: 'UK blocks estimated to carry an inaccurate sum insured' },
-              { n: 'Higher', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
-              { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
+              { n: 'Most', label: 'UK blocks carry an inaccurate sum insured — stale figures replicate across every asset in the portfolio' },
+              { n: '~40%', label: 'rise in UK construction costs since 2020, compounding the gap between insured value and true rebuild cost (BCIS)' },
+              { n: '3 yrs', label: 'RICS-recommended maximum interval between formal assessments — portfolios without a managed update cycle go out of compliance fast' },
             ].map(({ n, label }) => (
               <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
@@ -85,7 +87,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-dark">Portfolio Clients</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Who we work with.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Built for clients who manage at scale.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -111,7 +113,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <ContactSection heading="Request your portfolio quote." />
+      <ContactSection heading="Consolidate your portfolio. One instruction." />
       <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} />
     </main>
   )

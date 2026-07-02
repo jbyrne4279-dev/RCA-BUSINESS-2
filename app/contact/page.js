@@ -9,10 +9,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'How quickly will you respond?', answer: 'All enquiries receive a response within 24 hours on business days. For urgent instructions, telephone us directly.' },
-  { question: 'What information should I have ready?', answer: 'Property address, approximate floor area, construction type, number of storeys, and whether you require a desktop or on-site assessment.' },
-  { question: 'Do you provide quotes before instructing?', answer: 'Yes. We provide a written fee estimate before any work begins. No commitment required.' },
-  { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will return a consolidated quote for the whole portfolio.' },
+  { question: 'How quickly will you respond to my enquiry?', answer: 'All enquiries receive a response within 24 hours on business days. For urgent instructions, call us directly on 020 3178 8099.' },
+  { question: 'Is there any commitment when I make an enquiry?', answer: 'None. We provide a written fee estimate before any work begins — you instruct only when you are ready to proceed.' },
+  { question: 'What information should I have ready?', answer: 'Property address, approximate floor area, construction type, number of storeys, and whether you need a desktop or on-site assessment. We can work with estimates at the enquiry stage.' },
+  { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will return a consolidated quote for the full portfolio under a single engagement letter.' },
+  { question: 'Are you RICS-regulated and PI insured?', answer: 'Yes. All assessments are conducted by or under the direct supervision of a RICS-registered member, and we carry comprehensive professional indemnity insurance on every instruction.' },
 ]
 
 export default function ContactPage() {
@@ -27,10 +28,10 @@ export default function ContactPage() {
               Get In Touch
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Let&rsquo;s get your assessment underway.
+              Request your assessment. We respond within 24 hours.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              24-hour response on all enquiries. Speak to a specialist surveyor directly on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+              No obligation — just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -48,7 +49,7 @@ export default function ContactPage() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="#contact-form" className="btn-shine">Send an Enquiry</a>
+              <a href="#contact-form" className="btn-shine">Request Your Assessment</a>
               <a href="/services" className="btn-ghost">Our Services</a>
             </div>
           </div>
@@ -62,13 +63,13 @@ export default function ContactPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">All enquiries receive a response within 24 hours on business days.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated. PI insured. 24-hour response on all business-day enquiries.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <ContactSection heading="Send us your instruction." />
+      <ContactSection heading="Get a written fee estimate — no commitment required." />
       <FaqSection description="Common questions about instructing Cavendish & Rowe." items={faqItems} />
     </main>
   )

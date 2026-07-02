@@ -10,10 +10,10 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why do listed buildings need a specialist assessment?', answer: 'Listed buildings must be reinstated in original style and materials under the Planning (Listed Buildings and Conservation Areas) Act 1990. Standard calculators calibrated to modern construction cannot account for lime mortar, handmade brick, heritage contractor rates, conservation consents or extended programme timescales. The result is systematic underinsurance.' },
-  { question: 'Can you assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site surveys for all listed building categories. Grade I and Grade II* buildings cannot be assessed by desktop. They require a physical inspection by a specialist surveyor. We confirm the programme and fee on receipt of your enquiry.' },
-  { question: 'Does a standard online calculator work for listed buildings?', answer: 'No. Generic calculators apply standard construction rates and miss specialist materials, heritage labour premiums, conservation consents and extended programme costs entirely. Listed properties are frequently underinsured by a substantial margin, a gap significantly wider than for standard buildings.' },
-  { question: 'What is the VAT position on listed building reinstatement?', answer: 'A full rebuild after total loss is zero-rated. But demolition, professional fees and partial-damage repairs attract 20% VAT. Since most real claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance work. Getting VAT treatment right is a material element of the declared value.' },
+  { question: 'Why do listed buildings cost so much more to reinstate than standard properties?', answer: 'Legal obligation drives the cost: under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must be carried out in original style and materials. Lime mortar, handmade brick, heritage contractors and conservation consents all carry significant premiums over standard construction — and most assessors who are not heritage specialists underestimate every one of them.' },
+  { question: 'Is a desktop assessment appropriate for a listed building?', answer: 'No. A desktop assessment applies standard construction rates and cannot account for specialist materials, heritage labour, conservation consent requirements or the extended programme costs that come with a listed reinstatement. On-site inspection by a specialist surveyor is the only method that produces a defensible declared value for a listed property.' },
+  { question: 'Can you assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site surveys for all listed building categories. Grade I and Grade II* buildings in particular cannot be assessed by desktop — they require physical inspection and specialist knowledge. We confirm the programme and fee on receipt of your enquiry.' },
+  { question: 'What is the VAT position on listed building reinstatement?', answer: 'A full rebuild after total loss is zero-rated. But demolition, professional fees and partial-damage repairs attract 20% VAT. Since most real claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance work — and it is frequently excluded from desktop figures.' },
   { question: 'How often should a listed building be reassessed?', answer: 'A full specialist reassessment is required at least every three years, with annual BCIS-indexed inflation reviews in intervening years. Where material works have been carried out, or where the building has not been assessed since before 2020, a fresh site-based assessment should be commissioned before the next renewal.' },
 ]
 
@@ -27,10 +27,10 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue">Listed &amp; Heritage Buildings</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Listed buildings cost significantly more to rebuild than standard calculators suggest.
+              Listed buildings carry a 20–50% rebuild cost uplift that most assessors don't know how to calculate.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              A 20–50% rebuild cost uplift over standard construction is typical. For complex heritage properties it can be far higher. Generic tools miss specialist materials, heritage contractors, conservation consents and VAT exposure entirely. Our site-based assessments account for every factor.
+              Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. For complex Grade I properties the gap is wider still — and a desktop assessment will miss it entirely.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -53,22 +53,16 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue">The Cost Gap</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Rebuild cost regularly exceeds market value for listed properties.
+              For listed properties, rebuild cost regularly exceeds market value — and standard assessors don't price the gap.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              For a standard property, market value is often higher than rebuild cost. For listed buildings, the reverse is frequently true. Authentic materials, specialist contractors, conservation requirements and extended programme timescales combine to push rebuild cost well above what a comparable unlisted building would cost to replace.
-            </p>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A thatched cottage worth £500,000 on the open market can carry a reinstatement cost of £1,000,000 or more once listing requirements, conservation consents and specialist labour and materials are properly accounted for. A Victorian terrace valued at £400,000 may cost £800,000 to rebuild correctly.
-            </p>
-            <p className="text-[#5f6368] text-base leading-relaxed">
-              Generic calculators apply standard modern construction rates. They do not account for any of these factors, and the resulting figure systematically understates the true cost.
+              A thatched cottage worth £500,000 can carry a reinstatement cost of £1,000,000 or more once specialist materials, consents and labour are properly priced. Generic calculators apply standard construction rates and systematically understate the figure — the gap is wider for listed buildings than any other property type.
             </p>
           </div>
           <div className="space-y-4 mt-4">
             {[
-              { label: 'Online calculator or inherited estimate', desc: 'Applies standard modern construction rates. Misses specialist materials, heritage labour, conservation consents and VAT exposure. Not defensible in a dispute.', ok: false },
-              { label: 'Specialist site-based assessment', desc: 'Accounts for authentic materials, heritage contractor rates, conservation requirements, extended programme costs and VAT treatment. Accepted by all UK insurers.', ok: true },
+              { label: 'Desktop assessment or online calculator', desc: 'Applies standard modern construction rates. Cannot account for lime mortar, handmade materials, heritage labour premiums, conservation consents or extended programme timescales. Indefensible in a claim dispute.', ok: false },
+              { label: 'Specialist on-site assessment', desc: 'A physical inspection by a heritage-trained surveyor, pricing authentic materials, specialist contractors, conservation requirements and VAT treatment correctly. The only appropriate method for a listed property.', ok: true },
             ].map(({ label, desc, ok }) => (
               <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
@@ -91,10 +85,10 @@ export default function ListedBuildingsPage() {
           <div className="lg:col-span-4">
             <span className="badge badge-blue">What Drives the Cost</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Six factors that standard assessments miss.
+              Six cost drivers that most assessors aren't qualified to price.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must be carried out in original style and materials. That legal obligation drives every additional cost below.
+              Reinstatement must be carried out in original style and materials under the Planning (Listed Buildings and Conservation Areas) Act 1990 — that legal obligation drives every cost below, and it takes a specialist to quantify each one accurately.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
@@ -124,13 +118,10 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue">The Underinsurance Risk</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Listed properties are frequently underinsured by a substantial margin.
+              The underinsurance gap is wider for listed buildings than for any other property type.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Underinsurance is endemic across UK building stock. For listed buildings the gap is typically wider than for standard properties, driven by the systematic failure of standard assessment methods to account for heritage rebuild costs.
-            </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              When the average clause applies, the payout is reduced in proportion to the shortfall. A building insured for £1,000,000 against a true rebuild cost of £1,500,000 is covered for 67%. A £300,000 claim is paid at £200,000. The £100,000 gap falls on the owner.
+              When the average clause applies, the shortfall falls entirely on the owner. A building insured for £1m against a true rebuild of £1.5m pays out 67p in the pound — a £300,000 claim settles at £200,000, leaving a £100,000 gap the owner must fund. For unlisted properties in the same portfolio, our desktop service at <Link href="/services" className="text-[#1a73e8] hover:text-[#1254b5]">/services</Link> provides a cost-effective alternative.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
           </div>
@@ -191,7 +182,7 @@ export default function ListedBuildingsPage() {
               When should you commission an assessment?
             </h2>
             <p className="text-white/70 text-base leading-relaxed max-w-2xl mx-auto">
-              Any of the following circumstances creates a material risk that the current sum insured does not reflect the true reinstatement cost of your listed property.
+              Any of the following warrants a specialist on-site reassessment before the next renewal.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -215,7 +206,7 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      <ContactSection heading="Get an accurate assessment for your listed building." />
+      <ContactSection heading="Get a specialist on-site assessment for your listed building." />
       <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} />
     </main>
   )

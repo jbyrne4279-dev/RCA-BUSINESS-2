@@ -10,12 +10,12 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Can managing agents be held liable for underinsurance?', answer: 'Yes. The managing agent carries a duty of care to leaseholders, and where a shortfall in cover arises from negligence or failure to review the valuation, the agent, not just the freeholder, may face a professional negligence or E&O claim. An underinsured block at claim stage is a textbook PI trigger. Commissioning a proper, RICS-aligned reinstatement cost assessment on the recommended cycle is the defensible position.' },
-  { question: 'Is index-linking the sum insured each year sufficient?', answer: 'No. Index-linking adjusts the figure but does not replace a formal assessment, and it compounds any existing error if the base figure was wrong. It does not capture material works, changes in construction specification, or non-standard elements. RICS guidance requires a full physical reassessment at least every three years. A loss adjuster on a large claim knows the difference between an index-linked figure and a surveyed one.' },
-  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the full reinstatement figure the reinstatement cost assessment produces: the day-one rebuild cost the agent is responsible for establishing. The Sum Insured (SI) is set by the insurer and equals the DV plus an inflation provision, typically 20–50% uplift. A DV of £5m typically becomes an SI of around £6.5m. Agents who misread the higher SI as "over-insurance" push freeholders to under-declare, creating a real underinsurance gap at claim stage.' },
-  { question: 'How does the FCA Consumer Duty affect managing agents?', answer: 'From January 2024, leaseholders are defined as customers and firms must act in their best interests, ensure fair value and disclose commission. The Leasehold and Freehold Reform Act 2024 moves to ban insurance commissions charged to leaseholders altogether. Every cost recharged via service charge must now be demonstrably justified. An independent reinstatement cost assessment from a qualified surveyor is exactly that kind of transparent, value-adding work.' },
-  { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes. Portfolio assessments for managing agents are a standard instruction for us: individual RICS-aligned reports per property, itemised by building and use (residential and commercial split for mixed-use blocks), with a consolidated summary schedule and staggered scheduling to smooth cost across service-charge years.' },
-  { question: 'What do RTM companies need to know?', answer: 'When leaseholders exercise the Right to Manage, the obligation to arrange buildings insurance transfers with it. RTM companies should establish the correct declared value before the first renewal. A proper reinstatement cost assessment from the outset creates a defensible file from day one and demonstrates compliance to leaseholders, who are now defined as customers under FCA rules.' },
+  { question: 'Can a managing agent be personally liable for underinsurance?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate valuation, the agent can face a professional negligence or E&O claim — independent of who holds the insuring obligation under the lease. A RICS-aligned assessment on the recommended three-year cycle is the defensible position that protects your PI cover.' },
+  { question: 'Will insurers and brokers accept your report?', answer: 'Yes. Our reports are accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions, and review date in the format brokers and insurers expect — you forward it directly.' },
+  { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10–15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
+  { question: 'Is index-linking the sum insured each year sufficient?', answer: 'No. Index-linking adjusts the figure but compounds any existing error and does not capture material works or specification changes. RICS requires a full reassessment at least every three years.' },
+  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer — DV plus an inflation provision, typically 20–50% uplift — so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
+  { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes — individual reports per property, residential and commercial split for mixed-use blocks, with a consolidated summary schedule and staggered scheduling to smooth service-charge cost across years.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -28,13 +28,13 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              An underinsured block is not the freeholder's problem. It's your PI claim.
+              When the block is underinsured, the negligence claim lands on you — not the freeholder.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              Managing agents carry a duty of care to leaseholders. Where an underinsured block produces a shortfall at claim stage, the agent who advised on or placed the insurance is exposed to a professional negligence claim, regardless of who technically holds the insuring obligation. A specialist reinstatement cost assessment is the cheapest PI risk reduction you will buy all year.
+              As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+              <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
@@ -54,10 +54,10 @@ export default function ManagingAgentsPage() {
           <div className="lg:col-span-4">
             <span className="badge badge-blue">The Exposure</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Five ways an inadequate reinstatement cost assessment lands on the agent's file.
+              Five ways an inadequate valuation becomes your problem, not the freeholder's.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              The managing agent is the practical decision-maker on the declared value, specifying, chasing renewals, managing the figure across a portfolio. That role carries the liability.
+              You are the practical decision-maker on the declared value. That role carries the liability — regardless of where the insuring obligation sits in the lease.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
@@ -86,13 +86,10 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Where Agents Slip</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              The four inputs that move the declared value, and the errors that follow.
+              The four valuation approaches — and the one that actually protects you.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              Managing agents own the inputs and the cadence. These are the points where errors accumulate, and where a standing relationship with a specialist surveyor adds the most value.
-            </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              The DV vs SI confusion matters most. Agents who misread the Sum Insured (DV plus insurer's inflation provision, typically 20–50%) as "over-insurance" push freeholders to under-declare. A DV of £5,000,000 correctly becomes a Sum Insured of approximately £6,500,000 after a 30% uplift. They are not the same figure and should not be treated as such.
+              The DV vs SI confusion is the most common agent error. A DV of £5,000,000 correctly becomes a Sum Insured of approximately £6,500,000 after a 30% insurer uplift — treating the higher SI as proof of over-insurance and under-declaring the DV creates the very shortfall that triggers the average clause.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -121,15 +118,12 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">What the Report Provides</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              A report that works for brokers, insurers, leaseholders, and your PI file.
+              A report that satisfies brokers, insurers, leaseholders, and your PI file — without extra admin.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              The reinstatement cost assessment must state the declared value, the assumptions applied, the review date and the scope of assessment in terms that brokers, insurers and leaseholders can rely on. For mixed-use blocks, the residential and commercial elements are itemised separately so each can be insured and recharged to the correct leaseholders.
-            </p>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              A specialist surveyor will ask for the fire risk assessment and asbestos survey up front, as asbestos-bearing debris materially increases disposal costs and must be accounted for in the DV.
+              We handle the assessment end-to-end and deliver a broker-ready report with the declared value, methodology and review date already documented. You forward it directly — no reworking, no chasing, no exposure.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Instruct an Assessment</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
           </div>
           <div className="grid grid-cols-1 gap-4">
             {[
@@ -158,15 +152,12 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-dark">Portfolio Service</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              One relationship. Your entire portfolio.
+              Managing multiple blocks? One instruction covers your entire portfolio.
             </h2>
-            <p className="text-white/80 text-base leading-relaxed mb-6">
-              Managing agents place block policies across portfolios. The same logic applies to reinstatement cost assessments. We handle volume, itemise DVs building by building, phase assessments to smooth cost across service-charge years, and deliver standing three-year cycles with desktop reviews between. One instruction covering your whole book. No re-instructing annually. No administration overhead.
-            </p>
             <p className="text-white/80 text-base leading-relaxed mb-8">
-              We diarise the re-instruction triggers with you: an extension to a ground-floor flat nudges the DV upward; a new storey on top forces both a new reinstatement cost assessment and a service-charge re-apportionment. We flag both before the renewal date.
+              We assess every block individually, phase renewals to smooth service-charge cost, and flag material works before your next renewal date — removing the compliance admin burden across your whole book. Managing agents with large portfolios can learn more on our <Link href="/portfolio-reinstatement-assessments" className="underline underline-offset-2 hover:text-white">portfolio assessments page</Link>.
             </p>
-            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Discuss Your Portfolio</Link>
+            <Link href="/portfolio-reinstatement-assessments" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Explore Portfolio Assessments</Link>
           </div>
           <div className="grid grid-cols-1 gap-4">
             {[
@@ -188,7 +179,7 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      <ContactSection heading="Protect your agency. Instruct us today." />
+      <ContactSection heading="Protect yourself and your clients. Instruct us today." />
       <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} />
     </main>
   )
