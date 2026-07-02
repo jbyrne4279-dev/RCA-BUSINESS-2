@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -37,7 +37,7 @@ export default function ListedBuildingsPage() {
               <Link href="/services#on-site-survey" className="btn-ghost">On-Site Survey</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Listed building specialist assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -65,25 +65,25 @@ export default function ListedBuildingsPage() {
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
           {/* Card right — listing grades */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(10,181,168,0.06)'}}>
-                <span className="font-bold text-[#0ab5a8] text-sm shrink-0 mt-0.5">I</span>
+              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">I</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade I</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Highest significance — only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
                 </div>
               </div>
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(10,181,168,0.06)'}}>
-                <span className="font-bold text-[#0ab5a8] text-sm shrink-0 mt-0.5">II*</span>
+              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II*</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II*</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings — 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
                 </div>
               </div>
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(10,181,168,0.06)'}}>
-                <span className="font-bold text-[#0ab5a8] text-sm shrink-0 mt-0.5">II</span>
+              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">The most common category — 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
@@ -95,10 +95,10 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 3. SECTION B — On-site survey process (card left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Checklist card left */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
             <ul className="space-y-4">
               {[
@@ -112,7 +112,7 @@ export default function ListedBuildingsPage() {
                 'BCIS-benchmarked cost build-up with full methodology note',
               ].map(item => (
                 <li key={item} className="flex gap-3 items-start">
-                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="#0ab5a8" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-[#0d1b3e] text-sm leading-relaxed">{item}</span>
@@ -134,7 +134,7 @@ export default function ListedBuildingsPage() {
                 { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4 items-start">
-                  <svg className="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="#0ab5a8" strokeWidth="2" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
@@ -165,7 +165,7 @@ export default function ListedBuildingsPage() {
                 desc: 'Every listed building assessment is carried out on site. Desktop methods cannot account for heritage materials, specialist trades or the physical condition of the fabric.',
                 href: '/services#on-site-survey',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
                   </svg>
                 ),
@@ -175,7 +175,7 @@ export default function ListedBuildingsPage() {
                 desc: 'We price lime mortar, handmade brick, natural stone, historic timber and specialist period finishes — each at rates that reflect the actual cost of authentic reinstatement.',
                 href: '/contact#contact-form',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.562.562 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                   </svg>
                 ),
@@ -185,7 +185,7 @@ export default function ListedBuildingsPage() {
                 desc: 'All assessments are prepared by RICS-regulated surveyors and carry the methodology transparency your insurer requires. Broker-ready reports issued within agreed timescales.',
                 href: '/services',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                   </svg>
                 ),
@@ -195,7 +195,7 @@ export default function ListedBuildingsPage() {
                 <div className="mb-4">{icon}</div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="text-[#0ab5a8] text-sm font-semibold hover:text-[#087f7a] transition-colors">Learn more →</Link>
+                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">Learn more →</Link>
               </div>
             ))}
           </div>
@@ -203,7 +203,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text + buttons left */}
           <div>
@@ -252,3 +252,4 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+

@@ -1,9 +1,9 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 @theme {
-  --color-primary:          #0ab5a8;
+  --color-primary:          #0057FF;
   --color-surface:          #ffffff;
-  --color-surface-variant:  #f0faf9;
+  --color-surface-variant:  #f0f4ff;
   --color-on-surface:       #0d1b3e;
 
   /* Font tokens — Inter throughout, no serif */
@@ -15,7 +15,7 @@
 
 /* ── Hero: clean white with subtle teal radial glow top ── */
 .hero-bg {
-  background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(10,181,168,0.08) 0%, transparent 60%), #ffffff;
+  background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(0,87,255,0.08) 0%, transparent 60%), #ffffff;
 }
 
 /* ── Pill primary button — teal ── */
@@ -27,17 +27,17 @@
   border-radius: 9999px;
   font-weight: 600;
   font-size: 0.875rem;
-  background: linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%);
+  background: linear-gradient(135deg, #0057FF 0%, #0040CC 100%);
   color: #ffffff;
   text-decoration: none;
   border: none;
-  box-shadow: 0 4px 14px rgba(10,181,168,0.35);
+  box-shadow: 0 4px 14px rgba(0,87,255,0.35);
   transition: transform 0.15s, box-shadow 0.15s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.btn-shine:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(10,181,168,0.45); }
+.btn-shine:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,87,255,0.45); }
 .btn-shine:active { transform: scale(0.97); }
 
 /* ── Ghost outline button ── */
@@ -49,8 +49,8 @@
   border-radius: 9999px;
   font-weight: 600;
   font-size: 0.875rem;
-  color: #0ab5a8;
-  border: 1.5px solid #0ab5a8;
+  color: #0057FF;
+  border: 1.5px solid #0057FF;
   text-decoration: none;
   background: transparent;
   transition: background 0.15s, color 0.15s;
@@ -58,12 +58,12 @@
   position: relative;
   overflow: hidden;
 }
-.btn-ghost:hover { background: #0ab5a8; color: #ffffff; }
+.btn-ghost:hover { background: #0057FF; color: #ffffff; }
 .btn-ghost:active { transform: scale(0.97); }
 
 /* ── Text link / inline CTA ── */
 .link-amber {
-  color: #0ab5a8;
+  color: #0057FF;
   font-size: 0.875rem;
   font-weight: 500;
   display: inline-flex;
@@ -71,7 +71,7 @@
   gap: 0.3em;
   transition: color 0.15s ease, gap 0.15s ease;
 }
-.link-amber:hover { color: #087f7a; gap: 0.5em; }
+.link-amber:hover { color: #0040CC; gap: 0.5em; }
 
 /* ── Fade-up on scroll (CSS scroll-driven, Chrome 115+; graceful fallback elsewhere) ── */
 @keyframes fade-up {
@@ -93,7 +93,7 @@
 }
 .hover-lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(10,181,168,0.15);
+  box-shadow: 0 6px 16px rgba(0,87,255,0.15);
 }
 
 /* ── Card border glow on hover ── */
@@ -101,8 +101,8 @@
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .card-glow:hover {
-  border-color: #0ab5a8 !important;
-  box-shadow: 0 0 0 3px rgba(10,181,168,0.12);
+  border-color: #0057FF !important;
+  box-shadow: 0 0 0 3px rgba(0,87,255,0.12);
 }
 
 /* ── Logo shimmer ── */
@@ -133,7 +133,7 @@
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
 }
-.badge-blue  { background: rgba(10,181,168,0.1); color: #087f7a; border: 1px solid rgba(10,181,168,0.25); }
+.badge-blue  { background: rgba(0,87,255,0.1); color: #0040CC; border: 1px solid rgba(0,87,255,0.25); }
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
 .badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
 
@@ -145,7 +145,7 @@
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .ls-card:hover {
-  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  box-shadow: 0 8px 32px rgba(0,87,255,0.12);
   transform: translateY(-2px);
 }
 
@@ -171,13 +171,13 @@
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 .stat-card:hover {
-  box-shadow: 0 8px 28px rgba(10,181,168,0.10);
+  box-shadow: 0 8px 28px rgba(0,87,255,0.10);
   transform: translateY(-3px);
 }
 
 /* ── Step number badge ── */
 .step-num {
-  background: linear-gradient(135deg, #0ab5a8, #087f7a);
+  background: linear-gradient(135deg, #0057FF, #0040CC);
   color: white;
   width: 2rem;
   height: 2rem;
@@ -199,11 +199,11 @@
   justify-content: center;
 }
 .icon-circle-red   { background: #fef2f2; color: #dc2626; }
-.icon-circle-blue  { background: rgba(10,181,168,0.1); color: #0ab5a8; }
+.icon-circle-blue  { background: rgba(0,87,255,0.1); color: #0057FF; }
 .icon-circle-amber { background: #fffbeb; color: #d97706; }
 
 /* ── Tick glow ── */
-.tick-glow { filter: drop-shadow(0 0 4px rgba(10,181,168,0.5)); }
+.tick-glow { filter: drop-shadow(0 0 4px rgba(0,87,255,0.5)); }
 
 /* ── BRIX image-top content card ── */
 .brix-card {
@@ -214,7 +214,7 @@
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .brix-card:hover {
-  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  box-shadow: 0 8px 32px rgba(0,87,255,0.12);
   transform: translateY(-2px);
 }
 
@@ -223,7 +223,7 @@
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .card-hover:hover {
-  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  box-shadow: 0 8px 32px rgba(0,87,255,0.12);
   transform: translateY(-2px);
 }
 
@@ -250,20 +250,21 @@
 }
 
 /* ── Legacy aliases ── */
-.btn-amber        { background: #0ab5a8; color: #fff; border-radius: 9999px; }
-.rule-amber       { height: 2px; width: 32px; background: #0ab5a8; display: block; }
-.step-circle      { width: 2rem; height: 2rem; border-radius: 50%; background: #0ab5a8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; flex-shrink: 0; }
+.btn-amber        { background: #0057FF; color: #fff; border-radius: 9999px; }
+.rule-amber       { height: 2px; width: 32px; background: #0057FF; display: block; }
+.step-circle      { width: 2rem; height: 2rem; border-radius: 50%; background: #0057FF; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; flex-shrink: 0; }
 .grow-card        {}
-.card-shadow      { box-shadow: 0 1px 2px rgba(10,181,168,0.12), 0 1px 3px rgba(10,181,168,0.08); }
-.sovereign-shadow { box-shadow: 0 2px 8px rgba(10,181,168,0.15); }
+.card-shadow      { box-shadow: 0 1px 2px rgba(0,87,255,0.12), 0 1px 3px rgba(0,87,255,0.08); }
+.sovereign-shadow { box-shadow: 0 2px 8px rgba(0,87,255,0.15); }
 .hover-grow       { transition: transform 0.2s ease; }
 .hover-grow:hover { transform: translateY(-2px); }
 .pricing-card     { transition: box-shadow 0.2s ease, transform 0.2s ease; border-radius: 12px; }
-.pricing-card:hover { box-shadow: 0 4px 16px rgba(10,181,168,0.15); transform: translateY(-2px); }
-.text-shine       { color: #0ab5a8; }
-.text-shine-slow  { color: #0ab5a8; }
+.pricing-card:hover { box-shadow: 0 4px 16px rgba(0,87,255,0.15); transform: translateY(-2px); }
+.text-shine       { color: #0057FF; }
+.text-shine-slow  { color: #0057FF; }
 .liquid-glass     { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); }
 .animate-scroll-reviews { display: flex; }
 [class^="lifecycle-ring-"]   {}
 [class^="lifecycle-border-"] {}
 [class^="method-ring-"]      {}
+

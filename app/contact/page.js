@@ -31,7 +31,7 @@ export default function ContactPage() {
               Get in touch. We respond within 24 hours.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#0ab5a8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+              No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#0057FF] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -42,7 +42,7 @@ export default function ContactPage() {
                 <div key={label} className="flex gap-3 items-baseline">
                   <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
                   {href
-                    ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0ab5a8] transition-colors">{value}</a>
+                    ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0057FF] transition-colors">{value}</a>
                     : <p className="text-[#0d1b3e] font-semibold">{value}</p>
                   }
                 </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
               <a href="/services" className="btn-ghost">Our Services</a>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Cavendish and Rowe reinstatement cost assessment surveyors"
@@ -74,3 +74,4 @@ export default function ContactPage() {
     </main>
   )
 }
+

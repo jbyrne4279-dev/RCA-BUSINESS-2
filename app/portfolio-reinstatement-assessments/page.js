@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1477785304.jpeg"
               alt="Portfolio reinstatement cost assessment"
@@ -55,7 +55,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 2. SECTION A — text left, stat card right */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Text left */}
@@ -71,8 +71,8 @@ export default function PortfolioPage() {
                 { title: 'PI exposure at scale', desc: 'Managing agents and asset managers who arrange insurance for multiple assets carry a compounding professional indemnity exposure if any declared value is materially incorrect.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-4">
-                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(10,181,168,0.12)'}}>
-                    <svg className="w-3 h-3" fill="none" stroke="#0ab5a8" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
+                    <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-0.5">{title}</p>
@@ -85,7 +85,7 @@ export default function PortfolioPage() {
           </div>
 
           {/* Stat card right */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-6">Portfolio by the numbers</p>
             <div className="space-y-6">
               {[
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
                 { n: '∞', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively — no re-instructing, no missed renewals.' },
               ].map(({ n, label, desc }) => (
                 <div key={label} className="flex gap-5 items-start">
-                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white" style={{background:'linear-gradient(135deg, #0ab5a8, #087f7a)'}}>
+                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
                     {n}
                   </div>
                   <div>
@@ -114,7 +114,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Deliverables card left */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-6">What a portfolio instruction delivers</p>
             <ul className="space-y-5">
               {[
@@ -123,8 +123,8 @@ export default function PortfolioPage() {
                 { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection plan we track every renewal date across the portfolio and deliver updated figures proactively — before each renewal, not after.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-4 items-start">
-                  <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(10,181,168,0.12)'}}>
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="#0ab5a8" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
@@ -149,7 +149,7 @@ export default function PortfolioPage() {
                 { step: '04', title: 'Consolidated schedule issued', desc: 'A broker-ready portfolio schedule is delivered alongside the final individual report — ready to pass straight to your insurer or broker.' },
               ].map(({ step, title, desc }) => (
                 <li key={step} className="flex gap-4 items-start">
-                  <span className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0ab5a8, #087f7a)'}}>
+                  <span className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
                     {step}
                   </span>
                   <div>
@@ -166,7 +166,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Portfolio Features</span>
@@ -184,7 +184,7 @@ export default function PortfolioPage() {
                 desc: 'One engagement letter and one named surveyor cover every asset in your portfolio. No need to place separate instructions for each property.',
                 href: '/contact#contact-form',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.75" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.75" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                   </svg>
                 ),
@@ -194,7 +194,7 @@ export default function PortfolioPage() {
                 desc: 'A single broker-ready portfolio schedule lists every property, its RICS-regulated reinstatement cost, the assessment date and the next recommended review date.',
                 href: '/contact#contact-form',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.75" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.75" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"/>
                   </svg>
                 ),
@@ -204,19 +204,19 @@ export default function PortfolioPage() {
                 desc: 'Under the 3-Year Protection plan we manage annual BCIS indexation across the whole portfolio and deliver updated figures ahead of every renewal date — no re-instructing required.',
                 href: '/contact#contact-form',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.75" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.75" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
                   </svg>
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
               <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 12px rgba(0,0,0,0.05)'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(10,181,168,0.10)'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="text-[#0ab5a8] text-sm font-semibold hover:text-[#087f7a] transition-colors">
+                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">
                   Find out more →
                 </Link>
               </div>
@@ -226,7 +226,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
@@ -236,7 +236,7 @@ export default function PortfolioPage() {
               Send us your asset list and we will return a consolidated quote within one business day — no obligation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0ab5a8] font-semibold text-sm hover:bg-white/90 transition-colors">
+              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">
                 Request Portfolio Quote
               </Link>
               <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors">
@@ -272,3 +272,4 @@ export default function PortfolioPage() {
     </main>
   )
 }
+

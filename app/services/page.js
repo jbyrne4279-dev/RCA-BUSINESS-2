@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -37,7 +37,7 @@ export default function ServicesPage() {
               <Link href="/services#service-cards" className="btn-ghost">View Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment building survey"
@@ -54,7 +54,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION A — WHY SPECIALIST */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">Why Choose a Specialist</span>
@@ -73,8 +73,8 @@ export default function ServicesPage() {
               { label: 'Old or inherited valuations', sub: 'Stale figures create underinsurance risk.', ok: false },
               { label: 'RICS-aligned reinstatement cost assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ label, sub, ok }) => (
-              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#0ab5a8]' : 'border-[#e2e8f0]'}`} style={ok ? {background:'rgba(10,181,168,0.08)'} : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#0057FF]' : 'border-[#e2e8f0]'}`} style={ok ? {background:'rgba(0,87,255,0.08)'} : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#0d1b3e] text-sm">{label}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
@@ -95,11 +95,11 @@ export default function ServicesPage() {
               { icon: '🛡', num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
             ].map(({ icon, num, title, desc }) => (
               <div key={num} className="flex gap-4 items-start">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(10,181,168,0.12)'}}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-[#0ab5a8] uppercase tracking-wide mb-0.5">{num}</p>
+                  <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-0.5">{num}</p>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed">{desc}</p>
                 </div>
@@ -120,7 +120,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 3-COL SERVICE CARDS */}
-      <section id="service-cards" className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section id="service-cards" className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Choose Your Service</span>
@@ -159,13 +159,13 @@ export default function ServicesPage() {
               },
             ].map(({ icon, id, badge, title, desc, href, link }) => (
               <div key={id} id={id} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:'rgba(10,181,168,0.12)'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
-                <p className="text-xs font-semibold text-[#0ab5a8] uppercase tracking-wide mb-1">{badge}</p>
+                <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
                 <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                <Link href={href} className="text-[#0ab5a8] font-semibold text-sm hover:text-[#087f7a] transition-colors">
+                <Link href={href} className="text-[#0057FF] font-semibold text-sm hover:text-[#0040CC] transition-colors">
                   {link}
                 </Link>
               </div>
@@ -175,7 +175,7 @@ export default function ServicesPage() {
       </section>
 
       {/* TEAL CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
@@ -188,7 +188,7 @@ export default function ServicesPage() {
               Tell us about your property and we'll recommend the right service. Most instructions are confirmed same day.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine" style={{background:'white', color:'#0ab5a8'}}>Request an Assessment</Link>
+              <Link href="/contact#contact-form" className="btn-shine" style={{background:'white', color:'#0057FF'}}>Request an Assessment</Link>
               <Link href="/contact#contact-form" className="btn-ghost" style={{borderColor:'white', color:'white'}}>Ask a Question</Link>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function ServicesPage() {
                 'Clear turnaround confirmed on instruction',
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start">
-                  <span className="text-[#0ab5a8] font-bold text-sm shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] font-bold text-sm shrink-0 mt-0.5">✓</span>
                   <span className="text-[#0d1b3e] text-sm leading-snug">{item}</span>
                 </li>
               ))}
@@ -218,3 +218,4 @@ export default function ServicesPage() {
     </main>
   )
 }
+

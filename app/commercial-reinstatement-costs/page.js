@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -38,7 +38,7 @@ export default function CommercialPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="Commercial reinstatement cost assessment"
@@ -55,7 +55,7 @@ export default function CommercialPage() {
       </section>
 
       {/* 2. SECTION A — Why commercial is complex (text left, comparison card right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
@@ -72,8 +72,8 @@ export default function CommercialPage() {
                 { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
                 <li key={label} className="flex gap-3 items-start">
-                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(10,181,168,0.15)'}}>
-                    <svg className="w-3 h-3" fill="none" stroke="#0ab5a8" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
+                    <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm">{label}</p>
@@ -97,19 +97,19 @@ export default function CommercialPage() {
                 key={title}
                 className="bg-white rounded-2xl border p-4 flex gap-3 items-start"
                 style={{
-                  borderColor: ok ? '#0ab5a8' : '#e2e8f0',
-                  background: ok ? 'rgba(10,181,168,0.06)' : '#fff',
+                  borderColor: ok ? '#0057FF' : '#e2e8f0',
+                  background: ok ? 'rgba(0,87,255,0.06)' : '#fff',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                 }}
               >
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
-            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a] transition-colors">See our portfolio assessment service →</Link></p>
+            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="text-[#0057FF] font-semibold hover:text-[#0040CC] transition-colors">See our portfolio assessment service →</Link></p>
           </div>
         </div>
       </section>
@@ -117,9 +117,9 @@ export default function CommercialPage() {
       {/* 3. SECTION B — Property types (card left, text right) */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
-            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#f0faf9'}}>
-              <p className="text-xs font-semibold text-[#0ab5a8] uppercase tracking-widest">Property Types We Assess</p>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+              <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-widest">Property Types We Assess</p>
             </div>
             <ul className="divide-y divide-[#e2e8f0]">
               {[
@@ -133,10 +133,10 @@ export default function CommercialPage() {
                 <li key={title}>
                   <Link
                     href={href}
-                    className="flex items-center justify-between px-6 py-4 hover:bg-[#f0faf9] transition-colors group"
+                    className="flex items-center justify-between px-6 py-4 hover:bg-[#f0f4ff] transition-colors group"
                   >
                     <span className="font-medium text-[#0d1b3e] text-sm">{title}</span>
-                    <svg className="w-4 h-4 text-[#0ab5a8] group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    <svg className="w-4 h-4 text-[#0057FF] group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
                   </Link>
                 </li>
               ))}
@@ -163,7 +163,7 @@ export default function CommercialPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Expertise</span>
@@ -176,7 +176,7 @@ export default function CommercialPage() {
                 desc: 'We identify and value Category A and B fitout installed by occupying tenants — a cost layer that online tools and index-linked valuations routinely miss entirely.',
                 href: '/contact',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
                   </svg>
                 ),
@@ -186,7 +186,7 @@ export default function CommercialPage() {
                 desc: 'Grade I, Grade II* and Grade II commercial buildings assessed by surveyors experienced in historic fabric, specialist materials and Heritage England compliance.',
                 href: '/listed-buildings',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                   </svg>
                 ),
@@ -196,19 +196,19 @@ export default function CommercialPage() {
                 desc: 'A single instruction covers the entire development. Output is separated by use class — residential and commercial figures presented cleanly for your insurer.',
                 href: '/contact',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                   </svg>
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
               <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{background:'rgba(10,181,168,0.1)'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{background:'rgba(0,87,255,0.1)'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
-                <Link href={href} className="text-[#0ab5a8] text-sm font-semibold hover:text-[#087f7a] transition-colors">
+                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">
                   Learn more →
                 </Link>
               </div>
@@ -218,7 +218,7 @@ export default function CommercialPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
@@ -230,7 +230,7 @@ export default function CommercialPage() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/contact#contact-form"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white font-semibold text-[#0ab5a8] text-sm hover:bg-white/90 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white font-semibold text-[#0057FF] text-sm hover:bg-white/90 transition-colors"
               >
                 Request an Assessment
               </Link>
@@ -268,3 +268,4 @@ export default function CommercialPage() {
     </main>
   )
 }
+

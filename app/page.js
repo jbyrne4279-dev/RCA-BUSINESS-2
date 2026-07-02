@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
@@ -13,7 +13,7 @@ const faqItems = [
 ]
 
 const Star = () => (
-  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="#0ab5a8">
+  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="#0057FF">
     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
   </svg>
 )
@@ -41,30 +41,30 @@ export default function HomePage() {
 
           {/* Hero card illustration */}
           <div className="flex flex-col gap-4">
-            <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.12)'}}>
+            <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.12)'}}>
               <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-4">Underinsurance Risk at a Glance</p>
               <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="rounded-xl p-4" style={{background:'rgba(10,181,168,0.06)'}}>
-                  <p className="text-3xl font-bold text-[#0ab5a8]">80%</p>
+                <div className="rounded-xl p-4" style={{background:'rgba(0,87,255,0.06)'}}>
+                  <p className="text-3xl font-bold text-[#0057FF]">80%</p>
                   <p className="text-xs text-[#64748b] mt-1">of UK buildings carry an inaccurate sum insured</p>
                 </div>
-                <div className="rounded-xl p-4" style={{background:'rgba(10,181,168,0.06)'}}>
-                  <p className="text-3xl font-bold text-[#0ab5a8]">30%+</p>
+                <div className="rounded-xl p-4" style={{background:'rgba(0,87,255,0.06)'}}>
+                  <p className="text-3xl font-bold text-[#0057FF]">30%+</p>
                   <p className="text-xs text-[#64748b] mt-1">rise in UK build costs since 2020 (BCIS)</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 p-3 rounded-xl" style={{background:'linear-gradient(135deg, rgba(10,181,168,0.12), rgba(8,127,122,0.08))'}}>
-                <svg className="w-5 h-5 shrink-0 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <div className="flex items-center gap-3 p-3 rounded-xl" style={{background:'linear-gradient(135deg, rgba(0,87,255,0.12), rgba(0,64,204,0.08))'}}>
+                <svg className="w-5 h-5 shrink-0 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <p className="text-xs font-medium text-[#0d1b3e]">RICS-regulated assessment delivered within 24 hours</p>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white rounded-xl border border-[#e2e8f0] p-4" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.05)'}}>
-                <p className="text-2xl font-bold text-[#0ab5a8]">24 hrs</p>
+                <p className="text-2xl font-bold text-[#0057FF]">24 hrs</p>
                 <p className="text-xs text-[#64748b] mt-1">Desktop assessment turnaround</p>
               </div>
               <div className="bg-white rounded-xl border border-[#e2e8f0] p-4" style={{boxShadow:'0 2px 8px rgba(0,0,0,0.05)'}}>
-                <p className="text-2xl font-bold text-[#0ab5a8]">3 yrs</p>
+                <p className="text-2xl font-bold text-[#0057FF]">3 yrs</p>
                 <p className="text-xs text-[#64748b] mt-1">RICS recommended review period</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left: visual card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <div className="relative h-52 md:h-64">
               <Image src="/AdobeStock_1477785304.jpeg" alt="Block of flats reinstatement cost assessment" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/60 to-transparent" />
@@ -99,7 +99,7 @@ export default function HomePage() {
                 { label: 'Online Calculator', val: 'No RICS accountability', ok: false },
               ].map(({ label, val, ok }) => (
                 <div key={label} className="flex items-center gap-3">
-                  <span className={`text-sm font-bold shrink-0 ${ok ? 'text-[#0ab5a8]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                  <span className={`text-sm font-bold shrink-0 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                   <div>
                     <p className="text-xs font-semibold text-[#0d1b3e]">{label}</p>
                     <p className="text-xs text-[#64748b]">{val}</p>
@@ -121,7 +121,7 @@ export default function HomePage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
             </p>
-            <Link href="/services" className="text-[#0ab5a8] font-semibold text-sm hover:text-[#087f7a] transition-colors">
+            <Link href="/services" className="text-[#0057FF] font-semibold text-sm hover:text-[#0040CC] transition-colors">
               Explore our services →
             </Link>
           </div>
@@ -129,7 +129,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. SECTION B — Who We Help (text left, visual right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left: text */}
@@ -148,9 +148,9 @@ export default function HomePage() {
                 { title: 'Block Managers & Portfolio Landlords', desc: 'Consistent, compliant figures across every block — managed on a rolling cycle.', href: '/block-managers-reinstatement-cost-assessments' },
               ].map(({ title, desc, href }) => (
                 <Link key={title} href={href} className="flex items-start gap-3 group">
-                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0ab5a8,#087f7a)'}}>→</span>
+                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>→</span>
                   <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0ab5a8] transition-colors">{title}</p>
+                    <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
                     <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
                   </div>
                 </Link>
@@ -160,7 +160,7 @@ export default function HomePage() {
           </div>
 
           {/* Right: visual card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             {[
               { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
@@ -169,7 +169,7 @@ export default function HomePage() {
               { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
             ].map(({ n, title, desc }, i) => (
               <div key={n} className={`flex gap-4 items-start ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
-                <span className="text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0ab5a8,#087f7a)'}}>{n}</span>
+                <span className="text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{n}</span>
                 <div>
                   <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
                   <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
@@ -196,7 +196,7 @@ export default function HomePage() {
             ].map(({ initials, name, role, quote }) => (
               <div key={name} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="flex items-center gap-3 mb-5">
-                  <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style={{background:'linear-gradient(135deg,#0ab5a8,#087f7a)'}}>
+                  <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>
                     {initials}
                   </div>
                   <div>
@@ -215,7 +215,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. SERVICES — 3 col */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
@@ -226,7 +226,7 @@ export default function HomePage() {
             {[
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" /></svg>
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" /></svg>
                 ),
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
@@ -234,7 +234,7 @@ export default function HomePage() {
               },
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                 ),
                 title: 'On-Site Survey',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
@@ -242,7 +242,7 @@ export default function HomePage() {
               },
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0ab5a8" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 ),
                 title: '3-Year Protection Plan',
                 desc: 'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
@@ -250,12 +250,12 @@ export default function HomePage() {
               },
             ].map(({ icon, title, desc, href }) => (
               <div key={title} className="bg-white rounded-2xl border border-[#e2e8f0] p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(10,181,168,0.08)'}}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.08)'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
-                <Link href={href} className="text-[#0ab5a8] text-sm font-semibold hover:text-[#087f7a] transition-colors">
+                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">
                   Read More →
                 </Link>
               </div>
@@ -265,7 +265,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. CTA BANNER */}
-      <section className="py-14 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-14 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
@@ -275,7 +275,7 @@ export default function HomePage() {
               80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
+              <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
                 Get a Free Quote
               </Link>
               <Link href="/services" className="border border-white/40 text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors inline-block text-center">
@@ -312,3 +312,4 @@ export default function HomePage() {
     </main>
   )
 }
+

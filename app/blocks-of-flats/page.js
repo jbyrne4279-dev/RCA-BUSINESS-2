@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -38,7 +38,7 @@ export default function BlocksOfFlatsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -61,20 +61,20 @@ export default function BlocksOfFlatsPage() {
             </p>
             <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
               <li className="flex gap-3 items-start">
-                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Shared structures</strong> — external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
               </li>
               <li className="flex gap-3 items-start">
-                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Communal services</strong> — lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
               </li>
               <li className="flex gap-3 items-start">
-                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> — a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
               </li>
             </ul>
           </div>
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
             <ul className="space-y-4">
               {[
@@ -88,7 +88,7 @@ export default function BlocksOfFlatsPage() {
                 'Broker-ready report in 24 hours',
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start">
-                  <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                   <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -101,7 +101,7 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
@@ -125,17 +125,17 @@ export default function BlocksOfFlatsPage() {
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="text-[#0ab5a8] text-xs font-semibold hover:text-[#087f7a] transition-colors">Learn more →</Link>
+                  <Link href={href} className="text-[#0057FF] text-xs font-semibold hover:text-[#0040CC] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
+          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#0057FF] font-semibold hover:text-[#0040CC]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
         </div>
       </section>
 
       {/* CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
@@ -146,7 +146,7 @@ export default function BlocksOfFlatsPage() {
               A specialist block assessment takes the guesswork out of the declared value — protecting every leaseholder from an average-clause reduction at claim time.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors inline-block text-center">Request an Assessment</Link>
+              <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors inline-block text-center">Request an Assessment</Link>
               <Link href="/services" className="border border-white/50 text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/10 transition-colors inline-block text-center">View All Services</Link>
             </div>
           </div>
@@ -176,3 +176,4 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+

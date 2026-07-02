@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -39,7 +39,7 @@ export default function FreeholdersLeaseholdersPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -66,7 +66,7 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
 
           {/* Comparison card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-2">How the declared value is set</p>
             <div className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0]">
               <span className="text-[#d93025] font-bold text-base shrink-0 mt-0.5">✕</span>
@@ -75,8 +75,8 @@ export default function FreeholdersLeaseholdersPage() {
                 <p className="text-[#64748b] text-sm leading-relaxed">Figure taken from a previous schedule, an online calculator, or an estate agent's market valuation. Build-cost inflation, professional fees and demolition are routinely missed.</p>
               </div>
             </div>
-            <div className="flex gap-4 items-start p-5 rounded-xl border border-[#0ab5a8]" style={{background:'rgba(10,181,168,0.06)'}}>
-              <span className="text-[#0ab5a8] font-bold text-base shrink-0 mt-0.5">✓</span>
+            <div className="flex gap-4 items-start p-5 rounded-xl border border-[#0057FF]" style={{background:'rgba(0,87,255,0.06)'}}>
+              <span className="text-[#0057FF] font-bold text-base shrink-0 mt-0.5">✓</span>
               <div>
                 <p className="font-semibold text-[#0d1b3e] text-sm mb-1">RICS-regulated assessment</p>
                 <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision — and satisfies the insuring obligation.</p>
@@ -87,13 +87,13 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 3. SECTION B — For leaseholders (card left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Stat card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
-            <div className="rounded-xl p-5" style={{background:'rgba(10,181,168,0.08)'}}>
-              <p className="text-5xl font-bold text-[#0ab5a8] leading-none mb-2">80%</p>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+            <div className="rounded-xl p-5" style={{background:'rgba(0,87,255,0.08)'}}>
+              <p className="text-5xl font-bold text-[#0057FF] leading-none mb-2">80%</p>
               <p className="text-sm text-[#64748b]">of UK residential blocks carry an inaccurate sum insured</p>
             </div>
             <div className="space-y-3">
@@ -141,39 +141,39 @@ export default function FreeholdersLeaseholdersPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
             {/* Freeholder Protection */}
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
-                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Freeholder Protection</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">A defensible, RICS-regulated figure discharges your insuring obligation and protects you from personal liability if leaseholders suffer a shortfall on a claim.</p>
-              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Get a quote &rarr;</Link>
+              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Get a quote &rarr;</Link>
             </div>
 
             {/* Leaseholder Rights */}
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
-                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Leaseholder Rights</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">Commission your own independent assessment without the freeholder's permission. Use it to raise a formal concern or support a service charge challenge with credible, impartial evidence.</p>
-              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Start a challenge &rarr;</Link>
+              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Start a challenge &rarr;</Link>
             </div>
 
             {/* Tribunal Evidence */}
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
-                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Tribunal Evidence</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">Our reports are prepared to withstand scrutiny at the First-tier Tribunal (Property Chamber). RICS-regulated figures carry weight with panels reviewing service charge reasonableness.</p>
-              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Find out more &rarr;</Link>
+              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Find out more &rarr;</Link>
             </div>
 
           </div>
@@ -181,7 +181,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
@@ -191,7 +191,7 @@ export default function FreeholdersLeaseholdersPage() {
               Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0ab5a8] font-semibold text-sm hover:bg-white/90 transition-colors">Get a Free Quote</Link>
+              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">Get a Free Quote</Link>
               <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-white/60 text-white font-semibold text-sm hover:border-white transition-colors">View Services</Link>
             </div>
           </div>
@@ -217,3 +217,4 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+

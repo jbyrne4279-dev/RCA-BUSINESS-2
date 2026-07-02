@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { useState } from 'react'
 
 export default function FaqSection({ description, items }) {
@@ -8,7 +8,7 @@ export default function FaqSection({ description, items }) {
     <section className="bg-white py-20 md:py-28 px-6 md:px-10">
       <div className="max-w-3xl mx-auto">
         <div className="mb-10">
-          <span className="inline-flex items-center bg-[rgba(10,181,168,0.1)] text-[#087f7a] border border-[rgba(10,181,168,0.25)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+          <span className="inline-flex items-center bg-[rgba(0,87,255,0.1)] text-[#0040CC] border border-[rgba(0,87,255,0.25)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
@@ -25,12 +25,12 @@ export default function FaqSection({ description, items }) {
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left group transition-colors"
-                style={open === i ? { background: 'rgba(10,181,168,0.04)' } : {}}
+                style={open === i ? { background: 'rgba(0,87,255,0.04)' } : {}}
               >
                 <span className="font-medium text-[#0d1b3e] text-sm leading-snug">
                   {item.question}
                 </span>
-                <span className="text-[#0ab5a8] text-xl leading-none shrink-0 transition-transform duration-200"
+                <span className="text-[#0057FF] text-xl leading-none shrink-0 transition-transform duration-200"
                   style={{ transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)' }}>
                   +
                 </span>
@@ -47,3 +47,4 @@ export default function FaqSection({ description, items }) {
     </section>
   )
 }
+

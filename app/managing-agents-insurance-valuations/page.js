@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -38,7 +38,7 @@ export default function ManagingAgentsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -75,8 +75,8 @@ export default function ManagingAgentsPage() {
                 { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
                 { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage — PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
-                <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0ab5a8] bg-[rgba(10,181,168,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
-                  <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0057FF] bg-[rgba(0,87,255,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
+                  <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
                     <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
@@ -89,12 +89,12 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* SECTION B — What We Deliver (visual left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* Left: What We Deliver checklist card */}
           <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#0ab5a8] mb-5">What We Deliver</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
             <div className="space-y-3">
               {[
                 'Documented declared value — defensible at claim stage',
@@ -106,7 +106,7 @@ export default function ManagingAgentsPage() {
                 'Phased portfolio scheduling to smooth service-charge cost',
               ].map((item) => (
                 <div key={item} className="flex gap-3 items-start">
-                  <span className="text-[#0ab5a8] font-bold text-sm shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] font-bold text-sm shrink-0 mt-0.5">✓</span>
                   <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
@@ -129,7 +129,7 @@ export default function ManagingAgentsPage() {
                 { title: 'Portfolio efficiency', desc: 'Single instruction for multiple blocks; phased scheduling and a consolidated summary schedule included at no extra charge.' },
               ].map(({ title, desc }) => (
                 <div key={title} className="flex gap-4 items-start">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0ab5a8'}}>
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0057FF'}}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5 6.5-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </div>
                   <div>
@@ -180,12 +180,12 @@ export default function ManagingAgentsPage() {
               },
             ].map(({ icon, title, desc, href }) => (
               <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'#0ab5a8'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'#0057FF'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <Link href={href} className="mt-5 text-[#0ab5a8] text-sm font-semibold hover:underline">Read More →</Link>
+                <Link href={href} className="mt-5 text-[#0057FF] text-sm font-semibold hover:underline">Read More →</Link>
               </div>
             ))}
           </div>
@@ -193,7 +193,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* TEAL CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
@@ -203,7 +203,7 @@ export default function ManagingAgentsPage() {
               Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey — in time for your next renewal window.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-block bg-white text-[#0ab5a8] font-semibold rounded-full px-7 py-3 text-sm hover:bg-[#f0faf9] transition-colors">Instruct Us Today</Link>
+              <Link href="/contact#contact-form" className="inline-block bg-white text-[#0057FF] font-semibold rounded-full px-7 py-3 text-sm hover:bg-[#f0f4ff] transition-colors">Instruct Us Today</Link>
               <Link href="/services" className="inline-block border border-white/60 text-white font-semibold rounded-full px-7 py-3 text-sm hover:bg-white/10 transition-colors">See All Services</Link>
             </div>
           </div>
@@ -233,3 +233,4 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
