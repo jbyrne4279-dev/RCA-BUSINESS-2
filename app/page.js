@@ -255,8 +255,8 @@ export default function HomePage() {
               { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.' },
               { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.' },
               { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.' },
-            ].map(({ label, desc }) => (
-              <div key={label} className="flex items-start gap-3 mb-4 last:mb-0">
+            ].map(({ label, desc }, i) => (
+              <div key={label} className="flex items-start gap-3 mb-4 last:mb-0 step-reveal" style={{animationDelay:`${i * 0.15}s`}}>
                 <svg className="w-4 h-4 shrink-0 mt-0.5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                 <div>
                   <p className="text-white font-semibold text-sm">{label}</p>

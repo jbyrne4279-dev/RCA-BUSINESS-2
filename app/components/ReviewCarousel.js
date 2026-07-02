@@ -19,7 +19,7 @@ export default function ReviewCarousel() {
     <section className="py-14 md:py-20 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-flex items-center bg-[rgba(0,87,255,0.08)] text-[#0040CC] border border-[rgba(0,87,255,0.2)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-4">
+          <span className="badge badge-blue">
             Client Feedback
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What our clients say.</h2>
@@ -42,4 +42,5 @@ export default function ReviewCarousel() {
     </section>
   )
 }
+
 

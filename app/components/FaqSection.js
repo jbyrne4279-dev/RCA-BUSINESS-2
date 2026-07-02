@@ -8,7 +8,7 @@ export default function FaqSection({ description, items }) {
     <section className="bg-white py-20 md:py-28 px-6 md:px-10">
       <div className="max-w-3xl mx-auto">
         <div className="mb-10">
-          <span className="inline-flex items-center bg-[rgba(0,87,255,0.1)] text-[#0040CC] border border-[rgba(0,87,255,0.25)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+          <span className="badge badge-blue">
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
@@ -47,4 +47,5 @@ export default function FaqSection({ description, items }) {
     </section>
   )
 }
+
 

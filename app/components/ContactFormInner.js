@@ -15,9 +15,7 @@ export default function ContactFormInner({ heading }) {
   return (
     <div>
       <div id="contact-form" className="mb-10 scroll-mt-20">
-        <span className="inline-flex items-center bg-[rgba(0,87,255,0.1)] text-[#0040CC] border border-[rgba(0,87,255,0.25)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-          Get In Touch
-        </span>
+        <span className="badge badge-blue">Get In Touch</span>
         <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
           {heading}
         </h2>
