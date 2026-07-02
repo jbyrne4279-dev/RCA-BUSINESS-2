@@ -22,22 +22,23 @@ export default function FreeholdersLeaseholdersPage() {
   return (
     <main>
 
-      {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* 1. HERO */}
+      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <span className="badge badge-blue">Freeholders &amp; Leaseholders</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              Underinsurance is a shared risk for every flat owner.
+            <span className="badge badge-blue mb-6">Freeholders &amp; Leaseholders</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+              Defend the insuring covenant.
             </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building, not just whoever holds the insuring obligation.
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
+              When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
+
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
@@ -48,96 +49,170 @@ export default function FreeholdersLeaseholdersPage() {
         </div>
       </section>
 
-      {/* DV VS SI */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          <div>
-            <span className="badge badge-blue">Declared Value vs Sum Insured</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              The number on your policy schedule is not the number you set — and the difference matters.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed">
-              Assuming the higher sum insured figure means you are over-insured — and trimming your declared value accordingly — is one of the most common ways underinsurance happens.
-            </p>
-          </div>
-          <div className="space-y-4 mt-4">
-            {[
-              { label: 'Declared Value (DV)', desc: 'The day-one rebuild cost you are responsible for setting — the starting point for your policy.', ok: true },
-              { label: 'Sum Insured (SI)', desc: "DV plus the insurer's inflation provision (typically 20–50% uplift) — set by the insurer, not by you.", ok: true },
-            ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
-                <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* UNDERINSURANCE RISK */}
-      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
+      {/* 2. SECTION A — The insuring obligation (text left, card right) */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="badge badge-blue">The Underinsurance Risk</span>
+            <span className="badge badge-blue mb-4">The Insuring Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              When the payout is cut, every flat owner in the building loses.
+              What freeholders owe leaseholders — and what can go wrong.
             </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance — it is to insure to the full reinstatement cost of the building.
+            </p>
             <p className="text-[#64748b] text-base leading-relaxed">
-              If the declared value is too low, the average clause kicks in and the insurer pays only the proportion the building is covered for — the rest comes out of the building's pocket.
+              Setting the figure without a professional assessment exposes the freeholder to personal liability if an underinsured claim arises. Leaseholders who suffer a shortfall can pursue the party responsible for the declared value, not the insurer.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-5">
-            {[
-              { stat: '£500k → £1.5m', label: 'real-world DV gap at a residential block — a 3× shortfall that would have cut every claim payout by two thirds' },
-              { stat: '15–20%', label: 'professional fees typically added on top of rebuild cost — architect, engineer and quantity surveyor — commonly omitted from declared values' },
-              { stat: '12–24 Months', label: 'loss-of-rent and alternative accommodation cover that may be required for a significant loss — often left out of the declared value entirely' },
-            ].map(({ stat, label }) => (
-              <div key={label} className="stat-card p-6">
-                <p className="text-2xl font-bold text-[#0d1b3e] leading-none mb-3">{stat}</p>
-                <p className="text-[#64748b] text-sm leading-relaxed">{label}</p>
+
+          {/* Comparison card */}
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+            <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-2">How the declared value is set</p>
+            <div className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0]">
+              <span className="text-[#d93025] font-bold text-base shrink-0 mt-0.5">✕</span>
+              <div>
+                <p className="font-semibold text-[#0d1b3e] text-sm mb-1">No professional assessment</p>
+                <p className="text-[#64748b] text-sm leading-relaxed">Figure taken from a previous schedule, an online calculator, or an estate agent's market valuation. Build-cost inflation, professional fees and demolition are routinely missed.</p>
               </div>
-            ))}
+            </div>
+            <div className="flex gap-4 items-start p-5 rounded-xl border border-[#0ab5a8]" style={{background:'rgba(10,181,168,0.06)'}}>
+              <span className="text-[#0ab5a8] font-bold text-base shrink-0 mt-0.5">✓</span>
+              <div>
+                <p className="font-semibold text-[#0d1b3e] text-sm mb-1">RICS-regulated assessment</p>
+                <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision — and satisfies the insuring obligation.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* WHAT GETS VALUED */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <span className="badge badge-blue">What Gets Valued</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
-              The rebuild cost covers far more than most people expect.
+      {/* 3. SECTION B — For leaseholders (card left, text right) */}
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+          {/* Stat card */}
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(10,181,168,0.10)'}}>
+            <div className="rounded-xl p-5" style={{background:'rgba(10,181,168,0.08)'}}>
+              <p className="text-5xl font-bold text-[#0ab5a8] leading-none mb-2">80%</p>
+              <p className="text-sm text-[#64748b]">of UK residential blocks carry an inaccurate sum insured</p>
+            </div>
+            <div className="space-y-3">
+              {[
+                'Build costs have risen 30 %+ since 2020 (BCIS) — old figures are rarely adjusted',
+                'Professional fees (architect, engineer, QS) are commonly omitted entirely',
+                'Demolition and site clearance — often left out of the declared value',
+                'Loss-of-rent and alternative accommodation provision frequently overlooked',
+              ].map((risk) => (
+                <div key={risk} className="flex gap-3 items-start">
+                  <span className="text-[#d93025] font-bold text-sm shrink-0 mt-0.5">!</span>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{risk}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <span className="badge badge-blue mb-4">For Leaseholders</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              How to challenge an inadequate sum insured.
             </h2>
-            <p className="text-[#64748b] text-base leading-relaxed max-w-2xl">
-              A reinstatement cost assessment values the whole building from scratch — not the sum of individual flat values.
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              Leaseholders do not need the freeholder's permission to commission their own independent reinstatement cost assessment. The report provides a factual basis for raising a formal concern with the freeholder or managing agent.
+            </p>
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              If the matter is not resolved, the assessment can be submitted as evidence in a service charge dispute at the First-tier Tribunal (Property Chamber). Tribunal panels give weight to RICS-regulated figures over unsubstantiated schedules.
+            </p>
+            <p className="text-[#64748b] text-base leading-relaxed">
+              Acting early — before a claim arises — is far stronger than trying to recover a shortfall after an event.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        </div>
+      </section>
+
+      {/* 4. FEATURE CARDS — 3-col */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12 text-center">
+            <span className="badge badge-blue mb-4">How We Help</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+              Protection for every party in the building.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+            {/* Freeholder Protection */}
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-[#0d1b3e]">Freeholder Protection</h3>
+              <p className="text-[#64748b] text-sm leading-relaxed flex-1">A defensible, RICS-regulated figure discharges your insuring obligation and protects you from personal liability if leaseholders suffer a shortfall on a claim.</p>
+              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Get a quote &rarr;</Link>
+            </div>
+
+            {/* Leaseholder Rights */}
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-[#0d1b3e]">Leaseholder Rights</h3>
+              <p className="text-[#64748b] text-sm leading-relaxed flex-1">Commission your own independent assessment without the freeholder's permission. Use it to raise a formal concern or support a service charge challenge with credible, impartial evidence.</p>
+              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Start a challenge &rarr;</Link>
+            </div>
+
+            {/* Tribunal Evidence */}
+            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(10,181,168,0.08)'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(10,181,168,0.10)'}}>
+                <svg className="w-6 h-6 text-[#0ab5a8]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-[#0d1b3e]">Tribunal Evidence</h3>
+              <p className="text-[#64748b] text-sm leading-relaxed flex-1">Our reports are prepared to withstand scrutiny at the First-tier Tribunal (Property Chamber). RICS-regulated figures carry weight with panels reviewing service charge reasonableness.</p>
+              <Link href="/contact#contact-form" className="text-[#0ab5a8] text-sm font-semibold hover:underline">Find out more &rarr;</Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 5. CTA BANNER */}
+      <section className="py-16 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+              Find out if your building is covered for its true rebuild cost.
+            </h2>
+            <p className="text-white/85 text-base leading-relaxed mb-8">
+              Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0ab5a8] font-semibold text-sm hover:bg-white/90 transition-colors">Get a Free Quote</Link>
+              <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-white/60 text-white font-semibold text-sm hover:border-white transition-colors">View Services</Link>
+            </div>
+          </div>
+          <div className="bg-white/15 rounded-2xl p-7 space-y-3">
             {[
-              'The full building envelope',
-              'Communal areas and stairwells',
-              'Lifts and shared plant',
-              'Communal M&E and heating systems',
-              'Car parks and external works',
-              'Boundary walls and bin stores',
-              'Demolition and site clearance',
-              'Professional fees (architect, engineer, QS)',
-              'VAT where non-recoverable',
+              'RICS-regulated and fully independent',
+              'Defensible at the First-tier Tribunal',
+              'Desktop reports delivered within 24 hours',
+              'Covers all elements of reinstatement cost',
+              'On-site surveys available across the UK',
             ].map((item) => (
-              <div key={item} className="ls-card p-5 flex gap-3 items-center">
-                <span className="text-[#0ab5a8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                <p className="font-medium text-[#0d1b3e] text-sm">{item}</p>
+              <div key={item} className="flex gap-3 items-center">
+                <span className="text-white font-bold text-sm shrink-0">✓</span>
+                <p className="text-white/90 text-sm font-medium">{item}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <ContactSection heading="Find out if your building is covered for its true rebuild cost." />
+      <ContactSection heading="Speak to a specialist about your declared value." />
       <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about reinstatement cost assessments and buildings insurance." items={faqItems} />
     </main>
   )

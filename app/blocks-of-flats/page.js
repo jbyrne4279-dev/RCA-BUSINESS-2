@@ -23,15 +23,15 @@ export default function BlocksOfFlatsPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              The most commonly underinsured property type in the UK.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+              Specialist assessments for every block type.
             </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
+              When a block is underinsured, the average clause reduces every claim — and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -48,38 +48,60 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* THE AVERAGE CLAUSE */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
+      {/* SECTION A — Why block assessments are complex */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="badge badge-blue">The Average Clause</span>
+            <span className="badge badge-blue">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              A wrong declared value reduces every leaseholder's claim - not just the freeholder's.
+              Why block assessments are complex.
             </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              The average clause bites on partial losses as well as total ones — escape of water and fire are nearly always partial losses, and both are paid at a reduced rate if the declared value is inadequate.
+            <p className="text-[#64748b] text-base leading-relaxed mb-5">
+              Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile that requires specialist assessment.
             </p>
+            <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
+              <li className="flex gap-3 items-start">
+                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span><strong className="text-[#0d1b3e]">Shared structures</strong> — external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span><strong className="text-[#0d1b3e]">Communal services</strong> — lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> — a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
+              </li>
+            </ul>
           </div>
-          <div className="space-y-4 mt-4">
-            {[
-              { label: 'Market value', desc: 'Driven by location, demand and comparable sales. Bears no relation to what the block would cost to demolish, clear and rebuild. Frequently double or half the rebuild figure.', ok: false },
-              { label: 'Aggregated flat values', desc: 'What the individual flats are worth. Not what the building costs to rebuild. One of the most common sources of a wrong declared value.', ok: false },
-              { label: 'Specialist reinstatement cost assessment', desc: 'The actual cost to demolish, clear and rebuild: structure, communal areas, professional fees, VAT where applicable. The only correct basis for the declared value.', ok: true },
-            ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
-                <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(10,181,168,0.10)'}}>
+            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
+            <ul className="space-y-4">
+              {[
+                'Full structural reinstatement cost — walls, roof, foundations, external fabric',
+                'Communal areas and shared circulation space',
+                'Lifts, plant rooms and shared M&E services',
+                'Professional fees — architects, engineers, project managers',
+                'Demolition and site clearance costs',
+                'VAT correctly applied to each element',
+                'BCIS-indexed figure with annual uplift schedule',
+                'Broker-ready report in 24 hours',
+              ].map((item) => (
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="text-[#0ab5a8] font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8 pt-6 border-t border-[#e2e8f0]">
+              <Link href="/contact#contact-form" className="btn-shine w-full text-center block">Request a Block Assessment</Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
@@ -96,7 +118,7 @@ export default function BlocksOfFlatsPage() {
               { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_544083541.jpeg' },
               { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/rebuild-cost-assessment-london.jpeg' },
             ].map(({ title, desc, href, img }) => (
-              <div key={title} className="brix-card">
+              <div key={title} className="brix-card card-hover">
                 <div className="relative h-40 overflow-hidden">
                   <Image src={img} alt={title} fill className="object-cover" />
                 </div>
@@ -112,40 +134,44 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* WHEN TO INSTRUCT */}
-      <section className="py-20 md:py-28 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)' }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-dark">When to Act</span>
+      {/* CTA BANNER */}
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              When should you commission an assessment?
+              Get the right declared value before the next renewal.
             </h2>
-            <p className="text-white/70 text-base leading-relaxed max-w-2xl mx-auto">
-              Any of the following warrants a formal reassessment before the next renewal - acting early protects every leaseholder in the building.
+            <p className="text-white/80 text-base leading-relaxed mb-8">
+              A specialist block assessment takes the guesswork out of the declared value — protecting every leaseholder from an average-clause reduction at claim time.
             </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors inline-block text-center">Request an Assessment</Link>
+              <Link href="/services" className="border border-white/50 text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/10 transition-colors inline-block text-center">View All Services</Link>
+            </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              'The declared value is based on market value, aggregated flat prices or an online calculator.',
-              'The insurance figure has not been formally reviewed in three or more years.',
-              'Construction costs have risen substantially since the last assessment.',
-              'The building has been extended, altered or refurbished since the last assessment.',
-              'You are acquiring a block or taking on the insuring obligation for the first time.',
-              'You are refinancing or preparing the block for sale and need a clean valuation in the data room.',
-            ].map((point, i) => (
-              <div key={i} className="ls-card p-6 flex gap-4">
-                <span className="text-[#0ab5a8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
-                <p className="text-[#475569] text-sm leading-relaxed">{point}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Book an Assessment</Link>
+          <div className="bg-white/10 border border-white/20 rounded-2xl p-8">
+            <p className="text-white font-semibold text-sm mb-5">When to commission an assessment:</p>
+            <ul className="space-y-3">
+              {[
+                'Declared value based on market value or flat prices',
+                'Insurance figure not formally reviewed in 3+ years',
+                'Building extended, altered or refurbished since last assessment',
+                'Acquiring a block or taking on the insuring obligation',
+                'Refinancing or preparing the block for sale',
+                'Construction costs have risen since the last review',
+              ].map((point) => (
+                <li key={point} className="flex gap-3 items-start">
+                  <span className="text-white font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-white/85 text-sm leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      <ContactSection heading="Get an accurate reinstatement cost for your block - and protect every leaseholder in it." />
+      <ContactSection heading="Get an accurate reinstatement cost for your block — and protect every leaseholder in it." />
       <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />
     </main>
   )

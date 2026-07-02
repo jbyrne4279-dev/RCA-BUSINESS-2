@@ -23,12 +23,12 @@ export default function ManagingAgentsPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              Underinsurance is your risk, not the freeholder's.
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
+              Discharge your compliance obligation.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
@@ -39,7 +39,7 @@ export default function ManagingAgentsPage() {
             </div>
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
-            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment" fill className="object-cover" priority />
+            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for managing agents and RTM companies across the UK.</p>
@@ -48,95 +48,182 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      {/* THE EXPOSURE */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <span className="badge badge-blue">The Exposure</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Three ways an inadequate valuation becomes your problem, not the freeholder's.
-            </h2>
-            <p className="text-[#64748b] text-sm leading-relaxed">
-              You are the practical decision-maker on the declared value, and that role carries the liability.
-            </p>
-          </div>
-          <div className="lg:col-span-8 divide-y divide-[#e2e8f0]">
-            {[
-              { n: '01', title: 'Professional negligence.', desc: 'A stale or inadequate valuation is the oversight that becomes an E&O claim when the average clause bites.' },
-              { n: '02', title: 'The average clause.', desc: 'An under-declared value means the insurer pays pro rata — and leaseholders look to the agent for the shortfall.' },
-              { n: '03', title: 'FCA Consumer Duty.', desc: 'Leaseholders are now defined as customers; an unjustified sum insured or commission-driven policy fails that test.' },
-            ].map(({ n, title, desc }) => (
-              <div key={n} className="py-8 flex gap-6">
-                <span className="text-[#0ab5a8] text-xs font-semibold uppercase tracking-[0.2em] mt-1 w-8 shrink-0">{n}</span>
-                <div>
-                  <h3 className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHAT AGENTS GET WRONG */}
-      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
+      {/* SECTION A — The risk of getting it wrong (text left, card right) */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="badge badge-blue">Where Agents Slip</span>
+            <span className="badge badge-blue">The Risk of Getting It Wrong</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              The four valuation approaches — and the one that actually protects you.
+              Underinsurance is your risk, not the freeholder's.
             </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall — and the leaseholder complaints — land with you.
+            </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              Treating the insurer's Sum Insured as proof of adequate cover — rather than the Declared Value you set — is the single most common error that triggers the average clause.
+              A stale or inadequate valuation is the oversight that becomes a professional negligence claim. Under FCA Consumer Duty, leaseholders are now defined as customers — an unjustified sum insured fails that test too.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
-          <div className="space-y-4">
-            {[
-              { label: 'Stale valuation', desc: 'Stale figures create the negligence exposure.', ok: false },
-              { label: 'Index-linking as a substitute', desc: 'Compounds existing errors; no physical check.', ok: false },
-              { label: 'Online calculator or functional-unit rate', desc: 'No PI backing; challenged by loss adjusters immediately.', ok: false },
-              { label: 'Specialist reinstatement cost assessment on the RICS cycle', desc: 'Defensible at every stage. The only safe option.', ok: true },
-            ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-5 flex gap-4 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
-                <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+
+          {/* ✕ / ✓ comparison card */}
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-5">Approach comparison</p>
+            <div className="space-y-4">
+              {[
+                { label: 'Stale valuation (3+ years old)', desc: 'Creates PI exposure; average clause triggered on a claim.', ok: false },
+                { label: 'Index-linking only', desc: 'Compounds existing errors; no physical reinspection.', ok: false },
+                { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
+                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage — PI-backed, broker-ready, compliant.', ok: true },
+              ].map(({ label, desc, ok }) => (
+                <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0ab5a8] bg-[rgba(10,181,168,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
+                  <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                  <div>
+                    <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
+                    <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION B — What We Deliver (visual left, text right) */}
+      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+          {/* Left: What We Deliver checklist card */}
+          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#0ab5a8] mb-5">What We Deliver</p>
+            <div className="space-y-3">
+              {[
+                'Documented declared value — defensible at claim stage',
+                'Clear methodology statement for insurers and brokers',
+                'Review date and indexation guidance',
+                'Mixed-use itemisation for residential and commercial blocks',
+                'Professional indemnity backed assessment',
+                'Broker-ready format — forward directly, no rework',
+                'Phased portfolio scheduling to smooth service-charge cost',
+              ].map((item) => (
+                <div key={item} className="flex gap-3 items-start">
+                  <span className="text-[#0ab5a8] font-bold text-sm shrink-0 mt-0.5">✓</span>
+                  <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: What managing agents get from us */}
+          <div>
+            <span className="badge badge-blue">What Managing Agents Get</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              A broker-ready report that protects you, your PI file, and your clients.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-8">
+              We handle the technical assessment so you can demonstrate due diligence with confidence — to leaseholders, insurers, and regulators.
+            </p>
+            <div className="space-y-6">
+              {[
+                { title: 'PI protection', desc: 'A RICS-aligned assessment on the recommended three-year cycle is the defensible position that keeps a claim shortfall off your E&O file.' },
+                { title: 'Full lease compliance', desc: 'Discharge the insuring obligation under the lease and demonstrate fair value to leaseholders under FCA Consumer Duty.' },
+                { title: 'Portfolio efficiency', desc: 'Single instruction for multiple blocks; phased scheduling and a consolidated summary schedule included at no extra charge.' },
+              ].map(({ title, desc }) => (
+                <div key={title} className="flex gap-4 items-start">
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0ab5a8'}}>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5 6.5-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
+                    <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3-COL FEATURE CARDS */}
+      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue">Why Agents Choose Us</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
+              Built around your renewal cycle.
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L13.5 7.5H19L14.5 11L16.5 17L11 13.5L5.5 17L7.5 11L3 7.5H8.5L11 2Z" stroke="#fff" strokeWidth="1.6" strokeLinejoin="round"/></svg>
+                ),
+                title: 'PI Protection',
+                desc: 'Every report is backed by professional indemnity insurance and produced to RICS guidance — the documented defence you need if a claim shortfall is ever questioned.',
+                href: '/services',
+              },
+              {
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                ),
+                title: '24-hr Turnaround on Quotes',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days — no renewal window missed.',
+                href: '/contact#contact-form',
+              },
+              {
+                icon: (
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="5" width="16" height="14" rx="2" stroke="#fff" strokeWidth="1.6"/><path d="M7 5V3M15 5V3M3 9h16" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                ),
+                title: '3-Year Compliance',
+                desc: 'We flag the next recommended assessment date in every report and offer portfolio scheduling so your entire managed estate stays on cycle without admin overhead.',
+                href: '/services',
+              },
+            ].map(({ icon, title, desc, href }) => (
+              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'#0ab5a8'}}>
+                  {icon}
+                </div>
+                <h3 className="font-bold text-[#0d1b3e] text-base mb-3">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
+                <Link href={href} className="mt-5 text-[#0ab5a8] text-sm font-semibold hover:underline">Read More →</Link>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* WHAT YOU NEED */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      {/* TEAL CTA BANNER */}
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-blue">What the Report Provides</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              A broker-ready report that satisfies insurers, leaseholders, and your PI file.
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
+              Ready to protect your PI and your clients?
             </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              We deliver the declared value, methodology, and review date already documented — forward it directly, no reworking required.
+            <p className="text-white/85 text-base leading-relaxed mb-8">
+              Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey — in time for your next renewal window.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="inline-block bg-white text-[#0ab5a8] font-semibold rounded-full px-7 py-3 text-sm hover:bg-[#f0faf9] transition-colors">Instruct Us Today</Link>
+              <Link href="/services" className="inline-block border border-white/60 text-white font-semibold rounded-full px-7 py-3 text-sm hover:bg-white/10 transition-colors">See All Services</Link>
+            </div>
           </div>
-          <div className="grid grid-cols-1 gap-4">
-            {[
-              'Documented declared value',
-              'Methodology statement',
-              'Review date and indexation guidance',
-              'Mixed-use itemisation',
-              'Professional indemnity backing',
-              'Broker-ready format',
-            ].map((title) => (
-              <div key={title} className="ls-card p-5 flex gap-4">
-                <span className="text-[#0ab5a8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                <p className="font-semibold text-[#0d1b3e] text-sm">{title}</p>
-              </div>
-            ))}
+          <div className="bg-white/10 border border-white/20 rounded-2xl p-7">
+            <p className="text-white font-semibold text-sm mb-4 uppercase tracking-widest">What you get</p>
+            <div className="space-y-3">
+              {[
+                'Quote within one working day',
+                'Survey and report in 10–15 working days',
+                'Broker-ready format — forward directly',
+                'PI-backed, RICS-aligned methodology',
+                'Review date flagged for 3-year compliance',
+                'Portfolio scheduling for multiple blocks',
+              ].map((item) => (
+                <div key={item} className="flex gap-3 items-center">
+                  <span className="text-white font-bold text-sm shrink-0">✓</span>
+                  <p className="text-white/90 text-sm">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
