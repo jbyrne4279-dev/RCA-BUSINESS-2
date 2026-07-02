@@ -68,7 +68,7 @@ export default function ServicesPage() {
       </section>
 
       {/* WHY SPECIALIST */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
@@ -78,16 +78,16 @@ export default function ServicesPage() {
               Generic tools cannot replace a RICS specialist.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              We practise exclusively in reinstatement cost assessment - every instruction is a RICS-regulated rebuild valuation. UK construction costs rose over 30% between 2020 and 2024; any figure not formally reviewed in that period is materially inaccurate and leaves you exposed at claim.
+              UK construction costs rose over 30% between 2020 and 2024 — any figure not formally reviewed in that period is materially inaccurate.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
           <div className="space-y-3">
             {[
-              { title: 'Online calculators', sub: 'No professional accountability. Not defensible in a dispute.', ok: false },
-              { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a formal review.', ok: false },
-              { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures create underinsurance.', ok: false },
-              { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
+              { title: 'Online calculators', sub: 'No accountability. Not defensible in a dispute.', ok: false },
+              { title: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a review.', ok: false },
+              { title: 'Old or inherited valuations', sub: 'Stale figures create underinsurance.', ok: false },
+              { title: 'RICS-aligned reinstatement cost assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
@@ -102,7 +102,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 01 */}
-      <section id="desktop-rca" className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section id="desktop-rca" className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
@@ -110,23 +110,23 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              BCIS-indexed rebuild cost modelling without a site visit, delivered within 24 hours. The right choice for most standard residential blocks and commercial properties where a physical inspection is not required.
+              BCIS-indexed rebuild cost modelling without a site visit, delivered within 24 hours.
             </p>
             <Link href="/contact?service=desktop#contact-form" className="btn-shine">Instruct Desktop Assessment</Link>
             <p className="text-[#5f6368] text-xs mt-4">Managing agents: <Link href="/managing-agents-insurance-valuations" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">see how we support your compliance obligations →</Link></p>
           </div>
           <div>
             <CheckItem title="24-hour turnaround" desc="Delivered within 24 hours of instruction." />
-            <CheckItem title="BCIS-indexed modelling" desc="Live construction cost data from the Building Cost Information Service." />
-            <CheckItem title="RICS-aligned output" desc="Produced by or under supervision of a RICS-registered member." />
-            <CheckItem title="Broker-ready format" desc="Accepted without challenge by UK insurers and brokers." />
-            <CheckItem title="National coverage" desc="Available across England, Scotland, Wales and Northern Ireland." />
+            <CheckItem title="BCIS-indexed modelling" desc="Live data from the Building Cost Information Service." />
+            <CheckItem title="RICS-aligned output" desc="Supervised by a RICS-registered member." />
+            <CheckItem title="Broker-ready format" desc="Accepted by UK insurers without amendment." />
+            <CheckItem title="National coverage" desc="England, Scotland, Wales and Northern Ireland." />
           </div>
         </div>
       </section>
 
       {/* SERVICE 02 */}
-      <section id="on-site-survey" className="bg-[#e8f0fe] py-16 md:py-20 px-6 md:px-10 border-t border-[#c8d8f8]">
+      <section id="on-site-survey" className="bg-[#e8f0fe] py-20 md:py-28 px-6 md:px-10 border-t border-[#c8d8f8]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
@@ -134,41 +134,40 @@ export default function ServicesPage() {
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">On-Site Survey</h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A RICS surveyor attends in person and carries out full measurement, material assessment and construction analysis on-site. Required for listed buildings, non-standard construction and high-value or complex assets.
+              A RICS surveyor attends in person for full measurement, material assessment and construction analysis on-site.
             </p>
             <Link href="/contact?service=onsite#contact-form" className="btn-shine">Request On-Site Survey</Link>
             <p className="text-[#5f6368] text-xs mt-4">Freeholders with complex blocks: <Link href="/freeholders-buildings-insurance-valuations" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">see our freeholder assessment service →</Link></p>
           </div>
           <div>
-            <CheckItem title="Physical RICS inspection" desc="Full on-site measurement by a RICS-registered surveyor." />
-            <CheckItem title="Listed and heritage buildings" desc="Specialist knowledge of authentic materials and traditional construction methods." />
-            <CheckItem title="Non-standard construction" desc="Complex structures, unusual specifications and high-value properties assessed in full." />
-            <CheckItem title="Full measurement record" desc="Complete dimensional survey retained as part of the assessment file." />
-            <CheckItem title="PI insured" desc="Comprehensive professional indemnity insurance on every instruction." />
+            <CheckItem title="Physical RICS inspection" desc="Full on-site measurement by a RICS surveyor." />
+            <CheckItem title="Listed and heritage buildings" desc="Specialist knowledge of traditional materials and methods." />
+            <CheckItem title="Non-standard construction" desc="Complex structures and high-value properties assessed fully." />
+            <CheckItem title="Full measurement record" desc="Dimensional survey retained in the assessment file." />
+            <CheckItem title="PI insured" desc="Professional indemnity cover on every instruction." />
           </div>
         </div>
       </section>
 
       {/* SERVICE 03 */}
-      <section id="three-year-protection" className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
+      <section id="three-year-protection" className="bg-[#1a73e8] py-20 md:py-28 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               03. Recommended - Protection Plan
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">3-Year Protection Plan</h2>
-            <p className="text-white/80 text-base leading-relaxed mb-4">
-              Our recommended service for managing agents, freeholders and ongoing clients. One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date, with no re-instructing required.
+            <p className="text-white/80 text-base leading-relaxed mb-6">
+              One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date, no re-instructing required.
             </p>
-            <p className="text-white/60 text-xs mb-6">The RICS recommends formal reassessment every three years. This plan fulfils that requirement automatically.</p>
             <Link href="/contact?service=3year#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Enquire About 3-Year Plan</Link>
           </div>
           <div>
-            <CheckItem title="Full assessment in year one" desc="Complete RICS-aligned assessment establishing the baseline declared value." dark />
-            <CheckItem title="Annual BCIS indexation" desc="The figure updated each year using live construction cost indices." dark />
-            <CheckItem title="Renewal-ready reports" desc="Fresh broker-ready report issued before each renewal date." dark />
-            <CheckItem title="Three-year RICS compliance" desc="A single instruction covering the full RICS recommended review period." dark />
-            <CheckItem title="Managed service" desc="We contact you before each update. No administration required from you." dark />
+            <CheckItem title="Full assessment in year one" desc="Baseline RICS-aligned assessment establishing declared value." dark />
+            <CheckItem title="Annual BCIS indexation" desc="Figure updated yearly using live construction cost indices." dark />
+            <CheckItem title="Renewal-ready reports" desc="Broker-ready report issued before each renewal date." dark />
+            <CheckItem title="Three-year RICS compliance" desc="Single instruction covers the full RICS review period." dark />
+            <CheckItem title="Managed service" desc="We contact you before each update." dark />
           </div>
         </div>
       </section>

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
-import CountUp from '../components/CountUp'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessments for Property Investors | Blocks of Flats',
@@ -50,7 +49,7 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* THE AVERAGE CLAUSE */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Average Clause</span>
@@ -58,10 +57,7 @@ export default function BlocksOfFlatsPage() {
               A wrong declared value reduces every leaseholder's claim - not just the freeholder's.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              The average clause bites on partial losses as well as total ones. Escape of water and fire - the two most common block claims - are nearly always partial losses, and both are paid at a reduced rate if the declared value is inadequate.
-            </p>
-            <p className="text-[#5f6368] text-base leading-relaxed">
-              Market value bears no relation to rebuild cost. A central-London block with a £4m rebuild can command £10m or more; the reverse is equally true for converted mills and regional stock. Insuring for the wrong figure in either direction carries a cost.
+              The average clause bites on partial losses as well as total ones — escape of water and fire are nearly always partial losses, and both are paid at a reduced rate if the declared value is inadequate.
             </p>
           </div>
           <div className="space-y-4 mt-4">
@@ -82,68 +78,8 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* FOUR COSTS */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <span className="badge badge-blue">What Gets Missed</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              Four costs that put blocks in deficit before a claim is even made.
-            </h2>
-            <p className="text-[#5f6368] text-sm leading-relaxed">
-              Each one independently creates underinsurance - and most blocks carry more than one. Managing agents: our <Link href="/managing-agents-insurance-valuations" className="text-[#1a73e8] hover:text-[#1254b5]">managing agents service</Link> is designed for your reporting and compliance requirements.
-            </p>
-          </div>
-          <div className="lg:col-span-8 divide-y divide-[#dadce0]">
-            {[
-              { title: 'VAT you cannot claim back.', desc: 'Most block owners are not VAT-registered and cannot recover VAT. Demolition, professional fees and partial-damage repairs all attract 20% VAT and must be built into the declared value. Leave VAT out and the figure is roughly 20% short before a claim even starts. For mixed-use blocks, the commercial units are standard-rated even when the residential flats zero-rate on a full rebuild.' },
-              { title: 'Communal areas, lifts and shared services.', desc: 'Entrance halls, stairwells, lifts, plant rooms, shared M&E, communal heating and building-management networks all form part of the rebuild cost. Generic calculators and inherited estimates routinely miss or undervalue every one of them.' },
-              { title: 'Professional fees and demolition.', desc: 'Architect (8–12%), structural engineer (2–4%) and quantity surveyor (2–3%) fees typically add 15–20% to the base rebuild cost, before demolition, site clearance and party-wall shoring. These are frequently omitted from desktop figures.' },
-              { title: 'Loss of rent during reinstatement.', desc: 'A major loss on a block means 12–24 months of reinstatement and no rental income. Loss-of-rent and alternative-accommodation cover is calculated off the same figures the reinstatement cost assessment underpins An under-scoped valuation undercuts both the rebuild cover and the income protection.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="py-8 flex gap-6">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                <div>
-                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* THE RISK - STATS */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="badge badge-blue">You Might Also Be Overpaying</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              An accurate figure protects leaseholders and can reduce the freeholder's premium.
-            </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Block owners insuring toward market value may be paying inflated premiums on a figure that is too high. A specialist assessment right-sizes the declared value - if it comes in lower, the premium saving typically recovers the assessment cost within the first renewal.
-            </p>
-            <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
-          </div>
-          <div className="grid grid-cols-1 gap-5">
-            {[
-              { to: 3, suffix: '×', label: 'a typical gap between market value and rebuild cost on regional period blocks, where a £300,000 sale price can mask a £900,000 reinstatement cost' },
-              { to: 3, suffix: ' yrs', label: 'RICS recommended maximum review period for a formal reassessment - our 3-Year Protection plan covers both the initial assessment and the annual index reviews under a single instruction' },
-            ].map(({ to, suffix, label }) => (
-              <div key={label} className="stat-card p-6 flex items-center gap-6">
-                <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">
-                  <CountUp to={to} suffix={suffix} />
-                </p>
-                <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* PROPERTY TYPES */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
@@ -177,7 +113,7 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* WHEN TO INSTRUCT */}
-      <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
+      <section className="bg-[#1a73e8] py-20 md:py-28 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-dark">When to Act</span>

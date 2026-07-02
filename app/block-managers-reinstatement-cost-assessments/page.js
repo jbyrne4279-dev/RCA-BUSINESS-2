@@ -54,7 +54,7 @@ export default function BlockManagersPage() {
       </section>
 
       {/* OBLIGATION */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">Your Obligation</span>
@@ -62,16 +62,15 @@ export default function BlockManagersPage() {
               The lease obligation transfers directly to you.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              Most long leases require buildings cover at full reinstatement cost. Under a standard management agreement that duty passes to you - and if the sum insured falls short, so does the liability for any shortfall.
+              Under a standard management agreement, the duty to insure at full reinstatement cost passes to you — and any shortfall in the sum insured becomes your liability.
             </p>
-            <p className="text-[#5f6368] text-sm leading-relaxed mb-6">Managing more than one block? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#1a73e8] font-semibold hover:underline">portfolio service</Link> covers your entire managed estate under a single instruction.</p>
             <Link href="/contact#contact-form" className="btn-shine">Get Started</Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { n: 'Most', label: 'UK blocks are estimated to carry an inaccurate sum insured - leaving managers exposed' },
-              { n: '~40%', label: 'rise in UK construction costs since 2020, meaning stale figures from pre-pandemic are dangerously low (BCIS)' },
-              { n: '3 yrs', label: 'maximum recommended interval between formal RICS assessments - after which your compliance position weakens' },
+              { n: 'Most', label: 'UK blocks carry an inaccurate sum insured' },
+              { n: '~40%', label: 'rise in UK construction costs since 2020 (BCIS)' },
+              { n: '3 yrs', label: 'RICS-recommended maximum interval between assessments' },
             ].map(({ n, label }) => (
               <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
@@ -83,7 +82,7 @@ export default function BlockManagersPage() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">What We Offer</span>
@@ -97,7 +96,7 @@ export default function BlockManagersPage() {
               <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
               <h3 className="font-bold text-2xl text-[#202124] mb-6">Single-Block Assessment</h3>
               <ul className="space-y-3 flex-1 mb-7">
-                {['Individual RICS-regulated report', 'Desktop delivered in 24 hours', 'On-site survey for complex or high-value blocks', 'Broker-ready format - no amendments needed', 'PI insured'].map(f => (
+                {['Individual RICS-regulated report', 'Desktop delivered in 24 hours', 'On-site survey for complex blocks', 'Broker-ready format', 'PI insured'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
                     <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
@@ -130,7 +129,7 @@ export default function BlockManagersPage() {
               <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Best value</p>
               <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection</h3>
               <ul className="space-y-3 flex-1 mb-7">
-                {['Full RICS base assessment in year one', 'Annual BCIS-indexed updates - we handle it', 'Renewal-ready reports delivered before each renewal', 'Three-year RICS compliance covered', 'Fully managed - no re-instruction required'].map(f => (
+                {['Full RICS base assessment in year one', 'Annual BCIS-indexed updates', 'Renewal-ready reports before each renewal', 'Three-year RICS compliance covered', 'Fully managed — no re-instruction required'].map(f => (
                   <li key={f} className="flex items-center gap-2.5 text-sm" style={{color:'rgba(255,255,255,0.85)'}}>
                     <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {f}
@@ -142,33 +141,6 @@ export default function BlockManagersPage() {
               </Link>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* EVERY REPORT */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-dark">Every Report</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-              Every report meets the same standard.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { title: 'RICS-regulated', desc: 'Conducted by or under the direct supervision of a RICS-registered member.' },
-              { title: 'Live BCIS data', desc: 'Reinstatement figures derived from current Building Cost Information Service indices.' },
-              { title: 'Broker-ready format', desc: 'Formatted for direct broker submission. No amendments required.' },
-              { title: 'PI cover', desc: 'Comprehensive professional indemnity cover on every instruction.' },
-              { title: 'Named surveyor', desc: 'A single named contact manages your instruction across your full portfolio.' },
-              { title: 'Full methodology', desc: 'Fully documented basis of assessment. Defensible at tribunal.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card-dark p-6">
-                <p className="font-semibold text-white text-sm mb-2">{title}</p>
-                <p className="text-white/50 text-xs leading-relaxed">{desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

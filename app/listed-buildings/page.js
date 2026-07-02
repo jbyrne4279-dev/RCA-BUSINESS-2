@@ -48,7 +48,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* THE COST GAP */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Cost Gap</span>
@@ -56,13 +56,13 @@ export default function ListedBuildingsPage() {
               For listed properties, rebuild cost regularly exceeds market value - and standard assessors don't price the gap.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-6">
-              A thatched cottage worth £500,000 can carry a reinstatement cost of £1,000,000 or more once specialist materials, consents and labour are properly priced. Generic calculators apply standard construction rates and systematically understate the figure - the gap is wider for listed buildings than any other property type.
+              Generic calculators apply standard construction rates and systematically understate the figure.
             </p>
           </div>
           <div className="space-y-4 mt-4">
             {[
-              { label: 'Desktop assessment or online calculator', desc: 'Applies standard modern construction rates. Cannot account for lime mortar, handmade materials, heritage labour premiums, conservation consents or extended programme timescales. Indefensible in a claim dispute.', ok: false },
-              { label: 'Specialist on-site assessment', desc: 'A physical inspection by a heritage-trained surveyor, pricing authentic materials, specialist contractors, conservation requirements and VAT treatment correctly. The only appropriate method for a listed property.', ok: true },
+              { label: 'Desktop assessment or online calculator', desc: 'Misses heritage materials, labour premiums, consents and timescales.', ok: false },
+              { label: 'Specialist on-site assessment', desc: 'The only appropriate method for any listed property.', ok: true },
             ].map(({ label, desc, ok }) => (
               <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
@@ -80,7 +80,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* COST FACTORS */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
             <span className="badge badge-blue">What Drives the Cost</span>
@@ -88,23 +88,22 @@ export default function ListedBuildingsPage() {
               Six cost drivers that most assessors aren't qualified to price.
             </h2>
             <p className="text-[#5f6368] text-sm leading-relaxed">
-              Reinstatement must be carried out in original style and materials under the Planning (Listed Buildings and Conservation Areas) Act 1990 - that legal obligation drives every cost below, and it takes a specialist to quantify each one accurately.
+              Reinstatement must be carried out in original style and materials under the Planning (Listed Buildings and Conservation Areas) Act 1990.
             </p>
           </div>
           <div className="lg:col-span-8 divide-y divide-[#dadce0]">
             {[
-              { title: 'Specialist materials.', desc: 'Handmade brick, lime mortar, natural stone, traditional timber and period roofing materials carry significant cost premiums. Lime mortar is slower to work with; stone is highly variable and must be individually priced rather than applied as a standard rate.' },
-              { title: 'Heritage contractors.', desc: 'Stonemasons, lime plasterers, heritage carpenters and master thatchers command premium rates and are often booked months ahead. Standard contractor rates do not apply. Thatched properties in particular require specialist labour and materials that must be individually priced.' },
-              { title: 'Conservation consents and professional fees.', desc: 'Listed Building Consent, conservation officer involvement and sometimes archaeological recording conditions all add to programme duration and cost. Professional fees run higher than standard, as conservation architects and heritage consultants extend the team significantly beyond the standard build.' },
-              { title: 'Extended programme.', desc: 'Longer reinstatement timescales increase preliminaries and expose projects to construction cost inflation. Index-linking on an insurance policy does not fully capture this exposure.' },
-              { title: 'VAT treatment.', desc: 'A full rebuild after total loss is zero-rated. Demolition, professional fees and partial-damage repairs attract 20% VAT. Most real claims are partial rather than total-loss, so VAT at 20% applies in the majority of cases. This is frequently excluded from desktop figures.' },
-              { title: 'Curtilage structures.', desc: 'Listing frequently extends beyond the main building to boundary walls, ancillary buildings and structures within the historic curtilage. These are easily missed in an inherited or desktop figure and can represent material additional cost.' },
-            ].map(({ title, desc }) => (
+              { title: 'Specialist materials.' },
+              { title: 'Heritage contractors.' },
+              { title: 'Conservation consents and professional fees.' },
+              { title: 'Extended programme.' },
+              { title: 'VAT treatment.' },
+              { title: 'Curtilage structures.' },
+            ].map(({ title }) => (
               <div key={title} className="py-8 flex gap-6">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
-                  <h3 className="font-semibold text-[#202124] text-sm mb-2">{title}</h3>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
+                  <h3 className="font-semibold text-[#202124] text-sm">{title}</h3>
                 </div>
               </div>
             ))}
@@ -112,36 +111,8 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* UNDERINSURANCE RISK */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="badge badge-blue">The Underinsurance Risk</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
-              The underinsurance gap is wider for listed buildings than for any other property type.
-            </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
-              When the average clause applies, the shortfall falls entirely on the owner. A building insured for £1m against a true rebuild of £1.5m pays out 67p in the pound - a £300,000 claim settles at £200,000, leaving a £100,000 gap the owner must fund. For unlisted properties in the same portfolio, our desktop service at <Link href="/services" className="text-[#1a73e8] hover:text-[#1254b5]">/services</Link> provides a cost-effective alternative.
-            </p>
-            <Link href="/contact#contact-form" className="btn-shine">Get an Accurate Figure</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {[
-              { stat: 'Wider', label: 'underinsurance gap for listed buildings vs standard properties, due to heritage rebuild costs' },
-              { stat: '20–50%', label: 'typical rebuild cost uplift over standard construction for listed properties' },
-              { stat: '£3–5k+', label: 'approximate rebuild cost per m² for complex listed properties, vs £1,700–2,400 for standard (BCIS)' },
-            ].map(({ stat, label }) => (
-              <div key={label} className="stat-card p-6 text-center">
-                <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* PROPERTY TYPES */}
-      <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
@@ -151,57 +122,23 @@ export default function ListedBuildingsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Grade II listed buildings', desc: '91% of all listed buildings fall into this category. A site-based specialist assessment is required to establish an accurate rebuild cost. Desktop rates do not apply.', href: '/contact' },
-              { title: 'Grade II* listed buildings', desc: 'Buildings of more than special interest. Grade II* and Grade I buildings cannot be assessed by desktop and require an on-site inspection.', href: '/contact' },
-              { title: 'Grade I listed buildings', desc: 'Buildings of exceptional interest. Reinstatement demands the highest level of specialist expertise and commands the highest cost per m².', href: '/contact' },
-              { title: 'Conservation area buildings', desc: 'Unlisted buildings within a conservation area may carry significant material and planning cost constraints depending on local authority requirements.', href: '/contact' },
-              { title: 'Thatched and period properties', desc: 'Thatched properties frequently carry listed status. Specialist thatch rates, heritage materials and conservation consents all require individual pricing.', href: '/contact' },
-              { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.', href: '/blocks-of-flats' },
-            ].map(({ title, desc, href }) => (
+              { title: 'Grade II listed buildings', href: '/contact' },
+              { title: 'Grade II* listed buildings', href: '/contact' },
+              { title: 'Grade I listed buildings', href: '/contact' },
+              { title: 'Conservation area buildings', href: '/contact' },
+              { title: 'Thatched and period properties', href: '/contact' },
+              { title: 'Listed blocks of flats', href: '/blocks-of-flats' },
+            ].map(({ title, href }) => (
               <div key={title} className="brix-card">
                 <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
                   <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
                 </div>
                 <div className="p-5">
                   <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
                   <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHEN TO INSTRUCT */}
-      <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-dark">When to Act</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              When should you commission an assessment?
-            </h2>
-            <p className="text-white/70 text-base leading-relaxed max-w-2xl mx-auto">
-              Any of the following warrants a specialist on-site reassessment before the next renewal.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              'The building has never had a specialist reinstatement cost assessment.',
-              'The insurance figure is based on an online calculator or inherited estimate.',
-              'The property has not been formally assessed in three or more years.',
-              'You are acquiring or taking on management of a listed property.',
-              'Significant works, alterations or extensions have been carried out.',
-              'Your insurer or broker has queried the adequacy of the declared value.',
-            ].map((point, i) => (
-              <div key={i} className="ls-card p-6 flex gap-4">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
-                <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Commission an Assessment</Link>
           </div>
         </div>
       </section>
