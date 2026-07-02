@@ -55,28 +55,19 @@ export default function HomePage() {
       </section>
 
       {/* STAT STRIP */}
-      <div className="border-b border-[#e2e8f0] py-10 px-6 md:px-10" style={{background:'#f0faf9'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
-            {[
-              { iconD: 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z', n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
-              { iconD: 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941', n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
-              { iconD: 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z', n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
-              { iconD: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99', n: '3 yrs', label: 'RICS recommended review period' },
-            ].map(({ iconD, n, label }, i) => (
-              <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/15' : ''}`}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'white'}}>
-                  <svg className="w-5 h-5" fill="none" stroke="#0ab5a8" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                    <path d={iconD} />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-white font-bold text-lg leading-none mb-1">{n}</p>
-                  <p className="text-xs leading-snug" style={{color:'rgba(255,255,255,0.55)'}}>{label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <div className="border-y border-[#e2e8f0] py-10 px-6 md:px-10 bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+          {[
+            { n: '80%', label: 'of UK buildings carry an inaccurate sum insured' },
+            { n: '30%+', label: 'rise in UK build costs vs pre-pandemic levels (BCIS)' },
+            { n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
+            { n: '3 yrs', label: 'RICS recommended review period' },
+          ].map(({ n, label }, i) => (
+            <div key={n} className={`flex flex-col gap-1 ${i > 0 ? 'md:border-l md:border-[#e2e8f0] md:pl-8' : ''}`}>
+              <p className="text-2xl md:text-3xl font-bold text-[#0ab5a8]">{n}</p>
+              <p className="text-xs text-[#64748b] leading-snug">{label}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -153,45 +144,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SURVEYOR IMAGE STRIP */}
-      <section className="relative py-14 md:py-20 px-6 md:px-10 overflow-hidden" style={{background:'#0d1b3e'}}>
-        <div className="absolute inset-0">
-          <Image
-            src="/AdobeStock_1956380728.jpeg"
-            alt="RICS surveyor carrying out a reinstatement cost assessment"
-            fill
-            className="object-cover opacity-20"
-          />
-        </div>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <span className="inline-flex items-center text-[#5eead4] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5" style={{background:'rgba(10,181,168,0.15)'}}>Who We Work With</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Serving the professionals who carry the obligation.
-            </h2>
-            <p className="text-white/60 text-base leading-relaxed mb-8">
-              We do one thing: RICS-regulated reinstatement cost assessments. No general surveying, no mortgage valuations - every instruction is focused on establishing the correct sum insured for the right audience.
-            </p>
-            <Link href="/contact#contact-form" className="btn-shine">Get a Free Quote</Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {[
-              { title: 'Managing Agents', benefit: 'Discharge your lease obligation and protect your PI file - view managing agent services', href: '/managing-agents-insurance-valuations' },
-              { title: 'RTM Companies', benefit: 'Establish a compliant figure from the moment you assume control of the building', href: '/managing-agents-insurance-valuations' },
-              { title: 'Freeholders', benefit: 'Defend the insuring covenant with a RICS-regulated declared value - view freeholder services', href: '/freeholders-leaseholders' },
-              { title: 'Leaseholders', benefit: 'Challenge an inadequate sum insured with independent, documented evidence', href: '/freeholders-leaseholders' },
-              { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block in your portfolio - view block manager services', href: '/block-managers-reinstatement-cost-assessments' },
-              { title: 'Portfolio Landlords', benefit: 'Right-size every declared value across your portfolio in a single instruction', href: '/blocks-of-flats' },
-            ].map(({ title, benefit, href }) => (
-              <Link key={title} href={href}
-                className="ls-card-dark px-5 py-5 text-white flex flex-col gap-1 group">
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-sm">{title}</span>
-                  <span className="text-white/40 group-hover:text-white/90 group-hover:translate-x-1 transition-all text-base">→</span>
-                </div>
-                <p className="text-white/50 text-xs leading-snug group-hover:text-white/70 transition-colors">{benefit}</p>
-              </Link>
-            ))}
+      {/* WHO WE WORK WITH */}
+      <section className="py-14 md:py-20 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0faf9'}}>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-flex items-center text-[#0ab5a8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5" style={{background:'rgba(10,181,168,0.08)'}}>Who We Work With</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+                Serving the professionals who carry the obligation.
+              </h2>
+              <p className="text-[#64748b] text-base leading-relaxed mb-8">
+                One specialisation. Every instruction is a RICS-regulated reinstatement cost assessment for the right audience.
+              </p>
+              <Link href="/contact#contact-form" className="btn-shine">Get a Free Quote</Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { title: 'Managing Agents', benefit: 'Protect your PI file and discharge the lease obligation', href: '/managing-agents-insurance-valuations' },
+                { title: 'RTM Companies', benefit: 'Establish a compliant figure from day one of control', href: '/managing-agents-insurance-valuations' },
+                { title: 'Freeholders', benefit: 'Defend the insuring covenant with a RICS-regulated figure', href: '/freeholders-leaseholders' },
+                { title: 'Leaseholders', benefit: 'Challenge an inadequate sum insured with independent evidence', href: '/freeholders-leaseholders' },
+                { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block you manage', href: '/block-managers-reinstatement-cost-assessments' },
+                { title: 'Portfolio Landlords', benefit: 'Right-size every declared value in a single instruction', href: '/blocks-of-flats' },
+              ].map(({ title, benefit, href }) => (
+                <Link key={title} href={href} className="ls-card px-5 py-4 flex flex-col gap-1 group hover:border-[#0ab5a8] transition-colors">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-sm text-[#0d1b3e]">{title}</span>
+                    <span className="text-[#0ab5a8] group-hover:translate-x-1 transition-transform text-base">→</span>
+                  </div>
+                  <p className="text-[#64748b] text-xs leading-snug">{benefit}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -342,7 +326,27 @@ export default function HomePage() {
 
       <ReviewCarousel />
 
-      <ContactSection heading="Is your sum insured correct? Commission an assessment and find out." />
+      {/* CTA BANNER */}
+      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)'}}>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
+            Is your sum insured correct?
+          </h2>
+          <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
+            80% of UK buildings carry the wrong figure. Commission a RICS-regulated assessment and know for certain.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block">
+              Get a Free Quote
+            </Link>
+            <Link href="/services" className="border border-white/40 text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors inline-block">
+              View Our Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <ContactSection heading="Instruct an assessment today." />
 
       <FaqSection
         description="Technical questions on reinstatement cost assessments, underinsurance exposure, and our working process with managing agents, freeholders and leaseholders."
