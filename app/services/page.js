@@ -31,11 +31,10 @@ export default function ServicesPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services#service-cards" className="btn-ghost">View Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
@@ -182,7 +181,7 @@ export default function ServicesPage() {
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Not sure which <span style={{color:'rgba(255,255,255,0.92)'}}>service you need</span>?
+              Not sure which service you need?
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Tell us about your property and we'll recommend the right service. Most instructions are confirmed same day.
@@ -218,6 +217,9 @@ export default function ServicesPage() {
     </main>
   )
 }
+
+
+
 
 
 

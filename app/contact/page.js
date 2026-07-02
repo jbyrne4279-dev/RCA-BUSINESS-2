@@ -45,11 +45,10 @@ export default function ContactPage() {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <a href="#contact-form" className="btn-shine">Request Your Assessment</a>
               <a href="/services" className="btn-ghost">Our Services</a>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
@@ -72,6 +71,8 @@ export default function ContactPage() {
     </main>
   )
 }
+
+
 
 
 

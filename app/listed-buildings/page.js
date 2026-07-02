@@ -31,11 +31,10 @@ export default function ListedBuildingsPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. A desktop assessment will miss the gap entirely.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services#on-site-survey" className="btn-ghost">On-Site Survey</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Listed building specialist assessment" fill className="object-cover" priority />
@@ -209,7 +208,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="inline-block text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">Get Started</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to get the <span style={{color:'rgba(255,255,255,0.92)'}}>right figure</span> for your listed building?
+              Ready to get the <span class="font-extrabold">right figure</span> for your listed building?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Request a specialist on-site assessment. We cover all grades across the UK and confirm your fee on receipt of the enquiry.
@@ -252,6 +251,9 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
+
+
 
 
 

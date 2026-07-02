@@ -33,11 +33,10 @@ export default function HomePage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Specialist reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in 24 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
               <Link href="/services" className="btn-ghost">View Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           {/* Hero image */}
@@ -277,6 +276,8 @@ export default function HomePage() {
     </main>
   )
 }
+
+
 
 
 

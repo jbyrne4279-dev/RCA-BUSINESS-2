@@ -32,11 +32,10 @@ export default function BlocksOfFlatsPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
@@ -140,7 +139,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Get the right <span style={{color:'rgba(255,255,255,0.92)'}}>declared value</span> before the next renewal.
+              Get the right declared value before the next renewal.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               A specialist block assessment takes the guesswork out of the declared value - protecting every leaseholder from an average-clause reduction at claim time.
@@ -176,6 +175,9 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
+
+
 
 
 

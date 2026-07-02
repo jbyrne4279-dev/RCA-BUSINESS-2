@@ -31,11 +31,10 @@ export default function BlockManagersPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
@@ -218,7 +217,7 @@ export default function BlockManagersPage() {
               Remove the liability
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Your portfolio. <span style={{color:'rgba(255,255,255,0.92)'}}>Compliant</span>. This renewal season.
+              Your portfolio. Compliant. This renewal season.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals - so you never let compliance lapse again.
@@ -265,6 +264,9 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
+
+
 
 
 

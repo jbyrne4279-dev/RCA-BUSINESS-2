@@ -32,11 +32,10 @@ export default function ManagingAgentsPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
@@ -197,7 +196,7 @@ export default function ManagingAgentsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to protect your <span style={{color:'rgba(255,255,255,0.92)'}}>PI and your clients</span>?
+              Ready to protect your PI and your clients?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey - in time for your next renewal window.
@@ -233,6 +232,9 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
+
+
 
 
 

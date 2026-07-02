@@ -31,11 +31,10 @@ export default function PortfolioPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               A managed RICS assessment service for property portfolios - individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
@@ -230,7 +229,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              <span style={{color:'rgba(255,255,255,0.92)'}}>Consolidate</span> your portfolio under one instruction today.
+              Consolidate your portfolio under one instruction today.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Send us your asset list and we will return a consolidated quote within one business day - no obligation.
@@ -272,6 +271,9 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
+
+
 
 
 

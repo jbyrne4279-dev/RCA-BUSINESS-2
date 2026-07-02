@@ -32,11 +32,10 @@ export default function FreeholdersLeaseholdersPage() {
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
@@ -185,7 +184,7 @@ export default function FreeholdersLeaseholdersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Find out if your building is covered for its <span style={{color:'rgba(255,255,255,0.92)'}}>true rebuild cost</span>.
+              Find out if your building is covered for its true rebuild cost.
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
@@ -217,6 +216,9 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
+
+
 
 
 
