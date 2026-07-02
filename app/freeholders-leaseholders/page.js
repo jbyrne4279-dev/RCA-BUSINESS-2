@@ -23,14 +23,14 @@ export default function FreeholdersLeaseholdersPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Freeholders &amp; Leaseholders</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Underinsurance is a shared risk for every flat owner.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building, not just whoever holds the insuring obligation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -38,9 +38,9 @@ export default function FreeholdersLeaseholdersPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder reinstatement cost assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for freeholders, RMC directors and leaseholders across the UK.</p>
             </div>
@@ -49,14 +49,14 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* DV VS SI */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">Declared Value vs Sum Insured</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               The number on your policy schedule is not the number you set — and the difference matters.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed">
+            <p className="text-[#64748b] text-base leading-relaxed">
               Assuming the higher sum insured figure means you are over-insured — and trimming your declared value accordingly — is one of the most common ways underinsurance happens.
             </p>
           </div>
@@ -65,11 +65,11 @@ export default function FreeholdersLeaseholdersPage() {
               { label: 'Declared Value (DV)', desc: 'The day-one rebuild cost you are responsible for setting — the starting point for your policy.', ok: true },
               { label: 'Sum Insured (SI)', desc: "DV plus the insurer's inflation provision (typically 20–50% uplift) — set by the insurer, not by you.", ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -78,14 +78,14 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* UNDERINSURANCE RISK */}
-      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="badge badge-blue">The Underinsurance Risk</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               When the payout is cut, every flat owner in the building loses.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed">
+            <p className="text-[#64748b] text-base leading-relaxed">
               If the declared value is too low, the average clause kicks in and the insurer pays only the proportion the building is covered for — the rest comes out of the building's pocket.
             </p>
           </div>
@@ -96,8 +96,8 @@ export default function FreeholdersLeaseholdersPage() {
               { stat: '12–24 Months', label: 'loss-of-rent and alternative accommodation cover that may be required for a significant loss — often left out of the declared value entirely' },
             ].map(({ stat, label }) => (
               <div key={label} className="stat-card p-6">
-                <p className="text-2xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
-                <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
+                <p className="text-2xl font-bold text-[#0d1b3e] leading-none mb-3">{stat}</p>
+                <p className="text-[#64748b] text-sm leading-relaxed">{label}</p>
               </div>
             ))}
           </div>
@@ -105,14 +105,14 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* WHAT GETS VALUED */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <span className="badge badge-blue">What Gets Valued</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
               The rebuild cost covers far more than most people expect.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed max-w-2xl">
+            <p className="text-[#64748b] text-base leading-relaxed max-w-2xl">
               A reinstatement cost assessment values the whole building from scratch — not the sum of individual flat values.
             </p>
           </div>
@@ -129,8 +129,8 @@ export default function FreeholdersLeaseholdersPage() {
               'VAT where non-recoverable',
             ].map((item) => (
               <div key={item} className="ls-card p-5 flex gap-3 items-center">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                <p className="font-medium text-[#202124] text-sm">{item}</p>
+                <span className="text-[#0ab5a8] font-bold text-sm shrink-0 tick-glow">✓</span>
+                <p className="font-medium text-[#0d1b3e] text-sm">{item}</p>
               </div>
             ))}
           </div>

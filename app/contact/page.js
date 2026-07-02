@@ -21,17 +21,17 @@ export default function ContactPage() {
     <main>
 
       {/* HEADER */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">
               Get In Touch
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Get in touch. We respond within 24 hours.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
-              No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
+              No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#0ab5a8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
             </p>
             <div className="space-y-4 mb-8">
               {[
@@ -40,10 +40,10 @@ export default function ContactPage() {
                 { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
               ].map(({ label, value, href }) => (
                 <div key={label} className="flex gap-3 items-baseline">
-                  <p className="text-xs font-semibold text-[#9aa0a6] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
+                  <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
                   {href
-                    ? <a href={href} className="text-[#202124] font-semibold hover:text-[#1a73e8] transition-colors">{value}</a>
-                    : <p className="text-[#202124] font-semibold">{value}</p>
+                    ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0ab5a8] transition-colors">{value}</a>
+                    : <p className="text-[#0d1b3e] font-semibold">{value}</p>
                   }
                 </div>
               ))}
@@ -53,7 +53,7 @@ export default function ContactPage() {
               <a href="/services" className="btn-ghost">Our Services</a>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Cavendish and Rowe reinstatement cost assessment surveyors"
@@ -61,7 +61,7 @@ export default function ContactPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated. PI insured. 24-hour response on all business-day enquiries.</p>
             </div>

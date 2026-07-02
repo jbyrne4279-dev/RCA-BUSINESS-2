@@ -1,16 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  /* Google Material Design 3 colour tokens */
-  --color-primary:          #1a73e8;
-  --color-primary-dark:     #1557b0;
-  --color-primary-light:    #e8f0fe;
+  --color-primary:          #0ab5a8;
   --color-surface:          #ffffff;
-  --color-surface-variant:  #f8f9fa;
-  --color-on-surface:       #202124;
-  --color-secondary-text:   #5f6368;
-  --color-outline:          #dadce0;
-  --color-dark:             #202124;
+  --color-surface-variant:  #f0faf9;
+  --color-on-surface:       #0d1b3e;
 
   /* Font tokens — Inter throughout, no serif */
   --font-headline: var(--font-inter), system-ui, sans-serif;
@@ -19,48 +13,57 @@
 
 * { box-sizing: border-box; }
 
-/* ── Filled primary button ── */
+/* ── Hero: clean white with subtle teal radial glow top ── */
+.hero-bg {
+  background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(10,181,168,0.08) 0%, transparent 60%), #ffffff;
+}
+
+/* ── Pill primary button — teal ── */
 .btn-shine {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a73e8 0%, #1558c0 100%);
-  color: #fff;
-  font-size: 0.875rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.65rem 1.625rem;
-  border-radius: 8px;
+  font-size: 0.875rem;
+  background: linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%);
+  color: #ffffff;
+  text-decoration: none;
   border: none;
-  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
+  box-shadow: 0 4px 14px rgba(10,181,168,0.35);
+  transition: transform 0.15s, box-shadow 0.15s;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(26,115,232,0.3), 0 4px 12px rgba(26,115,232,0.15);
+  position: relative;
+  overflow: hidden;
 }
-.btn-shine:hover  { background: linear-gradient(135deg, #1c7ef5 0%, #1a65d6 100%); box-shadow: 0 2px 8px rgba(26,115,232,0.45), 0 6px 20px rgba(26,115,232,0.2); }
+.btn-shine:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(10,181,168,0.45); }
 .btn-shine:active { transform: scale(0.97); }
 
-/* ── Outlined button ── */
+/* ── Ghost outline button ── */
 .btn-ghost {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  color: #1a73e8;
-  font-size: 0.875rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.65rem 1.625rem;
-  border-radius: 8px;
-  border: 1.5px solid #c5d0e8;
-  transition: background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
+  font-size: 0.875rem;
+  color: #0ab5a8;
+  border: 1.5px solid #0ab5a8;
+  text-decoration: none;
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.btn-ghost:hover  { background: #eef3fd; border-color: #1a73e8; box-shadow: 0 2px 8px rgba(26,115,232,0.12); }
+.btn-ghost:hover { background: #0ab5a8; color: #ffffff; }
 .btn-ghost:active { transform: scale(0.97); }
 
 /* ── Text link / inline CTA ── */
 .link-amber {
-  color: #1a73e8;
+  color: #0ab5a8;
   font-size: 0.875rem;
   font-weight: 500;
   display: inline-flex;
@@ -68,7 +71,7 @@
   gap: 0.3em;
   transition: color 0.15s ease, gap 0.15s ease;
 }
-.link-amber:hover { color: #1557b0; gap: 0.5em; }
+.link-amber:hover { color: #087f7a; gap: 0.5em; }
 
 /* ── Fade-up on scroll (CSS scroll-driven, Chrome 115+; graceful fallback elsewhere) ── */
 @keyframes fade-up {
@@ -90,33 +93,16 @@
 }
 .hover-lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(60,64,67,0.18);
+  box-shadow: 0 6px 16px rgba(10,181,168,0.15);
 }
-
-/* ── Button press ripple feel ── */
-.btn-shine, .btn-ghost {
-  position: relative;
-  overflow: hidden;
-}
-.btn-shine::after, .btn-ghost::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, transparent 70%);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-}
-.btn-shine:hover::after { opacity: 1; }
-.btn-ghost:hover::after { background: radial-gradient(circle, rgba(26,115,232,0.08) 0%, transparent 70%); opacity: 1; }
 
 /* ── Card border glow on hover ── */
 .card-glow {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .card-glow:hover {
-  border-color: #1a73e8 !important;
-  box-shadow: 0 0 0 3px rgba(26,115,232,0.12);
+  border-color: #0ab5a8 !important;
+  box-shadow: 0 0 0 3px rgba(10,181,168,0.12);
 }
 
 /* ── Logo shimmer ── */
@@ -135,54 +121,110 @@
   pointer-events: none;
 }
 
-/* ── Legacy aliases ── */
-.btn-amber        { background: #1a73e8; color: #fff; border-radius: 6px; }
-.rule-amber       { height: 2px; width: 32px; background: #1a73e8; display: block; }
-.step-circle      { width: 2rem; height: 2rem; border-radius: 50%; background: #1a73e8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; flex-shrink: 0; }
-.grow-card        {}
-.card-shadow      { box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px rgba(60,64,67,0.15); }
-.sovereign-shadow { box-shadow: 0 2px 8px rgba(60,64,67,0.2); }
-.hover-grow       { transition: transform 0.2s ease; }
-.hover-grow:hover { transform: translateY(-2px); }
-.pricing-card     { transition: box-shadow 0.2s ease, transform 0.2s ease; border-radius: 12px; }
-.pricing-card:hover { box-shadow: 0 4px 16px rgba(60,64,67,0.2); transform: translateY(-2px); }
-.text-shine       { color: #1a73e8; }
-.text-shine-slow  { color: #1a73e8; }
-.liquid-glass     { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); }
-.animate-scroll-reviews { display: flex; }
-[class^="lifecycle-ring-"]   {}
-[class^="lifecycle-border-"] {}
-[class^="method-ring-"]      {}
-
-/* ── Electric blue tick glow ── */
-@keyframes tick-pulse {
-  0%, 100% {
-    text-shadow:
-      0 0 4px rgba(41, 121, 255, 0.9),
-      0 0 10px rgba(41, 121, 255, 0.6),
-      0 0 20px rgba(41, 121, 255, 0.3);
-  }
-  50% {
-    text-shadow:
-      0 0 8px rgba(41, 121, 255, 1),
-      0 0 20px rgba(41, 121, 255, 0.85),
-      0 0 40px rgba(41, 121, 255, 0.55),
-      0 0 60px rgba(41, 121, 255, 0.25);
-  }
+/* ── Badge pill ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.25rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
 }
-.tick-glow {
-  color: #2979ff;
-  animation: tick-pulse 2s ease-in-out infinite;
+.badge-blue  { background: rgba(10,181,168,0.1); color: #087f7a; border: 1px solid rgba(10,181,168,0.25); }
+.badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
+.badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
+
+/* ── Card ── */
+.ls-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.ls-card:hover {
+  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  transform: translateY(-2px);
 }
 
-/* ── Card hover enlarge ── */
+/* ── Lookscout card — dark ── */
+.ls-card-dark {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 14px;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.ls-card-dark:hover {
+  background: rgba(255,255,255,0.13);
+  border-color: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+
+/* ── Stat card ── */
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.stat-card:hover {
+  box-shadow: 0 8px 28px rgba(10,181,168,0.10);
+  transform: translateY(-3px);
+}
+
+/* ── Step number badge ── */
+.step-num {
+  background: linear-gradient(135deg, #0ab5a8, #087f7a);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* ── Icon circle ── */
+.icon-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle-red   { background: #fef2f2; color: #dc2626; }
+.icon-circle-blue  { background: rgba(10,181,168,0.1); color: #0ab5a8; }
+.icon-circle-amber { background: #fffbeb; color: #d97706; }
+
+/* ── Tick glow ── */
+.tick-glow { filter: drop-shadow(0 0 4px rgba(10,181,168,0.5)); }
+
+/* ── BRIX image-top content card ── */
+.brix-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.brix-card:hover {
+  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  transform: translateY(-2px);
+}
+
+/* ── Card hover utility ── */
 .card-hover {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-  will-change: transform;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 .card-hover:hover {
-  transform: scale(1.025);
-  box-shadow: 0 4px 20px rgba(60,64,67,0.13);
+  box-shadow: 0 8px 32px rgba(10,181,168,0.12);
+  transform: translateY(-2px);
 }
 
 /* ── Infinite review marquee ── */
@@ -207,107 +249,21 @@
   -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
 
-/* ── Hero gradient background ── */
-.hero-bg {
-  background: linear-gradient(155deg, #ffffff 0%, #f3f7ff 60%, #eaf0fd 100%);
-}
-
-/* ── Lookscout card — light ── */
-.ls-card {
-  background: #ffffff;
-  border: 1px solid #e8eaed;
-  border-radius: 16px;
-  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
-}
-.ls-card:hover {
-  box-shadow: 0 8px 32px rgba(60,64,67,0.11), 0 2px 6px rgba(60,64,67,0.06);
-  border-color: #c5cfe0;
-  transform: translateY(-3px);
-}
-
-/* ── Lookscout card — dark ── */
-.ls-card-dark {
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.13);
-  border-radius: 14px;
-  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-}
-.ls-card-dark:hover {
-  background: rgba(255,255,255,0.13);
-  border-color: rgba(255,255,255,0.25);
-  transform: translateY(-2px);
-}
-
-/* ── Stat card ── */
-.stat-card {
-  background: #ffffff;
-  border: 1px solid #e8eaed;
-  border-radius: 16px;
-  padding: 1.5rem;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-.stat-card:hover {
-  box-shadow: 0 8px 28px rgba(60,64,67,0.10), 0 2px 6px rgba(60,64,67,0.05);
-  transform: translateY(-3px);
-}
-
-/* ── Step number badge ── */
-.step-num {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #1a73e8, #1254b5);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  flex-shrink: 0;
-  box-shadow: 0 3px 10px rgba(26,115,232,0.4);
-}
-
-/* ── Badge / chip ── */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.9rem;
-  border-radius: 100px;
-  margin-bottom: 1.25rem;
-}
-.badge-blue  { background: #e8f0fe; color: #1a73e8; }
-.badge-dark  { background: rgba(26,115,232,0.2); color: #7baaf7; }
-.badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
-
-/* ── BRIX image-top content card ── */
-.brix-card {
-  background: #ffffff;
-  border: 1px solid #e8eaed;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-.brix-card:hover {
-  box-shadow: 0 8px 32px rgba(60,64,67,0.11), 0 2px 6px rgba(60,64,67,0.06);
-  transform: translateY(-3px);
-}
-
-/* ── Icon circle ── */
-.icon-circle {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 1.1rem;
-}
-.icon-circle-red   { background: #fce8e6; }
-.icon-circle-blue  { background: #e8f0fe; }
-.icon-circle-amber { background: #fef3e2; }
+/* ── Legacy aliases ── */
+.btn-amber        { background: #0ab5a8; color: #fff; border-radius: 9999px; }
+.rule-amber       { height: 2px; width: 32px; background: #0ab5a8; display: block; }
+.step-circle      { width: 2rem; height: 2rem; border-radius: 50%; background: #0ab5a8; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; flex-shrink: 0; }
+.grow-card        {}
+.card-shadow      { box-shadow: 0 1px 2px rgba(10,181,168,0.12), 0 1px 3px rgba(10,181,168,0.08); }
+.sovereign-shadow { box-shadow: 0 2px 8px rgba(10,181,168,0.15); }
+.hover-grow       { transition: transform 0.2s ease; }
+.hover-grow:hover { transform: translateY(-2px); }
+.pricing-card     { transition: box-shadow 0.2s ease, transform 0.2s ease; border-radius: 12px; }
+.pricing-card:hover { box-shadow: 0 4px 16px rgba(10,181,168,0.15); transform: translateY(-2px); }
+.text-shine       { color: #0ab5a8; }
+.text-shine-slow  { color: #0ab5a8; }
+.liquid-glass     { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); }
+.animate-scroll-reviews { display: flex; }
+[class^="lifecycle-ring-"]   {}
+[class^="lifecycle-border-"] {}
+[class^="method-ring-"]      {}

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -23,14 +23,14 @@ export default function BlocksOfFlatsPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               The most commonly underinsured property type in the UK.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -38,9 +38,9 @@ export default function BlocksOfFlatsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Specialist reinstatement cost assessments for blocks of flats across the UK.</p>
             </div>
@@ -49,14 +49,14 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* THE AVERAGE CLAUSE */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Average Clause</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               A wrong declared value reduces every leaseholder's claim - not just the freeholder's.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
               The average clause bites on partial losses as well as total ones — escape of water and fire are nearly always partial losses, and both are paid at a reduced rate if the declared value is inadequate.
             </p>
           </div>
@@ -66,11 +66,11 @@ export default function BlocksOfFlatsPage() {
               { label: 'Aggregated flat values', desc: 'What the individual flats are worth. Not what the building costs to rebuild. One of the most common sources of a wrong declared value.', ok: false },
               { label: 'Specialist reinstatement cost assessment', desc: 'The actual cost to demolish, clear and rebuild: structure, communal areas, professional fees, VAT where applicable. The only correct basis for the declared value.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
-                  <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
+                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
                 </div>
               </div>
             ))}
@@ -79,11 +79,11 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
               What we assess.
             </h2>
           </div>
@@ -101,19 +101,19 @@ export default function BlocksOfFlatsPage() {
                   <Image src={img} alt={title} fill className="object-cover" />
                 </div>
                 <div className="p-5">
-                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                  <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
+                  <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#0ab5a8] text-xs font-semibold hover:text-[#087f7a] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-center text-[#5f6368] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#1a73e8] font-semibold hover:text-[#1254b5]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
+          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
         </div>
       </section>
 
       {/* WHEN TO INSTRUCT */}
-      <section className="bg-[#1a73e8] py-20 md:py-28 px-6 md:px-10">
+      <section className="py-20 md:py-28 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-dark">When to Act</span>
@@ -134,13 +134,13 @@ export default function BlocksOfFlatsPage() {
               'You are refinancing or preparing the block for sale and need a clean valuation in the data room.',
             ].map((point, i) => (
               <div key={i} className="ls-card p-6 flex gap-4">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
-                <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
+                <span className="text-[#0ab5a8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
+                <p className="text-[#475569] text-sm leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/contact#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Book an Assessment</Link>
+            <Link href="/contact#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Book an Assessment</Link>
           </div>
         </div>
       </section>

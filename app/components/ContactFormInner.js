@@ -14,13 +14,13 @@ export default function ContactFormInner({ heading }) {
   return (
     <div>
       <div id="contact-form" className="mb-10 scroll-mt-20">
-        <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+        <span className="inline-flex items-center bg-[rgba(10,181,168,0.1)] text-[#087f7a] border border-[rgba(10,181,168,0.25)] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
           Get In Touch
         </span>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
           {heading}
         </h2>
-        <p className="text-[#5f6368] text-sm">24-hour response on business days</p>
+        <p className="text-[#64748b] text-sm">24-hour response on business days</p>
       </div>
 
       <form action="https://formspree.io/f/xkokvlpr" method="POST" className="space-y-6">
@@ -28,58 +28,58 @@ export default function ContactFormInner({ heading }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-name" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-name" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Full Name <span className="text-red-500">*</span>
             </label>
             <input
               id="contact-name" name="name" required type="text"
               placeholder="John Smith"
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-email" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-email" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Email <span className="text-red-500">*</span>
             </label>
             <input
               id="contact-email" name="email" required type="email"
               placeholder="john@example.com"
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-phone" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-phone" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Phone <span className="text-red-500">*</span>
             </label>
             <input
               id="contact-phone" name="phone" required type="tel"
               placeholder="+44 7700 900000"
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-company" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-company" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Company <span className="text-red-500">*</span>
             </label>
             <input
               id="contact-company" name="company" required type="text"
               placeholder="London Estates Ltd"
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-property-type" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-property-type" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Property Type <span className="text-red-500">*</span>
             </label>
             <select
               id="contact-property-type" name="property_type" defaultValue="" required
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors appearance-none cursor-pointer"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors appearance-none cursor-pointer"
             >
               <option value="" disabled>Select type</option>
               <option>Commercial</option>
@@ -91,24 +91,24 @@ export default function ContactFormInner({ heading }) {
             </select>
           </div>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-num-properties" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+            <label htmlFor="contact-num-properties" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               No. of Properties <span className="text-red-500">*</span>
             </label>
             <input
               id="contact-num-properties" name="num_properties" required type="number" min="1"
               placeholder="1"
-              className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors"
             />
           </div>
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="contact-service" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+          <label htmlFor="contact-service" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
             Service Needed <span className="text-red-500">*</span>
           </label>
           <select
             id="contact-service" name="service" defaultValue={preselected} required
-            className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors appearance-none cursor-pointer"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors appearance-none cursor-pointer"
           >
             <option value="" disabled>Select a service</option>
             <option>Desktop Reinstatement Cost Assessment</option>
@@ -120,17 +120,17 @@ export default function ContactFormInner({ heading }) {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="contact-notes" className="text-xs font-medium text-[#5f6368] uppercase tracking-[0.08em]">
+          <label htmlFor="contact-notes" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
             Notes <span className="text-red-500">*</span>
           </label>
           <textarea
             id="contact-notes" name="notes" required rows="4"
             placeholder="Briefly describe your property and requirements..."
-            className="bg-white border border-[#dadce0] rounded-lg px-4 py-2.5 text-sm text-[#202124] placeholder:text-[#9aa0a6] focus:outline-none focus:border-[#1a73e8] focus:ring-2 focus:ring-[#1a73e8]/20 transition-colors resize-none"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0ab5a8] focus:ring-2 focus:ring-[#0ab5a8]/20 transition-colors resize-none"
           />
         </div>
 
-        <p className="text-xs text-[#9aa0a6]">All fields are required.</p>
+        <p className="text-xs text-[#94a3b8]">All fields are required.</p>
 
         <button type="submit" className="btn-shine w-full justify-center !py-3 !text-sm">
           Request Your Assessment

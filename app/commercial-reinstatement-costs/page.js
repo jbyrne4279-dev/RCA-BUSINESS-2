@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -22,14 +22,14 @@ export default function CommercialPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Commercial Property</span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Commercial underinsurance starts with the wrong figure.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -37,7 +37,7 @@ export default function CommercialPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="Commercial reinstatement cost assessment"
@@ -45,7 +45,7 @@ export default function CommercialPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments accepted by all UK commercial insurers without amendment.</p>
             </div>
@@ -54,14 +54,14 @@ export default function CommercialPage() {
       </section>
 
       {/* WHY IT MATTERS */}
-      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
             <span className="badge badge-blue">The Problem</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               Three hidden cost drivers that make commercial underinsurance so common.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-8">
+            <p className="text-[#64748b] text-base leading-relaxed mb-8">
               Tenant fitout, specialist plant and complex M&amp;E services add costs no online tool captures.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a RICS Assessment</Link>
@@ -73,25 +73,25 @@ export default function CommercialPage() {
               { title: 'Old or inherited valuations', sub: 'Costs rose 30%+ since 2020 — pre-pandemic figures mislead.', ok: false },
               { title: 'RICS-regulated reinstatement cost assessment', sub: 'Accepted by all UK insurers. Documented, defensible, PI-insured.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-medium text-[#202124] text-sm">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mt-0.5">{sub}</p>
+                  <p className="font-medium text-[#0d1b3e] text-sm">{title}</p>
+                  <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-[#5f6368] text-sm mt-6">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">See our portfolio assessment service →</Link></p>
+          <p className="text-[#64748b] text-sm mt-6">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a] transition-colors">See our portfolio assessment service →</Link></p>
         </div>
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">Every commercial property type, covered.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Every commercial property type, covered.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
@@ -104,11 +104,11 @@ export default function CommercialPage() {
             ].map(({ title, href }) => (
               <div key={title} className="brix-card">
                 <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
-                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
+                  <svg className="w-9 h-9" fill="none" stroke="#94a3b8" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
                 </div>
                 <div className="p-5">
-                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                  <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
+                  <Link href={href} className="text-[#0ab5a8] text-xs font-semibold hover:text-[#087f7a] transition-colors">Learn more →</Link>
                 </div>
               </div>
             ))}

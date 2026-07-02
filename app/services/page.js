@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -19,11 +19,11 @@ const faqItems = [
 
 function CheckItem({ title, desc, dark }) {
   return (
-    <div className={`flex gap-3 py-3 border-b ${dark ? 'border-white/10' : 'border-[#dadce0]'}`}>
-      <span className={`text-sm shrink-0 mt-0.5 font-bold ${dark ? 'text-white' : 'text-[#1a73e8] tick-glow'}`}>✓</span>
+    <div className={`flex gap-3 py-3 border-b ${dark ? 'border-white/10' : 'border-[#e2e8f0]'}`}>
+      <span className={`text-sm shrink-0 mt-0.5 font-bold ${dark ? 'text-white' : 'text-[#0ab5a8] tick-glow'}`}>✓</span>
       <div>
-        <p className={`font-medium text-sm mb-0.5 ${dark ? 'text-white' : 'text-[#202124]'}`}>{title}</p>
-        <p className={`text-xs leading-relaxed ${dark ? 'text-white/55' : 'text-[#5f6368]'}`}>{desc}</p>
+        <p className={`font-medium text-sm mb-0.5 ${dark ? 'text-white' : 'text-[#0d1b3e]'}`}>{title}</p>
+        <p className={`text-xs leading-relaxed ${dark ? 'text-white/55' : 'text-[#64748b]'}`}>{desc}</p>
       </div>
     </div>
   )
@@ -34,16 +34,16 @@ export default function ServicesPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">
               Reinstatement Cost Assessment
             </span>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Three service tiers. One specialist firm.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for agents and freeholders needing ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -51,7 +51,7 @@ export default function ServicesPage() {
               <Link href="/services#desktop-rca" className="btn-ghost">View Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(10,181,168,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment, building survey"
@@ -59,7 +59,7 @@ export default function ServicesPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection - RICS-aligned assessments for every property type.</p>
             </div>
@@ -68,16 +68,16 @@ export default function ServicesPage() {
       </section>
 
       {/* WHY SPECIALIST */}
-      <section className="bg-[#f8f9fa] py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0faf9' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
               Why Choose a Specialist
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold font-display text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-[#0d1b3e] leading-tight mb-5">
               Generic tools cannot replace a RICS specialist.
             </h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
               UK construction costs rose over 30% between 2020 and 2024 — any figure not formally reviewed in that period is materially inaccurate.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
@@ -89,11 +89,11 @@ export default function ServicesPage() {
               { title: 'Old or inherited valuations', sub: 'Stale figures create underinsurance.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#0ab5a8]' : ''}`} style={ok ? { background: 'rgba(10,181,168,0.08)' } : {}}>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0ab5a8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
-                  <p className="font-medium text-[#202124] text-sm">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed mt-0.5">{sub}</p>
+                  <p className="font-medium text-[#0d1b3e] text-sm">{title}</p>
+                  <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
                 </div>
               </div>
             ))}
@@ -102,18 +102,18 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 01 */}
-      <section id="desktop-rca" className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#dadce0]">
+      <section id="desktop-rca" className="bg-white py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
               01. Desktop
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">Desktop Assessment</h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
               BCIS-indexed rebuild cost modelling without a site visit, delivered within 24 hours.
             </p>
             <Link href="/contact?service=desktop#contact-form" className="btn-shine">Instruct Desktop Assessment</Link>
-            <p className="text-[#5f6368] text-xs mt-4">Managing agents: <Link href="/managing-agents-insurance-valuations" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">see how we support your compliance obligations →</Link></p>
+            <p className="text-[#64748b] text-xs mt-4">Managing agents: <Link href="/managing-agents-insurance-valuations" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a] transition-colors">see how we support your compliance obligations →</Link></p>
           </div>
           <div>
             <CheckItem title="24-hour turnaround" desc="Delivered within 24 hours of instruction." />
@@ -126,18 +126,18 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 02 */}
-      <section id="on-site-survey" className="bg-[#e8f0fe] py-20 md:py-28 px-6 md:px-10 border-t border-[#c8d8f8]">
+      <section id="on-site-survey" className="py-20 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: 'rgba(10,181,168,0.08)' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">
               02. On-Site
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">On-Site Survey</h2>
-            <p className="text-[#5f6368] text-base leading-relaxed mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">On-Site Survey</h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
               A RICS surveyor attends in person for full measurement, material assessment and construction analysis on-site.
             </p>
             <Link href="/contact?service=onsite#contact-form" className="btn-shine">Request On-Site Survey</Link>
-            <p className="text-[#5f6368] text-xs mt-4">Freeholders with complex blocks: <Link href="/freeholders-buildings-insurance-valuations" className="text-[#1a73e8] font-semibold hover:text-[#1254b5] transition-colors">see our freeholder assessment service →</Link></p>
+            <p className="text-[#64748b] text-xs mt-4">Freeholders with complex blocks: <Link href="/freeholders-buildings-insurance-valuations" className="text-[#0ab5a8] font-semibold hover:text-[#087f7a] transition-colors">see our freeholder assessment service →</Link></p>
           </div>
           <div>
             <CheckItem title="Physical RICS inspection" desc="Full on-site measurement by a RICS surveyor." />
@@ -150,7 +150,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SERVICE 03 */}
-      <section id="three-year-protection" className="bg-[#1a73e8] py-20 md:py-28 px-6 md:px-10">
+      <section id="three-year-protection" className="py-20 md:py-28 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #0ab5a8 0%, #087f7a 100%)' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
@@ -160,7 +160,7 @@ export default function ServicesPage() {
             <p className="text-white/80 text-base leading-relaxed mb-6">
               One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date, no re-instructing required.
             </p>
-            <Link href="/contact?service=3year#contact-form" className="bg-white text-[#1a73e8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Enquire About 3-Year Plan</Link>
+            <Link href="/contact?service=3year#contact-form" className="bg-white text-[#0ab5a8] font-semibold text-sm px-6 py-3 rounded-md hover:bg-white/90 transition-colors inline-block">Enquire About 3-Year Plan</Link>
           </div>
           <div>
             <CheckItem title="Full assessment in year one" desc="Baseline RICS-aligned assessment establishing declared value." dark />
