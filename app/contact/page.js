@@ -25,7 +25,7 @@ export default function ContactPage() {
             <span className="badge badge-dark">
               Get In Touch
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5">
               Let&rsquo;s get your assessment underway.
             </h1>
           </div>

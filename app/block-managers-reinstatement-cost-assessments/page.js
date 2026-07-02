@@ -24,7 +24,7 @@ export default function BlockManagersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
             <span className="badge badge-blue">Block Managers</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5">
               Reinstatement assessments for block managers.
             </h1>
           </div>

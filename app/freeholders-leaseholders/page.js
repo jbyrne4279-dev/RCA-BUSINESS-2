@@ -30,7 +30,7 @@ export default function FreeholdersLeaseholdersPage() {
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Freeholders &amp; Leaseholders</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.2] mb-5">
               Getting the declared value right is a legal obligation, not a choice.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">

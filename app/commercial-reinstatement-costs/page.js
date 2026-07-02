@@ -24,7 +24,7 @@ export default function CommercialPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Commercial Property</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.1] mb-5">
               Commercial reinstatement cost assessments.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
