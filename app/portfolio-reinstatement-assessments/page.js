@@ -24,7 +24,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-[#202124] leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
               Every asset. One instruction.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">

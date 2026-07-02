@@ -31,7 +31,7 @@ export default function BlocksOfFlatsPage() {
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
               Insured for the market value? Then you're insured for the wrong number.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">

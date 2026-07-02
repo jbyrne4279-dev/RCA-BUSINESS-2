@@ -40,7 +40,7 @@ export default function ServicesPage() {
             <span className="badge badge-blue">
               Reinstatement Cost Assessment
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-[#202124] leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
               A specialist valuation for buildings insurance.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-6">

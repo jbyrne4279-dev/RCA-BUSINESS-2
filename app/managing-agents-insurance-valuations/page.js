@@ -30,7 +30,7 @@ export default function ManagingAgentsPage() {
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
               An underinsured block is not the freeholder's problem. It's your PI claim.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
