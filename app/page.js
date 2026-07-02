@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
+import TiltCard from './components/TiltCard'
 
 const faqItems = [
   { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
@@ -70,28 +71,8 @@ export default function HomePage() {
       <section className="py-16 md:py-24 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* Left: visual card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-            <div className="relative h-52 md:h-64">
-              <Image src="/AdobeStock_1477785304.jpeg" alt="Block of flats reinstatement cost assessment" fill className="object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/60 to-transparent" />
-            </div>
-            <div className="p-6 flex flex-col gap-3">
-              {[
-                { label: 'Reinstatement Cost', val: 'Correct basis for sum insured', ok: true },
-                { label: 'Market Value', val: 'Irrelevant for insurance purposes', ok: false },
-                { label: 'Online Calculator', val: 'No RICS accountability', ok: false },
-              ].map(({ label, val, ok }) => (
-                <div key={label} className="flex items-center gap-3">
-                  <span className={`text-sm font-bold shrink-0 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
-                  <div>
-                    <p className="text-xs font-semibold text-[#0d1b3e]">{label}</p>
-                    <p className="text-xs text-[#64748b]">{val}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          {/* Left: tilt card */}
+          <TiltCard />
 
           {/* Right: text */}
           <div>
@@ -143,7 +124,7 @@ export default function HomePage() {
             <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
           </div>
 
-          {/* Right: visual card */}
+          {/* Right: process steps — staggered reveal */}
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             {[
@@ -152,8 +133,8 @@ export default function HomePage() {
               { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
               { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
             ].map(({ n, title, desc }, i) => (
-              <div key={n} className={`flex gap-4 items-start ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
-                <span className="text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{n}</span>
+              <div key={n} className={`flex gap-4 items-start step-reveal ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`} style={{animationDelay:`${i * 0.18}s`}}>
+                <span className="text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
                 <div>
                   <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
                   <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>

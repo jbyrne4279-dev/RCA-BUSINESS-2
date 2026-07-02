@@ -234,6 +234,21 @@
   transform: translateY(-2px);
 }
 
+/* ── Process step staggered reveal ── */
+@keyframes step-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.step-reveal {
+  opacity: 0;
+  animation: step-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .step-reveal { animation: none !important; opacity: 1 !important; }
+}
+
 /* ── Infinite review marquee ── */
 @keyframes marquee {
   from { transform: translateX(0); }
