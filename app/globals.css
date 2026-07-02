@@ -260,6 +260,15 @@
   font-style: normal;
 }
 
+/* ── Trust strip items: staggered electric-blue pulse ── */
+@keyframes trust-light {
+  0%, 100% { color: #94a3b8; }
+  30%, 60%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.45); }
+}
+.trust-item {
+  animation: trust-light 2.5s ease-in-out infinite;
+}
+
 /* ── CR logo 3D spin ── */
 @keyframes logo-spin3d {
   from { transform: rotateY(0deg); }
