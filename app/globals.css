@@ -126,15 +126,15 @@
 .badge {
   display: inline-flex;
   align-items: center;
-  border-radius: 9999px;
-  padding: 0.25rem 0.875rem;
-  font-size: 0.75rem;
-  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   margin-bottom: 1rem;
 }
-.badge-blue  { background: rgba(0,87,255,0.1); color: #0040CC; border: 1px solid rgba(0,87,255,0.25); box-shadow: 0 0 10px rgba(0,87,255,0.15); }
+.badge-blue  { background: #0057FF; color: #ffffff; border: none; box-shadow: none; }
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
 .badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
 
