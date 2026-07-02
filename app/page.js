@@ -65,8 +65,8 @@ export default function HomePage() {
               { iconD: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99', n: '3 yrs', label: 'RICS recommended review period' },
             ].map(({ iconD, n, label }, i) => (
               <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/15' : ''}`}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'rgba(255,255,255,0.15)'}}>
-                  <svg className="w-5 h-5" fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'white'}}>
+                  <svg className="w-5 h-5" fill="none" stroke="#1a73e8" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <path d={iconD} />
                   </svg>
                 </div>
