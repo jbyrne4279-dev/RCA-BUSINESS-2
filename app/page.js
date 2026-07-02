@@ -34,7 +34,7 @@ export default function HomePage() {
               Specialist reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get a Free Quote</Link>
+              <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
               <Link href="/services" className="btn-ghost">View Services</Link>
             </div>
           </div>
@@ -156,7 +156,7 @@ export default function HomePage() {
                 </Link>
               ))}
             </div>
-            <Link href="/contact#contact-form" className="btn-shine">Get a Free Quote</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
           </div>
 
           {/* Right: visual card */}
@@ -276,7 +276,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
-                Get a Free Quote
+                Get Quote
               </Link>
               <Link href="/services" className="border border-white/40 text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors inline-block text-center">
                 View Services
@@ -312,6 +312,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 

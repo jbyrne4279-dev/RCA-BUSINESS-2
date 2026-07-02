@@ -191,7 +191,7 @@ export default function FreeholdersLeaseholdersPage() {
               Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">Get a Free Quote</Link>
+              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">Get Quote</Link>
               <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-white/60 text-white font-semibold text-sm hover:border-white transition-colors">View Services</Link>
             </div>
           </div>
@@ -217,6 +217,7 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 
 
 
