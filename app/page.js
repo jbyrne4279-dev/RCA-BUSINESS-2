@@ -269,7 +269,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-              Get Started. <span className="blue-keyword">No Obligation</span> Required.
+              Get Started. <span style={{color:"rgba(255,255,255,0.75)"}}>No Obligation</span> Required.
             </h2>
             <p className="text-white/80 text-base mb-8 max-w-md">
               80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in 24 hours.
@@ -312,6 +312,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 
