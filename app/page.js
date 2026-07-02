@@ -59,14 +59,16 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'#4f5a73'}}>
             {[
-              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />, n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
-              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />, n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
-              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />, n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
-              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />, n: '3 yrs', label: 'RICS recommended review period' },
-            ].map(({ icon, n, label }, i) => (
+              { iconD: 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z', n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
+              { iconD: 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941', n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
+              { iconD: 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z', n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
+              { iconD: 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99', n: '3 yrs', label: 'RICS recommended review period' },
+            ].map(({ iconD, n, label }, i) => (
               <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/15' : ''}`}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'rgba(255,255,255,0.15)'}}>
-                  <svg className="w-5 h-5 text-white/80" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">{icon}</svg>
+                  <svg className="w-5 h-5" fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                    <path d={iconD} />
+                  </svg>
                 </div>
                 <div>
                   <p className="text-white font-bold text-lg leading-none mb-1">{n}</p>
