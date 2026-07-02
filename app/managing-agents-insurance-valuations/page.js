@@ -103,7 +103,7 @@ export default function ManagingAgentsPage() {
               { label: 'Specialist reinstatement cost assessment on the RICS cycle', desc: 'Full assessment every three years. Annual BCIS indexation between reassessments. Fresh instruction after material works. A defensible file at every stage.', ok: true },
             ].map(({ label, desc, ok }) => (
               <div key={label} className={`ls-card p-5 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
+                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
                   <p className="text-[#5f6368] text-sm leading-relaxed">{desc}</p>
