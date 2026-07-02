@@ -182,7 +182,7 @@ export default function ServicesPage() {
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Not sure which <span className="blue-keyword">service you need</span>?
+              Not sure which <span style={{color:'rgba(255,255,255,0.92)'}}>service you need</span>?
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Tell us about your property and we'll recommend the right service. Most instructions are confirmed same day.
@@ -218,6 +218,7 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 
 
 

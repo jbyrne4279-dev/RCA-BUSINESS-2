@@ -185,7 +185,7 @@ export default function FreeholdersLeaseholdersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Find out if your building is covered for its <span className="blue-keyword">true rebuild cost</span>.
+              Find out if your building is covered for its <span style={{color:'rgba(255,255,255,0.92)'}}>true rebuild cost</span>.
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
@@ -217,6 +217,7 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 
 
 

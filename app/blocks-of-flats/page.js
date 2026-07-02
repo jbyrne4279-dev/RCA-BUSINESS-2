@@ -140,7 +140,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Get the right <span className="blue-keyword">declared value</span> before the next renewal.
+              Get the right <span style={{color:'rgba(255,255,255,0.92)'}}>declared value</span> before the next renewal.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               A specialist block assessment takes the guesswork out of the declared value - protecting every leaseholder from an average-clause reduction at claim time.
@@ -176,6 +176,7 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
 
 
 

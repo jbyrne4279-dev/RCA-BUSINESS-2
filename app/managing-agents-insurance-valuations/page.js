@@ -197,7 +197,7 @@ export default function ManagingAgentsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to protect your <span className="blue-keyword">PI and your clients</span>?
+              Ready to protect your <span style={{color:'rgba(255,255,255,0.92)'}}>PI and your clients</span>?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey - in time for your next renewal window.
@@ -233,6 +233,7 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
 
 
 

@@ -222,7 +222,7 @@ export default function CommercialPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Protect your commercial asset with a <span className="blue-keyword">RICS-regulated assessment</span>.
+              Protect your commercial asset with a <span style={{color:'rgba(255,255,255,0.92)'}}>RICS-regulated assessment</span>.
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Establish the correct sum insured before an underinsurance clause is triggered. Instructions completed within 24 hours for desktop assessments.
@@ -268,6 +268,7 @@ export default function CommercialPage() {
     </main>
   )
 }
+
 
 
 

@@ -218,7 +218,7 @@ export default function BlockManagersPage() {
               Remove the liability
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Your portfolio. <span className="blue-keyword">Compliant</span>. This renewal season.
+              Your portfolio. <span style={{color:'rgba(255,255,255,0.92)'}}>Compliant</span>. This renewal season.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals - so you never let compliance lapse again.
@@ -265,6 +265,7 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 
 
 

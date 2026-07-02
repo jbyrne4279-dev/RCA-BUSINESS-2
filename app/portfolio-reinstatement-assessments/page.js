@@ -230,7 +230,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              <span className="blue-keyword">Consolidate</span> your portfolio under one instruction today.
+              <span style={{color:'rgba(255,255,255,0.92)'}}>Consolidate</span> your portfolio under one instruction today.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Send us your asset list and we will return a consolidated quote within one business day - no obligation.
@@ -272,6 +272,7 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 
 
 

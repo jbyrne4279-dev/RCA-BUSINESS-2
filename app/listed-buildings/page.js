@@ -209,7 +209,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="inline-block text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">Get Started</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to get the <span className="blue-keyword">right figure</span> for your listed building?
+              Ready to get the <span style={{color:'rgba(255,255,255,0.92)'}}>right figure</span> for your listed building?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Request a specialist on-site assessment. We cover all grades across the UK and confirm your fee on receipt of the enquiry.
@@ -252,6 +252,7 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
 
 
 
