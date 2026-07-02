@@ -25,7 +25,7 @@ export default function ServicesPage() {
       <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Our Services</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Three service tiers. One <span className="blue-keyword">specialist firm</span>.
             </h1>
@@ -218,6 +218,7 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 
 
 
