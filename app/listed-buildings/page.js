@@ -54,7 +54,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue mb-4">Why Listed Buildings Are Different</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Authentic materials, conservation requirements and period finishes all affect rebuild cost.
+              Authentic materials, conservation requirements and period finishes all affect <span className="text-[#0057FF]">rebuild cost</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must replicate original style and materials. That legal obligation transforms the cost picture: lime mortar, handmade brick, heritage contractors, conservation consents and extended timescales all carry significant premiums over standard construction rates.
@@ -124,7 +124,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue mb-4">Our On-Site Survey Process</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              The only defensible method for a listed property.
+              The only <span className="text-[#0057FF]">defensible method</span> for a listed property.
             </h2>
             <div className="space-y-5 mb-8">
               {[
@@ -155,7 +155,7 @@ export default function ListedBuildingsPage() {
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Why Choose RCA</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              Built for listed buildings, not adapted from standard practice.
+              Built for <span className="text-[#0057FF]">listed buildings</span>, not adapted from standard practice.
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -209,7 +209,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="inline-block text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">Get Started</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to get the right figure for your listed building?
+              Ready to get the <span className="text-[#0057FF]">right figure</span> for your listed building?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Request a specialist on-site assessment. We cover all grades across the UK and confirm your fee on receipt of the enquiry.
@@ -252,5 +252,9 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
+
+
+
 
 

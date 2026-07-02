@@ -54,7 +54,7 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">The Risk of Getting It Wrong</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Underinsurance is your risk, not the freeholder's.
+              <span className="text-[#0057FF]">Underinsurance</span> is your risk, not the freeholder&apos;s.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall — and the leaseholder complaints — land with you.
@@ -117,7 +117,7 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">What Managing Agents Get</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              A broker-ready report that protects you, your PI file, and your clients.
+              A broker-ready report that <span className="text-[#0057FF]">protects you</span>, your PI file, and your clients.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               We handle the technical assessment so you can demonstrate due diligence with confidence — to leaseholders, insurers, and regulators.
@@ -149,7 +149,7 @@ export default function ManagingAgentsPage() {
           <div className="text-center mb-12">
             <span className="badge badge-blue">Why Agents Choose Us</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
-              Built around your renewal cycle.
+              Built around your <span className="text-[#0057FF]">renewal cycle</span>.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -197,7 +197,7 @@ export default function ManagingAgentsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to protect your PI and your clients?
+              Ready to protect your <span className="text-[#0057FF]">PI and your clients</span>?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey — in time for your next renewal window.
@@ -233,5 +233,9 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
+
+
+
 
 

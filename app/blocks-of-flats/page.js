@@ -54,7 +54,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-blue">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Why block assessments are complex.
+              Why block assessments are <span className="text-[#0057FF]">complex</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile that requires specialist assessment.
@@ -106,7 +106,7 @@ export default function BlocksOfFlatsPage() {
           <div className="text-center mb-12">
             <span className="badge badge-blue">Property Types</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              What we assess.
+              What we <span className="text-[#0057FF]">assess</span>.
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -140,7 +140,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Get the right declared value before the next renewal.
+              Get the right <span className="text-[#0057FF]">declared value</span> before the next renewal.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               A specialist block assessment takes the guesswork out of the declared value — protecting every leaseholder from an average-clause reduction at claim time.
@@ -176,5 +176,8 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
+
+
 
 

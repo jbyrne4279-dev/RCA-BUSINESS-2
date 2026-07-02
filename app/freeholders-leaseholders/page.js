@@ -55,7 +55,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              What freeholders owe leaseholders — and what can go wrong.
+              What freeholders owe leaseholders — and what can <span className="text-[#0057FF]">go wrong</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
               Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance — it is to insure to the full reinstatement cost of the building.
@@ -114,7 +114,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue mb-4">For Leaseholders</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              How to challenge an inadequate sum insured.
+              How to challenge an <span className="text-[#0057FF]">inadequate sum insured</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
               Leaseholders do not need the freeholder's permission to commission their own independent reinstatement cost assessment. The report provides a factual basis for raising a formal concern with the freeholder or managing agent.
@@ -135,7 +135,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div className="mb-12 text-center">
             <span className="badge badge-blue mb-4">How We Help</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              Protection for every party in the building.
+              <span className="text-[#0057FF]">Protection</span> for every party in the building.
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -185,7 +185,7 @@ export default function FreeholdersLeaseholdersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Find out if your building is covered for its true rebuild cost.
+              Find out if your building is covered for its <span className="text-[#0057FF]">true rebuild cost</span>.
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
@@ -217,5 +217,9 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
+
+
+
 
 
