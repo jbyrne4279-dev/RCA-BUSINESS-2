@@ -24,27 +24,27 @@ export default function BlocksOfFlatsPage() {
     <main>
 
       {/* HERO */}
-      <section className="relative bg-[#202124] py-14 md:py-20 px-6 md:px-10 overflow-hidden">
-        <div className="absolute inset-0">
-          <Image src="/AdobeStock_258095379.jpeg" alt="Block of flats reinstatement cost assessment" fill className="object-cover opacity-15" />
-        </div>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.2] mb-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
               Insured for the market value? Then you're insured for the wrong number.
             </h1>
-            <p className="text-white/60 text-lg leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               Rebuild cost for a block of flats bears no relation to market value. One can be double the other in either direction. The average clause means that when the figure is wrong, every claim is reduced pro rata. The shortfall comes out of your pocket. A specialist assessment establishes the correct declared value, in both directions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[480px]" style={{boxShadow:'0 24px 64px rgba(0,0,0,0.35), 0 4px 16px rgba(0,0,0,0.2)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-7">
+              <p className="text-white/95 text-sm font-medium leading-snug">Specialist reinstatement cost assessments for blocks of flats across the UK.</p>
+            </div>
           </div>
         </div>
       </section>

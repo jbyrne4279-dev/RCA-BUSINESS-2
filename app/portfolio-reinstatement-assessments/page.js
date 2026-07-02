@@ -21,11 +21,11 @@ export default function PortfolioPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
               Every asset. One instruction.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
@@ -44,9 +44,9 @@ export default function PortfolioPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="text-white/90 text-sm font-medium">Individual RICS reports per asset. One consolidated instruction.</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-7">
+              <p className="text-white/95 text-sm font-medium leading-snug">Individual RICS reports per asset. One consolidated instruction.</p>
             </div>
           </div>
         </div>

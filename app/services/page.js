@@ -34,42 +34,24 @@ export default function ServicesPage() {
     <main>
 
       {/* HERO */}
-      <section className="hero-bg py-12 md:py-16 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">
               Reinstatement Cost Assessment
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.1] mb-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
               A specialist valuation for buildings insurance.
             </h1>
-            <p className="text-[#5f6368] text-lg leading-relaxed mb-6">
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. The declared figure sets the buildings sum insured and determines the adequacy of cover at the point of any claim.
             </p>
-            <div className="mb-6 ls-card p-5">
-              <p className="text-sm font-semibold text-[#202124] mb-3">A proper reinstatement cost assessment considers:</p>
-              <div className="space-y-0">
-                {[
-                  'Demolition and site clearance',
-                  'Rebuild costs for the main structure',
-                  'Professional fees (architect, structural engineer)',
-                  'Statutory and local authority fees',
-                  'VAT where applicable',
-                  'External works, car parks and landscaping',
-                ].map(item => (
-                  <div key={item} className="flex gap-3 py-2 border-b border-[#dadce0] last:border-0">
-                    <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                    <span className="text-[#3c4043] text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services#desktop-rca" className="btn-ghost">View Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment, building survey"
@@ -77,9 +59,9 @@ export default function ServicesPage() {
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <p className="text-white/90 text-sm font-medium">RICS-aligned assessments delivered within 24 hours for most standard properties.</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/55 via-[#202124]/10 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-7">
+              <p className="text-white/95 text-sm font-medium leading-snug">RICS-aligned assessments delivered within 24 hours for most standard properties.</p>
             </div>
           </div>
         </div>
