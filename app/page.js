@@ -55,21 +55,26 @@ export default function HomePage() {
       </section>
 
       {/* STAT STRIP */}
-      <div className="bg-[#f5f7fc] border-b border-[#e4e8f0] py-10 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
-          {[
-            { n: 'Most', suffix: '', label: 'UK buildings carry an inaccurate sum insured' },
-            { n: 'Higher', suffix: '', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
-            { n: '24', suffix: ' hrs', label: 'standard turnaround for a desktop assessment' },
-            { n: '3', suffix: ' yrs', label: 'RICS recommended review period' },
-          ].map(({ n, suffix, label }) => (
-            <div key={n} className="stat-card">
-              <p className="font-display text-3xl md:text-4xl font-bold text-[#1a73e8] mb-2 leading-none">
-                {n}<span className="text-lg font-semibold align-baseline">{suffix}</span>
-              </p>
-              <p className="text-xs text-[#5f6368] leading-snug">{label}</p>
-            </div>
-          ))}
+      <div className="bg-[#f8f9fa] border-b border-[#e4e8f0] py-10 px-6 md:px-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'#4f5a73'}}>
+            {[
+              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />, n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
+              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />, n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
+              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />, n: '24 hrs', label: 'standard turnaround for a desktop assessment' },
+              { icon: <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />, n: '3 yrs', label: 'RICS recommended review period' },
+            ].map(({ icon, n, label }, i) => (
+              <div key={n} className={`px-5 py-5 flex items-center gap-4 ${i < 3 ? 'border-r border-white/15' : ''}`}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'rgba(255,255,255,0.15)'}}>
+                  <svg className="w-5 h-5 text-white/80" fill="none" stroke="currentColor" strokeWidth={1.75} viewBox="0 0 24 24">{icon}</svg>
+                </div>
+                <div>
+                  <p className="text-white font-bold text-lg leading-none mb-1">{n}</p>
+                  <p className="text-xs leading-snug" style={{color:'rgba(255,255,255,0.55)'}}>{label}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -221,38 +226,72 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+      <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10 scroll-reveal">
+          <div className="text-center mb-10 scroll-reveal">
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Our Assessments
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">Three ways to instruct.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Three ways to instruct.</h2>
+            <p className="text-[#5f6368] text-base max-w-lg mx-auto">Choose the assessment that fits your property and compliance needs.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              { title: 'Desktop Assessment', tag: '24-hour turnaround', desc: 'BCIS-indexed rebuild cost modelling without a site visit. Accurate and cost-effective for standard residential and commercial properties.', href: '/services#desktop-rca', variant: 'default' },
-              { title: 'On-Site Survey', tag: 'Full physical inspection', desc: 'A RICS surveyor attends in person. Required for listed buildings, non-standard construction and high-value assets.', href: '/services#on-site-survey', variant: 'light' },
-              { title: '3-Year Protection', tag: 'Best value', desc: 'Full assessment in year one, then annual BCIS-indexed renewal reports for three years. Single instruction covering the RICS recommended review period.', href: '/services#three-year-protection', variant: 'featured' },
-            ].map(({ title, tag, desc, href, variant }) => (
-              <div key={title} className={`rounded-2xl p-7 flex flex-col scroll-reveal ${
-                variant === 'featured'
-                  ? 'text-white'
-                  : variant === 'light'
-                  ? 'ls-card'
-                  : 'ls-card'
-              }`} style={variant === 'featured' ? {background:'linear-gradient(145deg,#1a73e8 0%,#1050b0 100%)',boxShadow:'0 12px 40px rgba(26,115,232,0.35), 0 4px 12px rgba(26,115,232,0.2)'} : {}}>
-                <span className={`text-xs font-semibold uppercase tracking-[0.09em] mb-4 ${variant === 'featured' ? 'text-white/70' : 'text-[#5f6368]'}`}>{tag}</span>
-                <h3 className={`font-bold text-xl mb-3 ${variant === 'featured' ? 'text-white' : 'text-[#202124]'}`}>{title}</h3>
-                <p className={`text-sm leading-relaxed flex-1 mb-6 ${variant === 'featured' ? 'text-white/80' : 'text-[#5f6368]'}`}>{desc}</p>
-                <Link href={href} className={`text-sm font-semibold inline-flex items-center gap-1.5 transition-colors group ${variant === 'featured' ? 'text-white/90 hover:text-white' : 'text-[#1a73e8] hover:text-[#1254b5]'}`}>
-                  View service <span className="group-hover:translate-x-0.5 transition-transform">→</span>
-                </Link>
-              </div>
-            ))}
+
+            {/* Desktop Assessment */}
+            <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
+              <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">24-hour turnaround</p>
+              <h3 className="font-bold text-2xl text-[#202124] mb-6">Desktop Assessment</h3>
+              <ul className="space-y-3 flex-1 mb-7">
+                {['BCIS-indexed cost modelling', 'No site visit required', 'RICS-aligned methodology', 'Broker-ready report format', 'National coverage'].map(f => (
+                  <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
+                    <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/services#desktop-rca" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
+                Instruct Desktop Assessment →
+              </Link>
+            </div>
+
+            {/* On-Site Survey */}
+            <div className="bg-white border border-[#e8eaed] rounded-2xl p-7 flex flex-col scroll-reveal">
+              <p className="text-xs text-[#5f6368] uppercase tracking-wider font-semibold mb-2">Full physical inspection</p>
+              <h3 className="font-bold text-2xl text-[#202124] mb-6">On-Site Survey</h3>
+              <ul className="space-y-3 flex-1 mb-7">
+                {['RICS surveyor attends in person', 'Listed & heritage buildings', 'Non-standard construction', 'Full dimensional measurement', 'PI insured every instruction'].map(f => (
+                  <li key={f} className="flex items-center gap-2.5 text-sm text-[#3c4043]">
+                    <svg className="w-4 h-4 shrink-0 text-[#1a73e8]" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/services#on-site-survey" className="border border-[#dadce0] text-[#202124] font-semibold text-sm px-5 py-3 rounded-xl text-center hover:border-[#1a73e8] hover:text-[#1a73e8] transition-colors block">
+                Request On-Site Survey →
+              </Link>
+            </div>
+
+            {/* 3-Year Protection — Popular */}
+            <div className="rounded-2xl p-7 flex flex-col relative scroll-reveal" style={{background:'#4a5568'}}>
+              <span className="absolute top-5 right-5 bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full">Popular</span>
+              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{color:'rgba(255,255,255,0.55)'}}>Best value</p>
+              <h3 className="font-bold text-2xl text-white mb-6">3-Year Protection</h3>
+              <ul className="space-y-3 flex-1 mb-7">
+                {['Full assessment in year one', 'Annual BCIS indexation updates', 'Renewal-ready reports', 'Three-year RICS compliance', 'Fully managed service'].map(f => (
+                  <li key={f} className="flex items-center gap-2.5 text-sm" style={{color:'rgba(255,255,255,0.85)'}}>
+                    <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Link href="/contact?service=3year#contact-form" className="bg-white font-semibold text-sm px-5 py-3 rounded-xl text-center hover:bg-white/90 transition-colors block" style={{color:'#4a5568'}}>
+                Enquire About 3-Year Plan →
+              </Link>
+            </div>
+
           </div>
-          <div className="mt-6">
-            <Link href="/services" className="link-amber">View all service details →</Link>
+          <div className="mt-6 text-center">
+            <Link href="/services" className="link-amber">View full service details →</Link>
           </div>
         </div>
       </section>
@@ -268,16 +307,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="bg-white py-14 md:py-20 border-t border-[#dadce0] overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 mb-10 scroll-reveal">
-          <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-            Client Feedback
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">What our clients say.</h2>
-        </div>
-        <ReviewCarousel />
-      </section>
+      <ReviewCarousel />
 
       <ContactSection heading="Check your sum insured. Commission an assessment." />
 

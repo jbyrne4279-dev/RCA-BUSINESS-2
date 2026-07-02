@@ -93,16 +93,22 @@ export default function CommercialPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Office Buildings', desc: 'Standard and high-specification offices. Central London, regional cities and out-of-town business parks.' },
-              { title: 'Retail & Leisure', desc: 'High street retail, retail parks, restaurants and hotels. Full fitout cost included in the assessment.' },
-              { title: 'Industrial & Logistics', desc: 'Warehouses, distribution centres, manufacturing facilities, and specialist industrial premises.' },
-              { title: 'Mixed-Use Developments', desc: 'Buildings containing both residential and commercial elements, assessed under a single instruction.' },
-              { title: 'Listed Commercial', desc: 'Period office buildings, listed retail premises and heritage industrial structures.' },
-              { title: 'Development Sites', desc: 'Post-completion reinstatement cost assessments for newly completed commercial developments.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card p-6">
-                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
+              { title: 'Office Buildings', desc: 'Standard and high-specification offices. Central London, regional cities and out-of-town business parks.', href: '/contact' },
+              { title: 'Retail & Leisure', desc: 'High street retail, retail parks, restaurants and hotels. Full fitout cost included in the assessment.', href: '/contact' },
+              { title: 'Industrial & Logistics', desc: 'Warehouses, distribution centres, manufacturing facilities, and specialist industrial premises.', href: '/contact' },
+              { title: 'Mixed-Use Developments', desc: 'Buildings containing both residential and commercial elements, assessed under a single instruction.', href: '/contact' },
+              { title: 'Listed Commercial', desc: 'Period office buildings, listed retail premises and heritage industrial structures.', href: '/listed-buildings' },
+              { title: 'Development Sites', desc: 'Post-completion reinstatement cost assessments for newly completed commercial developments.', href: '/contact' },
+            ].map(({ title, desc, href }) => (
+              <div key={title} className="brix-card">
+                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
+                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
+                </div>
+                <div className="p-5">
+                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                </div>
               </div>
             ))}
           </div>

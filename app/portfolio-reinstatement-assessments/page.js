@@ -88,16 +88,22 @@ export default function PortfolioPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Managing Agents', desc: 'Portfolio assessments across all managed blocks. Individual reports and consolidated schedule.' },
-              { title: 'Institutional Investors', desc: 'Property funds and REITs requiring consistent RICS-regulated assessments across all UK assets.' },
-              { title: 'Family Offices', desc: 'Private portfolios requiring thorough, discreet and professionally accountable assessments.' },
-              { title: 'Freeholders', desc: 'Multiple freehold titles assessed under a single consolidated instruction with annual update service.' },
-              { title: 'Asset Managers', desc: 'Third-party managed portfolios where the fund requires independent RICS-regulated reinstatement figures.' },
-              { title: 'RTM Companies', desc: 'RTM companies assuming insurance responsibility and requiring initial assessments across multiple blocks.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card-dark p-6">
-                <p className="font-semibold text-white text-sm mb-2">{title}</p>
-                <p className="text-white/50 text-xs leading-relaxed">{desc}</p>
+              { title: 'Managing Agents', desc: 'Portfolio assessments across all managed blocks. Individual reports and consolidated schedule.', href: '/managing-agents-insurance-valuations' },
+              { title: 'Institutional Investors', desc: 'Property funds and REITs requiring consistent RICS-regulated assessments across all UK assets.', href: '/contact' },
+              { title: 'Family Offices', desc: 'Private portfolios requiring thorough, discreet and professionally accountable assessments.', href: '/contact' },
+              { title: 'Freeholders', desc: 'Multiple freehold titles assessed under a single consolidated instruction with annual update service.', href: '/freeholders-leaseholders' },
+              { title: 'Asset Managers', desc: 'Third-party managed portfolios where the fund requires independent RICS-regulated reinstatement figures.', href: '/contact' },
+              { title: 'RTM Companies', desc: 'RTM companies assuming insurance responsibility and requiring initial assessments across multiple blocks.', href: '/managing-agents-insurance-valuations' },
+            ].map(({ title, desc, href }) => (
+              <div key={title} className="brix-card">
+                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
+                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" /></svg>
+                </div>
+                <div className="p-5">
+                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                </div>
               </div>
             ))}
           </div>

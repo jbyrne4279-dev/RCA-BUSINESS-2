@@ -284,6 +284,19 @@
 .badge-dark  { background: rgba(26,115,232,0.2); color: #7baaf7; }
 .badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
 
+/* ── BRIX image-top content card ── */
+.brix-card {
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.brix-card:hover {
+  box-shadow: 0 8px 32px rgba(60,64,67,0.11), 0 2px 6px rgba(60,64,67,0.06);
+  transform: translateY(-3px);
+}
+
 /* ── Icon circle ── */
 .icon-circle {
   width: 2.75rem;

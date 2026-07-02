@@ -160,16 +160,22 @@ export default function ListedBuildingsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Grade II listed buildings', desc: '91% of all listed buildings fall into this category. A site-based specialist assessment is required to establish an accurate rebuild cost. Desktop rates do not apply.' },
-              { title: 'Grade II* listed buildings', desc: 'Buildings of more than special interest. Grade II* and Grade I buildings cannot be assessed by desktop and require an on-site inspection.' },
-              { title: 'Grade I listed buildings', desc: 'Buildings of exceptional interest. Reinstatement demands the highest level of specialist expertise and commands the highest cost per m².' },
-              { title: 'Conservation area buildings', desc: 'Unlisted buildings within a conservation area may carry significant material and planning cost constraints depending on local authority requirements.' },
-              { title: 'Thatched and period properties', desc: 'Thatched properties frequently carry listed status. Specialist thatch rates, heritage materials and conservation consents all require individual pricing.' },
-              { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card p-6">
-                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
+              { title: 'Grade II listed buildings', desc: '91% of all listed buildings fall into this category. A site-based specialist assessment is required to establish an accurate rebuild cost. Desktop rates do not apply.', href: '/contact' },
+              { title: 'Grade II* listed buildings', desc: 'Buildings of more than special interest. Grade II* and Grade I buildings cannot be assessed by desktop and require an on-site inspection.', href: '/contact' },
+              { title: 'Grade I listed buildings', desc: 'Buildings of exceptional interest. Reinstatement demands the highest level of specialist expertise and commands the highest cost per m².', href: '/contact' },
+              { title: 'Conservation area buildings', desc: 'Unlisted buildings within a conservation area may carry significant material and planning cost constraints depending on local authority requirements.', href: '/contact' },
+              { title: 'Thatched and period properties', desc: 'Thatched properties frequently carry listed status. Specialist thatch rates, heritage materials and conservation consents all require individual pricing.', href: '/contact' },
+              { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.', href: '/blocks-of-flats' },
+            ].map(({ title, desc, href }) => (
+              <div key={title} className="brix-card">
+                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
+                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+                </div>
+                <div className="p-5">
+                  <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                  <p className="text-[#5f6368] text-xs leading-relaxed mb-3">{desc}</p>
+                  <Link href={href} className="text-[#1a73e8] text-xs font-semibold hover:text-[#1254b5] transition-colors">Learn more →</Link>
+                </div>
               </div>
             ))}
           </div>
