@@ -153,16 +153,16 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact' },
-              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact' },
-              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact' },
-              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments' },
-            ].map(({ title, desc, href }) => (
+              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact', img: '/AdobeStock_208633670.jpeg' },
+              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_258095379.jpeg' },
+              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_1477785304.jpeg' },
+              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_1956380728.jpeg' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_544083541.jpeg' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/rebuild-cost-assessment-london.jpeg' },
+            ].map(({ title, desc, href, img }) => (
               <div key={title} className="brix-card">
-                <div className="h-32 flex items-center justify-center" style={{background:'#f1f3f9'}}>
-                  <svg className="w-9 h-9" fill="none" stroke="#9aa7bd" strokeWidth="1.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" /></svg>
+                <div className="relative h-40 overflow-hidden">
+                  <Image src={img} alt={title} fill className="object-cover" />
                 </div>
                 <div className="p-5">
                   <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
