@@ -19,24 +19,25 @@
 
 * { box-sizing: border-box; }
 
-/* ── Filled primary button (Google style) ── */
+/* ── Filled primary button ── */
 .btn-shine {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #1a73e8;
+  background: linear-gradient(135deg, #1a73e8 0%, #1558c0 100%);
   color: #fff;
   font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  padding: 0.625rem 1.5rem;
-  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.65rem 1.625rem;
+  border-radius: 8px;
   border: none;
-  transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+  transition: background 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
   cursor: pointer;
+  box-shadow: 0 1px 3px rgba(26,115,232,0.3), 0 4px 12px rgba(26,115,232,0.15);
 }
-.btn-shine:hover  { background: #1557b0; box-shadow: 0 1px 4px rgba(26,115,232,0.4); }
-.btn-shine:active { transform: scale(0.98); }
+.btn-shine:hover  { background: linear-gradient(135deg, #1c7ef5 0%, #1a65d6 100%); box-shadow: 0 2px 8px rgba(26,115,232,0.45), 0 6px 20px rgba(26,115,232,0.2); }
+.btn-shine:active { transform: scale(0.97); }
 
 /* ── Outlined button ── */
 .btn-ghost {
@@ -46,16 +47,16 @@
   background: transparent;
   color: #1a73e8;
   font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  padding: 0.625rem 1.5rem;
-  border-radius: 6px;
-  border: 1.5px solid #dadce0;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.65rem 1.625rem;
+  border-radius: 8px;
+  border: 1.5px solid #c5d0e8;
+  transition: background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.12s ease;
   cursor: pointer;
 }
-.btn-ghost:hover  { background: #e8f0fe; border-color: #1a73e8; }
-.btn-ghost:active { transform: scale(0.98); }
+.btn-ghost:hover  { background: #eef3fd; border-color: #1a73e8; box-shadow: 0 2px 8px rgba(26,115,232,0.12); }
+.btn-ghost:active { transform: scale(0.97); }
 
 /* ── Text link / inline CTA ── */
 .link-amber {
@@ -192,3 +193,108 @@
 .animate-marquee {
   animation: marquee 40s linear infinite;
 }
+
+/* ── Display typeface (Cormorant Garamond — loaded in layout.js) ── */
+.font-display {
+  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+  font-style: normal;
+}
+
+/* ── Frosted-glass navbar ── */
+.nav-glass {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+/* ── Hero gradient background ── */
+.hero-bg {
+  background: linear-gradient(155deg, #ffffff 0%, #f3f7ff 60%, #eaf0fd 100%);
+}
+
+/* ── Lookscout card — light ── */
+.ls-card {
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  border-radius: 16px;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+.ls-card:hover {
+  box-shadow: 0 8px 32px rgba(60,64,67,0.11), 0 2px 6px rgba(60,64,67,0.06);
+  border-color: #c5cfe0;
+  transform: translateY(-3px);
+}
+
+/* ── Lookscout card — dark ── */
+.ls-card-dark {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 14px;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.ls-card-dark:hover {
+  background: rgba(255,255,255,0.13);
+  border-color: rgba(255,255,255,0.25);
+  transform: translateY(-2px);
+}
+
+/* ── Stat card ── */
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.stat-card:hover {
+  box-shadow: 0 8px 28px rgba(60,64,67,0.10), 0 2px 6px rgba(60,64,67,0.05);
+  transform: translateY(-3px);
+}
+
+/* ── Step number badge ── */
+.step-num {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a73e8, #1254b5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(26,115,232,0.4);
+}
+
+/* ── Badge / chip ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.badge-blue  { background: #e8f0fe; color: #1a73e8; }
+.badge-dark  { background: rgba(26,115,232,0.2); color: #7baaf7; }
+.badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
+
+/* ── Icon circle ── */
+.icon-circle {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+.icon-circle-red   { background: #fce8e6; }
+.icon-circle-blue  { background: #e8f0fe; }
+.icon-circle-amber { background: #fef3e2; }
