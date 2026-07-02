@@ -42,8 +42,9 @@ export default function BlocksOfFlatsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-2xl overflow-hidden h-72 md:h-80 lg:h-96 shadow-xl">
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[480px]" style={{boxShadow:'0 24px 64px rgba(0,0,0,0.35), 0 4px 16px rgba(0,0,0,0.2)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
         </div>
       </section>

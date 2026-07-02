@@ -66,7 +66,7 @@ export default function ServicesPage() {
             </div>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
-          <div className="relative rounded-2xl overflow-hidden shadow-lg h-80 md:h-96 lg:h-[520px]">
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment, building survey"
