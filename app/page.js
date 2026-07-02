@@ -98,7 +98,10 @@ export default function HomePage() {
               <p className="text-[#5f6368] text-base leading-relaxed mb-6">
                 Freeholders, managing agents and RTM companies arranging buildings insurance must base the sum insured on reinstatement cost. A RICS-regulated assessment is the only documented, defensible way to establish that figure. Reinstatement cost assessment is the sole focus of our practice.
               </p>
-              <Link href="/services" className="link-amber">About reinstatement cost assessments →</Link>
+              <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
+                <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+                <Link href="/services" className="btn-ghost">How It Works</Link>
+              </div>
             </div>
             <div className="space-y-4 scroll-reveal">
               <div className="ls-card p-6">
@@ -148,7 +151,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/blocks-of-flats" className="link-amber">Blocks of flats assessment →</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Get a Compliant Assessment</Link>
           </div>
         </div>
       </section>
@@ -179,17 +182,20 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              { title: 'Managing Agents', href: '/managing-agents-insurance-valuations' },
-              { title: 'RTM Companies', href: '/managing-agents-insurance-valuations' },
-              { title: 'Freeholders', href: '/freeholders-leaseholders' },
-              { title: 'Leaseholders', href: '/freeholders-leaseholders' },
-              { title: 'Block Managers', href: '/block-managers-reinstatement-cost-assessments' },
-              { title: 'Landlords', href: '/blocks-of-flats' },
-            ].map(({ title, href }) => (
+              { title: 'Managing Agents', benefit: 'Discharge your lease obligation and protect your PI file', href: '/managing-agents-insurance-valuations' },
+              { title: 'RTM Companies', benefit: 'Establish a compliant figure from the moment you assume responsibility', href: '/managing-agents-insurance-valuations' },
+              { title: 'Freeholders', benefit: 'Defend the insuring covenant with a RICS-regulated declared value', href: '/freeholders-leaseholders' },
+              { title: 'Leaseholders', benefit: 'Challenge an inadequate sum insured with documented evidence', href: '/freeholders-leaseholders' },
+              { title: 'Block Managers', benefit: 'Consistent, compliant figures across every block under management', href: '/block-managers-reinstatement-cost-assessments' },
+              { title: 'Landlords', benefit: 'Right-size your declared value — over or underinsured', href: '/blocks-of-flats' },
+            ].map(({ title, benefit, href }) => (
               <Link key={title} href={href}
-                className="ls-card-dark px-5 py-4 text-white font-medium text-sm flex items-center justify-between group">
-                {title}
-                <span className="text-white/40 group-hover:text-white/90 group-hover:translate-x-1 transition-all text-base">→</span>
+                className="ls-card-dark px-5 py-5 text-white flex flex-col gap-1 group">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-sm">{title}</span>
+                  <span className="text-white/40 group-hover:text-white/90 group-hover:translate-x-1 transition-all text-base">→</span>
+                </div>
+                <p className="text-white/50 text-xs leading-snug group-hover:text-white/70 transition-colors">{benefit}</p>
               </Link>
             ))}
           </div>
@@ -227,6 +233,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* WHY US */}
+      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 scroll-reveal">
+            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+              Why Cavendish &amp; Rowe
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">The specialist practice for reinstatement cost assessments.</h2>
+            <p className="text-[#5f6368] text-base max-w-xl mx-auto">One practice. One focus. Every instruction carries the same RICS-regulated standard.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { title: 'Specialist only', desc: 'Reinstatement cost assessment is the only service we offer. No general surveying, no valuations — one focus, done properly.' },
+              { title: 'RICS regulated', desc: 'Every assessment carried out by or under the direct supervision of a RICS-registered member. Defensible at tribunal.' },
+              { title: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction for most standard residential and commercial properties.' },
+              { title: 'PI insured', desc: 'Comprehensive professional indemnity insurance on every instruction. Every figure is professionally backed.' },
+            ].map(({ title, desc }) => (
+              <div key={title} className="ls-card p-6 scroll-reveal">
+                <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
+                <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section className="bg-[#f8f9fa] py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
@@ -234,7 +266,7 @@ export default function HomePage() {
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Our Assessments
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Three ways to instruct.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-3">Choose the right assessment.</h2>
             <p className="text-[#5f6368] text-base max-w-lg mx-auto">Choose the assessment that fits your property and compliance needs.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -299,13 +331,15 @@ export default function HomePage() {
       </section>
 
       {/* RICS TRUST */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e4e8f0]" style={{background:'linear-gradient(135deg,#f0f5ff 0%,#e8f0fe 100%)'}}>
-        <div className="max-w-4xl mx-auto text-center scroll-reveal">
-          <span className="badge badge-blue">RICS Guidance</span>
-          <blockquote className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-[#202124] leading-[1.15] mb-8">
-            &ldquo;Reinstatement cost assessments should be carried out regularly by a competent professional to ensure the sum insured remains adequate.&rdquo;
-          </blockquote>
-          <p className="text-[#5f6368] text-sm">Royal Institution of Chartered Surveyors</p>
+      <section className="bg-white py-14 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
+        <div className="max-w-3xl mx-auto scroll-reveal">
+          <div className="border-l-4 border-[#1a73e8] pl-8">
+            <p className="text-xs font-semibold text-[#1a73e8] uppercase tracking-[0.15em] mb-5">RICS Guidance</p>
+            <blockquote className="text-xl md:text-2xl font-semibold text-[#202124] leading-[1.5] mb-5">
+              &ldquo;Reinstatement cost assessments should be carried out regularly by a competent professional to ensure the sum insured remains adequate.&rdquo;
+            </blockquote>
+            <cite className="text-[#5f6368] text-sm not-italic font-medium">Royal Institution of Chartered Surveyors</cite>
+          </div>
         </div>
       </section>
 
