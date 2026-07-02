@@ -1,6 +1,6 @@
 ﻿'use client'
 import Link from 'next/link'
-import Image from 'next/image'
+import LogoSpin from './LogoSpin'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 
@@ -22,19 +22,8 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
 
         {/* Logo */}
-        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5" style={{perspective:'300px'}}>
-          <Image
-            src="/cr-monogram.svg"
-            alt="Cavendish & Rowe"
-            width={36}
-            height={36}
-            priority
-            className="h-9 w-9 object-contain"
-            style={{
-              animation: 'logo-rock 4.5s ease-in-out infinite',
-              transformStyle: 'preserve-3d',
-            }}
-          />
+        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5">
+          <LogoSpin width={36} height={36} className="h-9 w-9" priority />
         </Link>
 
         {/* Desktop nav */}

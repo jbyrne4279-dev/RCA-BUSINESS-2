@@ -1,5 +1,5 @@
 ﻿import Link from 'next/link'
-import Image from 'next/image'
+import LogoSpin from './LogoSpin'
 
 export default function Footer() {
   return (
@@ -26,13 +26,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3 step-reveal-item">
-              <Image
-                src="/cr-monogram.svg"
-                alt="Cavendish &amp; Rowe"
-                width={40}
-                height={40}
-                className="h-10 w-10 object-contain invert opacity-90"
-              />
+              <LogoSpin width={40} height={40} className="h-10 w-10 invert opacity-90" />
               <span className="text-white font-semibold text-sm tracking-wide">Cavendish <span className="text-white/40 font-light">&amp;</span> Rowe</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
