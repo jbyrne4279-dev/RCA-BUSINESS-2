@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -30,20 +31,23 @@ export default function CommercialPage() {
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               RICS-regulated assessments for offices, retail, industrial premises and mixed-use developments. Accepted by all UK commercial insurers without amendment.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+              <Link href="/services" className="btn-ghost">Our Services</Link>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-5">
-            {[
-              { n: 'Higher', label: 'commercial build costs vs pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
-              { n: '24 hrs', label: 'desktop assessment turnaround' },
-              { n: '100%', label: 'of reports accepted by UK insurers' },
-              { n: 'RICS', label: 'regulated, every assessment, every time' },
-            ].map(({ n, label }) => (
-              <div key={n} className="stat-card p-6 text-center">
-                <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
-                <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
-              </div>
-            ))}
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+            <Image
+              src="/AdobeStock_158046067.jpeg"
+              alt="Commercial reinstatement cost assessment"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-white/90 text-sm font-medium">RICS-regulated assessments for all commercial property types.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -30,23 +30,23 @@ export default function PortfolioPage() {
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               Individual RICS-regulated reports per property, a consolidated summary schedule, and managed annual BCIS indexation, all under a single engagement.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
+              <Link href="/services" className="btn-ghost">Our Services</Link>
+            </div>
           </div>
-          <div className="grid grid-cols-1 gap-5">
-            {[
-              { title: 'Individual property reports', desc: 'Each asset assessed individually, with its own RICS methodology statement and documented basis.' },
-              { title: 'Consolidated portfolio schedule', desc: 'All assets, figures, assessment dates and recommended review dates consolidated in a single broker-ready document.' },
-              { title: 'Managed annual updates', desc: 'Annual BCIS indexation applied across all assets under our 3-Year Protection plan.' },
-              { title: 'Single point of contact', desc: 'A single dedicated surveyor manages the full portfolio from instruction to annual update.' },
-            ].map(({ title, desc }) => (
-              <div key={title} className="ls-card p-5 flex gap-3">
-                <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
-                <div>
-                  <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
-                  <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+            <Image
+              src="/AdobeStock_1477785304.jpeg"
+              alt="Portfolio reinstatement cost assessment"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-white/90 text-sm font-medium">Individual RICS reports per asset. One consolidated instruction.</p>
+            </div>
           </div>
         </div>
       </section>

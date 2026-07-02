@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -20,19 +21,33 @@ export default function BlockManagersPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="badge badge-blue">Block Managers</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.1] mb-5">
               Reinstatement assessments for block managers.
             </h1>
-          </div>
-          <div>
-            <p className="text-white/60 text-lg leading-relaxed mb-8">
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               RICS-regulated assessments across every block under your management. Consistent, documented, and accepted at renewal without challenge.
             </p>
-            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+              <Link href="/services" className="btn-ghost">Our Services</Link>
+            </div>
+          </div>
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+            <Image
+              src="/AdobeStock_208633670.jpeg"
+              alt="Block manager reinstatement cost assessment"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-white/90 text-sm font-medium">RICS-regulated figures across your entire managed portfolio.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -64,7 +64,10 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
-            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+              <Link href="/services#desktop-rca" className="btn-ghost">View Services</Link>
+            </div>
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
             <Image

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -19,30 +20,50 @@ export default function ContactPage() {
     <main>
 
       {/* HEADER */}
-      <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-dark">
+            <span className="badge badge-blue">
               Get In Touch
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#202124] leading-[1.1] mb-5">
               Let&rsquo;s get your assessment underway.
             </h1>
+            <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
+              24-hour response on all enquiries. Speak to a specialist surveyor directly on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+            </p>
+            <div className="space-y-4 mb-8">
+              {[
+                { label: 'Telephone', value: '020 3178 8099', href: 'tel:+442031788099' },
+                { label: 'Email', value: 'info@rca-ltd.com', href: 'mailto:info@rca-ltd.com' },
+                { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
+              ].map(({ label, value, href }) => (
+                <div key={label} className="flex gap-3 items-baseline">
+                  <p className="text-xs font-semibold text-[#9aa0a6] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
+                  {href
+                    ? <a href={href} className="text-[#202124] font-semibold hover:text-[#1a73e8] transition-colors">{value}</a>
+                    : <p className="text-[#202124] font-semibold">{value}</p>
+                  }
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a href="#contact-form" className="btn-shine">Send an Enquiry</a>
+              <a href="/services" className="btn-ghost">Our Services</a>
+            </div>
           </div>
-          <div className="space-y-6 mt-4">
-            {[
-              { label: 'Telephone', value: '020 3178 8099', href: 'tel:+442031788099' },
-              { label: 'Email', value: 'info@rca-ltd.com', href: 'mailto:info@rca-ltd.com' },
-              { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
-            ].map(({ label, value, href }) => (
-              <div key={label} className="border-t border-white/10 pt-5">
-                <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-1.5">{label}</p>
-                {href
-                  ? <a href={href} className="text-white text-lg font-semibold hover:text-[#7baaf7] transition-colors">{value}</a>
-                  : <p className="text-white text-lg font-semibold">{value}</p>
-                }
-              </div>
-            ))}
+          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(60,64,67,0.18), 0 4px 16px rgba(60,64,67,0.1)'}}>
+            <Image
+              src="/AdobeStock_1956380728.jpeg"
+              alt="Cavendish and Rowe reinstatement cost assessment surveyors"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#202124]/50 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6">
+              <p className="text-white/90 text-sm font-medium">All enquiries receive a response within 24 hours on business days.</p>
+            </div>
           </div>
         </div>
       </section>
