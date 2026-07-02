@@ -57,7 +57,7 @@ export default function HomePage() {
       {/* STAT STRIP */}
       <div className="bg-[#f8f9fa] border-b border-[#e4e8f0] py-10 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
-          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'#4f5a73'}}>
+          <div className="rounded-2xl overflow-hidden grid grid-cols-2 md:grid-cols-4" style={{background:'#1a73e8'}}>
             {[
               { iconD: 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z', n: 'Most', label: 'UK buildings carry an inaccurate sum insured' },
               { iconD: 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941', n: 'Higher', label: 'UK build costs vs pre-pandemic levels (BCIS)' },
