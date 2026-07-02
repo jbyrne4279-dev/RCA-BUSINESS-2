@@ -17,7 +17,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full nav-glass border-b border-[#dadce0]/70"
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-[#dadce0]"
       style={{ boxShadow: '0 1px 0 rgba(60,64,67,0.08), 0 2px 12px rgba(60,64,67,0.06)' }}>
       <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
 
