@@ -27,7 +27,7 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue mb-6">Commercial Property</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Commercial <span className="text-[#0057FF]">underinsurance</span> starts with the <span className="text-[#0057FF]">wrong figure</span>.
+              Commercial <span className="blue-keyword">underinsurance</span> starts with the <span className="blue-keyword">wrong figure</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex — and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
@@ -60,7 +60,7 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Why commercial reinstatement is so <span className="text-[#0057FF]">complex to get right</span>.
+              Why commercial reinstatement is so <span className="blue-keyword">complex to get right</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Commercial buildings carry hidden cost layers that generic tools ignore entirely. Three drivers account for the majority of commercial underinsurance in the UK:
@@ -146,7 +146,7 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue mb-4">Coverage</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Every commercial property type, <span className="text-[#0057FF]">covered</span>.
+              Every commercial property type, <span className="blue-keyword">covered</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               From single-tenant industrial units to multi-let city centre offices, our RICS-regulated assessors have the sector knowledge to establish an accurate reinstatement cost — whatever the asset class.
@@ -222,7 +222,7 @@ export default function CommercialPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Protect your commercial asset with a <span className="text-[#0057FF]">RICS-regulated assessment</span>.
+              Protect your commercial asset with a <span className="blue-keyword">RICS-regulated assessment</span>.
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
               Establish the correct sum insured before an underinsurance clause is triggered. Instructions completed within 24 hours for desktop assessments.
@@ -268,6 +268,7 @@ export default function CommercialPage() {
     </main>
   )
 }
+
 
 
 

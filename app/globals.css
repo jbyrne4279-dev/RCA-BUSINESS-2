@@ -18,7 +18,7 @@
   background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(0,87,255,0.08) 0%, transparent 60%), #ffffff;
 }
 
-/* ── Pill primary button — teal ── */
+/* ── Pill primary button ── */
 .btn-shine {
   display: inline-flex;
   align-items: center;
@@ -31,13 +31,13 @@
   color: #ffffff;
   text-decoration: none;
   border: none;
-  box-shadow: 0 4px 14px rgba(0,87,255,0.35);
+  box-shadow: 0 4px 14px rgba(0,87,255,0.45), 0 0 24px rgba(0,87,255,0.25);
   transition: transform 0.15s, box-shadow 0.15s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.btn-shine:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,87,255,0.45); }
+.btn-shine:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(0,87,255,0.6), 0 0 40px rgba(0,87,255,0.35); }
 .btn-shine:active { transform: scale(0.97); }
 
 /* ── Ghost outline button ── */
@@ -53,12 +53,13 @@
   border: 1.5px solid #0057FF;
   text-decoration: none;
   background: transparent;
-  transition: background 0.15s, color 0.15s;
+  box-shadow: 0 0 12px rgba(0,87,255,0.15);
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.btn-ghost:hover { background: #0057FF; color: #ffffff; }
+.btn-ghost:hover { background: #0057FF; color: #ffffff; box-shadow: 0 0 24px rgba(0,87,255,0.4); }
 .btn-ghost:active { transform: scale(0.97); }
 
 /* ── Text link / inline CTA ── */
@@ -133,7 +134,7 @@
   letter-spacing: 0.06em;
   margin-bottom: 1rem;
 }
-.badge-blue  { background: rgba(0,87,255,0.1); color: #0040CC; border: 1px solid rgba(0,87,255,0.25); }
+.badge-blue  { background: rgba(0,87,255,0.1); color: #0040CC; border: 1px solid rgba(0,87,255,0.25); box-shadow: 0 0 10px rgba(0,87,255,0.15); }
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
 .badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
 
@@ -187,6 +188,7 @@
   justify-content: center;
   font-size: 0.75rem;
   font-weight: 700;
+  box-shadow: 0 0 14px rgba(0,87,255,0.45);
 }
 
 /* ── Icon circle ── */
@@ -199,11 +201,17 @@
   justify-content: center;
 }
 .icon-circle-red   { background: #fef2f2; color: #dc2626; }
-.icon-circle-blue  { background: rgba(0,87,255,0.1); color: #0057FF; }
+.icon-circle-blue  { background: rgba(0,87,255,0.1); color: #0057FF; box-shadow: 0 0 12px rgba(0,87,255,0.2); }
 .icon-circle-amber { background: #fffbeb; color: #d97706; }
 
 /* ── Tick glow ── */
-.tick-glow { filter: drop-shadow(0 0 4px rgba(0,87,255,0.5)); }
+.tick-glow { filter: drop-shadow(0 0 6px rgba(0,87,255,0.7)); }
+
+/* ── Electric blue keyword highlight glow ── */
+.blue-keyword {
+  color: #0057FF;
+  text-shadow: 0 0 20px rgba(0,87,255,0.4), 0 0 8px rgba(0,87,255,0.2);
+}
 
 /* ── BRIX image-top content card ── */
 .brix-card {

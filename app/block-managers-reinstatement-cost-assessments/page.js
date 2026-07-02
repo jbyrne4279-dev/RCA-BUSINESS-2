@@ -27,7 +27,7 @@ export default function BlockManagersPage() {
           <div>
             <span className="badge badge-blue mb-6">Block Managers</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              <span className="text-[#0057FF]">Compliant figures</span> across every block you manage.
+              <span className="blue-keyword">Compliant figures</span> across every block you manage.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage — documented, defensible, and accepted at renewal without challenge.
@@ -62,7 +62,7 @@ export default function BlockManagersPage() {
           <div>
             <span className="badge badge-blue mb-5">The Compliance Burden</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Every block you manage needs a <span className="text-[#0057FF]">regular RICS review</span>.
+              Every block you manage needs a <span className="blue-keyword">regular RICS review</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               RICS guidance requires formal reassessment at least every three years, with annual inflation adjustments in between. Across a portfolio of blocks, keeping track of each renewal cycle — and ensuring no property lapses — is a material compliance obligation.
@@ -132,7 +132,7 @@ export default function BlockManagersPage() {
           <div>
             <span className="badge badge-blue mb-5">How We Work With Block Managers</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              One instruction covers your <span className="text-[#0057FF]">entire managed portfolio</span>.
+              One instruction covers your <span className="blue-keyword">entire managed portfolio</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               We work with block management firms of all sizes — from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
@@ -154,7 +154,7 @@ export default function BlockManagersPage() {
           <div className="mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              Built for <span className="text-[#0057FF]">block management firms</span>.
+              Built for <span className="blue-keyword">block management firms</span>.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -218,7 +218,7 @@ export default function BlockManagersPage() {
               Remove the liability
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Your portfolio. <span className="text-[#0057FF]">Compliant</span>. This renewal season.
+              Your portfolio. <span className="blue-keyword">Compliant</span>. This renewal season.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals — so you never let compliance lapse again.
@@ -265,6 +265,7 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 
 
 

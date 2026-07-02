@@ -27,7 +27,7 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Right-size every <span className="text-[#0057FF]">declared value</span> across your portfolio.
+              Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               A managed RICS assessment service for property portfolios — individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">Why Portfolios Need Specialist Handling</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
-              <span className="text-[#0057FF]">Inconsistent figures</span> across a portfolio amplify every risk.
+              <span className="blue-keyword">Inconsistent figures</span> across a portfolio amplify every risk.
             </h2>
             <ul className="space-y-4 mb-8">
               {[
@@ -139,7 +139,7 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">How Portfolio Instructions Work</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
-              One instruction. <span className="text-[#0057FF]">Managed</span> from start to every renewal.
+              One instruction. <span className="blue-keyword">Managed</span> from start to every renewal.
             </h2>
             <ol className="space-y-5 mb-8">
               {[
@@ -171,7 +171,7 @@ export default function PortfolioPage() {
           <div className="text-center mb-12">
             <span className="badge badge-blue">Portfolio Features</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4">
-              Everything managed <span className="text-[#0057FF]">under one roof</span>.
+              Everything managed <span className="blue-keyword">under one roof</span>.
             </h2>
             <p className="text-[#64748b] text-base mt-4 max-w-xl mx-auto">
               A portfolio instruction is not a bulk order — it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
@@ -230,7 +230,7 @@ export default function PortfolioPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              <span className="text-[#0057FF]">Consolidate</span> your portfolio under one instruction today.
+              <span className="blue-keyword">Consolidate</span> your portfolio under one instruction today.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Send us your asset list and we will return a consolidated quote within one business day — no obligation.
@@ -272,6 +272,7 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 
 
 

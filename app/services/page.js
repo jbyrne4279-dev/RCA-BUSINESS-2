@@ -27,7 +27,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Reinstatement Cost Assessment</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              Three service tiers. One <span className="text-[#0057FF]">specialist firm</span>.
+              Three service tiers. One <span className="blue-keyword">specialist firm</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Why Choose a Specialist</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Generic tools cannot replace a <span className="text-[#0057FF]">RICS specialist</span>.
+              Generic tools cannot replace a <span className="blue-keyword">RICS specialist</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               UK construction costs rose over 30% between 2020 and 2024 — any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer.
@@ -109,7 +109,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Three service tiers. One <span className="text-[#0057FF]">specialist</span>.
+              Three service tiers. One <span className="blue-keyword">specialist</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Whether you need a fast desktop report, a full on-site inspection, or a managed three-year compliance programme, we have a service to match your property and your obligations.
@@ -125,7 +125,7 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <span className="badge badge-blue">Choose Your Service</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
-              Pick the assessment that <span className="text-[#0057FF]">fits your property</span>.
+              Pick the assessment that <span className="blue-keyword">fits your property</span>.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -182,7 +182,7 @@ export default function ServicesPage() {
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Not sure which <span className="text-[#0057FF]">service you need</span>?
+              Not sure which <span className="blue-keyword">service you need</span>?
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
               Tell us about your property and we'll recommend the right service. Most instructions are confirmed same day.
@@ -212,12 +212,13 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ContactSection heading="Not sure which <span className="text-[#0057FF]">service you need</span>? We'll advise." />
+      <ContactSection heading="Not sure which <span className="blue-keyword">service you need</span>? We'll advise." />
       <FaqSection description="Still deciding? Use these answers to narrow it down — or contact us and we'll recommend the right service for your property." items={faqItems} />
 
     </main>
   )
 }
+
 
 
 

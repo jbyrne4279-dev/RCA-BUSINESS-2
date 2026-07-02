@@ -28,7 +28,7 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-6">RICS-Regulated Reinstatement Cost Assessments</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              The <span className="text-[#0057FF]">correct sum insured</span>, for every property.
+              The <span className="blue-keyword">correct sum insured</span>, for every property.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Specialist reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in 24 hours.
@@ -113,7 +113,7 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-5">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Reinstatement cost is not the same as <span className="text-[#0057FF]">market value</span>.
+              Reinstatement cost is not the same as <span className="blue-keyword">market value</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               After a total loss, insurers pay to rebuild - not to match market value. If the declared figure is wrong, the insurer applies the average clause and reduces the payout in proportion to the shortfall. Managing agents and freeholders can be held personally liable for the gap.
@@ -136,7 +136,7 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-5">Who We Help</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              We help the professionals who carry the <span className="text-[#0057FF]">compliance obligation</span>.
+              We help the professionals who carry the <span className="blue-keyword">compliance obligation</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               One practice. One specialisation. Every instruction is a RICS-regulated reinstatement cost assessment delivered to the right audience.
@@ -185,7 +185,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Client Feedback</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="text-[#0057FF]">Customers</span> Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
             <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -219,7 +219,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Our Assessments Cover <span className="text-[#0057FF]">Every Property Type</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Our Assessments Cover <span className="blue-keyword">Every Property Type</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -269,7 +269,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-              Get Started. <span className="text-[#0057FF]">No Obligation</span> Required.
+              Get Started. <span className="blue-keyword">No Obligation</span> Required.
             </h2>
             <p className="text-white/80 text-base mb-8 max-w-md">
               80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in 24 hours.
@@ -312,6 +312,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 
