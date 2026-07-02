@@ -26,7 +26,7 @@ export default function ManagingAgentsPage() {
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Discharge your <span className="blue-keyword">compliance obligation</span>.
             </h1>
@@ -52,7 +52,7 @@ export default function ManagingAgentsPage() {
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="badge badge-blue">The Risk of Getting It Wrong</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               <span className="blue-keyword">Underinsurance</span> is your risk, not the freeholder&apos;s.
             </h2>
@@ -115,7 +115,7 @@ export default function ManagingAgentsPage() {
 
           {/* Right: What managing agents get from us */}
           <div>
-            <span className="badge badge-blue">What Managing Agents Get</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               A broker-ready report that <span className="blue-keyword">protects you</span>, your PI file, and your clients.
             </h2>
@@ -147,7 +147,7 @@ export default function ManagingAgentsPage() {
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="badge badge-blue">Why Agents Choose Us</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
               Built around your <span className="blue-keyword">renewal cycle</span>.
             </h2>
@@ -233,6 +233,7 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
 
 
 
