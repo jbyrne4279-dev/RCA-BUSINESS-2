@@ -141,7 +141,6 @@ export default function BlockManagersPage() {
             </div>
 
           </div>
-          </div>
         </div>
       </section>
 
