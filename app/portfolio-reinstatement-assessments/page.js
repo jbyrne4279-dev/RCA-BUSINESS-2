@@ -25,7 +25,7 @@ export default function PortfolioPage() {
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <span className="badge badge-blue">Portfolio Assessments</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
             </h1>
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
 
           {/* Text left */}
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Portfolio Assessments</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
               <span className="blue-keyword">Inconsistent figures</span> across a portfolio amplify every risk.
             </h2>
@@ -137,7 +137,7 @@ export default function PortfolioPage() {
 
           {/* How it works text right */}
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Portfolio Assessments</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
               One instruction. <span className="blue-keyword">Managed</span> from start to every renewal.
             </h2>
@@ -169,7 +169,7 @@ export default function PortfolioPage() {
       <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Portfolio Assessments</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4">
               Everything managed <span className="blue-keyword">under one roof</span>.
             </h2>
@@ -272,6 +272,7 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 
 
 

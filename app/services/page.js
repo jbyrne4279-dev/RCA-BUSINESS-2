@@ -25,7 +25,7 @@ export default function ServicesPage() {
       <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="badge badge-blue">Our Services</span>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Three service tiers. One <span className="blue-keyword">specialist firm</span>.
             </h1>
@@ -57,7 +57,7 @@ export default function ServicesPage() {
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               Generic tools cannot replace a <span className="blue-keyword">RICS specialist</span>.
             </h2>
@@ -107,7 +107,7 @@ export default function ServicesPage() {
             ))}
           </div>
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
               Three service tiers. One <span className="blue-keyword">specialist</span>.
             </h2>
@@ -123,7 +123,7 @@ export default function ServicesPage() {
       <section id="service-cards" className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
+            <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
               Pick the assessment that <span className="blue-keyword">fits your property</span>.
             </h2>
@@ -218,6 +218,7 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 
 
 
