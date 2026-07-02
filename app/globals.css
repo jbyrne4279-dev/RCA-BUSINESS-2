@@ -207,10 +207,9 @@
 /* ── Tick glow ── */
 .tick-glow { filter: drop-shadow(0 0 6px rgba(0,87,255,0.7)); }
 
-/* ── Electric blue keyword highlight glow ── */
+/* ── Electric blue keyword highlight ── */
 .blue-keyword {
   color: #0057FF;
-  text-shadow: 0 0 20px rgba(0,87,255,0.4), 0 0 8px rgba(0,87,255,0.2);
 }
 
 /* ── BRIX image-top content card ── */
