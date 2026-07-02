@@ -27,7 +27,7 @@ export default function BlockManagersPage() {
           <div>
             <span className="badge badge-blue mb-6">Block Managers</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Compliant figures across every block you manage.
+              <span className="text-[#0057FF]">Compliant figures</span> across every block you manage.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage — documented, defensible, and accepted at renewal without challenge.
@@ -265,4 +265,5 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 

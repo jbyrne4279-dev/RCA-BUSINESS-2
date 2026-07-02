@@ -27,7 +27,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Reinstatement Cost Assessment</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              Three service tiers. One specialist firm.
+              Three service tiers. One <span className="text-[#0057FF]">specialist firm</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
@@ -218,4 +218,5 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 

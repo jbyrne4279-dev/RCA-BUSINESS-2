@@ -28,7 +28,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Specialist assessments for every block type.
+              <span className="text-[#0057FF]">Specialist assessments</span> for every block type.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               When a block is underinsured, the average clause reduces every claim — and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
@@ -176,4 +176,5 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
 

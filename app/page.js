@@ -28,7 +28,7 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-6">RICS-Regulated Reinstatement Cost Assessments</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              The correct sum insured, for every block.
+              The <span className="text-[#0057FF]">correct sum insured</span>, for every block.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Specialist reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in 24 hours.

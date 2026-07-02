@@ -28,7 +28,7 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Managing Agents &amp; RTM Companies</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
-              Discharge your compliance obligation.
+              Discharge your <span className="text-[#0057FF]">compliance obligation</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
@@ -233,4 +233,5 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
 

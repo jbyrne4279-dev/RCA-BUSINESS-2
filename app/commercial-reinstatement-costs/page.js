@@ -27,7 +27,7 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue mb-6">Commercial Property</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Commercial underinsurance starts with the wrong figure.
+              Commercial <span className="text-[#0057FF]">underinsurance</span> starts with the <span className="text-[#0057FF]">wrong figure</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex — and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
@@ -268,4 +268,5 @@ export default function CommercialPage() {
     </main>
   )
 }
+
 

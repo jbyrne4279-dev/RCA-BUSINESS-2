@@ -27,7 +27,7 @@ export default function PortfolioPage() {
           <div>
             <span className="badge badge-blue">Portfolio Assessment</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Right-size every declared value across your portfolio.
+              Right-size every <span className="text-[#0057FF]">declared value</span> across your portfolio.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               A managed RICS assessment service for property portfolios — individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
@@ -272,4 +272,5 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 

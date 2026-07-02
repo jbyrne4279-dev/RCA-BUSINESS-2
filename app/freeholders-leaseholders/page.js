@@ -28,7 +28,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue mb-6">Freeholders &amp; Leaseholders</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Defend the insuring covenant.
+              Defend the <span className="text-[#0057FF]">insuring covenant</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
@@ -217,4 +217,5 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 

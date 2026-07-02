@@ -27,7 +27,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue mb-6">Listed &amp; Heritage Buildings</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
-              Listed buildings demand specialist assessment.
+              Listed buildings demand <span className="text-[#0057FF]">specialist assessment</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. A desktop assessment will miss the gap entirely.
@@ -252,4 +252,5 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
 
