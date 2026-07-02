@@ -20,11 +20,11 @@ export default function CommercialPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="hero-bg py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Commercial Property</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
+            <span className="badge badge-blue">Commercial Property</span>
+            <h1 className="text-4xl md:text-5xl font-bold font-display text-[#202124] leading-tight mb-5">
               Commercial reinstatement cost assessments.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
@@ -39,7 +39,7 @@ export default function CommercialPage() {
               { n: '100%', label: 'of reports accepted by UK insurers' },
               { n: 'RICS', label: 'regulated, every assessment, every time' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center card-hover">
+              <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -52,7 +52,7 @@ export default function CommercialPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Problem</span>
+            <span className="badge badge-blue">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Commercial underinsurance is structural.
             </h2>
@@ -68,7 +68,7 @@ export default function CommercialPage() {
               { title: 'Old inherited valuations', sub: 'Significant cost increases since 2020 make pre-pandemic figures materially wrong.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based where required, accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#202124] text-sm">{title}</p>
@@ -84,7 +84,7 @@ export default function CommercialPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <span className="badge badge-blue">Property Types</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">What we assess.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -96,7 +96,7 @@ export default function CommercialPage() {
               { title: 'Listed Commercial', desc: 'Period office buildings, listed retail premises and heritage industrial structures.' },
               { title: 'Development Sites', desc: 'Post-completion reinstatement cost assessments for newly completed commercial developments.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
+              <div key={title} className="ls-card p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>

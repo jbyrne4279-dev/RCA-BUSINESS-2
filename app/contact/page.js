@@ -22,10 +22,10 @@ export default function ContactPage() {
       <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="badge badge-dark">
               Get In Touch
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold font-display text-white leading-tight">
               Let&rsquo;s get your assessment underway.
             </h1>
           </div>

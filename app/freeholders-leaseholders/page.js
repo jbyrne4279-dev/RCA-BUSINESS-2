@@ -29,8 +29,8 @@ export default function FreeholdersLeaseholdersPage() {
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Freeholders &amp; Leaseholders</span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <span className="badge badge-blue">Freeholders &amp; Leaseholders</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
               Getting the declared value right is a legal obligation, not a choice.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
@@ -51,7 +51,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Declared Value vs Sum Insured</span>
+            <span className="badge badge-blue">Declared Value vs Sum Insured</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               The most common source of freeholder confusion, and underinsurance.
             </h2>
@@ -71,7 +71,7 @@ export default function FreeholdersLeaseholdersPage() {
               { label: 'Declared Value (DV)', desc: 'The day-one reinstatement cost established by your reinstatement cost assessment. The figure you are responsible for. The starting point for the policy.', ok: true },
               { label: 'Sum Insured (SI)', desc: 'DV plus the insurer\'s inflation provision (typically 20–50% uplift). Appears on the schedule. Set by the insurer, not by you.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -86,7 +86,7 @@ export default function FreeholdersLeaseholdersPage() {
       {/* FOR FREEHOLDERS / LEASEHOLDERS */}
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl border border-[#dadce0] p-8 flex flex-col card-hover">
+          <div className="ls-card p-8 flex flex-col rounded-2xl">
             <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5 w-fit">For Freeholders, RMCs &amp; RTM Companies</span>
             <h2 className="text-2xl md:text-3xl font-bold text-[#202124] leading-tight mb-4">
               Discharge the lease obligation with a defensible figure.
@@ -99,7 +99,7 @@ export default function FreeholdersLeaseholdersPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine w-fit">Instruct an Assessment</Link>
           </div>
-          <div className="bg-[#e8f0fe] rounded-2xl border border-[#c8d8f8] p-8 flex flex-col card-hover">
+          <div className="ls-card bg-[#e8f0fe] border-[#c8d8f8] p-8 flex flex-col rounded-2xl">
             <span className="inline-flex items-center bg-white/60 text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5 w-fit">For Leaseholders</span>
             <h2 className="text-2xl md:text-3xl font-bold text-[#202124] leading-tight mb-4">
               Confidence in the cover arranged for your building.
@@ -119,7 +119,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Underinsurance Risk</span>
+            <span className="badge badge-blue">The Underinsurance Risk</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               When the figure is wrong, leaseholders bear the loss, and freeholders bear the liability.
             </h2>
@@ -139,7 +139,7 @@ export default function FreeholdersLeaseholdersPage() {
               { stat: '15–20%', label: 'professional fees typically added on top of rebuild cost for a block: architect, structural engineer, quantity surveyor and consultants' },
               { stat: '12–24 Months', label: 'loss-of-rent and alternative-accommodation cover that may be required for a significant loss given block reinstatement timescales, commonly omitted from the declared value' },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
+              <div key={label} className="stat-card p-6">
                 <p className="text-2xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
                 <p className="text-[#5f6368] text-sm leading-relaxed">{label}</p>
               </div>
@@ -152,7 +152,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What Gets Valued</span>
+            <span className="badge badge-blue">What Gets Valued</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               A reinstatement cost assessment covers more than most freeholders expect.
             </h2>
@@ -184,7 +184,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Regulatory Backdrop</span>
+            <span className="badge badge-blue">The Regulatory Backdrop</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Post-2024 reforms make a defensible reinstatement cost assessment more important, not less.
             </h2>
@@ -205,7 +205,7 @@ export default function FreeholdersLeaseholdersPage() {
               { title: 'Tribunal exposure', desc: 'If insurance fails to meet lease requirements, leaseholders can take the matter to the First-tier Tribunal, which can compel proper cover or order reimbursement. An accurate reinstatement cost assessment is the paper trail that makes a challenge fail before it starts.' },
               { title: 'The compliance tailwind', desc: 'A commissioned reinstatement cost assessment from a qualified, independent surveyor is the kind of demonstrable, fair-value service that survives the new scrutiny, and positions the freeholder or agent as acting correctly.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-4 card-hover">
+              <div key={title} className="ls-card p-5 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
@@ -221,7 +221,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">When to Act</span>
+            <span className="badge badge-dark">When to Act</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               When should you review the figure?
             </h2>
@@ -238,7 +238,7 @@ export default function FreeholdersLeaseholdersPage() {
               'A managing agent has changed and the basis of the current figure is unclear.',
               'A leaseholder, insurer or tribunal has questioned the adequacy of cover.',
             ].map((point, i) => (
-              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4 card-hover">
+              <div key={i} className="ls-card p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>

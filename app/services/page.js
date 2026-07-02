@@ -34,19 +34,19 @@ export default function ServicesPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-white py-12 md:py-16 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="hero-bg py-12 md:py-16 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="badge badge-blue">
               Reinstatement Cost Assessment
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
+            <h1 className="text-4xl md:text-5xl font-bold font-display text-[#202124] leading-tight mb-5">
               A specialist valuation for buildings insurance.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-6">
               A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. The declared figure sets the buildings sum insured and determines the adequacy of cover at the point of any claim.
             </p>
-            <div className="mb-6 bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 card-hover">
+            <div className="mb-6 ls-card p-5">
               <p className="text-sm font-semibold text-[#202124] mb-3">A proper reinstatement cost assessment considers:</p>
               <div className="space-y-0">
                 {[
@@ -86,10 +86,10 @@ export default function ServicesPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="badge badge-blue">
               Why Choose a Specialist
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-[#202124] leading-tight mb-5">
               Reinstatement cost assessment is a specialist discipline.
             </h2>
             <p className="text-[#5f6368] text-base leading-relaxed mb-4">
@@ -107,7 +107,7 @@ export default function ServicesPage() {
               { title: 'Old or inherited valuations', sub: 'Construction costs change. Stale figures create underinsurance.', ok: false },
               { title: 'RICS-aligned reinstatement cost assessment', sub: 'Documented, site-based, specialist. Accepted by every UK insurer.', ok: true },
             ].map(({ title, sub, ok }) => (
-              <div key={title} className={`rounded-xl border p-4 flex gap-3 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={title} className={`ls-card p-4 flex gap-3 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-medium text-[#202124] text-sm">{title}</p>
@@ -123,7 +123,7 @@ export default function ServicesPage() {
       <section id="desktop-rca" className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="badge badge-blue">
               01. Desktop
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">Desktop Assessment</h2>
@@ -146,7 +146,7 @@ export default function ServicesPage() {
       <section id="on-site-survey" className="bg-[#e8f0fe] py-16 md:py-20 px-6 md:px-10 border-t border-[#c8d8f8]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+            <span className="badge badge-blue">
               02. On-Site
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">On-Site Survey</h2>

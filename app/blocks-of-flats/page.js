@@ -30,8 +30,8 @@ export default function BlocksOfFlatsPage() {
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Blocks of Flats</span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <span className="badge badge-blue">Blocks of Flats</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
               Insured for the market value? Then you're insured for the wrong number.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
@@ -52,7 +52,7 @@ export default function BlocksOfFlatsPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Average Clause</span>
+            <span className="badge badge-blue">The Average Clause</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               The average clause is a tax on guessing your rebuild cost.
             </h2>
@@ -72,7 +72,7 @@ export default function BlocksOfFlatsPage() {
               { label: 'Aggregated flat values', desc: 'What the individual flats are worth. Not what the building costs to rebuild. One of the most common sources of a wrong declared value.', ok: false },
               { label: 'Specialist reinstatement cost assessment', desc: 'The actual cost to demolish, clear and rebuild: structure, communal areas, professional fees, VAT where applicable. The only correct basis for the declared value.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -88,7 +88,7 @@ export default function BlocksOfFlatsPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What Gets Missed</span>
+            <span className="badge badge-blue">What Gets Missed</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Four costs that most block owners don't know they're missing.
             </h2>
@@ -119,7 +119,7 @@ export default function BlocksOfFlatsPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">You Might Also Be Overpaying</span>
+            <span className="badge badge-blue">You Might Also Be Overpaying</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               The reinstatement cost assessment works in both directions.
             </h2>
@@ -136,7 +136,7 @@ export default function BlocksOfFlatsPage() {
               { to: 3, suffix: '×', label: 'a typical gap between market value and rebuild cost on regional period blocks, where a £300,000 sale price can mask a £900,000 reinstatement cost' },
               { to: 3, suffix: ' yrs', label: 'RICS recommended maximum review period for a formal reassessment' },
             ].map(({ to, suffix, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 flex items-center gap-6 card-hover">
+              <div key={label} className="stat-card p-6 flex items-center gap-6">
                 <p className="text-4xl font-bold text-[#202124] leading-none shrink-0 w-24">
                   <CountUp to={to} suffix={suffix} />
                 </p>
@@ -151,7 +151,7 @@ export default function BlocksOfFlatsPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <span className="badge badge-blue">Property Types</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
               What we assess.
             </h2>
@@ -165,7 +165,7 @@ export default function BlocksOfFlatsPage() {
               { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.' },
               { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction. Individual reports per property with a portfolio summary schedule and staggered scheduling.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
+              <div key={title} className="ls-card p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
@@ -178,7 +178,7 @@ export default function BlocksOfFlatsPage() {
       <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">When to Act</span>
+            <span className="badge badge-dark">When to Act</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               When should you commission an assessment?
             </h2>
@@ -195,7 +195,7 @@ export default function BlocksOfFlatsPage() {
               'You are acquiring a block or taking on the insuring obligation for the first time.',
               'You are refinancing or preparing the block for sale and need a clean valuation in the data room.',
             ].map((point, i) => (
-              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4 card-hover">
+              <div key={i} className="ls-card p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>

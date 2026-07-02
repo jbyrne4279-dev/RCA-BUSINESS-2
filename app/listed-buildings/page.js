@@ -28,8 +28,8 @@ export default function ListedBuildingsPage() {
         </div>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Listed &amp; Heritage Buildings</span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <span className="badge badge-blue">Listed &amp; Heritage Buildings</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
               Listed buildings cost significantly more to rebuild than standard calculators suggest.
             </h1>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
@@ -50,7 +50,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Cost Gap</span>
+            <span className="badge badge-blue">The Cost Gap</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Rebuild cost regularly exceeds market value for listed properties.
             </h2>
@@ -69,7 +69,7 @@ export default function ListedBuildingsPage() {
               { label: 'Online calculator or inherited estimate', desc: 'Applies standard modern construction rates. Misses specialist materials, heritage labour, conservation consents and VAT exposure. Not defensible in a dispute.', ok: false },
               { label: 'Specialist site-based assessment', desc: 'Accounts for authentic materials, heritage contractor rates, conservation requirements, extended programme costs and VAT treatment. Accepted by all UK insurers.', ok: true },
             ].map(({ label, desc, ok }) => (
-              <div key={label} className={`rounded-xl border p-6 flex gap-4 items-start card-hover ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : 'border-[#dadce0] bg-white'}`}>
+              <div key={label} className={`ls-card p-6 flex gap-4 items-start ${ok ? 'border-[#1a73e8] bg-[#e8f0fe]/40' : ''}`}>
                 <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#1a73e8] tick-glow' : 'text-[#dadce0]'}`}>{ok ? '✓' : '✕'}</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{label}</p>
@@ -77,7 +77,7 @@ export default function ListedBuildingsPage() {
                 </div>
               </div>
             ))}
-            <div className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 mt-2 card-hover">
+            <div className="ls-card p-5 mt-2">
               <p className="text-xs text-[#5f6368] leading-relaxed"><span className="font-semibold text-[#202124]">Per square metre context.</span> Current approximate BCIS rates run £1,700–£2,400/m² for standard construction. For complex listed properties, realistic figures can reach £3,000–£5,000/m² or more, before professional fees, consents and VAT.</p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-4">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What Drives the Cost</span>
+            <span className="badge badge-blue">What Drives the Cost</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Six factors that standard assessments miss.
             </h2>
@@ -121,7 +121,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Underinsurance Risk</span>
+            <span className="badge badge-blue">The Underinsurance Risk</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               Listed properties are frequently underinsured by a substantial margin.
             </h2>
@@ -139,7 +139,7 @@ export default function ListedBuildingsPage() {
               { stat: '20–50%', label: 'typical rebuild cost uplift over standard construction for listed properties' },
               { stat: '£3–5k+', label: 'approximate rebuild cost per m² for complex listed properties, vs £1,700–2,400 for standard (BCIS)' },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center card-hover">
+              <div key={label} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{stat}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -152,7 +152,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Property Types</span>
+            <span className="badge badge-blue">Property Types</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
               What we assess.
             </h2>
@@ -166,7 +166,7 @@ export default function ListedBuildingsPage() {
               { title: 'Thatched and period properties', desc: 'Thatched properties frequently carry listed status. Specialist thatch rates, heritage materials and conservation consents all require individual pricing.' },
               { title: 'Listed blocks of flats', desc: 'Residential blocks within a listed building or curtilage, with communal areas, shared services and period features requiring full specialist assessment.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-6 card-hover">
+              <div key={title} className="ls-card p-6">
                 <p className="font-semibold text-[#202124] text-sm mb-2">{title}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{desc}</p>
               </div>
@@ -179,7 +179,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-[#1a73e8] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">When to Act</span>
+            <span className="badge badge-dark">When to Act</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
               When should you commission an assessment?
             </h2>
@@ -196,7 +196,7 @@ export default function ListedBuildingsPage() {
               'Significant works, alterations or extensions have been carried out.',
               'Your insurer or broker has queried the adequacy of the declared value.',
             ].map((point, i) => (
-              <div key={i} className="bg-white rounded-xl border border-white/40 p-6 flex gap-4 card-hover">
+              <div key={i} className="ls-card p-6 flex gap-4">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 mt-0.5 tick-glow">✓</span>
                 <p className="text-[#3c4043] text-sm leading-relaxed">{point}</p>
               </div>

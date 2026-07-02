@@ -20,11 +20,11 @@ export default function PortfolioPage() {
     <main>
 
       {/* HERO */}
-      <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
+      <section className="hero-bg py-16 md:py-20 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Portfolio Assessment</span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
+            <span className="badge badge-blue">Portfolio Assessment</span>
+            <h1 className="text-4xl md:text-5xl font-bold font-display text-[#202124] leading-tight mb-5">
               Every asset. One instruction.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
@@ -39,7 +39,7 @@ export default function PortfolioPage() {
               { title: 'Managed annual updates', desc: 'Annual BCIS indexation applied across all assets under our 3-Year Protection plan.' },
               { title: 'Single point of contact', desc: 'A single dedicated surveyor manages the full portfolio from instruction to annual update.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-5 flex gap-3 card-hover">
+              <div key={title} className="ls-card p-5 flex gap-3">
                 <span className="text-[#1a73e8] font-bold text-sm shrink-0 tick-glow">✓</span>
                 <div>
                   <p className="font-semibold text-[#202124] text-sm mb-1">{title}</p>
@@ -55,7 +55,7 @@ export default function PortfolioPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">The Problem</span>
+            <span className="badge badge-blue">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               One wrong figure compounds across a portfolio.
             </h2>
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
               { n: 'Higher', label: 'UK construction costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'RICS recommended review period for a formal assessment' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-white rounded-xl border border-[#dadce0] p-6 text-center card-hover">
+              <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -83,7 +83,7 @@ export default function PortfolioPage() {
       <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Portfolio Clients</span>
+            <span className="badge badge-dark">Portfolio Clients</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">Who we work with.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -95,7 +95,7 @@ export default function PortfolioPage() {
               { title: 'Asset Managers', desc: 'Third-party managed portfolios where the fund requires independent RICS-regulated reinstatement figures.' },
               { title: 'RTM Companies', desc: 'RTM companies assuming insurance responsibility and requiring initial assessments across multiple blocks.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white/[0.06] rounded-xl p-6">
+              <div key={title} className="ls-card-dark p-6">
                 <p className="font-semibold text-white text-sm mb-2">{title}</p>
                 <p className="text-white/50 text-xs leading-relaxed">{desc}</p>
               </div>

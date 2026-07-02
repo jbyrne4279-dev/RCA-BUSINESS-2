@@ -23,8 +23,8 @@ export default function BlockManagersPage() {
       <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Block Managers</span>
-            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
+            <span className="badge badge-blue">Block Managers</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-5">
               Reinstatement assessments for block managers.
             </h1>
           </div>
@@ -41,7 +41,7 @@ export default function BlockManagersPage() {
       <section className="bg-white py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Your Obligation</span>
+            <span className="badge badge-blue">Your Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight mb-5">
               The lease puts it on you.
             </h2>
@@ -56,7 +56,7 @@ export default function BlockManagersPage() {
               { n: 'Higher', label: 'UK build costs than pre-pandemic levels, after significant rises 2020–2023 (BCIS)' },
               { n: '3 yrs', label: 'maximum recommended interval between formal assessments' },
             ].map(({ n, label }) => (
-              <div key={n} className="bg-[#f8f9fa] rounded-xl border border-[#dadce0] p-6 text-center card-hover">
+              <div key={n} className="stat-card p-6 text-center">
                 <p className="text-3xl font-bold text-[#202124] leading-none mb-3">{n}</p>
                 <p className="text-[#5f6368] text-xs leading-relaxed">{label}</p>
               </div>
@@ -69,7 +69,7 @@ export default function BlockManagersPage() {
       <section className="bg-[#f8f9fa] py-16 md:py-20 px-6 md:px-10 border-t border-[#dadce0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#e8f0fe] text-[#1a73e8] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">What We Offer</span>
+            <span className="badge badge-blue">What We Offer</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#202124] leading-tight">
               Designed for block management firms.
             </h2>
@@ -80,7 +80,7 @@ export default function BlockManagersPage() {
               { title: 'Portfolio Assessment', desc: 'Consolidated instruction across all blocks under management. Individual reports per property, portfolio summary schedule and single-invoice billing.', href: '/contact#contact-form' },
               { title: '3-Year Protection', desc: 'Full base assessment with three years of annual BCIS-indexed renewal reports, each delivered before the relevant renewal date.', href: '/contact?service=3year#contact-form' },
             ].map(({ title, desc, href }) => (
-              <div key={title} className="bg-white rounded-xl border border-[#dadce0] p-8 flex flex-col card-hover">
+              <div key={title} className="ls-card p-8 flex flex-col">
                 <h3 className="text-xl font-bold text-[#202124] mb-4">{title}</h3>
                 <p className="text-[#5f6368] text-sm leading-relaxed flex-1 mb-6">{desc}</p>
                 <Link href={href} className="link-amber text-sm">Enquire →</Link>
@@ -94,7 +94,7 @@ export default function BlockManagersPage() {
       <section className="bg-[#202124] py-16 md:py-20 px-6 md:px-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="inline-flex items-center bg-[#1a73e8]/20 text-[#7baaf7] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">Every Report</span>
+            <span className="badge badge-dark">Every Report</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
               The same standard. Every time.
             </h2>
@@ -108,7 +108,7 @@ export default function BlockManagersPage() {
               { title: 'Named surveyor', desc: 'A single named contact manages your instruction across your full portfolio.' },
               { title: 'Full methodology', desc: 'Fully documented basis of assessment. Defensible at tribunal.' },
             ].map(({ title, desc }) => (
-              <div key={title} className="bg-white/[0.06] rounded-xl p-6">
+              <div key={title} className="ls-card-dark p-6">
                 <p className="font-semibold text-white text-sm mb-2">{title}</p>
                 <p className="text-white/50 text-xs leading-relaxed">{desc}</p>
               </div>
