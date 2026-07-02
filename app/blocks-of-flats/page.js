@@ -19,8 +19,21 @@ const faqItems = [
 ]
 
 export default function BlocksOfFlatsPage() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Blocks of Flats', item: 'https://reinstatementcostassessment.org/blocks-of-flats' },
+        ],
+      },
+    ],
+  }
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* HERO */}
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">

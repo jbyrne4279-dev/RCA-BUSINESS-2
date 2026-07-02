@@ -4,6 +4,18 @@ import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
 
+export const metadata = {
+  title: 'RICS Reinstatement Cost Assessment UK | Cavendish & Rowe',
+  description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Cavendish & Rowe',
+    description: '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
+    url: 'https://reinstatementcostassessment.org',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment London' }],
+  },
+}
+
 const faqItems = [
   { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment establishes the cost of rebuilding a property from scratch for insurance purposes. It covers demolition, site clearance, structure, professional fees, statutory fees, and VAT where applicable. It is not the same as market value.' },
   { question: 'Is reinstatement cost the same as market value?', answer: 'No. Market value reflects what the property sells for on the open market. Reinstatement cost reflects what it costs to rebuild. The two figures frequently differ substantially, and only reinstatement cost is relevant for setting the buildings sum insured.' },
@@ -20,8 +32,32 @@ const Star = () => (
 )
 
 export default function HomePage() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': 'https://reinstatementcostassessment.org/#webpage',
+        url: 'https://reinstatementcostassessment.org/',
+        name: 'RICS Reinstatement Cost Assessment UK | Cavendish & Rowe',
+        isPartOf: { '@id': 'https://reinstatementcostassessment.org/#website' },
+        about: { '@id': 'https://reinstatementcostassessment.org/#organization' },
+        description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+        inLanguage: 'en-GB',
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(({ question, answer }) => ({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer },
+        })),
+      },
+    ],
+  }
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">

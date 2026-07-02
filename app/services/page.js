@@ -34,8 +34,45 @@ const faqItems = [
 ]
 
 export default function ServicesPage() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://reinstatementcostassessment.org/services' },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(({ question, answer }) => ({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer },
+        })),
+      },
+      {
+        '@type': 'Service',
+        provider: { '@id': 'https://reinstatementcostassessment.org/#organization' },
+        name: 'Reinstatement Cost Assessment',
+        serviceType: 'RICS Reinstatement Cost Assessment',
+        areaServed: { '@type': 'Country', name: 'United Kingdom' },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Assessment Services',
+          itemListElement: [
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Desktop Reinstatement Cost Assessment', description: 'BCIS-indexed rebuild cost modelling delivered within 24 hours.' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'On-Site Reinstatement Cost Survey', description: 'RICS surveyor attends in person. Required for listed and complex buildings.' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '3-Year Protection Plan', description: 'Three years of RICS compliance under a single instruction.' } },
+          ],
+        },
+      },
+    ],
+  }
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* HERO */}
       <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
