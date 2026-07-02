@@ -28,7 +28,7 @@ export default function ContactPage() {
               Get In Touch
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Request your assessment. We respond within 24 hours.
+              Get in touch. We respond within 24 hours.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:underline">020 3178 8099</a> or complete the form below.

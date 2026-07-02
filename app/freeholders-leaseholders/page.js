@@ -28,7 +28,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue">Freeholders &amp; Leaseholders</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              If the building is underinsured, every flat owner in it shares the loss.
+              Underinsurance is a shared risk for every flat owner.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building, not just whoever holds the insuring obligation. Check whether your current sum insured reflects the true rebuild cost.

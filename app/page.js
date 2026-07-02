@@ -28,7 +28,7 @@ export default function HomePage() {
               Reinstatement Cost Assessment Specialists
             </span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              The correct sum insured - for every block you manage.
+              The correct sum insured, for every block.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports delivered within 24 hours.

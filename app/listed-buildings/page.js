@@ -27,7 +27,7 @@ export default function ListedBuildingsPage() {
           <div>
             <span className="badge badge-blue">Listed &amp; Heritage Buildings</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Listed buildings carry a 20–50% rebuild cost uplift that most assessors don't know how to calculate.
+              Listed buildings cost far more to reinstate than most assessors realise.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. For complex Grade I properties the gap is wider still - and a desktop assessment will miss it entirely.

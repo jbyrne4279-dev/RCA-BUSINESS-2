@@ -29,7 +29,7 @@ export default function BlocksOfFlatsPage() {
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#202124] leading-[1.05] mb-6">
-              Blocks of flats are the most commonly underinsured property type in the UK.
+              The most commonly underinsured property type in the UK.
             </h1>
             <p className="text-[#5f6368] text-lg leading-relaxed mb-8">
               When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
