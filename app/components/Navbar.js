@@ -31,7 +31,7 @@ export default function Navbar() {
             priority
             className="h-9 w-9 object-contain"
             style={{
-              animation: 'logo-spin3d 6s linear infinite',
+              animation: 'logo-rock 4.5s ease-in-out infinite',
               transformStyle: 'preserve-3d',
             }}
           />

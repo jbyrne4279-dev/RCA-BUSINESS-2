@@ -60,15 +60,15 @@ export default function BlocksOfFlatsPage() {
               Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile that requires specialist assessment.
             </p>
             <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
-              <li className="flex gap-3 items-start">
+              <li className="flex gap-3 items-start step-reveal-item">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Shared structures</strong> - external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
               </li>
-              <li className="flex gap-3 items-start">
+              <li className="flex gap-3 items-start step-reveal-item">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Communal services</strong> - lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
               </li>
-              <li className="flex gap-3 items-start">
+              <li className="flex gap-3 items-start step-reveal-item">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                 <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> - a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
               </li>
@@ -87,7 +87,7 @@ export default function BlocksOfFlatsPage() {
                 'BCIS-indexed figure with annual uplift schedule',
                 'Broker-ready report in 24 hours',
               ].map((item) => (
-                <li key={item} className="flex gap-3 items-start">
+                <li key={item} className="flex gap-3 items-start step-reveal-item">
                   <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
                   <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
                 </li>
@@ -161,7 +161,7 @@ export default function BlocksOfFlatsPage() {
                 'Refinancing or preparing the block for sale',
                 'Construction costs have risen since the last review',
               ].map((point) => (
-                <li key={point} className="flex gap-3 items-start">
+                <li key={point} className="flex gap-3 items-start step-reveal-item">
                   <span className="text-white font-bold shrink-0 mt-0.5">✓</span>
                   <span className="text-white/85 text-sm leading-relaxed">{point}</span>
                 </li>
@@ -176,6 +176,7 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
 
 
 

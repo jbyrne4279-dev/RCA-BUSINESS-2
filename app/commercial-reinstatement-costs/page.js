@@ -71,7 +71,7 @@ export default function CommercialPage() {
                 { label: 'Specialist plant', desc: 'HVAC, lifts, substations and process equipment carry high replacement values that no index can capture without a site assessment.' },
                 { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
-                <li key={label} className="flex gap-3 items-start">
+                <li key={label} className="flex gap-3 items-start step-reveal-item">
                   <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
                     <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
@@ -253,7 +253,7 @@ export default function CommercialPage() {
                 'Professional indemnity insurance on every instruction',
                 'Optional 3-Year Protection Plan with BCIS index cover',
               ].map(item => (
-                <li key={item} className="flex gap-3 items-start">
+                <li key={item} className="flex gap-3 items-start step-reveal-item">
                   <svg className="w-4 h-4 mt-0.5 shrink-0 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   <span className="text-white/90 text-sm leading-snug">{item}</span>
                 </li>
@@ -268,6 +268,7 @@ export default function CommercialPage() {
     </main>
   )
 }
+
 
 
 

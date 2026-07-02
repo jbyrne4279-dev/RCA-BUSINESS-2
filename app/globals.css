@@ -143,6 +143,23 @@ main {
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
 .badge-white { background: rgba(255,255,255,0.14); color: rgba(255,255,255,0.88); border: 1px solid rgba(255,255,255,0.2); }
 
+/* ── Scroll-reveal on all card + list-item types ── */
+.ls-card,
+.ls-card-dark,
+.stat-card,
+.brix-card,
+.card-hover,
+.step-reveal-item {
+  animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 32%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ls-card, .ls-card-dark, .stat-card, .brix-card, .card-hover, .step-reveal-item {
+    animation: none !important; opacity: 1 !important;
+  }
+}
+
 /* ── Card ── */
 .ls-card {
   background: #ffffff;
@@ -310,10 +327,13 @@ main {
   animation-range: entry 0% entry 25%;
 }
 
-/* ── CR logo 3D spin ── */
-@keyframes logo-spin3d {
-  from { transform: rotateY(0deg); }
-  to   { transform: rotateY(360deg); }
+/* ── CR logo ambient 3D rock ── */
+@keyframes logo-rock {
+  0%   { transform: perspective(320px) rotateY(0deg)   rotateX(0deg)   scale(1); }
+  22%  { transform: perspective(320px) rotateY(18deg)  rotateX(5deg)   scale(1.05); }
+  50%  { transform: perspective(320px) rotateY(0deg)   rotateX(0deg)   scale(1); }
+  78%  { transform: perspective(320px) rotateY(-18deg) rotateX(-5deg)  scale(1.05); }
+  100% { transform: perspective(320px) rotateY(0deg)   rotateX(0deg)   scale(1); }
 }
 
 /* ── Frosted-glass navbar ── */

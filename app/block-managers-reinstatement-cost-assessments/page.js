@@ -85,7 +85,7 @@ export default function BlockManagersPage() {
                 { year: 'Year 2', title: 'BCIS-Indexed Update', desc: 'Annual inflation uplift applied using BCIS data. Renewal-ready report issued before your renewal date.' },
                 { year: 'Year 3', title: 'BCIS-Indexed Update', desc: 'Second annual uplift. Three-year RICS compliance maintained - no re-instruction required.' },
               ].map(({ year, title, desc }) => (
-                <div key={year} className="flex gap-4 items-start">
+                <div key={year} className="flex gap-4 items-start step-reveal-item">
                   <div className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
                     {year}
                   </div>
@@ -115,7 +115,7 @@ export default function BlockManagersPage() {
                 { title: 'Single-invoice billing', desc: 'One consolidated invoice per portfolio instruction. No per-block admin.' },
                 { title: 'Named surveyor throughout', desc: 'One point of contact across your entire portfolio, from instruction to report delivery.' },
               ].map(({ title, desc }) => (
-                <li key={title} className="flex gap-3 items-start">
+                <li key={title} className="flex gap-3 items-start step-reveal-item">
                   <svg className="w-5 h-5 shrink-0 mt-0.5 text-[#0057FF]" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
@@ -265,6 +265,7 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 
 
 

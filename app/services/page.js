@@ -94,7 +94,7 @@ export default function ServicesPage() {
               { icon: '📐', num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
               { icon: '🛡', num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
             ].map(({ icon, num, title, desc }) => (
-              <div key={num} className="flex gap-4 items-start">
+              <div key={num} className="flex gap-4 items-start step-reveal-item">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
@@ -202,7 +202,7 @@ export default function ServicesPage() {
                 'National coverage - England, Scotland, Wales and NI',
                 'Clear turnaround confirmed on instruction',
               ].map((item) => (
-                <li key={item} className="flex gap-3 items-start">
+                <li key={item} className="flex gap-3 items-start step-reveal-item">
                   <span className="text-[#0057FF] font-bold text-sm shrink-0 mt-0.5">✓</span>
                   <span className="text-[#0d1b3e] text-sm leading-snug">{item}</span>
                 </li>
@@ -218,6 +218,7 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 
 
 

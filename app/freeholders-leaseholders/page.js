@@ -103,7 +103,7 @@ export default function FreeholdersLeaseholdersPage() {
                 'Demolition and site clearance - often left out of the declared value',
                 'Loss-of-rent and alternative accommodation provision frequently overlooked',
               ].map((risk) => (
-                <div key={risk} className="flex gap-3 items-start">
+                <div key={risk} className="flex gap-3 items-start step-reveal-item">
                   <span className="text-[#d93025] font-bold text-sm shrink-0 mt-0.5">!</span>
                   <p className="text-[#64748b] text-sm leading-relaxed">{risk}</p>
                 </div>
@@ -217,6 +217,7 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 
 
 

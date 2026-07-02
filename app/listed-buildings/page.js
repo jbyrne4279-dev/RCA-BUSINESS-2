@@ -111,7 +111,7 @@ export default function ListedBuildingsPage() {
                 'Curtilage structures, outbuildings and boundary features',
                 'BCIS-benchmarked cost build-up with full methodology note',
               ].map(item => (
-                <li key={item} className="flex gap-3 items-start">
+                <li key={item} className="flex gap-3 items-start step-reveal-item">
                   <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -133,7 +133,7 @@ export default function ListedBuildingsPage() {
                 { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.' },
                 { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.' },
               ].map(({ title, body }) => (
-                <div key={title} className="flex gap-4 items-start">
+                <div key={title} className="flex gap-4 items-start step-reveal-item">
                   <svg className="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -235,7 +235,7 @@ export default function ListedBuildingsPage() {
                 'Broker-ready report with full methodology note',
                 'Annual BCIS inflation index reviews available',
               ].map(item => (
-                <li key={item} className="flex gap-3 items-start">
+                <li key={item} className="flex gap-3 items-start step-reveal-item">
                   <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
@@ -252,6 +252,7 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
 
 
 

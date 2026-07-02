@@ -122,7 +122,7 @@ export default function PortfolioPage() {
                 { title: 'Consolidated portfolio schedule', desc: 'A single broker-ready document listing every property, its assessed reinstatement cost, assessment date and recommended review date.' },
                 { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection plan we track every renewal date across the portfolio and deliver updated figures proactively - before each renewal, not after.' },
               ].map(({ title, desc }) => (
-                <li key={title} className="flex gap-4 items-start">
+                <li key={title} className="flex gap-4 items-start step-reveal-item">
                   <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
                     <svg className="w-3.5 h-3.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
@@ -148,7 +148,7 @@ export default function PortfolioPage() {
                 { step: '03', title: 'RICS assessments carried out', desc: 'Desktop or on-site assessments are completed for each property. Individual reports are issued as they complete, not held until the last one is done.' },
                 { step: '04', title: 'Consolidated schedule issued', desc: 'A broker-ready portfolio schedule is delivered alongside the final individual report - ready to pass straight to your insurer or broker.' },
               ].map(({ step, title, desc }) => (
-                <li key={step} className="flex gap-4 items-start">
+                <li key={step} className="flex gap-4 items-start step-reveal-item">
                   <span className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
                     {step}
                   </span>
@@ -255,7 +255,7 @@ export default function PortfolioPage() {
                 'Named surveyor as your single point of contact',
                 'Annual BCIS indexation managed proactively (3-Year plan)',
               ].map(item => (
-                <li key={item} className="flex items-start gap-3">
+                <li key={item} className="flex items-start gap-3 step-reveal-item">
                   <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
                     <svg className="w-3 h-3" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
@@ -272,6 +272,7 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 
 
 
