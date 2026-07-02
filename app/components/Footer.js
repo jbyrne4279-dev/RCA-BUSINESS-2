@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import Image from 'next/image'
 import LogoSpin from './LogoSpin'
 
 export default function Footer() {
