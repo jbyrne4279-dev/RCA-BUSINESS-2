@@ -212,7 +212,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ContactSection heading="Not sure which <span className="blue-keyword">service you need</span>? We'll advise." />
+      <ContactSection heading="Not sure which service you need? We'll advise." />
       <FaqSection description="Still deciding? Use these answers to narrow it down — or contact us and we'll recommend the right service for your property." items={faqItems} />
 
     </main>
