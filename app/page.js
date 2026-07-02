@@ -50,7 +50,7 @@ export default function HomePage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/55 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated reinstatement cost assessments for residential and commercial properties across the UK.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for properties across the UK, carried out by chartered surveyors.</p>
             </div>
           </div>
         </div>
@@ -296,6 +296,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 
