@@ -22,7 +22,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center gap-6">
 
         {/* Logo */}
-        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5 group" style={{perspective:'300px'}}>
+        <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5" style={{perspective:'300px'}}>
           <Image
             src="/cr-monogram.svg"
             alt="Cavendish & Rowe"
@@ -31,11 +31,9 @@ export default function Navbar() {
             priority
             className="h-9 w-9 object-contain"
             style={{
-              transition: 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)',
+              animation: 'logo-spin3d 6s linear infinite',
               transformStyle: 'preserve-3d',
             }}
-            onMouseEnter={e => { e.currentTarget.style.transform = 'rotateY(180deg) scale(1.1)' }}
-            onMouseLeave={e => { e.currentTarget.style.transform = 'rotateY(0deg) scale(1)' }}
           />
         </Link>
 

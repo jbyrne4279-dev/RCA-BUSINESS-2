@@ -260,6 +260,12 @@
   font-style: normal;
 }
 
+/* ── CR logo 3D spin ── */
+@keyframes logo-spin3d {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+
 /* ── Frosted-glass navbar ── */
 .nav-glass {
   background: rgba(255,255,255,0.88);
