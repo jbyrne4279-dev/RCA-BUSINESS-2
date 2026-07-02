@@ -66,7 +66,7 @@ export default function ServicesPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             {[
               { label: 'Online calculators', sub: 'No accountability. Not defensible in a dispute.', ok: false },
               { label: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a review.', ok: false },
@@ -88,7 +88,7 @@ export default function ServicesPage() {
       {/* SECTION B - THREE TIERS OVERVIEW */}
       <section className="py-16 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             {[
               { icon: '🖥', num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
               { icon: '📐', num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
@@ -158,7 +158,7 @@ export default function ServicesPage() {
                 link: 'Enquire About Protection Plan →',
               },
             ].map(({ icon, id, badge, title, desc, href, link }) => (
-              <div key={id} id={id} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+              <div key={id} id={id} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
@@ -218,6 +218,7 @@ export default function ServicesPage() {
     </main>
   )
 }
+
 
 
 

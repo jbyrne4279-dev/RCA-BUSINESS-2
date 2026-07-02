@@ -160,6 +160,9 @@ main {
   }
 }
 
+/* ── !text-xs override for small arrow links ── */
+.link-arrow.\!text-xs { font-size: 0.75rem; }
+
 /* ── Card ── */
 .ls-card {
   background: #ffffff;

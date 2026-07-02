@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { useRef } from 'react'
 import Image from 'next/image'
 
@@ -53,7 +53,7 @@ export default function TiltCard() {
           { label: 'Market Value', val: 'Irrelevant for insurance purposes', ok: false },
           { label: 'Online Calculator', val: 'No RICS accountability', ok: false },
         ].map(({ label, val, ok }) => (
-          <div key={label} className="flex items-center gap-3">
+          <div key={label} className="flex items-center gap-3 step-reveal-item">
             <span className={`text-sm font-bold shrink-0 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
             <div>
               <p className="text-xs font-semibold text-[#0d1b3e]">{label}</p>
@@ -65,3 +65,4 @@ export default function TiltCard() {
     </div>
   )
 }
+

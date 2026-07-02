@@ -28,7 +28,7 @@ export default function ReviewCarousel() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {reviews.map(({ quote, name, role }) => (
-            <div key={name} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
+            <div key={name} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
               <StarRow />
               <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-6">&ldquo;{quote}&rdquo;</p>
               <div>
@@ -42,5 +42,6 @@ export default function ReviewCarousel() {
     </section>
   )
 }
+
 
 

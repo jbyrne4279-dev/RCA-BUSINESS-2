@@ -25,7 +25,7 @@ export default function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 step-reveal-item">
               <Image
                 src="/cr-monogram.svg"
                 alt="Cavendish &amp; Rowe"
@@ -101,4 +101,5 @@ export default function Footer() {
     </footer>
   )
 }
+
 

@@ -159,7 +159,7 @@ export default function HomePage() {
               { initials: 'SL', name: 'Sarah L.', role: 'Block Manager, Bristol', quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.' },
               { initials: 'PN', name: 'Priya N.', role: 'Portfolio Manager, Birmingham', quote: 'We manage over 40 blocks and Cavendish & Rowe handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.' },
             ].map(({ initials, name, role, quote }) => (
-              <div key={name} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+              <div key={name} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="flex items-center gap-3 mb-5">
                   <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>
                     {initials}
@@ -220,7 +220,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
-                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">
+                <Link href={href} className="link-arrow">
                   Read More →
                 </Link>
               </div>
@@ -277,6 +277,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 

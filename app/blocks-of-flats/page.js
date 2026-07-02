@@ -74,7 +74,7 @@ export default function BlocksOfFlatsPage() {
               </li>
             </ul>
           </div>
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
             <ul className="space-y-4">
               {[
@@ -125,7 +125,7 @@ export default function BlocksOfFlatsPage() {
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="text-[#0057FF] text-xs font-semibold hover:text-[#0040CC] transition-colors">Learn more →</Link>
+                  <Link href={href} className="link-arrow !text-xs">Learn more →</Link>
                 </div>
               </div>
             ))}
@@ -176,6 +176,7 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
 
 
 

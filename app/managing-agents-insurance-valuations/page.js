@@ -66,7 +66,7 @@ export default function ManagingAgentsPage() {
           </div>
 
           {/* ✕ / ✓ comparison card */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-5">Approach comparison</p>
             <div className="space-y-4">
               {[
@@ -93,7 +93,7 @@ export default function ManagingAgentsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
           {/* Left: What We Deliver checklist card */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
             <div className="space-y-3">
               {[
@@ -179,13 +179,13 @@ export default function ManagingAgentsPage() {
                 href: '/services',
               },
             ].map(({ icon, title, desc, href }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+              <div key={title} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'#0057FF'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <Link href={href} className="mt-5 text-[#0057FF] text-sm font-semibold hover:underline">Read More →</Link>
+                <Link href={href} className="link-arrow mt-5">Read More →</Link>
               </div>
             ))}
           </div>
@@ -233,6 +233,7 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
 
 
 

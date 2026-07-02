@@ -74,7 +74,7 @@ export default function BlockManagersPage() {
           </div>
 
           {/* Right: 3-year compliance cycle card */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <div className="px-7 pt-7 pb-5 border-b border-[#e2e8f0]">
               <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-1">3-Year Compliance Cycle</p>
               <p className="text-sm text-[#64748b]">How RICS guidance applies to your managed blocks</p>
@@ -105,7 +105,7 @@ export default function BlockManagersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* Left: checklist card */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">What Block Managers Get</p>
             <ul className="space-y-4">
               {[
@@ -159,7 +159,7 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
@@ -174,7 +174,7 @@ export default function BlockManagersPage() {
               </Link>
             </div>
 
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
@@ -189,7 +189,7 @@ export default function BlockManagersPage() {
               </Link>
             </div>
 
-            <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -265,6 +265,7 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 
 
 

@@ -65,7 +65,7 @@ export default function ListedBuildingsPage() {
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
           {/* Card right - listing grades */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
               <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
@@ -98,7 +98,7 @@ export default function ListedBuildingsPage() {
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Checklist card left */}
-          <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
             <ul className="space-y-4">
               {[
@@ -191,11 +191,11 @@ export default function ListedBuildingsPage() {
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 4px 20px rgba(0,0,0,0.06)'}}>
+              <div key={title} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 4px 20px rgba(0,0,0,0.06)'}}>
                 <div className="mb-4">{icon}</div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="text-[#0057FF] text-sm font-semibold hover:text-[#0040CC] transition-colors">Learn more →</Link>
+                <Link href={href} className="link-arrow">Learn more →</Link>
               </div>
             ))}
           </div>
@@ -252,6 +252,7 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
 
 
 
