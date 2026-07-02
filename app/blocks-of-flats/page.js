@@ -111,12 +111,12 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact', img: '/AdobeStock_208633670.jpeg' },
-              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_258095379.jpeg' },
-              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_1477785304.jpeg' },
-              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_1956380728.jpeg' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_544083541.jpeg' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/rebuild-cost-assessment-london.jpeg' },
+              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact', img: '/AdobeStock_258095379.jpeg' },
+              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_763906298.jpeg' },
+              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_208633670.jpeg' },
+              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_270155966.jpeg' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1477785304.jpeg' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1064771096.jpeg' },
             ].map(({ title, desc, href, img }) => (
               <div key={title} className="brix-card card-hover">
                 <div className="relative h-40 overflow-hidden">
