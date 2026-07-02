@@ -47,7 +47,7 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* 2. SECTION A — Why listed buildings are different (text left, card right) */}
+      {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Text left */}
@@ -64,7 +64,7 @@ export default function ListedBuildingsPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
-          {/* Card right — listing grades */}
+          {/* Card right - listing grades */}
           <div className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
@@ -72,21 +72,21 @@ export default function ListedBuildingsPage() {
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">I</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade I</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">Highest significance — only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">Highest significance - only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II*</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II*</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings — 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings - 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">The most common category — 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">The most common category - 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* 3. SECTION B — On-site survey process (card left, text right) */}
+      {/* 3. SECTION B - On-site survey process (card left, text right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Checklist card left */}
@@ -103,10 +103,10 @@ export default function ListedBuildingsPage() {
             <ul className="space-y-4">
               {[
                 'Full physical inspection of structure, fabric and finishes',
-                'Identification of original and heritage materials — lime, stone, handmade brick, timber frame',
+                'Identification of original and heritage materials - lime, stone, handmade brick, timber frame',
                 'Assessment of specialist trades required for authentic reinstatement',
                 'Conservation consent and professional fee allowances',
-                'VAT treatment — zero-rated total loss vs 20% partial damage',
+                'VAT treatment - zero-rated total loss vs 20% partial damage',
                 'Extended programme costs and temporary accommodation where applicable',
                 'Curtilage structures, outbuildings and boundary features',
                 'BCIS-benchmarked cost build-up with full methodology note',
@@ -130,7 +130,7 @@ export default function ListedBuildingsPage() {
               {[
                 { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.' },
                 { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.' },
-                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction — not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.' },
+                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.' },
                 { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.' },
               ].map(({ title, body }) => (
                 <div key={title} className="flex gap-4 items-start">
@@ -149,7 +149,7 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* 4. FEATURE CARDS — 3-col */}
+      {/* 4. FEATURE CARDS - 3-col */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -172,7 +172,7 @@ export default function ListedBuildingsPage() {
               },
               {
                 title: 'Heritage Materials',
-                desc: 'We price lime mortar, handmade brick, natural stone, historic timber and specialist period finishes — each at rates that reflect the actual cost of authentic reinstatement.',
+                desc: 'We price lime mortar, handmade brick, natural stone, historic timber and specialist period finishes - each at rates that reflect the actual cost of authentic reinstatement.',
                 href: '/contact#contact-form',
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -231,7 +231,7 @@ export default function ListedBuildingsPage() {
                 'Physical on-site inspection by a RICS surveyor',
                 'Heritage materials and specialist trade cost build-up',
                 'Conservation consent and professional fee allowances',
-                'VAT treatment — zero-rated and 20% scenarios',
+                'VAT treatment - zero-rated and 20% scenarios',
                 'Broker-ready report with full methodology note',
                 'Annual BCIS inflation index reviews available',
               ].map(item => (
@@ -252,6 +252,7 @@ export default function ListedBuildingsPage() {
     </main>
   )
 }
+
 
 
 

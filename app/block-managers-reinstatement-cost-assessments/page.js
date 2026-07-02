@@ -30,7 +30,7 @@ export default function BlockManagersPage() {
               <span className="blue-keyword">Compliant figures</span> across every block you manage.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage — documented, defensible, and accepted at renewal without challenge.
+              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -54,7 +54,7 @@ export default function BlockManagersPage() {
         </div>
       </section>
 
-      {/* 2. SECTION A — The compliance burden (text left, card right) */}
+      {/* 2. SECTION A - The compliance burden (text left, card right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -65,7 +65,7 @@ export default function BlockManagersPage() {
               Every block you manage needs a <span className="blue-keyword">regular RICS review</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              RICS guidance requires formal reassessment at least every three years, with annual inflation adjustments in between. Across a portfolio of blocks, keeping track of each renewal cycle — and ensuring no property lapses — is a material compliance obligation.
+              RICS guidance requires formal reassessment at least every three years, with annual inflation adjustments in between. Across a portfolio of blocks, keeping track of each renewal cycle - and ensuring no property lapses - is a material compliance obligation.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               When figures lapse or an online calculator is used in place of a regulated assessment, your professional indemnity exposure increases significantly. In any underinsurance dispute, only a RICS-regulated report provides a defensible methodology.
@@ -83,7 +83,7 @@ export default function BlockManagersPage() {
               {[
                 { year: 'Year 1', title: 'Full RICS Assessment', desc: 'Base reinstatement cost established by a RICS-regulated surveyor. Report issued in broker-ready format.' },
                 { year: 'Year 2', title: 'BCIS-Indexed Update', desc: 'Annual inflation uplift applied using BCIS data. Renewal-ready report issued before your renewal date.' },
-                { year: 'Year 3', title: 'BCIS-Indexed Update', desc: 'Second annual uplift. Three-year RICS compliance maintained — no re-instruction required.' },
+                { year: 'Year 3', title: 'BCIS-Indexed Update', desc: 'Second annual uplift. Three-year RICS compliance maintained - no re-instruction required.' },
               ].map(({ year, title, desc }) => (
                 <div key={year} className="flex gap-4 items-start">
                   <div className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
@@ -100,7 +100,7 @@ export default function BlockManagersPage() {
         </div>
       </section>
 
-      {/* 3. SECTION B — What block managers get (card left, text right) */}
+      {/* 3. SECTION B - What block managers get (card left, text right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -110,8 +110,8 @@ export default function BlockManagersPage() {
             <ul className="space-y-4">
               {[
                 { title: '24-hr desktop turnaround', desc: 'Broker-ready report issued within 24 hours of instruction for standard blocks.' },
-                { title: 'Portfolio schedules', desc: 'A single summary schedule covering all blocks in your managed portfolio — one document for renewal season.' },
-                { title: 'Managed renewals', desc: 'We track each block\'s review date and issue renewal-ready reports before you need them — no chasing required.' },
+                { title: 'Portfolio schedules', desc: 'A single summary schedule covering all blocks in your managed portfolio - one document for renewal season.' },
+                { title: 'Managed renewals', desc: 'We track each block\'s review date and issue renewal-ready reports before you need them - no chasing required.' },
                 { title: 'Single-invoice billing', desc: 'One consolidated invoice per portfolio instruction. No per-block admin.' },
                 { title: 'Named surveyor throughout', desc: 'One point of contact across your entire portfolio, from instruction to report delivery.' },
               ].map(({ title, desc }) => (
@@ -135,10 +135,10 @@ export default function BlockManagersPage() {
               One instruction covers your <span className="blue-keyword">entire managed portfolio</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              We work with block management firms of all sizes — from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
+              We work with block management firms of all sizes - from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              Our 3-Year Protection plan means you instruct once and we handle all subsequent renewals — including annual BCIS-indexed updates — so compliance is maintained without any re-instruction or admin from your team.
+              Our 3-Year Protection plan means you instruct once and we handle all subsequent renewals - including annual BCIS-indexed updates - so compliance is maintained without any re-instruction or admin from your team.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact?service=3year#contact-form" className="btn-shine">Enquire About 3-Year Plan</Link>
@@ -182,7 +182,7 @@ export default function BlockManagersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">Managed Renewals</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
-                We track every block&apos;s review date. Annual BCIS-indexed updates and full reassessments are issued before each renewal without any re-instruction from your team. Three-year RICS compliance — fully managed.
+                We track every block&apos;s review date. Annual BCIS-indexed updates and full reassessments are issued before each renewal without any re-instruction from your team. Three-year RICS compliance - fully managed.
               </p>
               <Link href="/contact?service=3year#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">
                 Enquire about 3-Year Protection &rarr;
@@ -197,7 +197,7 @@ export default function BlockManagersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">24-hr Desktop</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
-                Standard desktop assessments are delivered within 24 hours of instruction. Broker-ready format, RICS-regulated methodology, and PI-insured — accepted at renewal without challenge.
+                Standard desktop assessments are delivered within 24 hours of instruction. Broker-ready format, RICS-regulated methodology, and PI-insured - accepted at renewal without challenge.
               </p>
               <Link href="/contact?service=desktop#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">
                 Instruct a desktop assessment &rarr;
@@ -221,7 +221,7 @@ export default function BlockManagersPage() {
               Your portfolio. <span className="blue-keyword">Compliant</span>. This renewal season.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
-              One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals — so you never let compliance lapse again.
+              One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals - so you never let compliance lapse again.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold bg-white hover:bg-white/90 transition-colors" style={{color:'#0040CC'}}>
@@ -242,7 +242,7 @@ export default function BlockManagersPage() {
                 'Portfolio summary schedule',
                 '24-hr desktop turnaround',
                 'Annual BCIS-indexed updates',
-                'Managed renewals — no re-instruction',
+                'Managed renewals - no re-instruction',
                 'Single-invoice billing',
                 'Named surveyor throughout',
               ].map(item => (
@@ -265,6 +265,7 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
 
 
 

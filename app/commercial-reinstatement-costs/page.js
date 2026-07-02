@@ -30,7 +30,7 @@ export default function CommercialPage() {
               Commercial <span className="blue-keyword">underinsurance</span> starts with the <span className="blue-keyword">wrong figure</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex — and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
+              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -54,7 +54,7 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      {/* 2. SECTION A — Why commercial is complex (text left, comparison card right) */}
+      {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -67,7 +67,7 @@ export default function CommercialPage() {
             </p>
             <ul className="space-y-4 mb-8">
               {[
-                { label: 'Tenant fitout', desc: 'Category A and B fitout installed by tenants is often excluded from building schedules but must be reinstated — adding substantial cost.' },
+                { label: 'Tenant fitout', desc: 'Category A and B fitout installed by tenants is often excluded from building schedules but must be reinstated - adding substantial cost.' },
                 { label: 'Specialist plant', desc: 'HVAC, lifts, substations and process equipment carry high replacement values that no index can capture without a site assessment.' },
                 { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
@@ -88,9 +88,9 @@ export default function CommercialPage() {
           <div className="space-y-3 lg:pt-10">
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-4">How approaches compare</p>
             {[
-              { title: 'Online calculators', sub: 'Miss fitout, plant and M&E — wrong for most commercial properties.', ok: false },
+              { title: 'Online calculators', sub: 'Miss fitout, plant and M&E - wrong for most commercial properties.', ok: false },
               { title: 'Index-linking alone', sub: 'If the base figure was wrong, index-linking compounds the error.', ok: false },
-              { title: 'Old or inherited valuations', sub: 'Build costs rose 30%+ since 2020 — pre-pandemic figures mislead.', ok: false },
+              { title: 'Old or inherited valuations', sub: 'Build costs rose 30%+ since 2020 - pre-pandemic figures mislead.', ok: false },
               { title: 'RICS reinstatement cost assessment', sub: 'Captures all cost layers. Accepted by all UK insurers. PI-insured and defensible.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div
@@ -114,7 +114,7 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      {/* 3. SECTION B — Property types (card left, text right) */}
+      {/* 3. SECTION B - Property types (card left, text right) */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
@@ -149,7 +149,7 @@ export default function CommercialPage() {
               Every commercial property type, <span className="blue-keyword">covered</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              From single-tenant industrial units to multi-let city centre offices, our RICS-regulated assessors have the sector knowledge to establish an accurate reinstatement cost — whatever the asset class.
+              From single-tenant industrial units to multi-let city centre offices, our RICS-regulated assessors have the sector knowledge to establish an accurate reinstatement cost - whatever the asset class.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               Mixed-use developments are assessed under a single instruction, with the output separated by use class so your insurer has clean, compliant figures for each element.
@@ -173,7 +173,7 @@ export default function CommercialPage() {
             {[
               {
                 title: 'Tenant Fitout Captured',
-                desc: 'We identify and value Category A and B fitout installed by occupying tenants — a cost layer that online tools and index-linked valuations routinely miss entirely.',
+                desc: 'We identify and value Category A and B fitout installed by occupying tenants - a cost layer that online tools and index-linked valuations routinely miss entirely.',
                 href: '/contact',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -193,7 +193,7 @@ export default function CommercialPage() {
               },
               {
                 title: 'Mixed-Use Assessment',
-                desc: 'A single instruction covers the entire development. Output is separated by use class — residential and commercial figures presented cleanly for your insurer.',
+                desc: 'A single instruction covers the entire development. Output is separated by use class - residential and commercial figures presented cleanly for your insurer.',
                 href: '/contact',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -268,6 +268,7 @@ export default function CommercialPage() {
     </main>
   )
 }
+
 
 
 

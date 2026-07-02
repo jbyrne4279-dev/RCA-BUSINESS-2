@@ -48,7 +48,7 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      {/* SECTION A — The risk of getting it wrong (text left, card right) */}
+      {/* SECTION A - The risk of getting it wrong (text left, card right) */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -57,10 +57,10 @@ export default function ManagingAgentsPage() {
               <span className="blue-keyword">Underinsurance</span> is your risk, not the freeholder&apos;s.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall — and the leaseholder complaints — land with you.
+              The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall - and the leaseholder complaints - land with you.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              A stale or inadequate valuation is the oversight that becomes a professional negligence claim. Under FCA Consumer Duty, leaseholders are now defined as customers — an unjustified sum insured fails that test too.
+              A stale or inadequate valuation is the oversight that becomes a professional negligence claim. Under FCA Consumer Duty, leaseholders are now defined as customers - an unjustified sum insured fails that test too.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -73,7 +73,7 @@ export default function ManagingAgentsPage() {
                 { label: 'Stale valuation (3+ years old)', desc: 'Creates PI exposure; average clause triggered on a claim.', ok: false },
                 { label: 'Index-linking only', desc: 'Compounds existing errors; no physical reinspection.', ok: false },
                 { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
-                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage — PI-backed, broker-ready, compliant.', ok: true },
+                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
                 <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0057FF] bg-[rgba(0,87,255,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
                   <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
@@ -88,7 +88,7 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      {/* SECTION B — What We Deliver (visual left, text right) */}
+      {/* SECTION B - What We Deliver (visual left, text right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
@@ -97,12 +97,12 @@ export default function ManagingAgentsPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
             <div className="space-y-3">
               {[
-                'Documented declared value — defensible at claim stage',
+                'Documented declared value - defensible at claim stage',
                 'Clear methodology statement for insurers and brokers',
                 'Review date and indexation guidance',
                 'Mixed-use itemisation for residential and commercial blocks',
                 'Professional indemnity backed assessment',
-                'Broker-ready format — forward directly, no rework',
+                'Broker-ready format - forward directly, no rework',
                 'Phased portfolio scheduling to smooth service-charge cost',
               ].map((item) => (
                 <div key={item} className="flex gap-3 items-start">
@@ -120,7 +120,7 @@ export default function ManagingAgentsPage() {
               A broker-ready report that <span className="blue-keyword">protects you</span>, your PI file, and your clients.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              We handle the technical assessment so you can demonstrate due diligence with confidence — to leaseholders, insurers, and regulators.
+              We handle the technical assessment so you can demonstrate due diligence with confidence - to leaseholders, insurers, and regulators.
             </p>
             <div className="space-y-6">
               {[
@@ -159,7 +159,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L13.5 7.5H19L14.5 11L16.5 17L11 13.5L5.5 17L7.5 11L3 7.5H8.5L11 2Z" stroke="#fff" strokeWidth="1.6" strokeLinejoin="round"/></svg>
                 ),
                 title: 'PI Protection',
-                desc: 'Every report is backed by professional indemnity insurance and produced to RICS guidance — the documented defence you need if a claim shortfall is ever questioned.',
+                desc: 'Every report is backed by professional indemnity insurance and produced to RICS guidance - the documented defence you need if a claim shortfall is ever questioned.',
                 href: '/services',
               },
               {
@@ -167,7 +167,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 ),
                 title: '24-hr Turnaround on Quotes',
-                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days — no renewal window missed.',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days - no renewal window missed.',
                 href: '/contact#contact-form',
               },
               {
@@ -200,7 +200,7 @@ export default function ManagingAgentsPage() {
               Ready to protect your <span className="blue-keyword">PI and your clients</span>?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
-              Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey — in time for your next renewal window.
+              Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey - in time for your next renewal window.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="inline-block bg-white text-[#0057FF] font-semibold rounded-full px-7 py-3 text-sm hover:bg-[#f0f4ff] transition-colors">Instruct Us Today</Link>
@@ -213,7 +213,7 @@ export default function ManagingAgentsPage() {
               {[
                 'Quote within one working day',
                 'Survey and report in 10–15 working days',
-                'Broker-ready format — forward directly',
+                'Broker-ready format - forward directly',
                 'PI-backed, RICS-aligned methodology',
                 'Review date flagged for 3-year compliance',
                 'Portfolio scheduling for multiple blocks',
@@ -233,6 +233,7 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
 
 
 

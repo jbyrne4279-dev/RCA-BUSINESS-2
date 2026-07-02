@@ -1,4 +1,4 @@
-import { Inter, Cormorant_Garamond } from 'next/font/google'
+﻿import { Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -7,14 +7,14 @@ import ScrollReveal from './components/ScrollReveal'
 const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
-  variable: '--font-inter',
+  variable: '-font-inter',
 })
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
-  variable: '--font-display',
+  variable: '-font-display',
 })
 
 export const metadata = {
@@ -126,3 +126,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+

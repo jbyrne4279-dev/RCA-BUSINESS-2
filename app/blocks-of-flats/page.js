@@ -31,7 +31,7 @@ export default function BlocksOfFlatsPage() {
               <span className="blue-keyword">Specialist assessments</span> for every block type.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              When a block is underinsured, the average clause reduces every claim — and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
+              When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -48,7 +48,7 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* SECTION A — Why block assessments are complex */}
+      {/* SECTION A - Why block assessments are complex */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
@@ -62,15 +62,15 @@ export default function BlocksOfFlatsPage() {
             <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
               <li className="flex gap-3 items-start">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
-                <span><strong className="text-[#0d1b3e]">Shared structures</strong> — external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
+                <span><strong className="text-[#0d1b3e]">Shared structures</strong> - external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
               </li>
               <li className="flex gap-3 items-start">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
-                <span><strong className="text-[#0d1b3e]">Communal services</strong> — lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
+                <span><strong className="text-[#0d1b3e]">Communal services</strong> - lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
               </li>
               <li className="flex gap-3 items-start">
                 <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
-                <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> — a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
+                <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> - a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
               </li>
             </ul>
           </div>
@@ -78,10 +78,10 @@ export default function BlocksOfFlatsPage() {
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
             <ul className="space-y-4">
               {[
-                'Full structural reinstatement cost — walls, roof, foundations, external fabric',
+                'Full structural reinstatement cost - walls, roof, foundations, external fabric',
                 'Communal areas and shared circulation space',
                 'Lifts, plant rooms and shared M&E services',
-                'Professional fees — architects, engineers, project managers',
+                'Professional fees - architects, engineers, project managers',
                 'Demolition and site clearance costs',
                 'VAT correctly applied to each element',
                 'BCIS-indexed figure with annual uplift schedule',
@@ -143,7 +143,7 @@ export default function BlocksOfFlatsPage() {
               Get the right <span className="blue-keyword">declared value</span> before the next renewal.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
-              A specialist block assessment takes the guesswork out of the declared value — protecting every leaseholder from an average-clause reduction at claim time.
+              A specialist block assessment takes the guesswork out of the declared value - protecting every leaseholder from an average-clause reduction at claim time.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors inline-block text-center">Request an Assessment</Link>
@@ -171,11 +171,12 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      <ContactSection heading="Get an accurate reinstatement cost for your block — and protect every leaseholder in it." />
+      <ContactSection heading="Get an accurate reinstatement cost for your block - and protect every leaseholder in it." />
       <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />
     </main>
   )
 }
+
 
 
 

@@ -31,7 +31,7 @@ export default function FreeholdersLeaseholdersPage() {
               Defend the <span className="blue-keyword">insuring covenant</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
+              When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
@@ -49,16 +49,16 @@ export default function FreeholdersLeaseholdersPage() {
         </div>
       </section>
 
-      {/* 2. SECTION A — The insuring obligation (text left, card right) */}
+      {/* 2. SECTION A - The insuring obligation (text left, card right) */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              What freeholders owe leaseholders — and what can <span className="blue-keyword">go wrong</span>.
+              What freeholders owe leaseholders - and what can <span className="blue-keyword">go wrong</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance — it is to insure to the full reinstatement cost of the building.
+              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance - it is to insure to the full reinstatement cost of the building.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed">
               Setting the figure without a professional assessment exposes the freeholder to personal liability if an underinsured claim arises. Leaseholders who suffer a shortfall can pursue the party responsible for the declared value, not the insurer.
@@ -79,14 +79,14 @@ export default function FreeholdersLeaseholdersPage() {
               <span className="text-[#0057FF] font-bold text-base shrink-0 mt-0.5">✓</span>
               <div>
                 <p className="font-semibold text-[#0d1b3e] text-sm mb-1">RICS-regulated assessment</p>
-                <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision — and satisfies the insuring obligation.</p>
+                <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision - and satisfies the insuring obligation.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. SECTION B — For leaseholders (card left, text right) */}
+      {/* 3. SECTION B - For leaseholders (card left, text right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -98,9 +98,9 @@ export default function FreeholdersLeaseholdersPage() {
             </div>
             <div className="space-y-3">
               {[
-                'Build costs have risen 30 %+ since 2020 (BCIS) — old figures are rarely adjusted',
+                'Build costs have risen 30 %+ since 2020 (BCIS) - old figures are rarely adjusted',
                 'Professional fees (architect, engineer, QS) are commonly omitted entirely',
-                'Demolition and site clearance — often left out of the declared value',
+                'Demolition and site clearance - often left out of the declared value',
                 'Loss-of-rent and alternative accommodation provision frequently overlooked',
               ].map((risk) => (
                 <div key={risk} className="flex gap-3 items-start">
@@ -123,13 +123,13 @@ export default function FreeholdersLeaseholdersPage() {
               If the matter is not resolved, the assessment can be submitted as evidence in a service charge dispute at the First-tier Tribunal (Property Chamber). Tribunal panels give weight to RICS-regulated figures over unsubstantiated schedules.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed">
-              Acting early — before a claim arises — is far stronger than trying to recover a shortfall after an event.
+              Acting early - before a claim arises - is far stronger than trying to recover a shortfall after an event.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 4. FEATURE CARDS — 3-col */}
+      {/* 4. FEATURE CARDS - 3-col */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
@@ -217,6 +217,7 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 
 
 

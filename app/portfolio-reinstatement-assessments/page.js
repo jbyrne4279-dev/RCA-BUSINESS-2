@@ -30,7 +30,7 @@ export default function PortfolioPage() {
               Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              A managed RICS assessment service for property portfolios — individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
+              A managed RICS assessment service for property portfolios - individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 2. SECTION A — text left, stat card right */}
+      {/* 2. SECTION A - text left, stat card right */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -66,7 +66,7 @@ export default function PortfolioPage() {
             </h2>
             <ul className="space-y-4 mb-8">
               {[
-                { title: 'Inconsistent declared figures', desc: 'Different assets instructed at different times produce figures assessed against different cost benchmarks — leaving gaps that only become visible at claim.' },
+                { title: 'Inconsistent declared figures', desc: 'Different assets instructed at different times produce figures assessed against different cost benchmarks - leaving gaps that only become visible at claim.' },
                 { title: 'Missed renewal cycles', desc: 'Managing renewal dates across a multi-asset portfolio without a system means assessments go stale. RICS recommends a formal review at least every three years.' },
                 { title: 'PI exposure at scale', desc: 'Managing agents and asset managers who arrange insurance for multiple assets carry a compounding professional indemnity exposure if any declared value is materially incorrect.' },
               ].map(({ title, desc }) => (
@@ -91,7 +91,7 @@ export default function PortfolioPage() {
               {[
                 { n: '1', label: 'Single instruction', desc: 'One engagement letter. One named surveyor. One invoice covering every asset.' },
                 { n: '1', label: 'One schedule', desc: 'A consolidated broker-ready summary listing every property, figure and review date.' },
-                { n: '∞', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively — no re-instructing, no missed renewals.' },
+                { n: '∞', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively - no re-instructing, no missed renewals.' },
               ].map(({ n, label, desc }) => (
                 <div key={label} className="flex gap-5 items-start">
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
@@ -109,7 +109,7 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 3. SECTION B — card left, text right */}
+      {/* 3. SECTION B - card left, text right */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0] bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -120,7 +120,7 @@ export default function PortfolioPage() {
               {[
                 { title: 'Individual RICS report per property', desc: 'Each asset receives its own full reinstatement cost assessment report, signed off by a RICS-regulated surveyor.' },
                 { title: 'Consolidated portfolio schedule', desc: 'A single broker-ready document listing every property, its assessed reinstatement cost, assessment date and recommended review date.' },
-                { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection plan we track every renewal date across the portfolio and deliver updated figures proactively — before each renewal, not after.' },
+                { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection plan we track every renewal date across the portfolio and deliver updated figures proactively - before each renewal, not after.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-4 items-start">
                   <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
@@ -143,10 +143,10 @@ export default function PortfolioPage() {
             </h2>
             <ol className="space-y-5 mb-8">
               {[
-                { step: '01', title: 'Submit your asset list', desc: 'Send us a schedule of properties — address, type, approximate floor area. We provide a consolidated quote within one business day.' },
+                { step: '01', title: 'Submit your asset list', desc: 'Send us a schedule of properties - address, type, approximate floor area. We provide a consolidated quote within one business day.' },
                 { step: '02', title: 'Single engagement letter', desc: 'One agreement covers every asset. We allocate a named surveyor as your single point of contact for the entire portfolio.' },
                 { step: '03', title: 'RICS assessments carried out', desc: 'Desktop or on-site assessments are completed for each property. Individual reports are issued as they complete, not held until the last one is done.' },
-                { step: '04', title: 'Consolidated schedule issued', desc: 'A broker-ready portfolio schedule is delivered alongside the final individual report — ready to pass straight to your insurer or broker.' },
+                { step: '04', title: 'Consolidated schedule issued', desc: 'A broker-ready portfolio schedule is delivered alongside the final individual report - ready to pass straight to your insurer or broker.' },
               ].map(({ step, title, desc }) => (
                 <li key={step} className="flex gap-4 items-start">
                   <span className="shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
@@ -174,7 +174,7 @@ export default function PortfolioPage() {
               Everything managed <span className="blue-keyword">under one roof</span>.
             </h2>
             <p className="text-[#64748b] text-base mt-4 max-w-xl mx-auto">
-              A portfolio instruction is not a bulk order — it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
+              A portfolio instruction is not a bulk order - it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -201,7 +201,7 @@ export default function PortfolioPage() {
               },
               {
                 title: 'Managed Cycle',
-                desc: 'Under the 3-Year Protection plan we manage annual BCIS indexation across the whole portfolio and deliver updated figures ahead of every renewal date — no re-instructing required.',
+                desc: 'Under the 3-Year Protection plan we manage annual BCIS indexation across the whole portfolio and deliver updated figures ahead of every renewal date - no re-instructing required.',
                 href: '/contact#contact-form',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.75" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@ export default function PortfolioPage() {
               <span className="blue-keyword">Consolidate</span> your portfolio under one instruction today.
             </h2>
             <p className="text-white/80 text-base leading-relaxed mb-8">
-              Send us your asset list and we will return a consolidated quote within one business day — no obligation.
+              Send us your asset list and we will return a consolidated quote within one business day - no obligation.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">
@@ -272,6 +272,7 @@ export default function PortfolioPage() {
     </main>
   )
 }
+
 
 
 

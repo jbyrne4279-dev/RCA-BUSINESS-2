@@ -47,13 +47,13 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection — RICS-aligned assessments for every property type.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection - RICS-aligned assessments for every property type.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION A — WHY SPECIALIST */}
+      {/* SECTION A - WHY SPECIALIST */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
               Generic tools cannot replace a <span className="blue-keyword">RICS specialist</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              UK construction costs rose over 30% between 2020 and 2024 — any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer.
+              UK construction costs rose over 30% between 2020 and 2024 - any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
@@ -85,7 +85,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION B — THREE TIERS OVERVIEW */}
+      {/* SECTION B - THREE TIERS OVERVIEW */}
       <section className="py-16 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
@@ -153,7 +153,7 @@ export default function ServicesPage() {
                 id: 'three-year-protection',
                 badge: '03. Recommended',
                 title: '3-Year Protection Plan',
-                desc: 'One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                desc: 'One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan →',
               },
@@ -199,7 +199,7 @@ export default function ServicesPage() {
                 'RICS-aligned assessment supervised by a registered member',
                 'Broker-ready report accepted by all UK insurers',
                 'Professional indemnity cover on every instruction',
-                'National coverage — England, Scotland, Wales and NI',
+                'National coverage - England, Scotland, Wales and NI',
                 'Clear turnaround confirmed on instruction',
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start">
@@ -213,11 +213,12 @@ export default function ServicesPage() {
       </section>
 
       <ContactSection heading="Not sure which service you need? We'll advise." />
-      <FaqSection description="Still deciding? Use these answers to narrow it down — or contact us and we'll recommend the right service for your property." items={faqItems} />
+      <FaqSection description="Still deciding? Use these answers to narrow it down - or contact us and we'll recommend the right service for your property." items={faqItems} />
 
     </main>
   )
 }
+
 
 
 

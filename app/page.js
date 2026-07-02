@@ -82,7 +82,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* 3. SECTION A — Why It Matters (image left, text right) */}
+      {/* 3. SECTION A - Why It Matters (image left, text right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -128,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. SECTION B — Who We Help (text left, visual right) */}
+      {/* 4. SECTION B - Who We Help (text left, visual right) */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -145,7 +145,7 @@ export default function HomePage() {
               {[
                 { title: 'Managing Agents & RTM Companies', desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.', href: '/managing-agents-insurance-valuations' },
                 { title: 'Freeholders & Leaseholders', desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.', href: '/freeholders-leaseholders' },
-                { title: 'Block Managers & Portfolio Landlords', desc: 'Consistent, compliant figures across every block — managed on a rolling cycle.', href: '/block-managers-reinstatement-cost-assessments' },
+                { title: 'Block Managers & Portfolio Landlords', desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.', href: '/block-managers-reinstatement-cost-assessments' },
               ].map(({ title, desc, href }) => (
                 <Link key={title} href={href} className="flex items-start gap-3 group">
                   <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>→</span>
@@ -164,8 +164,8 @@ export default function HomePage() {
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             {[
               { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-              { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site — we advise and agree a fixed fee.' },
-              { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees — all captured.' },
+              { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
+              { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
               { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
             ].map(({ n, title, desc }, i) => (
               <div key={n} className={`flex gap-4 items-start ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
@@ -214,7 +214,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. SERVICES — 3 col */}
+      {/* 6. SERVICES - 3 col */}
       <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -272,7 +272,7 @@ export default function HomePage() {
               Get Started. <span style={{color:"rgba(255,255,255,0.75)"}}>No Obligation</span> Required.
             </h2>
             <p className="text-white/80 text-base mb-8 max-w-md">
-              80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in 24 hours.
+              80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain - broker-ready report in 24 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
@@ -286,7 +286,7 @@ export default function HomePage() {
           <div className="bg-white/10 border border-white/20 rounded-2xl p-7 backdrop-blur-sm">
             <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Cavendish &amp; Rowe</p>
             {[
-              { label: 'Specialist only', desc: 'Reinstatement cost assessments — no general surveying, no distractions.' },
+              { label: 'Specialist only', desc: 'Reinstatement cost assessments - no general surveying, no distractions.' },
               { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.' },
               { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.' },
               { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.' },
@@ -312,6 +312,7 @@ export default function HomePage() {
     </main>
   )
 }
+
 
 
 
