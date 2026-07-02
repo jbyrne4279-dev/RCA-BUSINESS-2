@@ -101,7 +101,12 @@ export default function CommercialPage() {
                   boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                 }}
               >
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+                  {ok
+                    ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                    : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
+                  }
+                </span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>

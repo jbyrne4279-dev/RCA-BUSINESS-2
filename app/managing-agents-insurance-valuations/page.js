@@ -75,7 +75,12 @@ export default function ManagingAgentsPage() {
                 { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
                 <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0057FF] bg-[rgba(0,87,255,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
-                  <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                  <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+                    {ok
+                      ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                      : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
+                    }
+                  </span>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{label}</p>
                     <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
@@ -105,7 +110,7 @@ export default function ManagingAgentsPage() {
                 'Phased portfolio scheduling to smooth service-charge cost',
               ].map((item) => (
                 <div key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] font-bold text-sm shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
@@ -218,7 +223,7 @@ export default function ManagingAgentsPage() {
                 'Portfolio scheduling for multiple blocks',
               ].map((item) => (
                 <div key={item} className="flex gap-3 items-center">
-                  <span className="text-white font-bold text-sm shrink-0">✓</span>
+                  <span className="text-white shrink-0"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <p className="text-white/90 text-sm">{item}</p>
                 </div>
               ))}

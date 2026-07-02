@@ -60,15 +60,15 @@ export default function BlocksOfFlatsPage() {
             </p>
             <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
               <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                 <span><strong className="text-[#0d1b3e]">Shared structures</strong> - external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
               </li>
               <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                 <span><strong className="text-[#0d1b3e]">Communal services</strong> - lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
               </li>
               <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
+                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                 <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> - a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
               </li>
             </ul>
@@ -87,7 +87,7 @@ export default function BlocksOfFlatsPage() {
                 'Broker-ready report in 24 hours',
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -161,7 +161,7 @@ export default function BlocksOfFlatsPage() {
                 'Construction costs have risen since the last review',
               ].map((point) => (
                 <li key={point} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-white font-bold shrink-0 mt-0.5">✓</span>
+                  <span className="text-white shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <span className="text-white/85 text-sm leading-relaxed">{point}</span>
                 </li>
               ))}

@@ -3,6 +3,22 @@ import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
+const IcoDesktop = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+  </svg>
+)
+const IcoSurvey = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 21v-4h4v4"/>
+  </svg>
+)
+const IcoShield = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/>
+  </svg>
+)
+
 export const metadata = {
   title: 'Reinstatement Cost Assessment Survey for Buildings Insurance',
   description: 'Specialist reinstatement cost assessments for blocks of flats, managing agents, freeholders and leaseholders. RICS-aligned rebuild valuations for buildings insurance.',
@@ -73,7 +89,12 @@ export default function ServicesPage() {
               { label: 'RICS-aligned reinstatement cost assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ label, sub, ok }) => (
               <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#0057FF]' : 'border-[#e2e8f0]'}`} style={ok ? {background:'rgba(0,87,255,0.08)'} : {}}>
-                <span className={`text-sm font-bold shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>{ok ? '✓' : '✕'}</span>
+                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+                  {ok
+                    ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                    : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
+                  }
+                </span>
                 <div>
                   <p className="font-medium text-[#0d1b3e] text-sm">{label}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
@@ -89,9 +110,9 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             {[
-              { icon: '🖥', num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
-              { icon: '📐', num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
-              { icon: '🛡', num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
+              { icon: <IcoDesktop />, num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
+              { icon: <IcoSurvey />, num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
+              { icon: <IcoShield />, num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
             ].map(({ icon, num, title, desc }) => (
               <div key={num} className="flex gap-4 items-start step-reveal-item">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(0,87,255,0.12)'}}>
@@ -130,7 +151,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                icon: '🖥',
+                icon: <IcoDesktop />,
                 id: 'desktop-rca',
                 badge: '01. Desktop',
                 title: 'Desktop Assessment',
@@ -139,7 +160,7 @@ export default function ServicesPage() {
                 link: 'Request Desktop Assessment →',
               },
               {
-                icon: '📐',
+                icon: <IcoSurvey />,
                 id: 'on-site-survey',
                 badge: '02. On-Site',
                 title: 'On-Site Survey',
@@ -148,7 +169,7 @@ export default function ServicesPage() {
                 link: 'Request On-Site Survey →',
               },
               {
-                icon: '🛡',
+                icon: <IcoShield />,
                 id: 'three-year-protection',
                 badge: '03. Recommended',
                 title: '3-Year Protection Plan',
@@ -202,7 +223,7 @@ export default function ServicesPage() {
                 'Clear turnaround confirmed on instruction',
               ].map((item) => (
                 <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] font-bold text-sm shrink-0 mt-0.5">✓</span>
+                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <span className="text-[#0d1b3e] text-sm leading-snug">{item}</span>
                 </li>
               ))}
