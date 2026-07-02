@@ -13,6 +13,15 @@
 
 * { box-sizing: border-box; }
 
+/* ── Page load slide-up ── */
+@keyframes page-enter {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+main {
+  animation: page-enter 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /* ── Hero: clean white with subtle teal radial glow top ── */
 .hero-bg {
   background: radial-gradient(ellipse 70% 50% at 50% -5%, rgba(0,87,255,0.08) 0%, transparent 60%), #ffffff;
@@ -263,10 +272,42 @@
 /* ── Trust strip items: staggered electric-blue pulse ── */
 @keyframes trust-light {
   0%, 100% { color: #94a3b8; }
-  30%, 60%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.45); }
+  35%, 65%  { color: #0057FF; text-shadow: 0 0 14px rgba(0,87,255,0.5); }
 }
 .trust-item {
-  animation: trust-light 2.5s ease-in-out infinite;
+  animation: trust-light 5s ease-in-out infinite;
+}
+
+/* ── Arrow text links ── */
+@keyframes link-pulse {
+  0%, 100% { border-color: rgba(0,87,255,0.2); }
+  50%       { border-color: rgba(0,87,255,0.65); }
+}
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: #0057FF;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-bottom: 1.5px solid rgba(0,87,255,0.25);
+  padding-bottom: 1px;
+  transition: color 0.18s ease, border-color 0.18s ease, gap 0.2s ease;
+  animation: link-pulse 2.4s ease-in-out infinite;
+}
+.link-arrow:hover {
+  color: #0040CC;
+  border-color: #0040CC;
+  gap: 0.55em;
+  animation: none;
+}
+
+/* ── Badge scroll fade-in ── */
+.badge {
+  animation: fade-up 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 25%;
 }
 
 /* ── CR logo 3D spin ── */

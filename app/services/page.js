@@ -25,7 +25,6 @@ export default function ServicesPage() {
       <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Three service tiers. One <span className="blue-keyword">specialist firm</span>.
             </h1>
@@ -36,6 +35,7 @@ export default function ServicesPage() {
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
               <Link href="/services#service-cards" className="btn-ghost">View Services</Link>
             </div>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                 <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
                 <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                <Link href={href} className="text-[#0057FF] font-semibold text-sm hover:text-[#0040CC] transition-colors">
+                <Link href={href} className="link-arrow">
                   {link}
                 </Link>
               </div>
@@ -218,6 +218,8 @@ export default function ServicesPage() {
     </main>
   )
 }
+
+
 
 
 

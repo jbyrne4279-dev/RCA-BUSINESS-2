@@ -26,7 +26,6 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Defend the <span className="blue-keyword">insuring covenant</span>.
             </h1>
@@ -37,6 +36,7 @@ export default function FreeholdersLeaseholdersPage() {
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
@@ -217,6 +217,7 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
 
 
 

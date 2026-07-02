@@ -27,7 +27,6 @@ export default function HomePage() {
       <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           <div>
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mb-4" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               The <span className="blue-keyword">correct sum insured</span>, for every property.
             </h1>
@@ -38,6 +37,7 @@ export default function HomePage() {
               <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
               <Link href="/services" className="btn-ghost">View Services</Link>
             </div>
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={80} height={40} className="object-contain mt-6 opacity-90" />
           </div>
 
           {/* Hero image */}
@@ -62,7 +62,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-6">
           <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest shrink-0">Trusted by</p>
           {['Managing Agents', 'RTM Companies', 'Freeholders', 'Block Managers', 'Portfolio Landlords'].map((l, i) => (
-            <span key={l} className="trust-item text-sm font-semibold" style={{ animationDelay: `${i * 0.4}s` }}>{l}</span>
+            <span key={l} className="trust-item text-sm font-semibold" style={{ animationDelay: `${i * 1.1}s` }}>{l}</span>
           ))}
         </div>
       </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
             </p>
-            <Link href="/services" className="text-[#0057FF] font-semibold text-sm hover:text-[#0040CC] transition-colors">
+            <Link href="/services" className="link-arrow">
               Explore our services →
             </Link>
           </div>
@@ -277,6 +277,8 @@ export default function HomePage() {
     </main>
   )
 }
+
+
 
 
 
