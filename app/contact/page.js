@@ -1,10 +1,12 @@
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Contact Cavendish & Rowe | Instruct a Reinstatement Cost Assessment',
-  description: 'Contact Cavendish & Rowe to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
+  title: 'Contact Sterling Reinstatement | Instruct a Reinstatement Cost Assessment',
+  description: 'Contact Sterling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
   alternates: { canonical: '/contact' },
 }
 
@@ -53,7 +55,7 @@ export default function ContactPage() {
           <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
-              alt="Cavendish and Rowe reinstatement cost assessment surveyors"
+              alt="Sterling Reinstatement reinstatement cost assessment surveyors"
               fill
               className="object-cover"
               priority
@@ -66,8 +68,10 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <TrustStrip />
+      <TestimonialsSection />
       <ContactSection heading="Get a written fee estimate - no commitment required." />
-      <FaqSection description="Common questions about instructing Cavendish & Rowe." items={faqItems} />
+      <FaqSection description="Common questions about instructing Sterling Reinstatement." items={faqItems} />
     </main>
   )
 }

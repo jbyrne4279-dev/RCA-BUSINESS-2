@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Block Managers | Cavendish & Rowe',
+  title: 'Reinstatement Cost Assessments for Block Managers | Sterling Reinstatement',
   description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
 }
@@ -73,6 +76,8 @@ export default function BlockManagersPage() {
           </div>
         </div>
       </section>
+
+      <TrustStrip />
 
       {/* 2. SECTION A - The compliance burden (text left, card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
@@ -228,55 +233,8 @@ export default function BlockManagersPage() {
         </div>
       </section>
 
-      {/* 5. TEAL CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
-          {/* Left: text + pill buttons */}
-          <div>
-            <span className="inline-block text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 rounded-full" style={{background:'rgba(255,255,255,0.15)', color:'rgba(255,255,255,0.9)'}}>
-              Remove the liability
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Your portfolio. Compliant. This renewal season.
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed mb-8">
-              One instruction covers every block. RICS-regulated reports issued in 24 hours. Fully managed renewals - so you never let compliance lapse again.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold bg-white hover:bg-white/90 transition-colors" style={{color:'#0040CC'}}>
-                Request a Portfolio Quote
-              </Link>
-              <Link href="/contact?service=3year#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold border border-white/40 text-white hover:bg-white/10 transition-colors">
-                Enquire About 3-Year Plan
-              </Link>
-            </div>
-          </div>
-
-          {/* Right: checklist card */}
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-7">
-            <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">What&apos;s included</p>
-            <ul className="space-y-3">
-              {[
-                'RICS-regulated assessment per block',
-                'Portfolio summary schedule',
-                '24-hr desktop turnaround',
-                'Annual BCIS-indexed updates',
-                'Managed renewals - no re-instruction',
-                'Single-invoice billing',
-                'Named surveyor throughout',
-              ].map(item => (
-                <li key={item} className="flex items-center gap-3 text-sm text-white/90">
-                  <svg className="w-4 h-4 shrink-0 text-white" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       {/* 6. CONTACT + FAQ */}
       <ContactSection heading="Remove the liability. Instruct today." />

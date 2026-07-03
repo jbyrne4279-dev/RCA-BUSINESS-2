@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -68,6 +71,8 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
         </div>
       </section>
+
+      <TrustStrip />
 
       {/* 2. SECTION A - The insuring obligation (text left, card right) */}
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
@@ -203,37 +208,8 @@ export default function FreeholdersLeaseholdersPage() {
         </div>
       </section>
 
-      {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Find out if your building is covered for its true rebuild cost.
-            </h2>
-            <p className="text-white/85 text-base leading-relaxed mb-8">
-              Whether you are a freeholder looking to discharge your insuring obligation or a leaseholder with concerns about the declared value, we can help. Reports delivered within 24 hours.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">Get Quote</Link>
-              <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border-2 border-white/60 text-white font-semibold text-sm hover:border-white transition-colors">View Services</Link>
-            </div>
-          </div>
-          <div className="bg-white/15 rounded-2xl p-7 space-y-3">
-            {[
-              'RICS-regulated and fully independent',
-              'Defensible at the First-tier Tribunal',
-              'Desktop reports delivered within 24 hours',
-              'Covers all elements of reinstatement cost',
-              'On-site surveys available across the UK',
-            ].map((item) => (
-              <div key={item} className="flex gap-3 items-center">
-                <span className="text-white shrink-0"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                <p className="text-white/90 text-sm font-medium">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Speak to a specialist about your declared value." />
       <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about reinstatement cost assessments and buildings insurance." items={faqItems} />

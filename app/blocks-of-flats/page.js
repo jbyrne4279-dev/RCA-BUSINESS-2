@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -144,42 +147,8 @@ export default function BlocksOfFlatsPage() {
         </div>
       </section>
 
-      {/* CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Get the right declared value before the next renewal.
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed mb-8">
-              A specialist block assessment takes the guesswork out of the declared value - protecting every leaseholder from an average-clause reduction at claim time.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors inline-block text-center">Request an Assessment</Link>
-              <Link href="/services" className="border border-white/50 text-white font-semibold text-sm px-6 py-3 rounded-full hover:bg-white/10 transition-colors inline-block text-center">View All Services</Link>
-            </div>
-          </div>
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-8">
-            <p className="text-white font-semibold text-sm mb-5">When to commission an assessment:</p>
-            <ul className="space-y-3">
-              {[
-                'Declared value based on market value or flat prices',
-                'Insurance figure not formally reviewed in 3+ years',
-                'Building extended, altered or refurbished since last assessment',
-                'Acquiring a block or taking on the insuring obligation',
-                'Refinancing or preparing the block for sale',
-                'Construction costs have risen since the last review',
-              ].map((point) => (
-                <li key={point} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-white shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                  <span className="text-white/85 text-sm leading-relaxed">{point}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Get an accurate reinstatement cost for your block - and protect every leaseholder in it." />
       <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />

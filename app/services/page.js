@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -231,43 +234,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* TEAL CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
-              Get Started
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">
-              Not sure which service you need?
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed mb-8">
-              Tell us about your property and we'll recommend the right service. Most instructions are confirmed same day.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="btn-shine" style={{background:'white', color:'#0057FF'}}>Request an Assessment</Link>
-              <Link href="/contact#contact-form" className="btn-ghost" style={{borderColor:'white', color:'white'}}>Ask a Question</Link>
-            </div>
-          </div>
-          <div className="bg-white border border-white/20 rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.10)'}}>
-            <p className="font-semibold text-[#0d1b3e] mb-4">Every instruction includes:</p>
-            <ul className="space-y-3">
-              {[
-                'RICS-aligned assessment supervised by a registered member',
-                'Broker-ready report accepted by all UK insurers',
-                'Professional indemnity cover on every instruction',
-                'National coverage - England, Scotland, Wales and NI',
-                'Clear turnaround confirmed on instruction',
-              ].map((item) => (
-                <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                  <span className="text-[#0d1b3e] text-sm leading-snug">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Not sure which service you need? We'll advise." />
       <FaqSection description="Still deciding? Use these answers to narrow it down - or contact us and we'll recommend the right service for your property." items={faqItems} />

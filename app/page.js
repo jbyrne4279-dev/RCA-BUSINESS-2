@@ -3,13 +3,16 @@ import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
+import TrustStrip from './components/TrustStrip'
+import TestimonialsSection from './components/TestimonialsSection'
+import CtaBanner from './components/CtaBanner'
 
 export const metadata = {
-  title: 'RICS Reinstatement Cost Assessment UK | Cavendish & Rowe',
+  title: 'RICS Reinstatement Cost Assessment UK | Sterling Reinstatement',
   description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Cavendish & Rowe',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Sterling Reinstatement',
     description: '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     url: 'https://reinstatementcostassessment.org',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment London' }],
@@ -25,12 +28,6 @@ const faqItems = [
   { question: 'What areas do you cover?', answer: 'We cover the whole of the UK. Desktop assessments are available nationally. On-site surveys cover England, Scotland, Wales and Northern Ireland.' },
 ]
 
-const Star = () => (
-  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="#0057FF">
-    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-  </svg>
-)
-
 export default function HomePage() {
   const schema = {
     '@context': 'https://schema.org',
@@ -39,7 +36,7 @@ export default function HomePage() {
         '@type': 'WebPage',
         '@id': 'https://reinstatementcostassessment.org/#webpage',
         url: 'https://reinstatementcostassessment.org/',
-        name: 'RICS Reinstatement Cost Assessment UK | Cavendish & Rowe',
+        name: 'RICS Reinstatement Cost Assessment UK | Sterling Reinstatement',
         isPartOf: { '@id': 'https://reinstatementcostassessment.org/#website' },
         about: { '@id': 'https://reinstatementcostassessment.org/#organization' },
         description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
@@ -93,14 +90,7 @@ export default function HomePage() {
       </section>
 
       {/* 2. TRUST STRIP */}
-      <div className="border-b border-[#e2e8f0] py-5 px-6 md:px-10 bg-white overflow-hidden">
-        <div className="max-w-6xl mx-auto scrollbar-hide flex items-center gap-6 overflow-x-auto md:overflow-visible md:justify-between">
-          <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest shrink-0">Trusted by</p>
-          {['Managing Agents', 'RTM Companies', 'Freeholders', 'Block Managers', 'Portfolio Landlords'].map((l, i) => (
-            <span key={l} className="trust-item text-sm font-semibold shrink-0" style={{ animationDelay: `${i * 1.1}s` }}>{l}</span>
-          ))}
-        </div>
-      </div>
+      <TrustStrip />
 
       {/* 3. SECTION A - Why It Matters (image left, text right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 bg-white">
@@ -159,7 +149,7 @@ export default function HomePage() {
             <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
           </div>
 
-          {/* Right: process steps ï¿½ staggered reveal */}
+          {/* Right: process steps Ã¯Â¿Â½ staggered reveal */}
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             {[
@@ -181,38 +171,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. TESTIMONIALS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-blue mb-4">Client Feedback</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
-            <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { initials: 'CF', name: 'Caroline F.', role: 'Managing Agent Director, London', quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.' },
-              { initials: 'SL', name: 'Sarah L.', role: 'Block Manager, Bristol', quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.' },
-              { initials: 'PN', name: 'Priya N.', role: 'Portfolio Manager, Birmingham', quote: 'We manage over 40 blocks and Cavendish & Rowe handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.' },
-            ].map(({ initials, name, role, quote }) => (
-              <div key={name} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-11 h-11 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>
-                    {initials}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm text-[#0d1b3e]">{name}</p>
-                    <p className="text-xs text-[#64748b]">{role}</p>
-                  </div>
-                </div>
-                <div className="flex gap-0.5 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} />)}
-                </div>
-                <p className="text-[#64748b] text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
 
       {/* 6. SERVICES - 3 col */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -265,43 +224,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. CTA BANNER */}
-      <section className="py-14 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-              Get Started. <span style={{color:"rgba(255,255,255,0.75)"}}>No Obligation</span> Required.
-            </h2>
-            <p className="text-white/80 text-base mb-8 max-w-md">
-              80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain - broker-ready report in 24 hours.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
-                Get Quote
-              </Link>
-              <Link href="/services" className="border border-white/40 text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors inline-block text-center">
-                View Services
-              </Link>
-            </div>
-          </div>
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-7 backdrop-blur-sm">
-            <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Cavendish &amp; Rowe</p>
-            {[
-              { label: 'Specialist only', desc: 'Reinstatement cost assessments - no general surveying, no distractions.' },
-              { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.' },
-              { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.' },
-              { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.' },
-            ].map(({ label, desc }, i) => (
-              <div key={label} className="flex items-start gap-3 mb-4 last:mb-0 step-reveal" style={{animationDelay:`${i * 0.15}s`}}>
-                <svg className="w-4 h-4 shrink-0 mt-0.5 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
-                <div>
-                  <p className="text-white font-semibold text-sm">{label}</p>
-                  <p className="text-white/65 text-xs mt-0.5">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <CtaBanner />
 
       <ContactSection heading="Instruct an assessment today." />
 

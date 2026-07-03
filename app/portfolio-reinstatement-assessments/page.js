@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -73,6 +76,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <TrustStrip />
 
       {/* 2. SECTION A - text left, stat card right */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -245,47 +250,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 5. CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Consolidate your portfolio under one instruction today.
-            </h2>
-            <p className="text-white/80 text-base leading-relaxed mb-8">
-              Send us your asset list and we will return a consolidated quote within one business day - no obligation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white text-[#0057FF] font-semibold text-sm hover:bg-white/90 transition-colors">
-                Request Portfolio Quote
-              </Link>
-              <Link href="/services" className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white font-semibold text-sm hover:bg-white/10 transition-colors">
-                View All Services
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-7">
-            <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">What you get</p>
-            <ul className="space-y-4">
-              {[
-                'Individual RICS report for every asset',
-                'Consolidated broker-ready portfolio schedule',
-                'Single engagement letter and single invoice',
-                'Named surveyor as your single point of contact',
-                'Annual BCIS indexation managed proactively (3-Year plan)',
-              ].map(item => (
-                <li key={item} className="flex items-start gap-3 step-reveal-item">
-                  <span className="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
-                    <svg className="w-3 h-3" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  </span>
-                  <span className="text-white/90 text-sm">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Consolidate your portfolio. One instruction." />
       <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} />

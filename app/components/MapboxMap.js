@@ -31,7 +31,7 @@ export default function MapboxMap() {
 
     const el = document.createElement('div')
     el.innerHTML = `
-      <div style="background:linear-gradient(105deg,#1A6B4A 40%,#4ade80 50%,#1A6B4A 60%);background-size:200% auto;animation:shine 20s linear infinite;color:white;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 20px rgba(26,107,74,0.4);cursor:pointer;">Cavendish & Rowe</div>
+      <div style="background:linear-gradient(105deg,#1A6B4A 40%,#4ade80 50%,#1A6B4A 60%);background-size:200% auto;animation:shine 20s linear infinite;color:white;font-family:Inter,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;white-space:nowrap;box-shadow:0 4px 20px rgba(26,107,74,0.4);cursor:pointer;">Sterling Reinstatement</div>
       <div style="width:2px;height:10px;background:#1A6B4A;margin:0 auto;"></div>
       <div style="width:8px;height:8px;background:#1A6B4A;border-radius:50%;margin:0 auto;box-shadow:0 0 0 3px rgba(26,107,74,0.3);"></div>
     `

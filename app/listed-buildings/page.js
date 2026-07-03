@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -67,6 +70,8 @@ export default function ListedBuildingsPage() {
           </div>
         </div>
       </section>
+
+      <TrustStrip />
 
       {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
@@ -221,50 +226,8 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* 5. CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Text + buttons left */}
-          <div>
-            <span className="inline-block text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">Get Started</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Ready to get the <span class="font-extrabold">right figure</span> for your listed building?
-            </h2>
-            <p className="text-white/85 text-base leading-relaxed mb-8">
-              Request a specialist on-site assessment. We cover all grades across the UK and confirm your fee on receipt of the enquiry.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/contact#contact-form" className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold bg-white text-[#0d1b3e] hover:bg-white/90 transition-colors">
-                Request an Assessment
-              </Link>
-              <Link href="/services" className="inline-flex items-center justify-center rounded-full px-7 py-3 text-sm font-semibold border border-white/50 text-white hover:bg-white/10 transition-colors">
-                View All Services
-              </Link>
-            </div>
-          </div>
-          {/* Checklist card right */}
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-7">
-            <p className="text-white font-semibold text-sm mb-5">Every assessment includes:</p>
-            <ul className="space-y-3">
-              {[
-                'Physical on-site inspection by a RICS surveyor',
-                'Heritage materials and specialist trade cost build-up',
-                'Conservation consent and professional fee allowances',
-                'VAT treatment - zero-rated and 20% scenarios',
-                'Broker-ready report with full methodology note',
-                'Annual BCIS inflation index reviews available',
-              ].map(item => (
-                <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="text-white/90 text-sm leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Get a specialist on-site assessment for your listed building." />
       <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} />

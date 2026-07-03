@@ -1,5 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import TrustStrip from '../components/TrustStrip'
+import TestimonialsSection from '../components/TestimonialsSection'
+import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -73,6 +76,8 @@ export default function CommercialPage() {
           </div>
         </div>
       </section>
+
+      <TrustStrip />
 
       {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -242,51 +247,8 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      {/* 5. CTA BANNER */}
-      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
-              Protect your commercial asset with a RICS-regulated assessment.
-            </h2>
-            <p className="text-white/85 text-base leading-relaxed mb-8">
-              Establish the correct sum insured before an underinsurance clause is triggered. Instructions completed within 24 hours for desktop assessments.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link
-                href="/contact#contact-form"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white font-semibold text-[#0057FF] text-sm hover:bg-white/90 transition-colors"
-              >
-                Request an Assessment
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/50 font-semibold text-white text-sm hover:bg-white/10 transition-colors"
-              >
-                View All Services
-              </Link>
-            </div>
-          </div>
-
-          <div className="bg-white/10 border border-white/20 rounded-2xl p-6 backdrop-blur-sm">
-            <p className="text-white font-semibold text-sm mb-4">Every assessment includes:</p>
-            <ul className="space-y-3">
-              {[
-                'Full reinstatement cost calculation including tenant fitout',
-                'Specialist plant, HVAC and M&E services valued on-site',
-                'RICS-compliant report accepted by all UK insurers',
-                'Professional indemnity insurance on every instruction',
-                'Optional 3-Year Protection Plan with BCIS index cover',
-              ].map(item => (
-                <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <svg className="w-4 h-4 mt-0.5 shrink-0 text-white" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
-                  <span className="text-white/90 text-sm leading-snug">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+      <CtaBanner />
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." />
       <FaqSection description="Direct answers to the most common questions about commercial reinstatement cost assessments." items={faqItems} />
