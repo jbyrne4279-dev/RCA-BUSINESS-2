@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -10,7 +10,7 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is the difference between the declared value and the sum insured?', answer: 'The declared value is the cost to rebuild the whole building from scratch - that is what you (or your managing agent) are responsible for setting correctly. The sum insured is a higher figure shown on your policy schedule: the insurer adds an inflation buffer on top, usually 20–50%. They are not the same number, and confusing them is one of the most common causes of underinsurance.' },
+  { question: 'What is the difference between the declared value and the sum insured?', answer: 'The declared value is the cost to rebuild the whole building from scratch - that is what you (or your managing agent) are responsible for setting correctly. The sum insured is a higher figure shown on your policy schedule: the insurer adds an inflation buffer on top, usually 20â€“50%. They are not the same number, and confusing them is one of the most common causes of underinsurance.' },
   { question: 'Who is responsible for making sure the insurance figure is correct?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC, or RTM company holds the insuring obligation - but the practical job is often handled by a managing agent. Whoever is responsible for setting the figure carries the liability if it turns out to be wrong.' },
   { question: 'What happens if the building is underinsured and there is a big claim?', answer: 'The insurer applies what is known as the "average clause" and pays out only in proportion to how much of the true rebuild cost is covered. If a block is insured for £1m but the real rebuild cost is £1.5m, a £300,000 claim pays out just £200,000 - the other £100,000 has to come from somewhere else.' },
   { question: 'As a leaseholder, can I get my own independent assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent assessment, and the report can be used as evidence in a formal concern or a service charge dispute at tribunal.' },
@@ -44,8 +44,8 @@ export default function FreeholdersLeaseholdersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Defend the <span className="blue-keyword">insuring covenant</span>.
@@ -59,7 +59,7 @@ export default function FreeholdersLeaseholdersPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -70,8 +70,8 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 2. SECTION A - The insuring obligation (text left, card right) */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
@@ -86,7 +86,7 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
 
           {/* Comparison card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-5 sm:p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-2">How the declared value is set</p>
             <div className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0]">
               <span className="text-[#d93025] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg></span>
@@ -107,11 +107,11 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 3. SECTION B - For leaseholders (card left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Stat card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-5 sm:p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <div className="rounded-xl p-5" style={{background:'rgba(0,87,255,0.08)'}}>
               <p className="text-5xl font-bold text-[#0057FF] leading-none mb-2">80%</p>
               <p className="text-sm text-[#64748b]">of UK residential blocks carry an inaccurate sum insured</p>
@@ -153,7 +153,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <span className="badge badge-blue mb-4">How We Help</span>
@@ -205,7 +205,7 @@ export default function FreeholdersLeaseholdersPage() {
 
       {/* 5. CTA BANNER */}
       <section className="py-16 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Find out if your building is covered for its true rebuild cost.

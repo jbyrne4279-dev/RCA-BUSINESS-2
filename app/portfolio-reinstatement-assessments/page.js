@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -43,8 +43,8 @@ export default function PortfolioPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
@@ -58,7 +58,7 @@ export default function PortfolioPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1477785304.jpeg"
               alt="Portfolio reinstatement cost assessment"
@@ -75,8 +75,8 @@ export default function PortfolioPage() {
       </section>
 
       {/* 2. SECTION A - text left, stat card right */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Text left */}
           <div>
@@ -111,7 +111,7 @@ export default function PortfolioPage() {
               {[
                 { n: '1', label: 'Single instruction', desc: 'One engagement letter. One named surveyor. One invoice covering every asset.' },
                 { n: '1', label: 'One schedule', desc: 'A consolidated broker-ready summary listing every property, figure and review date.' },
-                { n: '∞', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively - no re-instructing, no missed renewals.' },
+                { n: '8', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively - no re-instructing, no missed renewals.' },
               ].map(({ n, label, desc }) => (
                 <div key={label} className="flex gap-5 items-start">
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
@@ -130,8 +130,8 @@ export default function PortfolioPage() {
       </section>
 
       {/* 3. SECTION B - card left, text right */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0] bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Deliverables card left */}
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
@@ -186,7 +186,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Portfolio Assessments</span>
@@ -197,7 +197,7 @@ export default function PortfolioPage() {
               A portfolio instruction is not a bulk order - it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: 'Single Instruction',
@@ -237,7 +237,7 @@ export default function PortfolioPage() {
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
                 <Link href={href} className="link-arrow">
-                  Find out more →
+                  Find out more ?
                 </Link>
               </div>
             ))}
@@ -246,8 +246,8 @@ export default function PortfolioPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Consolidate your portfolio under one instruction today.

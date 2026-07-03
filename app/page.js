@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
@@ -60,8 +60,8 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               The <span className="blue-keyword">correct sum insured</span>, for every property.
@@ -76,7 +76,7 @@ export default function HomePage() {
           </div>
 
           {/* Hero image */}
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Reinstatement cost assessment property"
@@ -93,18 +93,18 @@ export default function HomePage() {
       </section>
 
       {/* 2. TRUST STRIP */}
-      <div className="border-b border-[#e2e8f0] py-5 px-6 md:px-10 bg-white">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-6">
+      <div className="border-b border-[#e2e8f0] py-5 px-6 md:px-10 bg-white overflow-hidden">
+        <div className="max-w-6xl mx-auto scrollbar-hide flex items-center gap-6 overflow-x-auto md:overflow-visible md:justify-between">
           <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest shrink-0">Trusted by</p>
           {['Managing Agents', 'RTM Companies', 'Freeholders', 'Block Managers', 'Portfolio Landlords'].map((l, i) => (
-            <span key={l} className="trust-item text-sm font-semibold" style={{ animationDelay: `${i * 1.1}s` }}>{l}</span>
+            <span key={l} className="trust-item text-sm font-semibold shrink-0" style={{ animationDelay: `${i * 1.1}s` }}>{l}</span>
           ))}
         </div>
       </div>
 
       {/* 3. SECTION A - Why It Matters (image left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: tilt card */}
           <TiltCard />
@@ -122,15 +122,15 @@ export default function HomePage() {
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
             </p>
             <Link href="/services" className="link-arrow">
-              Explore our services →
+              Explore our services ?
             </Link>
           </div>
         </div>
       </section>
 
       {/* 4. SECTION B - Who We Help (text left, visual right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: text */}
           <div>
@@ -148,7 +148,7 @@ export default function HomePage() {
                 { title: 'Block Managers & Portfolio Landlords', desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.', href: '/block-managers-reinstatement-cost-assessments' },
               ].map(({ title, desc, href }) => (
                 <Link key={title} href={href} className="flex items-start gap-3 group">
-                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>→</span>
+                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>?</span>
                   <div>
                     <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
                     <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
@@ -159,7 +159,7 @@ export default function HomePage() {
             <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
           </div>
 
-          {/* Right: process steps — staggered reveal */}
+          {/* Right: process steps ï¿½ staggered reveal */}
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             {[
@@ -181,14 +181,14 @@ export default function HomePage() {
       </section>
 
       {/* 5. TESTIMONIALS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Client Feedback</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
             <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { initials: 'CF', name: 'Caroline F.', role: 'Managing Agent Director, London', quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.' },
               { initials: 'SL', name: 'Sarah L.', role: 'Block Manager, Bristol', quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.' },
@@ -215,14 +215,14 @@ export default function HomePage() {
       </section>
 
       {/* 6. SERVICES - 3 col */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Our Assessments Cover <span className="blue-keyword">Every Property Type</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: (
@@ -256,7 +256,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
                 <Link href={href} className="link-arrow">
-                  Read More →
+                  Read More ?
                 </Link>
               </div>
             ))}
@@ -266,7 +266,7 @@ export default function HomePage() {
 
       {/* 7. CTA BANNER */}
       <section className="py-14 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
               Get Started. <span style={{color:"rgba(255,255,255,0.75)"}}>No Obligation</span> Required.

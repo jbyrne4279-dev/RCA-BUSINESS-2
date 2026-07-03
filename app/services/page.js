@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -75,8 +75,8 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* HERO */}
-      <section className="hero-bg py-14 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Three service tiers. One <span className="blue-keyword">specialist firm</span>.
@@ -89,7 +89,7 @@ export default function ServicesPage() {
               <Link href="/services#service-cards" className="btn-ghost">View Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="RICS reinstatement cost assessment building survey"
@@ -106,7 +106,7 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION A - WHY SPECIALIST */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">Our Services</span>
@@ -143,8 +143,8 @@ export default function ServicesPage() {
       </section>
 
       {/* SECTION B - THREE TIERS OVERVIEW */}
-      <section className="py-16 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             {[
               { icon: <IcoDesktop />, num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
@@ -177,7 +177,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 3-COL SERVICE CARDS */}
-      <section id="service-cards" className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Our Services</span>
@@ -185,7 +185,7 @@ export default function ServicesPage() {
               Pick the assessment that <span className="blue-keyword">fits your property</span>.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: <IcoDesktop />,
@@ -194,7 +194,7 @@ export default function ServicesPage() {
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling without a site visit. Delivered within 24 hours of instruction. Accepted by all UK insurers.',
                 href: '/contact?service=desktop#contact-form',
-                link: 'Request Desktop Assessment →',
+                link: 'Request Desktop Assessment ?',
               },
               {
                 icon: <IcoSurvey />,
@@ -203,7 +203,7 @@ export default function ServicesPage() {
                 title: 'On-Site Survey',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed, heritage and complex buildings.',
                 href: '/contact?service=onsite#contact-form',
-                link: 'Request On-Site Survey →',
+                link: 'Request On-Site Survey ?',
               },
               {
                 icon: <IcoShield />,
@@ -212,7 +212,7 @@ export default function ServicesPage() {
                 title: '3-Year Protection Plan',
                 desc: 'One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
-                link: 'Enquire About Protection Plan →',
+                link: 'Enquire About Protection Plan ?',
               },
             ].map(({ icon, id, badge, title, desc, href, link }) => (
               <div key={id} id={id} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
@@ -232,8 +232,8 @@ export default function ServicesPage() {
       </section>
 
       {/* TEAL CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <span className="inline-flex items-center bg-white/20 text-white text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
               Get Started

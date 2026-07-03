@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -36,8 +36,8 @@ export default function BlocksOfFlatsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               <span className="blue-keyword">Specialist assessments</span> for every block type.
@@ -50,7 +50,7 @@ export default function BlocksOfFlatsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -61,8 +61,8 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* SECTION A - Why block assessments are complex */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
@@ -79,7 +79,7 @@ export default function BlocksOfFlatsPage() {
               ].map(({ num, label, desc }) => (
                 <li key={num} className="flex gap-4 items-start step-reveal-item">
                   <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{num}</span>
-                  <span><strong className="text-[#0d1b3e]">{label}</strong> — {desc}</span>
+                  <span><strong className="text-[#0d1b3e]">{label}</strong> â€” {desc}</span>
                 </li>
               ))}
             </ul>
@@ -111,7 +111,7 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* PROPERTY TYPES */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Blocks of Flats</span>
@@ -135,7 +135,7 @@ export default function BlocksOfFlatsPage() {
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="link-arrow !text-xs">Learn more →</Link>
+                  <Link href={href} className="link-arrow !text-xs">Learn more ?</Link>
                 </div>
               </div>
             ))}
@@ -145,8 +145,8 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <span className="badge badge-dark mb-4">Protect Every Leaseholder</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-5">

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -12,9 +12,9 @@ export const metadata = {
 const faqItems = [
   { question: 'Can a managing agent be personally liable for underinsurance?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate valuation, the agent can face a professional negligence or E&O claim - independent of who holds the insuring obligation under the lease. A RICS-aligned assessment on the recommended three-year cycle is the defensible position that protects your PI cover.' },
   { question: 'Will insurers and brokers accept your report?', answer: 'Yes. Our reports are accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions, and review date in the format brokers and insurers expect - you forward it directly.' },
-  { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10–15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
+  { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10â€“15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
   { question: 'Is index-linking the sum insured each year sufficient?', answer: 'No. Index-linking adjusts the figure but compounds any existing error and does not capture material works or specification changes. RICS requires a full reassessment at least every three years.' },
-  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer - DV plus an inflation provision, typically 20–50% uplift - so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
+  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer - DV plus an inflation provision, typically 20â€“50% uplift - so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
   { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes - individual reports per property, residential and commercial split for mixed-use blocks, with a consolidated summary schedule and staggered scheduling to smooth service-charge cost across years.' },
 ]
 
@@ -44,8 +44,8 @@ export default function ManagingAgentsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
               Discharge your <span className="blue-keyword">compliance obligation</span>.
@@ -58,7 +58,7 @@ export default function ManagingAgentsPage() {
               <Link href="/services" className="btn-ghost">Our Services</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -69,8 +69,8 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* SECTION A - The risk of getting it wrong (text left, card right) */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue">Managing Agents</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
@@ -85,7 +85,7 @@ export default function ManagingAgentsPage() {
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
 
-          {/* ✕ / ✓ comparison card */}
+          {/* ? / ? comparison card */}
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-5">Approach comparison</p>
             <div className="space-y-4">
@@ -114,8 +114,8 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* SECTION B - What We Deliver (visual left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left: What We Deliver checklist card */}
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
@@ -169,7 +169,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* 3-COL FEATURE CARDS */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Managing Agents</span>
@@ -177,7 +177,7 @@ export default function ManagingAgentsPage() {
               Built around your <span className="blue-keyword">renewal cycle</span>.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 icon: (
@@ -192,7 +192,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 ),
                 title: '24-hr Turnaround on Quotes',
-                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days - no renewal window missed.',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10â€“15 working days - no renewal window missed.',
                 href: '/contact#contact-form',
               },
               {
@@ -210,7 +210,7 @@ export default function ManagingAgentsPage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <Link href={href} className="link-arrow mt-5">Read More →</Link>
+                <Link href={href} className="link-arrow mt-5">Read More ?</Link>
               </div>
             ))}
           </div>
@@ -218,14 +218,14 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* TEAL CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Ready to protect your PI and your clients?
             </h2>
             <p className="text-white/85 text-base leading-relaxed mb-8">
-              Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10–15 working days of survey - in time for your next renewal window.
+              Instruct us today and we will have a quote back within one working day. Most assessments are delivered within 10â€“15 working days of survey - in time for your next renewal window.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact#contact-form" className="inline-block bg-white text-[#0057FF] font-semibold rounded-full px-7 py-3 text-sm hover:bg-[#f0f4ff] transition-colors">Instruct Us Today</Link>
@@ -237,7 +237,7 @@ export default function ManagingAgentsPage() {
             <div className="space-y-3">
               {[
                 'Quote within one working day',
-                'Survey and report in 10–15 working days',
+                'Survey and report in 10â€“15 working days',
                 'Broker-ready format - forward directly',
                 'PI-backed, RICS-aligned methodology',
                 'Review date flagged for 3-year compliance',

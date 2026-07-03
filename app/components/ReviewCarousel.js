@@ -1,4 +1,4 @@
-﻿const reviews = [
+const reviews = [
   { quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.', name: 'Caroline F.', role: 'Managing Agent Director, London' },
   { quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.', name: 'Sarah L.', role: 'Block Manager, Bristol' },
   { quote: 'We manage over 40 blocks and Cavendish & Rowe handles all our reinstatement cost assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.', name: 'Priya N.', role: 'Portfolio Manager, Birmingham' },
@@ -26,7 +26,7 @@ export default function ReviewCarousel() {
           <p className="text-[#64748b] text-sm mt-2">Managing agents, freeholders and property professionals across the UK.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map(({ quote, name, role }) => (
             <div key={name} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.06)' }}>
               <StarRow />

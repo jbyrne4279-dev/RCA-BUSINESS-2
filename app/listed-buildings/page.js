@@ -1,11 +1,11 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessments for Listed and Heritage Buildings',
-  description: 'Specialist reinstatement cost assessments for listed buildings. Listed properties carry 20–50% higher rebuild costs than standard construction. Accurate, site-based valuations for buildings insurance.',
+  description: 'Specialist reinstatement cost assessments for listed buildings. Listed properties carry 20-50% higher rebuild costs than standard construction. Accurate, site-based valuations for buildings insurance.',
   alternates: { canonical: '/listed-buildings' },
 }
 
@@ -44,8 +44,8 @@ export default function ListedBuildingsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Listed buildings demand <span className="blue-keyword">specialist assessment</span>.
@@ -58,7 +58,7 @@ export default function ListedBuildingsPage() {
               <Link href="/services#on-site-survey" className="btn-ghost">On-Site Survey</Link>
             </div>
           </div>
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_1064771096.jpeg" alt="Listed building specialist assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-7">
@@ -69,8 +69,8 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Text left */}
           <div>
             <span className="badge badge-blue mb-4">Why Listed Buildings Are Different</span>
@@ -116,8 +116,8 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 3. SECTION B - On-site survey process (card left, text right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Checklist card left */}
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
@@ -169,7 +169,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Why Choose RCA</span>
@@ -214,7 +214,7 @@ export default function ListedBuildingsPage() {
                 <div className="mb-4">{icon}</div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="link-arrow">Learn more →</Link>
+                <Link href={href} className="link-arrow">Learn more ?</Link>
               </div>
             ))}
           </div>
@@ -222,8 +222,8 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text + buttons left */}
           <div>
             <span className="inline-block text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">Get Started</span>

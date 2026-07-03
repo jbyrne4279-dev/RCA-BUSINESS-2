@@ -1,4 +1,4 @@
-﻿import { Inter, Cormorant_Garamond } from 'next/font/google'
+import { Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -114,7 +114,7 @@ const orgSchema = {
       telephone: '+442031788099',
       email: 'info@rca-ltd.com',
       areaServed: { '@type': 'Country', name: 'United Kingdom' },
-      priceRange: '££',
+      priceRange: '£',
       knowsAbout: [
         'Reinstatement Cost Assessment',
         'RICS Rebuild Cost Assessment',
@@ -151,7 +151,7 @@ const orgSchema = {
               '@type': 'Service',
               name: '3-Year Protection Plan',
               description:
-                'One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                'One instruction covers three years of RICS compliance â€” full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
             },
           },
         ],

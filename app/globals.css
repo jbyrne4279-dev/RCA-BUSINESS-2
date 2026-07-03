@@ -365,6 +365,27 @@ select {
 select:hover { border-color: #0057FF !important; }
 select:focus { outline: none; border-color: #0057FF !important; box-shadow: 0 0 0 3px rgba(0,87,255,0.15) !important; }
 
+/* ── Mobile: hide scrollbar for horizontal scroll strips ── */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Mobile typography scale ── */
+@media (max-width: 639px) {
+  /* Hero h1: cap at 2rem on very narrow screens to prevent tight wrapping */
+  h1 { line-height: 1.1; }
+  /* Tighter section badge margin on mobile */
+  .badge { margin-bottom: 0.75rem; }
+  /* Reduce hero bg glow radius on mobile */
+  .hero-bg {
+    background: radial-gradient(ellipse 110% 40% at 50% -5%, rgba(0,87,255,0.07) 0%, transparent 60%), #ffffff;
+  }
+}
+
+/* ── Mobile section padding override (ContactSection uses py-20 inline) ── */
+@media (max-width: 767px) {
+  .contact-section-wrap { padding-top: 3rem; padding-bottom: 3rem; }
+}
+
 /* ── Legacy aliases ── */
 .btn-amber        { background: #0057FF; color: #fff; border-radius: 9999px; }
 .rule-amber       { height: 2px; width: 32px; background: #0057FF; display: block; }

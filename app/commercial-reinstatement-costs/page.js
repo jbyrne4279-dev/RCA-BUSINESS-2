@@ -1,4 +1,4 @@
-﻿import Link from 'next/link'
+import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -43,8 +43,8 @@ export default function CommercialPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* 1. HERO */}
-      <section className="hero-bg py-16 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
               Commercial <span className="blue-keyword">underinsurance</span> starts with the <span className="blue-keyword">wrong figure</span>.
@@ -58,7 +58,7 @@ export default function CommercialPage() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden h-80 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_158046067.jpeg"
               alt="Commercial reinstatement cost assessment"
@@ -75,8 +75,8 @@ export default function CommercialPage() {
       </section>
 
       {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
@@ -134,14 +134,14 @@ export default function CommercialPage() {
                 </div>
               </div>
             ))}
-            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow">See our portfolio assessment service →</Link></p>
+            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow">See our portfolio assessment service ?</Link></p>
           </div>
         </div>
       </section>
 
       {/* 3. SECTION B - Property types (card left, text right) */}
-      <section className="bg-white py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
               <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-widest">Property Types We Assess</p>
@@ -188,13 +188,13 @@ export default function CommercialPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-16 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Expertise</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Specialist assessments for specialist buildings.</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 title: 'Tenant Fitout Captured',
@@ -234,7 +234,7 @@ export default function CommercialPage() {
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
                 <Link href={href} className="link-arrow">
-                  Learn more →
+                  Learn more ?
                 </Link>
               </div>
             ))}
@@ -243,8 +243,8 @@ export default function CommercialPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <section className="py-16 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="py-12 md:py-24 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-4">
               Protect your commercial asset with a RICS-regulated assessment.

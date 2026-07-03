@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import Link from 'next/link'
 import LogoSpin from './LogoSpin'
 import { usePathname } from 'next/navigation'
