@@ -131,11 +131,9 @@ export default function ListedBuildingsPage() {
                 'Extended programme costs and temporary accommodation where applicable',
                 'Curtilage structures, outbuildings and boundary features',
                 'BCIS-benchmarked cost build-up with full methodology note',
-              ].map(item => (
+              ].map((item, i) => (
                 <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
+                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{String(i + 1).padStart(2, '0')}</span>
                   <span className="text-[#0d1b3e] text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -149,15 +147,15 @@ export default function ListedBuildingsPage() {
             </h2>
             <div className="space-y-5 mb-8">
               {[
-                { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.' },
-                { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.' },
-                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.' },
-                { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.' },
-              ].map(({ title, body }) => (
+                { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">01</span> },
+                { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">02</span> },
+                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="4" rx="0.5"/><rect x="2" y="11" width="9" height="4" rx="0.5"/><rect x="13" y="11" width="9" height="4" rx="0.5"/><rect x="2" y="17" width="20" height="4" rx="0.5"/></svg> },
+                { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
+              ].map(({ title, body, icon }) => (
                 <div key={title} className="flex gap-4 items-start step-reveal-item">
-                  <svg className="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="#0057FF" strokeWidth="2" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0057FF'}}>
+                    {icon}
+                  </div>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
                     <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
