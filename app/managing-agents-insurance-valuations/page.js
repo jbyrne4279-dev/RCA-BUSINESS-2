@@ -129,9 +129,9 @@ export default function ManagingAgentsPage() {
                 'Professional indemnity backed assessment',
                 'Broker-ready format - forward directly, no rework',
                 'Phased portfolio scheduling to smooth service-charge cost',
-              ].map((item) => (
+              ].map((item, i) => (
                 <div key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
+                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{String(i + 1).padStart(2, '0')}</span>
                   <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
                 </div>
               ))}
@@ -152,10 +152,10 @@ export default function ManagingAgentsPage() {
                 { title: 'PI protection', desc: 'A RICS-aligned assessment on the recommended three-year cycle is the defensible position that keeps a claim shortfall off your E&O file.' },
                 { title: 'Full lease compliance', desc: 'Discharge the insuring obligation under the lease and demonstrate fair value to leaseholders under FCA Consumer Duty.' },
                 { title: 'Portfolio efficiency', desc: 'Single instruction for multiple blocks; phased scheduling and a consolidated summary schedule included at no extra charge.' },
-              ].map(({ title, desc }) => (
+              ].map(({ title, desc }, i) => (
                 <div key={title} className="flex gap-4 items-start step-reveal-item">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0057FF'}}>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3.5 3.5 6.5-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white text-xs font-bold" style={{background:'#0057FF'}}>
+                    {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
                     <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
