@@ -71,19 +71,17 @@ export default function BlocksOfFlatsPage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile that requires specialist assessment.
             </p>
-            <ul className="space-y-3 text-[#64748b] text-sm leading-relaxed">
-              <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                <span><strong className="text-[#0d1b3e]">Shared structures</strong> - external fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.</span>
-              </li>
-              <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                <span><strong className="text-[#0d1b3e]">Communal services</strong> - lifts, boiler plant, communal lighting, entry systems and shared M&amp;E infrastructure all carry reinstatement costs that generic tools miss.</span>
-              </li>
-              <li className="flex gap-3 items-start step-reveal-item">
-                <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                <span><strong className="text-[#0d1b3e]">Leaseholder obligations</strong> - a wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance.</span>
-              </li>
+            <ul className="space-y-5 text-[#64748b] text-sm leading-relaxed">
+              {[
+                { num: '01', label: 'Shared structures', desc: 'External fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.' },
+                { num: '02', label: 'Communal services', desc: 'Lifts, boiler plant, communal lighting, entry systems and shared M&E infrastructure all carry reinstatement costs that generic tools miss.' },
+                { num: '03', label: 'Leaseholder obligations', desc: "A wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance." },
+              ].map(({ num, label, desc }) => (
+                <li key={num} className="flex gap-4 items-start step-reveal-item">
+                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{num}</span>
+                  <span><strong className="text-[#0d1b3e]">{label}</strong> — {desc}</span>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
