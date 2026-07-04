@@ -35,7 +35,7 @@ export default function ContactPage() {
             <div className="space-y-4 mb-8">
               {[
                 { label: 'Telephone', value: '020 3178 8099', href: 'tel:+442031788099' },
-                { label: 'Email', value: 'info@rca-ltd.com', href: 'mailto:info@rca-ltd.com' },
+                { label: 'Email', value: 'info@stearlingreinstatement.com', href: 'mailto:info@stearlingreinstatement.com' },
                 { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
               ].map(({ label, value, href }) => (
                 <div key={label} className="flex gap-3 items-baseline">

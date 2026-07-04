@@ -115,7 +115,7 @@ const orgSchema = {
         addressCountry: 'GB',
       },
       telephone: '+442031788099',
-      email: 'info@rca-ltd.com',
+      email: 'info@stearlingreinstatement.com',
       areaServed: { '@type': 'Country', name: 'United Kingdom' },
       priceRange: 'Â£',
       knowsAbout: [

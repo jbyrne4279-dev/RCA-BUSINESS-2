@@ -21,19 +21,19 @@ const reviews = [
     name: 'Caroline F.',
     role: 'Managing Agent Director, London',
     photo: 'https://randomuser.me/api/portraits/women/44.jpg',
-    quote: 'Instructing Cavendish & Rowe has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.',
+    quote: 'Instructing Stearling Reinstatement has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.',
   },
   {
     name: 'Sarah L.',
     role: 'Block Manager, Bristol',
     photo: 'https://randomuser.me/api/portraits/women/65.jpg',
-    quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Cavendish & Rowe had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.',
+    quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Stearling Reinstatement had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.',
   },
   {
     name: 'Priya N.',
     role: 'Portfolio Manager, Birmingham',
     photo: 'https://randomuser.me/api/portraits/women/47.jpg',
-    quote: 'We manage over 40 blocks and Cavendish & Rowe handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
+    quote: 'We manage over 40 blocks and Stearling Reinstatement handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
   },
 ]
 

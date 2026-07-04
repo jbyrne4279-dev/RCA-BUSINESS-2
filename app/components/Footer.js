@@ -76,7 +76,7 @@ export default function Footer() {
                 <a href="tel:+442031788099" className="hover:text-[#0057FF] transition-colors">020 3178 8099</a>
               </li>
               <li>
-                <a href="mailto:info@rca-ltd.com" className="hover:text-[#0057FF] transition-colors">info@rca-ltd.com</a>
+                <a href="mailto:info@stearlingreinstatement.com" className="hover:text-[#0057FF] transition-colors">info@stearlingreinstatement.com</a>
               </li>
               <li className="leading-snug">
                 17 Hanover Square<br />London W1S 1BN

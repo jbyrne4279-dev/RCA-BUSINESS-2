@@ -218,7 +218,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
                 <Link href={href} className="link-arrow">
-                  Read More ?
+                  Read More
                 </Link>
               </div>
             ))}
