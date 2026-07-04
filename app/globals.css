@@ -509,6 +509,21 @@ select:focus { outline: none; border-color: #0057FF !important; box-shadow: 0 0 
 }
 .border-spin-glow { animation: border-spin-glow 4s linear infinite; border-color: rgba(0,87,255,0.5) !important; }
 
+/* ── Link hover underline ── */
+a[href]:hover {
+  text-decoration: underline;
+  text-decoration-color: #7dd3fc;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+/* Exclude buttons and nav items that already have their own hover styles */
+a.btn-shine:hover,
+a.btn-ghost:hover,
+a.link-arrow:hover,
+a.link-amber:hover {
+  text-decoration: none;
+}
+
 /* ── Legacy aliases ── */
 .btn-amber        { background: #0057FF; color: #fff; border-radius: 9999px; }
 .rule-amber       { height: 2px; width: 32px; background: #0057FF; display: block; }
