@@ -61,6 +61,15 @@
     .pop-in-delay-1 { animation: pop-in 0.6s ease-out 0.15s both; }
     .pop-in-delay-2 { animation: pop-in 0.6s ease-out 0.3s both; }
     .sovereign-shadow { box-shadow: 0 8px 40px rgba(26, 26, 26, 0.08); }
+    /* Mobile drawer */
+    #mobile-drawer { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); opacity: 0; transform: translateY(-12px); transition: opacity 0.35s ease, transform 0.35s ease; }
+    #mobile-drawer.open { display: flex; opacity: 1; transform: translateY(0); }
+    #mobile-drawer.closing { opacity: 0; transform: translateY(-12px); }
+    .ham-bar { display: block; width: 20px; height: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+    .ham-bar + .ham-bar { margin-top: 5px; }
+    .hamburger.open .ham-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open .ham-bar:nth-child(2) { opacity: 0; }
+    .hamburger.open .ham-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     .step-line::after {
       content: '';
       position: absolute;
@@ -76,16 +85,45 @@
 
   <header class="sticky top-0 w-full bg-white/55 backdrop-blur-[24px] saturate-[180%] z-50">
     <nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
-      <div class="text-xl font-bold text-zinc-900 tracking-tighter">RebuildCostAssessment.com</div>
+      <div class="text-xl font-bold tracking-tighter" style="background:linear-gradient(105deg,#1A6B4A 30%,#4ade80 50%,#1A6B4A 70%);background-size:200% auto;animation:shine 3s linear infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">RCA-LTD</div>
       <div class="hidden md:flex items-center gap-8">
         <a class="text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight" href="index.html">Home</a>
         <a class="text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight" href="services.html">Services</a>
         <a class="text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight" href="resources.html">Resources</a>
         <a class="text-zinc-600 hover:text-zinc-900 transition-all font-semibold tracking-tight" href="contact.html">Contact</a>
       </div>
-      <a href="contact.html" class="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform">Get a Quote</a>
+      <div class="flex items-center gap-3">
+        <button class="hamburger md:hidden flex flex-col justify-center text-zinc-700" id="hamburger-btn" aria-label="Open menu">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+        <a href="contact.html" class="btn-shine text-white px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform">Get a Quote</a>
+      </div>
     </nav>
   </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="flex-col items-center justify-center gap-8">
+    <button id="drawer-close" class="absolute top-6 right-8 text-zinc-700 text-3xl font-light leading-none">&times;</button>
+    <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="index.html" onclick="closeDrawer()">Home</a>
+    <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="services.html" onclick="closeDrawer()">Services</a>
+    <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="resources.html" onclick="closeDrawer()">Resources</a>
+    <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="contact.html" onclick="closeDrawer()">Contact</a>
+    <a href="contact.html" class="btn-shine text-white px-10 py-3 rounded-full font-bold mt-4">Get a Quote</a>
+  </div>
+  <script>
+    (function(){
+      var btn = document.getElementById('hamburger-btn');
+      var drawer = document.getElementById('mobile-drawer');
+      var close = document.getElementById('drawer-close');
+      function openDrawer(){ btn.classList.add('open'); drawer.style.display='flex'; requestAnimationFrame(function(){ drawer.classList.add('open'); }); }
+      function closeDrawer(){ drawer.classList.add('closing'); setTimeout(function(){ drawer.classList.remove('open','closing'); drawer.style.display='none'; btn.classList.remove('open'); }, 350); }
+      window.closeDrawer = closeDrawer;
+      btn.addEventListener('click', openDrawer);
+      close.addEventListener('click', closeDrawer);
+    })();
+  </script>
 
   <main class="flex-1">
 

@@ -102,13 +102,31 @@
       .sovereign-shadow {
         box-shadow: 0 8px 40px rgba(26, 26, 26, 0.08);
       }
+      /* Reveal animation */
+      .reveal-item { opacity: 0; transform: translateY(24px); transition: opacity 0.6s cubic-bezier(0.22,1,0.36,1), transform 0.6s cubic-bezier(0.22,1,0.36,1); }
+      .reveal-item.revealed { opacity: 1; transform: translateY(0); }
+      /* FAQ accordion */
+      .faq-answer { max-height: 0; overflow: hidden; opacity: 0; filter: blur(4px); transition: max-height 0.45s cubic-bezier(0.22,1,0.36,1), opacity 0.35s ease, filter 0.35s ease; }
+      .faq-answer.open { max-height: 300px; opacity: 1; filter: blur(0); }
+      .faq-chevron { transition: transform 0.35s ease; display: inline-block; }
+      .faq-chevron.open { transform: rotate(180deg); }
+      /* Mobile drawer */
+      #mobile-drawer { display: none; position: fixed; inset: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); opacity: 0; transform: translateY(-12px); transition: opacity 0.35s ease, transform 0.35s ease; }
+      #mobile-drawer.open { display: flex; opacity: 1; transform: translateY(0); }
+      #mobile-drawer.closing { opacity: 0; transform: translateY(-12px); }
+      /* Hamburger */
+      .ham-bar { display: block; width: 20px; height: 2px; background: currentColor; transition: transform 0.3s ease, opacity 0.3s ease; }
+      .ham-bar + .ham-bar { margin-top: 5px; }
+      .hamburger.open .ham-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .hamburger.open .ham-bar:nth-child(2) { opacity: 0; }
+      .hamburger.open .ham-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
 <!-- Top Navigation -->
 <header class="sticky top-0 w-full bg-white/55 dark:bg-neutral-900/55 backdrop-blur-[24px] saturate-[180%] z-50 transition-colors duration-300">
 <nav class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
-<div class="text-xl font-bold text-zinc-900 dark:text-white tracking-tighter">
+<div class="text-xl font-bold tracking-tighter" style="background:linear-gradient(105deg,#1A6B4A 30%,#4ade80 50%,#1A6B4A 70%);background-size:200% auto;animation:shine 3s linear infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
                 RCA-LTD
             </div>
 <div class="hidden md:flex items-center gap-8">
@@ -117,11 +135,40 @@
 <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all font-semibold tracking-tight" href="resources.html">Resources</a>
 <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all font-semibold tracking-tight" href="contact.html">Contact</a>
 </div>
+<div class="flex items-center gap-3">
+<button class="hamburger md:hidden flex flex-col justify-center text-zinc-700" id="hamburger-btn" aria-label="Open menu">
+  <span class="ham-bar"></span>
+  <span class="ham-bar"></span>
+  <span class="ham-bar"></span>
+</button>
 <a href="contact.html" class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-semibold active:scale-[0.97] transition-transform">
                 Get a Quote
             </a>
+</div>
 </nav>
 </header>
+
+<!-- Mobile Drawer -->
+<div id="mobile-drawer" class="flex-col items-center justify-center gap-8">
+  <button id="drawer-close" class="absolute top-6 right-8 text-zinc-700 text-3xl font-light leading-none">&times;</button>
+  <a class="text-2xl font-semibold text-[#1A6B4A]" href="index.html" onclick="closeDrawer()">Home</a>
+  <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="services.html" onclick="closeDrawer()">Services</a>
+  <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="resources.html" onclick="closeDrawer()">Resources</a>
+  <a class="text-2xl font-semibold text-zinc-800 hover:text-[#1A6B4A] transition-colors" href="contact.html" onclick="closeDrawer()">Contact</a>
+  <a href="contact.html" class="btn-shine text-white px-10 py-3 rounded-full font-bold mt-4">Get a Quote</a>
+</div>
+<script>
+(function(){
+  var btn = document.getElementById('hamburger-btn');
+  var drawer = document.getElementById('mobile-drawer');
+  var close = document.getElementById('drawer-close');
+  function openDrawer(){ btn.classList.add('open'); drawer.style.display='flex'; requestAnimationFrame(function(){ drawer.classList.add('open'); }); }
+  function closeDrawer(){ drawer.classList.add('closing'); setTimeout(function(){ drawer.classList.remove('open','closing'); drawer.style.display='none'; btn.classList.remove('open'); }, 350); }
+  window.closeDrawer = closeDrawer;
+  btn.addEventListener('click', openDrawer);
+  close.addEventListener('click', closeDrawer);
+})();
+</script>
 <main>
 <!-- Section 1: Hero -->
 <style>
@@ -199,22 +246,22 @@
       <img class="w-full h-80 object-cover rounded-xl sovereign-shadow" data-alt="architectural blueprint overlay on a modern sustainable timber building structure under construction with clear blue sky background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjNFcUmx4iVvKMaS5g4eXg4Y_kYPhasFXI9CfrwkuXePz-zXktmWxY_8A6eoHAZ7b-9pc3OeQ86ld0lqAe_FJnUqQKX3KS7-FSvhAzRA5LQN11WgNDP46WcOj7VHd0Sb3fHYdzX2HtSxealWxBV5G-mHdGLmAiGWF4IplVSfjeC0t5C2UkC75dXoYETgDQj156ib13jDhbSSXCYt_pJbE7TwlTdIoCyruaS5_R-BmDJ1fnx7aq1ePMjk5MYgKfxisK9uGQjVGy3t4"/>
     </div>
     <div class="space-y-6">
-      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+      <div class="reveal-item relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
         <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">1</span>
         <h4 class="text-xl font-bold mb-2">Instruct</h4>
         <p class="text-secondary">Provide basic property details through our secure digital portal or request an on-site survey.</p>
       </div>
-      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+      <div class="reveal-item relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
         <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">2</span>
         <h4 class="text-xl font-bold mb-2">Assess</h4>
         <p class="text-secondary">Our experts use RICS-certified data to analyze structural elements, materials, and external site features.</p>
       </div>
-      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+      <div class="reveal-item relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
         <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">3</span>
         <h4 class="text-xl font-bold mb-2">Report</h4>
         <p class="text-secondary">Receive a comprehensive report ready for your broker or insurer, highlighting the exact reinstatement sum insured.</p>
       </div>
-      <div class="relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
+      <div class="reveal-item relative p-8 rounded-xl bg-surface-container-low sovereign-shadow border-l-4 border-[#1A6B4A]">
         <span class="btn-shine absolute -left-6 top-6 w-12 h-12 rounded-full text-white flex items-center justify-center font-bold">4</span>
         <h4 class="text-xl font-bold mb-2">Correct</h4>
         <p class="text-secondary">Update your policy with total confidence, knowing you are neither over-paying nor dangerously under-protected.</p>
@@ -354,7 +401,7 @@
 
         <div class="space-y-8">
 
-          <div class="flex gap-6">
+          <div class="reveal-item flex gap-6">
             <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
               <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">history</span>
             </div>
@@ -364,7 +411,7 @@
             </div>
           </div>
 
-          <div class="flex gap-6">
+          <div class="reveal-item flex gap-6">
             <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
               <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">precision_manufacturing</span>
             </div>
@@ -374,7 +421,7 @@
             </div>
           </div>
 
-          <div class="flex gap-6">
+          <div class="reveal-item flex gap-6">
             <div class="btn-shine shrink-0 w-12 h-12 rounded-full flex items-center justify-center">
               <span class="material-symbols-outlined text-white" style="font-size:1.2rem;">policy</span>
             </div>
@@ -402,7 +449,7 @@
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group relative overflow-hidden rounded-xl h-96">
+<div class="reveal-item group relative overflow-hidden rounded-xl h-96">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxurious traditional British country home with manicured lawns at dusk with warm internal lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWBDJ70LsQQ5h85h82yf83EDziKtCRsnRZfgrGO4oWFPS8dsId-HyTmiMm-MyrubiWJ38hcFJlBmzI573vmnv2_12J4LWJjLXNO7EC8ijA7TxmUKZtoKUA1282iLrXeRgg9k9lf6WWVNoWMobWwr3rYI9H814zFk4JbuvaB3_h3fLhQp-bXppw_Sge5PfTUerK2ODyxkjMbMgMGnMz6jK9wohy8TpfQqmt4Mb30zRGBT3QY5bNQUfnfRyOjqckg-nOooWHc1knCGE" style="">
 <div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
 <div class="absolute bottom-0 left-0 p-8">
@@ -410,7 +457,7 @@
 <p class="text-white/80 text-sm" style="">Protecting your legacy and ensuring accurate coverage for bespoke architectural features.</p>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-xl h-96">
+<div class="reveal-item group relative overflow-hidden rounded-xl h-96">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end modern office interior with glass partitions, sleek furniture and reflective marble floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2XW_YI4gh7Lb5mNE7p1aI1bLNEcVW1CDe7bUC8Ag7LVlNaojO7Ayi8RMIuxBGzn7kZKcL1QBbq0g3lgSc4qinZxlAqp2qTOfZtZG4fOIrOFwAOAc7dW6_fEdvb6VSbXA84CCayUI5UKBOiGxH6-Znlcw8eG0YC9mkBvKnJNle7Gc6k_rnPoMGlmVQFJ6jFc9pWy6LfWRjpkPkhQ483fQT0XOjHtrToiOb5voY91FLtpydZ5dFr_WwY_40NT5rtFSTOgb2eUQ3C0c" style="">
 <div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
 <div class="absolute bottom-0 left-0 p-8">
@@ -418,7 +465,7 @@
 <p class="text-white/80 text-sm" style="">Minimizing business interruption risks and maintaining rigorous compliance standards.</p>
 </div>
 </div>
-<div class="group relative overflow-hidden rounded-xl h-96">
+<div class="reveal-item group relative overflow-hidden rounded-xl h-96">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Professional boardroom table with architectural plans and digital tablets indicating asset management work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDguBhebTeI2g-SjCVA57yO5x-hj0YvIwNx5xcqJKYJNh_oR0D6i0UB_nXjfoDcCi0AV5IIvvn8tLaDzCvXuj8Uh83HQPPqaMh6R0diVpfa6P0olh5liAj--KW_r8izD8HduGaAmkIm3rt-8awac4cnqY12aG_kSx0Ulw9M8sMck6yX19VOgMbg603v3P5Or7xVMEBCjM_J7ZMyz4Rxdutpvm1JAClzGilY_ftZPm770hVgeit-ukM7jPdEUMUaV-RhSARPxDxh7ZU" style="">
 <div class="absolute inset-0 bg-gradient-to-t from-on-surface to-transparent opacity-80"></div>
 <div class="absolute bottom-0 left-0 p-8">
@@ -428,6 +475,193 @@
 </div>
 </div>
 </div>
+</section>
+
+<!-- Google Reviews Section -->
+<section class="py-24 px-4 md:px-8 bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4 block">Client Feedback</span>
+      <h2 class="text-4xl font-bold tracking-tight text-primary mb-3">What Our Clients Say</h2>
+      <!-- Google aggregate badge -->
+      <div class="inline-flex items-center gap-3 mt-4 bg-white border border-zinc-200 rounded-2xl px-6 py-3 shadow-sm">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="flex items-center gap-1">
+          <span class="text-yellow-400 text-sm leading-none">★★★★★</span>
+          <span class="font-bold text-primary text-sm ml-1">4.9</span>
+          <span class="text-secondary text-xs ml-1">· 47 Google reviews</span>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @keyframes reviewFadeIn {
+        0%   { opacity: 0; transform: scale(0.97) translateY(6px); filter: blur(3px); }
+        100% { opacity: 1; transform: scale(1)    translateY(0);   filter: blur(0);   }
+      }
+      @keyframes reviewFadeOut {
+        0%   { opacity: 1; transform: scale(1)    translateY(0);   filter: blur(0);   }
+        100% { opacity: 0; transform: scale(0.97) translateY(-6px); filter: blur(3px); }
+      }
+      .review-slide { display: none; }
+      .review-slide.active {
+        display: grid;
+        animation: reviewFadeIn 0.55s cubic-bezier(0.22,1,0.36,1) forwards;
+      }
+      .review-slide.leaving {
+        display: grid;
+        animation: reviewFadeOut 0.45s cubic-bezier(0.22,1,0.36,1) forwards;
+        pointer-events: none;
+      }
+    </style>
+
+    <div id="reviews-carousel" class="relative" style="min-height:220px;">
+
+      <!-- Slide 1: reviews 1+2+3 -->
+      <div class="review-slide active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#1A73E8;">M</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Marcus Fielding</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Fielding Property Holdings Ltd</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">2 months ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"Commissioned RCA Ltd for a portfolio of six mixed-use units across Birmingham and Manchester. The reporting was thorough, clearly laid out, and delivered well ahead of the agreed deadline. Our broker was impressed with the level of detail. Will be using them for the annual desktop reviews going forward."</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#E37400;">S</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Sandra Okafor</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Okafor & Partners Solicitors</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">4 months ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"We needed an urgent RCA for a Grade II listed building as part of a conveyancing matter. RCA Ltd turned the report around in 48 hours and the surveyor was extremely knowledgeable about the specific heritage requirements. The report was accepted by the insurer without query. Exceptional service."</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#188038;">R</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Richard Baxter</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Baxter Commercial Estates</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">6 months ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"Have been using RCA Ltd for three years across our retail and industrial portfolio. Consistent quality every time — accurate figures, professional reports, and a team that actually answers the phone. Found we were under-insured on two sites after switching from our previous provider. Very glad we made the change."</p>
+        </div>
+      </div>
+
+      <!-- Slide 2: reviews 4+5+6 -->
+      <div class="review-slide grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Review 4 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#C5221F;">P</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Priya Mehta</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Meridian Block Management</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">1 month ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"We manage 23 residential blocks and recently brought RCA Ltd onto our preferred supplier list. The onboarding was smooth, pricing was competitive for bulk instructions, and the surveyors are clearly well-versed in leasehold regulations. Reports are clean and formatted in a way our insurers immediately accept."</p>
+        </div>
+        <!-- Review 5 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#6B3FA0;">T</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Tom Ashworth</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Ashworth & Co. Chartered Accountants</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">5 months ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"Our firm owns a Georgian office building in Bath and we had real concerns about whether our sum insured was anywhere near accurate. RCA Ltd came out, assessed it properly, and the figure came back 34% higher than what we'd been insuring for. That alone justified the entire fee several times over. Couldn't recommend more."</p>
+        </div>
+        <!-- Review 6 -->
+        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#00796B;">J</div>
+              <div>
+                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Janet Holloway</p>
+                <p class="text-[11px] text-zinc-400 leading-tight">Holloway Residential Lettings</p>
+              </div>
+            </div>
+            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          </div>
+          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">3 months ago</span></div>
+          <p class="text-zinc-600 text-sm leading-relaxed">"Straightforward process from start to finish. I submitted details online, received a call the same afternoon, and the surveyor visited within the week. The final report was exactly what my insurer required and delivered well inside the promised window. Really professional outfit — wouldn't hesitate to recommend."</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dot indicators -->
+    <div class="flex justify-center gap-2 mt-8">
+      <button class="review-dot w-2 h-2 rounded-full bg-[#1A6B4A] transition-all duration-300" data-slide="0" aria-label="Slide 1"></button>
+      <button class="review-dot w-2 h-2 rounded-full bg-zinc-300 transition-all duration-300" data-slide="1" aria-label="Slide 2"></button>
+    </div>
+
+    <script>
+      (function() {
+        var slides = document.querySelectorAll('.review-slide');
+        var dots   = document.querySelectorAll('.review-dot');
+        var current = 0;
+        var timer;
+
+        function goTo(next) {
+          if (next === current) return;
+          var leaving = slides[current];
+          leaving.classList.add('leaving');
+          leaving.addEventListener('animationend', function onEnd() {
+            leaving.removeEventListener('animationend', onEnd);
+            leaving.classList.remove('active', 'leaving');
+          });
+          current = next;
+          slides[current].classList.add('active');
+          dots.forEach(function(d, i) {
+            d.style.background = i === current ? '#1A6B4A' : '#D1D5DB';
+            d.style.width = i === current ? '20px' : '8px';
+            d.style.borderRadius = '999px';
+          });
+        }
+
+        function advance() { goTo((current + 1) % slides.length); }
+
+        function resetTimer() { clearInterval(timer); timer = setInterval(advance, 4000); }
+
+        dots.forEach(function(d) {
+          d.addEventListener('click', function() {
+            goTo(parseInt(d.dataset.slide));
+            resetTimer();
+          });
+        });
+
+        resetTimer();
+      })();
+    </script>
+  </div>
 </section>
 
 <!-- Contact Section -->
@@ -628,78 +862,88 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">How much does a typical RCA cost?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">How much does a typical RCA cost?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Small commercial units start from £450. Large or complex industrial estates and high-net-worth residences are quoted bespoke on a time-charge basis.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">How often should I update my RCA?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">RICS recommends a full RCA every 3 years, with annual desktop indexing in between, accounting for sharp rises in construction materials and labour rates.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">How often should I update my RCA?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">RICS recommends a full RCA every 3 years, with annual desktop indexing in between, accounting for sharp rises in construction materials and labour rates.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">What are the risks of under-insurance?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20%, leaving a major shortfall in a total loss scenario.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">What are the risks of under-insurance?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Under the "Average" clause, being 20% under-insured means your insurer can cut any claim payout by 20%, leaving a major shortfall in a total loss scenario.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Does a market valuation work for insurance?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild, including demolition, fees, and modern materials. They are rarely the same.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Does a market valuation work for insurance?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">No. Market value is what a building sells for. Reinstatement cost is what it costs to fully rebuild, including demolition, fees, and modern materials. They are rarely the same.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Are VAT costs included in the assessment?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Are VAT costs included in the assessment?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Yes. We specify whether the figure is inclusive or exclusive of VAT, based on the property owner's VAT status and building type.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Do you assess listed buildings?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Absolutely. Listed buildings require specialist RCA knowledge, authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Do you assess listed buildings?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Absolutely. Listed buildings require specialist RCA knowledge, authentic materials and skilled craftsmen significantly inflate rebuild costs and demand expert handling.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">How long does a site visit take?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">How long does a site visit take?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">A typical 10,000 sq ft office takes 90 minutes to 2 hours on-site to ensure every structural detail is accurately captured.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Can you provide RCAs for a multi-asset portfolio?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Can you provide RCAs for a multi-asset portfolio?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Yes. We specialise in national portfolio valuations and provide a consolidated report with individual breakdown schedules for each asset.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Do RCAs cover outbuildings and fences?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">Yes. Our assessments include curtilage assets, external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Do RCAs cover outbuildings and fences?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">Yes. Our assessments include curtilage assets, external parking, boundary walls, and ancillary structures, unless explicitly excluded by the client.</p></div>
       </div>
 
       <div class="rounded-2xl p-7 flex flex-col gap-3 liquid-glass border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.15)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.28)] hover:border-[#1A6B4A]/60 transition-all duration-300">
-        <h3 class="text-base font-bold text-primary leading-snug">Is the 48-hour turnaround guaranteed?</h3>
-        <div>
-          <p class="text-secondary text-sm leading-relaxed">For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.</p>
-        </div>
+        <button class="faq-btn flex justify-between items-center w-full text-left cursor-pointer gap-3"><span class="text-base font-bold text-primary leading-snug">Is the 48-hour turnaround guaranteed?</span><span class="material-symbols-outlined faq-chevron text-[#1A6B4A] shrink-0">expand_more</span></button>
+        <div class="faq-answer"><p class="text-secondary text-sm leading-relaxed pt-1">For standard commercial and residential properties, yes. Highly complex industrial sites may require up to 72 hours to ensure full accuracy.</p></div>
       </div>
 
     </div>
   </div>
 </section>
+<script>
+(function(){
+  // FAQ accordion
+  document.querySelectorAll('.faq-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('.rounded-2xl');
+      var answer = card.querySelector('.faq-answer');
+      var chevron = card.querySelector('.faq-chevron');
+      var isOpen = answer.classList.contains('open');
+      // close all
+      document.querySelectorAll('.faq-answer.open').forEach(function(a){ a.classList.remove('open'); });
+      document.querySelectorAll('.faq-chevron.open').forEach(function(c){ c.classList.remove('open'); });
+      if(!isOpen){ answer.classList.add('open'); chevron.classList.add('open'); }
+    });
+  });
+  // Reveal observer
+  var items = document.querySelectorAll('.reveal-item');
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var idx = Array.prototype.indexOf.call(items, entry.target);
+        entry.target.style.transitionDelay = (idx * 150) + 'ms';
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  items.forEach(function(el){ observer.observe(el); });
+})();
+</script>
 
 
 
