@@ -76,8 +76,8 @@ export default function CtaBanner() {
               },
             ].map(({ label, desc, icon }) => (
               <div key={label} className="text-center">
-                <div className="flex justify-center mb-3 text-[#7db8ff]">{icon}</div>
-                <p className="text-white font-semibold text-sm mb-1">{label}</p>
+                <div className="flex justify-center mb-3 text-[#93c5fd]">{icon}</div>
+                <p className="text-[#93c5fd] font-semibold text-sm mb-1">{label}</p>
                 <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
               </div>
             ))}
