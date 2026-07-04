@@ -23,7 +23,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" onClick={() => setOpen(false)} className="flex-shrink-0 flex items-center gap-2.5">
-          <LogoSpin width={36} height={36} className="h-9 w-9" priority />
+          <LogoSpin width={52} height={52} className="h-13 w-13" priority />
         </Link>
 
         {/* Desktop nav */}

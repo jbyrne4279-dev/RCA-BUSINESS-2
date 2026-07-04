@@ -66,6 +66,7 @@ export default function LogoSpin({ width = 36, height = 36, className = '', prio
           width={width}
           height={height}
           className={`object-contain ${className}`}
+          style={{ mixBlendMode: 'multiply' }}
           priority={priority}
         />
       </div>
