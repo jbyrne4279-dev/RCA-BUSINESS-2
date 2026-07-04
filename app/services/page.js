@@ -254,13 +254,29 @@ export default function ServicesPage() {
 
           <div className="space-y-4">
             {[
-              { icon: '🏛️', title: 'RICS-compliant documentation', desc: 'Prepared to Royal Institution of Chartered Surveyors guidance — the standard recognised by every UK insurer, broker and court.' },
-              { icon: '🛡️', title: 'Professional indemnity backing', desc: 'Every report is covered by our PI insurance. If the figure is ever challenged, you have an independently insured professional standing behind it.' },
-              { icon: '⚖️', title: 'Limits your personal liability', desc: 'Demonstrates you took reasonable professional steps to set the declared value — protecting directors, managing agents and freeholders from personal claims.' },
-              { icon: '📋', title: 'Prevents the average clause', desc: 'Insurers apply the average clause to reduce payouts when a property is underinsured. A current RICS report is the strongest defence against it.' },
+              {
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
+                title: 'RICS-compliant documentation',
+                desc: 'Prepared to Royal Institution of Chartered Surveyors guidance — the standard recognised by every UK insurer, broker and court.',
+              },
+              {
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>,
+                title: 'Professional indemnity backing',
+                desc: 'Every report is covered by our PI insurance. If the figure is ever challenged, you have an independently insured professional standing behind it.',
+              },
+              {
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
+                title: 'Limits your personal liability',
+                desc: 'Demonstrates you took reasonable professional steps to set the declared value — protecting directors, managing agents and freeholders from personal claims.',
+              },
+              {
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/></svg>,
+                title: 'Prevents the average clause',
+                desc: 'Insurers apply the average clause to reduce payouts when a property is underinsured. A current RICS report is the strongest defence against it.',
+              },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0] bg-white hover:border-[#0057FF] hover:shadow-md transition-all duration-200">
-                <span className="text-2xl shrink-0">{icon}</span>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0" style={{background:'rgba(0,87,255,0.08)'}}>{icon}</div>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
