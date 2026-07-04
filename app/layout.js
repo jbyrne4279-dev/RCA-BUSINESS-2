@@ -20,8 +20,8 @@ const cormorant = Cormorant_Garamond({
 export const metadata = {
   metadataBase: new URL('https://reinstatementcostassessment.org'),
   title: {
-    default: 'RICS Reinstatement Cost Assessment UK | Sterling Reinstatement',
-    template: '%s | Sterling Reinstatement',
+    default: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
+    template: '%s | Stearling Reinstatement',
   },
   description:
     'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
@@ -56,8 +56,8 @@ export const metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://reinstatementcostassessment.org',
-    siteName: 'Sterling Reinstatement',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Sterling Reinstatement',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
       '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     images: [
@@ -71,7 +71,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Sterling Reinstatement',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
       '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
@@ -94,7 +94,7 @@ const orgSchema = {
     {
       '@type': ['Organization', 'ProfessionalService'],
       '@id': 'https://reinstatementcostassessment.org/#organization',
-      name: 'Sterling Reinstatement',
+      name: 'Stearling Reinstatement',
       url: 'https://reinstatementcostassessment.org',
       logo: {
         '@type': 'ImageObject',
@@ -161,7 +161,7 @@ const orgSchema = {
       '@type': 'WebSite',
       '@id': 'https://reinstatementcostassessment.org/#website',
       url: 'https://reinstatementcostassessment.org',
-      name: 'Sterling Reinstatement',
+      name: 'Stearling Reinstatement',
       description:
         'RICS-regulated reinstatement cost assessments for UK properties.',
       publisher: { '@id': 'https://reinstatementcostassessment.org/#organization' },

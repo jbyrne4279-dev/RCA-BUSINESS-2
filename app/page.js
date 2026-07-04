@@ -9,11 +9,11 @@ import TestimonialsSection from './components/TestimonialsSection'
 import CtaBanner from './components/CtaBanner'
 
 export const metadata = {
-  title: 'RICS Reinstatement Cost Assessment UK | Sterling Reinstatement',
+  title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
   description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Sterling Reinstatement',
+    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description: '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     url: 'https://reinstatementcostassessment.org',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment London' }],
@@ -37,7 +37,7 @@ export default function HomePage() {
         '@type': 'WebPage',
         '@id': 'https://reinstatementcostassessment.org/#webpage',
         url: 'https://reinstatementcostassessment.org/',
-        name: 'RICS Reinstatement Cost Assessment UK | Sterling Reinstatement',
+        name: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
         isPartOf: { '@id': 'https://reinstatementcostassessment.org/#website' },
         about: { '@id': 'https://reinstatementcostassessment.org/#organization' },
         description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',

@@ -62,7 +62,7 @@ export default function LogoSpin({ width = 36, height = 36, className = '', prio
       >
         <Image
           src="/cr-monogram.svg"
-          alt="Sterling Reinstatement"
+          alt="Stearling Reinstatement"
           width={width}
           height={height}
           className={`object-contain ${className}`}

@@ -8,7 +8,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Block Managers | Sterling Reinstatement',
+  title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
   description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
 }

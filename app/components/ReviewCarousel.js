@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 
 const reviews = [
   {
-    quote: 'Instructing Sterling Reinstatement has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.',
+    quote: 'Instructing Stearling Reinstatement has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct.',
     name: 'Caroline F.',
     role: 'Managing Agent Director, London',
     reviewCount: '12 reviews',
@@ -12,7 +12,7 @@ const reviews = [
     fallbackBg: '#1A73E8',
   },
   {
-    quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Sterling Reinstatement had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.',
+    quote: 'We inherited a block where the sum insured had not been reviewed in eight years. Stearling Reinstatement had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal.',
     name: 'Sarah L.',
     role: 'Block Manager, Bristol',
     reviewCount: '8 reviews',
@@ -21,7 +21,7 @@ const reviews = [
     fallbackBg: '#E37400',
   },
   {
-    quote: 'We manage over 40 blocks and Sterling Reinstatement handles all our reinstatement cost assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
+    quote: 'We manage over 40 blocks and Stearling Reinstatement handles all our reinstatement cost assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
     name: 'Priya N.',
     role: 'Portfolio Manager, Birmingham',
     reviewCount: '5 reviews',

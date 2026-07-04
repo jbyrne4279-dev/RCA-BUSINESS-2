@@ -5,8 +5,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Contact Sterling Reinstatement | Instruct a Reinstatement Cost Assessment',
-  description: 'Contact Sterling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
+  title: 'Contact Stearling Reinstatement | Instruct a Reinstatement Cost Assessment',
+  description: 'Contact Stearling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
   alternates: { canonical: '/contact' },
 }
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
           <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
-              alt="Sterling Reinstatement reinstatement cost assessment surveyors"
+              alt="Stearling Reinstatement reinstatement cost assessment surveyors"
               fill
               className="object-cover"
               priority
@@ -71,7 +71,7 @@ export default function ContactPage() {
       <TrustStrip />
       <TestimonialsSection />
       <ContactSection heading="Get a written fee estimate - no commitment required." />
-      <FaqSection description="Common questions about instructing Sterling Reinstatement." items={faqItems} />
+      <FaqSection description="Common questions about instructing Stearling Reinstatement." items={faqItems} />
     </main>
   )
 }

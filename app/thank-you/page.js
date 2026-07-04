@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Enquiry Received | Sterling Reinstatement',
-  description: 'Thank you for your enquiry. Sterling Reinstatement will respond within 24 hours.',
+  title: 'Enquiry Received | Stearling Reinstatement',
+  description: 'Thank you for your enquiry. Stearling Reinstatement will respond within 24 hours.',
 }
 
 export default function ThankYouPage() {

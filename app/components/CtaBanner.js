@@ -21,7 +21,7 @@ export default function CtaBanner() {
           </div>
         </div>
         <div className="bg-white/10 border border-white/20 rounded-2xl p-7 backdrop-blur-sm">
-          <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Sterling Reinstatement</p>
+          <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Stearling Reinstatement</p>
           <div className="circuit-steps">
           {[
             { label: 'Specialist only', desc: 'Reinstatement cost assessments — no general surveying, no distractions.' },

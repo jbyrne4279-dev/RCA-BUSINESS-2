@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3 step-reveal-item">
               <LogoSpin width={40} height={40} className="h-10 w-10 invert opacity-90" />
-              <span className="text-white font-semibold text-sm tracking-wide">Sterling Reinstatement</span>
+              <span className="text-white font-semibold text-sm tracking-wide">Stearling Reinstatement</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
@@ -88,7 +88,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-white/40">
-          <p className="font-medium tracking-wide">Copyright &copy; 2025 Sterling Reinstatement | All Rights Reserved | Registered in England &amp; Wales &middot; Company No. 17101918</p>
+          <p className="font-medium tracking-wide">Copyright &copy; 2025 Stearling Reinstatement | All Rights Reserved | Registered in England &amp; Wales &middot; Company No. 17101918</p>
           <p className="tracking-wide">RICS Regulated Firm &middot; All assessments carried out by or under the supervision of a RICS-registered member</p>
         </div>
       </div>
