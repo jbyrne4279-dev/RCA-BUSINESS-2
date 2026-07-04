@@ -48,9 +48,12 @@ export const metadata = {
     'professional indemnity surveyor',
   ],
   icons: {
-    icon: '/rca48.png',
-    shortcut: '/rca48.png',
-    apple: '/rca48.png',
+    icon: [
+      { url: '/sr-favicon.svg', type: 'image/svg+xml' },
+      { url: '/rca48.png', type: 'image/png' },
+    ],
+    shortcut: '/sr-favicon.svg',
+    apple: '/sr-favicon.svg',
   },
   openGraph: {
     type: 'website',
