@@ -160,6 +160,26 @@ main {
   }
 }
 
+/* ── Subtle gravity float on cards ── */
+@keyframes float-card {
+  0%, 100% { transform: translateY(0px);   box-shadow: 0 2px 16px rgba(0,0,0,0.05); }
+  50%       { transform: translateY(-7px);  box-shadow: 0 12px 32px rgba(0,87,255,0.12); }
+}
+.float-card {
+  animation: float-card 4s ease-in-out infinite;
+}
+.float-card:nth-child(2) { animation-delay: 0.8s; }
+.float-card:nth-child(3) { animation-delay: 1.6s; }
+.float-card:hover {
+  animation-play-state: paused;
+  transform: translateY(-10px) !important;
+  box-shadow: 0 16px 40px rgba(0,87,255,0.18) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .float-card { animation: none !important; }
+}
+
 /* ── Staggered card reveal (grid children fade up one by one) ── */
 .stagger-cards > * {
   opacity: 0;

@@ -219,7 +219,7 @@ export default function ServicesPage() {
                 link: 'Enquire About Protection Plan ?',
               },
             ].map(({ icon, id, badge, title, desc, href, link }) => (
-              <div key={id} id={id} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+              <div key={id} id={id} className="float-card bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
