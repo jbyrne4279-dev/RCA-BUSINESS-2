@@ -15,9 +15,9 @@ export const metadata = {
 const faqItems = [
   { question: 'Can a managing agent be personally liable for underinsurance?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate valuation, the agent can face a professional negligence or E&O claim - independent of who holds the insuring obligation under the lease. A RICS-aligned assessment on the recommended three-year cycle is the defensible position that protects your PI cover.' },
   { question: 'Will insurers and brokers accept your report?', answer: 'Yes. Our reports are accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions, and review date in the format brokers and insurers expect - you forward it directly.' },
-  { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10â€“15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
+  { question: 'How quickly can we get a report?', answer: 'Most instructions are turned around within 10â€"15 working days of the survey. For portfolio instructions we agree a phased schedule at the outset so no renewal window is missed.' },
   { question: 'Is index-linking the sum insured each year sufficient?', answer: 'No. Index-linking adjusts the figure but compounds any existing error and does not capture material works or specification changes. RICS requires a full reassessment at least every three years.' },
-  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer - DV plus an inflation provision, typically 20â€“50% uplift - so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
+  { question: 'What is the difference between Declared Value and Sum Insured?', answer: 'The Declared Value (DV) is the day-one rebuild cost the agent establishes. The Sum Insured is set by the insurer - DV plus an inflation provision, typically 20â€"50% uplift - so a DV of £5m typically becomes an SI of around £6.5m. Treating the higher SI as over-insurance and under-declaring the DV creates the shortfall that triggers the average clause.' },
   { question: 'Can you assess multiple blocks under one instruction?', answer: 'Yes - individual reports per property, residential and commercial split for mixed-use blocks, with a consolidated summary schedule and staggered scheduling to smooth service-charge cost across years.' },
 ]
 
@@ -195,7 +195,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 ),
                 title: '24-hr Turnaround on Quotes',
-                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10â€“15 working days - no renewal window missed.',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10â€"15 working days - no renewal window missed.',
                 href: '/contact#contact-form',
               },
               {
@@ -223,8 +223,8 @@ export default function ManagingAgentsPage() {
       <TestimonialsSection />
       <CtaBanner />
 
-      <ContactSection heading=”Protect yourself and your clients. Instruct us today.” />
-      <FaqSection description=”Common questions from managing agents and RTM companies about reinstatement cost assessments.” items={faqItems} />
+      <ContactSection heading="Protect yourself and your clients. Instruct us today." />
+      <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} />
     </main>
   )
 }
