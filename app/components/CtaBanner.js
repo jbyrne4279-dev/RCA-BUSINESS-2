@@ -20,7 +20,7 @@ export default function CtaBanner() {
             </Link>
           </div>
         </div>
-        <div className="bg-white/10 border border-white/20 rounded-2xl p-7 backdrop-blur-sm">
+        <div className="bg-white/10 border rounded-2xl p-7 backdrop-blur-sm border-spin-glow">
           <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Stearling Reinstatement</p>
           <div className="circuit-steps">
           {[

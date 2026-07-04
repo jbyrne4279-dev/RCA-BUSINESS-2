@@ -9,7 +9,6 @@ export default function RicsSelectedCard() {
       const el = ref.current
       if (!el) return
       el.classList.add('rics-select-flash')
-      setTimeout(() => el.classList.remove('rics-select-flash'), 1800)
     }, 1000)
     return () => clearTimeout(t)
   }, [])
