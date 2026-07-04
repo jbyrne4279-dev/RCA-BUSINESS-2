@@ -2,43 +2,70 @@ import Link from 'next/link'
 
 export default function CtaBanner() {
   return (
-    <section className="py-14 md:py-20 px-6 md:px-10" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-5">
-            Get Started. <span style={{color:'rgba(255,255,255,0.75)'}}>No Obligation</span> Required.
-          </h2>
-          <p className="text-white/80 text-base mb-8 max-w-md">
-            80% of UK buildings carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in 24 hours.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/contact#contact-form" className="bg-white text-[#0057FF] font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/90 transition-colors inline-block text-center">
-              Get a Quote
-            </Link>
-            <Link href="/services" className="border border-white/40 text-white font-semibold text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-colors inline-block text-center">
-              View Services
-            </Link>
-          </div>
+    <section className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden" style={{background:'linear-gradient(135deg, #0a1628 0%, #0d1f4a 50%, #0a1628 100%)'}}>
+      {/* Background glow blobs */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div style={{position:'absolute',top:'-20%',left:'-10%',width:'60%',height:'140%',background:'radial-gradient(ellipse, rgba(0,87,255,0.18) 0%, transparent 70%)',borderRadius:'50%'}} />
+        <div style={{position:'absolute',bottom:'-20%',right:'-10%',width:'55%',height:'120%',background:'radial-gradient(ellipse, rgba(0,87,255,0.12) 0%, transparent 70%)',borderRadius:'50%'}} />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto">
+        {/* Top label */}
+        <div className="flex justify-center mb-8">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest" style={{background:'rgba(0,87,255,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(0,87,255,0.35)'}}>
+            <span style={{width:6,height:6,borderRadius:'50%',background:'#4d9fff',display:'inline-block',boxShadow:'0 0 8px rgba(77,159,255,0.8)'}} />
+            RICS-Regulated Assessments
+          </span>
         </div>
-        <div className="bg-white/10 border rounded-2xl p-7 backdrop-blur-sm border-spin-glow">
-          <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-5">Why Stearling Reinstatement</p>
-          <div className="circuit-steps">
-          {[
-            { label: 'Specialist only', desc: 'Reinstatement cost assessments — no general surveying, no distractions.' },
-            { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.' },
-            { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.' },
-            { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.' },
-          ].map(({ label, desc }) => (
-            <div key={label} className="flex items-start gap-3 mb-4 last:mb-0">
-              <svg className="w-4 h-4 shrink-0 mt-0.5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-              </svg>
-              <div>
-                <p className="text-white font-semibold text-sm">{label}</p>
-                <p className="text-white/65 text-xs mt-0.5">{desc}</p>
+
+        {/* Headline */}
+        <h2 className="text-center text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6 max-w-3xl mx-auto">
+          Get Started.{' '}
+          <span style={{background:'linear-gradient(90deg, #4d9fff, #0057FF)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>No Obligation</span>{' '}
+          Required.
+        </h2>
+
+        {/* Stat callout */}
+        <p className="text-center text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+          <span className="text-white font-semibold">80% of UK buildings</span> carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in{' '}
+          <span className="text-white font-semibold">24 hours</span>.
+        </p>
+
+        {/* CTAs */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-14">
+          <Link
+            href="/contact#contact-form"
+            className="inline-block text-center font-semibold text-sm px-10 py-4 rounded-full transition-all"
+            style={{background:'#0057FF',color:'#fff',boxShadow:'0 0 32px rgba(0,87,255,0.55), 0 4px 16px rgba(0,87,255,0.35)'}}
+          >
+            Get a Quote
+          </Link>
+          <Link
+            href="/services"
+            className="inline-block text-center font-semibold text-sm px-10 py-4 rounded-full transition-all"
+            style={{background:'rgba(255,255,255,0.08)',color:'#fff',border:'1px solid rgba(255,255,255,0.25)'}}
+          >
+            View Services
+          </Link>
+        </div>
+
+        {/* Why Stearling strip */}
+        <div className="border rounded-2xl p-6 md:p-8 border-spin-glow" style={{background:'rgba(255,255,255,0.05)',backdropFilter:'blur(12px)'}}>
+          <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-6 text-center">Why Stearling Reinstatement</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 circuit-steps">
+            {[
+              { label: 'Specialist only', desc: 'Reinstatement cost assessments — no general surveying, no distractions.', icon: '🎯' },
+              { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.', icon: '🏛' },
+              { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.', icon: '⚡' },
+              { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.', icon: '🛡' },
+            ].map(({ label, desc, icon }) => (
+              <div key={label} className="text-center">
+                <div className="text-2xl mb-2">{icon}</div>
+                <p className="text-white font-semibold text-sm mb-1">{label}</p>
+                <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
               </div>
-            </div>
-          ))}</div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
