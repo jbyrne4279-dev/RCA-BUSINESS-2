@@ -1,3 +1,6 @@
+'use client'
+import { useState, useEffect } from 'react'
+
 const Star = () => (
   <svg className="w-4 h-4" viewBox="0 0 20 20" fill="#0057FF">
     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -34,7 +37,48 @@ const reviews = [
   },
 ]
 
+function ReviewCard({ name, role, photo, quote, visible }) {
+  return (
+    <div
+      className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col absolute inset-0 transition-all duration-700"
+      style={{
+        boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
+        opacity: visible ? 1 : 0,
+        transform: visible ? 'translateY(0) scale(1)' : 'translateY(10px) scale(0.98)',
+        pointerEvents: visible ? 'auto' : 'none',
+      }}
+    >
+      <div className="flex items-center justify-between mb-5">
+        <div className="flex items-center gap-3">
+          <div className="relative shrink-0">
+            <img src={photo} alt={name} className="w-11 h-11 rounded-full object-cover" />
+            <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full flex items-center justify-center" style={{boxShadow:'0 1px 4px rgba(0,0,0,0.2)'}}>
+              <GoogleIcon />
+            </span>
+          </div>
+          <div>
+            <p className="font-semibold text-sm text-[#0d1b3e]">{name}</p>
+            <p className="text-xs text-[#64748b]">{role}</p>
+          </div>
+        </div>
+        <div className="flex flex-col items-end gap-0.5">
+          <div className="flex gap-0.5">{[...Array(5)].map((_, i) => <Star key={i} />)}</div>
+          <span className="text-[10px] text-[#64748b]">Google review</span>
+        </div>
+      </div>
+      <p className="text-[#64748b] text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
+    </div>
+  )
+}
+
 export default function TestimonialsSection() {
+  const [active, setActive] = useState(0)
+
+  useEffect(() => {
+    const id = setInterval(() => setActive(p => (p + 1) % reviews.length), 4000)
+    return () => clearInterval(id)
+  }, [])
+
   return (
     <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
       <div className="max-w-6xl mx-auto">
@@ -43,35 +87,28 @@ export default function TestimonialsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
           <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map(({ name, role, photo, quote }) => (
-            <div key={name} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-              <div className="flex items-center justify-between mb-5">
-                <div className="flex items-center gap-3">
-                  <div className="relative shrink-0">
-                    <img
-                      src={photo}
-                      alt={name}
-                      className="w-11 h-11 rounded-full object-cover"
-                    />
-                    <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full flex items-center justify-center" style={{boxShadow:'0 1px 4px rgba(0,0,0,0.2)'}}>
-                      <GoogleIcon />
-                    </span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm text-[#0d1b3e]">{name}</p>
-                    <p className="text-xs text-[#64748b]">{role}</p>
-                  </div>
-                </div>
-                <div className="flex flex-col items-end gap-0.5">
-                  <div className="flex gap-0.5">
-                    {[...Array(5)].map((_, i) => <Star key={i} />)}
-                  </div>
-                  <span className="text-[10px] text-[#64748b]">Google review</span>
-                </div>
-              </div>
-              <p className="text-[#64748b] text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
-            </div>
+
+        {/* Carousel */}
+        <div className="relative" style={{height: '200px'}}>
+          {reviews.map((r, i) => (
+            <ReviewCard key={r.name} {...r} visible={i === active} />
+          ))}
+        </div>
+
+        {/* Dots */}
+        <div className="flex justify-center gap-2 mt-6">
+          {reviews.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className="rounded-full transition-all duration-300"
+              style={{
+                width: i === active ? '24px' : '8px',
+                height: '8px',
+                background: i === active ? '#0057FF' : '#cbd5e1',
+              }}
+              aria-label={`Review ${i + 1}`}
+            />
           ))}
         </div>
       </div>
