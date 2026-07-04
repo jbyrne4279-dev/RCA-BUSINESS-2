@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
+import RicsSelectedCard from '../components/RicsSelectedCard'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -101,13 +102,7 @@ export default function FreeholdersLeaseholdersPage() {
                 <p className="text-[#64748b] text-sm leading-relaxed">Figure taken from a previous schedule, an online calculator, or an estate agent's market valuation. Build-cost inflation, professional fees and demolition are routinely missed.</p>
               </div>
             </div>
-            <div className="flex gap-4 items-start p-5 rounded-xl border border-[#0057FF]" style={{background:'rgba(0,87,255,0.06)'}}>
-              <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-              <div>
-                <p className="font-semibold text-[#0d1b3e] text-sm mb-1">RICS-regulated assessment</p>
-                <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision - and satisfies the insuring obligation.</p>
-              </div>
-            </div>
+            <RicsSelectedCard />
           </TiltWrapper>
         </div>
       </section>

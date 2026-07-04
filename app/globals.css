@@ -160,6 +160,20 @@ main {
   }
 }
 
+/* ── RICS card "selected" green flash ── */
+@keyframes rics-select {
+  0%   { border-color: #0057FF; background: rgba(0,87,255,0.06); box-shadow: none; }
+  20%  { border-color: #16a34a; background: rgba(22,163,74,0.12); box-shadow: 0 0 0 4px rgba(22,163,74,0.20), 0 0 20px rgba(22,163,74,0.25); }
+  55%  { border-color: #16a34a; background: rgba(22,163,74,0.10); box-shadow: 0 0 0 3px rgba(22,163,74,0.15), 0 0 14px rgba(22,163,74,0.18); }
+  100% { border-color: #0057FF; background: rgba(0,87,255,0.06); box-shadow: none; }
+}
+.rics-card-base {
+  transition: border-color 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+}
+.rics-select-flash {
+  animation: rics-select 1.8s ease-in-out forwards;
+}
+
 /* ── Subtle gravity float on cards ── */
 @keyframes float-card {
   0%, 100% { transform: translateY(0px);   box-shadow: 0 2px 16px rgba(0,0,0,0.05); }
