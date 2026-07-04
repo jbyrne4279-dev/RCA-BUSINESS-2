@@ -54,13 +54,29 @@ export default function CtaBanner() {
           <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-6 text-center">Why Stearling Reinstatement</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 circuit-steps">
             {[
-              { label: 'Specialist only', desc: 'Reinstatement cost assessments — no general surveying, no distractions.', icon: '🎯' },
-              { label: 'RICS regulated', desc: 'Every assessment supervised by a RICS-registered member.', icon: '🏛' },
-              { label: '24-hr turnaround', desc: 'Desktop assessments delivered within 24 hours of instruction.', icon: '⚡' },
-              { label: 'PI insured', desc: 'Professional indemnity cover on every instruction.', icon: '🛡' },
+              {
+                label: 'Specialist only',
+                desc: 'Reinstatement cost assessments — no general surveying, no distractions.',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>,
+              },
+              {
+                label: 'RICS regulated',
+                desc: 'Every assessment supervised by a RICS-registered member.',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l2.5 5.5H20l-4.5 3.5 1.5 5.5L12 13.5 7 16.5l1.5-5.5L4 7.5h5.5L12 2z"/></svg>,
+              },
+              {
+                label: '24-hr turnaround',
+                desc: 'Desktop assessments delivered within 24 hours of instruction.',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>,
+              },
+              {
+                label: 'PI insured',
+                desc: 'Professional indemnity cover on every instruction.',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>,
+              },
             ].map(({ label, desc, icon }) => (
               <div key={label} className="text-center">
-                <div className="text-2xl mb-2">{icon}</div>
+                <div className="flex justify-center mb-3 text-[#7db8ff]">{icon}</div>
                 <p className="text-white font-semibold text-sm mb-1">{label}</p>
                 <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
               </div>
