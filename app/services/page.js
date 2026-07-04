@@ -129,8 +129,8 @@ export default function ServicesPage() {
               { label: 'Old or inherited valuations', sub: 'Stale figures create underinsurance risk.', ok: false },
               { label: 'RICS-aligned reinstatement cost assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ label, sub, ok }) => (
-              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#0057FF]' : 'border-[#e2e8f0]'}`} style={ok ? {background:'rgba(0,87,255,0.08)'} : {}}>
-                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#16a34a]' : 'border-[#f87171]'}`} style={ok ? {background:'rgba(22,163,74,0.07)'} : {background:'rgba(239,68,68,0.05)'}}>
+                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
                   {ok
                     ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                     : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
@@ -198,7 +198,7 @@ export default function ServicesPage() {
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling without a site visit. Delivered within 24 hours of instruction. Accepted by all UK insurers.',
                 href: '/contact?service=desktop#contact-form',
-                link: 'Request Desktop Assessment ?',
+                link: 'Request Desktop Assessment',
               },
               {
                 icon: <IcoSurvey />,
@@ -207,7 +207,7 @@ export default function ServicesPage() {
                 title: 'On-Site Survey',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed, heritage and complex buildings.',
                 href: '/contact?service=onsite#contact-form',
-                link: 'Request On-Site Survey ?',
+                link: 'Request On-Site Survey',
               },
               {
                 icon: <IcoShield />,
@@ -216,7 +216,7 @@ export default function ServicesPage() {
                 title: '3-Year Protection Plan',
                 desc: 'One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
-                link: 'Enquire About Protection Plan ?',
+                link: 'Enquire About Protection Plan',
               },
             ].map(({ icon, id, badge, title, desc, href, link }) => (
               <div key={id} id={id} className="float-card bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
@@ -229,6 +229,42 @@ export default function ServicesPage() {
                 <Link href={href} className="link-arrow">
                   {link}
                 </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RICS REPORT = LEGAL PROTECTION */}
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span className="badge badge-blue">Your Protection</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3 mb-5">
+              Your RICS report is your <span className="blue-keyword">legal shield</span>.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              Every assessment we deliver is a formal RICS-compliant report — the recognised standard accepted by all UK insurers, loss adjusters and courts. It documents the correct sum insured, the methodology used, and the review date, creating a defensible paper trail that protects you at every stage.
+            </p>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              Under UK insurance law, the obligation to insure at full reinstatement cost falls on the building owner or managing agent. A professionally prepared RICS report is the evidence that you discharged that duty — it limits personal liability if a claim arises and prevents insurers from applying the average clause to reduce a payout.
+            </p>
+            <Link href="/contact#contact-form" className="btn-shine">Get Your RICS Report</Link>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              { icon: '🏛️', title: 'RICS-compliant documentation', desc: 'Prepared to Royal Institution of Chartered Surveyors guidance — the standard recognised by every UK insurer, broker and court.' },
+              { icon: '🛡️', title: 'Professional indemnity backing', desc: 'Every report is covered by our PI insurance. If the figure is ever challenged, you have an independently insured professional standing behind it.' },
+              { icon: '⚖️', title: 'Limits your personal liability', desc: 'Demonstrates you took reasonable professional steps to set the declared value — protecting directors, managing agents and freeholders from personal claims.' },
+              { icon: '📋', title: 'Prevents the average clause', desc: 'Insurers apply the average clause to reduce payouts when a property is underinsured. A current RICS report is the strongest defence against it.' },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0] bg-white hover:border-[#0057FF] hover:shadow-md transition-all duration-200">
+                <span className="text-2xl shrink-0">{icon}</span>
+                <div>
+                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>

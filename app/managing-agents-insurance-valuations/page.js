@@ -99,8 +99,8 @@ export default function ManagingAgentsPage() {
                 { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
                 { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
-                <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#0057FF] bg-[rgba(0,87,255,0.06)]' : 'border-[#e2e8f0] bg-[#f8fafc]'}`}>
-                  <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+                <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#16a34a] bg-[rgba(22,163,74,0.06)]' : 'border-[#f87171] bg-[rgba(239,68,68,0.05)]'}`}>
+                  <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
                     {ok
                       ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                       : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>

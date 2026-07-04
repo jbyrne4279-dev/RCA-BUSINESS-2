@@ -16,10 +16,10 @@ export default function RicsSelectedCard() {
   return (
     <div
       ref={ref}
-      className="flex gap-4 items-start p-5 rounded-xl border border-[#0057FF] rics-card-base"
-      style={{background:'rgba(0,87,255,0.06)'}}
+      className="flex gap-4 items-start p-5 rounded-xl border border-[#16a34a] rics-card-base"
+      style={{background:'rgba(22,163,74,0.06)'}}
     >
-      <span className="text-[#0057FF] shrink-0 mt-0.5">
+      <span className="text-[#16a34a] shrink-0 mt-0.5">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="1.5,7 5,10.5 12.5,3"/>
         </svg>

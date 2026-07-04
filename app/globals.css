@@ -336,7 +336,7 @@ main {
 .icon-circle-amber { background: #fffbeb; color: #d97706; }
 
 /* ── Tick glow ── */
-.tick-glow { filter: drop-shadow(0 0 6px rgba(0,87,255,0.7)); }
+.tick-glow { filter: drop-shadow(0 0 6px rgba(22,163,74,0.7)); }
 
 /* ── Electric blue keyword highlight ── */
 .blue-keyword {

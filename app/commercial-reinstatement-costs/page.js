@@ -122,12 +122,12 @@ export default function CommercialPage() {
                 key={title}
                 className="bg-white rounded-2xl border p-4 flex gap-3 items-start"
                 style={{
-                  borderColor: ok ? '#0057FF' : '#e2e8f0',
-                  background: ok ? 'rgba(0,87,255,0.06)' : '#fff',
+                  borderColor: ok ? '#16a34a' : '#f87171',
+                  background: ok ? 'rgba(22,163,74,0.06)' : 'rgba(239,68,68,0.05)',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
                 }}
               >
-                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#0057FF]' : 'text-[#d93025]'}`}>
+                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
                   {ok
                     ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                     : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
