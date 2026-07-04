@@ -166,7 +166,7 @@ export default function PortfolioPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
               One instruction. <span className="blue-keyword">Managed</span> from start to every renewal.
             </h2>
-            <ol className="space-y-5 mb-8">
+            <ol className="circuit-steps space-y-5 mb-8">
               {[
                 { step: '01', title: 'Submit your asset list', desc: 'Send us a schedule of properties - address, type, approximate floor area. We provide a consolidated quote within one business day.' },
                 { step: '02', title: 'Single engagement letter', desc: 'One agreement covers every asset. We allocate a named surveyor as your single point of contact for the entire portfolio.' },

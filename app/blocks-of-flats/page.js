@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -87,7 +88,7 @@ export default function BlocksOfFlatsPage() {
               ))}
             </ul>
           </div>
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
             <ul className="space-y-4">
               {[
@@ -109,7 +110,7 @@ export default function BlocksOfFlatsPage() {
             <div className="mt-8 pt-6 border-t border-[#e2e8f0]">
               <Link href="/contact#contact-form" className="btn-shine w-full text-center block">Request a Block Assessment</Link>
             </div>
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 

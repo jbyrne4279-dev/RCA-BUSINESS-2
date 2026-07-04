@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -91,7 +92,7 @@ export default function ListedBuildingsPage() {
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
           {/* Card right - listing grades */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
               <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
@@ -116,7 +117,7 @@ export default function ListedBuildingsPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 
@@ -124,7 +125,7 @@ export default function ListedBuildingsPage() {
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Checklist card left */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
             <ul className="space-y-4">
               {[
@@ -143,7 +144,7 @@ export default function ListedBuildingsPage() {
                 </li>
               ))}
             </ul>
-          </div>
+          </TiltWrapper>
           {/* Text right */}
           <div>
             <span className="badge badge-blue mb-4">Our On-Site Survey Process</span>

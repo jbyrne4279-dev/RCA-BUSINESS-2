@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -121,7 +122,7 @@ export default function ServicesPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Check Your Sum Insured</Link>
           </div>
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             {[
               { label: 'Online calculators', sub: 'No accountability. Not defensible in a dispute.', ok: false },
               { label: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a review.', ok: false },
@@ -141,21 +142,21 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 
       {/* SECTION B - THREE TIERS OVERVIEW */}
       <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-            {[
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-5" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+            <div className="circuit-steps space-y-5">{[
               { icon: <IcoDesktop />, num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
               { icon: <IcoSurvey />, num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
               { icon: <IcoShield />, num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
             ].map(({ icon, num, title, desc }) => (
-              <div key={num} className="flex gap-4 items-start step-reveal-item">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(0,87,255,0.12)'}}>
+              <div key={num} className="flex gap-4 items-start">
+                <div className="circuit-num w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-lg" style={{background:'rgba(0,87,255,0.12)'}}>
                   {icon}
                 </div>
                 <div>
@@ -164,8 +165,8 @@ export default function ServicesPage() {
                   <p className="text-[#64748b] text-xs leading-relaxed">{desc}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            ))}</div>
+          </TiltWrapper>
           <div>
             <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">

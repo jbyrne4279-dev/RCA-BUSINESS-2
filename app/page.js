@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
+import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
 import TestimonialsSection from './components/TestimonialsSection'
 import CtaBanner from './components/CtaBanner'
@@ -150,23 +151,25 @@ export default function HomePage() {
           </div>
 
           {/* Right: process steps Ã¯Â¿Â½ staggered reveal */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
-            {[
-              { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-              { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
-              { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
-              { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
-            ].map(({ n, title, desc }, i) => (
-              <div key={n} className={`flex gap-4 items-start step-reveal ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`} style={{animationDelay:`${i * 0.18}s`}}>
-                <span className="text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
-                <div>
-                  <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
-                  <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
+            <div className="circuit-steps">
+              {[
+                { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
+                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
+                { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
+                { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
+              ].map(({ n, title, desc }, i) => (
+                <div key={n} className={`flex gap-4 items-start ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
+                  <span className="circuit-num text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </TiltWrapper>
         </div>
       </section>
 

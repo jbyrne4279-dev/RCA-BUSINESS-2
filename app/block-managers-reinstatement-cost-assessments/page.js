@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -99,12 +100,12 @@ export default function BlockManagersPage() {
           </div>
 
           {/* Right: 3-year compliance cycle card */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <div className="px-7 pt-7 pb-5 border-b border-[#e2e8f0]">
               <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-1">3-Year Compliance Cycle</p>
               <p className="text-sm text-[#64748b]">How RICS guidance applies to your managed blocks</p>
             </div>
-            <div className="p-7 flex flex-col gap-5">
+            <div className="circuit-steps p-7 flex flex-col gap-5">
               {[
                 { year: 'Year 1', title: 'Full RICS Assessment', desc: 'Base reinstatement cost established by a RICS-regulated surveyor. Report issued in broker-ready format.' },
                 { year: 'Year 2', title: 'BCIS-Indexed Update', desc: 'Annual inflation uplift applied using BCIS data. Renewal-ready report issued before your renewal date.' },
@@ -121,7 +122,7 @@ export default function BlockManagersPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 
@@ -130,7 +131,7 @@ export default function BlockManagersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: checklist card */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">What Block Managers Get</p>
             <ul className="space-y-4">
               {[
@@ -151,7 +152,7 @@ export default function BlockManagersPage() {
                 </li>
               ))}
             </ul>
-          </div>
+          </TiltWrapper>
 
           {/* Right: text */}
           <div>

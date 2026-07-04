@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -89,7 +90,7 @@ export default function ManagingAgentsPage() {
           </div>
 
           {/* ? / ? comparison card */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#64748b] mb-5">Approach comparison</p>
             <div className="space-y-4">
               {[
@@ -112,7 +113,7 @@ export default function ManagingAgentsPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 
@@ -121,9 +122,9 @@ export default function ManagingAgentsPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left: What We Deliver checklist card */}
-          <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
-            <div className="space-y-3">
+            <div className="circuit-steps space-y-3">
               {[
                 'Documented declared value - defensible at claim stage',
                 'Clear methodology statement for insurers and brokers',
@@ -139,7 +140,7 @@ export default function ManagingAgentsPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </TiltWrapper>
 
           {/* Right: What managing agents get from us */}
           <div>

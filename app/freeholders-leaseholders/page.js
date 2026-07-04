@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
+import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
@@ -91,7 +92,7 @@ export default function FreeholdersLeaseholdersPage() {
           </div>
 
           {/* Comparison card */}
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-5 sm:p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-5 sm:p-8 space-y-4" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-2">How the declared value is set</p>
             <div className="flex gap-4 items-start p-5 rounded-xl border border-[#e2e8f0]">
               <span className="text-[#d93025] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg></span>
@@ -107,7 +108,7 @@ export default function FreeholdersLeaseholdersPage() {
                 <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision - and satisfies the insuring obligation.</p>
               </div>
             </div>
-          </div>
+          </TiltWrapper>
         </div>
       </section>
 

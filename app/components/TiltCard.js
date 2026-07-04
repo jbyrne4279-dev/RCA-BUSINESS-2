@@ -47,7 +47,7 @@ export default function TiltCard() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/60 to-transparent" />
       </div>
-      <div className="p-6 flex flex-col gap-3">
+      <div className="circuit-steps p-6 flex flex-col gap-3">
         {[
           { label: 'Reinstatement Cost', val: 'Correct basis for sum insured', ok: true },
           { label: 'Market Value', val: 'Irrelevant for insurance purposes', ok: false },
