@@ -40,33 +40,36 @@ const reviews = [
 function ReviewCard({ name, role, photo, quote, visible }) {
   return (
     <div
-      className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col absolute inset-0 transition-all duration-700"
+      className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-700"
       style={{
         boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0) scale(1)' : 'translateY(10px) scale(0.98)',
         pointerEvents: visible ? 'auto' : 'none',
+        position: visible ? 'relative' : 'absolute',
+        inset: visible ? 'auto' : 0,
+        width: '100%',
       }}
     >
-      <div className="flex items-center justify-between mb-5">
-        <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-start justify-between gap-3 mb-5">
+        <div className="flex items-center gap-3 min-w-0">
           <div className="relative shrink-0">
             <img src={photo} alt={name} className="w-11 h-11 rounded-full object-cover" />
             <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-white rounded-full flex items-center justify-center" style={{boxShadow:'0 1px 4px rgba(0,0,0,0.2)'}}>
               <GoogleIcon />
             </span>
           </div>
-          <div>
-            <p className="font-semibold text-sm text-[#0d1b3e]">{name}</p>
-            <p className="text-xs text-[#64748b]">{role}</p>
+          <div className="min-w-0">
+            <p className="font-semibold text-sm text-[#0d1b3e] truncate">{name}</p>
+            <p className="text-xs text-[#64748b] leading-snug">{role}</p>
           </div>
         </div>
-        <div className="flex flex-col items-end gap-0.5">
+        <div className="flex flex-col items-end gap-0.5 shrink-0">
           <div className="flex gap-0.5">{[...Array(5)].map((_, i) => <Star key={i} />)}</div>
           <span className="text-[10px] text-[#64748b]">Google review</span>
         </div>
       </div>
-      <p className="text-[#64748b] text-sm leading-relaxed flex-1">&ldquo;{quote}&rdquo;</p>
+      <p className="text-[#64748b] text-sm leading-relaxed">&ldquo;{quote}&rdquo;</p>
     </div>
   )
 }
@@ -88,8 +91,8 @@ export default function TestimonialsSection() {
           <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
         </div>
 
-        {/* Carousel */}
-        <div className="relative" style={{height: '200px'}}>
+        {/* Carousel — height adapts to active card; hidden cards sit absolute so they don't affect flow */}
+        <div className="relative max-w-2xl mx-auto">
           {reviews.map((r, i) => (
             <ReviewCard key={r.name} {...r} visible={i === active} />
           ))}
