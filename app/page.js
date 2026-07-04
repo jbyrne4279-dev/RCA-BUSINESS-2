@@ -114,7 +114,7 @@ export default function HomePage() {
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
             </p>
             <Link href="/services" className="link-arrow">
-              Explore our services ?
+              Explore our services
             </Link>
           </div>
         </div>
