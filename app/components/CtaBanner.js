@@ -27,8 +27,9 @@ export default function CtaBanner() {
 
         {/* Stat callout */}
         <p className="text-center text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          <span className="text-white font-semibold">80% of UK buildings</span> carry the wrong sum insured. Commission a RICS-regulated assessment and know for certain — broker-ready report in{' '}
-          <span style={{color:'#7db8ff'}} className="font-semibold">24 hours</span>.
+          Tell us your property and we'll send a written fee estimate — no contract, no commitment. If you proceed, your{' '}
+          <span style={{color:'#7db8ff'}} className="font-semibold">broker-ready RICS report</span>{' '}
+          is with you in 24 hours.
         </p>
 
         {/* CTAs */}
