@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#9a8c7e"/>
+      <stop offset="25%"  stop-color="#d4c9bc"/>
+      <stop offset="50%"  stop-color="#f0e8de"/>
+      <stop offset="75%"  stop-color="#b8a99a"/>
+      <stop offset="100%" stop-color="#7a6e64"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#4a4038"/>
+      <stop offset="100%" stop-color="#6b5e54"/>
+    </linearGradient>
+    <filter id="drop">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000044"/>
+    </filter>
+  </defs>
+  <!-- S -->
+  <text x="10" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="155" font-weight="bold"
+        fill="url(#shadow)" filter="url(#drop)" dx="2" dy="3">S</text>
+  <text x="10" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="155" font-weight="bold"
+        fill="url(#metal)">S</text>
+  <!-- R -->
+  <text x="90" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="155" font-weight="bold"
+        fill="url(#shadow)" filter="url(#drop)" dx="2" dy="3">R</text>
+  <text x="90" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="155" font-weight="bold"
+        fill="url(#metal)">R</text>
+</svg>

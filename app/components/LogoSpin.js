@@ -61,7 +61,7 @@ export default function LogoSpin({ width = 36, height = 36, className = '', prio
         }}
       >
         <Image
-          src="/cr-monogram.svg"
+          src="/sr-logo.svg"
           alt="Stearling Reinstatement"
           width={width}
           height={height}
