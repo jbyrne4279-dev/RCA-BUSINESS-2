@@ -155,7 +155,7 @@ export default function ListedBuildingsPage() {
               {[
                 { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">01</span> },
                 { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">02</span> },
-                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="4" rx="0.5"/><rect x="2" y="11" width="9" height="4" rx="0.5"/><rect x="13" y="11" width="9" height="4" rx="0.5"/><rect x="2" y="17" width="20" height="4" rx="0.5"/></svg> },
+                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">03</span> },
                 { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
               ].map(({ title, body, icon }) => (
                 <div key={title} className="flex gap-4 items-start step-reveal-item">
@@ -220,7 +220,7 @@ export default function ListedBuildingsPage() {
                 <div className="mb-4">{icon}</div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="link-arrow">Learn more ?</Link>
+                <Link href={href} className="link-arrow cta-flash">Learn more</Link>
               </div>
             ))}
           </div>

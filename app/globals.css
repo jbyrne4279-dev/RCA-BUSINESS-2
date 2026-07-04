@@ -543,3 +543,17 @@ a.link-amber:hover {
 [class^="lifecycle-border-"] {}
 [class^="method-ring-"]      {}
 
+
+/* ── Electric blue CTA flash ── */
+@keyframes cta-electric-flash {
+  0%, 100% { color: #0057FF; text-shadow: none; }
+  50% { color: #38bdf8; text-shadow: 0 0 10px rgba(56,189,248,0.8), 0 0 20px rgba(0,87,255,0.5); }
+}
+.cta-flash {
+  animation: cta-electric-flash 2.4s ease-in-out infinite;
+}
+.cta-flash:hover {
+  animation: none;
+  color: #0057FF;
+  text-shadow: 0 0 12px rgba(0,87,255,0.6);
+}
