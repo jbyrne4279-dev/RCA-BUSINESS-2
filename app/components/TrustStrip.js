@@ -33,15 +33,14 @@ export default function TrustStrip() {
         <div className="overflow-hidden flex-1">
           <div
             className="flex gap-10 w-max"
-            style={{
-              animation: 'trust-marquee 12s linear infinite',
-            }}
+            style={{ animation: 'trust-marquee 12s linear infinite' }}
           >
             {[...items, ...items].map(({ label, href }, i) => (
               <Link
                 key={i}
                 href={href}
-                className="text-sm font-semibold shrink-0 text-[#0d1b3e] hover:text-[#0057FF] transition-colors"
+                className="trust-marquee-item text-sm font-semibold shrink-0"
+                style={{ animationDelay: `${(i % items.length) * (12 / items.length)}s` }}
               >
                 {label}
               </Link>
@@ -54,6 +53,16 @@ export default function TrustStrip() {
         @keyframes trust-marquee {
           from { transform: translateX(0); }
           to   { transform: translateX(-50%); }
+        }
+        @keyframes trust-glow {
+          0%   { color: #0d1b3e; text-shadow: none; }
+          40%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.7), 0 0 24px rgba(0,87,255,0.35); }
+          60%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.7), 0 0 24px rgba(0,87,255,0.35); }
+          100% { color: #0d1b3e; text-shadow: none; }
+        }
+        .trust-marquee-item {
+          color: #0d1b3e;
+          animation: trust-glow 12s linear infinite;
         }
       `}</style>
     </div>

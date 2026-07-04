@@ -193,7 +193,9 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: <IcoDesktop />,
+                img: '/rca-rics-surveyor.png',
+                imgAlt: 'RICS surveyor reviewing BCIS index data for a desktop reinstatement cost assessment',
+                imgPosition: 'center top',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
                 title: 'Desktop Assessment',
@@ -202,7 +204,9 @@ export default function ServicesPage() {
                 link: 'Request Desktop Assessment',
               },
               {
-                icon: <IcoSurvey />,
+                img: '/AdobeStock_208633670.jpeg',
+                imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment of a residential block',
+                imgPosition: 'center center',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
                 title: 'On-Site Survey',
@@ -211,25 +215,37 @@ export default function ServicesPage() {
                 link: 'Request On-Site Survey',
               },
               {
-                icon: <IcoShield />,
+                img: '/AdobeStock_1477785304.jpeg',
+                imgAlt: 'Well-maintained London property block protected under a 3-year RICS reinstatement cost assessment plan',
+                imgPosition: 'center center',
                 id: 'three-year-protection',
                 badge: '03. Recommended',
                 title: '3-Year Protection Plan',
-                desc: 'One instruction covers three years of RICS compliance - full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                desc: 'One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
               },
-            ].map(({ icon, id, badge, title, desc, href, link }) => (
-              <div key={id} id={id} className="float-card bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl mb-4" style={{background:'rgba(0,87,255,0.12)'}}>
-                  {icon}
+            ].map(({ img, imgAlt, imgPosition, id, badge, title, desc, href, link }) => (
+              <div key={id} id={id} className="float-card bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+                <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
+                  <Image
+                    src={img}
+                    alt={imgAlt}
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    style={{objectPosition: imgPosition}}
+                    sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
                 </div>
-                <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
-                <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                <Link href={href} className="link-arrow">
-                  {link}
-                </Link>
+                <div className="p-7 flex flex-col flex-1">
+                  <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
+                  <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                  <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
+                  <Link href={href} className="link-arrow">
+                    {link}
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
