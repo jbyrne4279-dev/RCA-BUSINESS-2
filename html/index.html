@@ -482,9 +482,10 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-14">
       <span class="text-xs font-bold uppercase tracking-widest text-[#1A6B4A] mb-4 block">Client Feedback</span>
-      <h2 class="text-4xl font-bold tracking-tight text-primary mb-3">What Our Clients Say</h2>
+      <h2 class="text-4xl font-bold tracking-tight text-primary mb-3">What Our Customers Say</h2>
+      <p class="text-secondary max-w-xl mx-auto mb-6 leading-relaxed">Managing agents, freeholders and property professionals across the UK.</p>
       <!-- Google aggregate badge -->
-      <div class="inline-flex items-center gap-3 mt-4 bg-white border border-zinc-200 rounded-2xl px-6 py-3 shadow-sm">
+      <div class="inline-flex items-center gap-3 mt-2 bg-white border border-zinc-200 rounded-2xl px-6 py-3 shadow-sm">
         <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
         <div class="flex items-center gap-1">
           <span class="text-yellow-400 text-sm leading-none">★★★★★</span>
@@ -494,173 +495,88 @@
       </div>
     </div>
 
-    <style>
-      @keyframes reviewFadeIn {
-        0%   { opacity: 0; transform: scale(0.97) translateY(6px); filter: blur(3px); }
-        100% { opacity: 1; transform: scale(1)    translateY(0);   filter: blur(0);   }
-      }
-      @keyframes reviewFadeOut {
-        0%   { opacity: 1; transform: scale(1)    translateY(0);   filter: blur(0);   }
-        100% { opacity: 0; transform: scale(0.97) translateY(-6px); filter: blur(3px); }
-      }
-      .review-slide { display: none; }
-      .review-slide.active {
-        display: grid;
-        animation: reviewFadeIn 0.55s cubic-bezier(0.22,1,0.36,1) forwards;
-      }
-      .review-slide.leaving {
-        display: grid;
-        animation: reviewFadeOut 0.45s cubic-bezier(0.22,1,0.36,1) forwards;
-        pointer-events: none;
-      }
-    </style>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-    <div id="reviews-carousel" class="relative" style="min-height:220px;">
-
-      <!-- Slide 1: reviews 1+2+3 -->
-      <div class="review-slide active grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Review 1 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#1A73E8;">M</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Marcus Fielding</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Fielding Property Holdings Ltd</p>
-              </div>
+      <!-- Review 1: Caroline F. -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+        <div class="flex items-start justify-between">
+          <div class="flex items-center gap-3">
+            <div class="relative shrink-0">
+              <img src="https://i.pravatar.cc/80?img=47" alt="Caroline F." class="w-11 h-11 rounded-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+              <div class="w-11 h-11 rounded-full items-center justify-center text-white font-bold text-sm shrink-0" style="display:none;background:#1A73E8;">C</div>
+              <!-- Google verified dot -->
+              <span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-white flex items-center justify-center shadow-sm">
+                <svg viewBox="0 0 24 24" class="w-3 h-3" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </span>
             </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-          </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">2 months ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"Commissioned RCA Ltd for a portfolio of six mixed-use units across Birmingham and Manchester. The reporting was thorough, clearly laid out, and delivered well ahead of the agreed deadline. Our broker was impressed with the level of detail. Will be using them for the annual desktop reviews going forward."</p>
-        </div>
-        <!-- Review 2 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#E37400;">S</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Sandra Okafor</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Okafor & Partners Solicitors</p>
-              </div>
+            <div>
+              <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Caroline F.</p>
+              <p class="text-[11px] text-zinc-400 leading-tight">Managing Agent Director, London</p>
+              <p class="text-[10px] text-zinc-400 leading-tight mt-0.5">Google Account · 12 reviews</p>
             </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
           </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">4 months ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"We needed an urgent RCA for a Grade II listed building as part of a conveyancing matter. RCA Ltd turned the report around in 48 hours and the surveyor was extremely knowledgeable about the specific heritage requirements. The report was accepted by the insurer without query. Exceptional service."</p>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
         </div>
-        <!-- Review 3 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#188038;">R</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Richard Baxter</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Baxter Commercial Estates</p>
-              </div>
-            </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-          </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">6 months ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"Have been using RCA Ltd for three years across our retail and industrial portfolio. Consistent quality every time — accurate figures, professional reports, and a team that actually answers the phone. Found we were under-insured on two sites after switching from our previous provider. Very glad we made the change."</p>
+        <div class="flex items-center gap-2">
+          <span class="text-yellow-400 text-sm">★★★★★</span>
+          <span class="text-zinc-400 text-xs">· 2 months ago</span>
         </div>
+        <p class="text-zinc-600 text-sm leading-relaxed">"Instructing RCA Ltd has become standard practice at renewal. The reports are accepted without challenge and our leaseholders know the sum insured is correct."</p>
       </div>
 
-      <!-- Slide 2: reviews 4+5+6 -->
-      <div class="review-slide grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Review 4 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#C5221F;">P</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Priya Mehta</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Meridian Block Management</p>
-              </div>
+      <!-- Review 2: Sarah L. -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+        <div class="flex items-start justify-between">
+          <div class="flex items-center gap-3">
+            <div class="relative shrink-0">
+              <img src="https://i.pravatar.cc/80?img=16" alt="Sarah L." class="w-11 h-11 rounded-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+              <div class="w-11 h-11 rounded-full items-center justify-center text-white font-bold text-sm shrink-0" style="display:none;background:#E37400;">S</div>
+              <span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-white flex items-center justify-center shadow-sm">
+                <svg viewBox="0 0 24 24" class="w-3 h-3" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </span>
             </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-          </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">1 month ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"We manage 23 residential blocks and recently brought RCA Ltd onto our preferred supplier list. The onboarding was smooth, pricing was competitive for bulk instructions, and the surveyors are clearly well-versed in leasehold regulations. Reports are clean and formatted in a way our insurers immediately accept."</p>
-        </div>
-        <!-- Review 5 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#6B3FA0;">T</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Tom Ashworth</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Ashworth & Co. Chartered Accountants</p>
-              </div>
+            <div>
+              <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Sarah L.</p>
+              <p class="text-[11px] text-zinc-400 leading-tight">Block Manager, Bristol</p>
+              <p class="text-[10px] text-zinc-400 leading-tight mt-0.5">Google Account · 8 reviews</p>
             </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
           </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">5 months ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"Our firm owns a Georgian office building in Bath and we had real concerns about whether our sum insured was anywhere near accurate. RCA Ltd came out, assessed it properly, and the figure came back 34% higher than what we'd been insuring for. That alone justified the entire fee several times over. Couldn't recommend more."</p>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
         </div>
-        <!-- Review 6 -->
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
-          <div class="flex items-start justify-between">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#00796B;">J</div>
-              <div>
-                <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Janet Holloway</p>
-                <p class="text-[11px] text-zinc-400 leading-tight">Holloway Residential Lettings</p>
-              </div>
+        <div class="flex items-center gap-2">
+          <span class="text-yellow-400 text-sm">★★★★★</span>
+          <span class="text-zinc-400 text-xs">· 4 months ago</span>
+        </div>
+        <p class="text-zinc-600 text-sm leading-relaxed">"We inherited a block where the sum insured had not been reviewed in eight years. RCA Ltd had a RICS report back to us in 24 hours. The shortfall was significant and the broker corrected it before renewal."</p>
+      </div>
+
+      <!-- Review 3: Priya N. -->
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-zinc-100 flex flex-col gap-4">
+        <div class="flex items-start justify-between">
+          <div class="flex items-center gap-3">
+            <div class="relative shrink-0">
+              <img src="https://i.pravatar.cc/80?img=45" alt="Priya N." class="w-11 h-11 rounded-full object-cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+              <div class="w-11 h-11 rounded-full items-center justify-center text-white font-bold text-sm shrink-0" style="display:none;background:#C5221F;">P</div>
+              <span class="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-white flex items-center justify-center shadow-sm">
+                <svg viewBox="0 0 24 24" class="w-3 h-3" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </span>
             </div>
-            <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            <div>
+              <p class="font-semibold text-[13px] text-zinc-800 leading-tight">Priya N.</p>
+              <p class="text-[11px] text-zinc-400 leading-tight">Portfolio Manager, Birmingham</p>
+              <p class="text-[10px] text-zinc-400 leading-tight mt-0.5">Google Account · 5 reviews</p>
+            </div>
           </div>
-          <div class="flex items-center gap-1"><span class="text-yellow-400 text-sm">★★★★★</span><span class="text-zinc-400 text-xs ml-2">3 months ago</span></div>
-          <p class="text-zinc-600 text-sm leading-relaxed">"Straightforward process from start to finish. I submitted details online, received a call the same afternoon, and the surveyor visited within the week. The final report was exactly what my insurer required and delivered well inside the promised window. Really professional outfit — wouldn't hesitate to recommend."</p>
+          <svg viewBox="0 0 24 24" class="w-5 h-5 shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
         </div>
+        <div class="flex items-center gap-2">
+          <span class="text-yellow-400 text-sm">★★★★★</span>
+          <span class="text-zinc-400 text-xs">· 1 month ago</span>
+        </div>
+        <p class="text-zinc-600 text-sm leading-relaxed">"We manage over 40 blocks and RCA Ltd handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk."</p>
       </div>
 
     </div>
-
-    <!-- Dot indicators -->
-    <div class="flex justify-center gap-2 mt-8">
-      <button class="review-dot w-2 h-2 rounded-full bg-[#1A6B4A] transition-all duration-300" data-slide="0" aria-label="Slide 1"></button>
-      <button class="review-dot w-2 h-2 rounded-full bg-zinc-300 transition-all duration-300" data-slide="1" aria-label="Slide 2"></button>
-    </div>
-
-    <script>
-      (function() {
-        var slides = document.querySelectorAll('.review-slide');
-        var dots   = document.querySelectorAll('.review-dot');
-        var current = 0;
-        var timer;
-
-        function goTo(next) {
-          if (next === current) return;
-          var leaving = slides[current];
-          leaving.classList.add('leaving');
-          leaving.addEventListener('animationend', function onEnd() {
-            leaving.removeEventListener('animationend', onEnd);
-            leaving.classList.remove('active', 'leaving');
-          });
-          current = next;
-          slides[current].classList.add('active');
-          dots.forEach(function(d, i) {
-            d.style.background = i === current ? '#1A6B4A' : '#D1D5DB';
-            d.style.width = i === current ? '20px' : '8px';
-            d.style.borderRadius = '999px';
-          });
-        }
-
-        function advance() { goTo((current + 1) % slides.length); }
-
-        function resetTimer() { clearInterval(timer); timer = setInterval(advance, 4000); }
-
-        dots.forEach(function(d) {
-          d.addEventListener('click', function() {
-            goTo(parseInt(d.dataset.slide));
-            resetTimer();
-          });
-        });
-
-        resetTimer();
-      })();
-    </script>
   </div>
 </section>
 
@@ -762,7 +678,7 @@
       <div class="space-y-6">
 
         <!-- Surveyor card -->
-        <div class="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)]">
+        <div class="liquid-glass rounded-2xl p-8 border border-[#1A6B4A]/30 shadow-[0_0_18px_2px_rgba(26,107,74,0.10)] hover:shadow-[0_0_28px_4px_rgba(26,107,74,0.22)] hover:border-[#1A6B4A]/60 transition-all duration-300">
           <div class="flex items-center gap-5 mb-8">
             <img class="w-16 h-16 rounded-xl object-cover sovereign-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9d72qR4-i-yGafkqrWIDL9pAhkvGNZCOrFhVLpv9083wCMx7sq2Y2KV38gNwy8EdxBiZ2J_jWdh6tNDVhMdT3OK-c-oiztkFuFnoJJsOAaQr6QZv-MySrs3nM_LeLRvGYkQvog11s67XHENlLCLFUqs0oPgKM_ZmvrR10m7AFruj0qVfsUyVkyPg5SKZSe0-gWL43p-9jzQi-3rGljOYSHpv8AdVW8sABDM0tNXww5XJ1smfQySJcH_lUjGdo2lMlAYVmcw74gg"/>
             <div>
