@@ -218,20 +218,38 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Carousel */}
-        <div
-          className="relative max-w-2xl mx-auto"
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-          onMouseEnter={() => { pausedRef.current = true }}
-          onMouseLeave={() => { pausedRef.current = false }}
-        >
-          {reviews.map((r, i) => (
-            <ReviewCard key={r.name} {...r} visible={i === active} />
-          ))}
+        <div className="flex items-center gap-3 max-w-3xl mx-auto">
+          <button
+            onClick={prev}
+            aria-label="Previous review"
+            className="shrink-0 w-10 h-10 rounded-full border border-[#e2e8f0] bg-white flex items-center justify-center text-[#0057FF] hover:bg-[#0057FF] hover:text-white hover:border-[#0057FF] transition-all duration-200 shadow-sm"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd"/></svg>
+          </button>
+
+          <div
+            className="relative flex-1"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            onMouseEnter={() => { pausedRef.current = true }}
+            onMouseLeave={() => { pausedRef.current = false }}
+          >
+            {reviews.map((r, i) => (
+              <ReviewCard key={r.name} {...r} visible={i === active} />
+            ))}
+          </div>
+
+          <button
+            onClick={next}
+            aria-label="Next review"
+            className="shrink-0 w-10 h-10 rounded-full border border-[#e2e8f0] bg-white flex items-center justify-center text-[#0057FF] hover:bg-[#0057FF] hover:text-white hover:border-[#0057FF] transition-all duration-200 shadow-sm"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/></svg>
+          </button>
         </div>
 
         {/* Progress slider */}
-        <div className="max-w-2xl mx-auto mt-6 px-1">
+        <div className="max-w-3xl mx-auto mt-6 px-14">
           <input
             type="range"
             className="testimonial-slider"
