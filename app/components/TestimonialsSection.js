@@ -147,44 +147,56 @@ function ReviewCard({ name, role, photo, quote, visible }) {
 
 export default function TestimonialsSection() {
   const [active, setActive] = useState(0)
-  const [progress, setProgress] = useState(0)
+  const activeRef = useRef(0)
   const startTimeRef = useRef(null)
   const rafRef = useRef(null)
   const touchStartX = useRef(null)
   const pausedRef = useRef(false)
+  const sliderRef = useRef(null)
 
-  const goTo = useCallback((idx) => {
-    setActive((idx + reviews.length) % reviews.length)
-    setProgress(0)
-    startTimeRef.current = performance.now()
+  const updateSliderDOM = useCallback((value) => {
+    const el = sliderRef.current
+    if (!el) return
+    el.value = value
+    const pct = (value / (reviews.length - 1)) * 100
+    el.style.background = `linear-gradient(to right, #0057FF 0%, #0057FF ${pct}%, #e2e8f0 ${pct}%, #e2e8f0 100%)`
   }, [])
 
-  const next = useCallback(() => goTo(active + 1), [active, goTo])
-  const prev = useCallback(() => goTo(active - 1), [active, goTo])
+  const goTo = useCallback((idx) => {
+    const next = (idx + reviews.length) % reviews.length
+    activeRef.current = next
+    setActive(next)
+    startTimeRef.current = performance.now()
+    updateSliderDOM(next)
+  }, [updateSliderDOM])
+
+  const next = useCallback(() => goTo(activeRef.current + 1), [goTo])
+  const prev = useCallback(() => goTo(activeRef.current - 1), [goTo])
 
   useEffect(() => {
     startTimeRef.current = performance.now()
 
     const tick = (now) => {
-      if (pausedRef.current) {
-        startTimeRef.current = now - progress * INTERVAL
-        rafRef.current = requestAnimationFrame(tick)
-        return
-      }
-      const elapsed = now - startTimeRef.current
-      const pct = Math.min(elapsed / INTERVAL, 1)
-      setProgress(pct)
-      if (pct >= 1) {
-        setActive(p => (p + 1) % reviews.length)
-        startTimeRef.current = now
-        setProgress(0)
+      if (!pausedRef.current) {
+        const elapsed = now - startTimeRef.current
+        const pct = Math.min(elapsed / INTERVAL, 1)
+        const sliderVal = activeRef.current + pct
+        updateSliderDOM(sliderVal)
+        if (pct >= 1) {
+          const next = (activeRef.current + 1) % reviews.length
+          activeRef.current = next
+          setActive(next)
+          startTimeRef.current = now
+        }
+      } else {
+        startTimeRef.current = now - (Number(sliderRef.current?.value ?? activeRef.current) - activeRef.current) * INTERVAL
       }
       rafRef.current = requestAnimationFrame(tick)
     }
 
     rafRef.current = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(rafRef.current)
-  }, [])
+  }, [updateSliderDOM])
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
@@ -200,13 +212,8 @@ export default function TestimonialsSection() {
   }
 
   const handleSliderChange = (e) => {
-    const val = Number(e.target.value)
-    setActive(val)
-    setProgress(0)
-    startTimeRef.current = performance.now()
+    goTo(Math.round(Number(e.target.value)))
   }
-
-  const sliderValue = active + progress
 
   return (
     <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
@@ -251,17 +258,15 @@ export default function TestimonialsSection() {
         {/* Progress slider */}
         <div className="max-w-3xl mx-auto mt-6 px-14">
           <input
+            ref={sliderRef}
             type="range"
             className="testimonial-slider"
             min={0}
             max={reviews.length - 1}
             step={0.01}
-            value={sliderValue}
+            defaultValue={0}
             onChange={handleSliderChange}
             aria-label="Review slider"
-            style={{
-              background: `linear-gradient(to right, #0057FF 0%, #0057FF ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 100%)`,
-            }}
           />
 
         </div>
