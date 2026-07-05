@@ -23,8 +23,7 @@ export default function ThankYouPage() {
             A member of our team will respond within 24 hours on business days.
           </p>
           <p className="text-[#5f6368] text-base leading-relaxed mb-10">
-            For urgent instructions call{' '}
-            <a href="tel:+442031788099" className="text-[#1a73e8] font-semibold hover:text-[#1557b0] transition-colors">020 3178 8099</a>.
+            A member of our team will be in touch within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/" className="btn-shine">Return Home</Link>

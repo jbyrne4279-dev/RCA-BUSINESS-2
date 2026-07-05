@@ -11,7 +11,7 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'How quickly will you respond to my enquiry?', answer: 'All enquiries receive a response within 24 hours on business days. For urgent instructions, call us directly on 020 3178 8099.' },
+  { question: 'How quickly will you respond to my enquiry?', answer: 'All enquiries receive a response within 24 hours on business days.' },
   { question: 'Is there any commitment when I make an enquiry?', answer: 'None. We provide a written fee estimate before any work begins - you instruct only when you are ready to proceed.' },
   { question: 'What information should I have ready?', answer: 'Property address, approximate floor area, construction type, number of storeys, and whether you need a desktop or on-site assessment. We can work with estimates at the enquiry stage.' },
   { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will return a consolidated quote for the full portfolio under a single engagement letter.' },
@@ -30,11 +30,10 @@ export default function ContactPage() {
               Get in touch. We respond within 24 hours.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              No obligation - just a written fee estimate and a clear next step. Speak directly to a RICS specialist on <a href="tel:+442031788099" className="text-[#0057FF] font-semibold hover:underline">020 3178 8099</a> or complete the form below.
+              No obligation - just a written fee estimate and a clear next step. Complete the form below to speak directly to a RICS specialist.
             </p>
             <div className="space-y-4 mb-8">
               {[
-                { label: 'Telephone', value: '020 3178 8099', href: 'tel:+442031788099' },
                 { label: 'Email', value: 'info@stearlingreinstatement.com', href: 'mailto:info@stearlingreinstatement.com' },
                 { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
               ].map(({ label, value, href }) => (

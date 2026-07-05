@@ -90,14 +90,14 @@ export default function CommercialPage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Commercial buildings carry hidden cost layers that generic tools ignore entirely. Three drivers account for the majority of commercial underinsurance in the UK:
             </p>
-            <ul className="space-y-4 mb-8">
+            <ul className="tick-list space-y-4 mb-8">
               {[
                 { label: 'Tenant fitout', desc: 'Category A and B fitout installed by tenants is often excluded from building schedules but must be reinstated - adding substantial cost.' },
                 { label: 'Specialist plant', desc: 'HVAC, lifts, substations and process equipment carry high replacement values that no index can capture without a site assessment.' },
                 { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
-                <li key={label} className="flex gap-3 items-start step-reveal-item">
-                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
+                <li key={label} className="flex gap-3 items-start">
+                  <span className="tick-icon mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
                     <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
@@ -239,7 +239,7 @@ export default function CommercialPage() {
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
                 <Link href={href} className="link-arrow">
-                  Learn more ?
+                  Learn more
                 </Link>
               </div>
             ))}

@@ -14,7 +14,6 @@ export default function Footer() {
             <p className="text-white/70 text-sm">We respond within 24 hours on business days.</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <a href="tel:+442031788099" className="text-sm text-white/80 hover:text-white transition-colors font-medium">020 3178 8099</a>
             <Link href="/contact#contact-form" className="bg-white text-[#0040CC] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-colors">Get a Quote</Link>
           </div>
         </div>
@@ -72,9 +71,6 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-4">Contact</p>
             <ul className="space-y-3 text-sm text-white/60">
-              <li>
-                <a href="tel:+442031788099" className="hover:text-[#0057FF] transition-colors">020 3178 8099</a>
-              </li>
               <li>
                 <a href="mailto:info@stearlingreinstatement.com" className="hover:text-[#0057FF] transition-colors">info@stearlingreinstatement.com</a>
               </li>

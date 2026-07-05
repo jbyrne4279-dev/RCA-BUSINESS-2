@@ -90,7 +90,7 @@ export default function BlocksOfFlatsPage() {
           </div>
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
-            <ul className="space-y-4">
+            <ul className="tick-list space-y-4">
               {[
                 'Full structural reinstatement cost - walls, roof, foundations, external fabric',
                 'Communal areas and shared circulation space',
@@ -101,8 +101,8 @@ export default function BlocksOfFlatsPage() {
                 'BCIS-indexed figure with annual uplift schedule',
                 'Broker-ready report in 24 hours',
               ].map((item) => (
-                <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="tick-icon text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
                   <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
@@ -139,7 +139,7 @@ export default function BlocksOfFlatsPage() {
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="link-arrow !text-xs">Learn more ?</Link>
+                  <Link href={href} className="link-arrow !text-xs">Learn more</Link>
                 </div>
               </div>
             ))}

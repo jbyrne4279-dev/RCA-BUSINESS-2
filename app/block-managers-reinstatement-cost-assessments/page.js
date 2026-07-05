@@ -133,7 +133,7 @@ export default function BlockManagersPage() {
           {/* Left: checklist card */}
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">What Block Managers Get</p>
-            <ul className="space-y-4">
+            <ul className="tick-list space-y-4">
               {[
                 { title: '24-hr desktop turnaround', desc: 'Broker-ready report issued within 24 hours of instruction for standard blocks.' },
                 { title: 'Portfolio schedules', desc: 'A single summary schedule covering all blocks in your managed portfolio - one document for renewal season.' },
@@ -141,8 +141,8 @@ export default function BlockManagersPage() {
                 { title: 'Single-invoice billing', desc: 'One consolidated invoice per portfolio instruction. No per-block admin.' },
                 { title: 'Named surveyor throughout', desc: 'One point of contact across your entire portfolio, from instruction to report delivery.' },
               ].map(({ title, desc }) => (
-                <li key={title} className="flex gap-3 items-start step-reveal-item">
-                  <svg className="w-5 h-5 shrink-0 mt-0.5 text-[#0057FF]" viewBox="0 0 20 20" fill="currentColor">
+                <li key={title} className="flex gap-3 items-start">
+                  <svg className="tick-icon w-5 h-5 shrink-0 mt-0.5 text-[#0057FF]" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   <div>

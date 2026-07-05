@@ -89,14 +89,14 @@ export default function PortfolioPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-4 mb-6">
               <span className="blue-keyword">Inconsistent figures</span> across a portfolio amplify every risk.
             </h2>
-            <ul className="space-y-4 mb-8">
+            <ul className="tick-list space-y-4 mb-8">
               {[
                 { title: 'Inconsistent declared figures', desc: 'Different assets instructed at different times produce figures assessed against different cost benchmarks - leaving gaps that only become visible at claim.' },
                 { title: 'Missed renewal cycles', desc: 'Managing renewal dates across a multi-asset portfolio without a system means assessments go stale. RICS recommends a formal review at least every three years.' },
                 { title: 'PI exposure at scale', desc: 'Managing agents and asset managers who arrange insurance for multiple assets carry a compounding professional indemnity exposure if any declared value is materially incorrect.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-4">
-                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
+                  <span className="tick-icon mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
                     <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
@@ -141,14 +141,14 @@ export default function PortfolioPage() {
           {/* Deliverables card left */}
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-6">What a portfolio instruction delivers</p>
-            <ul className="space-y-5">
+            <ul className="tick-list space-y-5">
               {[
                 { title: 'Individual RICS report per property', desc: 'Each asset receives its own full reinstatement cost assessment report, signed off by a RICS-regulated surveyor.' },
                 { title: 'Consolidated portfolio schedule', desc: 'A single broker-ready document listing every property, its assessed reinstatement cost, assessment date and recommended review date.' },
                 { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection plan we track every renewal date across the portfolio and deliver updated figures proactively - before each renewal, not after.' },
               ].map(({ title, desc }) => (
-                <li key={title} className="flex gap-4 items-start step-reveal-item">
-                  <span className="shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
+                <li key={title} className="flex gap-4 items-start">
+                  <span className="tick-icon shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
                     <svg className="w-3.5 h-3.5" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
