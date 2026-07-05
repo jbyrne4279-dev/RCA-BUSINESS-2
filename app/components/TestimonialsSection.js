@@ -1,6 +1,33 @@
 'use client'
 import { useState, useEffect, useRef, useCallback } from 'react'
 
+function spawnConfetti(originEl) {
+  const rect = originEl.getBoundingClientRect()
+  const cx = rect.left + rect.width / 2
+  const cy = rect.top + rect.height / 2
+  const colors = ['#0057FF', '#38bdf8', '#60a5fa', '#93c5fd', '#bfdbfe', '#ffffff']
+  const count = 22
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement('span')
+    const color = colors[Math.floor(Math.random() * colors.length)]
+    const size = 4 + Math.random() * 6
+    const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5
+    const speed = 55 + Math.random() * 70
+    const dx = Math.cos(angle) * speed
+    const dy = Math.sin(angle) * speed - 30
+    el.style.cssText = `
+      position:fixed;left:${cx}px;top:${cy}px;width:${size}px;height:${size}px;
+      background:${color};border-radius:${Math.random() > 0.5 ? '50%' : '2px'};
+      pointer-events:none;z-index:9999;transform:translate(-50%,-50%);
+      animation:confetti-fly 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
+      --dx:${dx}px;--dy:${dy}px;
+    `
+    document.body.appendChild(el)
+    setTimeout(() => el.remove(), 700)
+  }
+}
+
+
 const Star = ({ index = 0 }) => (
   <svg
     className="w-4 h-4"
@@ -227,7 +254,7 @@ export default function TestimonialsSection() {
         {/* Carousel */}
         <div className="flex items-center gap-3 max-w-3xl mx-auto">
           <button
-            onClick={prev}
+            onClick={e => { prev(); spawnConfetti(e.currentTarget) }}
             aria-label="Previous review"
             className="shrink-0 w-10 h-10 rounded-full border border-[#e2e8f0] bg-white flex items-center justify-center text-[#0057FF] hover:bg-[#0057FF] hover:text-white hover:border-[#0057FF] transition-all duration-200 shadow-sm"
           >
@@ -247,7 +274,7 @@ export default function TestimonialsSection() {
           </div>
 
           <button
-            onClick={next}
+            onClick={e => { next(); spawnConfetti(e.currentTarget) }}
             aria-label="Next review"
             className="shrink-0 w-10 h-10 rounded-full border border-[#e2e8f0] bg-white flex items-center justify-center text-[#0057FF] hover:bg-[#0057FF] hover:text-white hover:border-[#0057FF] transition-all duration-200 shadow-sm"
           >

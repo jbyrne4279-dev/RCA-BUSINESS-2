@@ -193,9 +193,9 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                img: '/desktop-assessment-office.jpeg',
-                imgAlt: 'Property professional reviewing reinstatement cost assessment data at desk',
-                imgPosition: 'center center',
+                img: '/rca-rics-surveyor.png',
+                imgAlt: 'RICS surveyor reviewing BCIS index data for a desktop reinstatement cost assessment',
+                imgPosition: 'center top',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
                 title: 'Desktop Assessment',
