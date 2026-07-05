@@ -12,6 +12,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessments for Property Investors | Blocks of Flats',
   description: 'Specialist reinstatement cost assessments for property investors and block owners. The number you\'re insured for is almost certainly wrong, and the average clause means the shortfall comes out of your pocket.',
   alternates: { canonical: '/blocks-of-flats' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/blocks-of-flats',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause with an accurate declared value.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment for blocks of flats - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [
@@ -33,6 +48,14 @@ export default function BlocksOfFlatsPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
           { '@type': 'ListItem', position: 2, name: 'Blocks of Flats', item: 'https://reinstatementcostassessment.org/blocks-of-flats' },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(({ question, answer }) => ({
+          '@type': 'Question',
+          name: question,
+          acceptedAnswer: { '@type': 'Answer', text: answer },
+        })),
       },
     ],
   }

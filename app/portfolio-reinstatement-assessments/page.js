@@ -10,6 +10,21 @@ export const metadata = {
   title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations',
   description: 'RICS-regulated reinstatement cost assessments for property portfolios. Consolidated reports with individual asset schedules. Annual indexation available.',
   alternates: { canonical: '/portfolio-reinstatement-assessments' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/portfolio-reinstatement-assessments',
+    siteName: 'Stearling Reinstatement',
+    title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations | Stearling Reinstatement',
+    description: 'RICS-regulated reinstatement cost assessments for property portfolios. One instruction, consolidated reports, individual asset schedules. Annual BCIS indexation included.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Portfolio reinstatement cost assessments - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations',
+    description: 'RICS-regulated reinstatement cost assessments for property portfolios. One instruction covers every asset with consolidated reports and annual indexation.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

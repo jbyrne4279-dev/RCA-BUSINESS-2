@@ -1,4 +1,4 @@
-import { Inter, Cormorant_Garamond } from 'next/font/google'
+﻿import { Inter, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -154,7 +154,7 @@ const orgSchema = {
               '@type': 'Service',
               name: '3-Year Protection Plan',
               description:
-                'One instruction covers three years of RICS compliance Ã¢â‚¬â€ full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
             },
           },
         ],
@@ -215,4 +215,5 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
 

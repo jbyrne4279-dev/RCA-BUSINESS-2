@@ -27,6 +27,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessment Survey for Buildings Insurance',
   description: 'Specialist reinstatement cost assessments for blocks of flats, managing agents, freeholders and leaseholders. RICS-aligned rebuild valuations for buildings insurance.',
   alternates: { canonical: '/services' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/services',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessment Services | RICS Regulated | Stearling Reinstatement',
+    description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated reinstatement cost assessments for UK residential and commercial property.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment services - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessment Services | RICS Regulated',
+    description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated reinstatement cost assessments for UK property.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

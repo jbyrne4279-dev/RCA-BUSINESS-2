@@ -11,6 +11,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
   description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/block-managers-reinstatement-cost-assessments',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
+    description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent declared values across every block you manage. Compliant, broker-ready, 24-hour turnaround.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessments for block managers - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
+    description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant declared values across every block you manage.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

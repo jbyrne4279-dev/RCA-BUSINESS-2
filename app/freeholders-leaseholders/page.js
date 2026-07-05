@@ -12,6 +12,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders',
   description: 'Specialist reinstatement cost assessments for freeholders, RMC directors and leaseholders. Discharge your lease obligation with a defensible, RICS-aligned declared value.',
   alternates: { canonical: '/freeholders-leaseholders' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/freeholders-leaseholders',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders | Stearling Reinstatement',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for freeholders, RMC directors and leaseholders. Defend the insuring covenant with a defensible declared value.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment for freeholders and leaseholders - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for freeholders and leaseholders. Defend the insuring covenant.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

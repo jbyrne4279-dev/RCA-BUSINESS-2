@@ -11,6 +11,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessments for Listed and Heritage Buildings',
   description: 'Specialist reinstatement cost assessments for listed buildings. Listed properties carry 20-50% higher rebuild costs than standard construction. Accurate, site-based valuations for buildings insurance.',
   alternates: { canonical: '/listed-buildings' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/listed-buildings',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for listed and heritage buildings. Listed properties carry 20-50% higher rebuild costs. On-site surveys by specialist surveyors.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment for listed buildings - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
+    description: 'Specialist reinstatement cost assessments for listed and heritage buildings. 20-50% higher rebuild costs require specialist on-site assessment.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

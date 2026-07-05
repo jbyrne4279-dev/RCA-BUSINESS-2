@@ -10,6 +10,21 @@ export const metadata = {
   title: 'Commercial Reinstatement Cost Assessment | RICS Regulated',
   description: 'RICS-regulated reinstatement cost assessments for commercial properties. Offices, retail, industrial and mixed-use. Broker-ready reports accepted by all UK insurers.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/commercial-reinstatement-costs',
+    siteName: 'Stearling Reinstatement',
+    title: 'Commercial Reinstatement Cost Assessment | RICS Regulated | Stearling Reinstatement',
+    description: 'RICS-regulated reinstatement cost assessments for offices, retail, industrial and mixed-use commercial properties. Broker-ready reports accepted by all UK insurers.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Commercial reinstatement cost assessment - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Commercial Reinstatement Cost Assessment | RICS Regulated',
+    description: 'RICS-regulated reinstatement cost assessments for offices, retail, industrial and mixed-use commercial property. Broker-ready, 24-hour turnaround.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

@@ -11,6 +11,21 @@ export const metadata = {
   title: 'Reinstatement Cost Assessments for Managing Agents and RTM Companies',
   description: 'Specialist reinstatement cost assessments for managing agents. Protect your PI cover, discharge the lease obligation and demonstrate fair value to leaseholders under FCA Consumer Duty.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/managing-agents-insurance-valuations',
+    siteName: 'Stearling Reinstatement',
+    title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
+    description: 'Specialist RICS-regulated reinstatement cost assessments for managing agents and RTM companies. Discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessments for managing agents - Stearling Reinstatement' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
+    description: 'RICS-regulated reinstatement cost assessments for managing agents. Discharge lease obligations, protect PI cover, meet FCA Consumer Duty.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
 }
 
 const faqItems = [

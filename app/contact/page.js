@@ -8,6 +8,60 @@ export const metadata = {
   title: 'Contact Stearling Reinstatement | Instruct a Reinstatement Cost Assessment',
   description: 'Contact Stearling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
   alternates: { canonical: '/contact' },
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://reinstatementcostassessment.org/contact',
+    siteName: 'Stearling Reinstatement',
+    title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
+    description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS reinstatement cost assessment surveyors' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
+    description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required.',
+    images: ['/rebuild-cost-assessment-london.jpeg'],
+  },
+}
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['LocalBusiness', 'ProfessionalService'],
+  '@id': 'https://reinstatementcostassessment.org/#organization',
+  name: 'Stearling Reinstatement',
+  description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+  url: 'https://reinstatementcostassessment.org',
+  telephone: '+442031788099',
+  email: 'info@stearlingreinstatement.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '17 Hanover Square',
+    addressLocality: 'London',
+    postalCode: 'W1S 1BN',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 51.5128,
+    longitude: -0.1439,
+  },
+  areaServed: { '@type': 'Country', name: 'United Kingdom' },
+  priceRange: '££',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '17:30',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    email: 'info@stearlingreinstatement.com',
+    telephone: '+442031788099',
+    areaServed: 'GB',
+    availableLanguage: 'English',
+  },
 }
 
 const faqItems = [
@@ -21,6 +75,7 @@ const faqItems = [
 export default function ContactPage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* HEADER */}
       <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
