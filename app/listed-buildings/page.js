@@ -95,21 +95,21 @@ export default function ListedBuildingsPage() {
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8 electric-pulse" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">I</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade I</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Highest significance - only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
                 </div>
               </div>
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II*</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II*</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings - 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
                 </div>
               </div>
-              <div className="flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II</p>

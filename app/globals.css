@@ -653,6 +653,45 @@ a.link-amber:hover {
   text-decoration: none;
 }
 
+/* ── Listed building grade cards: green corner highlight + glow on hover ── */
+.grade-card {
+  position: relative;
+  border: 1.5px solid transparent;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  overflow: hidden;
+}
+.grade-card::before,
+.grade-card::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: transparent;
+  border-style: solid;
+  transition: border-color 0.22s ease, opacity 0.22s ease;
+  opacity: 0;
+}
+.grade-card::before {
+  top: 0; left: 0;
+  border-width: 2px 0 0 2px;
+  border-radius: 10px 0 0 0;
+}
+.grade-card::after {
+  bottom: 0; right: 0;
+  border-width: 0 2px 2px 0;
+  border-radius: 0 0 10px 0;
+}
+.grade-card:hover {
+  border-color: rgba(34,197,94,0.5);
+  box-shadow: 0 0 0 3px rgba(34,197,94,0.12), 0 4px 20px rgba(34,197,94,0.18);
+  background: rgba(34,197,94,0.04) !important;
+}
+.grade-card:hover::before,
+.grade-card:hover::after {
+  border-color: #22c55e;
+  opacity: 1;
+}
+
 /* ── Testimonial review card hover ── */
 .review-card {
   transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.7s ease;
