@@ -6,6 +6,7 @@ import TestimonialsSection from '../components/TestimonialsSection'
 import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import FlashList from '../components/FlashList'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessments for Property Investors | Blocks of Flats',
@@ -90,23 +91,16 @@ export default function BlocksOfFlatsPage() {
           </div>
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
-            <ul className="tick-list space-y-4">
-              {[
-                'Full structural reinstatement cost - walls, roof, foundations, external fabric',
-                'Communal areas and shared circulation space',
-                'Lifts, plant rooms and shared M&E services',
-                'Professional fees - architects, engineers, project managers',
-                'Demolition and site clearance costs',
-                'VAT correctly applied to each element',
-                'BCIS-indexed figure with annual uplift schedule',
-                'Broker-ready report in 24 hours',
-              ].map((item) => (
-                <li key={item} className="flex gap-3 items-start">
-                  <span className="tick-icon text-[#0057FF] shrink-0 mt-0.5"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg></span>
-                  <span className="text-[#475569] text-sm leading-relaxed">{item}</span>
-                </li>
-              ))}
-            </ul>
+            <FlashList items={[
+              'Full structural reinstatement cost - walls, roof, foundations, external fabric',
+              'Communal areas and shared circulation space',
+              'Lifts, plant rooms and shared M&E services',
+              'Professional fees - architects, engineers, project managers',
+              'Demolition and site clearance costs',
+              'VAT correctly applied to each element',
+              'BCIS-indexed figure with annual uplift schedule',
+              'Broker-ready report in 24 hours',
+            ]} />
             <div className="mt-8 pt-6 border-t border-[#e2e8f0]">
               <Link href="/contact#contact-form" className="btn-shine w-full text-center block">Request a Block Assessment</Link>
             </div>
