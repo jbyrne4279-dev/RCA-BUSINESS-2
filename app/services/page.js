@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ScrambleText from '../components/ScrambleText'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
@@ -187,6 +188,9 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
               Pick the assessment that <span className="blue-keyword">fits your property</span>.
             </h2>
+            <p className="mt-4 text-sm font-semibold tracking-widest uppercase text-[#1A6B4A]">
+              <ScrambleText text="No Obligation" delay={400} />
+            </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
