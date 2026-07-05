@@ -248,6 +248,25 @@ main {
   .stagger-cards > * { animation: none !important; opacity: 1 !important; }
 }
 
+/* ── Staggered motion-blur fade-in (list items one by one) ── */
+@keyframes fade-blur-up {
+  from { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+  to   { opacity: 1; transform: translateY(0);    filter: blur(0);   }
+}
+.stagger-blur-list > * {
+  opacity: 0;
+  animation: fade-blur-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-timeline: view();
+  animation-range: entry 0% entry 35%;
+}
+.stagger-blur-list > *:nth-child(1) { animation-delay: 0s;    }
+.stagger-blur-list > *:nth-child(2) { animation-delay: 0.15s; }
+.stagger-blur-list > *:nth-child(3) { animation-delay: 0.3s;  }
+.stagger-blur-list > *:nth-child(4) { animation-delay: 0.45s; }
+@media (prefers-reduced-motion: reduce) {
+  .stagger-blur-list > * { animation: none !important; opacity: 1 !important; filter: none !important; }
+}
+
 /* ── Electric blue glow for "24 hours" ── */
 @keyframes electric-glow {
   0%, 100% {
