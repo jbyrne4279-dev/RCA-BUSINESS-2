@@ -232,56 +232,6 @@ export default function TestimonialsSection() {
 
         {/* Progress slider */}
         <div className="max-w-2xl mx-auto mt-6 px-1">
-          <style>{`
-            .review-card {
-              transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.7s ease;
-            }
-            .review-card:hover {
-              transform: scale(1.03) translateY(-4px) !important;
-              box-shadow: 0 12px 40px rgba(0,87,255,0.14), 0 2px 16px rgba(0,0,0,0.06) !important;
-              border-color: rgba(0,87,255,0.25) !important;
-            }
-            .testimonial-slider {
-              -webkit-appearance: none;
-              appearance: none;
-              width: 100%;
-              height: 4px;
-              border-radius: 9999px;
-              outline: none;
-              cursor: pointer;
-              background: linear-gradient(
-                to right,
-                #0057FF 0%,
-                #0057FF ${(sliderValue / (reviews.length - 1)) * 100}%,
-                #e2e8f0 ${(sliderValue / (reviews.length - 1)) * 100}%,
-                #e2e8f0 100%
-              );
-              transition: background 0.05s linear;
-            }
-            .testimonial-slider::-webkit-slider-thumb {
-              -webkit-appearance: none;
-              appearance: none;
-              width: 14px;
-              height: 14px;
-              border-radius: 50%;
-              background: #0057FF;
-              box-shadow: 0 0 0 3px rgba(0,87,255,0.2);
-              cursor: pointer;
-              transition: box-shadow 0.2s;
-            }
-            .testimonial-slider::-webkit-slider-thumb:hover {
-              box-shadow: 0 0 0 5px rgba(0,87,255,0.3);
-            }
-            .testimonial-slider::-moz-range-thumb {
-              width: 14px;
-              height: 14px;
-              border-radius: 50%;
-              background: #0057FF;
-              border: none;
-              box-shadow: 0 0 0 3px rgba(0,87,255,0.2);
-              cursor: pointer;
-            }
-          `}</style>
           <input
             type="range"
             className="testimonial-slider"
@@ -291,6 +241,9 @@ export default function TestimonialsSection() {
             value={sliderValue}
             onChange={handleSliderChange}
             aria-label="Review slider"
+            style={{
+              background: `linear-gradient(to right, #0057FF 0%, #0057FF ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 100%)`,
+            }}
           />
           <div className="flex justify-between mt-1">
             <span className="text-[10px] text-[#94a3b8]">1</span>
