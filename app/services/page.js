@@ -206,8 +206,8 @@ export default function ServicesPage() {
                 link: 'Request Desktop Assessment',
               },
               {
-                img: '/AdobeStock_208633670.jpeg',
-                imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment of a residential block',
+                img: '/rca-onsite-inspection-surveyor.png',
+                imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment',
                 imgPosition: 'center center',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
