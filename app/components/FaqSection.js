@@ -33,17 +33,31 @@ export default function FaqSection({ description, items }) {
 
         <div className="divide-y divide-[#e2e8f0] bg-white rounded-xl border border-[#e2e8f0] overflow-hidden">
           {items.map((item, i) => (
-            <div key={i}>
+            <div
+              key={i}
+              style={{
+                transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
+                boxShadow: open === i ? '0 0 0 2px #0057FF, 0 0 18px 3px rgba(0,87,255,0.35)' : 'none',
+                position: 'relative',
+                zIndex: open === i ? 1 : 0,
+              }}
+            >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left group transition-colors"
-                style={open === i ? { background: 'rgba(0,87,255,0.04)' } : {}}
+                style={open === i ? { background: 'rgba(0,87,255,0.06)' } : {}}
               >
-                <span className="font-medium text-[#0d1b3e] text-sm leading-snug">
+                <span className="font-medium text-sm leading-snug transition-colors duration-200" style={{ color: open === i ? '#0057FF' : '#0d1b3e' }}>
                   {item.question}
                 </span>
-                <span className="text-[#0057FF] text-xl leading-none shrink-0 transition-transform duration-200"
-                  style={{ transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)' }}>
+                <span
+                  className="text-xl leading-none shrink-0 transition-all duration-300"
+                  style={{
+                    transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)',
+                    color: open === i ? '#0057FF' : '#0057FF',
+                    textShadow: open === i ? '0 0 10px rgba(0,87,255,0.8)' : 'none',
+                  }}
+                >
                   +
                 </span>
               </button>

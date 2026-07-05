@@ -19,7 +19,9 @@ export default function ContactFormInner({ heading }) {
         <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
           {heading}
         </h2>
-        <p className="text-[#64748b] text-sm">24-hour response on business days</p>
+        <p className="text-[#64748b] text-sm leading-relaxed max-w-lg">
+          Speak directly with a RICS-regulated reinstatement cost assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings — accepted by all UK insurers. Written fee estimate within 24 hours, no contract required.
+        </p>
       </div>
 
       <form action="https://formspree.io/f/xkokvlpr" method="POST" className="space-y-6">
