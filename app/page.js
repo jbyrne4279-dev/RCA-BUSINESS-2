@@ -188,9 +188,8 @@ export default function HomePage() {
           <div className="stagger-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: (
-                  <img src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" className="w-7 h-7 object-contain rounded" />
-                ),
+                img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
+                imgAlt: 'Desktop reinstatement cost assessment service',
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
                 href: '/services#desktop-rca',
@@ -211,16 +210,31 @@ export default function HomePage() {
                 desc: 'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
                 href: '/services#three-year-protection',
               },
-            ].map(({ icon, title, desc, href }) => (
-              <div key={title} className="bg-white rounded-2xl border border-[#e2e8f0] p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.08)'}}>
-                  {icon}
+            ].map(({ img, imgAlt, icon, title, desc, href }) => (
+              <div key={title} className="bg-white rounded-2xl border border-[#e2e8f0] flex flex-col overflow-hidden" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+                {img ? (
+                  <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
+                    <Image
+                      src={img}
+                      alt={imgAlt}
+                      fill
+                      className="object-cover transition-transform duration-500 hover:scale-105"
+                      sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
+                  </div>
+                ) : (
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mt-7 mx-7" style={{background:'rgba(0,87,255,0.08)'}}>
+                    {icon}
+                  </div>
+                )}
+                <div className={`flex flex-col flex-1 p-7${img ? '' : ' pt-5'}`}>
+                  <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
+                  <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
+                  <Link href={href} className="link-arrow cta-flash">
+                    Read More
+                  </Link>
                 </div>
-                <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
-                <Link href={href} className="link-arrow cta-flash">
-                  Read More
-                </Link>
               </div>
             ))}
           </div>
