@@ -213,8 +213,8 @@ export default function ServicesPage() {
                 link: 'Request On-Site Survey',
               },
               {
-                img: '/AdobeStock_1477785304.jpeg',
-                imgAlt: 'Well-maintained London property block protected under a 3-year RICS reinstatement cost assessment plan',
+                img: '/continual-reinstatement-cost-assessment-plan.png',
+                imgAlt: '3-Year RICS reinstatement cost assessment protection plan',
                 imgPosition: 'center center',
                 id: 'three-year-protection',
                 badge: '03. Recommended',
