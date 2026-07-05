@@ -245,11 +245,7 @@ export default function TestimonialsSection() {
               background: `linear-gradient(to right, #0057FF 0%, #0057FF ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 ${(sliderValue / (reviews.length - 1)) * 100}%, #e2e8f0 100%)`,
             }}
           />
-          <div className="flex justify-between mt-1">
-            <span className="text-[10px] text-[#94a3b8]">1</span>
-            <span className="text-[10px] text-[#94a3b8]">{active + 1} / {reviews.length}</span>
-            <span className="text-[10px] text-[#94a3b8]">{reviews.length}</span>
-          </div>
+
         </div>
       </div>
     </section>
