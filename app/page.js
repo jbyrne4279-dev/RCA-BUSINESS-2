@@ -113,7 +113,7 @@ export default function HomePage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
             </p>
-            <Link href="/services" className="link-arrow">
+            <Link href="/services" className="link-arrow cta-flash">
               Explore our services
             </Link>
           </div>
@@ -218,7 +218,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
-                <Link href={href} className="link-arrow">
+                <Link href={href} className="link-arrow cta-flash">
                   Read More
                 </Link>
               </div>

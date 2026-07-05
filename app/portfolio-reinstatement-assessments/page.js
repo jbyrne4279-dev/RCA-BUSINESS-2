@@ -241,7 +241,7 @@ export default function PortfolioPage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="link-arrow">
+                <Link href={href} className="link-arrow cta-flash">
                   Find out more ?
                 </Link>
               </div>

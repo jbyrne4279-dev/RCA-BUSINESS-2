@@ -214,7 +214,7 @@ export default function ManagingAgentsPage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <Link href={href} className="link-arrow mt-5">Read More</Link>
+                <Link href={href} className="link-arrow cta-flash mt-5">Read More</Link>
               </div>
             ))}
           </div>

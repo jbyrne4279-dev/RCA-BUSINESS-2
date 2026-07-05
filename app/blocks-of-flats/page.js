@@ -139,7 +139,7 @@ export default function BlocksOfFlatsPage() {
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="link-arrow !text-xs">Learn more</Link>
+                  <Link href={href} className="link-arrow cta-flash !text-xs">Learn more</Link>
                 </div>
               </div>
             ))}

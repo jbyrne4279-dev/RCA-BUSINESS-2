@@ -139,7 +139,7 @@ export default function CommercialPage() {
                 </div>
               </div>
             ))}
-            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow">See our portfolio assessment service ?</Link></p>
+            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow cta-flash">See our portfolio assessment service ?</Link></p>
           </div>
         </div>
       </section>
@@ -238,7 +238,7 @@ export default function CommercialPage() {
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
-                <Link href={href} className="link-arrow">
+                <Link href={href} className="link-arrow cta-flash">
                   Learn more
                 </Link>
               </div>

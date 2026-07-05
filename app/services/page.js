@@ -242,7 +242,7 @@ export default function ServicesPage() {
                   <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
                   <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                  <Link href={href} className="link-arrow">
+                  <Link href={href} className="link-arrow cta-flash">
                     {link}
                   </Link>
                 </div>
