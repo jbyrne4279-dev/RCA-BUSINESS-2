@@ -266,6 +266,56 @@ main {
   .circuit-steps > * { animation: none !important; opacity: 1 !important; }
 }
 
+/* ── Assessment Process: electric-blue sequential loop ── */
+/* Each step lights up for ~1.5s out of a 8s cycle, staggered by 2s */
+@keyframes step-glow {
+  0%   { background: linear-gradient(135deg,#0057FF,#0040CC); box-shadow: 0 0 0 0 rgba(0,120,255,0); color: #fff; }
+  5%   { background: linear-gradient(135deg,#00aaff,#0057FF); box-shadow: 0 0 0 6px rgba(0,170,255,0.35), 0 0 22px 4px rgba(0,170,255,0.55); color: #fff; }
+  18%  { background: linear-gradient(135deg,#00aaff,#0057FF); box-shadow: 0 0 0 6px rgba(0,170,255,0.35), 0 0 22px 4px rgba(0,170,255,0.55); color: #fff; }
+  30%  { background: linear-gradient(135deg,#0057FF,#0040CC); box-shadow: 0 0 0 0 rgba(0,120,255,0); color: #fff; }
+  100% { background: linear-gradient(135deg,#0057FF,#0040CC); box-shadow: 0 0 0 0 rgba(0,120,255,0); color: #fff; }
+}
+@keyframes step-text-glow {
+  0%   { color: #0d1b3e; text-shadow: none; }
+  5%   { color: #0057FF; text-shadow: 0 0 12px rgba(0,170,255,0.5); }
+  18%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,170,255,0.5); }
+  30%  { color: #0d1b3e; text-shadow: none; }
+  100% { color: #0d1b3e; text-shadow: none; }
+}
+@keyframes step-border-glow {
+  0%   { border-color: #e2e8f0; }
+  5%   { border-color: rgba(0,170,255,0.5); }
+  18%  { border-color: rgba(0,170,255,0.5); }
+  30%  { border-color: #e2e8f0; }
+  100% { border-color: #e2e8f0; }
+}
+
+.step-light .circuit-num {
+  animation: step-glow 8s ease-in-out infinite !important;
+}
+.step-light .step-title {
+  animation: step-text-glow 8s ease-in-out infinite !important;
+}
+.step-light.step-has-border {
+  animation: step-border-glow 8s ease-in-out infinite !important;
+}
+
+.step-light:nth-child(1) .circuit-num,
+.step-light:nth-child(1) .step-title,
+.step-light:nth-child(1).step-has-border { animation-delay: 0s !important; }
+
+.step-light:nth-child(2) .circuit-num,
+.step-light:nth-child(2) .step-title,
+.step-light:nth-child(2).step-has-border { animation-delay: 2s !important; }
+
+.step-light:nth-child(3) .circuit-num,
+.step-light:nth-child(3) .step-title,
+.step-light:nth-child(3).step-has-border { animation-delay: 4s !important; }
+
+.step-light:nth-child(4) .circuit-num,
+.step-light:nth-child(4) .step-title,
+.step-light:nth-child(4).step-has-border { animation-delay: 6s !important; }
+
 /* ── !text-xs override for small arrow links ── */
 .link-arrow.\!text-xs { font-size: 0.75rem; }
 

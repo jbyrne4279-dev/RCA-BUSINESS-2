@@ -161,10 +161,10 @@ export default function HomePage() {
                 { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
                 { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
               ].map(({ n, title, desc }, i) => (
-                <div key={n} className={`flex gap-4 items-start ${i < 3 ? 'pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
+                <div key={n} className={`step-light flex gap-4 items-start ${i < 3 ? 'step-has-border pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
                   <span className="circuit-num text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
                   <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                    <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
                     <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
                   </div>
                 </div>

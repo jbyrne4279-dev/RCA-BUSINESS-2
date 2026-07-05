@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 
 const Star = ({ index = 0 }) => (
   <svg
@@ -106,6 +106,8 @@ const reviews = [
   },
 ]
 
+const INTERVAL = 4000
+
 function ReviewCard({ name, role, photo, quote, visible }) {
   return (
     <div
@@ -145,11 +147,66 @@ function ReviewCard({ name, role, photo, quote, visible }) {
 
 export default function TestimonialsSection() {
   const [active, setActive] = useState(0)
+  const [progress, setProgress] = useState(0)
+  const startTimeRef = useRef(null)
+  const rafRef = useRef(null)
+  const touchStartX = useRef(null)
+  const pausedRef = useRef(false)
+
+  const goTo = useCallback((idx) => {
+    setActive((idx + reviews.length) % reviews.length)
+    setProgress(0)
+    startTimeRef.current = performance.now()
+  }, [])
+
+  const next = useCallback(() => goTo(active + 1), [active, goTo])
+  const prev = useCallback(() => goTo(active - 1), [active, goTo])
 
   useEffect(() => {
-    const id = setInterval(() => setActive(p => (p + 1) % reviews.length), 4000)
-    return () => clearInterval(id)
+    startTimeRef.current = performance.now()
+
+    const tick = (now) => {
+      if (pausedRef.current) {
+        startTimeRef.current = now - progress * INTERVAL
+        rafRef.current = requestAnimationFrame(tick)
+        return
+      }
+      const elapsed = now - startTimeRef.current
+      const pct = Math.min(elapsed / INTERVAL, 1)
+      setProgress(pct)
+      if (pct >= 1) {
+        setActive(p => (p + 1) % reviews.length)
+        startTimeRef.current = now
+        setProgress(0)
+      }
+      rafRef.current = requestAnimationFrame(tick)
+    }
+
+    rafRef.current = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(rafRef.current)
   }, [])
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return
+    const dx = e.changedTouches[0].clientX - touchStartX.current
+    if (Math.abs(dx) > 40) {
+      dx < 0 ? next() : prev()
+    }
+    touchStartX.current = null
+  }
+
+  const handleSliderChange = (e) => {
+    const val = Number(e.target.value)
+    setActive(val)
+    setProgress(0)
+    startTimeRef.current = performance.now()
+  }
+
+  const sliderValue = active + progress
 
   return (
     <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
@@ -160,28 +217,78 @@ export default function TestimonialsSection() {
           <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
         </div>
 
-        {/* Carousel — height adapts to active card; hidden cards sit absolute so they don't affect flow */}
-        <div className="relative max-w-2xl mx-auto">
+        {/* Carousel */}
+        <div
+          className="relative max-w-2xl mx-auto"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          onMouseEnter={() => { pausedRef.current = true }}
+          onMouseLeave={() => { pausedRef.current = false }}
+        >
           {reviews.map((r, i) => (
             <ReviewCard key={r.name} {...r} visible={i === active} />
           ))}
         </div>
 
-        {/* Dots */}
-        <div className="flex justify-center gap-2 mt-6">
-          {reviews.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setActive(i)}
-              className="rounded-full transition-all duration-300"
-              style={{
-                width: i === active ? '24px' : '8px',
-                height: '8px',
-                background: i === active ? '#0057FF' : '#cbd5e1',
-              }}
-              aria-label={`Review ${i + 1}`}
-            />
-          ))}
+        {/* Progress slider */}
+        <div className="max-w-2xl mx-auto mt-6 px-1">
+          <style>{`
+            .testimonial-slider {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 100%;
+              height: 4px;
+              border-radius: 9999px;
+              outline: none;
+              cursor: pointer;
+              background: linear-gradient(
+                to right,
+                #0057FF 0%,
+                #0057FF ${(sliderValue / (reviews.length - 1)) * 100}%,
+                #e2e8f0 ${(sliderValue / (reviews.length - 1)) * 100}%,
+                #e2e8f0 100%
+              );
+              transition: background 0.05s linear;
+            }
+            .testimonial-slider::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background: #0057FF;
+              box-shadow: 0 0 0 3px rgba(0,87,255,0.2);
+              cursor: pointer;
+              transition: box-shadow 0.2s;
+            }
+            .testimonial-slider::-webkit-slider-thumb:hover {
+              box-shadow: 0 0 0 5px rgba(0,87,255,0.3);
+            }
+            .testimonial-slider::-moz-range-thumb {
+              width: 14px;
+              height: 14px;
+              border-radius: 50%;
+              background: #0057FF;
+              border: none;
+              box-shadow: 0 0 0 3px rgba(0,87,255,0.2);
+              cursor: pointer;
+            }
+          `}</style>
+          <input
+            type="range"
+            className="testimonial-slider"
+            min={0}
+            max={reviews.length - 1}
+            step={0.01}
+            value={sliderValue}
+            onChange={handleSliderChange}
+            aria-label="Review slider"
+          />
+          <div className="flex justify-between mt-1">
+            <span className="text-[10px] text-[#94a3b8]">1</span>
+            <span className="text-[10px] text-[#94a3b8]">{active + 1} / {reviews.length}</span>
+            <span className="text-[10px] text-[#94a3b8]">{reviews.length}</span>
+          </div>
         </div>
       </div>
     </section>
