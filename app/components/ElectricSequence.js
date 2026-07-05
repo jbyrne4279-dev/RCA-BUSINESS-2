@@ -7,7 +7,7 @@ export default function ElectricSequence({ items }) {
   useEffect(() => {
     const id = setInterval(() => {
       setActive(prev => (prev + 1) % items.length)
-    }, 1200)
+    }, 2800)
     return () => clearInterval(id)
   }, [items.length])
 
