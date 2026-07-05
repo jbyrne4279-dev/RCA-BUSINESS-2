@@ -14,7 +14,12 @@
       "Bash(git commit *)",
       "Bash(git remote *)",
       "Bash(git branch *)",
-      "Bash(cp /root/.claude/uploads/1a793509-a22d-5491-9b17-6207dca7b824/05943e56-D27B286B630F4AABAA4A86AA0135A624.png /home/user/RCA-BUSINESS-2/public/sr-logo.png)"
+      "Bash(cp /root/.claude/uploads/1a793509-a22d-5491-9b17-6207dca7b824/05943e56-D27B286B630F4AABAA4A86AA0135A624.png /home/user/RCA-BUSINESS-2/public/sr-logo.png)",
+      "Bash(git fetch *)",
+      "Bash(git checkout *)",
+      "Bash(git pull *)",
+      "Bash(git rebase *)",
+      "Bash(GIT_EDITOR=true git rebase --continue)"
     ]
   }
 }

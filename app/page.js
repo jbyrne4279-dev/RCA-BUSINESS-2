@@ -189,7 +189,7 @@ export default function HomePage() {
             {[
               {
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" strokeLinecap="round" strokeLinejoin="round"/><path strokeLinecap="round" strokeLinejoin="round" d="M8 21h8M12 17v4"/></svg>
+                  <img src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" className="w-7 h-7 object-contain rounded" />
                 ),
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',

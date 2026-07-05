@@ -8,9 +8,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 const IcoDesktop = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-  </svg>
+  <Image src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" width={20} height={20} className="object-contain rounded" />
 )
 const IcoSurvey = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -193,8 +191,8 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                img: '/rca-rics-surveyor.png',
-                imgAlt: 'RICS surveyor reviewing BCIS index data for a desktop reinstatement cost assessment',
+                img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
+                imgAlt: 'Desktop reinstatement cost assessment service',
                 imgPosition: 'center top',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
