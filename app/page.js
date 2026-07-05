@@ -188,51 +188,39 @@ export default function HomePage() {
           <div className="stagger-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
-                imgAlt: 'Desktop reinstatement cost assessment service',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" strokeLinecap="round" strokeLinejoin="round"/><path strokeLinecap="round" strokeLinejoin="round" d="M8 21h8M12 17v4"/></svg>
+                ),
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
                 href: '/services#desktop-rca',
               },
               {
-                img: '/rca-onsite-inspection-surveyor.png',
-                imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                ),
                 title: 'On-Site Survey',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
                 href: '/services#on-site-survey',
               },
               {
-                img: '/continual-reinstatement-cost-assessment-plan.png',
-                imgAlt: '3-Year RICS reinstatement cost assessment protection plan',
+                icon: (
+                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                ),
                 title: '3-Year Protection Plan',
                 desc: 'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
                 href: '/services#three-year-protection',
               },
-            ].map(({ img, imgAlt, icon, title, desc, href }) => (
-              <div key={title} className="bg-white rounded-2xl border border-[#e2e8f0] flex flex-col overflow-hidden" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-                {img ? (
-                  <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
-                    <Image
-                      src={img}
-                      alt={imgAlt}
-                      fill
-                      className="object-cover transition-transform duration-500 hover:scale-105"
-                      sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
-                  </div>
-                ) : (
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mt-7 mx-7" style={{background:'rgba(0,87,255,0.08)'}}>
-                    {icon}
-                  </div>
-                )}
-                <div className={`flex flex-col flex-1 p-7${img ? '' : ' pt-5'}`}>
-                  <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
-                  <Link href={href} className="link-arrow cta-flash">
-                    Read More
-                  </Link>
+            ].map(({ icon, title, desc, href }) => (
+              <div key={title} className="bg-white rounded-2xl border border-[#e2e8f0] p-7 flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.08)'}}>
+                  {icon}
                 </div>
+                <h3 className="font-bold text-[#0d1b3e] text-lg mb-3">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-5">{desc}</p>
+                <Link href={href} className="link-arrow cta-flash">
+                  Read More
+                </Link>
               </div>
             ))}
           </div>
