@@ -111,7 +111,7 @@ const INTERVAL = 4000
 function ReviewCard({ name, role, photo, quote, visible }) {
   return (
     <div
-      className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-700"
+      className="review-card bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-700"
       style={{
         boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
         opacity: visible ? 1 : 0,
@@ -233,6 +233,14 @@ export default function TestimonialsSection() {
         {/* Progress slider */}
         <div className="max-w-2xl mx-auto mt-6 px-1">
           <style>{`
+            .review-card {
+              transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.7s ease;
+            }
+            .review-card:hover {
+              transform: scale(1.03) translateY(-4px) !important;
+              box-shadow: 0 12px 40px rgba(0,87,255,0.14), 0 2px 16px rgba(0,0,0,0.06) !important;
+              border-color: rgba(0,87,255,0.25) !important;
+            }
             .testimonial-slider {
               -webkit-appearance: none;
               appearance: none;
