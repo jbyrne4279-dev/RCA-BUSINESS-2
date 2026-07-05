@@ -1,4 +1,28 @@
+'use client'
 import Link from 'next/link'
+import { useEffect, useRef } from 'react'
+
+function PulsingPill() {
+  const ref = useRef(null)
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    el.style.animation = 'rics-fade 3s ease-in-out infinite'
+  }, [])
+  return (
+    <>
+      <style>{`@keyframes rics-fade{0%,100%{opacity:1}50%{opacity:0.25}}`}</style>
+      <span
+        ref={ref}
+        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"
+        style={{background:'rgba(0,87,255,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(0,87,255,0.35)'}}
+      >
+        <span style={{width:6,height:6,borderRadius:'50%',background:'#4d9fff',display:'inline-block',boxShadow:'0 0 8px rgba(77,159,255,0.8)'}} />
+        RICS-Regulated Assessments
+      </span>
+    </>
+  )
+}
 
 export default function CtaBanner() {
   return (
@@ -12,10 +36,7 @@ export default function CtaBanner() {
       <div className="relative max-w-6xl mx-auto">
         {/* Top label */}
         <div className="flex justify-center mb-8">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest" style={{background:'rgba(0,87,255,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(0,87,255,0.35)'}}>
-            <span style={{width:6,height:6,borderRadius:'50%',background:'#4d9fff',display:'inline-block',boxShadow:'0 0 8px rgba(77,159,255,0.8)'}} />
-            RICS-Regulated Assessments
-          </span>
+          <PulsingPill />
         </div>
 
         {/* Headline */}
