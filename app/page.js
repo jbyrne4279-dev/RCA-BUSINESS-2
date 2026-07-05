@@ -135,12 +135,27 @@ export default function HomePage() {
             </p>
             <div className="space-y-3 mb-8">
               {[
-                { title: 'Managing Agents & RTM Companies', desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.', href: '/managing-agents-insurance-valuations' },
-                { title: 'Freeholders & Leaseholders', desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.', href: '/freeholders-leaseholders' },
-                { title: 'Block Managers & Portfolio Landlords', desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.', href: '/block-managers-reinstatement-cost-assessments' },
-              ].map(({ title, desc, href }) => (
+                {
+                  title: 'Managing Agents & RTM Companies',
+                  desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.',
+                  href: '/managing-agents-insurance-valuations',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
+                },
+                {
+                  title: 'Freeholders & Leaseholders',
+                  desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
+                  href: '/freeholders-leaseholders',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
+                },
+                {
+                  title: 'Block Managers & Portfolio Landlords',
+                  desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.',
+                  href: '/block-managers-reinstatement-cost-assessments',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
+                },
+              ].map(({ title, desc, href, icon }) => (
                 <Link key={title} href={href} className="flex items-start gap-3 group">
-                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white text-xs" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>?</span>
+                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{icon}</span>
                   <div>
                     <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
                     <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
