@@ -62,7 +62,7 @@ export default function HomePage() {
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               The <span className="blue-keyword">correct sum insured</span>, for every property.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
@@ -84,7 +84,7 @@ export default function HomePage() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/55 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for properties across the UK, carried out by chartered surveyors.</p>
             </div>
           </div>
@@ -238,9 +238,9 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
                 </div>
-                <div className="p-7 flex flex-col flex-1">
+                <div className="p-5 md:p-7 flex flex-col flex-1">
                   <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
-                  <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
                   <Link href={href} className="link-arrow cta-flash">
                     Read More

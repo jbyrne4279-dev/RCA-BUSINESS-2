@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
@@ -15,9 +15,9 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the reinstatement cost the full cost to rebuild the property from scratch. That is what a reinstatement cost assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20–50%. Confusing the two figures is one of the most common causes of underinsurance.' },
+  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the reinstatement cost the full cost to rebuild the property from scratch. That is what a reinstatement cost assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20â€“50%. Confusing the two figures is one of the most common causes of underinsurance.' },
   { question: 'Who is responsible for commissioning a reinstatement cost assessment?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC or RTM company holds the insuring obligation and the duty to arrange a current reinstatement cost assessment but the practical work is often delegated to a managing agent. Whoever is responsible for setting the declared value carries the personal liability if the figure is wrong and a claim shortfall arises.' },
-  { question: 'What happens if the building is underinsured and there is a claim?', answer: 'The insurer applies the average clause and pays out only in proportion to how much of the true reinstatement cost is covered. If the rebuild cost assessment shows the true reinstatement cost is £1.5m but the building is only insured for £1m, a £300,000 claim pays out just £200,000. The leaseholders and freeholder must fund the gap. A current RICS-regulated reinstatement cost assessment is the primary protection against this.' },
+  { question: 'What happens if the building is underinsured and there is a claim?', answer: 'The insurer applies the average clause and pays out only in proportion to how much of the true reinstatement cost is covered. If the rebuild cost assessment shows the true reinstatement cost is Â£1.5m but the building is only insured for Â£1m, a Â£300,000 claim pays out just Â£200,000. The leaseholders and freeholder must fund the gap. A current RICS-regulated reinstatement cost assessment is the primary protection against this.' },
   { question: 'As a leaseholder, can I commission my own independent reinstatement cost assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent reinstatement cost assessment. The report can be used as evidence in a formal challenge to the declared value, a service charge dispute at the First-tier Tribunal, or a complaint to the Property Ombudsman.' },
   { question: 'How often should the reinstatement cost assessment be updated?', answer: 'RICS guidance requires a formal reinstatement cost assessment (rebuild cost assessment) at least every three years. Annual BCIS-indexed inflation adjustment between assessments is good practice but does not replace a full reassessment it only adjusts the existing figure without catching structural changes or errors in the original declared value.' },
   { question: 'What information does Stearling Reinstatement need to provide a reinstatement cost assessment?', answer: 'Just the address, property type, approximate gross internal floor area, and any previous reinstatement cost assessment report if you have one. We can work with estimates at enquiry stage and will let you know if we need anything further before instruction.' },
@@ -52,7 +52,7 @@ export default function FreeholdersLeaseholdersPage() {
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               Defend the <span className="blue-keyword">insuring covenant</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
@@ -67,7 +67,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for freeholders, RMC directors and leaseholders across the UK.</p>
             </div>
           </div>
@@ -212,6 +212,8 @@ export default function FreeholdersLeaseholdersPage() {
     </main>
   )
 }
+
+
 
 
 

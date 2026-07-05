@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
@@ -50,7 +50,7 @@ export default function BlockManagersPage() {
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               <span className="blue-keyword">Compliant figures</span> across every block you manage.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
@@ -71,7 +71,7 @@ export default function BlockManagersPage() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated figures across your entire managed portfolio.</p>
             </div>
           </div>
@@ -244,6 +244,8 @@ export default function BlockManagersPage() {
     </main>
   )
 }
+
+
 
 
 

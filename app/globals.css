@@ -586,14 +586,23 @@ select:focus { outline: none; border-color: #0057FF !important; box-shadow: 0 0 
 
 /* ── Mobile typography scale ── */
 @media (max-width: 639px) {
-  /* Hero h1: cap at 2rem on very narrow screens to prevent tight wrapping */
-  h1 { line-height: 1.1; }
-  /* Tighter section badge margin on mobile */
+  h1 { line-height: 1.12; }
   .badge { margin-bottom: 0.75rem; }
-  /* Reduce hero bg glow radius on mobile */
   .hero-bg {
     background: radial-gradient(ellipse 110% 40% at 50% -5%, rgba(0,87,255,0.07) 0%, transparent 60%), #ffffff;
   }
+  /* Disable float-card animation on mobile for performance */
+  .float-card { animation: none !important; }
+  /* Tighter hero overlay padding on mobile */
+  .hero-overlay-text { padding: 1rem !important; }
+  /* Prevent CTA banner headline overflow */
+  .cta-headline { font-size: clamp(1.75rem, 7vw, 3.5rem) !important; }
+  /* Tighter CtaBanner Why Stearling grid */
+  .why-strip-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+  /* Reduce section vertical padding on small mobile */
+  .section-py-mobile { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+  /* Card internal padding tighter on mobile */
+  .card-pad { padding: 1.25rem !important; }
 }
 
 /* ── Mobile section padding override (ContactSection uses py-20 inline) ── */

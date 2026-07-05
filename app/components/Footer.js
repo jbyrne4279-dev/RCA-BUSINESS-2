@@ -21,10 +21,10 @@ export default function Footer() {
 
       {/* Main grid */}
       <div className="max-w-6xl mx-auto px-6 md:px-10 pt-12 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-10">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mb-10">
 
           {/* Brand */}
-          <div className="md:col-span-2 space-y-4">
+          <div className="col-span-2 md:col-span-2 space-y-4">
             <div className="flex items-center gap-3 step-reveal-item">
               <LogoSpin width={52} height={52} className="h-13 w-13 opacity-90 invert brightness-200" />
               <span className="text-white font-semibold text-sm tracking-wide">Stearling Reinstatement</span>

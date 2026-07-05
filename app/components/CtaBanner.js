@@ -26,7 +26,7 @@ function PulsingPill() {
 
 export default function CtaBanner() {
   return (
-    <section className="relative py-20 md:py-28 px-6 md:px-10 overflow-hidden" style={{background:'linear-gradient(135deg, #0a1628 0%, #0d1f4a 50%, #0a1628 100%)'}}>
+    <section className="relative py-14 md:py-28 px-6 md:px-10 overflow-hidden" style={{background:'linear-gradient(135deg, #0a1628 0%, #0d1f4a 50%, #0a1628 100%)'}}>
       {/* Background glow blobs */}
       <div className="absolute inset-0 pointer-events-none">
         <div style={{position:'absolute',top:'-20%',left:'-10%',width:'60%',height:'140%',background:'radial-gradient(ellipse, rgba(0,87,255,0.18) 0%, transparent 70%)',borderRadius:'50%'}} />
@@ -40,7 +40,7 @@ export default function CtaBanner() {
         </div>
 
         {/* Headline */}
-        <h2 className="text-center text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.08] mb-6 max-w-3xl mx-auto">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5 max-w-3xl mx-auto">
           Get Started.{' '}
           <span style={{background:'linear-gradient(90deg, #4d9fff, #0057FF)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>No Obligation</span>{' '}
           Required.

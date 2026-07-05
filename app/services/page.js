@@ -83,7 +83,7 @@ export default function ServicesPage() {
       <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               Three service tiers. One <span className="blue-keyword">specialist firm</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
@@ -103,7 +103,7 @@ export default function ServicesPage() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection - RICS-aligned assessments for every property type.</p>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
               Whether you need a fast desktop report, a full on-site inspection, or a managed three-year compliance programme, we have a service to match your property and your obligations.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
             {[
               { img: '/rcs-desktop-reinstatemenet-cost-assessment.png', num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
               { img: '/rca-onsite-inspection-surveyor.png', num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
@@ -177,7 +177,7 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/40 to-transparent" />
                   <span className="absolute bottom-3 left-4 text-white/90 text-xs font-bold uppercase tracking-widest">{num}</span>
                 </div>
-                <div className="p-6 flex flex-col flex-1">
+                <div className="p-4 md:p-6 flex flex-col flex-1">
                   <p className="font-bold text-[#0d1b3e] text-base mb-2">{title}</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
                 </div>
@@ -250,9 +250,9 @@ export default function ServicesPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
                 </div>
-                <div className="p-7 flex flex-col flex-1">
+                <div className="p-5 md:p-7 flex flex-col flex-1">
                   <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
-                  <h3 className="text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
                   <Link href={href} className="link-arrow cta-flash">
                     {link}

@@ -23,7 +23,7 @@ export default function FaqSection({ description, items }) {
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">
           <span className="badge badge-blue">FAQ</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3 mb-4">
             Common questions.
           </h2>
           {description && (

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
@@ -18,7 +18,7 @@ const faqItems = [
   { question: 'Will insurers and brokers accept a reinstatement cost assessment from Stearling Reinstatement?', answer: 'Yes. Every reinstatement cost assessment (rebuild cost assessment) we produce is accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect you forward it directly at renewal.' },
   { question: 'How quickly can a managing agent receive a reinstatement cost assessment report?', answer: 'Desktop reinstatement cost assessments are delivered within 24 hours of instruction for standard residential blocks. For on-site rebuild cost assessment instructions we confirm the survey programme at the outset. For portfolio instructions we agree a phased schedule so no renewal window is missed.' },
   { question: 'Is index-linking the sum insured each year a substitute for a reinstatement cost assessment?', answer: 'No. Index-linking adjusts the declared value figure but compounds any existing error in the original reinstatement cost assessment and does not capture material works, specification changes or structural alterations. RICS requires a full formal reinstatement cost assessment at least every three years index-linking alone does not satisfy that requirement.' },
-  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20–50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal reinstatement cost assessment produces the correct DV as its primary output.' },
+  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20â€“50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal reinstatement cost assessment produces the correct DV as its primary output.' },
   { question: 'Can Stearling Reinstatement assess multiple blocks under one portfolio instruction?', answer: 'Yes. We produce individual RICS-regulated reinstatement cost assessment reports per property, with residential and commercial elements split for mixed-use blocks, a consolidated portfolio summary schedule, and staggered scheduling to smooth service-charge cost across renewal years.' },
 ]
 
@@ -51,7 +51,7 @@ export default function ManagingAgentsPage() {
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               Discharge your <span className="blue-keyword">compliance obligation</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
@@ -65,7 +65,7 @@ export default function ManagingAgentsPage() {
           <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for managing agents and RTM companies across the UK.</p>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 ),
                 title: '24-hr Turnaround on Quotes',
-                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10â€"15 working days - no renewal window missed.',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10Ã¢â‚¬"15 working days - no renewal window missed.',
                 href: '/contact#contact-form',
               },
               {
@@ -229,6 +229,8 @@ export default function ManagingAgentsPage() {
     </main>
   )
 }
+
+
 
 
 

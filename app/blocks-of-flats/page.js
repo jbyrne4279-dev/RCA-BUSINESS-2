@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
@@ -44,7 +44,7 @@ export default function BlocksOfFlatsPage() {
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0d1b3e] leading-[1.08] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               <span className="blue-keyword">Specialist assessments</span> for every block type.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
@@ -58,7 +58,7 @@ export default function BlocksOfFlatsPage() {
           <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Specialist reinstatement cost assessments for blocks of flats across the UK.</p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function BlocksOfFlatsPage() {
               ].map(({ num, label, desc }) => (
                 <li key={num} className="flex gap-4 items-start step-reveal-item">
                   <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{num}</span>
-                  <span><strong className="text-[#0d1b3e]">{label}</strong> â€” {desc}</span>
+                  <span><strong className="text-[#0d1b3e]">{label}</strong> Ã¢â‚¬â€ {desc}</span>
                 </li>
               ))}
             </ul>
@@ -150,6 +150,8 @@ export default function BlocksOfFlatsPage() {
     </main>
   )
 }
+
+
 
 
 

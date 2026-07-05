@@ -26,7 +26,7 @@ export default function ContactPage() {
       <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#0d1b3e] leading-[1.05] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
               Get in touch. We respond within 24 hours.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
@@ -60,7 +60,7 @@ export default function ContactPage() {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-7">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated. PI insured. 24-hour response on all business-day enquiries.</p>
             </div>
           </div>
