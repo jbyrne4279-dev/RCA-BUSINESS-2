@@ -31,10 +31,10 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Which reinstatement cost assessment service is right for my property?', answer: 'A desktop reinstatement cost assessment covers most standard residential and commercial properties and is delivered within 24 hours. An on-site rebuild cost assessment is required for listed buildings, non-standard construction and high-value or complex assets. If you manage multiple properties or need ongoing RICS compliance, the 3-Year Protection Plan provides a full reinstatement cost assessment in year one, with annual BCIS-indexed renewal reports before each renewal date. Contact us and we will recommend the right service.' },
-  { question: 'How quickly will I receive my reinstatement cost assessment report?', answer: 'Desktop reinstatement cost assessments are delivered within 24 hours of instruction for standard residential and commercial properties. On-site rebuild cost assessment programmes are confirmed and scheduled on instruction — contact us to discuss your timeline.' },
+  { question: 'How quickly will I receive my reinstatement cost assessment report?', answer: 'Desktop reinstatement cost assessments are delivered within 24 hours of instruction for standard residential and commercial properties. On-site rebuild cost assessment programmes are confirmed and scheduled on instruction contact us to discuss your timeline.' },
   { question: 'Are your reinstatement cost assessment reports accepted by all UK insurers?', answer: 'Yes. Every reinstatement cost assessment and rebuild cost assessment we produce is RICS-aligned and broker-ready, accepted across the UK insurance market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect.' },
-  { question: 'Do you carry out reinstatement cost assessments for listed and heritage buildings?', answer: 'Yes. Our on-site reinstatement cost assessment service covers all listed building categories — Grade I, Grade II* and Grade II. Listed properties cannot be assessed by desktop: they require physical inspection by a specialist surveyor to capture heritage materials, conservation consent costs, specialist trades and extended programme costs that generic rebuild cost tools cannot account for.' },
-  { question: 'Can you provide reinstatement cost assessments for a portfolio of properties under one instruction?', answer: 'Yes. We produce individual RICS-regulated reinstatement cost assessment reports per property with a consolidated portfolio summary schedule, all under a single engagement letter. Under the 3-Year Protection Plan, annual BCIS-indexed rebuild cost updates are delivered across the entire portfolio before each renewal — no re-instructing required.' },
+  { question: 'Do you carry out reinstatement cost assessments for listed and heritage buildings?', answer: 'Yes. Our on-site reinstatement cost assessment service covers all listed building categories Grade I, Grade II* and Grade II. Listed properties cannot be assessed by desktop: they require physical inspection by a specialist surveyor to capture heritage materials, conservation consent costs, specialist trades and extended programme costs that generic rebuild cost tools cannot account for.' },
+  { question: 'Can you provide reinstatement cost assessments for a portfolio of properties under one instruction?', answer: 'Yes. We produce individual RICS-regulated reinstatement cost assessment reports per property with a consolidated portfolio summary schedule, all under a single engagement letter. Under the 3-Year Protection Plan, annual BCIS-indexed rebuild cost updates are delivered across the entire portfolio before each renewal no re-instructing required.' },
   { question: 'What does a RICS reinstatement cost assessment include?', answer: 'A full reinstatement cost assessment covers demolition and site clearance, structure, external fabric, internal finishes, communal areas, lifts and services, professional fees, statutory fees (planning, Building Regulations, party wall), and VAT where applicable. The report documents the declared value, the methodology, all key assumptions, and the date a reassessment is due.' },
 ]
 
@@ -221,7 +221,7 @@ export default function ServicesPage() {
                 id: 'three-year-protection',
                 badge: '03. Recommended',
                 title: '3-Year Protection Plan',
-                desc: 'One instruction covers three years of RICS compliance — full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                desc: 'One instruction covers three years of RICS compliance full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
               },
@@ -261,10 +261,10 @@ export default function ServicesPage() {
               Your RICS report is your <span className="blue-keyword">legal shield</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Every assessment we deliver is a formal RICS-compliant report — the recognised standard accepted by all UK insurers, loss adjusters and courts. It documents the correct sum insured, the methodology used, and the review date, creating a defensible paper trail that protects you at every stage.
+              Every assessment we deliver is a formal RICS-compliant report the recognised standard accepted by all UK insurers, loss adjusters and courts. It documents the correct sum insured, the methodology used, and the review date, creating a defensible paper trail that protects you at every stage.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              Under UK insurance law, the obligation to insure at full reinstatement cost falls on the building owner or managing agent. A professionally prepared RICS report is the evidence that you discharged that duty — it limits personal liability if a claim arises and prevents insurers from applying the average clause to reduce a payout.
+              Under UK insurance law, the obligation to insure at full reinstatement cost falls on the building owner or managing agent. A professionally prepared RICS report is the evidence that you discharged that duty it limits personal liability if a claim arises and prevents insurers from applying the average clause to reduce a payout.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get Your RICS Report</Link>
           </div>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
                 title: 'RICS-compliant documentation',
-                desc: 'Prepared to Royal Institution of Chartered Surveyors guidance — the standard recognised by every UK insurer, broker and court.',
+                desc: 'Prepared to Royal Institution of Chartered Surveyors guidance the standard recognised by every UK insurer, broker and court.',
               },
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>,
@@ -284,7 +284,7 @@ export default function ServicesPage() {
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
                 title: 'Limits your personal liability',
-                desc: 'Demonstrates you took reasonable professional steps to set the declared value — protecting directors, managing agents and freeholders from personal claims.',
+                desc: 'Demonstrates you took reasonable professional steps to set the declared value protecting directors, managing agents and freeholders from personal claims.',
               },
               {
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/></svg>,

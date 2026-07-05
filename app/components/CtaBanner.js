@@ -27,7 +27,7 @@ export default function CtaBanner() {
 
         {/* Stat callout */}
         <p className="text-center text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Tell us your property and we'll send a written fee estimate — no contract, no commitment. If you proceed, your{' '}
+          Tell us your property and we'll send a written fee estimate no contract, no commitment. If you proceed, your{' '}
           <span style={{color:'#7db8ff'}} className="font-semibold">broker-ready RICS report</span>{' '}
           is with you in 24 hours.
         </p>
@@ -57,7 +57,7 @@ export default function CtaBanner() {
             {[
               {
                 label: 'Specialist only',
-                desc: 'Reinstatement cost assessments — no general surveying, no distractions.',
+                desc: 'Reinstatement cost assessments no general surveying, no distractions.',
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>,
               },
               {
