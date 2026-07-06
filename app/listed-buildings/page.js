@@ -142,7 +142,7 @@ export default function ListedBuildingsPage() {
           {/* Checklist card left */}
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
-            <ul className="space-y-4">
+            <ul className="tick-list space-y-4">
               {[
                 'Full physical inspection of structure, fabric and finishes',
                 'Identification of original and heritage materials - lime, stone, handmade brick, timber frame',
@@ -153,8 +153,8 @@ export default function ListedBuildingsPage() {
                 'Curtilage structures, outbuildings and boundary features',
                 'BCIS-benchmarked cost build-up with full methodology note',
               ].map((item, i) => (
-                <li key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{String(i + 1).padStart(2, '0')}</span>
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="tick-icon text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{String(i + 1).padStart(2, '0')}</span>
                   <span className="text-[#0d1b3e] text-sm leading-relaxed">{item}</span>
                 </li>
               ))}
