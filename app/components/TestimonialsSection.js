@@ -282,21 +282,6 @@ export default function TestimonialsSection() {
           </button>
         </div>
 
-        {/* Progress slider */}
-        <div className="max-w-3xl mx-auto mt-6 px-14">
-          <input
-            ref={sliderRef}
-            type="range"
-            className="testimonial-slider"
-            min={0}
-            max={reviews.length - 1}
-            step={0.01}
-            defaultValue={0}
-            onChange={handleSliderChange}
-            aria-label="Review slider"
-          />
-
-        </div>
       </div>
     </section>
   )
