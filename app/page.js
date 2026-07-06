@@ -208,7 +208,8 @@ export default function HomePage() {
                 badge: '01. Desktop',
                 title: 'Desktop Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
-                href: '/services#desktop-rca',
+                href: '/contact?service=desktop#contact-form',
+                link: 'Request Desktop Assessment',
               },
               {
                 img: '/rca-onsite-inspection-surveyor.png',
@@ -216,7 +217,8 @@ export default function HomePage() {
                 badge: '02. On-Site',
                 title: 'On-Site Survey',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
-                href: '/services#on-site-survey',
+                href: '/contact?service=onsite#contact-form',
+                link: 'Request On-Site Survey',
               },
               {
                 img: '/continual-reinstatement-cost-assessment-plan.png',
@@ -224,9 +226,10 @@ export default function HomePage() {
                 badge: '03. Recommended',
                 title: '3-Year Protection Plan',
                 desc: 'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
-                href: '/services#three-year-protection',
+                href: '/contact?service=3year#contact-form',
+                link: 'Enquire About Protection Plan',
               },
-            ].map(({ img, imgAlt, badge, title, desc, href }) => (
+            ].map(({ img, imgAlt, badge, title, desc, href, link }) => (
               <div key={title} className="float-card bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
                 <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
                   <Image
@@ -242,8 +245,8 @@ export default function HomePage() {
                   <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
                   <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                  <Link href={href} className="link-arrow cta-flash">
-                    Read More
+                  <Link href={href} className="btn-shine text-center">
+                    {link}
                   </Link>
                 </div>
               </div>
