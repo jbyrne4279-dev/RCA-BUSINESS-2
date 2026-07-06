@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { useRef } from 'react'
 
 export default function LogoSpin({ width = 52, height = 52, className = '', priority = false }) {
@@ -44,15 +45,12 @@ export default function LogoSpin({ width = 52, height = 52, className = '', prio
     }, 560)
   }
 
-  const size = typeof width === 'number' ? width : 52
-
   return (
     <div
       onMouseEnter={onMouseEnter}
       onMouseMove={onMouseMove}
       onMouseLeave={onMouseLeave}
       style={{ display: 'inline-flex' }}
-      aria-label="Stearling Reinstatement"
     >
       <div
         ref={wrapRef}
@@ -60,34 +58,16 @@ export default function LogoSpin({ width = 52, height = 52, className = '', prio
           animation: 'logo-rock 4.5s ease-in-out infinite',
           transformStyle: 'preserve-3d',
           display: 'inline-flex',
-          alignItems: 'center',
-          width: size,
-          height: size,
-          position: 'relative',
-          fontFamily: "Georgia, 'Times New Roman', serif",
-          fontWeight: 900,
-          lineHeight: 1,
-          userSelect: 'none',
         }}
       >
-        <span style={{
-          fontSize: size * 0.82,
-          color: '#0d0d0d',
-          letterSpacing: '-0.02em',
-          position: 'absolute',
-          left: 0,
-          top: '50%',
-          transform: 'translateY(-50%)',
-        }}>S</span>
-        <span style={{
-          fontSize: size * 0.82,
-          color: '#2563EB',
-          letterSpacing: '-0.02em',
-          position: 'absolute',
-          left: size * 0.44,
-          top: '50%',
-          transform: 'translateY(-50%)',
-        }}>R</span>
+        <Image
+          src="/sr-logo.png"
+          alt="Stearling Reinstatement"
+          width={width}
+          height={height}
+          className={`object-contain ${className}`}
+          priority={priority}
+        />
       </div>
     </div>
   )
