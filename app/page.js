@@ -167,7 +167,7 @@ export default function HomePage() {
           </div>
 
           {/* Right: process steps Ã¯Â¿Â½ staggered reveal */}
-          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-5 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
             <div className="circuit-steps">
               {[

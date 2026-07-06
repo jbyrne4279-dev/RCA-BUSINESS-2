@@ -15,7 +15,7 @@ export default function FaqSection({ description, items }) {
   }
 
   return (
-    <section className="bg-white py-20 md:py-28 px-6 md:px-10">
+    <section className="bg-white py-12 md:py-28 px-6 md:px-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

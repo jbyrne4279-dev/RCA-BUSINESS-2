@@ -138,7 +138,7 @@ const INTERVAL = 4000
 function ReviewCard({ name, role, photo, quote, visible }) {
   return (
     <div
-      className="review-card bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col transition-all duration-700"
+      className="review-card bg-white border border-[#e2e8f0] rounded-2xl p-4 md:p-6 flex flex-col transition-all duration-700"
       style={{
         boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
         opacity: visible ? 1 : 0,
@@ -280,6 +280,21 @@ export default function TestimonialsSection() {
           >
             <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"/></svg>
           </button>
+        </div>
+
+        {/* Progress slider */}
+        <div className="max-w-3xl mx-auto mt-4 px-12">
+          <input
+            ref={sliderRef}
+            type="range"
+            min="0"
+            max={reviews.length - 1}
+            step="any"
+            defaultValue="0"
+            onChange={handleSliderChange}
+            className="testimonial-slider"
+            aria-label="Review progress"
+          />
         </div>
 
       </div>

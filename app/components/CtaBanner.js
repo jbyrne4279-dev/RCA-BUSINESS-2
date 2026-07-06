@@ -72,9 +72,9 @@ export default function CtaBanner() {
         </div>
 
         {/* Why Stearling strip */}
-        <div className="border rounded-2xl p-6 md:p-8 border-spin-glow" style={{background:'rgba(255,255,255,0.05)',backdropFilter:'blur(12px)'}}>
+        <div className="border rounded-2xl p-4 md:p-8 border-spin-glow" style={{background:'rgba(255,255,255,0.05)',backdropFilter:'blur(12px)'}}>
           <p className="text-white/50 text-xs font-semibold uppercase tracking-widest mb-6 text-center">Why Stearling Reinstatement</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 circuit-steps">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 circuit-steps">
             {[
               {
                 label: 'Specialist only',
