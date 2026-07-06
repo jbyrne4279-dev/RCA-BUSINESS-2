@@ -66,7 +66,7 @@ export default function HomePage() {
               The <span className="blue-keyword">correct sum insured</span>, for every property.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Specialist reinstatement cost assessments for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
+              Specialist reinstatement cost assessments from RICS Certified Surveyors for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
