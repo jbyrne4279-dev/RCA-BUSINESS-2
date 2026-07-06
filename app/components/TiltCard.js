@@ -50,40 +50,35 @@ export default function TiltCard() {
       <style>{`
         @keyframes row-light-green {
           0%,100%{ background:transparent; box-shadow:none; }
-          5%      { background:rgba(22,163,74,0.10); box-shadow:0 0 0 1px rgba(22,163,74,0.35); }
-          25%     { background:rgba(22,163,74,0.10); box-shadow:0 0 0 1px rgba(22,163,74,0.35); }
-          35%     { background:transparent; box-shadow:none; }
+          15%    { background:rgba(22,163,74,0.07); box-shadow:0 0 0 1px rgba(22,163,74,0.18); }
+          40%    { background:rgba(22,163,74,0.07); box-shadow:0 0 0 1px rgba(22,163,74,0.18); }
+          60%    { background:transparent; box-shadow:none; }
         }
         @keyframes row-light-red {
           0%,100%{ background:transparent; box-shadow:none; }
-          5%      { background:rgba(217,48,37,0.08); box-shadow:0 0 0 1px rgba(217,48,37,0.30); }
-          25%     { background:rgba(217,48,37,0.08); box-shadow:0 0 0 1px rgba(217,48,37,0.30); }
-          35%     { background:transparent; box-shadow:none; }
+          15%    { background:rgba(217,48,37,0.05); box-shadow:0 0 0 1px rgba(217,48,37,0.16); }
+          40%    { background:rgba(217,48,37,0.05); box-shadow:0 0 0 1px rgba(217,48,37,0.16); }
+          60%    { background:transparent; box-shadow:none; }
         }
         @keyframes icon-pop-green {
           0%,100%{ filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
-          8%      { filter:drop-shadow(0 0 6px rgba(22,163,74,0.9)); transform:scale(1.3); }
-          25%     { filter:drop-shadow(0 0 4px rgba(22,163,74,0.5)); transform:scale(1.1); }
-          35%     { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+          20%    { filter:drop-shadow(0 0 3px rgba(22,163,74,0.6)); transform:scale(1.12); }
+          40%    { filter:drop-shadow(0 0 2px rgba(22,163,74,0.35)); transform:scale(1.06); }
+          60%    { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
         }
         @keyframes icon-pop-red {
           0%,100%{ filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
-          8%      { filter:drop-shadow(0 0 6px rgba(217,48,37,0.9)); transform:scale(1.3); }
-          25%     { filter:drop-shadow(0 0 4px rgba(217,48,37,0.5)); transform:scale(1.1); }
-          35%     { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+          20%    { filter:drop-shadow(0 0 3px rgba(217,48,37,0.6)); transform:scale(1.12); }
+          40%    { filter:drop-shadow(0 0 2px rgba(217,48,37,0.35)); transform:scale(1.06); }
+          60%    { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
         }
-        @keyframes label-flash {
-          0%,100%{ opacity:1; }
-          8%      { opacity:1; font-weight:800; }
-          35%     { opacity:1; }
-        }
-        .tilt-row { border-radius:8px; padding:6px 8px; transition:background 0.5s; }
-        .tilt-row-1 { animation: row-light-green 9s ease-in-out infinite; animation-delay:0s; }
-        .tilt-row-2 { animation: row-light-red   9s ease-in-out infinite; animation-delay:3s; }
-        .tilt-row-3 { animation: row-light-red   9s ease-in-out infinite; animation-delay:6s; }
-        .tilt-icon-1 { animation: icon-pop-green 9s ease-in-out infinite; animation-delay:0s; }
-        .tilt-icon-2 { animation: icon-pop-red   9s ease-in-out infinite; animation-delay:3s; }
-        .tilt-icon-3 { animation: icon-pop-red   9s ease-in-out infinite; animation-delay:6s; }
+        .tilt-row { border-radius:8px; padding:6px 8px; transition:background 1.2s ease, box-shadow 1.2s ease; }
+        .tilt-row-1 { animation: row-light-green 12s ease-in-out infinite; animation-delay:0s; }
+        .tilt-row-2 { animation: row-light-red   12s ease-in-out infinite; animation-delay:4s; }
+        .tilt-row-3 { animation: row-light-red   12s ease-in-out infinite; animation-delay:8s; }
+        .tilt-icon-1 { animation: icon-pop-green 12s ease-in-out infinite; animation-delay:0s; }
+        .tilt-icon-2 { animation: icon-pop-red   12s ease-in-out infinite; animation-delay:4s; }
+        .tilt-icon-3 { animation: icon-pop-red   12s ease-in-out infinite; animation-delay:8s; }
       `}</style>
       <div className="p-6 flex flex-col gap-1">
         {[
