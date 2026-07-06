@@ -100,11 +100,8 @@ export default function ThankYouClient() {
           <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
             We have your enquiry.
           </h1>
-          <p className="text-[#5f6368] text-lg leading-relaxed mb-3">
-            A RICS-Certified Reinstatement Cost Assessment Specialist Surveyor will be in touch within 24 hours on business days.
-          </p>
-          <p className="text-[#5f6368] text-base leading-relaxed mb-10">
-            A member of our team will be in touch within 24 hours.
+          <p className="text-[#5f6368] text-lg leading-relaxed mb-10">
+            A RICS-regulated surveyor will be in touch within 24 hours on business days.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Link href="/" className="btn-shine">Return Home</Link>

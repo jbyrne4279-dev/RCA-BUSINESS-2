@@ -33,7 +33,7 @@ const faqItems = [
   { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated reinstatement cost assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
   { question: 'How do block managers instruct reinstatement cost assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated reinstatement cost assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
   { question: 'Can leaseholders or a tribunal challenge a RICS reinstatement cost assessment figure?', answer: 'A RICS-regulated reinstatement cost assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our reinstatement cost assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
-  { question: 'What information does Stearling Reinstatement need to produce a reinstatement cost assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation the process takes minutes and we can work with estimates at the enquiry stage.' },
+  { question: 'What information does Stearling Reinstatement need to produce a reinstatement cost assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation — the process takes minutes and we can work with estimates at the enquiry stage.' },
 ]
 
 export default function BlockManagersPage() {
@@ -179,7 +179,7 @@ export default function BlockManagersPage() {
               We work with block management firms of all sizes - from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              Our 3-Year Protection plan means you instruct once and we handle all subsequent renewals - including annual BCIS-indexed updates - so compliance is maintained without any re-instruction or admin from your team.
+              Our 3-Year Protection Plan means you instruct once and we handle all subsequent renewals — including annual BCIS-indexed updates — so compliance is maintained without any re-instruction or admin from your team.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact?service=3year#contact-form" className="btn-shine">Enquire About 3-Year Plan</Link>

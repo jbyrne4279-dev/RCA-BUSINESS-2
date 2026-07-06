@@ -109,7 +109,7 @@ export default function CommercialPage() {
               {[
                 { label: 'Tenant fitout', desc: 'Category A and B fitout installed by tenants is often excluded from building schedules but must be reinstated - adding substantial cost.' },
                 { label: 'Specialist plant', desc: 'HVAC, lifts, substations and process equipment carry high replacement values that no index can capture without a site assessment.' },
-                { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20â€“40% of rebuild cost.' },
+                { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
                 <li key={label} className="flex gap-3 items-start">
                   <span className="tick-icon mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
