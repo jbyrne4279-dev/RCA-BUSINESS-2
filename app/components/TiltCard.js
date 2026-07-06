@@ -77,13 +77,13 @@ export default function TiltCard() {
           8%      { opacity:1; font-weight:800; }
           35%     { opacity:1; }
         }
-        .tilt-row { border-radius:8px; padding:6px 8px; transition:background 0.3s; }
-        .tilt-row-1 { animation: row-light-green 3s ease-in-out infinite; animation-delay:0s; }
-        .tilt-row-2 { animation: row-light-red   3s ease-in-out infinite; animation-delay:1s; }
-        .tilt-row-3 { animation: row-light-red   3s ease-in-out infinite; animation-delay:2s; }
-        .tilt-icon-1 { animation: icon-pop-green 3s ease-in-out infinite; animation-delay:0s; }
-        .tilt-icon-2 { animation: icon-pop-red   3s ease-in-out infinite; animation-delay:1s; }
-        .tilt-icon-3 { animation: icon-pop-red   3s ease-in-out infinite; animation-delay:2s; }
+        .tilt-row { border-radius:8px; padding:6px 8px; transition:background 0.5s; }
+        .tilt-row-1 { animation: row-light-green 9s ease-in-out infinite; animation-delay:0s; }
+        .tilt-row-2 { animation: row-light-red   9s ease-in-out infinite; animation-delay:3s; }
+        .tilt-row-3 { animation: row-light-red   9s ease-in-out infinite; animation-delay:6s; }
+        .tilt-icon-1 { animation: icon-pop-green 9s ease-in-out infinite; animation-delay:0s; }
+        .tilt-icon-2 { animation: icon-pop-red   9s ease-in-out infinite; animation-delay:3s; }
+        .tilt-icon-3 { animation: icon-pop-red   9s ease-in-out infinite; animation-delay:6s; }
       `}</style>
       <div className="p-6 flex flex-col gap-1">
         {[
