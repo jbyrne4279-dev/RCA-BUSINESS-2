@@ -3,7 +3,6 @@ import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import FlashList from '../components/FlashList'
@@ -166,7 +165,7 @@ export default function BlocksOfFlatsPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Get an accurate reinstatement cost for your block — and protect every leaseholder in it." />
       <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />

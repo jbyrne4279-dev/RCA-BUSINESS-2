@@ -6,7 +6,6 @@ import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
 import TestimonialsSection from './components/TestimonialsSection'
-import CtaBanner from './components/CtaBanner'
 
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
@@ -256,7 +255,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. CTA BANNER */}
-      <CtaBanner />
+
 
       <ContactSection heading="Instruct an assessment today." />
 

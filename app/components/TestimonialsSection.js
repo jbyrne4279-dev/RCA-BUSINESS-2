@@ -179,23 +179,12 @@ export default function TestimonialsSection() {
   const rafRef = useRef(null)
   const touchStartX = useRef(null)
   const pausedRef = useRef(false)
-  const sliderRef = useRef(null)
-
-  const updateSliderDOM = useCallback((value) => {
-    const el = sliderRef.current
-    if (!el) return
-    el.value = value
-    const pct = (value / (reviews.length - 1)) * 100
-    el.style.background = `linear-gradient(to right, #0057FF 0%, #0057FF ${pct}%, #e2e8f0 ${pct}%, #e2e8f0 100%)`
-  }, [])
-
   const goTo = useCallback((idx) => {
     const next = (idx + reviews.length) % reviews.length
     activeRef.current = next
     setActive(next)
     startTimeRef.current = performance.now()
-    updateSliderDOM(next)
-  }, [updateSliderDOM])
+  }, [])
 
   const next = useCallback(() => goTo(activeRef.current + 1), [goTo])
   const prev = useCallback(() => goTo(activeRef.current - 1), [goTo])
@@ -206,24 +195,21 @@ export default function TestimonialsSection() {
     const tick = (now) => {
       if (!pausedRef.current) {
         const elapsed = now - startTimeRef.current
-        const pct = Math.min(elapsed / INTERVAL, 1)
-        const sliderVal = activeRef.current + pct
-        updateSliderDOM(sliderVal)
-        if (pct >= 1) {
+        if (elapsed >= INTERVAL) {
           const next = (activeRef.current + 1) % reviews.length
           activeRef.current = next
           setActive(next)
           startTimeRef.current = now
         }
       } else {
-        startTimeRef.current = now - (Number(sliderRef.current?.value ?? activeRef.current) - activeRef.current) * INTERVAL
+        startTimeRef.current = now - (activeRef.current * INTERVAL)
       }
       rafRef.current = requestAnimationFrame(tick)
     }
 
     rafRef.current = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(rafRef.current)
-  }, [updateSliderDOM])
+  }, [])
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
@@ -236,10 +222,6 @@ export default function TestimonialsSection() {
       dx < 0 ? next() : prev()
     }
     touchStartX.current = null
-  }
-
-  const handleSliderChange = (e) => {
-    goTo(Math.round(Number(e.target.value)))
   }
 
   return (
@@ -282,20 +264,6 @@ export default function TestimonialsSection() {
           </button>
         </div>
 
-        {/* Progress slider */}
-        <div className="max-w-3xl mx-auto mt-4 px-12">
-          <input
-            ref={sliderRef}
-            type="range"
-            min="0"
-            max={reviews.length - 1}
-            step="any"
-            defaultValue="0"
-            onChange={handleSliderChange}
-            className="testimonial-slider"
-            aria-label="Review progress"
-          />
-        </div>
 
       </div>
     </section>

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -237,7 +236,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Protect yourself and your clients. Instruct us today." />
       <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} />

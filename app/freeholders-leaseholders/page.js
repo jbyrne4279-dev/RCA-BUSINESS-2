@@ -4,7 +4,6 @@ import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import RicsSelectedCard from '../components/RicsSelectedCard'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -220,7 +219,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Speak to a specialist about your declared value." />
       <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about reinstatement cost assessments and buildings insurance." items={faqItems} />

@@ -313,19 +313,8 @@ main {
   100% { box-shadow: 0 0 0 0 rgba(0,87,255,0); }
 }
 .circuit-steps > * {
-  opacity: 0;
-  animation: circuit-fade 0.5s cubic-bezier(0.22,1,0.36,1) forwards;
-  animation-timeline: view();
-  animation-range: entry 0% entry 28%;
+  opacity: 1;
 }
-.circuit-steps > *:nth-child(1) { animation-delay: 0s;    }
-.circuit-steps > *:nth-child(2) { animation-delay: 0.18s; }
-.circuit-steps > *:nth-child(3) { animation-delay: 0.36s; }
-.circuit-steps > *:nth-child(4) { animation-delay: 0.54s; }
-.circuit-steps > *:nth-child(5) { animation-delay: 0.72s; }
-.circuit-steps > *:nth-child(6) { animation-delay: 0.90s; }
-.circuit-steps > *:nth-child(7) { animation-delay: 1.08s; }
-.circuit-steps > *:nth-child(8) { animation-delay: 1.26s; }
 .circuit-num {
   animation: circuit-pulse 0.6s ease-out forwards;
   animation-delay: inherit;

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -266,7 +265,7 @@ export default function PortfolioPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Consolidate your portfolio. One instruction." />
       <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} />

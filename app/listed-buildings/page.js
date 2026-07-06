@@ -3,7 +3,6 @@ import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -243,7 +242,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Get a specialist on-site assessment for your listed building." />
       <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} />

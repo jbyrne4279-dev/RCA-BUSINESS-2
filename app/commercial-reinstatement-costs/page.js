@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -263,7 +262,7 @@ export default function CommercialPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." />
       <FaqSection description="Direct answers to the most common questions about commercial reinstatement cost assessments." items={faqItems} />

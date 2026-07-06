@@ -5,7 +5,6 @@ import ElectricSequence from '../components/ElectricSequence'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import TestimonialsSection from '../components/TestimonialsSection'
-import CtaBanner from '../components/CtaBanner'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -279,7 +278,7 @@ export default function ServicesPage() {
       </section>
 
       <TestimonialsSection />
-      <CtaBanner />
+
 
       <ContactSection heading="Not sure which service you need? We'll advise." />
       <FaqSection description="Still deciding? Use these answers to narrow it down — or contact us and we'll recommend the right service for your property." items={faqItems} />
