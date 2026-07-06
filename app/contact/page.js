@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/contact',
+    url: 'https://stearlingreinstatement.com/contact',
     siteName: 'Stearling Reinstatement',
     title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
     description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
@@ -28,10 +28,10 @@ export const metadata = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'ProfessionalService'],
-  '@id': 'https://reinstatementcostassessment.org/#organization',
+  '@id': 'https://stearlingreinstatement.com/#organization',
   name: 'Stearling Reinstatement',
   description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
-  url: 'https://reinstatementcostassessment.org',
+  url: 'https://stearlingreinstatement.com',
   telephone: '+442031788099',
   email: 'info@stearlingreinstatement.com',
   address: {

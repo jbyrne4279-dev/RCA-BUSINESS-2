@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/freeholders-leaseholders',
+    url: 'https://stearlingreinstatement.com/freeholders-leaseholders',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders | Stearling Reinstatement',
     description: 'Specialist RICS-regulated reinstatement cost assessments for freeholders, RMC directors and leaseholders. Defend the insuring covenant with a defensible declared value.',
@@ -45,8 +45,8 @@ export default function FreeholdersLeaseholdersPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Freeholders & Leaseholders', item: 'https://reinstatementcostassessment.org/freeholders-leaseholders' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Freeholders & Leaseholders', item: 'https://stearlingreinstatement.com/freeholders-leaseholders' },
         ],
       },
       {

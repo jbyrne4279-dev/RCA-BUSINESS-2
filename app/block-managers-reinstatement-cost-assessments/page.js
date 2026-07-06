@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/block-managers-reinstatement-cost-assessments',
+    url: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
     description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent declared values across every block you manage. Compliant, broker-ready, 24-hour turnaround.',
@@ -43,8 +43,8 @@ export default function BlockManagersPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Block Managers', item: 'https://reinstatementcostassessment.org/block-managers-reinstatement-cost-assessments' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Block Managers', item: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments' },
         ],
       },
       {

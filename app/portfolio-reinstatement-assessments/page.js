@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/portfolio-reinstatement-assessments',
+    url: 'https://stearlingreinstatement.com/portfolio-reinstatement-assessments',
     siteName: 'Stearling Reinstatement',
     title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations | Stearling Reinstatement',
     description: 'RICS-regulated reinstatement cost assessments for property portfolios. One instruction, consolidated reports, individual asset schedules. Annual BCIS indexation included.',
@@ -42,8 +42,8 @@ export default function PortfolioPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Portfolio Assessments', item: 'https://reinstatementcostassessment.org/portfolio-reinstatement-assessments' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Portfolio Assessments', item: 'https://stearlingreinstatement.com/portfolio-reinstatement-assessments' },
         ],
       },
       {

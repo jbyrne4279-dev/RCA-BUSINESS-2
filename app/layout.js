@@ -18,7 +18,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://reinstatementcostassessment.org'),
+  metadataBase: new URL('https://stearlingreinstatement.com'),
   title: {
     default: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
     template: '%s | Stearling Reinstatement',
@@ -58,7 +58,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org',
+    url: 'https://stearlingreinstatement.com',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
@@ -96,12 +96,12 @@ const orgSchema = {
   '@graph': [
     {
       '@type': ['Organization', 'ProfessionalService'],
-      '@id': 'https://reinstatementcostassessment.org/#organization',
+      '@id': 'https://stearlingreinstatement.com/#organization',
       name: 'Stearling Reinstatement',
-      url: 'https://reinstatementcostassessment.org',
+      url: 'https://stearlingreinstatement.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://reinstatementcostassessment.org/cr-monogram.svg',
+        url: 'https://stearlingreinstatement.com/cr-monogram.svg',
         width: 200,
         height: 200,
       },
@@ -162,12 +162,12 @@ const orgSchema = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://reinstatementcostassessment.org/#website',
-      url: 'https://reinstatementcostassessment.org',
+      '@id': 'https://stearlingreinstatement.com/#website',
+      url: 'https://stearlingreinstatement.com',
       name: 'Stearling Reinstatement',
       description:
         'RICS-regulated reinstatement cost assessments for UK properties.',
-      publisher: { '@id': 'https://reinstatementcostassessment.org/#organization' },
+      publisher: { '@id': 'https://stearlingreinstatement.com/#organization' },
       inLanguage: 'en-GB',
     },
   ],

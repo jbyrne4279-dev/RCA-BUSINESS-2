@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/listed-buildings',
+    url: 'https://stearlingreinstatement.com/listed-buildings',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
     description: 'Specialist RICS-regulated reinstatement cost assessments for listed and heritage buildings. Listed properties carry 20-50% higher rebuild costs. On-site surveys by specialist surveyors.',
@@ -43,9 +43,9 @@ export default function ListedBuildingsPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://reinstatementcostassessment.org/services' },
-          { '@type': 'ListItem', position: 3, name: 'Listed Buildings', item: 'https://reinstatementcostassessment.org/listed-buildings' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://stearlingreinstatement.com/services' },
+          { '@type': 'ListItem', position: 3, name: 'Listed Buildings', item: 'https://stearlingreinstatement.com/listed-buildings' },
         ],
       },
       {

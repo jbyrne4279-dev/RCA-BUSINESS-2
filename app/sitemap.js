@@ -1,4 +1,4 @@
-const SITE_URL = 'https://reinstatementcostassessment.org'
+const SITE_URL = 'https://stearlingreinstatement.com'
 
 export default function sitemap() {
   return [

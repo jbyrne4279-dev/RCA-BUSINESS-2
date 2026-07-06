@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/managing-agents-insurance-valuations',
+    url: 'https://stearlingreinstatement.com/managing-agents-insurance-valuations',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
     description: 'Specialist RICS-regulated reinstatement cost assessments for managing agents and RTM companies. Discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
@@ -44,8 +44,8 @@ export default function ManagingAgentsPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Managing Agents', item: 'https://reinstatementcostassessment.org/managing-agents-insurance-valuations' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Managing Agents', item: 'https://stearlingreinstatement.com/managing-agents-insurance-valuations' },
         ],
       },
       {

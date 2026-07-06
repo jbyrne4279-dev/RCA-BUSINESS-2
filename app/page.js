@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description: '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
-    url: 'https://reinstatementcostassessment.org',
+    url: 'https://stearlingreinstatement.com',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment London' }],
   },
 }
@@ -36,11 +36,11 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': 'WebPage',
-        '@id': 'https://reinstatementcostassessment.org/#webpage',
-        url: 'https://reinstatementcostassessment.org/',
+        '@id': 'https://stearlingreinstatement.com/#webpage',
+        url: 'https://stearlingreinstatement.com/',
         name: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
-        isPartOf: { '@id': 'https://reinstatementcostassessment.org/#website' },
-        about: { '@id': 'https://reinstatementcostassessment.org/#organization' },
+        isPartOf: { '@id': 'https://stearlingreinstatement.com/#website' },
+        about: { '@id': 'https://stearlingreinstatement.com/#organization' },
         description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
         inLanguage: 'en-GB',
       },

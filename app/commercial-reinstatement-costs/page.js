@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/commercial-reinstatement-costs',
+    url: 'https://stearlingreinstatement.com/commercial-reinstatement-costs',
     siteName: 'Stearling Reinstatement',
     title: 'Commercial Reinstatement Cost Assessment | RICS Regulated | Stearling Reinstatement',
     description: 'RICS-regulated reinstatement cost assessments for offices, retail, industrial and mixed-use commercial properties. Broker-ready reports accepted by all UK insurers.',
@@ -42,8 +42,8 @@ export default function CommercialPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Commercial Reinstatement Costs', item: 'https://reinstatementcostassessment.org/commercial-reinstatement-costs' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Commercial Reinstatement Costs', item: 'https://stearlingreinstatement.com/commercial-reinstatement-costs' },
         ],
       },
       {

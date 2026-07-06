@@ -25,7 +25,7 @@ export default function ContactFormInner({ heading }) {
       </div>
 
       <form action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-6">
-        <input type="hidden" name="_next" value="https://reinstatementcostassessment.org/thank-you" />
+        <input type="hidden" name="_next" value="https://stearlingreinstatement.com/thank-you" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">

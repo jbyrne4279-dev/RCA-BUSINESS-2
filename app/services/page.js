@@ -30,7 +30,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/services',
+    url: 'https://stearlingreinstatement.com/services',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessment Services | RICS Regulated | Stearling Reinstatement',
     description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated reinstatement cost assessments for UK residential and commercial property.',
@@ -60,8 +60,8 @@ export default function ServicesPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://reinstatementcostassessment.org/services' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://stearlingreinstatement.com/services' },
         ],
       },
       {
@@ -74,7 +74,7 @@ export default function ServicesPage() {
       },
       {
         '@type': 'Service',
-        provider: { '@id': 'https://reinstatementcostassessment.org/#organization' },
+        provider: { '@id': 'https://stearlingreinstatement.com/#organization' },
         name: 'Reinstatement Cost Assessment',
         serviceType: 'RICS Reinstatement Cost Assessment',
         areaServed: { '@type': 'Country', name: 'United Kingdom' },

@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://reinstatementcostassessment.org/blocks-of-flats',
+    url: 'https://stearlingreinstatement.com/blocks-of-flats',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
     description: 'Specialist RICS-regulated reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause with an accurate declared value.',
@@ -45,8 +45,8 @@ export default function BlocksOfFlatsPage() {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://reinstatementcostassessment.org/' },
-          { '@type': 'ListItem', position: 2, name: 'Blocks of Flats', item: 'https://reinstatementcostassessment.org/blocks-of-flats' },
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Blocks of Flats', item: 'https://stearlingreinstatement.com/blocks-of-flats' },
         ],
       },
       {
