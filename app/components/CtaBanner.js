@@ -42,7 +42,7 @@ export default function CtaBanner() {
         {/* Headline */}
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5 max-w-3xl mx-auto">
           Get Started.{' '}
-          <span style={{background:'linear-gradient(90deg, #4d9fff, #0057FF)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text'}}>No Obligation</span>{' '}
+          <span className="cta-no-obligation">No Obligation</span>{' '}
           Required.
         </h2>
 
