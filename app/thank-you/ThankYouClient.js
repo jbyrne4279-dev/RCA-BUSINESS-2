@@ -101,7 +101,7 @@ export default function ThankYouClient() {
             We have your enquiry.
           </h1>
           <p className="text-[#5f6368] text-lg leading-relaxed mb-3">
-            A member of our team will respond within 24 hours on business days.
+            A RICS-Certified Reinstatement Cost Assessment Specialist Surveyor will be in touch within 24 hours on business days.
           </p>
           <p className="text-[#5f6368] text-base leading-relaxed mb-10">
             A member of our team will be in touch within 24 hours.
