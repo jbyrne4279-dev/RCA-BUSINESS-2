@@ -162,49 +162,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION B - THREE TIERS OVERVIEW */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-blue">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
-              Three service tiers. One <span className="blue-keyword">specialist</span>.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mt-4 max-w-xl mx-auto">
-              Whether you need a fast desktop report, a full on-site inspection, or a managed three-year compliance programme, we have a service to match your property and your obligations.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
-            {[
-              { img: '/rcs-desktop-reinstatemenet-cost-assessment.png', num: '01', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling. Delivered within 24 hours. Ideal for standard residential and commercial property.' },
-              { img: '/rca-onsite-inspection-surveyor.png', num: '02', title: 'On-Site Survey', desc: 'RICS surveyor attends in person. Full measurement and material assessment. Required for listed and complex buildings.' },
-              { img: '/continual-reinstatement-cost-assessment-plan.png', num: '03', title: '3-Year Protection Plan', desc: 'One instruction. Three years of RICS compliance. Annual index-linked renewal reports before each renewal date.' },
-            ].map(({ img, num, title, desc }) => (
-              <div key={num} className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden flex flex-col" style={{boxShadow:'0 2px 20px rgba(0,87,255,0.07)'}}>
-                <div className="relative w-full overflow-hidden" style={{height:'180px'}}>
-                  <Image
-                    src={img}
-                    alt={title}
-                    fill
-                    className="object-cover transition-transform duration-500 hover:scale-105"
-                    sizes="(max-width:640px) 100vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/40 to-transparent" />
-                  <span className="absolute bottom-3 left-4 text-white/90 text-xs font-bold uppercase tracking-widest">{num}</span>
-                </div>
-                <div className="p-4 md:p-6 flex flex-col flex-1">
-                  <p className="font-bold text-[#0d1b3e] text-base mb-2">{title}</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/contact#contact-form" className="btn-shine">Get a Recommendation</Link>
-          </div>
-        </div>
-      </section>
-
       {/* 3-COL SERVICE CARDS */}
       <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
