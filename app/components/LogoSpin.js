@@ -61,12 +61,12 @@ export default function LogoSpin({ width = 36, height = 36, className = '', prio
         }}
       >
         <Image
-          src="/sr-logo.png"
+          src="/sr-logo.svg"
           alt="Stearling Reinstatement"
           width={width}
           height={height}
           className={`object-contain ${className}`}
-          style={{ mixBlendMode: 'multiply' }}
+          style={{}}
           priority={priority}
         />
       </div>
