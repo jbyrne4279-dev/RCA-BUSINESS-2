@@ -225,12 +225,12 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+    <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'linear-gradient(135deg, #0a1628 0%, #0d1f4a 50%, #0a1628 100%)'}}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="badge badge-blue mb-4">Client Feedback</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0d1b3e] leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
-          <p className="text-[#64748b] text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
+          <p className="text-white/60 text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
         </div>
 
         {/* Carousel */}
