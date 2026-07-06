@@ -75,7 +75,7 @@ export default function HomePage() {
           </div>
 
           {/* Hero image */}
-          <div className="relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="hidden sm:block relative rounded-3xl overflow-hidden sm:h-64 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Reinstatement cost assessment property"
