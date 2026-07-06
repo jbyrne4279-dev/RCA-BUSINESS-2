@@ -47,14 +47,52 @@ export default function TiltCard() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/60 to-transparent" />
       </div>
-      <div className="circuit-steps p-6 flex flex-col gap-3">
+      <style>{`
+        @keyframes row-light-green {
+          0%,100%{ background:transparent; box-shadow:none; }
+          5%      { background:rgba(22,163,74,0.10); box-shadow:0 0 0 1px rgba(22,163,74,0.35); }
+          25%     { background:rgba(22,163,74,0.10); box-shadow:0 0 0 1px rgba(22,163,74,0.35); }
+          35%     { background:transparent; box-shadow:none; }
+        }
+        @keyframes row-light-red {
+          0%,100%{ background:transparent; box-shadow:none; }
+          5%      { background:rgba(217,48,37,0.08); box-shadow:0 0 0 1px rgba(217,48,37,0.30); }
+          25%     { background:rgba(217,48,37,0.08); box-shadow:0 0 0 1px rgba(217,48,37,0.30); }
+          35%     { background:transparent; box-shadow:none; }
+        }
+        @keyframes icon-pop-green {
+          0%,100%{ filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+          8%      { filter:drop-shadow(0 0 6px rgba(22,163,74,0.9)); transform:scale(1.3); }
+          25%     { filter:drop-shadow(0 0 4px rgba(22,163,74,0.5)); transform:scale(1.1); }
+          35%     { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+        }
+        @keyframes icon-pop-red {
+          0%,100%{ filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+          8%      { filter:drop-shadow(0 0 6px rgba(217,48,37,0.9)); transform:scale(1.3); }
+          25%     { filter:drop-shadow(0 0 4px rgba(217,48,37,0.5)); transform:scale(1.1); }
+          35%     { filter:drop-shadow(0 0 0px transparent); transform:scale(1); }
+        }
+        @keyframes label-flash {
+          0%,100%{ opacity:1; }
+          8%      { opacity:1; font-weight:800; }
+          35%     { opacity:1; }
+        }
+        .tilt-row { border-radius:8px; padding:6px 8px; transition:background 0.3s; }
+        .tilt-row-1 { animation: row-light-green 3s ease-in-out infinite; animation-delay:0s; }
+        .tilt-row-2 { animation: row-light-red   3s ease-in-out infinite; animation-delay:1s; }
+        .tilt-row-3 { animation: row-light-red   3s ease-in-out infinite; animation-delay:2s; }
+        .tilt-icon-1 { animation: icon-pop-green 3s ease-in-out infinite; animation-delay:0s; }
+        .tilt-icon-2 { animation: icon-pop-red   3s ease-in-out infinite; animation-delay:1s; }
+        .tilt-icon-3 { animation: icon-pop-red   3s ease-in-out infinite; animation-delay:2s; }
+      `}</style>
+      <div className="p-6 flex flex-col gap-1">
         {[
-          { label: 'Reinstatement Cost', val: 'Correct basis for sum insured', ok: true },
-          { label: 'Market Value', val: 'Irrelevant for insurance purposes', ok: false },
-          { label: 'Online Calculator', val: 'No RICS accountability', ok: false },
-        ].map(({ label, val, ok }) => (
-          <div key={label} className="flex items-center gap-3 step-reveal-item">
-            <span className={`shrink-0 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
+          { label: 'Reinstatement Cost', val: 'Correct basis for sum insured', ok: true, n: 1 },
+          { label: 'Market Value', val: 'Irrelevant for insurance purposes', ok: false, n: 2 },
+          { label: 'Online Calculator', val: 'No RICS accountability', ok: false, n: 3 },
+        ].map(({ label, val, ok, n }) => (
+          <div key={label} className={`tilt-row tilt-row-${n} flex items-center gap-3`}>
+            <span className={`tilt-icon-${n} shrink-0 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
               {ok
                 ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                 : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
