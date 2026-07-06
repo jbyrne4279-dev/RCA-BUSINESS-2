@@ -283,9 +283,8 @@ main {
   }
 }
 .glow-24 {
-  color: #38bdf8;
+  color: #0057FF;
   font-weight: 700;
-  animation: electric-glow 2.4s ease-in-out infinite;
 }
 
 /* ── No Obligation electric blue glow ── */
