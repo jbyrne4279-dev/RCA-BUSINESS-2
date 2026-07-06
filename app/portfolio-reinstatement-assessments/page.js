@@ -159,7 +159,7 @@ export default function PortfolioPage() {
               {[
                 { title: 'Individual RICS report per property', desc: 'Each asset receives its own full reinstatement cost assessment report, signed off by a RICS-regulated surveyor.' },
                 { title: 'Consolidated portfolio schedule', desc: 'A single broker-ready document listing every property, its assessed reinstatement cost, assessment date and recommended review date.' },
-                { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection Plan we track every renewal date across the portfolio and deliver updated figures proactively — before each renewal, not after.' },
+                { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection Plan we track every renewal date across the portfolio and deliver updated figures proactively, before each renewal and not after.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-4 items-start">
                   <span className="tick-icon shrink-0 mt-0.5 w-6 h-6 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.12)'}}>
@@ -240,7 +240,7 @@ export default function PortfolioPage() {
               },
               {
                 title: 'Managed Cycle',
-                desc: 'Under the 3-Year Protection Plan we manage annual BCIS indexation across the whole portfolio and deliver updated figures ahead of every renewal date — no re-instructing required.',
+                desc: 'Under the 3-Year Protection Plan we manage annual BCIS indexation across the whole portfolio and deliver updated figures ahead of every renewal date, with no re-instructing required.',
                 href: '/contact#contact-form',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.75" viewBox="0 0 24 24">

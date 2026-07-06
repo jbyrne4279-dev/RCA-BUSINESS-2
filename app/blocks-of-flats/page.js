@@ -106,7 +106,7 @@ export default function BlocksOfFlatsPage() {
               ].map(({ num, label, desc }) => (
                 <li key={num} className="flex gap-4 items-start step-reveal-item">
                   <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{num}</span>
-                  <span><strong className="text-[#0d1b3e]">{label}</strong> — {desc}</span>
+                  <span><strong className="text-[#0d1b3e]">{label}</strong>: {desc}</span>
                 </li>
               ))}
             </ul>
@@ -167,7 +167,7 @@ export default function BlocksOfFlatsPage() {
       <TestimonialsSection />
 
 
-      <ContactSection heading="Get an accurate reinstatement cost for your block — and protect every leaseholder in it." />
+      <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." />
       <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />
     </main>
   )
