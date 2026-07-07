@@ -180,7 +180,7 @@ export default function FreeholdersLeaseholdersPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
             {/* Freeholder Protection */}
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -188,11 +188,11 @@ export default function FreeholdersLeaseholdersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Freeholder Protection</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">A defensible, RICS-regulated figure discharges your insuring obligation and protects you from personal liability if leaseholders suffer a shortfall on a claim.</p>
-              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Get a quote &rarr;</Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Get a quote &rarr;</span>
+            </Link>
 
             {/* Leaseholder Rights */}
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
@@ -200,11 +200,11 @@ export default function FreeholdersLeaseholdersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Leaseholder Rights</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">Commission your own independent assessment without the freeholder's permission. Use it to raise a formal concern or support a service charge challenge with credible, impartial evidence.</p>
-              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Start a challenge &rarr;</Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Start a challenge &rarr;</span>
+            </Link>
 
             {/* Tribunal Evidence */}
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-6 h-6 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -212,8 +212,8 @@ export default function FreeholdersLeaseholdersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e]">Tribunal Evidence</h3>
               <p className="text-[#64748b] text-sm leading-relaxed flex-1">Our reports are prepared to withstand scrutiny at the First-tier Tribunal (Property Chamber). RICS-regulated figures carry weight with panels reviewing service charge reasonableness.</p>
-              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">Find out more &rarr;</Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Find out more &rarr;</span>
+            </Link>
 
           </div>
         </div>

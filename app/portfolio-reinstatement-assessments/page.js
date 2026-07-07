@@ -250,16 +250,14 @@ export default function PortfolioPage() {
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
-              <div key={title} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 12px rgba(0,0,0,0.05)'}}>
+              <Link key={title} href={href} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 12px rgba(0,0,0,0.05)', textDecoration:'none', display:'block'}}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
-                <Link href={href} className="link-arrow cta-flash">
-                  Find out more →
-                </Link>
-              </div>
+                <span className="link-arrow cta-flash">Find out more →</span>
+              </Link>
             ))}
           </div>
         </div>

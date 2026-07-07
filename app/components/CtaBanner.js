@@ -41,16 +41,14 @@ export default function CtaBanner() {
 
         {/* Headline */}
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-5 max-w-3xl mx-auto">
-          Get Started.{' '}
-          <span className="cta-no-obligation">No Obligation</span>{' '}
-          Required.
+          Get Started. Instruct Today.
         </h2>
 
         {/* Stat callout */}
         <p className="text-center text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Tell us your property and we'll send a written fee estimate no contract, no commitment. If you proceed, your{' '}
+          Tell us about your property and we will send a written fee estimate — no contract, no commitment. If you proceed, your{' '}
           <span style={{color:'#7db8ff'}} className="font-semibold">broker-ready RICS report</span>{' '}
-          is with you in 24 hours.
+          is with you within 24 hours.
         </p>
 
         {/* CTAs */}

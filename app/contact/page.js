@@ -85,7 +85,7 @@ export default function ContactPage() {
               Get in touch. We respond within 24 hours.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              <span className="cta-no-obligation">No obligation</span>. Just a written fee estimate and a clear next step. Complete the form below to speak directly to a RICS specialist.
+              Complete the form below to speak directly with a RICS specialist. We will send a written fee estimate within 24 hours.
             </p>
             <div className="space-y-4 mb-8">
               {[

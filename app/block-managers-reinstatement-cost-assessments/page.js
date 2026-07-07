@@ -200,7 +200,7 @@ export default function BlockManagersPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
@@ -210,12 +210,10 @@ export default function BlockManagersPage() {
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
                 One instruction covers every block in your managed portfolio. Individual RICS-regulated reports per property, plus a consolidated summary schedule for your records and insurers.
               </p>
-              <Link href="/contact#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">
-                Request a portfolio quote &rarr;
-              </Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Request a portfolio quote &rarr;</span>
+            </Link>
 
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact?service=3year#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
@@ -223,14 +221,12 @@ export default function BlockManagersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">Managed Renewals</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
-                We track every block&apos;s review date. Annual BCIS-indexed updates and full reassessments are issued before each renewal without any re-instruction from your team. Three-year RICS compliance - fully managed.
+                We track every block&apos;s review date. Annual BCIS-indexed updates and full reassessments are issued before each renewal without any re-instruction from your team. Three-year RICS compliance, fully managed.
               </p>
-              <Link href="/contact?service=3year#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">
-                Enquire about 3-Year Protection &rarr;
-              </Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Enquire about 3-Year Protection &rarr;</span>
+            </Link>
 
-            <div className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+            <Link href="/contact?service=desktop#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
               <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
                 <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -238,12 +234,10 @@ export default function BlockManagersPage() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">24-hr Desktop</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
-                Standard desktop assessments are delivered within 24 hours of instruction. Broker-ready format, RICS-regulated methodology, and PI-insured - accepted at renewal without challenge.
+                Standard desktop assessments are delivered within 24 hours of instruction. Broker-ready format, RICS-regulated methodology, PI-insured and accepted at renewal without challenge.
               </p>
-              <Link href="/contact?service=desktop#contact-form" className="text-[#0057FF] text-sm font-semibold hover:underline">
-                Instruct a desktop assessment &rarr;
-              </Link>
-            </div>
+              <span className="text-[#0057FF] text-sm font-semibold">Instruct a desktop assessment &rarr;</span>
+            </Link>
 
           </div>
         </div>

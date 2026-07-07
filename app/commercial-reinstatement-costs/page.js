@@ -247,16 +247,14 @@ export default function CommercialPage() {
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
-              <div key={title} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,0,0,0.05)'}}>
+              <Link key={title} href={href} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{background:'rgba(0,87,255,0.1)'}}>
                   {icon}
                 </div>
                 <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
-                <Link href={href} className="link-arrow cta-flash">
-                  Learn more
-                </Link>
-              </div>
+                <span className="link-arrow cta-flash">Learn more</span>
+              </Link>
             ))}
           </div>
         </div>

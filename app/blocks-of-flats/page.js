@@ -149,16 +149,16 @@ export default function BlocksOfFlatsPage() {
               { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1477785304.jpeg' },
               { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1064771096.jpeg' },
             ].map(({ title, desc, href, img }) => (
-              <div key={title} className="brix-card card-hover">
+              <Link key={title} href={href} className="brix-card card-hover" style={{textDecoration:'none', display:'block'}}>
                 <div className="relative h-40 overflow-hidden">
                   <Image src={img} alt={title} fill className="object-cover" />
                 </div>
                 <div className="p-5">
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
-                  <Link href={href} className="link-arrow cta-flash !text-xs">Learn more</Link>
+                  <span className="link-arrow cta-flash !text-xs">Learn more</span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#0057FF] font-semibold hover:text-[#0040CC]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
