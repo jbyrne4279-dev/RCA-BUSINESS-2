@@ -230,7 +230,7 @@ export default function HomePage() {
                 link: 'Enquire About Protection Plan',
               },
             ].map(({ img, imgAlt, badge, title, desc, href, link }) => (
-              <Link key={title} href={href} className="float-card bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col cursor-pointer group" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
+              <Link key={title} href={href} className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
                 <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
                   <Image
                     src={img}
