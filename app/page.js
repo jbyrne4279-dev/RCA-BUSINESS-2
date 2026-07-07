@@ -74,7 +74,7 @@ export default function HomePage() {
           </div>
 
           {/* Hero image */}
-          <div className="hidden sm:block relative rounded-3xl overflow-hidden sm:h-64 md:h-96 lg:h-[520px]" style={{boxShadow:'0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08)'}}>
+          <div className="hero-img-pulse hidden sm:block relative rounded-3xl overflow-hidden sm:h-64 md:h-96 lg:h-[520px]">
             <Image
               src="/AdobeStock_1956380728.jpeg"
               alt="Reinstatement cost assessment property"
@@ -82,6 +82,7 @@ export default function HomePage() {
               className="object-cover"
               priority
             />
+            <div className="hero-electric-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/55 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
               <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for properties across the UK, carried out by chartered surveyors.</p>
