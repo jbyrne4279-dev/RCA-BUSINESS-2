@@ -618,6 +618,25 @@ select:focus { outline: none; border-color: #0057FF !important; box-shadow: 0 0 
   .footer-contact a { word-break: break-all; }
 }
 
+/* ── Risk item cards: pulsing electric blue glow on hover ── */
+@keyframes risk-card-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 1.5px rgba(0,87,255,0.5), 0 0 10px 2px rgba(0,87,255,0.15);
+    border-color: rgba(0,87,255,0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 2px #0057FF, 0 0 24px 6px rgba(0,87,255,0.35), 0 0 48px 12px rgba(0,120,255,0.15);
+    border-color: #0057FF;
+  }
+}
+.risk-card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.risk-card:hover {
+  animation: risk-card-pulse 1.4s ease-in-out infinite;
+  cursor: default;
+}
+
 /* ── Electric blue border pulse (listed buildings grade card) ── */
 @keyframes electric-border-pulse {
   0%,100% { box-shadow: 0 8px 32px rgba(0,87,255,0.10), 0 0 0 0 rgba(0,87,255,0); border-color: #e2e8f0; }

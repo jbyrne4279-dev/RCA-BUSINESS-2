@@ -139,7 +139,7 @@ export default function FreeholdersLeaseholdersPage() {
                 'Demolition and site clearance - often left out of the declared value',
                 'Loss-of-rent and alternative accommodation provision frequently overlooked',
               ].map((risk) => (
-                <div key={risk} className="flex gap-3 items-start step-reveal-item">
+                <div key={risk} className="risk-card flex gap-3 items-start rounded-xl border border-[#e2e8f0] p-4 bg-white step-reveal-item">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" className="shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 1L19 6V16L10 21L1 16V6L10 1Z" fill="#d93025"/>
                     <text x="10" y="15" textAnchor="middle" fill="white" fontSize="11" fontWeight="700" fontFamily="system-ui,sans-serif">!</text>
