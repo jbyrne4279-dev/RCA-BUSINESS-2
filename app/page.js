@@ -230,13 +230,13 @@ export default function HomePage() {
                 link: 'Enquire About Protection Plan',
               },
             ].map(({ img, imgAlt, badge, title, desc, href, link }) => (
-              <div key={title} className="float-card bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
+              <Link key={title} href={href} className="float-card bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col cursor-pointer group" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
                 <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
                   <Image
                     src={img}
                     alt={imgAlt}
                     fill
-                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
@@ -245,11 +245,11 @@ export default function HomePage() {
                   <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
                   <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                  <Link href={href} className="btn-shine text-center">
+                  <span className="btn-shine text-center">
                     {link}
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
