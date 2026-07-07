@@ -200,7 +200,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Our Assessments Cover <span className="blue-keyword">Every Property Type</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
           </div>
-          <div className="stagger-cards grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
