@@ -31,15 +31,18 @@ export default function FaqSection({ description, items }) {
           )}
         </div>
 
-        <div className="divide-y divide-[#e2e8f0] bg-white rounded-xl border border-[#e2e8f0] overflow-hidden">
+        <div className="flex flex-col gap-2">
           {items.map((item, i) => (
             <div
               key={i}
               style={{
                 transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
-                boxShadow: open === i ? '0 0 0 2px #0057FF, 0 0 18px 3px rgba(0,87,255,0.35)' : 'none',
+                boxShadow: open === i ? '0 0 0 2px #0057FF, 0 0 18px 3px rgba(0,87,255,0.35)' : '0 0 0 1px #e2e8f0',
                 position: 'relative',
                 zIndex: open === i ? 1 : 0,
+                borderRadius: '0.75rem',
+                overflow: 'hidden',
+                background: '#fff',
               }}
             >
               <button
