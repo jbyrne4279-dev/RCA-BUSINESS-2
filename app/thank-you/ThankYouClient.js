@@ -7,6 +7,12 @@ export default function ThankYouClient() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && typeof gtag === 'function') {
+      gtag('event', 'ads_conversion_Submit_lead_form_1', {})
+    }
+  }, [])
+
+  useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
