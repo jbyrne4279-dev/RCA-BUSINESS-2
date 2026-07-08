@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -236,7 +235,6 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
 
 
       <ContactSection heading="Protect yourself and your clients. Instruct us today." />

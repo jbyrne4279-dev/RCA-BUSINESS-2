@@ -1,7 +1,6 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -263,7 +262,6 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
 
 
       <ContactSection heading="Consolidate your portfolio. One instruction." />

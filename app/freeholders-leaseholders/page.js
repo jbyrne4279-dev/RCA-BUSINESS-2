@@ -3,7 +3,6 @@ import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import RicsSelectedCard from '../components/RicsSelectedCard'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -219,7 +218,6 @@ export default function FreeholdersLeaseholdersPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
 
 
       <ContactSection heading="Speak to a specialist about your declared value." />

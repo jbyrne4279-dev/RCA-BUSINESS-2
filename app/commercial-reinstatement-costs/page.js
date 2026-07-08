@@ -1,7 +1,6 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -260,7 +259,6 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
 
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." />

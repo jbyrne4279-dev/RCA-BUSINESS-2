@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import TrustStrip from '../components/TrustStrip'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -124,7 +123,6 @@ export default function ContactPage() {
       </section>
 
       <TrustStrip />
-      <TestimonialsSection />
       <ContactSection heading="Get a written fee estimate, no commitment required." />
       <FaqSection description="Common questions about instructing Stearling Reinstatement." items={faqItems} />
     </main>

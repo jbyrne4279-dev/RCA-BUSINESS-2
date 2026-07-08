@@ -4,7 +4,6 @@ import ScrambleText from '../components/ScrambleText'
 import ElectricSequence from '../components/ElectricSequence'
 import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
-import TestimonialsSection from '../components/TestimonialsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -275,7 +274,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
 
 
       <ContactSection heading="Not sure which service you need? We'll advise." />

@@ -5,7 +5,6 @@ import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
-import TestimonialsSection from './components/TestimonialsSection'
 
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
@@ -190,7 +189,6 @@ export default function HomePage() {
       </section>
 
       {/* 5. TESTIMONIALS */}
-      <TestimonialsSection />
 
       {/* 6. SERVICES - 3 col */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
