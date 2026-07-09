@@ -9,8 +9,8 @@ export default function ThankYouClient() {
   useEffect(() => {
     window.dataLayer = window.dataLayer || []
     function gtag() { window.dataLayer.push(arguments) }
-    gtag('event', 'ads_conversion_Submit_lead_form_1', {
-      send_to: 'AW-16853906784',
+    gtag('event', 'conversion', {
+      send_to: 'AW-16853906784/dC7ICInWv80cEODqyOQ-',
     })
   }, [])
 
