@@ -7,9 +7,11 @@ export default function ThankYouClient() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && typeof gtag === 'function') {
-      gtag('event', 'ads_conversion_Submit_lead_form_1', {})
-    }
+    window.dataLayer = window.dataLayer || []
+    function gtag() { window.dataLayer.push(arguments) }
+    gtag('event', 'ads_conversion_Submit_lead_form_1', {
+      send_to: 'AW-16853906784',
+    })
   }, [])
 
   useEffect(() => {
