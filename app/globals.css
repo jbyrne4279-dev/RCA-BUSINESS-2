@@ -822,3 +822,10 @@ a.link-amber:hover {
   color: #0057FF;
   text-shadow: 0 0 12px rgba(0,87,255,0.6);
 }
+
+/* ── Prevent iOS Safari zoom on input focus ── */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
