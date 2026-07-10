@@ -14,7 +14,7 @@ export default function Footer() {
             <p className="text-white/70 text-sm">We respond within 24 hours on business days.</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
-            <Link href="/contact#contact-form" className="bg-white text-[#0040CC] font-semibold text-sm px-5 py-2 rounded-full hover:bg-white/90 transition-colors">Get a Quote</Link>
+            <Link href="/contact#contact-form" className="font-semibold text-sm px-5 py-2 rounded-full transition-colors" style={{background:'#F5B800', color:'#0d1b3e'}}>Get a Quote</Link>
           </div>
         </div>
       </div>

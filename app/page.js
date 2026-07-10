@@ -9,6 +9,7 @@ import TrustStrip from './components/TrustStrip'
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
   description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+  keywords: ['reinstatement cost assessment', 'RICS reinstatement cost assessment', 'rebuild cost assessment', 'reinstatement cost assessment UK', 'rebuild cost assessment UK', 'RICS rebuild cost assessment', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'declared value buildings insurance'],
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
@@ -61,7 +62,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              The <span className="blue-keyword">correct sum insured</span>, for every property.
+              Specialist <span className="blue-keyword">reinstatement cost assessments</span> for UK property.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
               Specialist reinstatement cost assessments from RICS Certified Surveyors for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
@@ -127,7 +128,7 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-5">Who We Help</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              We help the professionals who carry the <span className="blue-keyword">compliance obligation</span>.
+              Who needs a <span className="blue-keyword">reinstatement cost assessment</span>?
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               One practice. One specialisation. Every instruction is a RICS-regulated reinstatement cost assessment delivered to the right audience.
@@ -195,7 +196,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Our Assessments Cover <span className="blue-keyword">Every Property Type</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Reinstatement Cost Assessments for <span className="blue-keyword">Every Property Type</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,7 +205,7 @@ export default function HomePage() {
                 img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
                 imgAlt: 'Desktop reinstatement cost assessment service',
                 badge: '01. Desktop',
-                title: 'Desktop Assessment',
+                title: 'Desktop Reinstatement Cost Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
                 href: '/contact?service=desktop#contact-form',
                 link: 'Request Desktop Assessment',
@@ -213,7 +214,7 @@ export default function HomePage() {
                 img: '/rca-onsite-inspection-surveyor.png',
                 imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment',
                 badge: '02. On-Site',
-                title: 'On-Site Survey',
+                title: 'On-Site Rebuild Cost Assessment',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
                 href: '/contact?service=onsite#contact-form',
                 link: 'Request On-Site Survey',
@@ -222,8 +223,8 @@ export default function HomePage() {
                 img: '/continual-reinstatement-cost-assessment-plan.png',
                 imgAlt: '3-Year RICS reinstatement cost assessment protection plan',
                 badge: '03. Recommended',
-                title: '3-Year Protection Plan',
-                desc: 'One instruction covers three years of RICS compliance. Full assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
+                title: '3-Year Reinstatement Cost Assessment Plan',
+                desc: 'One instruction covers three years of RICS compliance. Full reinstatement cost assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
               },

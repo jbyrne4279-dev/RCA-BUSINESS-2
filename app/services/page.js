@@ -22,8 +22,9 @@ const IcoShield = () => (
 )
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment Survey for Buildings Insurance',
-  description: 'Specialist reinstatement cost assessments for blocks of flats, managing agents, freeholders and leaseholders. RICS-aligned rebuild valuations for buildings insurance.',
+  title: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost Assessment UK',
+  description: 'Specialist RICS reinstatement cost assessments and rebuild cost assessments for blocks of flats, managing agents, freeholders and leaseholders. Broker-ready reports in 24 hours.',
+  keywords: ['reinstatement cost assessment', 'RICS reinstatement cost assessment', 'rebuild cost assessment', 'desktop reinstatement cost assessment', 'on-site rebuild cost assessment', 'reinstatement cost assessment services UK', 'RICS rebuild cost assessment UK'],
   alternates: { canonical: '/services' },
   openGraph: {
     type: 'website',
@@ -97,7 +98,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Three service tiers. One <span className="blue-keyword">specialist firm</span>.
+              RICS <span className="blue-keyword">reinstatement cost assessments</span>. Three tiers, one specialist firm.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8">
               Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
@@ -130,7 +131,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Generic tools cannot replace a <span className="blue-keyword">RICS specialist</span>.
+              Generic tools cannot replace a <span className="blue-keyword">RICS reinstatement cost assessment</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               UK construction costs rose over 30% between 2020 and 2024 - any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer.
@@ -178,7 +179,7 @@ export default function ServicesPage() {
                 imgPosition: 'center top',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
-                title: 'Desktop Assessment',
+                title: 'Desktop Reinstatement Cost Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling without a site visit. Delivered within 24 hours of instruction. Accepted by all UK insurers.',
                 href: '/contact?service=desktop#contact-form',
                 link: 'Request Desktop Assessment',
@@ -189,7 +190,7 @@ export default function ServicesPage() {
                 imgPosition: 'center center',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
-                title: 'On-Site Survey',
+                title: 'On-Site Rebuild Cost Assessment',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed, heritage and complex buildings.',
                 href: '/contact?service=onsite#contact-form',
                 link: 'Request On-Site Survey',
@@ -200,8 +201,8 @@ export default function ServicesPage() {
                 imgPosition: 'center center',
                 id: 'three-year-protection',
                 badge: '03. Recommended',
-                title: '3-Year Protection Plan',
-                desc: 'One instruction covers three years of RICS compliance full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+                title: '3-Year Reinstatement Cost Assessment Plan',
+                desc: 'One instruction covers three years of RICS compliance — full reinstatement cost assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
               },

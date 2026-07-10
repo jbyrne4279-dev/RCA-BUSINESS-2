@@ -7,8 +7,8 @@ import FaqSection from '../components/FaqSection'
 import FlashList from '../components/FlashList'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Property Investors | Blocks of Flats',
-  description: 'Specialist reinstatement cost assessments for property investors and block owners. The number you\'re insured for is almost certainly wrong, and the average clause means the shortfall comes out of your pocket.',
+  title: 'Reinstatement Cost Assessment for Blocks of Flats | RICS Regulated',
+  description: 'Specialist RICS reinstatement cost assessments for blocks of flats. Accurate rebuild cost assessment for buildings insurance — protect every leaseholder from the average clause.',
   alternates: { canonical: '/blocks-of-flats' },
   openGraph: {
     type: 'website',
