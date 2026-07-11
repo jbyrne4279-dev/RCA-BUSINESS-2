@@ -245,6 +245,61 @@ export default function BlockManagersPage() {
 
 
       {/* 6. CONTACT + FAQ */}
+      {/* SERVICES */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Our Services</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Reinstatement Cost Assessments for <span className="blue-keyword">Every Property Type</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
+                imgAlt: 'Desktop reinstatement cost assessment service',
+                badge: '01. Desktop',
+                title: 'Desktop Reinstatement Cost Assessment',
+                desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
+                href: '/contact?service=desktop#contact-form',
+                link: 'Request Desktop Assessment',
+              },
+              {
+                img: '/rca-onsite-inspection-surveyor.png',
+                imgAlt: 'RICS surveyor conducting an on-site reinstatement cost assessment',
+                badge: '02. On-Site',
+                title: 'On-Site Rebuild Cost Assessment',
+                desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
+                href: '/contact?service=onsite#contact-form',
+                link: 'Request On-Site Survey',
+              },
+              {
+                img: '/continual-reinstatement-cost-assessment-plan.png',
+                imgAlt: '3-Year RICS reinstatement cost assessment protection plan',
+                badge: '03. Recommended',
+                title: '3-Year Reinstatement Cost Assessment Plan',
+                desc: 'One instruction covers three years of RICS compliance. Full reinstatement cost assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
+                href: '/contact?service=3year#contact-form',
+                link: 'Enquire About Protection Plan',
+              },
+            ].map(({ img, imgAlt, badge, title, desc, href, link }) => (
+              <Link key={title} href={href} className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
+                <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
+                  <Image src={img} alt={imgAlt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
+                </div>
+                <div className="p-5 md:p-7 flex flex-col flex-1">
+                  <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
+                  <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                  <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
+                  <span className="btn-shine text-center">{link}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactSection heading="Remove the liability. Instruct today." />
       <FaqSection description="Questions from block management firms about reinstatement cost assessments." items={faqItems} />
 
