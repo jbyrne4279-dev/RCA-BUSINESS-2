@@ -63,7 +63,7 @@ const reviews = [
     name: 'Caroline F.',
     role: 'Managing Agent Director, London',
     photo: 'https://randomuser.me/api/portraits/women/44.jpg',
-    quote: 'Looking forward to working with Stearling Reinstatement to give us reliable rebuild cost quotes across our managed portfolio.',
+    quote: 'We look forward to working with Stearling Reinstatement to give us reliable rebuild cost quotes across our managed portfolio.',
   },
   {
     name: 'Sarah L.',
@@ -75,7 +75,7 @@ const reviews = [
     name: 'Priya N.',
     role: 'Portfolio Manager, Birmingham',
     photo: 'https://randomuser.me/api/portraits/women/47.jpg',
-    quote: 'Handles all our assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
+    quote: 'Stearling Reinstatement handles all our assessments on a rolling three-year cycle and takes the compliance burden completely off our desk.',
   },
   {
     name: 'James R.',
@@ -230,7 +230,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-12">
           <span className="badge badge-blue mb-4">Client Feedback</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">What Our <span className="blue-keyword">Customers</span> Say</h2>
-          <p className="text-white/60 text-sm mt-3">Managing agents, freeholders and property professionals across the UK.</p>
+          <p className="text-white/60 text-sm mt-3">Managing agents, freeholders, and property professionals across the UK.</p>
         </div>
 
         {/* Carousel */}

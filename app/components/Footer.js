@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="text-white font-semibold text-sm tracking-wide">Stearling Reinstatement</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
+              RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders, and property professionals across the UK.
             </p>
             <div className="flex items-center gap-3 pt-1">
               <Image

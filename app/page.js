@@ -8,7 +8,7 @@ import TrustStrip from './components/TrustStrip'
 
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
-  description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+  description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders, and portfolio landlords across England.',
   keywords: ['reinstatement cost assessment', 'RICS reinstatement cost assessment', 'rebuild cost assessment', 'reinstatement cost assessment UK', 'rebuild cost assessment UK', 'RICS rebuild cost assessment', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'declared value buildings insurance'],
   alternates: { canonical: '/' },
   openGraph: {
@@ -20,13 +20,13 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment (RCA) also called a rebuild cost assessment is a formal RICS-regulated calculation of the full cost to rebuild a property from scratch for buildings insurance purposes. It covers demolition and site clearance, structure, finishes, communal areas, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current reinstatement cost assessment produces a defensible declared value for your insurer.' },
-  { question: 'What is the difference between a reinstatement cost assessment and a rebuild cost assessment?', answer: 'The terms are used interchangeably throughout the UK insurance market. A reinstatement cost assessment and a rebuild cost assessment both refer to the same RICS-regulated exercise: calculating the full cost to rebuild a property for buildings insurance purposes. At Stearling Reinstatement we use both terms the formal RICS standard is the same whichever name is used.' },
+  { question: 'What is a reinstatement cost assessment?', answer: 'A reinstatement cost assessment (RCA), also called a rebuild cost assessment, is a formal RICS-regulated calculation of the full cost to rebuild a property from scratch for buildings insurance purposes. It covers demolition and site clearance, structure, finishes, communal areas, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current reinstatement cost assessment produces a defensible declared value for your insurer.' },
+  { question: 'What is the difference between a reinstatement cost assessment and a rebuild cost assessment?', answer: 'The terms are used interchangeably throughout the UK insurance market. A reinstatement cost assessment and a rebuild cost assessment both refer to the same RICS-regulated exercise: calculating the full cost to rebuild a property for buildings insurance purposes. At Stearling Reinstatement we use both terms; the formal RICS standard is the same whichever name is used.' },
   { question: 'How is reinstatement cost different from market value?', answer: 'Market value is what a buyer would pay on the open market. Reinstatement cost or rebuild cost is what it costs to reconstruct the building from cleared ground. In many locations they diverge significantly: a central-London flat may be worth £800,000 on the market but cost £350,000 to rebuild. Insuring at market value causes over-insurance and inflated premiums; insuring below true reinstatement cost triggers the average clause on every claim.' },
-  { question: 'How often should a reinstatement cost assessment be updated?', answer: 'RICS guidance requires a formal rebuild cost assessment at least every three years, with annual BCIS-indexed inflation adjustment in the intervening years. Where a building has been extended, altered or significantly refurbished or where no formal reinstatement cost assessment has been carried out since before 2020 a fresh assessment should be commissioned before the next renewal.' },
-  { question: 'Why do managing agents and RTM companies need a reinstatement cost assessment?', answer: 'Managing agents and RTM companies that arrange buildings insurance for blocks carry a direct legal obligation to insure to full reinstatement cost. Where the declared value is inadequate and a claim arises, the insurer applies the average clause and reduces the payout and the managing agent or RTM can face a professional negligence claim from leaseholders for the shortfall. A current RICS-regulated reinstatement cost assessment is the documented evidence that the obligation was properly discharged.' },
+  { question: 'How often should a reinstatement cost assessment be updated?', answer: 'RICS guidance requires a formal rebuild cost assessment at least every three years, with annual BCIS-indexed inflation adjustment in the intervening years. Where a building has been extended, altered or significantly refurbished, or where no formal reinstatement cost assessment has been carried out since before 2020, a fresh assessment should be commissioned before the next renewal.' },
+  { question: 'Why do managing agents and RTM companies need a reinstatement cost assessment?', answer: 'Managing agents and RTM companies that arrange buildings insurance for blocks carry a direct legal obligation to insure to full reinstatement cost. Where the declared value is inadequate and a claim arises, the insurer applies the average clause and reduces the payout, and the managing agent or RTM can face a professional negligence claim from leaseholders for the shortfall. A current RICS-regulated reinstatement cost assessment is the documented evidence that the obligation was properly discharged.' },
   { question: 'What happens if a building is underinsured?', answer: 'The insurer applies the condition of average and reduces every claim payout proportionally. If a building\'s true rebuild cost is £2m but it is insured for £1.4m, a £200,000 claim pays out only £140,000. Leaseholders can pursue the party responsible for arranging insurance for any unrecovered loss. A current reinstatement cost assessment is the primary protection against this outcome.' },
-  { question: 'What areas does Stearling Reinstatement cover?', answer: 'We provide reinstatement cost assessments and rebuild cost assessments across the whole of the UK. Desktop assessments are available for any property nationally, typically delivered within 24 hours. On-site surveys cover England, Scotland, Wales and Northern Ireland.' },
+  { question: 'What areas does Stearling Reinstatement cover?', answer: 'We provide reinstatement cost assessments and rebuild cost assessments across the whole of the UK. Desktop assessments are available for any property nationally, typically delivered within 24 hours. On-site surveys cover England, Scotland, Wales, and Northern Ireland.' },
 ]
 
 export default function HomePage() {
@@ -65,7 +65,7 @@ export default function HomePage() {
               Specialist <span className="blue-keyword">reinstatement cost assessments</span> for UK property.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Specialist reinstatement cost assessments from RICS Certified Surveyors for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
+              Specialist reinstatement cost assessments from RICS Certified Surveyors for managing agents, freeholders, leaseholders, and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
@@ -108,7 +108,7 @@ export default function HomePage() {
               Reinstatement cost is not the same as <span className="blue-keyword">market value</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              After a total loss, insurers pay to rebuild - not to match market value. If the declared figure is wrong, the insurer applies the average clause and reduces the payout in proportion to the shortfall. Managing agents and freeholders can be held personally liable for the gap.
+              After a total loss, insurers pay to rebuild — not to match market value. If the declared figure is wrong, the insurer applies the average clause and reduces the payout in proportion to the shortfall. Managing agents and freeholders can be held personally liable for the gap.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               A RICS-regulated reinstatement cost assessment is the only defensible basis for the buildings sum insured.
@@ -149,7 +149,7 @@ export default function HomePage() {
                 },
                 {
                   title: 'Block Managers & Portfolio Landlords',
-                  desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.',
+                  desc: 'Consistent, compliant figures across every block — managed on a rolling cycle.',
                   href: '/block-managers-reinstatement-cost-assessments',
                   icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
                 },
@@ -172,7 +172,7 @@ export default function HomePage() {
             <div className="circuit-steps">
               {[
                 { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
+                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site — we advise and agree a fixed fee.' },
                 { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
                 { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
               ].map(({ n, title, desc }, i) => (

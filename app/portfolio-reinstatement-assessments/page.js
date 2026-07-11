@@ -26,10 +26,10 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'How many properties can be covered under a single portfolio reinstatement cost assessment instruction?', answer: 'There is no maximum. Portfolio reinstatement cost assessment instructions typically cover between 5 and 200 properties. We issue a consolidated quote and a single engagement letter one instruction, one named surveyor, one invoice covering every reinstatement cost assessment in the portfolio.' },
+  { question: 'How many properties can be covered under a single portfolio reinstatement cost assessment instruction?', answer: 'There is no maximum. Portfolio reinstatement cost assessment instructions typically cover between 5 and 200 properties. We issue a consolidated quote and a single engagement letter — one instruction, one named surveyor, one invoice covering every reinstatement cost assessment in the portfolio.' },
   { question: 'What does the portfolio reinstatement cost assessment summary schedule contain?', answer: 'The schedule sets out every asset, its RICS-regulated reinstatement cost figure (rebuild cost), the assessment date and the recommended reassessment date all in a single broker-ready document that sits alongside the individual reinstatement cost assessment reports for each property.' },
   { question: 'Is a portfolio reinstatement cost assessment just multiple desktop reports bundled together?', answer: 'No. The portfolio reinstatement cost assessment service includes a consolidated summary schedule, a named surveyor managing the full instruction, single-invoice billing, and under the 3-Year Protection Plan proactive annual BCIS-indexed rebuild cost updates delivered before each renewal date. It is a fully managed service, not a bulk order of individual assessments.' },
-  { question: 'How does the 3-Year Protection Plan work for a portfolio reinstatement cost assessment?', answer: 'We carry out full RICS-regulated reinstatement cost assessments across the portfolio in year one, then manage annual BCIS indexation rebuild cost updates and deliver updated reports before each relevant renewal date. You do not need to re-instruct the ongoing compliance is handled for you.' },
+  { question: 'How does the 3-Year Protection Plan work for a portfolio reinstatement cost assessment?', answer: 'We carry out full RICS-regulated reinstatement cost assessments across the portfolio in year one, then manage annual BCIS indexation rebuild cost updates and deliver updated reports before each relevant renewal date. You do not need to re-instruct — the ongoing compliance is handled for you.' },
   { question: 'Do you provide portfolio reinstatement cost assessments for institutional investors and fund managers?', answer: 'Yes. We provide portfolio reinstatement cost assessments and rebuild cost assessments for property funds, REITs, real estate investment managers and family offices with multi-asset UK portfolios, with individual RICS-regulated reports per property and a consolidated portfolio summary.' },
 ]
 
@@ -66,7 +66,7 @@ export default function PortfolioPage() {
               Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              A managed RICS assessment service for property portfolios - individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
+              A managed RICS assessment service for property portfolios — individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
@@ -105,7 +105,7 @@ export default function PortfolioPage() {
             </h2>
             <ul className="tick-list space-y-4 mb-8">
               {[
-                { title: 'Inconsistent declared figures', desc: 'Different assets instructed at different times produce figures assessed against different cost benchmarks - leaving gaps that only become visible at claim.' },
+                { title: 'Inconsistent declared figures', desc: 'Different assets instructed at different times produce figures assessed against different cost benchmarks — leaving gaps that only become visible at claim.' },
                 { title: 'Missed renewal cycles', desc: 'Managing renewal dates across a multi-asset portfolio without a system means assessments go stale. RICS recommends a formal review at least every three years.' },
                 { title: 'PI exposure at scale', desc: 'Managing agents and asset managers who arrange insurance for multiple assets carry a compounding professional indemnity exposure if any declared value is materially incorrect.' },
               ].map(({ title, desc }) => (
@@ -130,7 +130,7 @@ export default function PortfolioPage() {
               {[
                 { n: '1', label: 'Single instruction', desc: 'One engagement letter. One named surveyor. One invoice covering every asset.' },
                 { n: '1', label: 'One schedule', desc: 'A consolidated broker-ready summary listing every property, figure and review date.' },
-                { n: '8', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively - no re-instructing, no missed renewals.' },
+                { n: '8', label: 'Rolling cycle', desc: 'Annual BCIS indexation managed proactively — no re-instructing, no missed renewals.' },
               ].map(({ n, label, desc }) => (
                 <div key={label} className="flex gap-5 items-start">
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white" style={{background:'linear-gradient(135deg, #0057FF, #0040CC)'}}>
@@ -182,7 +182,7 @@ export default function PortfolioPage() {
             </h2>
             <ol className="circuit-steps space-y-5 mb-8">
               {[
-                { step: '01', title: 'Submit your asset list', desc: 'Send us a schedule of properties - address, type, approximate floor area. We provide a consolidated quote within one business day.' },
+                { step: '01', title: 'Submit your asset list', desc: 'Send us a schedule of properties — address, type, approximate floor area. We provide a consolidated quote within one business day.' },
                 { step: '02', title: 'Single engagement letter', desc: 'One agreement covers every asset. We allocate a named surveyor as your single point of contact for the entire portfolio.' },
                 { step: '03', title: 'RICS assessments carried out', desc: 'Desktop or on-site assessments are completed for each property. Individual reports are issued as they complete, not held until the last one is done.' },
                 { step: '04', title: 'Consolidated schedule issued', desc: 'A broker-ready portfolio schedule is delivered alongside the final individual report - ready to pass straight to your insurer or broker.' },
@@ -213,7 +213,7 @@ export default function PortfolioPage() {
               Everything managed <span className="blue-keyword">under one roof</span>.
             </h2>
             <p className="text-[#64748b] text-base mt-4 max-w-xl mx-auto">
-              A portfolio instruction is not a bulk order - it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
+              A portfolio instruction is not a bulk order — it is a managed service with a single point of contact, consolidated reporting and a proactive renewal cycle.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

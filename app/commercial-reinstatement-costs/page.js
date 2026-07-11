@@ -26,9 +26,9 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why does a commercial property need a RICS reinstatement cost assessment rather than an online calculator?', answer: 'Online calculators cannot account for tenant fitout, specialist plant, complex M&E services, or bespoke construction all of which form part of the commercial reinstatement cost. A RICS-regulated reinstatement cost assessment captures the full rebuild cost specific to your building. Any shortfall at claim triggers the average clause, and insurers apply it without exception.' },
-  { question: 'How often should a commercial reinstatement cost assessment be updated?', answer: 'A formal RICS rebuild cost assessment is required at least every three years, with annual BCIS-indexed adjustment in between. UK construction costs rose over 30% between 2020 and 2024 any commercial reinstatement cost assessment not formally reviewed in that period is likely to be materially inaccurate. Our 3-Year Protection Plan handles both requirements under a single instruction.' },
-  { question: 'Do you carry out reinstatement cost assessments for listed commercial buildings?', answer: 'Yes. Our on-site reinstatement cost assessment service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises. Listed commercial properties require physical inspection a desktop rebuild cost assessment cannot capture heritage materials, conservation consent costs or specialist trades.' },
+  { question: 'Why does a commercial property need a RICS reinstatement cost assessment rather than an online calculator?', answer: 'Online calculators cannot account for tenant fitout, specialist plant, complex M&E services, or bespoke construction, all of which form part of the commercial reinstatement cost. A RICS-regulated reinstatement cost assessment captures the full rebuild cost specific to your building. Any shortfall at claim triggers the average clause, and insurers apply it without exception.' },
+  { question: 'How often should a commercial reinstatement cost assessment be updated?', answer: 'A formal RICS rebuild cost assessment is required at least every three years, with annual BCIS-indexed adjustment in between. UK construction costs rose over 30% between 2020 and 2024; any commercial reinstatement cost assessment not formally reviewed in that period is likely to be materially inaccurate. Our 3-Year Protection Plan handles both requirements under a single instruction.' },
+  { question: 'Do you carry out reinstatement cost assessments for listed commercial buildings?', answer: 'Yes. Our on-site reinstatement cost assessment service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises. Listed commercial properties require physical inspection; a desktop rebuild cost assessment cannot capture heritage materials, conservation consent costs or specialist trades.' },
   { question: 'Can you provide a reinstatement cost assessment for a mixed-use development?', answer: 'Yes. Mixed-use developments containing both residential and commercial elements are assessed under a single reinstatement cost assessment instruction, with the declared value output separated by use class for the insurer. This ensures the commercial reinstatement cost and the residential rebuild cost are each correctly declared.' },
   { question: 'Are your commercial reinstatement cost assessment reports accepted by all UK insurers?', answer: 'Yes. Every RICS-regulated reinstatement cost assessment and rebuild cost assessment we produce is accepted without amendment by all UK commercial insurers and brokers. Each report documents the declared value, methodology, key assumptions and review date in the format the market expects.' },
 ]
@@ -66,7 +66,7 @@ export default function CommercialPage() {
               Commercial <span className="blue-keyword">underinsurance</span> starts with the <span className="blue-keyword">wrong figure</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
+              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex – and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -127,9 +127,9 @@ export default function CommercialPage() {
           <div className="space-y-3 lg:pt-10">
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-4">How approaches compare</p>
             {[
-              { title: 'Online calculators', sub: 'Miss fitout, plant and M&E - wrong for most commercial properties.', ok: false },
+              { title: 'Online calculators', sub: 'Miss fitout, plant and M&E – wrong for most commercial properties.', ok: false },
               { title: 'Index-linking alone', sub: 'If the base figure was wrong, index-linking compounds the error.', ok: false },
-              { title: 'Old or inherited valuations', sub: 'Build costs rose 30%+ since 2020 - pre-pandemic figures mislead.', ok: false },
+              { title: 'Old or inherited valuations', sub: 'Build costs rose 30%+ since 2020 – pre-pandemic figures mislead.', ok: false },
               { title: 'RICS reinstatement cost assessment', sub: 'Captures all cost layers. Accepted by all UK insurers. PI-insured and defensible.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div
@@ -153,7 +153,7 @@ export default function CommercialPage() {
                 </div>
               </div>
             ))}
-            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow cta-flash">See our portfolio assessment service ?</Link></p>
+            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow cta-flash">See our portfolio assessment service?</Link></p>
           </div>
         </div>
       </section>
@@ -217,7 +217,7 @@ export default function CommercialPage() {
             {[
               {
                 title: 'Tenant Fitout Captured',
-                desc: 'We identify and value Category A and B fitout installed by occupying tenants - a cost layer that online tools and index-linked valuations routinely miss entirely.',
+                desc: 'We identify and value Category A and B fitout installed by occupying tenants – a cost layer that online tools and index-linked valuations routinely miss entirely.',
                 href: '/contact',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -227,7 +227,7 @@ export default function CommercialPage() {
               },
               {
                 title: 'Listed Commercial',
-                desc: 'Grade I, Grade II* and Grade II commercial buildings assessed by surveyors experienced in historic fabric, specialist materials and Heritage England compliance.',
+                desc: 'Grade I, Grade II* and Grade II commercial buildings assessed by surveyors experienced in historic fabric, specialist materials and Historic England compliance.',
                 href: '/listed-buildings',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
@@ -237,7 +237,7 @@ export default function CommercialPage() {
               },
               {
                 title: 'Mixed-Use Assessment',
-                desc: 'A single instruction covers the entire development. Output is separated by use class - residential and commercial figures presented cleanly for your insurer.',
+                desc: 'A single instruction covers the entire development. Output is separated by use class – residential and commercial figures presented cleanly for your insurer.',
                 href: '/contact',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">

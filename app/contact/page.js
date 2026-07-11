@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
     description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS reinstatement cost assessment surveyors' }],
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement — RICS reinstatement cost assessment surveyors' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -29,7 +29,7 @@ const localBusinessSchema = {
   '@type': ['LocalBusiness', 'ProfessionalService'],
   '@id': 'https://stearlingreinstatement.com/#organization',
   name: 'Stearling Reinstatement',
-  description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+  description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders, and property professionals across the UK.',
   url: 'https://stearlingreinstatement.com',
   telephone: '+442031788099',
   email: 'info@stearlingreinstatement.com',
@@ -65,7 +65,7 @@ const localBusinessSchema = {
 
 const faqItems = [
   { question: 'How quickly will you respond to my enquiry?', answer: 'All enquiries receive a response within 24 hours on business days.' },
-  { question: 'Is there any commitment when I make an enquiry?', answer: 'None. We provide a written fee estimate before any work begins - you instruct only when you are ready to proceed.' },
+  { question: 'Is there any commitment when I make an enquiry?', answer: 'None. We provide a written fee estimate before any work begins — you instruct only when you are ready to proceed.' },
   { question: 'What information should I have ready?', answer: 'Property address, approximate floor area, construction type, number of storeys, and whether you need a desktop or on-site assessment. We can work with estimates at the enquiry stage.' },
   { question: 'Can I instruct for multiple properties at once?', answer: 'Yes. Provide details of each property and we will return a consolidated quote for the full portfolio under a single engagement letter.' },
   { question: 'Are you RICS-regulated and PI insured?', answer: 'Yes. All assessments are conducted by or under the direct supervision of a RICS-registered member, and we carry comprehensive professional indemnity insurance on every instruction.' },
@@ -108,7 +108,7 @@ export default function ContactPage() {
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
             <Image
               src="/AdobeStock_1956380728.jpeg"
-              alt="Stearling Reinstatement reinstatement cost assessment surveyors"
+              alt="Stearling Reinstatement — reinstatement cost assessment surveyors"
               fill
               className="object-cover"
               priority

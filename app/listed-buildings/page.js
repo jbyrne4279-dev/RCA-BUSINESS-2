@@ -27,11 +27,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'Why do listed buildings need a specialist reinstatement cost assessment?', answer: 'Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement of a listed building must be carried out in original style and materials. Lime mortar, handmade brick, heritage contractors and conservation consents all carry significant premiums over standard construction costs. A standard reinstatement cost assessment or generic rebuild cost tool cannot capture these a specialist on-site assessment by a heritage-qualified surveyor is the only method that produces a defensible declared value.' },
+  { question: 'Why do listed buildings need a specialist reinstatement cost assessment?', answer: 'Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement of a listed building must be carried out in original style and materials. Lime mortar, handmade brick, heritage contractors and conservation consents all carry significant premiums over standard construction costs. A standard reinstatement cost assessment or generic rebuild cost tool cannot capture these. A specialist on-site assessment by a heritage-qualified surveyor is the only method that produces a defensible declared value.' },
   { question: 'Is a desktop reinstatement cost assessment appropriate for a listed building?', answer: 'No. A desktop reinstatement cost assessment applies standard BCIS construction rates and cannot account for specialist materials, heritage labour, conservation authority consent costs or the extended programme timescales that characterise a listed building reinstatement. On-site inspection by a specialist surveyor is the only approach that produces a defensible rebuild cost assessment for a listed property.' },
   { question: 'Can Stearling Reinstatement assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site reinstatement cost assessments for all listed building categories Grade I, Grade II* and Grade II. Grade I and Grade II* buildings require physical inspection and specialist heritage knowledge that no desktop rebuild cost assessment can replicate. We confirm the programme and fee on receipt of your enquiry.' },
   { question: 'What is the VAT position on a listed building reinstatement cost assessment?', answer: 'A full rebuild after total loss is zero-rated for VAT purposes. However, demolition, professional fees and partial-damage repairs all attract 20% VAT. Since most real insurance claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance reinstatement work and it is routinely excluded from desktop or non-specialist rebuild cost assessments.' },
-  { question: 'How often should a listed building reinstatement cost assessment be updated?', answer: 'A full specialist reinstatement cost assessment is required at least every three years, with annual BCIS-indexed inflation reviews in between. Where material works have been carried out or where the building has not had a formal rebuild cost assessment since before 2020 a fresh site-based assessment should be commissioned before the next renewal date.' },
+  { question: 'How often should a listed building reinstatement cost assessment be updated?', answer: 'A full specialist reinstatement cost assessment is required at least every three years, with annual BCIS-indexed inflation reviews in between. Where material works have been carried out or where the building has not had a formal rebuild cost assessment since before 2020, a fresh site-based assessment should be commissioned before the next renewal date.' },
 ]
 
 export default function ListedBuildingsPage() {
@@ -101,7 +101,7 @@ export default function ListedBuildingsPage() {
               Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must replicate original style and materials. That legal obligation transforms the cost picture: lime mortar, handmade brick, heritage contractors, conservation consents and extended timescales all carry significant premiums over standard construction rates.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              Generic desktop calculators apply standard BCIS rates and systematically miss every one of these uplifts. For complex Grade I properties the gap between a desktop figure and a defensible declared value can exceed 100%.
+              Generic desktop calculators apply standard BCIS rates and systematically miss every one of these uplifts. For complex Grade I properties, the gap between a desktop figure and a defensible declared value can exceed 100%.
             </p>
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
@@ -113,21 +113,21 @@ export default function ListedBuildingsPage() {
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">I</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade I</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">Highest significance - only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">Highest significance — only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
                 </div>
               </div>
               <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II*</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II*</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings - 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings — 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
                 </div>
               </div>
               <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
                 <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II</span>
                 <div>
                   <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II</p>
-                  <p className="text-[#64748b] text-sm leading-relaxed">The most common category - 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">The most common category — 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
                 </div>
               </div>
             </div>
@@ -211,7 +211,7 @@ export default function ListedBuildingsPage() {
               },
               {
                 title: 'Heritage Materials',
-                desc: 'We price lime mortar, handmade brick, natural stone, historic timber and specialist period finishes - each at rates that reflect the actual cost of authentic reinstatement.',
+                desc: 'We price lime mortar, handmade brick, natural stone, historic timber, and specialist period finishes — each at rates that reflect the actual cost of authentic reinstatement.',
                 href: '/contact#contact-form',
                 icon: (
                   <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">

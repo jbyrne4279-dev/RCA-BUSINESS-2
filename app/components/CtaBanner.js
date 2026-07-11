@@ -76,12 +76,12 @@ export default function CtaBanner() {
             {[
               {
                 label: 'Specialist only',
-                desc: 'Reinstatement cost assessments no general surveying, no distractions.',
+                desc: 'Reinstatement cost assessments — no general surveying, no distractions.',
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>,
               },
               {
-                label: 'RICS regulated',
-                desc: 'Every assessment supervised by a RICS-registered member.',
+                label: 'RICS-regulated',
+                desc: 'Every assessment is supervised by a RICS-registered member.',
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l2.5 5.5H20l-4.5 3.5 1.5 5.5L12 13.5 7 16.5l1.5-5.5L4 7.5h5.5L12 2z"/></svg>,
               },
               {

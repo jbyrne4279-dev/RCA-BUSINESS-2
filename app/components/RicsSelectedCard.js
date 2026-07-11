@@ -26,7 +26,7 @@ export default function RicsSelectedCard() {
       </span>
       <div>
         <p className="font-semibold text-[#0d1b3e] text-sm mb-1">RICS-regulated assessment</p>
-        <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT and loss-of-rent provision - and satisfies the insuring obligation.</p>
+        <p className="text-[#64748b] text-sm leading-relaxed">Independent, defensible figure prepared to RICS guidance. Covers structure, communal areas, professional fees, demolition, VAT, and loss-of-rent provision – and satisfies the insuring obligation.</p>
       </div>
     </div>
   )

@@ -30,8 +30,8 @@ const faqItems = [
   { question: 'Can a managing agent be personally liable for underinsurance on a block?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate reinstatement cost assessment, the managing agent can face a professional negligence or E&O claim independent of who holds the insuring obligation under the lease. A current RICS-regulated reinstatement cost assessment on the recommended three-year cycle is the defensible evidence that you discharged the duty correctly.' },
   { question: 'Will insurers and brokers accept a reinstatement cost assessment from Stearling Reinstatement?', answer: 'Yes. Every reinstatement cost assessment (rebuild cost assessment) we produce is accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect. Forward it directly at renewal.' },
   { question: 'How quickly can a managing agent receive a reinstatement cost assessment report?', answer: 'Desktop reinstatement cost assessments are delivered within 24 hours of instruction for standard residential blocks. For on-site rebuild cost assessment instructions we confirm the survey programme at the outset. For portfolio instructions we agree a phased schedule so no renewal window is missed.' },
-  { question: 'Is index-linking the sum insured each year a substitute for a reinstatement cost assessment?', answer: 'No. Index-linking adjusts the declared value figure but compounds any existing error in the original reinstatement cost assessment and does not capture material works, specification changes or structural alterations. RICS requires a full formal reinstatement cost assessment at least every three years index-linking alone does not satisfy that requirement.' },
-  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20–50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal reinstatement cost assessment produces the correct DV as its primary output.' },
+  { question: 'Is index-linking the sum insured each year a substitute for a reinstatement cost assessment?', answer: 'No. Index-linking adjusts the declared value figure but compounds any existing error in the original reinstatement cost assessment and does not capture material works, specification changes or structural alterations. RICS requires a full formal reinstatement cost assessment at least every three years; index-linking alone does not satisfy that requirement.' },
+  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent — the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20–50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal reinstatement cost assessment produces the correct DV as its primary output.' },
   { question: 'Can Stearling Reinstatement assess multiple blocks under one portfolio instruction?', answer: 'Yes. We produce individual RICS-regulated reinstatement cost assessment reports per property, with residential and commercial elements split for mixed-use blocks, a consolidated portfolio summary schedule, and staggered scheduling to smooth service-charge cost across renewal years.' },
 ]
 
@@ -95,10 +95,10 @@ export default function ManagingAgentsPage() {
               <span className="blue-keyword">Underinsurance</span>{' '}is your risk, not the freeholder&apos;s.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall - and the leaseholder complaints - land with you.
+              The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall – and the leaseholder complaints – land with you.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              A stale or inadequate valuation is the oversight that becomes a professional negligence claim. Under FCA Consumer Duty, leaseholders are now defined as customers - an unjustified sum insured fails that test too.
+              A stale or inadequate valuation is the oversight that becomes a professional negligence claim. Under FCA Consumer Duty, leaseholders are now defined as customers – an unjustified sum insured fails that test too.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get a Quote</Link>
           </div>
@@ -111,7 +111,7 @@ export default function ManagingAgentsPage() {
                 { label: 'Stale valuation (3+ years old)', desc: 'Creates PI exposure; average clause triggered on a claim.', ok: false },
                 { label: 'Index-linking only', desc: 'Compounds existing errors; no physical reinspection.', ok: false },
                 { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
-                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
+                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage – PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
                 <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#16a34a] bg-[rgba(22,163,74,0.06)]' : 'border-[#f87171] bg-[rgba(239,68,68,0.05)]'}`}>
                   <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
@@ -140,12 +140,12 @@ export default function ManagingAgentsPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
             <div className="circuit-steps space-y-3">
               {[
-                'Documented declared value - defensible at claim stage',
+                'Documented declared value – defensible at claim stage',
                 'Clear methodology statement for insurers and brokers',
                 'Review date and indexation guidance',
                 'Mixed-use itemisation for residential and commercial blocks',
                 'Professional indemnity backed assessment',
-                'Broker-ready format - forward directly, no rework',
+                'Broker-ready format – forward directly, no rework',
                 'Phased portfolio scheduling to smooth service-charge cost',
               ].map((item, i) => (
                 <div key={item} className="flex gap-3 items-start step-reveal-item">
@@ -202,7 +202,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L13.5 7.5H19L14.5 11L16.5 17L11 13.5L5.5 17L7.5 11L3 7.5H8.5L11 2Z" stroke="#fff" strokeWidth="1.6" strokeLinejoin="round"/></svg>
                 ),
                 title: 'PI Protection',
-                desc: 'Every report is backed by professional indemnity insurance and produced to RICS guidance - the documented defence you need if a claim shortfall is ever questioned.',
+                desc: 'Every report is backed by professional indemnity insurance and produced to RICS guidance – the documented defence you need if a claim shortfall is ever questioned.',
                 href: '/services',
               },
               {
@@ -210,7 +210,7 @@ export default function ManagingAgentsPage() {
                   <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#fff" strokeWidth="1.6"/><path d="M11 7v4l3 2" stroke="#fff" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 ),
                 title: '24-hr Turnaround on Quotes',
-                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days - no renewal window missed.',
+                desc: 'Instruction confirmed to quote within one working day. Survey and report delivery within 10–15 working days – no renewal window missed.',
                 href: '/contact#contact-form',
               },
               {

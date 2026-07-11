@@ -117,7 +117,7 @@ const orgSchema = {
       telephone: '+442031788099',
       email: 'info@stearlingreinstatement.com',
       areaServed: { '@type': 'Country', name: 'United Kingdom' },
-      priceRange: 'Â£',
+      priceRange: '£',
       knowsAbout: [
         'Reinstatement Cost Assessment',
         'RICS Rebuild Cost Assessment',

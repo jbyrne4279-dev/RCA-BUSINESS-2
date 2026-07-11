@@ -106,7 +106,7 @@ export default function ThankYouClient() {
             Enquiry Received
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">
-            We have your enquiry.
+            We have received your enquiry.
           </h1>
           <p className="text-[#5f6368] text-lg leading-relaxed mb-10">
             A RICS-regulated surveyor will be in touch within 24 hours on business days.

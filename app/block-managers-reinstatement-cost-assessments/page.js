@@ -29,8 +29,8 @@ export const metadata = {
 const faqItems = [
   { question: 'As a block manager, am I personally liable for underinsurance if no reinstatement cost assessment has been carried out?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full reinstatement cost, failure to commission a current RICS-regulated reinstatement cost assessment exposes you to a personal negligence claim from leaseholders if a claim shortfall arises. A current reinstatement cost assessment is the documented evidence that you discharged that duty correctly.' },
   { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated reinstatement cost assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
-  { question: 'How do block managers instruct reinstatement cost assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated reinstatement cost assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
-  { question: 'Can leaseholders or a tribunal challenge a RICS reinstatement cost assessment figure?', answer: 'A RICS-regulated reinstatement cost assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our reinstatement cost assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
+  { question: 'How do block managers instruct reinstatement cost assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated reinstatement cost assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter — no repeat admin, no separate invoices per block.' },
+  { question: 'Can leaseholders or a tribunal challenge a RICS reinstatement cost assessment figure?', answer: 'A RICS-regulated reinstatement cost assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our reinstatement cost assessment reports are produced to that standard and are defensible to that level of scrutiny, providing the block manager with a documented, professional position.' },
   { question: 'What information does Stearling Reinstatement need to produce a reinstatement cost assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation. The process takes minutes and we can work with estimates at the enquiry stage.' },
 ]
 
@@ -67,7 +67,7 @@ export default function BlockManagersPage() {
               <span className="blue-keyword">Compliant figures</span> across every block you manage.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge.
+              As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage — documented, defensible, and accepted at renewal without challenge.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
@@ -105,7 +105,7 @@ export default function BlockManagersPage() {
               Every block you manage needs a <span className="blue-keyword">regular RICS review</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              RICS guidance requires formal reassessment at least every three years, with annual inflation adjustments in between. Across a portfolio of blocks, keeping track of each renewal cycle - and ensuring no property lapses - is a material compliance obligation.
+              RICS guidance requires formal reassessment at least every three years, with annual inflation adjustments in between. Across a portfolio of blocks, keeping track of each renewal cycle — and ensuring no property lapses — is a material compliance obligation.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               When figures lapse or an online calculator is used in place of a regulated assessment, your professional indemnity exposure increases significantly. In any underinsurance dispute, only a RICS-regulated report provides a defensible methodology.
@@ -150,8 +150,8 @@ export default function BlockManagersPage() {
             <ul className="tick-list space-y-4">
               {[
                 { title: '24-hr desktop turnaround', desc: 'Broker-ready report issued within 24 hours of instruction for standard blocks.' },
-                { title: 'Portfolio schedules', desc: 'A single summary schedule covering all blocks in your managed portfolio - one document for renewal season.' },
-                { title: 'Managed renewals', desc: 'We track each block\'s review date and issue renewal-ready reports before you need them - no chasing required.' },
+                { title: 'Portfolio schedules', desc: 'A single summary schedule covering all blocks in your managed portfolio — one document for the renewal season.' },
+                { title: 'Managed renewals', desc: 'We track each block\'s review date and issue renewal-ready reports before you need them — no chasing required.' },
                 { title: 'Single-invoice billing', desc: 'One consolidated invoice per portfolio instruction. No per-block admin.' },
                 { title: 'Named surveyor throughout', desc: 'One point of contact across your entire portfolio, from instruction to report delivery.' },
               ].map(({ title, desc }) => (
@@ -175,7 +175,7 @@ export default function BlockManagersPage() {
               One instruction covers your <span className="blue-keyword">entire managed portfolio</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              We work with block management firms of all sizes - from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
+              We work with block management firms of all sizes — from a handful of blocks to portfolios of hundreds. A single instruction to us triggers a coordinated assessment across every property, with individual reports per block and a consolidated portfolio schedule.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               Our 3-Year Protection Plan means you instruct once and we handle all subsequent renewals, including annual BCIS-indexed updates, so compliance is maintained without any re-instruction or admin from your team.

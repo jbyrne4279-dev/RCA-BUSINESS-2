@@ -28,11 +28,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the reinstatement cost the full cost to rebuild the property from scratch. That is what a reinstatement cost assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20–50%. Confusing the two figures is one of the most common causes of underinsurance.' },
-  { question: 'Who is responsible for commissioning a reinstatement cost assessment?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC or RTM company holds the insuring obligation and the duty to arrange a current reinstatement cost assessment but the practical work is often delegated to a managing agent. Whoever is responsible for setting the declared value carries the personal liability if the figure is wrong and a claim shortfall arises.' },
+  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the reinstatement cost — the full cost to rebuild the property from scratch. That is what a reinstatement cost assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20–50%. Confusing the two figures is one of the most common causes of underinsurance.' },
+  { question: 'Who is responsible for commissioning a reinstatement cost assessment?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC or RTM company holds the insuring obligation and the duty to arrange a current reinstatement cost assessment, but the practical work is often delegated to a managing agent. Whoever is responsible for setting the declared value carries personal liability if the figure is wrong and a claim shortfall arises.' },
   { question: 'What happens if the building is underinsured and there is a claim?', answer: 'The insurer applies the average clause and pays out only in proportion to how much of the true reinstatement cost is covered. If the rebuild cost assessment shows the true reinstatement cost is £1.5m but the building is only insured for £1m, a £300,000 claim pays out just £200,000. The leaseholders and freeholder must fund the gap. A current RICS-regulated reinstatement cost assessment is the primary protection against this.' },
   { question: 'As a leaseholder, can I commission my own independent reinstatement cost assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent reinstatement cost assessment. The report can be used as evidence in a formal challenge to the declared value, a service charge dispute at the First-tier Tribunal, or a complaint to the Property Ombudsman.' },
-  { question: 'How often should the reinstatement cost assessment be updated?', answer: 'RICS guidance requires a formal reinstatement cost assessment (rebuild cost assessment) at least every three years. Annual BCIS-indexed inflation adjustment between assessments is good practice but does not replace a full reassessment it only adjusts the existing figure without catching structural changes or errors in the original declared value.' },
+  { question: 'How often should the reinstatement cost assessment be updated?', answer: 'RICS guidance requires a formal reinstatement cost assessment (rebuild cost assessment) at least every three years. Annual BCIS-indexed inflation adjustment between assessments is good practice but does not replace a full reassessment — it only adjusts the existing figure without catching structural changes or errors in the original declared value.' },
   { question: 'What information does Stearling Reinstatement need to provide a reinstatement cost assessment?', answer: 'Just the address, property type, approximate gross internal floor area, and any previous reinstatement cost assessment report if you have one. We can work with estimates at enquiry stage and will let you know if we need anything further before instruction.' },
 ]
 
@@ -69,7 +69,7 @@ export default function FreeholdersLeaseholdersPage() {
               Defend the <span className="blue-keyword">insuring covenant</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
+              When the declared value is too low, the insurer pays out pro rata — the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
@@ -96,10 +96,10 @@ export default function FreeholdersLeaseholdersPage() {
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              What freeholders owe leaseholders - and what can <span className="blue-keyword">go wrong</span>.
+              What freeholders owe leaseholders — and what can <span className="blue-keyword">go wrong</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance - it is to insure to the full reinstatement cost of the building.
+              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance — it is to insure to the full reinstatement cost of the building.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed">
               Setting the figure without a professional assessment exposes the freeholder to personal liability if an underinsured claim arises. Leaseholders who suffer a shortfall can pursue the party responsible for the declared value, not the insurer.
@@ -133,9 +133,9 @@ export default function FreeholdersLeaseholdersPage() {
             </div>
             <div className="space-y-3">
               {[
-                'Build costs have risen 30 %+ since 2020 (BCIS) - old figures are rarely adjusted',
+                'Build costs have risen 30 %+ since 2020 (BCIS) — old figures are rarely adjusted',
                 'Professional fees (architect, engineer, QS) are commonly omitted entirely',
-                'Demolition and site clearance - often left out of the declared value',
+                'Demolition and site clearance — often left out of the declared value',
                 'Loss-of-rent and alternative accommodation provision frequently overlooked',
               ].map((risk) => (
                 <div key={risk} className="risk-card flex gap-3 items-start rounded-xl border border-[#e2e8f0] p-4 bg-white step-reveal-item">
@@ -161,7 +161,7 @@ export default function FreeholdersLeaseholdersPage() {
               If the matter is not resolved, the assessment can be submitted as evidence in a service charge dispute at the First-tier Tribunal (Property Chamber). Tribunal panels give weight to RICS-regulated figures over unsubstantiated schedules.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed">
-              Acting early - before a claim arises - is far stronger than trying to recover a shortfall after an event.
+              Acting early — before a claim arises — is far stronger than trying to recover a shortfall after an event.
             </p>
           </div>
         </div>
