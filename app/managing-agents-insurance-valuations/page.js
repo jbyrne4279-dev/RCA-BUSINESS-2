@@ -92,7 +92,7 @@ export default function ManagingAgentsPage() {
           <div>
             <span className="badge badge-blue">Managing Agents</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              <span className="blue-keyword">Underinsurance</span> is your risk, not the freeholder&apos;s.
+              <span className="blue-keyword">Underinsurance</span>{' '}is your risk, not the freeholder&apos;s.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall - and the leaseholder complaints - land with you.
