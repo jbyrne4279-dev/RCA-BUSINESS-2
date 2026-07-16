@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
+import RiskQuizSection from './components/RiskQuizSection'
 import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
@@ -254,8 +255,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. CTA BANNER */}
-
+      {/* 7. RISK QUIZ */}
+      <RiskQuizSection />
 
       <ContactSection heading="Instruct an assessment today." />
 
