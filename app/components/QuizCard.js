@@ -165,8 +165,8 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
       )}
 
       {isResultStep && result && (
-        <div className="quiz-step-in pt-9">
-          <div className="flex items-center gap-3 mb-4">
+        <div className="quiz-step-in">
+          <div className="flex items-center gap-3 mb-4 pl-9 pr-9 min-h-8">
             <span
               className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
               style={{ background: `${result.riskColor}1a`, color: result.riskColor }}
