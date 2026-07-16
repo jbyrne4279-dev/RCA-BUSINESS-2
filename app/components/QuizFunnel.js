@@ -32,6 +32,7 @@ const ROLES = [
   { id: 'freeholder', label: 'Freeholder / Leaseholder' },
   { id: 'portfolio', label: 'Block Manager / Portfolio Landlord' },
   { id: 'broker', label: 'Insurance Broker' },
+  { id: 'other', label: 'Other' },
 ]
 
 const LAST_ASSESSED = [
