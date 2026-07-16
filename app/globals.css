@@ -823,6 +823,74 @@ a.link-amber:hover {
   text-shadow: 0 0 12px rgba(0,87,255,0.6);
 }
 
+/* ── Quiz funnel popup ── */
+@keyframes quiz-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes quiz-pop-in {
+  from { opacity: 0; transform: scale(0.94) translateY(12px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.quiz-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(13,27,62,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: quiz-fade-in 0.25s ease both;
+}
+.quiz-panel {
+  animation: quiz-pop-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.quiz-option {
+  text-align: left;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+.quiz-option:hover {
+  border-color: #0057FF;
+  background: #f0f4ff;
+  transform: translateY(-1px);
+}
+.quiz-option.selected {
+  border-color: #0057FF;
+  background: rgba(0,87,255,0.08);
+  box-shadow: 0 0 0 3px rgba(0,87,255,0.15);
+}
+.quiz-progress-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0057FF, #00aaff);
+  border-radius: 9999px;
+  transition: width 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.quiz-fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 150;
+}
+@media (max-width: 639px) {
+  .quiz-fab { right: 1rem; bottom: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .quiz-overlay, .quiz-panel { animation: none !important; }
+}
+
 /* ── Prevent iOS Safari zoom on input focus ── */
 @media (max-width: 768px) {
   input, select, textarea {
