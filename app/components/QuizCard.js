@@ -217,7 +217,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             <button type="submit" className="btn-shine w-full justify-center !py-3 !text-sm !mt-4">
               Contact RICS Surveyor
             </button>
-            <p className="text-xs text-center cta-no-obligation">No obligation. RICS-regulated. Reply within 24 hours.</p>
+            <p className="text-xs text-center cta-no-obligation">Reply within 24 hours.</p>
           </form>
         </div>
       )}
