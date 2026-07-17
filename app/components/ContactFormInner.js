@@ -1,6 +1,7 @@
 'use client'
 import { useSearchParams } from 'next/navigation'
 import Image from 'next/image'
+import { useRef } from 'react'
 
 const SERVICE_MAP = {
   desktop: 'Desktop Reinstatement Cost Assessment',
@@ -8,9 +9,30 @@ const SERVICE_MAP = {
   '3year': '3-Year Reinstatement Cost Assessment',
 }
 
+const ADS_CONVERSION = 'AW-16853906784/dC7ICInWv80cEODqyOQ-'
+
 export default function ContactFormInner({ heading }) {
   const params = useSearchParams()
   const preselected = SERVICE_MAP[params.get('service')] ?? ''
+  const formRef = useRef(null)
+
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    function doSubmit() {
+      formRef.current?.submit()
+    }
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: ADS_CONVERSION,
+        event_callback: doSubmit,
+      })
+      setTimeout(doSubmit, 1000)
+    } else {
+      doSubmit()
+    }
+  }
 
   return (
     <div>
@@ -24,7 +46,7 @@ export default function ContactFormInner({ heading }) {
         </p>
       </div>
 
-      <form action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-6">
+      <form ref={formRef} onSubmit={handleSubmit} action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-6">
         <input type="hidden" name="_next" value="https://stearlingreinstatement.com/thank-you" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

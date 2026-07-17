@@ -7,6 +7,14 @@ export default function ThankYouClient() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
+    window.dataLayer = window.dataLayer || []
+    function gtag() { window.dataLayer.push(arguments) }
+    gtag('event', 'conversion', {
+      send_to: 'AW-16853906784/dC7ICInWv80cEODqyOQ-',
+    })
+  }, [])
+
+  useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
