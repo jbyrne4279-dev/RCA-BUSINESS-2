@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 
-export default function FaqSection({ description, items }) {
+export default function FaqSection({ description, items, flip = false }) {
   const [open, setOpen] = useState(null)
 
   const schema = {
@@ -15,7 +15,10 @@ export default function FaqSection({ description, items }) {
   }
 
   return (
-    <section className="bg-white py-12 md:py-28 px-6 md:px-10">
+    <section
+      className="py-12 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]"
+      style={{ background: flip ? '#f0f4ff' : '#ffffff' }}
+    >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

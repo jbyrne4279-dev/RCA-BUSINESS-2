@@ -91,7 +91,7 @@ export default function FreeholdersLeaseholdersPage() {
       <TrustStrip />
 
       {/* 2. SECTION A - The insuring obligation (text left, card right) */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
@@ -122,7 +122,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 3. SECTION B - For leaseholders (card left, text right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Stat card */}
@@ -168,7 +168,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <span className="badge badge-blue mb-4">How We Help</span>
@@ -220,8 +220,8 @@ export default function FreeholdersLeaseholdersPage() {
 
 
 
-      <ContactSection heading="Speak to a specialist about your declared value." />
-      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about reinstatement cost assessments and buildings insurance." items={faqItems} />
+      <ContactSection heading="Speak to a specialist about your declared value." flip />
+      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about reinstatement cost assessments and buildings insurance." items={faqItems} flip />
     </main>
   )
 }

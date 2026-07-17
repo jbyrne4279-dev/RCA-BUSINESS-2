@@ -89,7 +89,7 @@ export default function ListedBuildingsPage() {
       <TrustStrip />
 
       {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Text left */}
           <div>
@@ -136,7 +136,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 3. SECTION B - On-site survey process (card left, text right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Checklist card left */}
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
@@ -189,7 +189,7 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Why Choose Stearling Reinstatement</span>
@@ -243,8 +243,8 @@ export default function ListedBuildingsPage() {
 
 
 
-      <ContactSection heading="Get a specialist on-site assessment for your listed building." />
-      <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} />
+      <ContactSection heading="Get a specialist on-site assessment for your listed building." flip />
+      <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} flip />
     </main>
   )
 }

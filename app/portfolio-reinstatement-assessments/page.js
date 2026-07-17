@@ -264,8 +264,8 @@ export default function PortfolioPage() {
 
 
 
-      <ContactSection heading="Consolidate your portfolio. One instruction." />
-      <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} />
+      <ContactSection heading="Consolidate your portfolio. One instruction." flip />
+      <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} flip />
     </main>
   )
 }

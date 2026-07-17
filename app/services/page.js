@@ -163,7 +163,7 @@ export default function ServicesPage() {
       </section>
 
       {/* 3-COL SERVICE CARDS */}
-      <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section id="service-cards" className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Our Services</span>
@@ -234,7 +234,7 @@ export default function ServicesPage() {
       </section>
 
       {/* RICS REPORT = LEGAL PROTECTION */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue">Your Protection</span>
@@ -277,8 +277,8 @@ export default function ServicesPage() {
 
 
 
-      <ContactSection heading="Not sure which service you need? We'll advise." />
-      <FaqSection description="Still deciding? Use these answers to narrow it down, or contact us and we'll recommend the right service for your property." items={faqItems} />
+      <ContactSection heading="Not sure which service you need? We'll advise." flip />
+      <FaqSection description="Still deciding? Use these answers to narrow it down, or contact us and we'll recommend the right service for your property." items={faqItems} flip />
 
     </main>
   )

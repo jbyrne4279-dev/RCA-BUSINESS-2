@@ -87,7 +87,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* SECTION A - The risk of getting it wrong (text left, card right) */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue">Managing Agents</span>
@@ -132,7 +132,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* SECTION B - What We Deliver (visual left, text right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left: What We Deliver checklist card */}
@@ -187,7 +187,7 @@ export default function ManagingAgentsPage() {
       </section>
 
       {/* 3-COL FEATURE CARDS */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Managing Agents</span>
@@ -237,8 +237,8 @@ export default function ManagingAgentsPage() {
 
 
 
-      <ContactSection heading="Protect yourself and your clients. Instruct us today." />
-      <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} />
+      <ContactSection heading="Protect yourself and your clients. Instruct us today." flip />
+      <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} flip />
     </main>
   )
 }

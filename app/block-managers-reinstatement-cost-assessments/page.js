@@ -95,7 +95,7 @@ export default function BlockManagersPage() {
       <TrustStrip />
 
       {/* 2. SECTION A - The compliance burden (text left, card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: text */}
@@ -141,7 +141,7 @@ export default function BlockManagersPage() {
       </section>
 
       {/* 3. SECTION B - What block managers get (card left, text right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: checklist card */}
@@ -189,7 +189,7 @@ export default function BlockManagersPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
@@ -245,8 +245,8 @@ export default function BlockManagersPage() {
 
 
       {/* 6. CONTACT + FAQ */}
-      <ContactSection heading="Remove the liability. Instruct today." />
-      <FaqSection description="Questions from block management firms about reinstatement cost assessments." items={faqItems} />
+      <ContactSection heading="Remove the liability. Instruct today." flip />
+      <FaqSection description="Questions from block management firms about reinstatement cost assessments." items={faqItems} flip />
 
     </main>
   )

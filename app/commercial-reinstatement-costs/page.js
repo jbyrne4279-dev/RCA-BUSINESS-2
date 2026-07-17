@@ -261,8 +261,8 @@ export default function CommercialPage() {
 
 
 
-      <ContactSection heading="Ready to protect your commercial asset? Instruct today." />
-      <FaqSection description="Direct answers to the most common questions about commercial reinstatement cost assessments." items={faqItems} />
+      <ContactSection heading="Ready to protect your commercial asset? Instruct today." flip />
+      <FaqSection description="Direct answers to the most common questions about commercial reinstatement cost assessments." items={faqItems} flip />
     </main>
   )
 }
