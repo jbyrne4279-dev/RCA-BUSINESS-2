@@ -108,30 +108,34 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
   const showBack = step > 0
 
   return (
-    <div className="relative">
-      {showBack && (
-        <button
-          type="button"
-          aria-label="Back"
-          onClick={() => setStep((s) => s - 1)}
-          className="absolute top-0 left-0 z-10 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
-        </button>
-      )}
-      {onClose && (
-        <button
-          type="button"
-          aria-label="Close"
-          onClick={onClose}
-          className="absolute top-0 right-0 z-10 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
-        </button>
+    <div>
+      {(showBack || onClose) && (
+        <div className="flex items-center justify-between mb-2">
+          {showBack ? (
+            <button
+              type="button"
+              aria-label="Back"
+              onClick={() => setStep((s) => s - 1)}
+              className="w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+          ) : <span />}
+          {onClose ? (
+            <button
+              type="button"
+              aria-label="Close"
+              onClick={onClose}
+              className="w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+            </button>
+          ) : <span />}
+        </div>
       )}
 
       {!isResultStep && (
-        <div key={step} className="quiz-step-in pt-9">
+        <div key={step} className="quiz-step-in">
           {step === 0 && showIntro && <span className="badge badge-blue !mb-3">60-Second Risk Check</span>}
 
           <div className="quiz-dots mb-4">
@@ -140,7 +144,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             ))}
           </div>
 
-          <h3 className={`text-lg md:text-xl font-bold text-[#0d1b3e] leading-snug pr-6 ${step === 0 ? 'mb-1' : 'mb-5'}`}>
+          <h3 className={`text-lg md:text-xl font-bold text-[#0d1b3e] leading-snug ${step === 0 ? 'mb-1' : 'mb-5'}`}>
             {STEPS[step].question}
           </h3>
           {step === 0 && showIntro && (
@@ -165,7 +169,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
       )}
 
       {isResultStep && result && (
-        <div className="quiz-step-in pt-9">
+        <div className="quiz-step-in">
           <div className="flex items-center gap-3 mb-4">
             <span
               className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
