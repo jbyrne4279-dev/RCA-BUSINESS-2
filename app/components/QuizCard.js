@@ -144,11 +144,11 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             ))}
           </div>
 
-          <h3 className={`text-lg md:text-xl font-bold text-[#0d1b3e] leading-snug ${step === 0 ? 'mb-1' : 'mb-5'}`}>
+          <h3 className={`text-lg md:text-xl font-bold text-[#0d1b3e] leading-snug ${step === 0 ? 'mb-2' : 'mb-7'}`}>
             {STEPS[step].question}
           </h3>
           {step === 0 && showIntro && (
-            <p className="text-[#94a3b8] text-xs mb-5">Free risk read-out and tailored recommendation - takes about a minute.</p>
+            <p className="text-[#94a3b8] text-xs mb-7">Free risk read-out and tailored recommendation - takes about a minute.</p>
           )}
 
           <div className="flex flex-col gap-2">
