@@ -6,7 +6,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
+  title: 'Reinstatement Assessments for Block Managers',
   description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
@@ -44,14 +44,6 @@ export default function BlockManagersPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Block Managers', item: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

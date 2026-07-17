@@ -6,8 +6,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Managing Agents and RTM Companies',
-  description: 'Specialist reinstatement cost assessments for managing agents. Protect your PI cover, discharge the lease obligation and demonstrate fair value to leaseholders under FCA Consumer Duty.',
+  title: 'Reinstatement Assessments for Managing Agents',
+  description: 'Specialist reinstatement cost assessments for managing agents and RTM companies. Protect your PI cover and discharge the lease obligation.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
   openGraph: {
     type: 'website',
@@ -45,14 +45,6 @@ export default function ManagingAgentsPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Managing Agents', item: 'https://stearlingreinstatement.com/managing-agents-insurance-valuations' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

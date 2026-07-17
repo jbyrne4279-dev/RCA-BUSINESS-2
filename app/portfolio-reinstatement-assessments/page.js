@@ -5,8 +5,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations',
-  description: 'RICS-regulated reinstatement cost assessments for property portfolios. Consolidated reports with individual asset schedules. Annual indexation available.',
+  title: 'Portfolio Reinstatement Cost Assessments',
+  description: 'RICS-regulated reinstatement cost assessments for property portfolios. Consolidated reports with individual asset schedules.',
   alternates: { canonical: '/portfolio-reinstatement-assessments' },
   openGraph: {
     type: 'website',
@@ -43,14 +43,6 @@ export default function PortfolioPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Portfolio Assessments', item: 'https://stearlingreinstatement.com/portfolio-reinstatement-assessments' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

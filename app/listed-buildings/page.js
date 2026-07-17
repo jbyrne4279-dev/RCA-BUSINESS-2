@@ -6,8 +6,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Listed and Heritage Buildings',
-  description: 'Specialist reinstatement cost assessments for listed buildings. Listed properties carry 20-50% higher rebuild costs than standard construction. Accurate, site-based valuations for buildings insurance.',
+  title: 'Listed & Heritage Building Assessments',
+  description: 'Specialist reinstatement cost assessments for listed buildings, which carry 20-50% higher rebuild costs than standard construction.',
   alternates: { canonical: '/listed-buildings' },
   openGraph: {
     type: 'website',
@@ -45,14 +45,6 @@ export default function ListedBuildingsPage() {
           { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://stearlingreinstatement.com/services' },
           { '@type': 'ListItem', position: 3, name: 'Listed Buildings', item: 'https://stearlingreinstatement.com/listed-buildings' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

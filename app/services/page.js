@@ -22,8 +22,8 @@ const IcoShield = () => (
 )
 
 export const metadata = {
-  title: 'RICS Reinstatement Cost Assessment Services | Rebuild Cost Assessment UK',
-  description: 'Specialist RICS reinstatement cost assessments and rebuild cost assessments for blocks of flats, managing agents, freeholders and leaseholders. Broker-ready reports in 24 hours.',
+  title: 'Reinstatement Cost Assessment Services',
+  description: 'Specialist RICS reinstatement and rebuild cost assessments for blocks of flats, managing agents, freeholders and leaseholders.',
   keywords: ['reinstatement cost assessment', 'RICS reinstatement cost assessment', 'rebuild cost assessment', 'desktop reinstatement cost assessment', 'on-site rebuild cost assessment', 'reinstatement cost assessment services UK', 'RICS rebuild cost assessment UK'],
   alternates: { canonical: '/services' },
   openGraph: {
@@ -62,14 +62,6 @@ export default function ServicesPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://stearlingreinstatement.com/services' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
       {
         '@type': 'Service',

@@ -4,7 +4,7 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Contact Stearling Reinstatement | Instruct a Reinstatement Cost Assessment',
+  title: 'Contact Us & Request a Quote',
   description: 'Contact Stearling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
   alternates: { canonical: '/contact' },
   openGraph: {

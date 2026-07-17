@@ -9,7 +9,7 @@ import TrustStrip from './components/TrustStrip'
 
 export const metadata = {
   title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
-  description: 'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+  description: 'RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, freeholders and portfolio landlords.',
   keywords: ['reinstatement cost assessment', 'RICS reinstatement cost assessment', 'rebuild cost assessment', 'reinstatement cost assessment UK', 'rebuild cost assessment UK', 'RICS rebuild cost assessment', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'declared value buildings insurance'],
   alternates: { canonical: '/' },
   openGraph: {
@@ -43,14 +43,6 @@ export default function HomePage() {
         about: { '@id': 'https://stearlingreinstatement.com/#organization' },
         description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
         inLanguage: 'en-GB',
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

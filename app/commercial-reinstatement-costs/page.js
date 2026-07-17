@@ -5,8 +5,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Commercial Reinstatement Cost Assessment | RICS Regulated',
-  description: 'RICS-regulated reinstatement cost assessments for commercial properties. Offices, retail, industrial and mixed-use. Broker-ready reports accepted by all UK insurers.',
+  title: 'Commercial Reinstatement Cost Assessment',
+  description: 'RICS-regulated reinstatement cost assessments for commercial property - offices, retail, industrial and mixed-use.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
     type: 'website',
@@ -43,14 +43,6 @@ export default function CommercialPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Commercial Reinstatement Costs', item: 'https://stearlingreinstatement.com/commercial-reinstatement-costs' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

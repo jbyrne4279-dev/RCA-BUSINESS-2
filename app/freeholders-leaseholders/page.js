@@ -7,8 +7,8 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders',
-  description: 'Specialist reinstatement cost assessments for freeholders, RMC directors and leaseholders. Discharge your lease obligation with a defensible, RICS-aligned declared value.',
+  title: 'Reinstatement Assessments for Freeholders',
+  description: 'Specialist reinstatement cost assessments for freeholders and leaseholders. Discharge your lease obligation with a defensible declared value.',
   alternates: { canonical: '/freeholders-leaseholders' },
   openGraph: {
     type: 'website',
@@ -46,14 +46,6 @@ export default function FreeholdersLeaseholdersPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Freeholders & Leaseholders', item: 'https://stearlingreinstatement.com/freeholders-leaseholders' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }

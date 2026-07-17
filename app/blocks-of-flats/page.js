@@ -7,8 +7,8 @@ import FaqSection from '../components/FaqSection'
 import FlashList from '../components/FlashList'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment for Blocks of Flats | RICS Regulated',
-  description: 'Specialist RICS reinstatement cost assessments for blocks of flats. Accurate rebuild cost assessment for buildings insurance — protect every leaseholder from the average clause.',
+  title: 'Blocks of Flats Reinstatement Cost Assessments',
+  description: 'Specialist RICS reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause.',
   alternates: { canonical: '/blocks-of-flats' },
   openGraph: {
     type: 'website',
@@ -46,14 +46,6 @@ export default function BlocksOfFlatsPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
           { '@type': 'ListItem', position: 2, name: 'Blocks of Flats', item: 'https://stearlingreinstatement.com/blocks-of-flats' },
         ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: faqItems.map(({ question, answer }) => ({
-          '@type': 'Question',
-          name: question,
-          acceptedAnswer: { '@type': 'Answer', text: answer },
-        })),
       },
     ],
   }
