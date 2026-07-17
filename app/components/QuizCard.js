@@ -189,7 +189,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
           <div className="rounded-2xl border border-[#e2e8f0] p-3.5 mb-5" style={{ background: '#f0f4ff' }}>
             <p className="text-[10px] font-semibold text-[#0057FF] uppercase tracking-wide mb-1">Recommended for you</p>
-            <p className="text-sm font-bold text-[#0d1b3e]">{serviceInfo.label}</p>
+            <p className="text-sm font-bold text-[#0057FF]">{serviceInfo.label}</p>
           </div>
 
           <form action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-2.5">
