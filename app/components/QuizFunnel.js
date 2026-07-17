@@ -15,11 +15,15 @@ export default function QuizFunnel() {
 
   useEffect(() => {
     if (excluded) return
-    if (sessionStorage.getItem('sr_quiz_dismissed')) return
+    if (localStorage.getItem('sr_quiz_dismissed')) return
 
-    timerRef.current = setTimeout(() => setOpen(true), 18000)
+    timerRef.current = setTimeout(() => {
+      if (localStorage.getItem('sr_quiz_dismissed')) return
+      setOpen(true)
+    }, 18000)
 
     function handleExitIntent(e) {
+      if (localStorage.getItem('sr_quiz_dismissed')) return
       if (e.clientY <= 0 && !e.relatedTarget) {
         setOpen(true)
       }
@@ -41,7 +45,8 @@ export default function QuizFunnel() {
 
   function close() {
     setOpen(false)
-    sessionStorage.setItem('sr_quiz_dismissed', '1')
+    localStorage.setItem('sr_quiz_dismissed', '1')
+    clearTimeout(timerRef.current)
   }
 
   function openFresh() {
@@ -58,7 +63,7 @@ export default function QuizFunnel() {
           className="quiz-fab btn-shine !text-xs !py-3 !px-5 flex items-center gap-2"
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 2-3 4" /><path d="M12 17h.01" /><circle cx="12" cy="12" r="10" /></svg>
-          Free Underinsurance Check
+          Check If You&apos;re Underinsured
         </button>
       )}
 
