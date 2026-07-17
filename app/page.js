@@ -196,7 +196,7 @@ export default function HomePage() {
       {/* 6. TESTIMONIALS */}
 
       {/* 7. SERVICES - 3 col */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
