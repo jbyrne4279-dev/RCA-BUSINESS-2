@@ -95,7 +95,10 @@ export default function HomePage() {
       {/* 2. TRUST STRIP */}
       <TrustStrip />
 
-      {/* 3. SECTION A - Why It Matters (image left, text right) */}
+      {/* 3. RISK QUIZ */}
+      <RiskQuizSection />
+
+      {/* 4. SECTION A - Why It Matters (image left, text right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -121,7 +124,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. SECTION B - Who We Help (text left, visual right) */}
+      {/* 5. SECTION B - Who We Help (text left, visual right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -190,9 +193,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. TESTIMONIALS */}
+      {/* 6. TESTIMONIALS */}
 
-      {/* 6. SERVICES - 3 col */}
+      {/* 7. SERVICES - 3 col */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -254,9 +257,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* 7. RISK QUIZ */}
-      <RiskQuizSection />
 
       <ContactSection heading="Instruct an assessment today." />
 
