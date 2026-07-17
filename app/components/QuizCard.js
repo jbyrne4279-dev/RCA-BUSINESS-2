@@ -136,7 +136,11 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
       {!isResultStep && (
         <div key={step} className="quiz-step-in">
-          {step === 0 && showIntro && <span className="badge badge-blue !mb-3">60-Second Risk Check</span>}
+          {step === 0 && showIntro && (
+            <div className="text-center">
+              <span className="badge badge-blue !mb-3">Find Out If You're Underinsured</span>
+            </div>
+          )}
 
           <div className="quiz-dots mb-4">
             {STEPS.map((_, i) => (
