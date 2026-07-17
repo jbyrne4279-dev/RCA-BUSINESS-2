@@ -5,7 +5,7 @@ export default function RiskQuizSection() {
     <section className="py-20 md:py-32 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div className="max-w-lg">
-          <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.14em] mb-5">Free Risk Check</p>
+          <span className="badge badge-blue mb-5">Free Risk Check</span>
           <h2 className="text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] tracking-tight mb-6">
             Find out if <span className="blue-keyword">you&apos;re underinsured</span>.
           </h2>
