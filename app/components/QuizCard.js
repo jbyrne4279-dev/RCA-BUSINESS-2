@@ -106,11 +106,12 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
   const result = isResultStep ? computeResult(answers) : null
   const serviceInfo = result ? SERVICE_INFO[result.service] : null
   const showBack = step > 0
+  const showIntroBadge = step === 0 && showIntro
 
   return (
     <div>
-      {(showBack || onClose) && (
-        <div className="flex items-center justify-between mb-2">
+      {(showBack || onClose || showIntroBadge) && (
+        <div className="flex items-start justify-between gap-2 mb-2">
           {showBack ? (
             <button
               type="button"
@@ -120,13 +121,15 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
+          ) : showIntroBadge ? (
+            <span className="badge badge-blue !mb-0 !px-2 !tracking-normal whitespace-nowrap !text-[9px] sm:!text-[10px]">Find Out If You're Underinsured</span>
           ) : <span />}
           {onClose ? (
             <button
               type="button"
               aria-label="Close"
               onClick={onClose}
-              className="w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
+              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
             </button>
@@ -136,12 +139,6 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
       {!isResultStep && (
         <div key={step} className="quiz-step-in">
-          {step === 0 && showIntro && (
-            <div className="text-center">
-              <span className="badge badge-blue !mb-3">Find Out If You're Underinsured</span>
-            </div>
-          )}
-
           <div className="quiz-dots mb-4">
             {STEPS.map((_, i) => (
               <span key={i} className={`quiz-dot ${i <= step ? 'filled' : ''}`} />
