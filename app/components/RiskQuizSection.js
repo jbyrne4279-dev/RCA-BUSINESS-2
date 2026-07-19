@@ -14,7 +14,7 @@ export default function RiskQuizSection() {
           </p>
         </div>
 
-        <div className="bg-white rounded-[28px] p-6 md:p-9" style={{ boxShadow: '0 24px 64px rgba(13,27,62,0.12)' }}>
+        <div className="bg-white rounded-[28px]" style={{ boxShadow: '0 24px 64px rgba(13,27,62,0.12)' }}>
           <QuizCard source="Homepage Risk Quiz" showIntro={false} />
         </div>
       </div>

@@ -70,7 +70,7 @@ export default function QuizFunnel() {
       {open && (
         <div className="quiz-overlay" onClick={close}>
           <div
-            className="quiz-panel bg-white rounded-3xl max-w-md w-full shadow-2xl border border-[#e2e8f0] p-6 md:p-7"
+            className="quiz-panel bg-white rounded-3xl max-w-md w-full shadow-2xl border border-[#e2e8f0]"
             onClick={(e) => e.stopPropagation()}
           >
             <QuizCard key={resetKey} onClose={close} source="Popup Risk Quiz" />
