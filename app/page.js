@@ -125,71 +125,89 @@ export default function HomePage() {
       </section>
 
       {/* 4. WHO WE HELP - relevance to the visitor + how the process works */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <section className="py-16 md:py-28 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto">
 
-          {/* Left: text */}
-          <div>
+          {/* Header */}
+          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <span className="badge badge-blue mb-5">Who We Help</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
               Who needs a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
             </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              One practice. One specialisation. Every instruction is a RICS-regulated Reinstatement Cost Assessment delivered to the right audience.
+            <p className="text-[#64748b] text-base leading-relaxed">
+              One practice, one specialisation - every instruction delivered as a RICS-regulated Reinstatement Cost Assessment.
             </p>
-            <div className="space-y-3 mb-8">
-              {[
-                {
-                  title: 'Managing Agents & RTM Companies',
-                  desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.',
-                  href: '/managing-agents-insurance-valuations',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
-                },
-                {
-                  title: 'Freeholders & Leaseholders',
-                  desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
-                  href: '/freeholders-leaseholders',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
-                },
-                {
-                  title: 'Block Managers & Portfolio Landlords',
-                  desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.',
-                  href: '/block-managers-reinstatement-cost-assessments',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
-                },
-              ].map(({ title, desc, href, icon }) => (
-                <Link key={title} href={href} className="flex items-start gap-3 group">
-                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{icon}</span>
-                  <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
-                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
           </div>
 
-          {/* Right: process steps - staggered reveal */}
-          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-5 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
-            <div className="circuit-steps">
-              {[
-                { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
-                { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
-                { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
-              ].map(({ n, title, desc }, i) => (
-                <div key={n} className={`step-light flex gap-4 items-start ${i < 3 ? 'step-has-border pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
-                  <span className="circuit-num text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
-                  <div>
-                    <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
-                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
+          {/* Audience cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16 md:mb-24">
+            {[
+              {
+                title: 'Managing Agents & RTM Companies',
+                desc: 'Protect your PI file and discharge the lease obligation with a defensible valuation.',
+                href: '/managing-agents-insurance-valuations',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
+              },
+              {
+                title: 'Freeholders & Leaseholders',
+                desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
+                href: '/freeholders-leaseholders',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
+              },
+              {
+                title: 'Block Managers & Portfolio Landlords',
+                desc: 'Consistent, compliant figures across every block, managed on a rolling cycle.',
+                href: '/block-managers-reinstatement-cost-assessments',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
+              },
+            ].map(({ title, desc, href, icon }) => (
+              <Link
+                key={title}
+                href={href}
+                className="group bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+                style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)', textDecoration: 'none' }}
+              >
+                <span
+                  className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-5"
+                  style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+                >
+                  {icon}
+                </span>
+                <p className="text-base font-semibold text-[#0d1b3e] mb-2 group-hover:text-[#0057FF] transition-colors">{title}</p>
+                <p className="text-sm text-[#64748b] leading-relaxed mb-4 flex-1">{desc}</p>
+                <span className="link-arrow !text-xs">Learn more</span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Assessment process - horizontal timeline */}
+          <TiltWrapper className="bg-[#f8fafc] rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.06)'}}>
+            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest text-center mb-10">Assessment Process</p>
+            <div className="relative">
+              <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-[#e2e8f0]" />
+              <div className="circuit-steps grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
+                {[
+                  { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
+                  { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - a fixed fee, agreed upfront.' },
+                  { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services and fees - all captured.' },
+                  { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready for renewal.' },
+                ].map(({ n, title, desc }, i) => (
+                  <div key={n} className={`step-light relative z-10 flex md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center ${i < 3 ? 'pb-6 mb-2 border-b border-[#e2e8f0] md:pb-0 md:mb-0 md:border-b-0 step-has-border' : ''}`}>
+                    <span className="circuit-num text-xs font-bold text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
+                    <div>
+                      <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                      <p className="text-xs text-[#64748b] mt-1 leading-relaxed">{desc}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </TiltWrapper>
+
+          {/* CTA */}
+          <div className="text-center mt-14">
+            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
+          </div>
         </div>
       </section>
 
