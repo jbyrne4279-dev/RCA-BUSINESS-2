@@ -87,7 +87,7 @@ export default function HomePage() {
       <TrustStrip />
 
       {/* 3. SERVICES - 3 col */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
@@ -258,11 +258,12 @@ export default function HomePage() {
 
       {/* 7. TESTIMONIALS */}
 
-      <ContactSection heading="Instruct an assessment today." />
+      <ContactSection heading="Instruct an assessment today." flip />
 
       <FaqSection
         description="Technical questions on Reinstatement Cost Assessments, underinsurance exposure, and our working process."
         items={faqItems}
+        flip
       />
     </main>
   )
