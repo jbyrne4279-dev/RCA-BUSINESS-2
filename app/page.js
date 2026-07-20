@@ -275,12 +275,13 @@ export default function HomePage() {
       </section>
 
       {/* 6. CONTACT FORM - the conversion goal */}
-      <ContactSection heading="Instruct an assessment today." />
+      <ContactSection heading="Instruct an assessment today." flip />
 
       {/* 7. FAQ - handle remaining objections, last thing before the footer */}
       <FaqSection
         description="Technical questions on Reinstatement Cost Assessments, underinsurance exposure, and our working process."
         items={faqItems}
+        flip
       />
     </main>
   )
