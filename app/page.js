@@ -219,37 +219,76 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Reinstatement Cost Assessments for <span className="blue-keyword">Every Property Type</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {[
               {
                 img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
                 imgAlt: 'Desktop Reinstatement Cost Assessment service',
+                id: 'desktop-rca',
                 badge: '01. Desktop',
                 title: 'Desktop Reinstatement Cost Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
+                features: [
+                  'RICS-regulated, broker-ready report',
+                  'BCIS-indexed rebuild cost modelling',
+                  'Delivered within 24 hours - no site visit',
+                  'Accepted by every UK insurer',
+                ],
                 href: '/contact?service=desktop#contact-form',
                 link: 'Request Desktop Assessment',
+                note: 'Listed or non-standard property? An On-Site Survey may be required instead.',
               },
               {
                 img: '/rca-onsite-inspection-surveyor.png',
                 imgAlt: 'RICS surveyor conducting an on-site Reinstatement Cost Assessment',
+                id: 'on-site-survey',
                 badge: '02. On-Site',
                 title: 'On-Site Rebuild Cost Assessment',
                 desc: 'A RICS surveyor attends in person for full measurement and construction analysis. Required for listed buildings, heritage properties and complex structures.',
+                features: [
+                  'RICS-regulated, broker-ready report',
+                  'Surveyor attends in person, full measurement',
+                  'Required for listed, heritage & complex buildings',
+                  'The insurer-preferred option for high-value risk',
+                ],
                 href: '/contact?service=onsite#contact-form',
                 link: 'Request On-Site Survey',
+                note: 'Managing more than one property? Ask about the 3-Year Protection Plan.',
               },
               {
                 img: '/continual-reinstatement-cost-assessment-plan.png',
                 imgAlt: '3-Year RICS Reinstatement Cost Assessment protection plan',
+                id: 'three-year-protection',
                 badge: '03. Recommended',
                 title: '3-Year Reinstatement Cost Assessment Plan',
                 desc: 'One instruction covers three years of RICS compliance. Full Reinstatement Cost Assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
+                features: [
+                  'RICS-regulated, broker-ready report',
+                  'Full assessment year one, indexed updates years two & three',
+                  'One instruction, one invoice - no re-instructing',
+                  'The preferred choice for agents & portfolio landlords',
+                ],
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
+                note: 'Saves the cost and admin of re-instructing every year.',
+                highlight: true,
               },
-            ].map(({ img, imgAlt, badge, title, desc, href, link }) => (
-              <Link key={title} href={href} className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
+            ].map(({ img, imgAlt, id, badge, title, desc, features, href, link, note, highlight }) => (
+              <Link
+                key={title}
+                id={id}
+                href={href}
+                className={`relative bg-white rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300 ${highlight ? 'border-2 border-[#0057FF]' : 'border border-[#e2e8f0]'}`}
+                style={{boxShadow: highlight ? '0 10px 32px rgba(0,87,255,0.20)' : '0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}
+              >
+                {highlight && (
+                  <span
+                    className="absolute top-3 right-3 z-10 text-[10px] font-bold uppercase tracking-wide text-white px-2.5 py-1 rounded-full"
+                    style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 2px 10px rgba(0,87,255,0.5)'}}
+                  >
+                    Best Value
+                  </span>
+                )}
                 <div className="relative w-full overflow-hidden" style={{height:'200px'}}>
                   <Image
                     src={img}
@@ -261,12 +300,27 @@ export default function HomePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
                 </div>
                 <div className="p-5 md:p-7 flex flex-col flex-1">
-                  <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-1">{badge}</p>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide">{badge}</p>
+                    <span className="inline-flex items-center gap-1 text-[9px] font-semibold text-[#0d1b3e]/60 uppercase tracking-wide whitespace-nowrap">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>
+                      RICS Regulated
+                    </span>
+                  </div>
                   <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
-                  <p className="text-[#64748b] text-sm leading-relaxed mb-5 flex-1">{desc}</p>
-                  <span className="btn-shine text-center">
+                  <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
+                  <ul className="space-y-2 mb-6">
+                    {features.map((f) => (
+                      <li key={f} className="flex items-start gap-2">
+                        <svg className="mt-0.5 shrink-0 text-[#0057FF]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                        <span className="text-[#64748b] text-xs leading-relaxed">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="btn-shine text-center mt-auto">
                     {link}
                   </span>
+                  {note && <p className="text-[11px] text-[#94a3b8] leading-relaxed mt-3 text-center">{note}</p>}
                 </div>
               </Link>
             ))}

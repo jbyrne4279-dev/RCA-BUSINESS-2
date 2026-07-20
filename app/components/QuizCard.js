@@ -106,7 +106,6 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
   const result = isResultStep ? computeResult(answers) : null
   const serviceInfo = result ? SERVICE_INFO[result.service] : null
   const showBack = step > 0
-  const showIntroBadge = step === 0 && showIntro
 
   return (
     <div className="relative">
@@ -122,21 +121,16 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
       )}
 
       <div className="p-6 md:p-7 max-h-[80vh] overflow-y-auto">
-      {(onClose || showIntroBadge) && (
-        <div className="flex items-start justify-between gap-2 mb-2">
-          {showIntroBadge ? (
-            <span className="badge badge-blue !mb-0 !px-2 !tracking-normal whitespace-nowrap !text-[9px] sm:!text-[10px]">Find Out If You're Underinsured</span>
-          ) : <span />}
-          {onClose ? (
-            <button
-              type="button"
-              aria-label="Close"
-              onClick={onClose}
-              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
-            </button>
-          ) : <span />}
+      {onClose && (
+        <div className="flex items-start justify-end gap-2 mb-2">
+          <button
+            type="button"
+            aria-label="Close"
+            onClick={onClose}
+            className="shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
         </div>
       )}
 
