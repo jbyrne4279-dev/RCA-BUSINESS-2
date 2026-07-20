@@ -56,8 +56,8 @@ export default function TrustStrip() {
         }
         @keyframes trust-glow {
           0%   { color: #0d1b3e; text-shadow: none; }
-          40%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.7), 0 0 24px rgba(0,87,255,0.35); }
-          60%  { color: #0057FF; text-shadow: 0 0 12px rgba(0,87,255,0.7), 0 0 24px rgba(0,87,255,0.35); }
+          40%  { color: #0057FF; text-shadow: 0 0 5px rgba(0,87,255,0.3); }
+          60%  { color: #0057FF; text-shadow: 0 0 5px rgba(0,87,255,0.3); }
           100% { color: #0d1b3e; text-shadow: none; }
         }
         .trust-marquee-item {

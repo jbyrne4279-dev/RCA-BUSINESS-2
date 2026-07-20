@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
-import RiskQuizSection from './components/RiskQuizSection'
 import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
@@ -149,9 +148,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* 4. RISK QUIZ */}
-      <RiskQuizSection />
 
       {/* 5. SECTION A - Why It Matters (image left, text right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
