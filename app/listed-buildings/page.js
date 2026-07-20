@@ -4,6 +4,7 @@ import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import ServiceCardsSection from '../components/ServiceCardsSection'
 
 export const metadata = {
   title: 'Listed & Heritage Building Assessments',
@@ -235,8 +236,10 @@ export default function ListedBuildingsPage() {
 
 
 
-      <ContactSection heading="Get a specialist on-site assessment for your listed building." flip />
-      <FaqSection description="Common questions about Reinstatement Cost Assessments for listed and heritage buildings." items={faqItems} flip />
+      <ServiceCardsSection />
+
+      <ContactSection heading="Get a specialist on-site assessment for your listed building." />
+      <FaqSection description="Common questions about Reinstatement Cost Assessments for listed and heritage buildings." items={faqItems} />
     </main>
   )
 }

@@ -5,6 +5,7 @@ import TiltWrapper from '../components/TiltWrapper'
 import RicsSelectedCard from '../components/RicsSelectedCard'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import ServiceCardsSection from '../components/ServiceCardsSection'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Freeholders',
@@ -212,8 +213,10 @@ export default function FreeholdersLeaseholdersPage() {
 
 
 
-      <ContactSection heading="Speak to a specialist about your declared value." flip />
-      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about Reinstatement Cost Assessments and buildings insurance." items={faqItems} flip />
+      <ServiceCardsSection />
+
+      <ContactSection heading="Speak to a specialist about your declared value." />
+      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about Reinstatement Cost Assessments and buildings insurance." items={faqItems} />
     </main>
   )
 }

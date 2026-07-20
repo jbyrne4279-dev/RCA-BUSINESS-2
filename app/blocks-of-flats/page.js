@@ -5,6 +5,7 @@ import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import FlashList from '../components/FlashList'
+import ServiceCardsSection from '../components/ServiceCardsSection'
 
 export const metadata = {
   title: 'Blocks of Flats Reinstatement Cost Assessments',
@@ -158,8 +159,10 @@ export default function BlocksOfFlatsPage() {
 
 
 
-      <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." />
-      <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} />
+      <ServiceCardsSection flip />
+
+      <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." flip />
+      <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} flip />
     </main>
   )
 }

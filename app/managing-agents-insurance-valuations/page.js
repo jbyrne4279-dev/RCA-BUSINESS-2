@@ -4,6 +4,7 @@ import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import ServiceCardsSection from '../components/ServiceCardsSection'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Managing Agents',
@@ -229,8 +230,10 @@ export default function ManagingAgentsPage() {
 
 
 
-      <ContactSection heading="Protect yourself and your clients. Instruct us today." flip />
-      <FaqSection description="Common questions from managing agents and RTM companies about Reinstatement Cost Assessments." items={faqItems} flip />
+      <ServiceCardsSection />
+
+      <ContactSection heading="Protect yourself and your clients. Instruct us today." />
+      <FaqSection description="Common questions from managing agents and RTM companies about Reinstatement Cost Assessments." items={faqItems} />
     </main>
   )
 }
