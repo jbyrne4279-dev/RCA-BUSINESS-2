@@ -49,7 +49,7 @@ export default function HomePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO */}
+      {/* 1. HERO - hook + primary CTA */}
       <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
@@ -83,10 +83,117 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. TRUST STRIP */}
+      {/* 2. TRUST STRIP - immediate credibility */}
       <TrustStrip />
 
-      {/* 3. SERVICES - 3 col */}
+      {/* 3. WHY IT MATTERS - the problem/risk that creates urgency */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+          {/* Left: tilt card */}
+          <TiltCard />
+
+          {/* Right: text */}
+          <div>
+            <span className="badge badge-blue mb-5">Why It Matters</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              Reinstatement cost is not the same as <span className="blue-keyword">market value</span>.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              After a total loss, insurers pay to rebuild - not to match market value. Get the declared figure wrong, and the consequences land squarely on you:
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                'The insurer applies the average clause and cuts your payout in proportion to the shortfall.',
+                'Managing agents and freeholders can be held personally liable for the gap.',
+                'Market values and online calculators carry no RICS accountability if the figure is ever challenged.',
+              ].map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#0057FF'}} />
+                  <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[#0d1b3e] text-base font-semibold leading-relaxed mb-8">
+              A RICS-regulated Reinstatement Cost Assessment is the only defensible basis for the buildings sum insured.
+            </p>
+            <Link href="/services" className="link-arrow cta-flash">
+              Explore our services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. WHO WE HELP - relevance to the visitor + how the process works */}
+      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+          {/* Left: text */}
+          <div>
+            <span className="badge badge-blue mb-5">Who We Help</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              Who needs a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-8">
+              One practice. One specialisation. Every instruction is a RICS-regulated Reinstatement Cost Assessment delivered to the right audience.
+            </p>
+            <div className="space-y-3 mb-8">
+              {[
+                {
+                  title: 'Managing Agents & RTM Companies',
+                  desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.',
+                  href: '/managing-agents-insurance-valuations',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
+                },
+                {
+                  title: 'Freeholders & Leaseholders',
+                  desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
+                  href: '/freeholders-leaseholders',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
+                },
+                {
+                  title: 'Block Managers & Portfolio Landlords',
+                  desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.',
+                  href: '/block-managers-reinstatement-cost-assessments',
+                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
+                },
+              ].map(({ title, desc, href, icon }) => (
+                <Link key={title} href={href} className="flex items-start gap-3 group">
+                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{icon}</span>
+                  <div>
+                    <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
+                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
+          </div>
+
+          {/* Right: process steps - staggered reveal */}
+          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-5 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
+            <div className="circuit-steps">
+              {[
+                { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
+                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
+                { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
+                { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
+              ].map(({ n, title, desc }, i) => (
+                <div key={n} className={`step-light flex gap-4 items-start ${i < 3 ? 'step-has-border pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
+                  <span className="circuit-num text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
+                  <div>
+                    <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </TiltWrapper>
+        </div>
+      </section>
+
+      {/* 5. SERVICES - the solution, once the problem and relevance are established */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -149,142 +256,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. SECTION A - Why It Matters (image left, text right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 bg-white border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-          {/* Left: tilt card */}
-          <TiltCard />
-
-          {/* Right: text */}
-          <div>
-            <span className="badge badge-blue mb-5">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Reinstatement cost is not the same as <span className="blue-keyword">market value</span>.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              After a total loss, insurers pay to rebuild - not to match market value. Get the declared figure wrong, and the consequences land squarely on you:
-            </p>
-            <ul className="space-y-3 mb-8">
-              {[
-                'The insurer applies the average clause and cuts your payout in proportion to the shortfall.',
-                'Managing agents and freeholders can be held personally liable for the gap.',
-                'Market values and online calculators carry no RICS accountability if the figure is ever challenged.',
-              ].map((point) => (
-                <li key={point} className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#0057FF'}} />
-                  <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-[#0d1b3e] text-base font-semibold leading-relaxed mb-8">
-              A RICS-regulated Reinstatement Cost Assessment is the only defensible basis for the buildings sum insured.
-            </p>
-            <Link href="/services" className="link-arrow cta-flash">
-              Explore our services
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. SECTION B - Who We Help (text left, visual right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-          {/* Left: text */}
-          <div>
-            <span className="badge badge-blue mb-5">Who We Help</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Who needs a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              One practice. One specialisation. Every instruction is a RICS-regulated Reinstatement Cost Assessment delivered to the right audience.
-            </p>
-            <div className="space-y-3 mb-8">
-              {[
-                {
-                  title: 'Managing Agents & RTM Companies',
-                  desc: 'Protect your PI file and discharge the lease obligation with a documented, defensible valuation.',
-                  href: '/managing-agents-insurance-valuations',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
-                },
-                {
-                  title: 'Freeholders & Leaseholders',
-                  desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
-                  href: '/freeholders-leaseholders',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
-                },
-                {
-                  title: 'Block Managers & Portfolio Landlords',
-                  desc: 'Consistent, compliant figures across every block - managed on a rolling cycle.',
-                  href: '/block-managers-reinstatement-cost-assessments',
-                  icon: <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
-                },
-              ].map(({ title, desc, href, icon }) => (
-                <Link key={title} href={href} className="flex items-start gap-3 group">
-                  <span className="mt-1 w-5 h-5 rounded-full shrink-0 flex items-center justify-center text-white" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}>{icon}</span>
-                  <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e] group-hover:text-[#0057FF] transition-colors">{title}</p>
-                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
-          </div>
-
-          {/* Right: process steps Ã¯Â¿Â½ staggered reveal */}
-          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-5 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">Assessment Process</p>
-            <div className="circuit-steps">
-              {[
-                { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-                { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - we advise and agree a fixed fee.' },
-                { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services, professional fees - all captured.' },
-                { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready to submit at renewal.' },
-              ].map(({ n, title, desc }, i) => (
-                <div key={n} className={`step-light flex gap-4 items-start ${i < 3 ? 'step-has-border pb-4 mb-4 border-b border-[#e2e8f0]' : ''}`}>
-                  <span className="circuit-num text-xs font-bold text-white w-7 h-7 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
-                  <div>
-                    <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
-                    <p className="text-xs text-[#64748b] mt-0.5">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </TiltWrapper>
-        </div>
-      </section>
-
-      {/* 7. TESTIMONIALS */}
-
-      <ContactSection heading="Instruct an assessment today." flip />
-
+      {/* 6. FAQ - handle remaining objections right before the ask */}
       <FaqSection
         description="Technical questions on Reinstatement Cost Assessments, underinsurance exposure, and our working process."
         items={faqItems}
-        flip
       />
+
+      {/* 7. CONTACT FORM - the conversion goal, last thing before the footer */}
+      <ContactSection heading="Instruct an assessment today." />
     </main>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
