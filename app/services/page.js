@@ -196,6 +196,7 @@ export default function ServicesPage() {
                   'Surveyor attends in person, full measurement',
                   'Required for listed, heritage & complex buildings',
                   'The insurer-preferred option for high-value risk',
+                  'Accepted by every UK insurer',
                 ],
                 href: '/contact?service=onsite#contact-form',
                 link: 'Request On-Site Survey',
@@ -214,6 +215,7 @@ export default function ServicesPage() {
                   'Full assessment year one, indexed updates years two & three',
                   'One instruction, one invoice - no re-instructing',
                   'The preferred choice for agents & portfolio landlords',
+                  'Accepted by every UK insurer',
                 ],
                 href: '/contact?service=3year#contact-form',
                 link: 'Enquire About Protection Plan',
@@ -230,8 +232,8 @@ export default function ServicesPage() {
               >
                 {highlight && (
                   <span
-                    className="absolute top-3 right-3 z-10 text-[10px] font-bold uppercase tracking-wide text-white px-2.5 py-1 rounded-full"
-                    style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 2px 10px rgba(0,87,255,0.5)'}}
+                    className="best-value-pill absolute top-3 right-3 z-10 text-xs font-bold uppercase tracking-wide text-white px-4 py-1.5 rounded-full"
+                    style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}
                   >
                     Best Value
                   </span>
@@ -250,9 +252,9 @@ export default function ServicesPage() {
                 <div className="p-5 md:p-7 flex flex-col flex-1">
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide">{badge}</p>
-                    <span className="inline-flex items-center gap-1 text-[9px] font-semibold text-[#0d1b3e]/60 uppercase tracking-wide whitespace-nowrap">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>
-                      RICS Regulated
+                    <span className="flex flex-col items-end gap-1 shrink-0">
+                      <Image src="/rics-logo.png" alt="RICS" width={36} height={24} className="object-contain" />
+                      <span className="text-[9px] font-semibold text-[#0d1b3e]/60 uppercase tracking-wide whitespace-nowrap">RICS Regulated</span>
                     </span>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
@@ -261,7 +263,11 @@ export default function ServicesPage() {
                     {features.map((f) => (
                       <li key={f} className="flex items-start gap-2">
                         <svg className="mt-0.5 shrink-0 text-[#0057FF]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
-                        <span className="text-[#64748b] text-xs leading-relaxed">{f}</span>
+                        <span className="text-[#64748b] text-xs leading-relaxed">
+                          {f.startsWith('Accepted') ? (
+                            <><span className="cta-flash font-semibold">Accepted</span>{f.slice(8)}</>
+                          ) : f}
+                        </span>
                       </li>
                     ))}
                   </ul>

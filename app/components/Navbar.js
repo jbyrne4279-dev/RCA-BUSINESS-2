@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import Link from 'next/link'
 import LogoSpin from './LogoSpin'
 import { usePathname } from 'next/navigation'
@@ -49,7 +48,6 @@ export default function Navbar() {
 
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-3 ml-auto">
-          <Image src="/rics-logo.png" alt="RICS Regulated" width={900} height={600} className="h-8 w-auto object-contain" />
           <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">
             Get a Quote
           </Link>

@@ -36,12 +36,12 @@ export default function ContactFormInner({ heading }) {
 
   return (
     <div>
-      <div id="contact-form" className="mb-10 scroll-mt-20">
+      <div id="contact-form" className="mb-10 scroll-mt-20 text-center">
         <span className="badge badge-blue">Get In Touch</span>
         <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
           {heading}
         </h2>
-        <p className="text-[#64748b] text-sm leading-relaxed max-w-lg">
+        <p className="text-[#64748b] text-sm leading-relaxed max-w-lg mx-auto">
           Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers. Written fee estimate within 24 hours, no contract required.
         </p>
       </div>

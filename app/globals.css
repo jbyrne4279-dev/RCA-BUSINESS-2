@@ -823,6 +823,18 @@ a.link-amber:hover {
   text-shadow: 0 0 12px rgba(0,87,255,0.6);
 }
 
+/* ── Best Value pill: scale + glow pulse ── */
+@keyframes best-value-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 2px 10px rgba(0,87,255,0.5); }
+  50% { transform: scale(1.1); box-shadow: 0 0 0 7px rgba(0,87,255,0.22), 0 4px 20px rgba(0,87,255,0.7); }
+}
+.best-value-pill {
+  animation: best-value-pulse 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .best-value-pill { animation: none !important; }
+}
+
 /* ── Quiz funnel popup ── */
 @keyframes quiz-fade-in { from { opacity: 0; } to { opacity: 1; } }
 @keyframes quiz-pop-in {
