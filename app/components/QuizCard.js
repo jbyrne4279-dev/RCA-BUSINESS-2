@@ -221,6 +221,10 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
                 className="bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
               />
             </div>
+            <textarea
+              name="notes" required rows="3" placeholder="Notes - briefly describe your property and requirements"
+              className="w-full bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors resize-none"
+            />
 
             <button type="submit" className="btn-shine w-full justify-center !py-3 !text-sm !mt-4">
               Contact RICS Surveyor
