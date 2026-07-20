@@ -13,13 +13,13 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/contact',
     siteName: 'Stearling Reinstatement',
     title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
-    description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS reinstatement cost assessment surveyors' }],
+    description: 'Speak with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Reinstatement Cost Assessment surveyors' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
-    description: 'Speak with a RICS-regulated reinstatement cost assessment surveyor. Written fee estimate within 24 hours. No contract required.',
+    description: 'Speak with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours. No contract required.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
@@ -29,7 +29,7 @@ const localBusinessSchema = {
   '@type': ['LocalBusiness', 'ProfessionalService'],
   '@id': 'https://stearlingreinstatement.com/#organization',
   name: 'Stearling Reinstatement',
-  description: 'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+  description: 'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
   url: 'https://stearlingreinstatement.com',
   telephone: '+442031788099',
   email: 'info@stearlingreinstatement.com',
@@ -108,7 +108,7 @@ export default function ContactPage() {
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
             <Image
               src="/AdobeStock_1956380728.jpeg"
-              alt="Stearling Reinstatement reinstatement cost assessment surveyors"
+              alt="Stearling Reinstatement Reinstatement Cost Assessment surveyors"
               fill
               className="object-cover"
               priority

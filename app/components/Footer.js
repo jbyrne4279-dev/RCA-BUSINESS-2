@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="py-8 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)' }}>
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
-            <p className="font-semibold text-white text-base mb-1">Need a reinstatement cost assessment?</p>
+            <p className="font-semibold text-white text-base mb-1">Need a Reinstatement Cost Assessment?</p>
             <p className="text-white/70 text-sm">We respond within 24 hours on business days.</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
@@ -30,7 +30,7 @@ export default function Footer() {
               <span className="text-white font-semibold text-sm tracking-wide">Stearling Reinstatement</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
+              RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
             </p>
             <div className="flex items-center gap-3 pt-1">
               <Image

@@ -7,7 +7,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Listed & Heritage Building Assessments',
-  description: 'Specialist reinstatement cost assessments for listed buildings, which carry 20-50% higher rebuild costs than standard construction.',
+  description: 'Specialist Reinstatement Cost Assessments for listed buildings, which carry 20-50% higher rebuild costs than standard construction.',
   alternates: { canonical: '/listed-buildings' },
   openGraph: {
     type: 'website',
@@ -15,23 +15,23 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/listed-buildings',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated reinstatement cost assessments for listed and heritage buildings. Listed properties carry 20-50% higher rebuild costs. On-site surveys by specialist surveyors.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment for listed buildings - Stearling Reinstatement' }],
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for listed and heritage buildings. Listed properties carry 20-50% higher rebuild costs. On-site surveys by specialist surveyors.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for listed buildings - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
-    description: 'Specialist reinstatement cost assessments for listed and heritage buildings. 20-50% higher rebuild costs require specialist on-site assessment.',
+    description: 'Specialist Reinstatement Cost Assessments for listed and heritage buildings. 20-50% higher rebuild costs require specialist on-site assessment.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Why do listed buildings need a specialist reinstatement cost assessment?', answer: 'Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement of a listed building must be carried out in original style and materials. Lime mortar, handmade brick, heritage contractors and conservation consents all carry significant premiums over standard construction costs. A standard reinstatement cost assessment or generic rebuild cost tool cannot capture these a specialist on-site assessment by a heritage-qualified surveyor is the only method that produces a defensible declared value.' },
-  { question: 'Is a desktop reinstatement cost assessment appropriate for a listed building?', answer: 'No. A desktop reinstatement cost assessment applies standard BCIS construction rates and cannot account for specialist materials, heritage labour, conservation authority consent costs or the extended programme timescales that characterise a listed building reinstatement. On-site inspection by a specialist surveyor is the only approach that produces a defensible rebuild cost assessment for a listed property.' },
-  { question: 'Can Stearling Reinstatement assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site reinstatement cost assessments for all listed building categories Grade I, Grade II* and Grade II. Grade I and Grade II* buildings require physical inspection and specialist heritage knowledge that no desktop rebuild cost assessment can replicate. We confirm the programme and fee on receipt of your enquiry.' },
-  { question: 'What is the VAT position on a listed building reinstatement cost assessment?', answer: 'A full rebuild after total loss is zero-rated for VAT purposes. However, demolition, professional fees and partial-damage repairs all attract 20% VAT. Since most real insurance claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance reinstatement work and it is routinely excluded from desktop or non-specialist rebuild cost assessments.' },
-  { question: 'How often should a listed building reinstatement cost assessment be updated?', answer: 'A full specialist reinstatement cost assessment is required at least every three years, with annual BCIS-indexed inflation reviews in between. Where material works have been carried out or where the building has not had a formal rebuild cost assessment since before 2020 a fresh site-based assessment should be commissioned before the next renewal date.' },
+  { question: 'Why do listed buildings need a specialist Reinstatement Cost Assessment?', answer: 'Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement of a listed building must be carried out in original style and materials. Lime mortar, handmade brick, heritage contractors and conservation consents all carry significant premiums over standard construction costs. A standard Reinstatement Cost Assessment or generic rebuild cost tool cannot capture these a specialist on-site assessment by a heritage-qualified surveyor is the only method that produces a defensible declared value.' },
+  { question: 'Is a desktop Reinstatement Cost Assessment appropriate for a listed building?', answer: 'No. A desktop Reinstatement Cost Assessment applies standard BCIS construction rates and cannot account for specialist materials, heritage labour, conservation authority consent costs or the extended programme timescales that characterise a listed building reinstatement. On-site inspection by a specialist surveyor is the only approach that produces a defensible rebuild cost assessment for a listed property.' },
+  { question: 'Can Stearling Reinstatement assess Grade I and Grade II* listed buildings?', answer: 'Yes. We carry out on-site Reinstatement Cost Assessments for all listed building categories Grade I, Grade II* and Grade II. Grade I and Grade II* buildings require physical inspection and specialist heritage knowledge that no desktop rebuild cost assessment can replicate. We confirm the programme and fee on receipt of your enquiry.' },
+  { question: 'What is the VAT position on a listed building Reinstatement Cost Assessment?', answer: 'A full rebuild after total loss is zero-rated for VAT purposes. However, demolition, professional fees and partial-damage repairs all attract 20% VAT. Since most real insurance claims are partial rather than total-loss, VAT at 20% applies to the majority of listed building insurance reinstatement work and it is routinely excluded from desktop or non-specialist rebuild cost assessments.' },
+  { question: 'How often should a listed building Reinstatement Cost Assessment be updated?', answer: 'A full specialist Reinstatement Cost Assessment is required at least every three years, with annual BCIS-indexed inflation reviews in between. Where material works have been carried out or where the building has not had a formal rebuild cost assessment since before 2020 a fresh site-based assessment should be commissioned before the next renewal date.' },
 ]
 
 export default function ListedBuildingsPage() {
@@ -236,7 +236,7 @@ export default function ListedBuildingsPage() {
 
 
       <ContactSection heading="Get a specialist on-site assessment for your listed building." flip />
-      <FaqSection description="Common questions about reinstatement cost assessments for listed and heritage buildings." items={faqItems} flip />
+      <FaqSection description="Common questions about Reinstatement Cost Assessments for listed and heritage buildings." items={faqItems} flip />
     </main>
   )
 }

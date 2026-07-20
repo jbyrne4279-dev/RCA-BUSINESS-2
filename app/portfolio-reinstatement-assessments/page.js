@@ -6,7 +6,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Portfolio Reinstatement Cost Assessments',
-  description: 'RICS-regulated reinstatement cost assessments for property portfolios. Consolidated reports with individual asset schedules.',
+  description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. Consolidated reports with individual asset schedules.',
   alternates: { canonical: '/portfolio-reinstatement-assessments' },
   openGraph: {
     type: 'website',
@@ -14,23 +14,23 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/portfolio-reinstatement-assessments',
     siteName: 'Stearling Reinstatement',
     title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations | Stearling Reinstatement',
-    description: 'RICS-regulated reinstatement cost assessments for property portfolios. One instruction, consolidated reports, individual asset schedules. Annual BCIS indexation included.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Portfolio reinstatement cost assessments - Stearling Reinstatement' }],
+    description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. One instruction, consolidated reports, individual asset schedules. Annual BCIS indexation included.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Portfolio Reinstatement Cost Assessments - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations',
-    description: 'RICS-regulated reinstatement cost assessments for property portfolios. One instruction covers every asset with consolidated reports and annual indexation.',
+    description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. One instruction covers every asset with consolidated reports and annual indexation.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'How many properties can be covered under a single portfolio reinstatement cost assessment instruction?', answer: 'There is no maximum. Portfolio reinstatement cost assessment instructions typically cover between 5 and 200 properties. We issue a consolidated quote and a single engagement letter one instruction, one named surveyor, one invoice covering every reinstatement cost assessment in the portfolio.' },
-  { question: 'What does the portfolio reinstatement cost assessment summary schedule contain?', answer: 'The schedule sets out every asset, its RICS-regulated reinstatement cost figure (rebuild cost), the assessment date and the recommended reassessment date all in a single broker-ready document that sits alongside the individual reinstatement cost assessment reports for each property.' },
-  { question: 'Is a portfolio reinstatement cost assessment just multiple desktop reports bundled together?', answer: 'No. The portfolio reinstatement cost assessment service includes a consolidated summary schedule, a named surveyor managing the full instruction, single-invoice billing, and under the 3-Year Protection Plan proactive annual BCIS-indexed rebuild cost updates delivered before each renewal date. It is a fully managed service, not a bulk order of individual assessments.' },
-  { question: 'How does the 3-Year Protection Plan work for a portfolio reinstatement cost assessment?', answer: 'We carry out full RICS-regulated reinstatement cost assessments across the portfolio in year one, then manage annual BCIS indexation rebuild cost updates and deliver updated reports before each relevant renewal date. You do not need to re-instruct the ongoing compliance is handled for you.' },
-  { question: 'Do you provide portfolio reinstatement cost assessments for institutional investors and fund managers?', answer: 'Yes. We provide portfolio reinstatement cost assessments and rebuild cost assessments for property funds, REITs, real estate investment managers and family offices with multi-asset UK portfolios, with individual RICS-regulated reports per property and a consolidated portfolio summary.' },
+  { question: 'How many properties can be covered under a single portfolio Reinstatement Cost Assessment instruction?', answer: 'There is no maximum. Portfolio Reinstatement Cost Assessment instructions typically cover between 5 and 200 properties. We issue a consolidated quote and a single engagement letter one instruction, one named surveyor, one invoice covering every Reinstatement Cost Assessment in the portfolio.' },
+  { question: 'What does the portfolio Reinstatement Cost Assessment summary schedule contain?', answer: 'The schedule sets out every asset, its RICS-regulated reinstatement cost figure (rebuild cost), the assessment date and the recommended reassessment date all in a single broker-ready document that sits alongside the individual Reinstatement Cost Assessment reports for each property.' },
+  { question: 'Is a portfolio Reinstatement Cost Assessment just multiple desktop reports bundled together?', answer: 'No. The portfolio Reinstatement Cost Assessment service includes a consolidated summary schedule, a named surveyor managing the full instruction, single-invoice billing, and under the 3-Year Protection Plan proactive annual BCIS-indexed rebuild cost updates delivered before each renewal date. It is a fully managed service, not a bulk order of individual assessments.' },
+  { question: 'How does the 3-Year Protection Plan work for a portfolio Reinstatement Cost Assessment?', answer: 'We carry out full RICS-regulated Reinstatement Cost Assessments across the portfolio in year one, then manage annual BCIS indexation rebuild cost updates and deliver updated reports before each relevant renewal date. You do not need to re-instruct the ongoing compliance is handled for you.' },
+  { question: 'Do you provide portfolio Reinstatement Cost Assessments for institutional investors and fund managers?', answer: 'Yes. We provide portfolio Reinstatement Cost Assessments and rebuild cost assessments for property funds, REITs, real estate investment managers and family offices with multi-asset UK portfolios, with individual RICS-regulated reports per property and a consolidated portfolio summary.' },
 ]
 
 export default function PortfolioPage() {
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
             <Image
               src="/AdobeStock_1477785304.jpeg"
-              alt="Portfolio reinstatement cost assessment"
+              alt="Portfolio Reinstatement Cost Assessment"
               fill
               className="object-cover"
               priority
@@ -149,7 +149,7 @@ export default function PortfolioPage() {
             <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest mb-6">What a portfolio instruction delivers</p>
             <ul className="tick-list space-y-5">
               {[
-                { title: 'Individual RICS report per property', desc: 'Each asset receives its own full reinstatement cost assessment report, signed off by a RICS-regulated surveyor.' },
+                { title: 'Individual RICS report per property', desc: 'Each asset receives its own full Reinstatement Cost Assessment report, signed off by a RICS-regulated surveyor.' },
                 { title: 'Consolidated portfolio schedule', desc: 'A single broker-ready document listing every property, its assessed reinstatement cost, assessment date and recommended review date.' },
                 { title: 'Managed renewal cycle', desc: 'Under the 3-Year Protection Plan we track every renewal date across the portfolio and deliver updated figures proactively, before each renewal and not after.' },
               ].map(({ title, desc }) => (
@@ -257,7 +257,7 @@ export default function PortfolioPage() {
 
 
       <ContactSection heading="Consolidate your portfolio. One instruction." flip />
-      <FaqSection description="Common questions about portfolio reinstatement cost assessments." items={faqItems} flip />
+      <FaqSection description="Common questions about portfolio Reinstatement Cost Assessments." items={faqItems} flip />
     </main>
   )
 }

@@ -64,7 +64,7 @@ const SERVICE_INFO = {
 const STEPS = [
   { key: 'propertyType', question: 'What type of property needs insuring?', options: PROPERTY_TYPES },
   { key: 'role', question: 'What is your role?', options: ROLES },
-  { key: 'lastAssessed', question: 'When was the last reinstatement cost assessment carried out?', options: LAST_ASSESSED },
+  { key: 'lastAssessed', question: 'When was the last Reinstatement Cost Assessment carried out?', options: LAST_ASSESSED },
   { key: 'units', question: 'How many properties or units does this cover?', options: UNIT_COUNTS },
 ]
 

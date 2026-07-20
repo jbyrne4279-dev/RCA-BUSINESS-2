@@ -7,7 +7,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Block Managers',
-  description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant, accepted at renewal without question.',
+  description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent, compliant, accepted at renewal without question.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
     type: 'website',
@@ -15,23 +15,23 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
-    description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent declared values across every block you manage. Compliant, broker-ready, 24-hour turnaround.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessments for block managers - Stearling Reinstatement' }],
+    description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent declared values across every block you manage. Compliant, broker-ready, 24-hour turnaround.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessments for block managers - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
-    description: 'RICS-regulated reinstatement cost assessments for block managers. Consistent, compliant declared values across every block you manage.',
+    description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent, compliant declared values across every block you manage.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'As a block manager, am I personally liable for underinsurance if no reinstatement cost assessment has been carried out?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full reinstatement cost, failure to commission a current RICS-regulated reinstatement cost assessment exposes you to a personal negligence claim from leaseholders if a claim shortfall arises. A current reinstatement cost assessment is the documented evidence that you discharged that duty correctly.' },
-  { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated reinstatement cost assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
-  { question: 'How do block managers instruct reinstatement cost assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated reinstatement cost assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
-  { question: 'Can leaseholders or a tribunal challenge a RICS reinstatement cost assessment figure?', answer: 'A RICS-regulated reinstatement cost assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our reinstatement cost assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
-  { question: 'What information does Stearling Reinstatement need to produce a reinstatement cost assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation. The process takes minutes and we can work with estimates at the enquiry stage.' },
+  { question: 'As a block manager, am I personally liable for underinsurance if no Reinstatement Cost Assessment has been carried out?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full reinstatement cost, failure to commission a current RICS-regulated Reinstatement Cost Assessment exposes you to a personal negligence claim from leaseholders if a claim shortfall arises. A current Reinstatement Cost Assessment is the documented evidence that you discharged that duty correctly.' },
+  { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated Reinstatement Cost Assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
+  { question: 'How do block managers instruct Reinstatement Cost Assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated Reinstatement Cost Assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
+  { question: 'Can leaseholders or a tribunal challenge a RICS Reinstatement Cost Assessment figure?', answer: 'A RICS-regulated Reinstatement Cost Assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our Reinstatement Cost Assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
+  { question: 'What information does Stearling Reinstatement need to produce a Reinstatement Cost Assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation. The process takes minutes and we can work with estimates at the enquiry stage.' },
 ]
 
 export default function BlockManagersPage() {
@@ -70,7 +70,7 @@ export default function BlockManagersPage() {
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
             <Image
               src="/AdobeStock_208633670.jpeg"
-              alt="Block manager reinstatement cost assessment"
+              alt="Block manager Reinstatement Cost Assessment"
               fill
               className="object-cover"
               priority
@@ -238,7 +238,7 @@ export default function BlockManagersPage() {
 
       {/* 6. CONTACT + FAQ */}
       <ContactSection heading="Remove the liability. Instruct today." flip />
-      <FaqSection description="Questions from block management firms about reinstatement cost assessments." items={faqItems} flip />
+      <FaqSection description="Questions from block management firms about Reinstatement Cost Assessments." items={faqItems} flip />
 
     </main>
   )

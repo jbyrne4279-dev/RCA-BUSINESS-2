@@ -21,7 +21,7 @@ const reviews = [
     fallbackBg: '#E37400',
   },
   {
-    quote: 'We manage over 40 blocks and Stearling Reinstatement handles all our reinstatement cost assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
+    quote: 'We manage over 40 blocks and Stearling Reinstatement handles all our Reinstatement Cost Assessments on a rolling three-year cycle. Takes the compliance burden completely off our desk.',
     name: 'Priya N.',
     role: 'Portfolio Manager, Birmingham',
     reviewCount: '5 reviews',

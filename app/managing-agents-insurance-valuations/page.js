@@ -7,7 +7,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Managing Agents',
-  description: 'Specialist reinstatement cost assessments for managing agents and RTM companies. Protect your PI cover and discharge the lease obligation.',
+  description: 'Specialist Reinstatement Cost Assessments for managing agents and RTM companies. Protect your PI cover and discharge the lease obligation.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
   openGraph: {
     type: 'website',
@@ -15,24 +15,24 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/managing-agents-insurance-valuations',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated reinstatement cost assessments for managing agents and RTM companies. Discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessments for managing agents - Stearling Reinstatement' }],
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for managing agents and RTM companies. Discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessments for managing agents - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
-    description: 'RICS-regulated reinstatement cost assessments for managing agents. Discharge lease obligations, protect PI cover, meet FCA Consumer Duty.',
+    description: 'RICS-regulated Reinstatement Cost Assessments for managing agents. Discharge lease obligations, protect PI cover, meet FCA Consumer Duty.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Can a managing agent be personally liable for underinsurance on a block?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate reinstatement cost assessment, the managing agent can face a professional negligence or E&O claim independent of who holds the insuring obligation under the lease. A current RICS-regulated reinstatement cost assessment on the recommended three-year cycle is the defensible evidence that you discharged the duty correctly.' },
-  { question: 'Will insurers and brokers accept a reinstatement cost assessment from Stearling Reinstatement?', answer: 'Yes. Every reinstatement cost assessment (rebuild cost assessment) we produce is accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect. Forward it directly at renewal.' },
-  { question: 'How quickly can a managing agent receive a reinstatement cost assessment report?', answer: 'Desktop reinstatement cost assessments are delivered within 24 hours of instruction for standard residential blocks. For on-site rebuild cost assessment instructions we confirm the survey programme at the outset. For portfolio instructions we agree a phased schedule so no renewal window is missed.' },
-  { question: 'Is index-linking the sum insured each year a substitute for a reinstatement cost assessment?', answer: 'No. Index-linking adjusts the declared value figure but compounds any existing error in the original reinstatement cost assessment and does not capture material works, specification changes or structural alterations. RICS requires a full formal reinstatement cost assessment at least every three years index-linking alone does not satisfy that requirement.' },
-  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20–50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal reinstatement cost assessment produces the correct DV as its primary output.' },
-  { question: 'Can Stearling Reinstatement assess multiple blocks under one portfolio instruction?', answer: 'Yes. We produce individual RICS-regulated reinstatement cost assessment reports per property, with residential and commercial elements split for mixed-use blocks, a consolidated portfolio summary schedule, and staggered scheduling to smooth service-charge cost across renewal years.' },
+  { question: 'Can a managing agent be personally liable for underinsurance on a block?', answer: 'Yes. Where a claim shortfall arises from a stale or inadequate Reinstatement Cost Assessment, the managing agent can face a professional negligence or E&O claim independent of who holds the insuring obligation under the lease. A current RICS-regulated Reinstatement Cost Assessment on the recommended three-year cycle is the defensible evidence that you discharged the duty correctly.' },
+  { question: 'Will insurers and brokers accept a Reinstatement Cost Assessment from Stearling Reinstatement?', answer: 'Yes. Every Reinstatement Cost Assessment (rebuild cost assessment) we produce is accepted across the UK market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect. Forward it directly at renewal.' },
+  { question: 'How quickly can a managing agent receive a Reinstatement Cost Assessment report?', answer: 'Desktop Reinstatement Cost Assessments are delivered within 24 hours of instruction for standard residential blocks. For on-site rebuild cost assessment instructions we confirm the survey programme at the outset. For portfolio instructions we agree a phased schedule so no renewal window is missed.' },
+  { question: 'Is index-linking the sum insured each year a substitute for a Reinstatement Cost Assessment?', answer: 'No. Index-linking adjusts the declared value figure but compounds any existing error in the original Reinstatement Cost Assessment and does not capture material works, specification changes or structural alterations. RICS requires a full formal Reinstatement Cost Assessment at least every three years index-linking alone does not satisfy that requirement.' },
+  { question: 'What is the difference between Declared Value and Sum Insured in a buildings insurance policy?', answer: 'The Declared Value (DV) is the reinstatement cost figure established by the managing agent the rebuild cost assessment output. The Sum Insured is set by the insurer: the DV plus an inflation provision, typically a 20–50% uplift. Confusing the two and under-declaring the DV creates the shortfall that triggers the average clause. A formal Reinstatement Cost Assessment produces the correct DV as its primary output.' },
+  { question: 'Can Stearling Reinstatement assess multiple blocks under one portfolio instruction?', answer: 'Yes. We produce individual RICS-regulated Reinstatement Cost Assessment reports per property, with residential and commercial elements split for mixed-use blocks, a consolidated portfolio summary schedule, and staggered scheduling to smooth service-charge cost across renewal years.' },
 ]
 
 export default function ManagingAgentsPage() {
@@ -68,7 +68,7 @@ export default function ManagingAgentsPage() {
             </div>
           </div>
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out reinstatement cost assessment for managing agents" fill className="object-cover" priority />
+            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out Reinstatement Cost Assessment for managing agents" fill className="object-cover" priority />
             <div className="hero-electric-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
@@ -103,7 +103,7 @@ export default function ManagingAgentsPage() {
                 { label: 'Stale valuation (3+ years old)', desc: 'Creates PI exposure; average clause triggered on a claim.', ok: false },
                 { label: 'Index-linking only', desc: 'Compounds existing errors; no physical reinspection.', ok: false },
                 { label: 'Online calculator or functional-unit rate', desc: 'No professional indemnity backing; challenged by loss adjusters.', ok: false },
-                { label: 'RICS reinstatement cost assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
+                { label: 'RICS Reinstatement Cost Assessment', desc: 'Defensible at every stage - PI-backed, broker-ready, compliant.', ok: true },
               ].map(({ label, desc, ok }) => (
                 <div key={label} className={`flex gap-4 items-start rounded-xl p-4 border ${ok ? 'border-[#16a34a] bg-[rgba(22,163,74,0.06)]' : 'border-[#f87171] bg-[rgba(239,68,68,0.05)]'}`}>
                   <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
@@ -230,7 +230,7 @@ export default function ManagingAgentsPage() {
 
 
       <ContactSection heading="Protect yourself and your clients. Instruct us today." flip />
-      <FaqSection description="Common questions from managing agents and RTM companies about reinstatement cost assessments." items={faqItems} flip />
+      <FaqSection description="Common questions from managing agents and RTM companies about Reinstatement Cost Assessments." items={faqItems} flip />
     </main>
   )
 }

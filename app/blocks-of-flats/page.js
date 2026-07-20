@@ -8,7 +8,7 @@ import FlashList from '../components/FlashList'
 
 export const metadata = {
   title: 'Blocks of Flats Reinstatement Cost Assessments',
-  description: 'Specialist RICS reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause.',
+  description: 'Specialist RICS Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause.',
   alternates: { canonical: '/blocks-of-flats' },
   openGraph: {
     type: 'website',
@@ -16,24 +16,24 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/blocks-of-flats',
     siteName: 'Stearling Reinstatement',
     title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause with an accurate declared value.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement cost assessment for blocks of flats - Stearling Reinstatement' }],
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause with an accurate declared value.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for blocks of flats - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated reinstatement cost assessments for blocks of flats. Protect every leaseholder from the average clause.',
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Why do blocks of flats need a specialist reinstatement cost assessment?', answer: 'Blocks of flats carry rebuild costs that generic online calculators miss entirely communal areas, lifts, shared services, external fabric, professional fees, and VAT on partial-damage repairs. A RICS-regulated reinstatement cost assessment captures every cost layer specific to your block. When multiple leaseholders share one insurance policy, a wrong declared value puts every one of them at risk simultaneously.' },
-  { question: 'What is the average clause and how does it affect leaseholders in a block?', answer: 'If the declared value in a buildings insurance policy is inadequate at claim time, the insurer applies the average clause and reduces every payout proportionally. A block insured for 70% of its true reinstatement cost has every claim escape of water, fire, subsidence paid at 70p in the pound. An up-to-date reinstatement cost assessment (rebuild cost assessment) is the primary protection against this.' },
-  { question: 'What does a reinstatement cost assessment for a block of flats include?', answer: 'A RICS-regulated reinstatement cost assessment for a block covers demolition and site clearance, structure, external envelope, communal areas, lifts, building services, professional fees, statutory fees, and VAT where applicable. It produces a single declared value covering the full cost of rebuilding the block from cleared ground the figure your insurer needs at renewal.' },
-  { question: 'Could my block be over-insured rather than underinsured?', answer: 'Yes particularly for central-London blocks where market value substantially exceeds reinstatement cost. Owners insuring toward market value pay inflated premiums every year for unnecessary cover. A professional reinstatement cost assessment right-sizes the declared value in both directions, removing overpayment as well as underinsurance risk.' },
-  { question: 'Can a managing agent commission a reinstatement cost assessment on behalf of the freeholder?', answer: 'Yes. We regularly work with managing agents, RTM companies and resident management companies commissioning reinstatement cost assessments on behalf of freeholders. If you manage multiple blocks, our portfolio reinstatement cost assessment service covers every property under a single instruction with a consolidated summary schedule.' },
-  { question: 'How often should the rebuild cost assessment for a block of flats be updated?', answer: 'RICS guidance requires a formal reinstatement cost assessment at least every three years, with annual BCIS-indexed inflation adjustment in between. Our 3-Year Protection Plan covers both requirements under one instruction full reinstatement cost assessment in year one, indexed rebuild cost updates before each renewal, no re-instructing required.' },
+  { question: 'Why do blocks of flats need a specialist Reinstatement Cost Assessment?', answer: 'Blocks of flats carry rebuild costs that generic online calculators miss entirely communal areas, lifts, shared services, external fabric, professional fees, and VAT on partial-damage repairs. A RICS-regulated Reinstatement Cost Assessment captures every cost layer specific to your block. When multiple leaseholders share one insurance policy, a wrong declared value puts every one of them at risk simultaneously.' },
+  { question: 'What is the average clause and how does it affect leaseholders in a block?', answer: 'If the declared value in a buildings insurance policy is inadequate at claim time, the insurer applies the average clause and reduces every payout proportionally. A block insured for 70% of its true reinstatement cost has every claim escape of water, fire, subsidence paid at 70p in the pound. An up-to-date Reinstatement Cost Assessment (rebuild cost assessment) is the primary protection against this.' },
+  { question: 'What does a Reinstatement Cost Assessment for a block of flats include?', answer: 'A RICS-regulated Reinstatement Cost Assessment for a block covers demolition and site clearance, structure, external envelope, communal areas, lifts, building services, professional fees, statutory fees, and VAT where applicable. It produces a single declared value covering the full cost of rebuilding the block from cleared ground the figure your insurer needs at renewal.' },
+  { question: 'Could my block be over-insured rather than underinsured?', answer: 'Yes particularly for central-London blocks where market value substantially exceeds reinstatement cost. Owners insuring toward market value pay inflated premiums every year for unnecessary cover. A professional Reinstatement Cost Assessment right-sizes the declared value in both directions, removing overpayment as well as underinsurance risk.' },
+  { question: 'Can a managing agent commission a Reinstatement Cost Assessment on behalf of the freeholder?', answer: 'Yes. We regularly work with managing agents, RTM companies and resident management companies commissioning Reinstatement Cost Assessments on behalf of freeholders. If you manage multiple blocks, our portfolio Reinstatement Cost Assessment service covers every property under a single instruction with a consolidated summary schedule.' },
+  { question: 'How often should the rebuild cost assessment for a block of flats be updated?', answer: 'RICS guidance requires a formal Reinstatement Cost Assessment at least every three years, with annual BCIS-indexed inflation adjustment in between. Our 3-Year Protection Plan covers both requirements under one instruction full Reinstatement Cost Assessment in year one, indexed rebuild cost updates before each renewal, no re-instructing required.' },
 ]
 
 export default function BlocksOfFlatsPage() {
@@ -69,11 +69,11 @@ export default function BlocksOfFlatsPage() {
             </div>
           </div>
           <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, reinstatement cost assessment" fill className="object-cover" priority />
+            <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, Reinstatement Cost Assessment" fill className="object-cover" priority />
             <div className="hero-electric-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Specialist reinstatement cost assessments for blocks of flats across the UK.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">Specialist Reinstatement Cost Assessments for blocks of flats across the UK.</p>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function BlocksOfFlatsPage() {
 
 
       <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." />
-      <FaqSection description="Common questions about reinstatement cost assessments for blocks of flats." items={faqItems} />
+      <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} />
     </main>
   )
 }

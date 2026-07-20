@@ -42,7 +42,7 @@ export default function ContactFormInner({ heading }) {
           {heading}
         </h2>
         <p className="text-[#64748b] text-sm leading-relaxed max-w-lg">
-          Speak directly with a RICS-regulated reinstatement cost assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers. Written fee estimate within 24 hours, no contract required.
+          Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers. Written fee estimate within 24 hours, no contract required.
         </p>
       </div>
 

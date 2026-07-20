@@ -27,18 +27,18 @@ export const metadata = {
   description:
     'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   keywords: [
-    'reinstatement cost assessment',
+    'Reinstatement Cost Assessment',
     'rebuild cost assessment',
-    'reinstatement cost assessment UK',
+    'Reinstatement Cost Assessment UK',
     'rebuild cost assessment UK',
-    'reinstatement cost assessment London',
+    'Reinstatement Cost Assessment London',
     'rebuild cost assessment London',
-    'managing agents reinstatement cost assessment',
+    'managing agents Reinstatement Cost Assessment',
     'RTM company insurance valuation',
     'block of flats reinstatement cost',
     'RICS surveyor London',
     'building insurance valuation London',
-    'RICS regulated reinstatement cost assessment',
+    'RICS regulated Reinstatement Cost Assessment',
     'building insurance valuation UK',
     'underinsurance UK',
     'BCIS rebuild cost',
@@ -107,7 +107,7 @@ const orgSchema = {
         height: 200,
       },
       description:
-        'RICS-regulated reinstatement cost assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+        'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '17 Hanover Square',
@@ -167,7 +167,7 @@ const orgSchema = {
       url: 'https://stearlingreinstatement.com',
       name: 'Stearling Reinstatement',
       description:
-        'RICS-regulated reinstatement cost assessments for UK properties.',
+        'RICS-regulated Reinstatement Cost Assessments for UK properties.',
       publisher: { '@id': 'https://stearlingreinstatement.com/#organization' },
       inLanguage: 'en-GB',
     },
