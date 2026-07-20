@@ -48,6 +48,7 @@ export default function ContactFormInner({ heading }) {
 
       <form ref={formRef} onSubmit={handleSubmit} action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-6">
         <input type="hidden" name="_next" value="https://stearlingreinstatement.com/thank-you" />
+        <input type="text" name="_gotcha" tabIndex="-1" autoComplete="off" style={{position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0}} aria-hidden="true" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">

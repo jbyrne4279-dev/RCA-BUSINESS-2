@@ -198,6 +198,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
           <form action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-2.5">
             <input type="hidden" name="_next" value="https://stearlingreinstatement.com/thank-you" />
+            <input type="text" name="_gotcha" tabIndex="-1" autoComplete="off" style={{position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0}} aria-hidden="true" />
             <input type="hidden" name="_subject" value="New quiz lead - Stearling Reinstatement" />
             <input type="hidden" name="source" value={source} />
             <input type="hidden" name="property_type" value={answers.propertyType || ''} />
