@@ -181,7 +181,7 @@ export default function HomePage() {
           </div>
 
           {/* Assessment process - horizontal timeline */}
-          <TiltWrapper className="bg-[#f8fafc] rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.06)'}}>
+          <TiltWrapper className="rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{background:'#f0f4ff', boxShadow:'0 8px 32px rgba(0,87,255,0.06)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest text-center mb-10">Assessment Process</p>
             <div className="relative">
               <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-[#e2e8f0]" />
