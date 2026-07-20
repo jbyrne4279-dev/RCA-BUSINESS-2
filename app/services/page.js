@@ -253,8 +253,8 @@ export default function ServicesPage() {
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide">{badge}</p>
                     <span className="flex flex-col items-end gap-1 shrink-0">
-                      <Image src="/rics-logo.png" alt="RICS" width={36} height={24} className="object-contain" />
                       <span className="text-[9px] font-semibold text-[#0d1b3e]/60 uppercase tracking-wide whitespace-nowrap">RICS Regulated</span>
+                      <Image src="/rics-logo.png" alt="RICS" width={36} height={24} className="object-contain" />
                     </span>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
