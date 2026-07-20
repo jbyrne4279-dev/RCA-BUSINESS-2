@@ -217,18 +217,18 @@ main {
 /* ── Hero image pulsing electric blue glow ── */
 @keyframes hero-electric-pulse {
   0%, 100% {
-    box-shadow: 0 24px 64px rgba(0,87,255,0.15), 0 4px 16px rgba(0,0,0,0.08), 0 0 0 0 rgba(0,87,255,0);
+    box-shadow: 0 20px 48px rgba(0,87,255,0.08), 0 4px 16px rgba(0,0,0,0.08), 0 0 0 0 rgba(0,87,255,0);
   }
   50% {
-    box-shadow: 0 24px 90px rgba(0,87,255,0.55), 0 4px 16px rgba(0,0,0,0.08), 0 0 70px 12px rgba(0,87,255,0.28), 0 0 0 3px rgba(0,120,255,0.45);
+    box-shadow: 0 20px 56px rgba(0,87,255,0.20), 0 4px 16px rgba(0,0,0,0.08), 0 0 24px 4px rgba(0,87,255,0.10), 0 0 0 1px rgba(0,120,255,0.18);
   }
 }
 @keyframes hero-electric-inner {
   0%, 100% {
-    opacity: 0.18;
+    opacity: 0.08;
   }
   50% {
-    opacity: 0.72;
+    opacity: 0.28;
   }
 }
 .hero-img-pulse {
@@ -238,7 +238,7 @@ main {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse 85% 55% at 50% 105%, rgba(0,100,255,0.65) 0%, rgba(0,160,255,0.25) 40%, transparent 70%);
+  background: radial-gradient(ellipse 85% 55% at 50% 105%, rgba(0,100,255,0.30) 0%, rgba(0,160,255,0.12) 40%, transparent 70%);
   animation: hero-electric-inner 2.6s ease-in-out infinite;
   mix-blend-mode: screen;
   z-index: 1;
