@@ -64,8 +64,7 @@ export default function HomePage() {
               <Link href="/services" className="btn-ghost">View Services</Link>
             </div>
             <div className="flex items-center gap-2 mt-6">
-              <Image src="/rics-logo.png" alt="RICS Regulated" width={90} height={60} className="h-14 w-auto object-contain" />
-              <p className="text-xs text-[#94a3b8]">RICS-regulated assessments you can rely on.</p>
+              <Image src="/rics-logo.png" alt="RICS Regulated" width={120} height={80} className="h-20 w-auto object-contain" />
             </div>
           </div>
 
