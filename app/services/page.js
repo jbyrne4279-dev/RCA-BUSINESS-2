@@ -25,7 +25,7 @@ const IcoShield = () => (
 export const metadata = {
   title: 'Reinstatement Cost Assessment Services',
   description: 'Specialist RICS reinstatement and rebuild cost assessments for blocks of flats, managing agents, freeholders and leaseholders.',
-  keywords: ['Reinstatement Cost Assessment', 'RICS Reinstatement Cost Assessment', 'rebuild cost assessment', 'desktop Reinstatement Cost Assessment', 'on-site rebuild cost assessment', 'Reinstatement Cost Assessment services UK', 'RICS rebuild cost assessment UK'],
+  keywords: ['Reinstatement Cost Assessment', 'RICS Reinstatement Cost Assessment', 'rebuild cost assessment', 'desktop Reinstatement Cost Assessment', 'on-site rebuild cost assessment', 'Reinstatement Cost Assessment services UK', 'RICS rebuild cost assessment UK', 'Reinstatement Cost Assessment London', 'Reinstatement Cost Assessment Birmingham', 'Reinstatement Cost Assessment Midlands', 'Reinstatement Cost Assessment Sussex'],
   alternates: { canonical: '/services' },
   openGraph: {
     type: 'website',
@@ -202,8 +202,41 @@ export default function ServicesPage() {
 
 
 
-      <ContactSection heading="Not sure which service you need? We'll advise." flip />
-      <FaqSection description="Still deciding? Use these answers to narrow it down, or contact us and we'll recommend the right service for your property." items={faqItems} flip />
+      {/* AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span className="badge badge-blue mb-5">Coverage</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              Reinstatement Cost Assessments <span className="blue-keyword">across the UK</span>.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              Our desktop Reinstatement Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
+            </p>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              Wherever the property sits, every report is BCIS-indexed to local rebuild costs and accepted by all UK insurers.
+            </p>
+            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
+          </div>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-4">Regions we assess</p>
+            <div className="flex flex-wrap gap-3">
+              {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
+                <span
+                  key={area}
+                  className="text-xs font-semibold text-[#0d1b3e] border border-[#e2e8f0] rounded-full px-4 py-2"
+                  style={{background:'#f0f4ff'}}
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ContactSection heading="Not sure which service you need? We'll advise." />
+      <FaqSection description="Still deciding? Use these answers to narrow it down, or contact us and we'll recommend the right service for your property." items={faqItems} />
 
     </main>
   )
