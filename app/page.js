@@ -186,7 +186,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. SERVICES - the solution, once the problem is established */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
@@ -309,7 +309,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. WHO WE HELP - relevance to the visitor + how the process works */}
-      <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-6xl mx-auto">
 
           {/* Header */}
@@ -396,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* 8. AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-4xl mx-auto text-center">
           <span className="badge badge-blue mb-5">Coverage</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
@@ -409,8 +409,7 @@ export default function HomePage() {
             {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
               <span
                 key={area}
-                className="text-xs font-semibold text-[#0d1b3e] border border-[#e2e8f0] rounded-full px-4 py-2"
-                style={{background:'#f0f4ff'}}
+                className="text-xs font-semibold text-[#0d1b3e] border border-[#e2e8f0] rounded-full px-4 py-2 bg-white"
               >
                 {area}
               </span>

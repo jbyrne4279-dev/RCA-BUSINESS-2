@@ -41,9 +41,23 @@ export default function ContactFormInner({ heading }) {
         <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
           {heading}
         </h2>
-        <p className="text-[#64748b] text-sm leading-relaxed max-w-lg">
-          Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers. Written fee estimate within 24 hours, no contract required.
+        <p className="text-[#64748b] text-base leading-relaxed max-w-xl mb-6">
+          Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers.
         </p>
+        <div className="flex flex-wrap gap-x-6 gap-y-3">
+          {[
+            'RICS-regulated surveyors',
+            'Written fee estimate in 24 hours',
+            'No contract required',
+          ].map((point) => (
+            <span key={point} className="flex items-center gap-2 text-xs font-semibold text-[#0d1b3e]">
+              <span className="w-5 h-5 rounded-full flex items-center justify-center bg-[#0057FF]/10 text-[#0057FF] shrink-0">
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+              </span>
+              {point}
+            </span>
+          ))}
+        </div>
       </div>
 
       <form ref={formRef} onSubmit={handleSubmit} action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-6">
