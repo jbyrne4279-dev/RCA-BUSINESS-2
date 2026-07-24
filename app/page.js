@@ -91,35 +91,40 @@ export default function HomePage() {
 
       {/* 3. DEFINITION - answers "what is a RICS reinstatement cost assessment" searches */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
-        <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-5">Definition</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            What is a <span className="blue-keyword">RICS Reinstatement Cost Assessment</span>?
-          </h2>
-          <p className="text-[#64748b] text-base leading-relaxed mb-6">
-            A Reinstatement Cost Assessment (RCA) - also called a rebuild cost assessment - is a formal, RICS-regulated calculation of the full cost to rebuild a property from scratch, used to set the buildings sum insured. It is carried out by a RICS-registered surveyor and produces a defensible declared value that insurers and brokers will accept without challenge.
-          </p>
-          <p className="text-[#64748b] text-base leading-relaxed mb-6">
-            A RICS Reinstatement Cost Assessment typically covers:
-          </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-            {[
-              'Demolition and site clearance',
-              'Structure, fabric and finishes',
-              'Communal areas and shared services',
-              'Professional and statutory fees',
-              'VAT, where applicable',
-              'BCIS-indexed rebuild cost data',
-            ].map((point) => (
-              <li key={point} className="flex items-start gap-3">
-                <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#0057FF'}} />
-                <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
-              </li>
-            ))}
-          </ul>
-          <p className="text-[#0d1b3e] text-base font-semibold leading-relaxed">
-            It is not the same as market value, and only a current Reinstatement Cost Assessment produces a figure an insurer will rely on after a claim.
-          </p>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span className="badge badge-blue mb-5">Definition</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+              What is a <span className="blue-keyword">RICS Reinstatement Cost Assessment</span>?
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              A Reinstatement Cost Assessment (RCA) - also called a rebuild cost assessment - is a formal, RICS-regulated calculation of the full cost to rebuild a property from scratch, used to set the buildings sum insured. It&apos;s carried out by a RICS-registered surveyor and produces a defensible declared value that insurers and brokers accept without challenge.
+            </p>
+            <p className="text-[#0d1b3e] text-sm font-semibold leading-relaxed">
+              It is not the same as market value - only a current Reinstatement Cost Assessment produces a figure an insurer will rely on after a claim.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-3">What it covers</p>
+            <div className="flex flex-col divide-y divide-[#e2e8f0]">
+              {[
+                'Demolition and site clearance',
+                'Structure, fabric and finishes',
+                'Communal areas and shared services',
+                'Professional and statutory fees',
+                'VAT, where applicable',
+                'BCIS-indexed rebuild cost data',
+              ].map((point) => (
+                <div key={point} className="flex items-center gap-3 py-3 first:pt-0 last:pb-0">
+                  <span className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center bg-[#0057FF]/10 text-[#0057FF]">
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                  </span>
+                  <p className="text-sm text-[#0d1b3e] font-medium">{point}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
