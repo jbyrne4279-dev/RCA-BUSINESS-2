@@ -421,6 +421,51 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 8b. BUILDINGS WE COVER - answers building-type searches (listed, period, extensions, new-build) */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="badge badge-blue mb-5">Building Types</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
+              The buildings <span className="blue-keyword">we cover</span>
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed">
+              From a Grade II listed cottage with a modern extension to a purpose-built block of flats, we assess every type of property. Whatever the age, construction or use, we produce a RICS-regulated reinstatement cost figure - we cover all building types.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: 'Listed & Heritage Buildings', desc: 'Grade I, Grade II* and Grade II listed properties, assessed with traditional materials and craftsmanship costed in.' },
+              { title: 'Period & Traditional Homes', desc: 'Victorian, Georgian, Edwardian and older properties, including solid-wall and non-standard construction.' },
+              { title: 'Extensions & Alterations', desc: 'Extended, converted or refurbished buildings where a previous valuation no longer reflects the current structure.' },
+              { title: 'Blocks of Flats & Apartments', desc: 'Purpose-built and converted blocks, including communal areas, shared services and multi-storey structures.' },
+              { title: 'Commercial & Mixed-Use', desc: 'Offices, retail, industrial units and mixed residential-commercial premises of every size.' },
+              { title: 'New-Build & Modern Construction', desc: 'Contemporary homes, developments and non-traditional builds indexed to current BCIS rebuild cost data.' },
+            ].map(({ title, desc }) => (
+              <div
+                key={title}
+                className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+                style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
+              >
+                <span
+                  className="w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
+                  style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
+                </span>
+                <h3 className="text-base font-semibold text-[#0d1b3e] mb-2">{title}</h3>
+                <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-[#0d1b3e] text-base font-semibold leading-relaxed mt-12 max-w-2xl mx-auto">
+            If it has a roof and a sum insured, we can assess it - we cover all building types across the UK.
+          </p>
+        </div>
+      </section>
+
       {/* 9. CONTACT FORM - the conversion goal */}
       <ContactSection heading="Instruct an assessment today." flip />
 
