@@ -14,8 +14,7 @@ export default function ThankYouPage() {
       {/* Event snippet for Submit lead form (SRA) conversion page */}
       <Script id="conversion-submit-lead-form" strategy="afterInteractive">
         {`
-          window.dataLayer = window.dataLayer || [];
-          dataLayer.push({'event': 'conversion', 'send_to': 'AW-16853906784/pWTDCISGgOUcEODqyOQ-'});
+          gtag('event', 'conversion', {'send_to': 'AW-16853906784/pWTDCISGgOUcEODqyOQ-'});
         `}
       </Script>
       <ThankYouClient />
