@@ -9,8 +9,6 @@ const SERVICE_MAP = {
   '3year': '3-Year Reinstatement Cost Assessment',
 }
 
-const ADS_CONVERSION = 'AW-16853906784/dC7ICInWv80cEODqyOQ-'
-
 export default function ContactFormInner({ heading }) {
   const params = useSearchParams()
   const preselected = SERVICE_MAP[params.get('service')] ?? ''
@@ -18,20 +16,7 @@ export default function ContactFormInner({ heading }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-
-    function doSubmit() {
-      formRef.current?.submit()
-    }
-
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', {
-        send_to: ADS_CONVERSION,
-        event_callback: doSubmit,
-      })
-      setTimeout(doSubmit, 1000)
-    } else {
-      doSubmit()
-    }
+    formRef.current?.submit()
   }
 
   return (
