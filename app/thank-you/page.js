@@ -11,10 +11,14 @@ export const metadata = {
 export default function ThankYouPage() {
   return (
     <main>
-      {/* Event snippet for Submit lead form (SRA) conversion page */}
+      {/* Event snippet for Submit lead form (2) conversion page */}
       <Script id="conversion-submit-lead-form" strategy="afterInteractive">
         {`
-          gtag('event', 'conversion', {'send_to': 'AW-16853906784/pWTDCISGgOUcEODqyOQ-'});
+          gtag('event', 'conversion', {
+              'send_to': 'AW-16853906784/Ie8vCMLmuOUcEODqyOQ-',
+              'value': 1.0,
+              'currency': 'GBP'
+          });
         `}
       </Script>
       <ThankYouClient />
