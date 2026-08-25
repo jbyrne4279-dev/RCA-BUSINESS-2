@@ -40,8 +40,8 @@ export default function TiltCard() {
     >
       <div className="relative h-52 md:h-64">
         <Image
-          src="/AdobeStock_1477785304.jpeg"
-          alt="Block of flats Reinstatement Cost Assessment"
+          src="/rca-for-my-property.png"
+          alt="Homeowner reviewing their buildings insurance sum insured"
           fill
           className="object-cover"
         />

@@ -7,26 +7,25 @@ import TiltWrapper from './components/TiltWrapper'
 import TrustStrip from './components/TrustStrip'
 
 export const metadata = {
-  title: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
-  description: 'RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, freeholders and portfolio landlords.',
-  keywords: ['Reinstatement Cost Assessment', 'RICS Reinstatement Cost Assessment', 'rebuild cost assessment', 'Reinstatement Cost Assessment UK', 'rebuild cost assessment UK', 'RICS rebuild cost assessment', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'declared value buildings insurance', 'RICS rebuilding cost calculator', 'reinstatement cost assessment London', 'reinstatement cost assessment Birmingham', 'reinstatement cost assessment Midlands', 'reinstatement cost assessment Sussex'],
+  title: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
+  description: 'Make sure your home is insured for the right amount. RICS-regulated Reinstatement Cost Assessments for homeowners, first-time buyers and property owners, delivered in 24 hours.',
+  keywords: ['Reinstatement Cost Assessment', 'reinstatement cost assessment for homeowners', 'what is a reinstatement cost assessment', 'reinstatement cost vs market value', 'am I underinsured', 'rebuild cost assessment', 'Reinstatement Cost Assessment UK', 'rebuild cost assessment UK', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'sum insured for my house', 'reinstatement cost assessment London', 'reinstatement cost assessment Birmingham', 'reinstatement cost assessment Midlands', 'reinstatement cost assessment Sussex'],
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
-    description: '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
+    title: 'Reinstatement Cost Assessment for Homeowners | RICS-Regulated | Stearling Reinstatement',
+    description: '80% of UK homes are underinsured. Make sure your new home is insured for the right amount with a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
     url: 'https://stearlingreinstatement.com',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment London' }],
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment for homeowners' }],
   },
 }
 
 const faqItems = [
-  { question: 'What is a Reinstatement Cost Assessment?', answer: 'A Reinstatement Cost Assessment (RCA) also called a rebuild cost assessment is a formal RICS-regulated calculation of the full cost to rebuild a property from scratch for buildings insurance purposes. It covers demolition and site clearance, structure, finishes, communal areas, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current Reinstatement Cost Assessment produces a defensible declared value for your insurer.' },
-  { question: 'What is the difference between a Reinstatement Cost Assessment and a rebuild cost assessment?', answer: 'The terms are used interchangeably throughout the UK insurance market. A Reinstatement Cost Assessment and a rebuild cost assessment both refer to the same RICS-regulated exercise: calculating the full cost to rebuild a property for buildings insurance purposes. At Stearling Reinstatement we use both terms the formal RICS standard is the same whichever name is used.' },
-  { question: 'How is reinstatement cost different from market value?', answer: 'Market value is what a buyer would pay on the open market. Reinstatement cost or rebuild cost is what it costs to reconstruct the building from cleared ground. In many locations they diverge significantly: a central-London flat may be worth £800,000 on the market but cost £350,000 to rebuild. Insuring at market value causes over-insurance and inflated premiums; insuring below true reinstatement cost triggers the average clause on every claim.' },
-  { question: 'How often should a Reinstatement Cost Assessment be updated?', answer: 'RICS guidance requires a formal rebuild cost assessment at least every three years, with annual BCIS-indexed inflation adjustment in the intervening years. Where a building has been extended, altered or significantly refurbished or where no formal Reinstatement Cost Assessment has been carried out since before 2020 a fresh assessment should be commissioned before the next renewal.' },
-  { question: 'Why do managing agents and RTM companies need a Reinstatement Cost Assessment?', answer: 'Managing agents and RTM companies that arrange buildings insurance for blocks carry a direct legal obligation to insure to full reinstatement cost. Where the declared value is inadequate and a claim arises, the insurer applies the average clause and reduces the payout and the managing agent or RTM can face a professional negligence claim from leaseholders for the shortfall. A current RICS-regulated Reinstatement Cost Assessment is the documented evidence that the obligation was properly discharged.' },
-  { question: 'What happens if a building is underinsured?', answer: 'The insurer applies the condition of average and reduces every claim payout proportionally. If a building\'s true rebuild cost is £2m but it is insured for £1.4m, a £200,000 claim pays out only £140,000. Leaseholders can pursue the party responsible for arranging insurance for any unrecovered loss. A current Reinstatement Cost Assessment is the primary protection against this outcome.' },
-  { question: 'What areas does Stearling Reinstatement cover?', answer: 'We provide Reinstatement Cost Assessments and rebuild cost assessments across the whole of the UK, including London, the Midlands, Birmingham and Sussex. Desktop assessments are available for any property nationally, typically delivered within 24 hours. On-site surveys cover England, Scotland, Wales and Northern Ireland.' },
+  { question: 'What is a Reinstatement Cost Assessment?', answer: 'A Reinstatement Cost Assessment (RCA) also called a rebuild cost assessment is a formal RICS-regulated calculation of the full cost to rebuild your home from scratch, used to set your buildings insurance sum insured. It covers demolition and site clearance, structure, finishes, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current Reinstatement Cost Assessment produces a figure your insurer will rely on if you ever need to claim.' },
+  { question: 'How is reinstatement cost different from market value?', answer: 'Market value is what a buyer would pay on the open market. Reinstatement cost or rebuild cost is what it costs to reconstruct the building from cleared ground, excluding the land. In many locations they diverge significantly: a central-London flat may be worth £800,000 on the market but cost £350,000 to rebuild. Insuring at market value wastes money on excess premium; insuring below true reinstatement cost triggers the average clause and cuts every claim payout.' },
+  { question: 'Do I need a Reinstatement Cost Assessment as a first-time buyer?', answer: "It's one of the most overlooked steps after buying. Your mortgage lender requires buildings insurance sufficient for full reinstatement cost, and the sum insured suggested by comparison sites or a previous owner's policy is often wrong. Getting an accurate figure before you insure protects you from day one." },
+  { question: 'What happens if my home is underinsured?', answer: "The insurer applies the condition of average and reduces every claim payout proportionally - not just on a total loss. If your home's true rebuild cost is £400,000 but you're insured for £300,000, a £20,000 claim pays out only £15,000. You'd have to find the remaining £5,000 yourself." },
+  { question: 'How often should a Reinstatement Cost Assessment be updated?', answer: 'RICS guidance recommends a formal reassessment at least every three years, with annual BCIS-indexed inflation adjustment in between. If you\'ve extended, converted or significantly renovated your home, or can\'t remember your last assessment, it\'s worth updating before your next renewal.' },
+  { question: 'How much does a Reinstatement Cost Assessment cost?', answer: "It depends on your property's size, type and whether a desktop or on-site assessment is needed. Tell us about your home and we'll confirm a fixed price before you commit to anything - see our full pricing guide for homeowners." },
 ]
 
 export default function HomePage() {
@@ -37,10 +36,10 @@ export default function HomePage() {
         '@type': 'WebPage',
         '@id': 'https://stearlingreinstatement.com/#webpage',
         url: 'https://stearlingreinstatement.com/',
-        name: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
+        name: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
         isPartOf: { '@id': 'https://stearlingreinstatement.com/#website' },
         about: { '@id': 'https://stearlingreinstatement.com/#organization' },
-        description: 'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+        description: 'RICS-regulated Reinstatement Cost Assessments for homeowners, first-time buyers and property owners across the UK.',
         inLanguage: 'en-GB',
       },
     ],
@@ -54,14 +53,14 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
           <div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Specialist <span className="blue-keyword">Reinstatement Cost Assessments</span> for UK property.
+              Make sure your home is insured for the <span className="blue-keyword">right amount</span>.
             </h1>
             <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Specialist Reinstatement Cost Assessments from RICS Certified Surveyors for managing agents, freeholders, leaseholders and portfolio landlords. Broker-ready reports in <span className="glow-24">24 hours</span>.
+              Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in <span className="glow-24">24 hours</span>.
             </p>
             <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
-              <Link href="/services" className="btn-ghost">View Services</Link>
+              <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
+              <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
             </div>
             <div className="flex items-center gap-2 mt-6">
               <Image src="/rics-logo.png" alt="RICS Regulated" width={120} height={80} className="h-20 w-auto object-contain" />
@@ -71,8 +70,8 @@ export default function HomePage() {
           {/* Hero image */}
           <div className="hero-img-pulse hidden sm:block relative rounded-3xl overflow-hidden sm:h-64 md:h-96 lg:h-[520px]">
             <Image
-              src="/AdobeStock_1956380728.jpeg"
-              alt="Reinstatement Cost Assessment property"
+              src="/rca-for-my-property-london-rebuild.png"
+              alt="Homeowner's Reinstatement Cost Assessment"
               fill
               className="object-cover"
               priority
@@ -80,29 +79,32 @@ export default function HomePage() {
             <div className="hero-electric-overlay" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/55 via-[#0d1b3e]/10 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for properties across the UK, carried out by chartered surveyors.</p>
+              <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for homeowners across the UK, carried out by chartered surveyors.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* 2. TRUST STRIP - immediate credibility */}
-      <TrustStrip />
+      <TrustStrip variant="homeowner" />
 
       {/* 3. DEFINITION - answers "what is a RICS reinstatement cost assessment" searches */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <span className="badge badge-blue mb-5">Definition</span>
+            <span className="badge badge-blue mb-5">Homeowner Guide</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              What is a <span className="blue-keyword">RICS Reinstatement Cost Assessment</span>?
+              What is a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              A Reinstatement Cost Assessment (RCA) - also called a rebuild cost assessment - is a formal, RICS-regulated calculation of the full cost to rebuild a property from scratch, used to set the buildings sum insured. It&apos;s carried out by a RICS-registered surveyor and produces a defensible declared value that insurers and brokers accept without challenge.
+              In plain English: it&apos;s a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch - not what you paid for it, and not what it&apos;s worth on the market. It&apos;s the figure your buildings insurance sum insured should be based on.
             </p>
-            <p className="text-[#0d1b3e] text-sm font-semibold leading-relaxed">
-              It is not the same as market value - only a current Reinstatement Cost Assessment produces a figure an insurer will rely on after a claim.
+            <p className="text-[#0d1b3e] text-sm font-semibold leading-relaxed mb-6">
+              It is not the same as market value - only a current Reinstatement Cost Assessment produces a figure your insurer will rely on if you ever need to claim.
             </p>
+            <Link href="/what-is-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+              Read the full homeowner guide
+            </Link>
           </div>
 
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
@@ -139,16 +141,16 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-5">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              Reinstatement cost is not the same as <span className="blue-keyword">market value</span>.
+              Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              After a total loss, insurers pay to rebuild - not to match market value. Get the declared figure wrong, and the consequences land squarely on you:
+              After a loss, insurers pay out based on rebuild cost - not market value, and not what you paid for the property. Get the sum insured wrong, and the consequences land squarely on you:
             </p>
             <ul className="space-y-3 mb-8">
               {[
-                'The insurer applies the average clause and cuts your payout in proportion to the shortfall.',
-                'Managing agents and freeholders can be held personally liable for the gap.',
-                'Market values and online calculators carry no RICS accountability if the figure is ever challenged.',
+                'The insurer applies the average clause and cuts your payout in proportion to the shortfall - on every claim, not just a total loss.',
+                'A previous owner\'s figure, an online calculator or a rough guess offers no protection when the claim comes in.',
+                'You could be paying too much premium if you\'re insured at market value instead of true rebuild cost.',
               ].map((point) => (
                 <li key={point} className="flex items-start gap-3">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#0057FF'}} />
@@ -157,10 +159,10 @@ export default function HomePage() {
               ))}
             </ul>
             <p className="text-[#0d1b3e] text-base font-semibold leading-relaxed mb-8">
-              A RICS-regulated Reinstatement Cost Assessment is the only defensible basis for the buildings sum insured.
+              A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
             </p>
-            <Link href="/services" className="link-arrow cta-flash">
-              Explore our services
+            <Link href="/what-happens-if-my-property-is-underinsured" className="link-arrow cta-flash">
+              See what underinsurance actually costs
             </Link>
           </div>
         </div>
@@ -171,16 +173,16 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-5">Comparison</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            RICS Reinstatement Cost Assessment vs <span className="blue-keyword">online rebuild cost calculators</span>
+            A proper assessment vs <span className="blue-keyword">online rebuild cost calculators</span>
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            Free rebuild cost calculators and insurer-supplied estimators use generic per-square-metre averages. They don&apos;t account for a property&apos;s actual construction, specification, communal areas or location, and they carry no RICS accountability if the declared value is ever challenged after a claim.
+            Free rebuild cost calculators and insurer-supplied estimators use generic per-square-metre averages. They don&apos;t account for your property&apos;s actual construction, specification or location - and they carry no RICS accountability if the figure is ever questioned after a claim.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed mb-6">
-            A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for the property&apos;s actual location and specification, and backed by RICS professional standards. If an insurer or loss adjuster questions the sum insured after a claim, an online calculator figure offers no defence - a RICS-regulated assessment does.
+            A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification. If an insurer questions your sum insured after a claim, an online calculator figure offers no defence - a RICS-regulated assessment does.
           </p>
-          <Link href="/services" className="link-arrow cta-flash">
-            Compare our assessment services
+          <Link href="/reinstatement-cost-vs-market-value" className="link-arrow cta-flash">
+            Reinstatement cost vs market value, explained
           </Link>
         </div>
       </section>
@@ -190,8 +192,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Reinstatement Cost Assessments for <span className="blue-keyword">Every Property Type</span></h2>
-            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Choose the service that matches your property and compliance deadline.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Choose the assessment that <span className="blue-keyword">fits your home</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Whether you own a standard house, a flat, or a listed property, there's a straightforward option for you.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {[
@@ -201,7 +203,7 @@ export default function HomePage() {
                 id: 'desktop-rca',
                 badge: '01. Desktop',
                 title: 'Desktop Reinstatement Cost Assessment',
-                desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard residential and commercial properties.',
+                desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard houses, bungalows and flats.',
                 features: [
                   'RICS-regulated, broker-ready report',
                   'BCIS-indexed rebuild cost modelling',
@@ -316,7 +318,7 @@ export default function HomePage() {
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <span className="badge badge-blue mb-5">Who We Help</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
-              Who needs a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
+              Whatever stage you're at, <span className="blue-keyword">we can help</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed">
               One practice, one specialisation - every instruction delivered as a RICS-regulated Reinstatement Cost Assessment.
@@ -327,21 +329,21 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16 md:mb-24">
             {[
               {
-                title: 'Managing Agents & RTM Companies',
-                desc: 'Protect your PI file and discharge the lease obligation with a defensible valuation.',
-                href: '/managing-agents-insurance-valuations',
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
-              },
-              {
-                title: 'Freeholders & Leaseholders',
-                desc: 'Establish or challenge the sum insured with independent RICS-regulated evidence.',
-                href: '/freeholders-leaseholders',
+                title: 'First-Time & New Buyers',
+                desc: "Just bought your first home? Make sure it's insured for the right amount from day one, not a guess carried over from the seller.",
+                href: '/do-i-need-a-reinstatement-cost-assessment',
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
               },
               {
-                title: 'Block Managers & Portfolio Landlords',
-                desc: 'Consistent, compliant figures across every block, managed on a rolling cycle.',
-                href: '/block-managers-reinstatement-cost-assessments',
+                title: 'Homeowners Renewing Cover',
+                desc: 'Coming up to renewal? Update your sum insured to reflect current build costs before you commit to another year.',
+                href: '/what-is-a-reinstatement-cost-assessment',
+                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
+              },
+              {
+                title: 'Leasehold Flat Owners',
+                desc: "Don't need the freeholder's permission - commission your own independent assessment to check or challenge the declared value.",
+                href: '/freeholders-leaseholders',
                 icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
               },
             ].map(({ title, desc, href, icon }) => (
@@ -371,10 +373,10 @@ export default function HomePage() {
               <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-[#e2e8f0]" />
               <div className="circuit-steps grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
                 {[
-                  { n: '01', title: 'Tell us about the building', desc: 'Address, type, approximate GIA and any previous valuation.' },
-                  { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - a fixed fee, agreed upfront.' },
+                  { n: '01', title: 'Tell us about your home', desc: 'Address, property type, approximate size and any previous valuation.' },
+                  { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - a fixed price, agreed upfront.' },
                   { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services and fees - all captured.' },
-                  { n: '04', title: 'You receive your report', desc: 'Broker-ready declared value, ready for renewal.' },
+                  { n: '04', title: 'You receive your report', desc: 'A clear, broker-ready figure, ready for your insurer.' },
                 ].map(({ n, title, desc }, i) => (
                   <div key={n} className={`step-light relative z-10 flex md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center ${i < 3 ? 'pb-6 mb-2 border-b border-[#e2e8f0] md:pb-0 md:mb-0 md:border-b-0 step-has-border' : ''}`}>
                     <span className="circuit-num text-xs font-bold text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
@@ -390,7 +392,7 @@ export default function HomePage() {
 
           {/* CTA */}
           <div className="text-center mt-14">
-            <Link href="/contact#contact-form" className="btn-shine">Get Quote</Link>
+            <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
           </div>
         </div>
       </section>
@@ -467,11 +469,11 @@ export default function HomePage() {
       </section>
 
       {/* 9. CONTACT FORM - the conversion goal */}
-      <ContactSection heading="Instruct an assessment today." flip />
+      <ContactSection heading="Get your Reinstatement Cost Assessment." flip />
 
       {/* 10. FAQ - handle remaining objections, last thing before the footer */}
       <FaqSection
-        description="Technical questions on Reinstatement Cost Assessments, underinsurance exposure, and our working process."
+        description="Straightforward answers to the questions homeowners and property owners ask most about Reinstatement Cost Assessments."
         items={faqItems}
         flip
       />

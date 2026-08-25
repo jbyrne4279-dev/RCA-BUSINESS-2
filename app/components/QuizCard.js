@@ -3,6 +3,16 @@ import { useState } from 'react'
 
 const PROPERTY_TYPES = [
   {
+    id: 'house',
+    label: 'House or Bungalow',
+    icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>,
+  },
+  {
+    id: 'flat',
+    label: 'Leasehold Flat',
+    icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18" /><path d="M5 21V7l7-4 7 4v14" /><path d="M9 21v-6h6v6" /></svg>,
+  },
+  {
     id: 'residential',
     label: 'Residential Block of Flats',
     icon: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18" /><path d="M5 21V7l7-4 7 4v14" /><path d="M9 21v-6h6v6" /></svg>,
@@ -30,6 +40,8 @@ const PROPERTY_TYPES = [
 ]
 
 const ROLES = [
+  { id: 'homeowner', label: 'Homeowner' },
+  { id: 'buyer', label: 'First-Time / New Buyer' },
   { id: 'agent', label: 'Managing Agent / RTM Company' },
   { id: 'freeholder', label: 'Freeholder / Leaseholder' },
   { id: 'portfolio', label: 'Block Manager / Portfolio Landlord' },

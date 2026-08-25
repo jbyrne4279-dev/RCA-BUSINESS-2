@@ -8,14 +8,23 @@ const items = [
   { label: 'Portfolio Landlords', href: '/portfolio-reinstatement-assessments' },
 ]
 
-export default function TrustStrip() {
+const homeownerItems = [
+  { label: 'First-Time Buyers',   href: '/do-i-need-a-reinstatement-cost-assessment' },
+  { label: 'Homeowners',          href: '/what-is-a-reinstatement-cost-assessment' },
+  { label: 'Leasehold Flat Owners', href: '/freeholders-leaseholders' },
+  { label: 'Freeholders',         href: '/freeholders-leaseholders' },
+  { label: 'Property Owners',     href: '/reinstatement-cost-assessment-cost' },
+]
+
+export default function TrustStrip({ variant = 'professional' }) {
+  const list = variant === 'homeowner' ? homeownerItems : items
   return (
     <div className="border-b border-[#e2e8f0] py-5 bg-white overflow-hidden">
 
       {/* ── Desktop: static row ── */}
       <div className="hidden md:flex max-w-6xl mx-auto px-10 items-center gap-6 justify-between">
         <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-widest shrink-0">Trusted by</p>
-        {items.map(({ label, href }, i) => (
+        {list.map(({ label, href }, i) => (
           <Link
             key={label}
             href={href}
@@ -35,12 +44,12 @@ export default function TrustStrip() {
             className="flex gap-10 w-max"
             style={{ animation: 'trust-marquee 12s linear infinite' }}
           >
-            {[...items, ...items].map(({ label, href }, i) => (
+            {[...list, ...list].map(({ label, href }, i) => (
               <Link
                 key={i}
                 href={href}
                 className="trust-marquee-item text-sm font-semibold shrink-0"
-                style={{ animationDelay: `${(i % items.length) * (12 / items.length)}s` }}
+                style={{ animationDelay: `${(i % list.length) * (12 / list.length)}s` }}
               >
                 {label}
               </Link>
