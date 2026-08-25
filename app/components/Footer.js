@@ -21,7 +21,7 @@ export default function Footer() {
 
       {/* Main grid */}
       <div className="max-w-6xl mx-auto px-6 md:px-10 pt-12 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 md:gap-10 mb-10">
 
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 md:col-span-2 space-y-4">
@@ -64,6 +64,18 @@ export default function Footer() {
               <li><Link href="/blocks-of-flats" className="hover:text-[#0057FF] transition-colors">Blocks of Flats</Link></li>
               <li><Link href="/freeholders-leaseholders" className="hover:text-[#0057FF] transition-colors">Freeholders &amp; Leaseholders</Link></li>
               <li><Link href="/listed-buildings" className="hover:text-[#0057FF] transition-colors">Listed Buildings</Link></li>
+            </ul>
+          </div>
+
+          {/* Homeowner guides */}
+          <div>
+            <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-4">Homeowner Guides</p>
+            <ul className="space-y-3 text-sm text-white/60">
+              <li><Link href="/what-is-a-reinstatement-cost-assessment" className="hover:text-[#0057FF] transition-colors">What Is an RCA?</Link></li>
+              <li><Link href="/reinstatement-cost-vs-market-value" className="hover:text-[#0057FF] transition-colors">Rebuild Cost vs Market Value</Link></li>
+              <li><Link href="/do-i-need-a-reinstatement-cost-assessment" className="hover:text-[#0057FF] transition-colors">Do I Need One?</Link></li>
+              <li><Link href="/reinstatement-cost-assessment-cost" className="hover:text-[#0057FF] transition-colors">Pricing</Link></li>
+              <li><Link href="/what-happens-if-my-property-is-underinsured" className="hover:text-[#0057FF] transition-colors">If You're Underinsured</Link></li>
             </ul>
           </div>
 

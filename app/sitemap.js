@@ -62,5 +62,35 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${SITE_URL}/what-is-a-reinstatement-cost-assessment`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/reinstatement-cost-vs-market-value`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/do-i-need-a-reinstatement-cost-assessment`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/reinstatement-cost-assessment-cost`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/what-happens-if-my-property-is-underinsured`,
+      lastModified: new Date('2026-08-25'),
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
   ]
 }
