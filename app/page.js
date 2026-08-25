@@ -187,6 +187,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Homeowner Guides</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
+              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
+              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
+              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
+              { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
+            ].map(({ title, desc, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
+                style={{ boxShadow: '0 4px 16px rgba(0,87,255,0.08)', textDecoration: 'none' }}
+              >
+                <h3 className="text-base font-bold text-[#0d1b3e]">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
+                <span className="text-[#0057FF] text-sm font-semibold mt-2">Read the guide &rarr;</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 6. SERVICES - the solution, once the problem is established */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-6xl mx-auto">
