@@ -5,6 +5,7 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedGuides from '../components/RelatedGuides'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import ComparisonTable from '../components/ComparisonTable'
 
 export const metadata = {
   title: "Reinstatement Cost vs Market Value: What's the Difference?",
@@ -81,49 +82,17 @@ export default function ReinstatementVsMarketValuePage() {
             Set side by side, the <span className="text-shine">difference is clear</span>.
           </h2>
 
-          <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0] bg-white" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
-            <table className="w-full text-sm border-collapse min-w-[560px]">
-              <thead>
-                <tr className="bg-[#f0f4ff]">
-                  <th className="text-left p-4 font-semibold text-[#0d1b3e]">&nbsp;</th>
-                  <th className="text-left p-4 font-semibold text-[#0057FF]">Market Value</th>
-                  <th className="text-left p-4 font-semibold text-[#0057FF]">Reinstatement Cost</th>
-                </tr>
-              </thead>
-              <tbody className="text-[#64748b]">
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Answers the question</td>
-                  <td className="p-4">"What could I sell it for?"</td>
-                  <td className="p-4">"What would it cost to rebuild it?"</td>
-                </tr>
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Includes the land?</td>
-                  <td className="p-4">Yes</td>
-                  <td className="p-4">No</td>
-                </tr>
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Driven by</td>
-                  <td className="p-4">Local demand, comparable sales, location</td>
-                  <td className="p-4">Construction cost per m&sup2;, materials, labour, demolition, fees</td>
-                </tr>
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Used for</td>
-                  <td className="p-4">Selling, buying, mortgage lending decisions</td>
-                  <td className="p-4">Setting your buildings insurance sum insured</td>
-                </tr>
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Who calculates it</td>
-                  <td className="p-4">Estate agent, RICS valuer (for sale/mortgage)</td>
-                  <td className="p-4">RICS surveyor using BCIS rebuild cost data</td>
-                </tr>
-                <tr className="border-t border-[#e2e8f0]">
-                  <td className="p-4 font-medium text-[#0d1b3e]">Typical London example</td>
-                  <td className="p-4">£800,000</td>
-                  <td className="p-4">£350,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <ComparisonTable
+            columns={['Market Value', 'Reinstatement Cost']}
+            rows={[
+              { label: 'Answers the question', values: ['"What could I sell it for?"', '"What would it cost to rebuild it?"'] },
+              { label: 'Includes the land?', values: ['Yes', 'No'] },
+              { label: 'Driven by', values: ['Local demand, comparable sales, location', 'Construction cost per m², materials, labour, demolition, fees'] },
+              { label: 'Used for', values: ['Selling, buying, mortgage lending decisions', 'Setting your buildings insurance sum insured'] },
+              { label: 'Who calculates it', values: ['Estate agent, RICS valuer (for sale/mortgage)', 'RICS surveyor using BCIS rebuild cost data'] },
+              { label: 'Typical London example', values: ['£800,000', '£350,000'] },
+            ]}
+          />
 
           <p className="text-[#64748b] text-base leading-relaxed mt-8">
             In central London and other high-value areas, land can account for well over half of a property's market price — so reinstatement cost is very often significantly lower than market value. In some rural or listed properties, the opposite is true: construction costs (especially for heritage materials and methods) can push reinstatement cost above market value. There's no reliable shortcut — it depends on the individual property, which is why a proper assessment matters more than a rule of thumb.
