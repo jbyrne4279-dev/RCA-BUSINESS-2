@@ -1,7 +1,9 @@
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import GuideHero from '../components/GuideHero'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Contact Us & Request a Quote',
@@ -76,54 +78,42 @@ export default function ContactPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
-      {/* HEADER */}
-      <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Get in touch. We respond within 24 hours.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              Complete the form below to speak directly with a RICS specialist. We will send a written fee estimate within 24 hours.
-            </p>
-            <div className="space-y-4 mb-8">
-              {[
-                { label: 'Email', value: 'info@stearlingreinstatement.com', href: 'mailto:info@stearlingreinstatement.com' },
-                { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
-              ].map(({ label, value, href }) => (
-                <div key={label} className="flex gap-3 items-baseline">
-                  <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.15em] w-20 shrink-0">{label}</p>
-                  {href
-                    ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0057FF] transition-colors">{value}</a>
-                    : <p className="text-[#0d1b3e] font-semibold">{value}</p>
-                  }
-                </div>
-              ))}
+      <GuideHero
+        image="/AdobeStock_1956380728.jpeg"
+        imageAlt="Stearling Reinstatement Reinstatement Cost Assessment surveyors"
+        badge="Get In Touch"
+        headlineMain="We respond within"
+        headlineAccent="24 hours."
+        subtitle="Complete the form below to speak directly with a RICS specialist. We will send a written fee estimate within 24 hours - no commitment required."
+        primaryLabel="Request Your Assessment"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
+
+      {/* CONTACT DETAILS STRIP */}
+      <section className="bg-white py-10 px-6 md:px-10 border-b border-[#e2e8f0]">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-8 text-center sm:text-left">
+          {[
+            { label: 'Email', value: 'info@stearlingreinstatement.com', href: 'mailto:info@stearlingreinstatement.com' },
+            { label: 'Address', value: '17 Hanover Square, London W1S 1BN', href: null },
+          ].map(({ label, value, href }) => (
+            <div key={label} className="flex gap-3 items-baseline">
+              <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.15em]">{label}</p>
+              {href
+                ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0057FF] transition-colors">{value}</a>
+                : <p className="text-[#0d1b3e] font-semibold">{value}</p>
+              }
             </div>
-            <div className="flex flex-wrap items-center gap-3">
-              <a href="#contact-form" className="btn-shine">Request Your Assessment</a>
-              <a href="/services" className="btn-ghost">Our Services</a>
-            </div>
-          </div>
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image
-              src="/AdobeStock_1956380728.jpeg"
-              alt="Stearling Reinstatement Reinstatement Cost Assessment surveyors"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated. PI insured. 24-hour response on all business-day enquiries.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      <TrustStrip />
       <ContactSection heading="Get a written fee estimate, no commitment required." />
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/contact" heading="Not sure who this is for?" />
+
       <FaqSection description="Common questions about instructing Stearling Reinstatement." items={faqItems} />
     </main>
   )

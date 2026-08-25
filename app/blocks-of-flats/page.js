@@ -1,11 +1,14 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import FlashList from '../components/FlashList'
 import ServiceCardsSection from '../components/ServiceCardsSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Blocks of Flats Reinstatement Cost Assessments',
@@ -54,31 +57,29 @@ export default function BlocksOfFlatsPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              <span className="blue-keyword">Specialist assessments</span> for every block type.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
-            </div>
-          </div>
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/AdobeStock_208633670.jpeg" alt="London block of flats, Reinstatement Cost Assessment" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Specialist Reinstatement Cost Assessments for blocks of flats across the UK.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GuideHero
+        image="/AdobeStock_208633670.jpeg"
+        imageAlt="London block of flats, Reinstatement Cost Assessment"
+        badge="Blocks of Flats"
+        headlineMain="Specialist assessments"
+        headlineAccent="for every block type."
+        subtitle="When a block is underinsured, the average clause reduces every claim - and every leaseholder shares the consequence. A specialist assessment establishes the correct declared value and protects all parties under the policy."
+        primaryLabel="Request an Assessment"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
+
+      <GuideOverview
+        kicker="Blocks of Flats"
+        heading="Why block assessments are"
+        headingAccent="complex."
+        description="Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile."
+        highlights={[
+          { icon: 'foundation', title: 'Shared Structures', desc: 'External fabric, roof, foundations and structural elements must be valued at full rebuild cost, not apportioned.' },
+          { icon: 'elevator', title: 'Communal Services', desc: 'Lifts, boiler plant, communal lighting and shared M&E infrastructure all carry costs generic tools miss.' },
+          { icon: 'gavel', title: 'Leaseholder Obligations', desc: "A wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's." },
+        ]}
+      />
 
       {/* SECTION A - Why block assessments are complex */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
@@ -160,6 +161,10 @@ export default function BlocksOfFlatsPage() {
 
 
       <ServiceCardsSection flip />
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/blocks-of-flats" />
 
       <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." flip />
       <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} flip />

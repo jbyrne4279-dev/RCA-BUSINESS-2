@@ -12,6 +12,7 @@ export default function GuideHero({
   primaryLabel = 'Get My Assessment',
   secondaryHref,
   secondaryLabel,
+  children,
 }) {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -44,6 +45,8 @@ export default function GuideHero({
               </Link>
             )}
           </div>
+
+          {children && <div className="mt-6 text-left">{children}</div>}
 
           <div className="flex flex-col items-center gap-1 mt-8">
             <Image src="/rics-logo.png" alt="RICS Regulated Firm" width={120} height={80} className="w-24 h-auto object-contain" />

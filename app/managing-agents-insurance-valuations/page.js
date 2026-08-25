@@ -1,10 +1,13 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import ServiceCardsSection from '../components/ServiceCardsSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Managing Agents',
@@ -53,31 +56,29 @@ export default function ManagingAgentsPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Discharge your <span className="blue-keyword">compliance obligation</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Protect Yourself and Your Clients</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
-            </div>
-          </div>
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/surveyor-reinstatement-cost-assessment-rics.png" alt="RICS surveyor carrying out Reinstatement Cost Assessment for managing agents" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for managing agents and RTM companies across the UK.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GuideHero
+        image="/surveyor-reinstatement-cost-assessment-rics.png"
+        imageAlt="RICS surveyor carrying out Reinstatement Cost Assessment for managing agents"
+        badge="Managing Agents"
+        headlineMain="Discharge your"
+        headlineAccent="compliance obligation."
+        subtitle="As the agent responsible for placing cover, you carry a duty of care to every leaseholder in the building. A specialist RICS assessment is the defensible position that protects you, your PI cover, and your clients."
+        primaryLabel="Protect Yourself and Your Clients"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
+
+      <GuideOverview
+        kicker="Managing Agents"
+        heading="Underinsurance is"
+        headingAccent="your risk, not the freeholder's."
+        description="The average clause means insurers pay only a proportionate share of any claim when the declared value falls short. As the practical decision-maker on the declared value, the shortfall lands with you."
+        highlights={[
+          { icon: 'gpp_maybe', title: 'PI Exposure', desc: 'A stale or inadequate valuation is the oversight that becomes a professional negligence claim.' },
+          { icon: 'policy', title: 'Consumer Duty', desc: 'Under FCA Consumer Duty, leaseholders are customers - an unjustified sum insured fails that test too.' },
+          { icon: 'verified', title: 'RICS-Regulated Figure', desc: 'A defensible position that protects you, your PI cover, and your clients at every stage.' },
+        ]}
+      />
 
       {/* SECTION A - The risk of getting it wrong (text left, card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -231,6 +232,10 @@ export default function ManagingAgentsPage() {
 
 
       <ServiceCardsSection />
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/managing-agents-insurance-valuations" />
 
       <ContactSection heading="Protect yourself and your clients. Instruct us today." />
       <FaqSection description="Common questions from managing agents and RTM companies about Reinstatement Cost Assessments." items={faqItems} />

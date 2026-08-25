@@ -1,8 +1,11 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Commercial Reinstatement Cost Assessment',
@@ -50,40 +53,29 @@ export default function CommercialPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Commercial <span className="blue-keyword">underinsurance</span> starts with the <span className="blue-keyword">wrong figure</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/AdobeStock_158046067.jpeg"
+        imageAlt="Commercial Reinstatement Cost Assessment"
+        badge="Commercial Property"
+        headlineMain="Underinsurance starts"
+        headlineAccent="with the wrong figure."
+        subtitle="Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured."
+        primaryLabel="Request an Assessment"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image
-              src="/AdobeStock_158046067.jpeg"
-              alt="Commercial Reinstatement Cost Assessment"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments accepted by all UK commercial insurers without amendment.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TrustStrip />
+      <GuideOverview
+        kicker="The Problem"
+        heading="Why commercial reinstatement is so"
+        headingAccent="complex to get right."
+        description="Commercial buildings carry hidden cost layers that generic tools ignore entirely. Three drivers account for the majority of commercial underinsurance in the UK."
+        highlights={[
+          { icon: 'chair', title: 'Tenant Fitout', desc: 'Category A and B fitout is often excluded from building schedules but must be reinstated.' },
+          { icon: 'settings', title: 'Specialist Plant', desc: 'HVAC, lifts, substations and process equipment carry replacement values no index can capture alone.' },
+          { icon: 'bolt', title: 'M&E Services', desc: 'Mechanical and electrical infrastructure routinely represents 20-40% of rebuild cost.' },
+        ]}
+      />
 
       {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -252,6 +244,10 @@ export default function CommercialPage() {
       </section>
 
 
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/commercial-reinstatement-costs" />
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." flip />
       <FaqSection description="Direct answers to the most common questions about commercial Reinstatement Cost Assessments." items={faqItems} flip />

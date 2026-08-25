@@ -1,10 +1,13 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import ServiceCardsSection from '../components/ServiceCardsSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Listed & Heritage Building Assessments',
@@ -53,33 +56,29 @@ export default function ListedBuildingsPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Listed buildings demand <span className="blue-keyword">specialist assessment</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. A desktop assessment will miss the gap entirely.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-              <Link href="/services#on-site-survey" className="btn-ghost">On-Site Survey</Link>
-            </div>
-          </div>
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/AdobeStock_1064771096.jpeg" alt="Listed building specialist assessment" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Site-based specialist assessments for listed and heritage buildings across the UK.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GuideHero
+        image="/AdobeStock_1064771096.jpeg"
+        imageAlt="Listed building specialist assessment"
+        badge="Listed Buildings"
+        headlineMain="Listed buildings demand"
+        headlineAccent="specialist assessment."
+        subtitle="Authentic materials, heritage contractors and conservation requirements drive rebuild costs far above standard construction. A desktop assessment will miss the gap entirely."
+        primaryLabel="Request an Assessment"
+        secondaryHref="/services#on-site-survey"
+        secondaryLabel="On-Site Survey"
+      />
 
-      <TrustStrip />
+      <GuideOverview
+        kicker="Why Listed Buildings Are Different"
+        heading="Authentic materials and conservation"
+        headingAccent="requirements drive up rebuild cost."
+        description="Under the Planning (Listed Buildings and Conservation Areas) Act 1990, reinstatement must replicate original style and materials - a legal obligation that generic desktop calculators systematically miss."
+        highlights={[
+          { icon: 'account_balance', title: 'Grade I & II*', desc: 'The highest-significance categories often require Heritage England involvement and specialist heritage contractors.' },
+          { icon: 'construction', title: 'Heritage Materials', desc: 'Lime mortar, handmade brick, natural stone and historic timber all carry premiums standard rates miss.' },
+          { icon: 'domain_verification', title: 'On-Site Only', desc: 'Desktop assessment cannot capture these uplifts - only a physical inspection produces a defensible figure.' },
+        ]}
+      />
 
       {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -237,6 +236,10 @@ export default function ListedBuildingsPage() {
 
 
       <ServiceCardsSection />
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/listed-buildings" />
 
       <ContactSection heading="Get a specialist on-site assessment for your listed building." />
       <FaqSection description="Common questions about Reinstatement Cost Assessments for listed and heritage buildings." items={faqItems} />

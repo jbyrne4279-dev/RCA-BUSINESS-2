@@ -4,8 +4,10 @@ import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
-import TrustStrip from './components/TrustStrip'
 import QuizCard from './components/QuizCard'
+import GuideHero from './components/GuideHero'
+import GuideOverview from './components/GuideOverview'
+import GuideTrustBand from './components/GuideTrustBand'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
@@ -49,96 +51,39 @@ export default function HomePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO - hook + primary CTA */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Make sure your home is insured for the <span className="blue-keyword">right amount</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in <span className="glow-24">24 hours</span>.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
-            </div>
-
-            {/* Inline quiz - quick underinsurance check */}
-            <div className="mt-6 bg-white rounded-2xl border border-[#e2e8f0] max-w-md" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-              <QuizCard source="Hero Inline Quiz" embedded />
-            </div>
-
-            <div className="flex flex-wrap items-center gap-3 mt-6">
-              <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
-            </div>
-
-            <div className="flex items-center gap-2 mt-6">
-              <Image src="/rics-logo.png" alt="RICS Regulated" width={120} height={80} className="h-20 w-auto object-contain" />
-            </div>
-          </div>
-
-          {/* Hero image */}
-          <div className="hero-img-pulse hidden sm:block relative rounded-3xl overflow-hidden sm:h-64 md:h-96 lg:h-[520px]">
-            <Image
-              src="/rca-for-my-property-london-rebuild.png"
-              alt="Homeowner's Reinstatement Cost Assessment"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/55 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Accurate rebuild valuations for homeowners across the UK, carried out by chartered surveyors.</p>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-for-my-property-london-rebuild.png"
+        imageAlt="Homeowner's Reinstatement Cost Assessment"
+        badge="Homeowners"
+        headlineMain="Make sure your home is insured"
+        headlineAccent="for the right amount."
+        subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
+        primaryLabel="Get My Assessment"
+        secondaryHref="/what-is-a-reinstatement-cost-assessment"
+        secondaryLabel="What Is an RCA?"
+      >
+        <div className="bg-white rounded-2xl border border-[#e2e8f0] max-w-md mx-auto" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <QuizCard source="Hero Inline Quiz" embedded />
         </div>
-      </section>
+      </GuideHero>
 
-      {/* 2. TRUST STRIP - immediate credibility */}
-      <TrustStrip variant="homeowner" />
+      <GuideOverview
+        kicker="Homeowner Guide"
+        heading="What is a"
+        headingAccent="Reinstatement Cost Assessment?"
+        description="In plain English: it's a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch - not what you paid for it, and not what it's worth on the market. It's the figure your buildings insurance sum insured should be based on."
+        highlights={[
+          { icon: 'not_interested', title: 'Not Market Value', desc: "It excludes the land - only the cost to demolish and rebuild the structure itself." },
+          { icon: 'verified', title: 'RICS-Regulated', desc: 'A figure your insurer will rely on if you ever need to make a claim.' },
+          { icon: 'update', title: 'Reviewed Every 3 Years', desc: 'RICS guidance recommends a full reassessment at least every three years.' },
+        ]}
+      />
 
-      {/* 3. DEFINITION - answers "what is a RICS reinstatement cost assessment" searches */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div>
-            <span className="badge badge-blue mb-5">Homeowner Guide</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-              What is a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              In plain English: it&apos;s a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch - not what you paid for it, and not what it&apos;s worth on the market. It&apos;s the figure your buildings insurance sum insured should be based on.
-            </p>
-            <p className="text-[#0d1b3e] text-sm font-semibold leading-relaxed mb-6">
-              It is not the same as market value - only a current Reinstatement Cost Assessment produces a figure your insurer will rely on if you ever need to claim.
-            </p>
-            <Link href="/what-is-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
-              Read the full homeowner guide
-            </Link>
-          </div>
-
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-3">What it covers</p>
-            <div className="flex flex-col divide-y divide-[#e2e8f0]">
-              {[
-                'Demolition and site clearance',
-                'Structure, fabric and finishes',
-                'Communal areas and shared services',
-                'Professional and statutory fees',
-                'VAT, where applicable',
-                'BCIS-indexed rebuild cost data',
-              ].map((point) => (
-                <div key={point} className="flex items-center gap-3 py-3 first:pt-0 last:pb-0">
-                  <span className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center bg-[#0057FF]/10 text-[#0057FF]">
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
-                  </span>
-                  <p className="text-sm text-[#0d1b3e] font-medium">{point}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="text-center -mt-8 mb-4 md:mb-8">
+        <Link href="/what-is-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+          Read the full homeowner guide
+        </Link>
+      </div>
 
       {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -508,6 +453,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      <GuideTrustBand />
 
       {/* 9. CONTACT FORM - the conversion goal */}
       <ContactSection heading="Get your Reinstatement Cost Assessment." flip />

@@ -1,8 +1,11 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Portfolio Reinstatement Cost Assessments',
@@ -50,40 +53,28 @@ export default function PortfolioPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Right-size every <span className="blue-keyword">declared value</span> across your portfolio.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              A managed RICS assessment service for property portfolios - individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request Portfolio Quote</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/AdobeStock_1477785304.jpeg"
+        imageAlt="Portfolio Reinstatement Cost Assessment"
+        badge="Portfolio Assessments"
+        headlineMain="Right-size every declared value"
+        headlineAccent="across your portfolio."
+        subtitle="A managed RICS assessment service for property portfolios - individual reports per asset, a consolidated summary schedule, and annual BCIS indexation handled for you, all under a single engagement."
+        primaryLabel="Request Portfolio Quote"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image
-              src="/AdobeStock_1477785304.jpeg"
-              alt="Portfolio Reinstatement Cost Assessment"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Individual RICS reports per asset. One consolidated instruction.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TrustStrip />
+      <GuideOverview
+        kicker="Portfolio Assessments"
+        heading="Inconsistent figures across a"
+        headingAccent="portfolio amplify every risk."
+        highlights={[
+          { icon: 'sync_problem', title: 'Inconsistent Figures', desc: 'Assets instructed at different times get assessed against different cost benchmarks, leaving hidden gaps.' },
+          { icon: 'event_busy', title: 'Missed Renewal Cycles', desc: 'Without a system, assessments go stale across a multi-asset portfolio.' },
+          { icon: 'layers', title: 'PI Exposure at Scale', desc: 'A compounding professional indemnity exposure if any declared value is materially incorrect.' },
+        ]}
+      />
 
       {/* 2. SECTION A - text left, stat card right */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -255,6 +246,10 @@ export default function PortfolioPage() {
       </section>
 
 
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/portfolio-reinstatement-assessments" />
 
       <ContactSection heading="Consolidate your portfolio. One instruction." flip />
       <FaqSection description="Common questions about portfolio Reinstatement Cost Assessments." items={faqItems} flip />

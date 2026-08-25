@@ -1,11 +1,14 @@
 ﻿import Link from 'next/link'
 import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import RicsSelectedCard from '../components/RicsSelectedCard'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import ServiceCardsSection from '../components/ServiceCardsSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Freeholders',
@@ -54,34 +57,29 @@ export default function FreeholdersLeaseholdersPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* 1. HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Defend the <span className="blue-keyword">insuring covenant</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Check My Declared Value</Link>
-              <Link href="/services" className="btn-ghost">Our Services</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-for-my-property-london-rebuild.png"
+        imageAlt="Freeholder Reinstatement Cost Assessment"
+        badge="Freeholders & Leaseholders"
+        headlineMain="Defend the"
+        headlineAccent="insuring covenant."
+        subtitle="When the declared value is too low, the insurer pays out pro rata - the shortfall falls on everyone in the building. A RICS-regulated assessment protects freeholders from liability and gives leaseholders an independent basis to challenge."
+        primaryLabel="Check My Declared Value"
+        secondaryHref="/services"
+        secondaryLabel="Our Services"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/rca-for-my-property-london-rebuild.png" alt="Freeholder Reinstatement Cost Assessment" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">RICS-regulated assessments for freeholders, RMC directors and leaseholders across the UK.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TrustStrip />
+      <GuideOverview
+        kicker="The Insuring Obligation"
+        heading="What freeholders owe leaseholders —"
+        headingAccent="and what can go wrong."
+        description="Most leases place the insuring obligation squarely on the freeholder or the residents management company - not simply to arrange insurance, but to insure to the full reinstatement cost of the building."
+        highlights={[
+          { icon: 'gavel', title: 'Freeholder Liability', desc: 'Setting the figure without a professional assessment exposes the freeholder to personal liability if a claim shortfall arises.' },
+          { icon: 'fact_check', title: 'Leaseholder Rights', desc: "Leaseholders who suffer a shortfall can pursue whoever is responsible for the declared value, not the insurer." },
+          { icon: 'balance', title: 'Tribunal-Ready Evidence', desc: 'A RICS-regulated figure carries weight with panels reviewing service charge reasonableness.' },
+        ]}
+      />
 
       {/* 2. SECTION A - The insuring obligation (text left, card right) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -214,6 +212,10 @@ export default function FreeholdersLeaseholdersPage() {
 
 
       <ServiceCardsSection />
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/freeholders-leaseholders" />
 
       <ContactSection heading="Speak to a specialist about your declared value." />
       <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about Reinstatement Cost Assessments and buildings insurance." items={faqItems} />

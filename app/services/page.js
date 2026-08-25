@@ -2,11 +2,14 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ScrambleText from '../components/ScrambleText'
 import ElectricSequence from '../components/ElectricSequence'
-import TrustStrip from '../components/TrustStrip'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 import ServiceCardsSection from '../components/ServiceCardsSection'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedPages from '../components/RelatedPages'
 
 const IcoDesktop = () => (
   <Image src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" width={20} height={20} className="object-contain rounded" />
@@ -86,37 +89,29 @@ export default function ServicesPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-20 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              RICS <span className="blue-keyword">Reinstatement Cost Assessments</span>. Three tiers, one specialist firm.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8">
-              Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
-              <Link href="/services#service-cards" className="btn-ghost">View Services</Link>
-            </div>
-          </div>
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image
-              src="/AdobeStock_158046067.jpeg"
-              alt="RICS Reinstatement Cost Assessment building survey"
-              fill
-              className="object-cover"
-              priority
-            />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7">
-              <p className="text-white/95 text-sm font-medium leading-snug">Desktop, On-Site and 3-Year Protection - RICS-aligned assessments for every property type.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <GuideHero
+        image="/AdobeStock_158046067.jpeg"
+        imageAlt="RICS Reinstatement Cost Assessment building survey"
+        badge="Our Services"
+        headlineMain="Three tiers,"
+        headlineAccent="one specialist firm."
+        subtitle="Desktop Assessment for standard properties, On-Site Survey for listed and complex buildings, and the 3-Year Protection Plan for ongoing RICS compliance. Every instruction is RICS-aligned and broker-ready."
+        primaryLabel="Request an Assessment"
+        secondaryHref="#service-cards"
+        secondaryLabel="View Services"
+      />
+
+      <GuideOverview
+        kicker="Why It Matters"
+        heading="Generic tools cannot replace a"
+        headingAccent="RICS Reinstatement Cost Assessment."
+        description="UK construction costs rose over 30% between 2020 and 2024 - any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer."
+        highlights={[
+          { icon: 'home_work', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours, no site visit required.' },
+          { icon: 'domain', title: 'On-Site Survey', desc: 'A RICS surveyor attends in person - required for listed, heritage and complex buildings.' },
+          { icon: 'event_repeat', title: '3-Year Protection Plan', desc: 'Full assessment in year one, annual BCIS-indexed renewal reports before each renewal date.' },
+        ]}
+      />
 
       {/* SECTION A - WHY SPECIALIST */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
@@ -234,6 +229,10 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
+
+      <GuideTrustBand />
+
+      <RelatedPages currentSlug="/services" />
 
       <ContactSection heading="Not sure which service you need? We'll advise." />
       <FaqSection description="Still deciding? Use these answers to narrow it down, or contact us and we'll recommend the right service for your property." items={faqItems} />
