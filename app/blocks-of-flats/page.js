@@ -3,7 +3,7 @@ import Image from 'next/image'
 import TiltWrapper from '../components/TiltWrapper'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
-import FlashList from '../components/FlashList'
+import ChecklistGrid from '../components/ChecklistGrid'
 import ServiceCardsSection from '../components/ServiceCardsSection'
 import GuideHero from '../components/GuideHero'
 import GuideOverview from '../components/GuideOverview'
@@ -107,16 +107,19 @@ export default function BlocksOfFlatsPage() {
           </div>
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
-            <FlashList items={[
-              'Full structural reinstatement cost - walls, roof, foundations, external fabric',
-              'Communal areas and shared circulation space',
-              'Lifts, plant rooms and shared M&E services',
-              'Professional fees - architects, engineers, project managers',
-              'Demolition and site clearance costs',
-              'VAT correctly applied to each element',
-              'BCIS-indexed figure with annual uplift schedule',
-              'Broker-ready report in 24 hours',
-            ]} />
+            <ChecklistGrid
+              columns={1}
+              items={[
+                'Full structural reinstatement cost - walls, roof, foundations, external fabric',
+                'Communal areas and shared circulation space',
+                'Lifts, plant rooms and shared M&E services',
+                'Professional fees - architects, engineers, project managers',
+                'Demolition and site clearance costs',
+                'VAT correctly applied to each element',
+                'BCIS-indexed figure with annual uplift schedule',
+                'Broker-ready report in 24 hours',
+              ]}
+            />
             <div className="mt-8 pt-6 border-t border-[#e2e8f0]">
               <Link href="/contact#contact-form" className="btn-shine w-full text-center block">Request a Block Assessment</Link>
             </div>

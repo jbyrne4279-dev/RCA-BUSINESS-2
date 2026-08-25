@@ -8,6 +8,7 @@ import GuideHero from '../components/GuideHero'
 import GuideOverview from '../components/GuideOverview'
 import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
+import ChecklistGrid from '../components/ChecklistGrid'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Managing Agents',
@@ -132,8 +133,9 @@ export default function ManagingAgentsPage() {
           {/* Left: What We Deliver checklist card */}
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
             <p className="text-xs font-semibold uppercase tracking-widest text-[#0057FF] mb-5">What We Deliver</p>
-            <div className="circuit-steps space-y-3">
-              {[
+            <ChecklistGrid
+              columns={1}
+              items={[
                 'Documented declared value - defensible at claim stage',
                 'Clear methodology statement for insurers and brokers',
                 'Review date and indexation guidance',
@@ -141,13 +143,8 @@ export default function ManagingAgentsPage() {
                 'Professional indemnity backed assessment',
                 'Broker-ready format - forward directly, no rework',
                 'Phased portfolio scheduling to smooth service-charge cost',
-              ].map((item, i) => (
-                <div key={item} className="flex gap-3 items-start step-reveal-item">
-                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{String(i + 1).padStart(2, '0')}</span>
-                  <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
-                </div>
-              ))}
-            </div>
+              ]}
+            />
           </TiltWrapper>
 
           {/* Right: What managing agents get from us */}
