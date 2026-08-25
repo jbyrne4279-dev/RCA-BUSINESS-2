@@ -60,7 +60,7 @@ export default function HomePage() {
         subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
         primaryLabel="Get My Assessment"
       >
-        <div className="bg-white rounded-2xl border border-[#e2e8f0] max-w-md mx-auto" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+        <div className="bg-white rounded-2xl border border-[#e2e8f0] max-w-md mx-auto" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
           <QuizCard source="Hero Inline Quiz" embedded />
         </div>
         <div className="flex justify-center mt-6">
@@ -87,7 +87,7 @@ export default function HomePage() {
       </div>
 
       {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: tilt card */}
@@ -96,7 +96,7 @@ export default function HomePage() {
           {/* Right: text */}
           <div>
             <span className="badge badge-blue mb-5">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
@@ -109,12 +109,12 @@ export default function HomePage() {
                 'You could be paying too much premium if you\'re insured at market value instead of true rebuild cost.',
               ].map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#0057FF'}} />
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#7A1F3D'}} />
                   <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
                 </li>
               ))}
             </ul>
-            <p className="text-[#0d1b3e] text-base font-semibold leading-relaxed mb-8">
+            <p className="text-[#2b0b14] text-base font-semibold leading-relaxed mb-8">
               A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
             </p>
             <Link href="/what-happens-if-my-property-is-underinsured" className="link-arrow cta-flash">
@@ -128,7 +128,7 @@ export default function HomePage() {
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-5">Comparison</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             A proper assessment vs <span className="blue-keyword">online rebuild cost calculators</span>
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
@@ -148,7 +148,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Homeowner Guides</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -163,11 +163,11 @@ export default function HomePage() {
                 key={href}
                 href={href}
                 className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
-                style={{ boxShadow: '0 4px 16px rgba(0,87,255,0.08)', textDecoration: 'none' }}
+                style={{ boxShadow: '0 4px 16px rgba(122,31,61,0.08)', textDecoration: 'none' }}
               >
-                <h3 className="text-base font-bold text-[#0d1b3e]">{title}</h3>
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <span className="text-[#0057FF] text-sm font-semibold mt-2">Read the guide &rarr;</span>
+                <span className="text-[#7A1F3D] text-sm font-semibold mt-2">Read the guide &rarr;</span>
               </Link>
             ))}
           </div>
@@ -175,11 +175,11 @@ export default function HomePage() {
       </section>
 
       {/* 6. SERVICES - the solution, once the problem is established */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Choose the assessment that <span className="blue-keyword">fits your home</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Choose the assessment that <span className="blue-keyword">fits your home</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Whether you own a standard house, a flat, or a listed property, there's a straightforward option for you.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
@@ -243,13 +243,13 @@ export default function HomePage() {
                 key={title}
                 id={id}
                 href={href}
-                className={`relative bg-white rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300 ${highlight ? 'border-2 border-[#0057FF]' : 'border border-[#e2e8f0]'}`}
-                style={{boxShadow: highlight ? '0 10px 32px rgba(0,87,255,0.20)' : '0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}
+                className={`relative bg-white rounded-2xl overflow-hidden flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform duration-300 ${highlight ? 'border-2 border-[#7A1F3D]' : 'border border-[#e2e8f0]'}`}
+                style={{boxShadow: highlight ? '0 10px 32px rgba(122,31,61,0.20)' : '0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}
               >
                 {highlight && (
                   <span
                     className="best-value-pill absolute top-3 right-3 z-10 text-xs font-bold uppercase tracking-wide text-white px-4 py-1.5 rounded-full"
-                    style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}
+                    style={{background:'linear-gradient(135deg,#7A1F3D,#5C1730)'}}
                   >
                     Best Value
                   </span>
@@ -262,21 +262,21 @@ export default function HomePage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2b0b14]/30 to-transparent" />
                 </div>
                 <div className="p-5 md:p-7 flex flex-col flex-1">
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide">{badge}</p>
+                    <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide">{badge}</p>
                     <span className="shrink-0">
                       <Image src="/rics-logo.png" alt="RICS Regulated" width={36} height={24} className="object-contain" />
                     </span>
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                  <h3 className="text-lg md:text-xl font-bold text-[#2b0b14] mb-3">{title}</h3>
                   <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
                   <ul className="space-y-2 mb-6">
                     {features.map((f) => (
                       <li key={f} className="flex items-start gap-2">
-                        <svg className="mt-0.5 shrink-0 text-[#0057FF]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                        <svg className="mt-0.5 shrink-0 text-[#7A1F3D]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                         <span className="text-[#64748b] text-xs leading-relaxed">
                           {f.startsWith('Accepted') ? (
                             <><span className="cta-flash font-semibold">Accepted</span>{f.slice(8)}</>
@@ -303,7 +303,7 @@ export default function HomePage() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
             <span className="badge badge-blue mb-5">Who We Help</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-4">
               Whatever stage you're at, <span className="blue-keyword">we can help</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed">
@@ -336,16 +336,16 @@ export default function HomePage() {
               <Link
                 key={title}
                 href={href}
-                className="group bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+                className="group bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
                 style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)', textDecoration: 'none' }}
               >
                 <span
                   className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-5"
-                  style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+                  style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow: '0 6px 18px rgba(122,31,61,0.3)' }}
                 >
                   {icon}
                 </span>
-                <p className="text-base font-semibold text-[#0d1b3e] mb-2 group-hover:text-[#0057FF] transition-colors">{title}</p>
+                <p className="text-base font-semibold text-[#2b0b14] mb-2 group-hover:text-[#7A1F3D] transition-colors">{title}</p>
                 <p className="text-sm text-[#64748b] leading-relaxed mb-4 flex-1">{desc}</p>
                 <span className="link-arrow !text-xs">Learn more</span>
               </Link>
@@ -353,7 +353,7 @@ export default function HomePage() {
           </div>
 
           {/* Assessment process - horizontal timeline */}
-          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest text-center mb-10">Assessment Process</p>
             <div className="relative">
               <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-[#e2e8f0]" />
@@ -365,9 +365,9 @@ export default function HomePage() {
                   { n: '04', title: 'You receive your report', desc: 'A clear, broker-ready figure, ready for your insurer.' },
                 ].map(({ n, title, desc }, i) => (
                   <div key={n} className={`step-light relative z-10 flex md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center ${i < 3 ? 'pb-6 mb-2 border-b border-[#e2e8f0] md:pb-0 md:mb-0 md:border-b-0 step-has-border' : ''}`}>
-                    <span className="circuit-num text-xs font-bold text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow:'0 0 14px rgba(0,87,255,0.45)'}}>{n}</span>
+                    <span className="circuit-num text-xs font-bold text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow:'0 0 14px rgba(122,31,61,0.45)'}}>{n}</span>
                     <div>
-                      <p className="step-title text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                      <p className="step-title text-sm font-semibold text-[#2b0b14]">{title}</p>
                       <p className="text-xs text-[#64748b] mt-1 leading-relaxed">{desc}</p>
                     </div>
                   </div>
@@ -384,10 +384,10 @@ export default function HomePage() {
       </section>
 
       {/* 8. AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-4xl mx-auto text-center">
           <span className="badge badge-blue mb-5">Coverage</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             Areas <span className="blue-keyword">we cover</span>
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -397,7 +397,7 @@ export default function HomePage() {
             {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
               <span
                 key={area}
-                className="text-xs font-semibold text-[#0d1b3e] border border-[#e2e8f0] rounded-full px-4 py-2 bg-white"
+                className="text-xs font-semibold text-[#2b0b14] border border-[#e2e8f0] rounded-full px-4 py-2 bg-white"
               >
                 {area}
               </span>
@@ -414,7 +414,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="badge badge-blue mb-5">Building Types</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-4">
               The buildings <span className="blue-keyword">we cover</span>
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed">
@@ -433,22 +433,22 @@ export default function HomePage() {
             ].map(({ title, desc }) => (
               <div
                 key={title}
-                className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+                className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
                 style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
               >
                 <span
                   className="w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
-                  style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+                  style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow: '0 6px 18px rgba(122,31,61,0.3)' }}
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
                 </span>
-                <h3 className="text-base font-semibold text-[#0d1b3e] mb-2">{title}</h3>
+                <h3 className="text-base font-semibold text-[#2b0b14] mb-2">{title}</h3>
                 <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-[#0d1b3e] text-base font-semibold leading-relaxed mt-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#2b0b14] text-base font-semibold leading-relaxed mt-12 max-w-2xl mx-auto">
             If it has a roof and a sum insured, we can assess it - we cover all building types across the UK.
           </p>
         </div>

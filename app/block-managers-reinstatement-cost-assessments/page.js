@@ -79,13 +79,13 @@ export default function BlockManagersPage() {
       />
 
       {/* 2. SECTION A - The compliance burden (text left, card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: text */}
           <div>
             <span className="badge badge-blue mb-5">The Compliance Burden</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Every block you manage needs a <span className="blue-keyword">regular RICS review</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
@@ -98,7 +98,7 @@ export default function BlockManagersPage() {
           </div>
 
           {/* Right: 3-year compliance cycle card */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <div className="px-7 pt-7 pb-5 border-b border-[#e2e8f0]">
               <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-1">3-Year Compliance Cycle</p>
               <p className="text-sm text-[#64748b]">How RICS guidance applies to your managed blocks</p>
@@ -110,11 +110,11 @@ export default function BlockManagersPage() {
                 { year: 'Year 3', title: 'BCIS-Indexed Update', desc: 'Second annual uplift. Three-year RICS compliance maintained - no re-instruction required.' },
               ].map(({ year, title, desc }) => (
                 <div key={year} className="flex gap-4 items-start step-reveal-item">
-                  <div className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #0057FF 0%, #0040CC 100%)'}}>
+                  <div className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-xs font-bold text-white" style={{background:'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)'}}>
                     {year}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e] mb-1">{title}</p>
+                    <p className="text-sm font-semibold text-[#2b0b14] mb-1">{title}</p>
                     <p className="text-xs text-[#64748b] leading-relaxed">{desc}</p>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function BlockManagersPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: checklist card */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-5">What Block Managers Get</p>
             <ul className="tick-list space-y-4">
               {[
@@ -140,11 +140,11 @@ export default function BlockManagersPage() {
                 { title: 'Named surveyor throughout', desc: 'One point of contact across your entire portfolio, from instruction to report delivery.' },
               ].map(({ title, desc }) => (
                 <li key={title} className="flex gap-3 items-start">
-                  <svg className="tick-icon w-5 h-5 shrink-0 mt-0.5 text-[#0057FF]" viewBox="0 0 20 20" fill="currentColor">
+                  <svg className="tick-icon w-5 h-5 shrink-0 mt-0.5 text-[#7A1F3D]" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   <div>
-                    <p className="text-sm font-semibold text-[#0d1b3e]">{title}</p>
+                    <p className="text-sm font-semibold text-[#2b0b14]">{title}</p>
                     <p className="text-xs text-[#64748b] leading-relaxed mt-0.5">{desc}</p>
                   </div>
                 </li>
@@ -155,7 +155,7 @@ export default function BlockManagersPage() {
           {/* Right: text */}
           <div>
             <span className="badge badge-blue mb-5">How We Work With Block Managers</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               One instruction covers your <span className="blue-keyword">entire managed portfolio</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
@@ -173,53 +173,53 @@ export default function BlockManagersPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">
               Built for <span className="blue-keyword">block management firms</span>.
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
-                <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <Link href="/contact#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)', textDecoration:'none'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(122,31,61,0.10)'}}>
+                <svg className="w-5 h-5 text-[#7A1F3D]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">Portfolio Scale</h3>
+              <h3 className="text-lg font-bold text-[#2b0b14] mb-3">Portfolio Scale</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
                 One instruction covers every block in your managed portfolio. Individual RICS-regulated reports per property, plus a consolidated summary schedule for your records and insurers.
               </p>
-              <span className="text-[#0057FF] text-sm font-semibold">Request a portfolio quote &rarr;</span>
+              <span className="text-[#7A1F3D] text-sm font-semibold">Request a portfolio quote &rarr;</span>
             </Link>
 
-            <Link href="/contact?service=3year#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
-                <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <Link href="/contact?service=3year#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)', textDecoration:'none'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(122,31,61,0.10)'}}>
+                <svg className="w-5 h-5 text-[#7A1F3D]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">Managed Renewals</h3>
+              <h3 className="text-lg font-bold text-[#2b0b14] mb-3">Managed Renewals</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
                 We track every block&apos;s review date. Annual BCIS-indexed updates and full reassessments are issued before each renewal without any re-instruction from your team. Three-year RICS compliance, fully managed.
               </p>
-              <span className="text-[#0057FF] text-sm font-semibold">Enquire about 3-Year Protection &rarr;</span>
+              <span className="text-[#7A1F3D] text-sm font-semibold">Enquire about 3-Year Protection &rarr;</span>
             </Link>
 
-            <Link href="/contact?service=desktop#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)', textDecoration:'none'}}>
-              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(0,87,255,0.10)'}}>
-                <svg className="w-5 h-5 text-[#0057FF]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <Link href="/contact?service=desktop#contact-form" className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)', textDecoration:'none'}}>
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-5" style={{background:'rgba(122,31,61,0.10)'}}>
+                <svg className="w-5 h-5 text-[#7A1F3D]" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-[#0d1b3e] mb-3">24-hr Desktop</h3>
+              <h3 className="text-lg font-bold text-[#2b0b14] mb-3">24-hr Desktop</h3>
               <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
                 Standard desktop assessments are delivered within 24 hours of instruction. Broker-ready format, RICS-regulated methodology, PI-insured and accepted at renewal without challenge.
               </p>
-              <span className="text-[#0057FF] text-sm font-semibold">Instruct a desktop assessment &rarr;</span>
+              <span className="text-[#7A1F3D] text-sm font-semibold">Instruct a desktop assessment &rarr;</span>
             </Link>
 
           </div>

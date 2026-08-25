@@ -28,7 +28,7 @@ export default function TrustStrip({ variant = 'professional' }) {
           <Link
             key={label}
             href={href}
-            className="trust-item text-sm font-semibold shrink-0 hover:text-[#0057FF] transition-colors"
+            className="trust-item text-sm font-semibold shrink-0 hover:text-[#7A1F3D] transition-colors"
             style={{ animationDelay: `${i * 1.1}s` }}
           >
             {label}
@@ -64,13 +64,13 @@ export default function TrustStrip({ variant = 'professional' }) {
           to   { transform: translateX(-50%); }
         }
         @keyframes trust-glow {
-          0%   { color: #0d1b3e; text-shadow: none; }
-          40%  { color: #0057FF; text-shadow: 0 0 5px rgba(0,87,255,0.3); }
-          60%  { color: #0057FF; text-shadow: 0 0 5px rgba(0,87,255,0.3); }
-          100% { color: #0d1b3e; text-shadow: none; }
+          0%   { color: #2b0b14; text-shadow: none; }
+          40%  { color: #7A1F3D; text-shadow: 0 0 5px rgba(122,31,61,0.3); }
+          60%  { color: #7A1F3D; text-shadow: 0 0 5px rgba(122,31,61,0.3); }
+          100% { color: #2b0b14; text-shadow: none; }
         }
         .trust-marquee-item {
-          color: #0d1b3e;
+          color: #2b0b14;
           animation: trust-glow 12s linear infinite;
         }
       `}</style>

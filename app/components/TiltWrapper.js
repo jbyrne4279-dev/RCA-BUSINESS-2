@@ -15,7 +15,7 @@ export default function TiltWrapper({ children, className = '', style = {} }) {
     const rotateX = ((y - cy) / cy) * -10
     const rotateY = ((x - cx) / cx) * 10
     el.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.025,1.025,1.025)`
-    el.style.boxShadow = '0 16px 40px rgba(0,87,255,0.13)'
+    el.style.boxShadow = '0 16px 40px rgba(122,31,61,0.13)'
   }
 
   function onMouseLeave() {

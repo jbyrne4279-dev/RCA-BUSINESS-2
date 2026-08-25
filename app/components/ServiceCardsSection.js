@@ -63,11 +63,11 @@ const SERVICE_CARDS = [
 
 export default function ServiceCardsSection({ flip = false }) {
   return (
-    <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background: flip ? '#f0f4ff' : '#ffffff'}}>
+    <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background: flip ? '#fbf0f2' : '#ffffff'}}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="badge badge-blue">Our Services</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mt-3">
             Pick the assessment that <span className="blue-keyword">fits your property</span>.
           </h2>
         </div>
@@ -77,13 +77,13 @@ export default function ServiceCardsSection({ flip = false }) {
               key={id}
               id={id}
               href={href}
-              className={`float-card relative bg-white rounded-2xl overflow-hidden flex flex-col cursor-pointer group ${highlight ? 'border-2 border-[#0057FF]' : 'border border-[#e2e8f0]'}`}
-              style={{boxShadow: highlight ? '0 10px 32px rgba(0,87,255,0.20)' : '0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}
+              className={`float-card relative bg-white rounded-2xl overflow-hidden flex flex-col cursor-pointer group ${highlight ? 'border-2 border-[#7A1F3D]' : 'border border-[#e2e8f0]'}`}
+              style={{boxShadow: highlight ? '0 10px 32px rgba(122,31,61,0.20)' : '0 2px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}
             >
               {highlight && (
                 <span
                   className="best-value-pill absolute top-3 right-3 z-10 text-xs font-bold uppercase tracking-wide text-white px-4 py-1.5 rounded-full"
-                  style={{background:'linear-gradient(135deg,#0057FF,#0040CC)'}}
+                  style={{background:'linear-gradient(135deg,#7A1F3D,#5C1730)'}}
                 >
                   Best Value
                 </span>
@@ -97,21 +97,21 @@ export default function ServiceCardsSection({ flip = false }) {
                   style={{objectPosition: imgPosition}}
                   sizes="(max-width:640px) 100vw, (max-width:1024px) 50vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2b0b14]/30 to-transparent" />
               </div>
               <div className="p-5 md:p-7 flex flex-col flex-1">
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide">{badge}</p>
+                  <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide">{badge}</p>
                   <span className="shrink-0">
                     <Image src="/rics-logo.png" alt="RICS Regulated" width={36} height={24} className="object-contain" />
                   </span>
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-[#0d1b3e] mb-3">{title}</h3>
+                <h3 className="text-lg md:text-xl font-bold text-[#2b0b14] mb-3">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
                 <ul className="space-y-2 mb-6">
                   {features.map((f) => (
                     <li key={f} className="flex items-start gap-2">
-                      <svg className="mt-0.5 shrink-0 text-[#0057FF]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                      <svg className="mt-0.5 shrink-0 text-[#7A1F3D]" width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
                       <span className="text-[#64748b] text-xs leading-relaxed">
                         {f.startsWith('Accepted') ? (
                           <><span className="cta-flash font-semibold">Accepted</span>{f.slice(8)}</>

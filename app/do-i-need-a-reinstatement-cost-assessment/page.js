@@ -102,15 +102,15 @@ export default function DoINeedRCAPage() {
       />
 
       {/* TRIGGERS GRID */}
-      <section className="bg-[#f0f4ff] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-[#fbf0f2] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {triggers.map(({ icon, title, body }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#0057FF' }}>{icon}</span>
+              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
                 </div>
-                <h3 className="text-base font-bold text-[#0d1b3e]">{title}</h3>
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
               </div>
             ))}
@@ -121,15 +121,15 @@ export default function DoINeedRCAPage() {
       {/* NONE APPLY */}
       <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">None Of These Apply?</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">None Of These Apply?</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             Still worth a <span className="text-shine">quick sense-check</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            If you're not sure whether your current sum insured is right, start with <Link href="/what-is-a-reinstatement-cost-assessment" className="text-[#0057FF] font-medium hover:underline">What Is a Reinstatement Cost Assessment?</Link> and <Link href="/reinstatement-cost-vs-market-value" className="text-[#0057FF] font-medium hover:underline">Reinstatement Cost vs Market Value</Link> to understand what the figure should actually reflect.
+            If you're not sure whether your current sum insured is right, start with <Link href="/what-is-a-reinstatement-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">What Is a Reinstatement Cost Assessment?</Link> and <Link href="/reinstatement-cost-vs-market-value" className="text-[#7A1F3D] font-medium hover:underline">Reinstatement Cost vs Market Value</Link> to understand what the figure should actually reflect.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
-            Getting a professional opinion is inexpensive relative to what an underinsured claim can cost you - see <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#0057FF] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link> for a worked example.
+            Getting a professional opinion is inexpensive relative to what an underinsured claim can cost you - see <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link> for a worked example.
           </p>
         </div>
       </section>

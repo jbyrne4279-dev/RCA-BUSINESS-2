@@ -9,11 +9,11 @@ export default function ChecklistGrid({ items, columns = 2 }) {
         >
           <span
             className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-white"
-            style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)' }}
+            style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)' }}
           >
             {i + 1}
           </span>
-          <p className="text-[#0d1b3e] text-sm leading-relaxed">{item}</p>
+          <p className="text-[#2b0b14] text-sm leading-relaxed">{item}</p>
         </div>
       ))}
     </div>

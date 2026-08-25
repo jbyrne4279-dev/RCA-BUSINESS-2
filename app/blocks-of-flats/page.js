@@ -82,11 +82,11 @@ export default function BlocksOfFlatsPage() {
       />
 
       {/* SECTION A - Why block assessments are complex */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#fbf0f2' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Why block assessments are <span className="blue-keyword">complex</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
@@ -99,13 +99,13 @@ export default function BlocksOfFlatsPage() {
                 { num: '03', label: 'Leaseholder obligations', desc: "A wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance." },
               ].map(({ num, label, desc }) => (
                 <li key={num} className="flex gap-4 items-start step-reveal-item">
-                  <span className="text-xs font-bold text-[#0057FF] shrink-0 mt-0.5 w-6 text-right">{num}</span>
-                  <span><strong className="text-[#0d1b3e]">{label}</strong>: {desc}</span>
+                  <span className="text-xs font-bold text-[#7A1F3D] shrink-0 mt-0.5 w-6 text-right">{num}</span>
+                  <span><strong className="text-[#2b0b14]">{label}</strong>: {desc}</span>
                 </li>
               ))}
             </ul>
           </div>
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>
             <ChecklistGrid
               columns={1}
@@ -132,7 +132,7 @@ export default function BlocksOfFlatsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Blocks of Flats</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">
               What we <span className="blue-keyword">assess</span>.
             </h2>
           </div>
@@ -150,14 +150,14 @@ export default function BlocksOfFlatsPage() {
                   <Image src={img} alt={title} fill className="object-cover" />
                 </div>
                 <div className="p-5">
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-2">{title}</p>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-2">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mb-3">{desc}</p>
                   <span className="link-arrow cta-flash !text-xs">Learn more</span>
                 </div>
               </Link>
             ))}
           </div>
-          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#0057FF] font-semibold hover:text-[#0040CC]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
+          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#7A1F3D] font-semibold hover:text-[#5C1730]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
         </div>
       </section>
 

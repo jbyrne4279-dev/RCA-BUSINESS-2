@@ -86,8 +86,8 @@ export default function RCACostPage() {
       <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">How It Works</span>
-            <h2 className="text-[2rem] sm:text-5xl font-semibold tracking-tight text-[#0d1b3e] leading-[1.08]">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">How It Works</span>
+            <h2 className="text-[2rem] sm:text-5xl font-semibold tracking-tight text-[#2b0b14] leading-[1.08]">
               A clear price, agreed upfront.
             </h2>
           </div>
@@ -96,14 +96,14 @@ export default function RCACostPage() {
       </section>
 
       {/* WORTH IT */}
-      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Cost vs Risk</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">Cost vs Risk</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             A small cost against a <span className="text-shine">much larger risk</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed">
-            An assessment is a modest, one-off (or periodic) cost. Being underinsured when a genuine claim happens can cost tens of thousands of pounds, because insurers reduce every payout proportionally under the average clause — not just on a total loss. See exactly how that plays out in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#0057FF] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
+            An assessment is a modest, one-off (or periodic) cost. Being underinsured when a genuine claim happens can cost tens of thousands of pounds, because insurers reduce every payout proportionally under the average clause — not just on a total loss. See exactly how that plays out in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
           </p>
         </div>
       </section>

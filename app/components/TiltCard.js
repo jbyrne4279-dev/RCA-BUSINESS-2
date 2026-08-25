@@ -31,7 +31,7 @@ export default function TiltCard() {
       onMouseLeave={onMouseLeave}
       className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden"
       style={{
-        boxShadow: '0 8px 32px rgba(0,87,255,0.10)',
+        boxShadow: '0 8px 32px rgba(122,31,61,0.10)',
         transition: 'transform 0.15s ease, box-shadow 0.15s ease',
         willChange: 'transform',
         transformStyle: 'preserve-3d',
@@ -45,7 +45,7 @@ export default function TiltCard() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#2b0b14]/60 to-transparent" />
       </div>
       <div className="p-6">
         <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-3">Basis for your sum insured</p>
@@ -63,7 +63,7 @@ export default function TiltCard() {
                 }
               </span>
               <div>
-                <p className="text-sm font-semibold text-[#0d1b3e]">{label}</p>
+                <p className="text-sm font-semibold text-[#2b0b14]">{label}</p>
                 <p className="text-xs text-[#64748b] mt-0.5">{val}</p>
               </div>
             </div>

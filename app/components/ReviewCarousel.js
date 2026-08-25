@@ -89,7 +89,7 @@ function ReviewCard({ review, visible }) {
             </span>
           </div>
           <div>
-            <p className="font-semibold text-[13px] text-[#0d1b3e] leading-tight">{name}</p>
+            <p className="font-semibold text-[13px] text-[#2b0b14] leading-tight">{name}</p>
             <p className="text-[11px] text-[#64748b] leading-tight">{role}</p>
             <p className="text-[10px] text-[#94a3b8] leading-tight mt-0.5">Google Account · {reviewCount}</p>
           </div>
@@ -120,12 +120,12 @@ export default function ReviewCarousel() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="badge badge-blue">Client Feedback</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3">What Our Customers Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mt-3">What Our Customers Say</h2>
           <p className="text-[#64748b] text-sm mt-2">Managing agents, freeholders and property professionals across the UK.</p>
           <div className="inline-flex items-center gap-2 mt-5 bg-white border border-[#e2e8f0] rounded-xl px-5 py-2.5 shadow-sm">
             <GoogleIcon />
             <span className="text-yellow-500 text-sm leading-none">★★★★★</span>
-            <span className="font-bold text-[#0d1b3e] text-sm ml-0.5">4.9</span>
+            <span className="font-bold text-[#2b0b14] text-sm ml-0.5">4.9</span>
             <span className="text-[#64748b] text-xs">· 47 Google reviews</span>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function ReviewCarousel() {
               style={{
                 width: i === active ? '24px' : '8px',
                 height: '8px',
-                background: i === active ? '#0057FF' : '#cbd5e1',
+                background: i === active ? '#7A1F3D' : '#cbd5e1',
               }}
               aria-label={`Review ${i + 1}`}
             />

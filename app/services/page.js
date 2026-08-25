@@ -15,12 +15,12 @@ const IcoDesktop = () => (
   <Image src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" width={20} height={20} className="object-contain rounded" />
 )
 const IcoSurvey = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M10 21v-4h4v4"/>
   </svg>
 )
 const IcoShield = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/>
   </svg>
 )
@@ -114,11 +114,11 @@ export default function ServicesPage() {
       />
 
       {/* SECTION A - WHY SPECIALIST */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="badge badge-blue">Our Services</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Generic tools cannot replace a <span className="blue-keyword">RICS Reinstatement Cost Assessment</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
@@ -141,7 +141,7 @@ export default function ServicesPage() {
                   }
                 </span>
                 <div>
-                  <p className="font-medium text-[#0d1b3e] text-sm">{label}</p>
+                  <p className="font-medium text-[#2b0b14] text-sm">{label}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
                 </div>
               </div>
@@ -154,11 +154,11 @@ export default function ServicesPage() {
       <ServiceCardsSection />
 
       {/* RICS REPORT = LEGAL PROTECTION */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue">Your Protection</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3 mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mt-3 mb-5">
               Your RICS report is your <span className="blue-keyword">legal shield</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
@@ -172,22 +172,22 @@ export default function ServicesPage() {
 
           <ElectricSequence items={[
             {
-              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
+              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>,
               title: 'RICS-compliant documentation',
               desc: 'Prepared to Royal Institution of Chartered Surveyors guidance the standard recognised by every UK insurer, broker and court.',
             },
             {
-              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>,
+              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L4 6v6c0 5.1 3.6 9.9 8 11 4.4-1.1 8-5.9 8-11V6L12 2z"/><polyline points="9 12 11 14 15 10"/></svg>,
               title: 'Professional indemnity backing',
               desc: 'Every report is covered by our PI insurance. If the figure is ever challenged, you have an independently insured professional standing behind it.',
             },
             {
-              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
+              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>,
               title: 'Limits your personal liability',
               desc: 'Demonstrates you took reasonable professional steps to set the declared value protecting directors, managing agents and freeholders from personal claims.',
             },
             {
-              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0057FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/></svg>,
+              icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><line x1="7" y1="8" x2="17" y2="8"/><line x1="7" y1="12" x2="13" y2="12"/></svg>,
               title: 'Prevents the average clause',
               desc: 'Insurers apply the average clause to reduce payouts when a property is underinsured. A current RICS report is the strongest defence against it.',
             },
@@ -202,7 +202,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-5">Coverage</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Reinstatement Cost Assessments <span className="blue-keyword">across the UK</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
@@ -213,14 +213,14 @@ export default function ServicesPage() {
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-4">Regions we assess</p>
             <div className="flex flex-wrap gap-3">
               {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
                 <span
                   key={area}
-                  className="text-xs font-semibold text-[#0d1b3e] border border-[#e2e8f0] rounded-full px-4 py-2"
-                  style={{background:'#f0f4ff'}}
+                  className="text-xs font-semibold text-[#2b0b14] border border-[#e2e8f0] rounded-full px-4 py-2"
+                  style={{background:'#fbf0f2'}}
                 >
                   {area}
                 </span>

@@ -23,11 +23,11 @@ const POINTS = [
 
 export default function GuideTrustBand() {
   return (
-    <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
+    <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#fbf0f2' }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="badge badge-blue mb-4">Why Stearling Reinstatement</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">
             The <span className="blue-keyword">trusted choice</span> for homeowners.
           </h2>
         </div>
@@ -35,16 +35,16 @@ export default function GuideTrustBand() {
           {POINTS.map(({ icon, title, desc }, i) => (
             <div
               key={title}
-              className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+              className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
               style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
             >
               <span
                 className="icon-shine w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
-                style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', animationDelay: `${i * 0.6}s` }}
+                style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)', animationDelay: `${i * 0.6}s` }}
               >
                 {icon}
               </span>
-              <h3 className="text-base font-semibold text-[#0d1b3e] mb-2">{title}</h3>
+              <h3 className="text-base font-semibold text-[#2b0b14] mb-2">{title}</h3>
               <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
             </div>
           ))}

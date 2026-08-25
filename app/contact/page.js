@@ -100,8 +100,8 @@ export default function ContactPage() {
             <div key={label} className="flex gap-3 items-baseline">
               <p className="text-xs font-semibold text-[#94a3b8] uppercase tracking-[0.15em]">{label}</p>
               {href
-                ? <a href={href} className="text-[#0d1b3e] font-semibold hover:text-[#0057FF] transition-colors">{value}</a>
-                : <p className="text-[#0d1b3e] font-semibold">{value}</p>
+                ? <a href={href} className="text-[#2b0b14] font-semibold hover:text-[#7A1F3D] transition-colors">{value}</a>
+                : <p className="text-[#2b0b14] font-semibold">{value}</p>
               }
             </div>
           ))}

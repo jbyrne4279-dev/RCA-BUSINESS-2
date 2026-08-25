@@ -23,7 +23,7 @@ export default function ContactFormInner({ heading }) {
     <div>
       <div id="contact-form" className="mb-10 scroll-mt-20">
         <span className="badge badge-blue mb-5">Get In Touch</span>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-3">
           {heading}
         </h2>
         <p className="text-[#64748b] text-base leading-relaxed max-w-xl mb-6">
@@ -35,8 +35,8 @@ export default function ContactFormInner({ heading }) {
             'Written fee estimate in 24 hours',
             'No contract required',
           ].map((point) => (
-            <span key={point} className="flex items-center gap-2 text-xs font-semibold text-[#0d1b3e]">
-              <span className="w-5 h-5 rounded-full flex items-center justify-center bg-[#0057FF]/10 text-[#0057FF] shrink-0">
+            <span key={point} className="flex items-center gap-2 text-xs font-semibold text-[#2b0b14]">
+              <span className="w-5 h-5 rounded-full flex items-center justify-center bg-[#7A1F3D]/10 text-[#7A1F3D] shrink-0">
                 <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
               </span>
               {point}
@@ -57,7 +57,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-name" name="name" required type="text"
               placeholder="John Smith"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-1.5">
@@ -67,7 +67,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-email" name="email" required type="email"
               placeholder="john@example.com"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-phone" name="phone" required type="tel"
               placeholder="+44 7700 900000"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
           </div>
           <div className="flex flex-col gap-1.5">
@@ -90,7 +90,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-company" name="company" required type="text"
               placeholder="London Estates Ltd"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function ContactFormInner({ heading }) {
             </label>
             <select
               id="contact-property-type" name="property_type" defaultValue="" required
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors appearance-none cursor-pointer"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors appearance-none cursor-pointer"
             >
               <option value="" disabled>Select type</option>
               <option>Commercial</option>
@@ -120,7 +120,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-num-properties" name="num_properties" required type="number" min="1"
               placeholder="1"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
           </div>
         </div>
@@ -131,7 +131,7 @@ export default function ContactFormInner({ heading }) {
           </label>
           <select
             id="contact-service" name="service" defaultValue={preselected} required
-            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors appearance-none cursor-pointer"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors appearance-none cursor-pointer"
           >
             <option value="" disabled>Select a service</option>
             <option>Desktop Reinstatement Cost Assessment</option>
@@ -149,7 +149,7 @@ export default function ContactFormInner({ heading }) {
           <textarea
             id="contact-notes" name="notes" required rows="4"
             placeholder="Briefly describe your property and requirements..."
-            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors resize-none"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors resize-none"
           />
         </div>
 

@@ -75,10 +75,10 @@ export default function ReinstatementVsMarketValuePage() {
       />
 
       {/* COMPARISON TABLE */}
-      <section className="bg-[#f0f4ff] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-[#fbf0f2] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Comparison</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-8">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">Comparison</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-8">
             Set side by side, the <span className="text-shine">difference is clear</span>.
           </h2>
 
@@ -103,15 +103,15 @@ export default function ReinstatementVsMarketValuePage() {
       {/* WHY IT MATTERS */}
       <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Why It Matters</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">Why It Matters</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             Getting this wrong costs you <span className="text-shine">either way</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             Insure at market value when it's higher than reinstatement cost, and you're paying premium on cover you can never actually claim — insurers only ever pay out the cost to rebuild, never the market price of the land.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
-            Insure below true reinstatement cost, and you're underinsured — meaning any claim, not just a total loss, gets reduced under the insurer's average clause. See exactly how that works in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#0057FF] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
+            Insure below true reinstatement cost, and you're underinsured — meaning any claim, not just a total loss, gets reduced under the insurer's average clause. See exactly how that works in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
           </p>
         </div>
       </section>

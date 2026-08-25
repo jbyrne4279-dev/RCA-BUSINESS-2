@@ -18,8 +18,8 @@ export default function RelatedPages({ currentSlug, heading = 'Related services'
     <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-2">Explore Further</span>
-          <h2 className="text-[2rem] sm:text-4xl font-semibold tracking-tight text-[#0d1b3e]">{heading}</h2>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-2">Explore Further</span>
+          <h2 className="text-[2rem] sm:text-4xl font-semibold tracking-tight text-[#2b0b14]">{heading}</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {items.map((g) => (
@@ -27,7 +27,7 @@ export default function RelatedPages({ currentSlug, heading = 'Related services'
               key={g.slug}
               href={g.slug}
               className="group relative aspect-[4/5] rounded-3xl overflow-hidden"
-              style={{ boxShadow: '0 10px 32px rgba(0,87,255,0.16)' }}
+              style={{ boxShadow: '0 10px 32px rgba(122,31,61,0.16)' }}
             >
               <Image
                 src={g.img}

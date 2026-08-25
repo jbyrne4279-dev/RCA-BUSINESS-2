@@ -37,8 +37,8 @@ export default function Navbar() {
                 href={href}
                 className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
                   active
-                    ? 'text-[#0057FF]'
-                    : 'text-[#64748b] hover:text-[#0d1b3e]'
+                    ? 'text-[#7A1F3D]'
+                    : 'text-[#64748b] hover:text-[#2b0b14]'
                 }`}
               >
                 {label}
@@ -64,7 +64,7 @@ export default function Navbar() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
             onClick={() => setOpen(v => !v)}
-            className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#f0f4ff] text-[#64748b] transition-colors"
+            className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#fbf0f2] text-[#64748b] transition-colors"
           >
             {open
               ? <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -79,12 +79,12 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-[#e2e8f0]">
           <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-0.5">
             <Link href="/" onClick={() => setOpen(false)}
-              className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors">
+              className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors">
               Home
             </Link>
             {links.map(({ href, label }) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors">
+                className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors">
                 {label}
               </Link>
             ))}

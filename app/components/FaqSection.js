@@ -17,7 +17,7 @@ export default function FaqSection({ description, items, flip = false }) {
   return (
     <section
       className="py-12 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]"
-      style={{ background: flip ? '#f0f4ff' : '#ffffff' }}
+      style={{ background: flip ? '#fbf0f2' : '#ffffff' }}
     >
       <script
         type="application/ld+json"
@@ -26,7 +26,7 @@ export default function FaqSection({ description, items, flip = false }) {
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">
           <span className="badge badge-blue">FAQ</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#0d1b3e] leading-tight mt-3 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#2b0b14] leading-tight mt-3 mb-4">
             Common questions.
           </h2>
           {description && (
@@ -40,7 +40,7 @@ export default function FaqSection({ description, items, flip = false }) {
               key={i}
               style={{
                 transition: 'box-shadow 0.3s ease, border-color 0.3s ease',
-                boxShadow: open === i ? '0 0 0 2px #0057FF, 0 0 18px 3px rgba(0,87,255,0.35)' : '0 0 0 1px #e2e8f0',
+                boxShadow: open === i ? '0 0 0 2px #7A1F3D, 0 0 18px 3px rgba(122,31,61,0.35)' : '0 0 0 1px #e2e8f0',
                 position: 'relative',
                 zIndex: open === i ? 1 : 0,
                 borderRadius: '0.75rem',
@@ -51,17 +51,17 @@ export default function FaqSection({ description, items, flip = false }) {
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-6 px-6 py-5 text-left group transition-colors"
-                style={open === i ? { background: 'rgba(0,87,255,0.06)' } : {}}
+                style={open === i ? { background: 'rgba(122,31,61,0.06)' } : {}}
               >
-                <span className="font-medium text-sm leading-snug transition-colors duration-200" style={{ color: open === i ? '#0057FF' : '#0d1b3e' }}>
+                <span className="font-medium text-sm leading-snug transition-colors duration-200" style={{ color: open === i ? '#7A1F3D' : '#2b0b14' }}>
                   {item.question}
                 </span>
                 <span
                   className="text-xl leading-none shrink-0 transition-all duration-300"
                   style={{
                     transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)',
-                    color: open === i ? '#0057FF' : '#0057FF',
-                    textShadow: open === i ? '0 0 10px rgba(0,87,255,0.8)' : 'none',
+                    color: open === i ? '#7A1F3D' : '#7A1F3D',
+                    textShadow: open === i ? '0 0 10px rgba(122,31,61,0.8)' : 'none',
                   }}
                 >
                   +

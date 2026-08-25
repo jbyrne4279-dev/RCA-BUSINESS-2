@@ -5,7 +5,7 @@ function spawnConfetti(originEl) {
   const rect = originEl.getBoundingClientRect()
   const cx = rect.left + rect.width / 2
   const cy = rect.top + rect.height / 2
-  const colors = ['#0057FF', '#38bdf8', '#60a5fa', '#93c5fd', '#bfdbfe', '#ffffff']
+  const colors = ['#7A1F3D', '#e8748c', '#60a5fa', '#93c5fd', '#bfdbfe', '#ffffff']
   const count = 22
   for (let i = 0; i < count; i++) {
     const el = document.createElement('span')
@@ -40,8 +40,8 @@ const Star = ({ index = 0 }) => (
     <defs>
       <style>{`
         @keyframes star-shine {
-          0%, 100% { fill: #0057FF; filter: drop-shadow(0 0 0px transparent); }
-          50% { fill: #38bdf8; filter: drop-shadow(0 0 5px rgba(56,189,248,0.9)) drop-shadow(0 0 10px rgba(0,87,255,0.5)); }
+          0%, 100% { fill: #7A1F3D; filter: drop-shadow(0 0 0px transparent); }
+          50% { fill: #e8748c; filter: drop-shadow(0 0 5px rgba(232,116,140,0.9)) drop-shadow(0 0 10px rgba(122,31,61,0.5)); }
         }
       `}</style>
     </defs>
@@ -158,7 +158,7 @@ function ReviewCard({ name, role, photo, quote, visible }) {
             </span>
           </div>
           <div className="min-w-0">
-            <p className="font-semibold text-sm text-[#0d1b3e] truncate">{name}</p>
+            <p className="font-semibold text-sm text-[#2b0b14] truncate">{name}</p>
             <p className="text-xs text-[#64748b] leading-snug">{role}</p>
           </div>
         </div>

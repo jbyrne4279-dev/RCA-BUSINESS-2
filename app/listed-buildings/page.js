@@ -82,12 +82,12 @@ export default function ListedBuildingsPage() {
       />
 
       {/* 2. SECTION A - Why listed buildings are different (text left, card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Text left */}
           <div>
             <span className="badge badge-blue mb-4">Why Listed Buildings Are Different</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Authentic materials, conservation requirements and period finishes all affect <span className="blue-keyword">rebuild cost</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
@@ -99,27 +99,27 @@ export default function ListedBuildingsPage() {
             <Link href="/contact#contact-form" className="btn-shine inline-block">Get a Specialist Assessment</Link>
           </div>
           {/* Card right - listing grades */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8 electric-pulse" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8 electric-pulse" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">Listed Building Categories</p>
             <div className="space-y-5">
-              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
-                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">I</span>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(122,31,61,0.06)'}}>
+                <span className="font-bold text-[#7A1F3D] text-sm shrink-0 mt-0.5">I</span>
                 <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade I</p>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-1">Grade I</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Highest significance - only 2% of listed buildings. Reinstatement requires the most exacting materials match and Heritage England involvement.</p>
                 </div>
               </div>
-              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
-                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II*</span>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(122,31,61,0.06)'}}>
+                <span className="font-bold text-[#7A1F3D] text-sm shrink-0 mt-0.5">II*</span>
                 <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II*</p>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-1">Grade II*</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">Particularly important buildings - 6% of the list. Often require specialist heritage contractors and conservation officer input on every element of reinstatement.</p>
                 </div>
               </div>
-              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(0,87,255,0.06)'}}>
-                <span className="font-bold text-[#0057FF] text-sm shrink-0 mt-0.5">II</span>
+              <div className="grade-card flex gap-4 items-start p-4 rounded-xl" style={{background:'rgba(122,31,61,0.06)'}}>
+                <span className="font-bold text-[#7A1F3D] text-sm shrink-0 mt-0.5">II</span>
                 <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm mb-1">Grade II</p>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-1">Grade II</p>
                   <p className="text-[#64748b] text-sm leading-relaxed">The most common category - 92% of listed buildings. Still subject to listed building consent and material-authenticity obligations that standard assessors routinely overlook.</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function ListedBuildingsPage() {
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Checklist card left */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
             <ChecklistGrid
               columns={1}
@@ -151,7 +151,7 @@ export default function ListedBuildingsPage() {
           {/* Text right */}
           <div>
             <span className="badge badge-blue mb-4">Our On-Site Survey Process</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               The only <span className="blue-keyword">defensible method</span> for a listed property.
             </h2>
             <div className="space-y-5 mb-8">
@@ -162,11 +162,11 @@ export default function ListedBuildingsPage() {
                 { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
               ].map(({ title, body, icon }) => (
                 <div key={title} className="flex gap-4 items-start step-reveal-item">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#0057FF'}}>
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#7A1F3D'}}>
                     {icon}
                   </div>
                   <div>
-                    <p className="font-semibold text-[#0d1b3e] text-sm mb-1">{title}</p>
+                    <p className="font-semibold text-[#2b0b14] text-sm mb-1">{title}</p>
                     <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
                   </div>
                 </div>
@@ -178,11 +178,11 @@ export default function ListedBuildingsPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Why Choose Stearling Reinstatement</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">
               Built for <span className="blue-keyword">listed buildings</span>, not adapted from standard practice.
             </h2>
           </div>
@@ -193,7 +193,7 @@ export default function ListedBuildingsPage() {
                 desc: 'Every listed building assessment is carried out on site. Desktop methods cannot account for heritage materials, specialist trades or the physical condition of the fabric.',
                 href: '/services#on-site-survey',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                   </svg>
                 ),
@@ -203,7 +203,7 @@ export default function ListedBuildingsPage() {
                 desc: 'We price lime mortar, handmade brick, natural stone, historic timber and specialist period finishes - each at rates that reflect the actual cost of authentic reinstatement.',
                 href: '/contact#contact-form',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                   </svg>
                 ),
@@ -213,7 +213,7 @@ export default function ListedBuildingsPage() {
                 desc: 'All assessments are prepared by RICS-regulated surveyors and carry the methodology transparency your insurer requires. Broker-ready reports issued within agreed timescales.',
                 href: '/services',
                 icon: (
-                  <svg className="w-7 h-7" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
                   </svg>
                 ),
@@ -221,7 +221,7 @@ export default function ListedBuildingsPage() {
             ].map(({ title, desc, href, icon }) => (
               <Link key={title} href={href} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 4px 20px rgba(0,0,0,0.06)', textDecoration:'none', display:'block'}}>
                 <div className="mb-4">{icon}</div>
-                <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
+                <h3 className="font-bold text-[#2b0b14] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed mb-4">{desc}</p>
                 <span className="link-arrow cta-flash">Learn more</span>
               </Link>

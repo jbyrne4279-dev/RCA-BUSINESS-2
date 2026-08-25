@@ -78,11 +78,11 @@ export default function CommercialPage() {
       />
 
       {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Why commercial reinstatement is so <span className="blue-keyword">complex to get right</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
@@ -95,11 +95,11 @@ export default function CommercialPage() {
                 { label: 'M&E services', desc: 'Mechanical and electrical infrastructure in offices, retail and industrial buildings routinely represents 20–40% of rebuild cost.' },
               ].map(({ label, desc }) => (
                 <li key={label} className="flex gap-3 items-start">
-                  <span className="tick-icon mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(0,87,255,0.15)'}}>
-                    <svg className="w-3 h-3" fill="none" stroke="#0057FF" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  <span className="tick-icon mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center" style={{background:'rgba(122,31,61,0.15)'}}>
+                    <svg className="w-3 h-3" fill="none" stroke="#7A1F3D" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg>
                   </span>
                   <div>
-                    <p className="font-semibold text-[#0d1b3e] text-sm">{label}</p>
+                    <p className="font-semibold text-[#2b0b14] text-sm">{label}</p>
                     <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
                   </div>
                 </li>
@@ -132,7 +132,7 @@ export default function CommercialPage() {
                   }
                 </span>
                 <div>
-                  <p className="font-semibold text-[#0d1b3e] text-sm">{title}</p>
+                  <p className="font-semibold text-[#2b0b14] text-sm">{title}</p>
                   <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
                 </div>
               </div>
@@ -145,9 +145,9 @@ export default function CommercialPage() {
       {/* 3. SECTION B - Property types (card left, text right) */}
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
-              <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-widest">Property Types We Assess</p>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
+            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+              <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-widest">Property Types We Assess</p>
             </div>
             <ul className="divide-y divide-[#e2e8f0]">
               {[
@@ -161,10 +161,10 @@ export default function CommercialPage() {
                 <li key={title}>
                   <Link
                     href={href}
-                    className="flex items-center justify-between px-6 py-4 hover:bg-[#f0f4ff] transition-colors group"
+                    className="flex items-center justify-between px-6 py-4 hover:bg-[#fbf0f2] transition-colors group"
                   >
-                    <span className="font-medium text-[#0d1b3e] text-sm">{title}</span>
-                    <svg className="w-4 h-4 text-[#0057FF] group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    <span className="font-medium text-[#2b0b14] text-sm">{title}</span>
+                    <svg className="w-4 h-4 text-[#7A1F3D] group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
                   </Link>
                 </li>
               ))}
@@ -173,7 +173,7 @@ export default function CommercialPage() {
 
           <div>
             <span className="badge badge-blue mb-4">Coverage</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Every commercial property type, <span className="blue-keyword">covered</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
@@ -191,11 +191,11 @@ export default function CommercialPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Expertise</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">Specialist assessments for specialist buildings.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Specialist assessments for specialist buildings.</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -204,7 +204,7 @@ export default function CommercialPage() {
                 desc: 'We identify and value Category A and B fitout installed by occupying tenants - a cost layer that online tools and index-linked valuations routinely miss entirely.',
                 href: '/contact',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
                   </svg>
                 ),
@@ -214,7 +214,7 @@ export default function CommercialPage() {
                 desc: 'Grade I, Grade II* and Grade II commercial buildings assessed by surveyors experienced in historic fabric, specialist materials and Heritage England compliance.',
                 href: '/listed-buildings',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
                   </svg>
                 ),
@@ -224,17 +224,17 @@ export default function CommercialPage() {
                 desc: 'A single instruction covers the entire development. Output is separated by use class - residential and commercial figures presented cleanly for your insurer.',
                 href: '/contact',
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="#0057FF" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6" fill="none" stroke="#7A1F3D" strokeWidth="1.8" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
                   </svg>
                 ),
               },
             ].map(({ title, desc, href, icon }) => (
               <Link key={title} href={href} className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col" style={{boxShadow:'0 4px 16px rgba(0,0,0,0.05)', textDecoration:'none'}}>
-                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{background:'rgba(0,87,255,0.1)'}}>
+                <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{background:'rgba(122,31,61,0.1)'}}>
                   {icon}
                 </div>
-                <h3 className="font-bold text-[#0d1b3e] text-base mb-2">{title}</h3>
+                <h3 className="font-bold text-[#2b0b14] text-base mb-2">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed flex-1 mb-4">{desc}</p>
                 <span className="link-arrow cta-flash">Learn more</span>
               </Link>

@@ -15,7 +15,7 @@ function PulsingPill() {
       <span
         ref={ref}
         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"
-        style={{background:'rgba(0,87,255,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(0,87,255,0.35)'}}
+        style={{background:'rgba(122,31,61,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(122,31,61,0.35)'}}
       >
         <span style={{width:6,height:6,borderRadius:'50%',background:'#4d9fff',display:'inline-block',boxShadow:'0 0 8px rgba(77,159,255,0.8)'}} />
         RICS-Regulated Assessments
@@ -29,8 +29,8 @@ export default function CtaBanner() {
     <section className="relative py-14 md:py-28 px-6 md:px-10 overflow-hidden" style={{background:'linear-gradient(135deg, #0a1628 0%, #0d1f4a 50%, #0a1628 100%)'}}>
       {/* Background glow blobs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div style={{position:'absolute',top:'-20%',left:'-10%',width:'60%',height:'140%',background:'radial-gradient(ellipse, rgba(0,87,255,0.18) 0%, transparent 70%)',borderRadius:'50%'}} />
-        <div style={{position:'absolute',bottom:'-20%',right:'-10%',width:'55%',height:'120%',background:'radial-gradient(ellipse, rgba(0,87,255,0.12) 0%, transparent 70%)',borderRadius:'50%'}} />
+        <div style={{position:'absolute',top:'-20%',left:'-10%',width:'60%',height:'140%',background:'radial-gradient(ellipse, rgba(122,31,61,0.18) 0%, transparent 70%)',borderRadius:'50%'}} />
+        <div style={{position:'absolute',bottom:'-20%',right:'-10%',width:'55%',height:'120%',background:'radial-gradient(ellipse, rgba(122,31,61,0.12) 0%, transparent 70%)',borderRadius:'50%'}} />
       </div>
 
       <div className="relative max-w-6xl mx-auto">
@@ -56,7 +56,7 @@ export default function CtaBanner() {
           <Link
             href="/contact#contact-form"
             className="inline-block text-center font-semibold text-sm px-10 py-4 rounded-full transition-all"
-            style={{background:'#0057FF',color:'#fff',boxShadow:'0 0 32px rgba(0,87,255,0.55), 0 4px 16px rgba(0,87,255,0.35)'}}
+            style={{background:'#7A1F3D',color:'#fff',boxShadow:'0 0 32px rgba(122,31,61,0.55), 0 4px 16px rgba(122,31,61,0.35)'}}
           >
             Get a Quote
           </Link>

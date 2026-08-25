@@ -81,31 +81,31 @@ export default function WhatIsRCAPage() {
       />
 
       {/* THREE TERMS */}
-      <section className="bg-[#f0f4ff] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-[#fbf0f2] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">The Three Numbers</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-6">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">The Three Numbers</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-6">
             Three figures, <span className="text-shine">three very different meanings</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-8">
             Most confusion around home insurance starts here — people assume these three numbers are roughly the same. They're often wildly different.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
-              <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-2">Market Value</p>
+            <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+              <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide mb-2">Market Value</p>
               <p className="text-[#64748b] text-sm leading-relaxed">What a buyer would pay for the property, land included, on the open market today.</p>
             </div>
-            <div className="rounded-2xl border-2 border-[#0057FF] bg-white p-6" style={{boxShadow:'0 8px 24px rgba(0,87,255,0.15)'}}>
-              <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-2">Reinstatement Cost</p>
+            <div className="rounded-2xl border-2 border-[#7A1F3D] bg-white p-6" style={{boxShadow:'0 8px 24px rgba(122,31,61,0.15)'}}>
+              <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide mb-2">Reinstatement Cost</p>
               <p className="text-[#64748b] text-sm leading-relaxed">What it costs to demolish the damaged structure and rebuild it, excluding the land. This is what a Reinstatement Cost Assessment produces — and what your insurance should be based on.</p>
             </div>
-            <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
-              <p className="text-xs font-semibold text-[#0057FF] uppercase tracking-wide mb-2">Sum Insured</p>
+            <div className="rounded-2xl border border-[#e2e8f0] bg-white p-6" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+              <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide mb-2">Sum Insured</p>
               <p className="text-[#64748b] text-sm leading-relaxed">The figure on your policy schedule — usually the reinstatement cost plus a buffer for inflation and unforeseen costs, set by you or your insurer.</p>
             </div>
           </div>
           <p className="text-[#64748b] text-base leading-relaxed mt-8">
-            Land holds its value even if a building is destroyed, which is why reinstatement cost is so often lower than market value in expensive areas — and why insuring at market value wastes money on excess premium, while insuring below reinstatement cost leaves you exposed. Read more in <Link href="/reinstatement-cost-vs-market-value" className="text-[#0057FF] font-medium hover:underline">Reinstatement Cost vs Market Value</Link>.
+            Land holds its value even if a building is destroyed, which is why reinstatement cost is so often lower than market value in expensive areas — and why insuring at market value wastes money on excess premium, while insuring below reinstatement cost leaves you exposed. Read more in <Link href="/reinstatement-cost-vs-market-value" className="text-[#7A1F3D] font-medium hover:underline">Reinstatement Cost vs Market Value</Link>.
           </p>
         </div>
       </section>
@@ -113,15 +113,15 @@ export default function WhatIsRCAPage() {
       {/* WHY IT MATTERS */}
       <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Why It Matters</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">Why It Matters</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             Why this figure <span className="text-shine">decides what you get paid</span> after a claim.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             If your sum insured is lower than your true reinstatement cost, most UK insurers apply what's called the "average clause" (also called condition of average). It reduces every claim payout — not just total losses — in proportion to how underinsured you are.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
-            A Reinstatement Cost Assessment carried out by a RICS-regulated surveyor gives you (and your insurer) a defensible, evidence-based figure, rather than a guess carried forward from a previous policy or an online calculator. See a full worked example in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#0057FF] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
+            A Reinstatement Cost Assessment carried out by a RICS-regulated surveyor gives you (and your insurer) a defensible, evidence-based figure, rather than a guess carried forward from a previous policy or an online calculator. See a full worked example in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
           </p>
         </div>
       </section>

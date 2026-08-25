@@ -13,7 +13,7 @@ export default function ThankYouClient() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    const colors = ['#0057FF','#38bdf8','#7dd3fc','#a5f3fc','#fbbf24','#34d399','#f472b6']
+    const colors = ['#7A1F3D','#e8748c','#f2a6b7','#a5f3fc','#fbbf24','#34d399','#f472b6']
     const particles = Array.from({ length: 160 }, () => ({
       x: Math.random() * canvas.width,
       y: -20 - Math.random() * 100,
@@ -72,14 +72,14 @@ export default function ThankYouClient() {
       <style>{`
         @keyframes tick-flash {
           0%   { transform: scale(0.4); opacity: 0; filter: drop-shadow(0 0 0px transparent); }
-          40%  { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 14px rgba(56,189,248,1)); }
-          60%  { transform: scale(0.95); filter: drop-shadow(0 0 8px rgba(56,189,248,0.7)); }
-          80%  { transform: scale(1.08); filter: drop-shadow(0 0 12px rgba(56,189,248,0.9)); }
-          100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(56,189,248,0.5)); }
+          40%  { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 14px rgba(232,116,140,1)); }
+          60%  { transform: scale(0.95); filter: drop-shadow(0 0 8px rgba(232,116,140,0.7)); }
+          80%  { transform: scale(1.08); filter: drop-shadow(0 0 12px rgba(232,116,140,0.9)); }
+          100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(232,116,140,0.5)); }
         }
         @keyframes tick-pulse {
-          0%, 100% { filter: drop-shadow(0 0 4px rgba(56,189,248,0.4)); }
-          50%       { filter: drop-shadow(0 0 14px rgba(56,189,248,0.9)); }
+          0%, 100% { filter: drop-shadow(0 0 4px rgba(232,116,140,0.4)); }
+          50%       { filter: drop-shadow(0 0 14px rgba(232,116,140,0.9)); }
         }
         .tick-icon-anim {
           animation: tick-flash 0.7s cubic-bezier(0.22,1,0.36,1) forwards,
@@ -89,12 +89,12 @@ export default function ThankYouClient() {
 
       <section className="min-h-[80vh] bg-[#f8f9fa] flex items-center py-20 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="w-16 h-16 rounded-full bg-[#e0f2fe] flex items-center justify-center mx-auto mb-6 text-[#0057FF]">
+          <div className="w-16 h-16 rounded-full bg-[#fbf0f2] flex items-center justify-center mx-auto mb-6 text-[#7A1F3D]">
             <svg className="tick-icon-anim" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="5,16 12,23 27,9"/>
             </svg>
           </div>
-          <span className="inline-flex items-center bg-[#e0f2fe] text-[#0057FF] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+          <span className="inline-flex items-center bg-[#fbf0f2] text-[#7A1F3D] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
             Enquiry Received
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">

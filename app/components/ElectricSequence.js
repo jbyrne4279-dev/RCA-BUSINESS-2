@@ -27,12 +27,12 @@ export default function ElectricSequence({ items }) {
         >
           <div
             className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-500"
-            style={{ background: active === i ? 'rgba(0,255,100,0.15)' : 'rgba(0,87,255,0.08)' }}
+            style={{ background: active === i ? 'rgba(0,255,100,0.15)' : 'rgba(122,31,61,0.08)' }}
           >
             {icon}
           </div>
           <div>
-            <p className="font-semibold text-sm mb-1 transition-colors duration-500" style={{ color: active === i ? '#00c853' : '#0d1b3e' }}>{title}</p>
+            <p className="font-semibold text-sm mb-1 transition-colors duration-500" style={{ color: active === i ? '#00c853' : '#2b0b14' }}>{title}</p>
             <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
           </div>
         </div>

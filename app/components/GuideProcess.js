@@ -1,9 +1,9 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
-const GHOST = 'rgba(13, 27, 62, 0.18)'
-const ELECTRIC = '#0057FF'
-const GLOW = '0 0 26px rgba(0, 87, 255, 0.45)'
+const GHOST = 'rgba(43,11,20, 0.18)'
+const ELECTRIC = '#7A1F3D'
+const GLOW = '0 0 26px rgba(122,31,61, 0.45)'
 
 export default function GuideProcess({ steps }) {
   const containerRef = useRef(null)
@@ -67,7 +67,7 @@ export default function GuideProcess({ steps }) {
             {step}
           </div>
           <div>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#0d1b3e] tracking-tight mb-2">{title}</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-[#2b0b14] tracking-tight mb-2">{title}</h3>
             <p className="text-[#64748b] text-base sm:text-lg leading-relaxed">{desc}</p>
           </div>
         </div>

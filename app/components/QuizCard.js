@@ -134,7 +134,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
               type="button"
               aria-label="Back"
               onClick={() => setStep((s) => s - 1)}
-              className="-ml-2 shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-[#94a3b8] hover:text-[#0057FF] hover:bg-[#f0f4ff] transition-colors"
+              className="-ml-2 shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-[#94a3b8] hover:text-[#7A1F3D] hover:bg-[#fbf0f2] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
@@ -144,7 +144,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
               type="button"
               aria-label="Close"
               onClick={onClose}
-              className="-mr-2 shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#0d1b3e] hover:bg-[#f0f4ff] transition-colors"
+              className="-mr-2 shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
             </button>
@@ -160,7 +160,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             ))}
           </div>
 
-          <h3 className={`text-lg md:text-xl font-bold text-[#0d1b3e] leading-snug ${step === 0 ? 'mb-2' : 'mb-7'}`}>
+          <h3 className={`text-lg md:text-xl font-bold text-[#2b0b14] leading-snug ${step === 0 ? 'mb-2' : 'mb-7'}`}>
             {STEPS[step].question}
           </h3>
           {step === 0 && showIntro && (
@@ -176,7 +176,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
                 className={`quiz-option flex items-center gap-3 ${answers[STEPS[step].key] === opt.id ? 'selected' : ''}`}
               >
                 {opt.icon && <span className="quiz-option-icon shrink-0">{opt.icon}</span>}
-                <span className="text-sm font-medium text-[#0d1b3e] flex-1">{opt.label}</span>
+                <span className="text-sm font-medium text-[#2b0b14] flex-1">{opt.label}</span>
                 <svg className="quiz-chevron shrink-0" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
               </button>
             ))}
@@ -203,9 +203,9 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
             80% of UK buildings are underinsured. An outdated assessment can mean a reduced claim payout under the average clause.
           </p>
 
-          <div className="rounded-2xl border border-[#e2e8f0] p-3.5 mb-5" style={{ background: '#f0f4ff' }}>
-            <p className="text-[10px] font-semibold text-[#0057FF] uppercase tracking-wide mb-1">Recommended for you</p>
-            <p className="text-sm font-bold text-[#0057FF]">{serviceInfo.label}</p>
+          <div className="rounded-2xl border border-[#e2e8f0] p-3.5 mb-5" style={{ background: '#fbf0f2' }}>
+            <p className="text-[10px] font-semibold text-[#7A1F3D] uppercase tracking-wide mb-1">Recommended for you</p>
+            <p className="text-sm font-bold text-[#7A1F3D]">{serviceInfo.label}</p>
           </div>
 
           <form action="https://formspree.io/f/mykqolzj" method="POST" className="space-y-2.5">
@@ -222,21 +222,21 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
             <input
               name="name" required type="text" placeholder="Full Name"
-              className="w-full bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+              className="w-full bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
             />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <input
                 name="phone" required type="tel" placeholder="Phone"
-                className="bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+                className="bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
               />
               <input
                 name="email" required type="email" placeholder="Email"
-                className="bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors"
+                className="bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
               />
             </div>
             <textarea
               name="notes" required rows="3" placeholder="Notes - briefly describe your property and requirements"
-              className="w-full bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#0d1b3e] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#0057FF] focus:ring-2 focus:ring-[#0057FF]/20 transition-colors resize-none"
+              className="w-full bg-white border border-[#e2e8f0] rounded-lg px-3.5 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors resize-none"
             />
 
             <button type="submit" className="btn-shine w-full justify-center !py-3 !text-sm !mt-4">
