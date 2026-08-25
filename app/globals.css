@@ -941,3 +941,12 @@ a.link-amber:hover {
     font-size: 16px !important;
   }
 }
+
+/* ── Slow icon shine (guide trust band) ── */
+@keyframes icon-shine-pulse {
+  0%, 100% { box-shadow: 0 6px 18px rgba(0,87,255,0.3); filter: brightness(1); }
+  50%      { box-shadow: 0 6px 26px rgba(0,87,255,0.65), 0 0 20px rgba(0,87,255,0.35); filter: brightness(1.15); }
+}
+.icon-shine {
+  animation: icon-shine-pulse 3.4s ease-in-out infinite;
+}

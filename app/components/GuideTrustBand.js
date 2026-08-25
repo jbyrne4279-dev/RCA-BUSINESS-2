@@ -32,15 +32,15 @@ export default function GuideTrustBand() {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {POINTS.map(({ icon, title, desc }) => (
+          {POINTS.map(({ icon, title, desc }, i) => (
             <div
               key={title}
               className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
               style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
             >
               <span
-                className="w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
-                style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+                className="icon-shine w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
+                style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', animationDelay: `${i * 0.6}s` }}
               >
                 {icon}
               </span>
