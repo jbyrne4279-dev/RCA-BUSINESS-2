@@ -1,30 +1,51 @@
 const POINTS = [
-  { icon: 'verified_user', color: '#16a34a', bg: 'rgba(22,163,74,0.12)', title: 'RICS Regulated', desc: 'Every assessment is carried out by or under the supervision of a RICS-registered member.' },
-  { icon: 'shield', color: '#0057FF', bg: 'rgba(0,87,255,0.12)', title: 'Fully Insured', desc: 'Every instruction is covered by comprehensive professional indemnity insurance for your protection.' },
-  { icon: 'bolt', color: '#d97706', bg: 'rgba(217,119,6,0.14)', title: '24-Hour Response', desc: 'We respond to every enquiry within 24 hours and deliver on the timescales we agree.' },
-  { icon: 'receipt_long', color: '#7c3aed', bg: 'rgba(124,58,237,0.12)', title: 'Insurer-Ready Report', desc: 'A clear, defensible figure accepted by every UK insurer and broker, without amendment.' },
+  {
+    title: 'RICS Regulated',
+    desc: 'Every assessment is carried out by or under the supervision of a RICS-registered member.',
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>,
+  },
+  {
+    title: 'Fully Insured',
+    desc: 'Every instruction is covered by comprehensive professional indemnity insurance for your protection.',
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>,
+  },
+  {
+    title: '24-Hour Response',
+    desc: 'We respond to every enquiry within 24 hours and deliver on the timescales we agree.',
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>,
+  },
+  {
+    title: 'Insurer-Ready Report',
+    desc: 'A clear, defensible figure accepted by every UK insurer and broker, without amendment.',
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M7 3h7l4 4v14a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 12h6M9 16h6M9 8h2"/></svg>,
+  },
 ]
 
 export default function GuideTrustBand() {
   return (
-    <section className="py-8 px-4 sm:px-8">
-      <div className="max-w-6xl mx-auto bg-[#0d1b3e] rounded-3xl py-16 px-6 sm:px-10">
-        <div className="text-center mb-10">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#5B9BD5] block mb-2">Why Stearling Reinstatement</span>
-          <h2 className="text-3xl font-bold text-white">
-            The <span className="text-[#5B9BD5]">trusted choice</span> for homeowners
+    <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#f0f4ff' }}>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="badge badge-blue mb-4">Why Stearling Reinstatement</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
+            The <span className="blue-keyword">trusted choice</span> for homeowners.
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {POINTS.map(({ icon, color, bg, title, desc }) => (
-            <div key={title} className="rounded-2xl p-6 bg-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.35)] hover:-translate-y-0.5 transition-transform duration-300">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: bg }}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color }}>{icon}</span>
-                </div>
-                <p className="font-bold text-[#0d1b3e] text-sm">{title}</p>
-              </div>
-              <p className="text-[#64748b] text-xs leading-relaxed">{desc}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {POINTS.map(({ icon, title, desc }) => (
+            <div
+              key={title}
+              className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-[#0057FF]/30 transition-all duration-300"
+              style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
+            >
+              <span
+                className="w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
+                style={{ background: 'linear-gradient(135deg,#0057FF,#0040CC)', boxShadow: '0 6px 18px rgba(0,87,255,0.3)' }}
+              >
+                {icon}
+              </span>
+              <h3 className="text-base font-semibold text-[#0d1b3e] mb-2">{title}</h3>
+              <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
