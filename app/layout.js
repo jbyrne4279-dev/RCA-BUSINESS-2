@@ -51,10 +51,10 @@ export const metadata = {
   icons: {
     icon: [
       { url: '/sr-favicon.svg', type: 'image/svg+xml' },
-      { url: '/rca48.png', type: 'image/png' },
+      { url: '/icon.png', type: 'image/png' },
     ],
     shortcut: '/sr-favicon.svg',
-    apple: '/sr-favicon.svg',
+    apple: '/icon.png',
   },
   openGraph: {
     type: 'website',
@@ -102,9 +102,9 @@ const orgSchema = {
       url: 'https://stearlingreinstatement.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://stearlingreinstatement.com/cr-monogram.svg',
-        width: 200,
-        height: 200,
+        url: 'https://stearlingreinstatement.com/sr-logo.png',
+        width: 1254,
+        height: 1254,
       },
       description:
         'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
