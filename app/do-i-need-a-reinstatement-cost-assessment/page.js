@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedGuides from '../components/RelatedGuides'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -15,38 +17,44 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Do I Need a Reinstatement Cost Assessment?',
     description: 'The specific situations that mean you should get a Reinstatement Cost Assessment.',
-    images: [{ url: '/rca-for-landlords-property-owners.png', width: 1200, height: 630, alt: 'Do I need a Reinstatement Cost Assessment' }],
+    images: [{ url: '/rca-flats-building.webp', width: 1200, height: 630, alt: 'Do I need a Reinstatement Cost Assessment' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Do I Need a Reinstatement Cost Assessment?',
     description: 'The specific situations that mean you should get a Reinstatement Cost Assessment.',
-    images: ['/rca-for-landlords-property-owners.png'],
+    images: ['/rca-flats-building.webp'],
   },
 }
 
 const triggers = [
   {
+    icon: 'apartment',
     title: "You're buying a leasehold flat",
     body: "Before you exchange, check when the block's Reinstatement Cost Assessment was last updated. An outdated or missing assessment is a red flag for future service charge disputes and a sign the building may already be underinsured.",
   },
   {
+    icon: 'policy',
     title: 'Your insurer has requested one',
     body: "Some insurers ask for an independent Reinstatement Cost Assessment directly - usually for older, listed, non-standard construction, or higher-value properties where they want more certainty than a self-declared figure gives them.",
   },
   {
+    icon: 'event_repeat',
     title: "It's coming up to renewal",
     body: 'If your sum insured hasn\'t been reassessed in three years or more, renewal is the natural point to update it. Construction costs move - a figure that was accurate in 2021 is very likely wrong today.',
   },
   {
+    icon: 'gavel',
     title: 'RICS guidance recommends a reassessment (every 3 years)',
     body: 'RICS professional guidance recommends a full Reinstatement Cost Assessment at least every three years, with annual index-linked adjustments in between. If you can\'t remember your last one, it\'s overdue.',
   },
   {
+    icon: 'receipt_long',
     title: 'A previous claim was underpaid',
     body: "If you've made a claim and the payout was reduced because of the insurer's average clause, that's a direct sign your sum insured was too low. Getting a current assessment now prevents it happening again.",
   },
   {
+    icon: 'construction',
     title: "You've extended, converted or altered the property",
     body: "An extension, loft conversion or significant renovation changes the true rebuild cost. The sum insured set when you bought the property no longer reflects what's actually there.",
   },
@@ -77,47 +85,30 @@ export default function DoINeedRCAPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <span className="badge badge-blue mb-4">Homeowner Guide</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Do I need a <span className="blue-keyword">Reinstatement Cost Assessment</span>?
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              If any of the situations below apply to you, the honest answer is almost certainly yes. Here's how to tell.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
-              <Link href="/reinstatement-cost-assessment-cost" className="btn-ghost">See Pricing</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-flats-building.webp"
+        imageAlt="Block of flats - do I need a Reinstatement Cost Assessment"
+        headlineMain="Do I need a"
+        headlineAccent="Reinstatement Cost Assessment?"
+        subtitle="If any of the situations below apply to you, the honest answer is almost certainly yes."
+        secondaryHref="/reinstatement-cost-assessment-cost"
+        secondaryLabel="See Pricing"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/rca-for-landlords-property-owners.png" alt="Do I need a Reinstatement Cost Assessment" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-          </div>
-        </div>
-      </section>
-
-      <TrustStrip />
+      <GuideOverview
+        kicker="Six Common Triggers"
+        heading="Situations that mean it's"
+        headingAccent="time to get one."
+      />
 
       {/* TRIGGERS GRID */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-[#f0f4ff] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 text-center">
-            <span className="badge badge-blue mb-4">Six Common Triggers</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              Situations that mean it's <span className="blue-keyword">time to get one</span>.
-            </h2>
-          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {triggers.map(({ title, body }) => (
+            {triggers.map(({ icon, title, body }) => (
               <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(0,87,255,0.10)'}}>
-                  <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="#0057FF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#0057FF' }}>{icon}</span>
                 </div>
                 <h3 className="text-base font-bold text-[#0d1b3e]">{title}</h3>
                 <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
@@ -128,11 +119,11 @@ export default function DoINeedRCAPage() {
       </section>
 
       {/* NONE APPLY */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">None Of These Apply?</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">None Of These Apply?</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            Still worth a <span className="blue-keyword">quick sense-check</span>.
+            Still worth a <span className="text-shine">quick sense-check</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             If you're not sure whether your current sum insured is right, start with <Link href="/what-is-a-reinstatement-cost-assessment" className="text-[#0057FF] font-medium hover:underline">What Is a Reinstatement Cost Assessment?</Link> and <Link href="/reinstatement-cost-vs-market-value" className="text-[#0057FF] font-medium hover:underline">Reinstatement Cost vs Market Value</Link> to understand what the figure should actually reflect.
@@ -142,6 +133,10 @@ export default function DoINeedRCAPage() {
           </p>
         </div>
       </section>
+
+      <GuideTrustBand />
+
+      <RelatedGuides currentSlug="/do-i-need-a-reinstatement-cost-assessment" />
 
       <ContactSection heading="Not sure? Ask us — it costs nothing to check." />
       <FaqSection description="Questions homeowners ask when deciding whether they need a Reinstatement Cost Assessment." items={faqItems} />

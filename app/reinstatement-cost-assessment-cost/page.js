@@ -1,6 +1,9 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideProcess from '../components/GuideProcess'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedGuides from '../components/RelatedGuides'
 import ServiceCardsSection from '../components/ServiceCardsSection'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
@@ -16,21 +19,21 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'How Much Does a Reinstatement Cost Assessment Cost?',
     description: 'What determines the price of a Reinstatement Cost Assessment, and how to get an accurate quote.',
-    images: [{ url: '/rcs-desktop-reinstatemenet-cost-assessment.png', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment pricing' }],
+    images: [{ url: '/rca-heritage-building.webp', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment pricing' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Much Does a Reinstatement Cost Assessment Cost?',
     description: 'What determines the price of a Reinstatement Cost Assessment.',
-    images: ['/rcs-desktop-reinstatemenet-cost-assessment.png'],
+    images: ['/rca-heritage-building.webp'],
   },
 }
 
-const factors = [
-  { title: 'Desktop or on-site', body: 'A desktop assessment (no site visit, using floor area and property data) is the lower-cost option. An on-site survey - with a surveyor physically attending - costs more but is required for listed, heritage or structurally complex properties.' },
-  { title: 'Property size', body: 'Price scales with gross internal floor area. A one-bedroom flat costs less to assess than a five-bedroom detached house, simply because there is more building to measure and cost.' },
-  { title: 'Property type & construction', body: 'Standard modern brick-and-block construction is the most straightforward to assess. Listed buildings, timber-frame, thatch, non-standard or heritage construction take more surveyor time and specialist knowledge.' },
-  { title: 'Number of properties', body: "If you're assessing more than one property (a portfolio, or multiple units in a block), per-property cost typically comes down - ask about our 3-Year Protection Plan for ongoing multi-property cover." },
+const process = [
+  { step: '01', title: 'Tell us about your home', desc: 'Address, property type, approximate size and any previous valuation.' },
+  { step: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - a fixed price, agreed upfront, before you commit to anything.' },
+  { step: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services and fees - all captured to RICS methodology.' },
+  { step: '04', title: 'You receive your report', desc: 'A clear, broker-ready figure, ready for your insurer.' },
 ]
 
 const faqItems = [
@@ -58,59 +61,46 @@ export default function RCACostPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <span className="badge badge-blue mb-4">Homeowner Guide</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              How much does it <span className="blue-keyword">cost</span>?
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              We're upfront about pricing before you enquire. The exact figure depends on your property, but here's what actually drives the cost.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get a Fixed Quote</Link>
-              <Link href="#service-cards" className="btn-ghost">Compare Options</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-heritage-building.webp"
+        imageAlt="Reinstatement Cost Assessment pricing for homeowners"
+        headlineMain="How much does it"
+        headlineAccent="cost?"
+        subtitle="We're upfront about pricing before you enquire. The exact figure depends on your property, but here's what actually drives the cost."
+        secondaryHref="#service-cards"
+        secondaryLabel="Compare Options"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Reinstatement Cost Assessment pricing" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-          </div>
-        </div>
-      </section>
+      <GuideOverview
+        kicker="What Affects Price"
+        heading="Four things that"
+        headingAccent="set the price."
+        highlights={[
+          { icon: 'home_work', title: 'Desktop or On-Site', desc: 'A desktop assessment is the lower-cost option. Listed, heritage or structurally complex properties need an on-site survey.' },
+          { icon: 'straighten', title: 'Property Size', desc: 'Price scales with gross internal floor area - more building to measure and cost means a higher price.' },
+          { icon: 'foundation', title: 'Construction Type', desc: 'Standard modern construction is the most straightforward. Listed, timber-frame or heritage construction takes more surveyor time.' },
+        ]}
+      />
 
-      <TrustStrip />
-
-      {/* FACTORS */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12 text-center">
-            <span className="badge badge-blue mb-4">What Affects Price</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight">
-              Four things that <span className="blue-keyword">set the price</span>.
+      {/* PROCESS */}
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">How It Works</span>
+            <h2 className="text-[2rem] sm:text-5xl font-semibold tracking-tight text-[#0d1b3e] leading-[1.08]">
+              A clear price, agreed upfront.
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {factors.map(({ title, body }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
-                <h3 className="text-base font-bold text-[#0d1b3e]">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
-              </div>
-            ))}
-          </div>
+          <GuideProcess steps={process} />
         </div>
       </section>
 
       {/* WORTH IT */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">Cost vs Risk</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Cost vs Risk</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            A small cost against a <span className="blue-keyword">much larger risk</span>.
+            A small cost against a <span className="text-shine">much larger risk</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed">
             An assessment is a modest, one-off (or periodic) cost. Being underinsured when a genuine claim happens can cost tens of thousands of pounds, because insurers reduce every payout proportionally under the average clause — not just on a total loss. See exactly how that plays out in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#0057FF] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
@@ -119,6 +109,10 @@ export default function RCACostPage() {
       </section>
 
       <ServiceCardsSection />
+
+      <GuideTrustBand />
+
+      <RelatedGuides currentSlug="/reinstatement-cost-assessment-cost" />
 
       <ContactSection heading="Tell us about your property for a fixed price." />
       <FaqSection description="What homeowners ask about the cost of a Reinstatement Cost Assessment." items={faqItems} />

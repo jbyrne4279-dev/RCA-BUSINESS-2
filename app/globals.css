@@ -797,6 +797,7 @@ a.link-amber:hover {
 .text-shine       { color: #0057FF; }
 .text-shine-slow  { color: #0057FF; }
 .liquid-glass     { background: rgba(255,255,255,0.92); backdrop-filter: blur(20px); }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
 .animate-scroll-reviews { display: flex; }
 [class^="lifecycle-ring-"]   {}
 [class^="lifecycle-border-"] {}

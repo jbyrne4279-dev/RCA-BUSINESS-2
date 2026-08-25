@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedGuides from '../components/RelatedGuides'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -15,13 +17,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'What Happens If My Property Is Underinsured?',
     description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example.',
-    images: [{ url: '/rca-rics-surveyor.png', width: 1200, height: 630, alt: 'What happens if my property is underinsured' }],
+    images: [{ url: '/rca-surveyor-site-visit.webp', width: 1200, height: 630, alt: 'What happens if my property is underinsured' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'What Happens If My Property Is Underinsured?',
     description: 'A plain-English explanation of underinsurance and the average clause, with a worked example.',
-    images: ['/rca-rics-surveyor.png'],
+    images: ['/rca-surveyor-site-visit.webp'],
   },
 }
 
@@ -50,47 +52,29 @@ export default function UnderinsuredPage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <span className="badge badge-blue mb-4">Homeowner Guide</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              What happens if my property is <span className="blue-keyword">underinsured</span>?
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              Most homeowners have never heard of the "average clause" until they make a claim and find out their payout has been cut. Here's exactly how it works.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Check My Cover</Link>
-              <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-surveyor-site-visit.webp"
+        imageAlt="What happens if my property is underinsured"
+        headlineMain="What happens if my property is"
+        headlineAccent="underinsured?"
+        subtitle={`Most homeowners have never heard of the "average clause" until they make a claim and find out their payout has been cut. Here's exactly how it works.`}
+        primaryLabel="Check My Cover"
+        secondaryHref="/what-is-a-reinstatement-cost-assessment"
+        secondaryLabel="What Is an RCA?"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/rca-rics-surveyor.png" alt="What happens if my property is underinsured" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-          </div>
-        </div>
-      </section>
+      <GuideOverview
+        kicker="The Average Clause"
+        heading="Insurers don't just refuse to pay —"
+        headingAccent="they pay less on everything."
+        description="If your sum insured is lower than the true reinstatement cost of your property, most UK policies reduce every claim payout by the same proportion — not just on total losses, but on every claim, however small."
+      />
 
-      <TrustStrip />
-
-      {/* THE AVERAGE CLAUSE */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">The Average Clause</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            Insurers don't just <span className="blue-keyword">refuse to pay</span> — they pay less on everything.
-          </h2>
-          <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            Most UK buildings insurance policies include a condition called the "average clause" (or "condition of average"). If your sum insured is lower than the true reinstatement cost of your property, the insurer reduces every claim payout by the same proportion — not just on total losses, but on every claim, however small.
-          </p>
-          <p className="text-[#64748b] text-base leading-relaxed">
-            The formula insurers use is straightforward:
-          </p>
-          <div className="my-6 rounded-2xl border border-[#e2e8f0] p-6 text-center" style={{background:'#f0f4ff'}}>
+      {/* THE FORMULA */}
+      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-[#64748b] text-base leading-relaxed mb-6">The formula insurers use is straightforward:</p>
+          <div className="rounded-2xl border border-[#e2e8f0] bg-[#f0f4ff] p-6">
             <p className="text-[#0d1b3e] font-semibold text-base md:text-lg">
               Payout = Claim Amount &times; (Sum Insured &divide; True Reinstatement Cost)
             </p>
@@ -99,11 +83,11 @@ export default function UnderinsuredPage() {
       </section>
 
       {/* WORKED EXAMPLE */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">Worked Example</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Worked Example</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-8">
-            A <span className="blue-keyword">real-world example</span>.
+            A <span className="text-shine">real-world example</span>.
           </h2>
 
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 sm:p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
@@ -126,11 +110,11 @@ export default function UnderinsuredPage() {
       </section>
 
       {/* PROTECT YOURSELF */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">Protecting Yourself</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Protecting Yourself</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            The fix is <span className="blue-keyword">straightforward</span>.
+            The fix is <span className="text-shine">straightforward</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             A RICS-regulated Reinstatement Cost Assessment gives you the true, current rebuild cost of your property, so you can set your sum insured correctly — protecting you from the average clause on every future claim.
@@ -140,6 +124,10 @@ export default function UnderinsuredPage() {
           </p>
         </div>
       </section>
+
+      <GuideTrustBand />
+
+      <RelatedGuides currentSlug="/what-happens-if-my-property-is-underinsured" />
 
       <ContactSection heading="Get an accurate figure before you need to claim." />
       <FaqSection description="Questions homeowners ask about underinsurance and the average clause." items={faqItems} />

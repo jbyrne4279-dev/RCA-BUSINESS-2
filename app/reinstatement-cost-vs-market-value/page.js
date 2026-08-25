@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import TrustStrip from '../components/TrustStrip'
+import GuideHero from '../components/GuideHero'
+import GuideOverview from '../components/GuideOverview'
+import GuideTrustBand from '../components/GuideTrustBand'
+import RelatedGuides from '../components/RelatedGuides'
 import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
@@ -15,13 +17,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: "Reinstatement Cost vs Market Value: What's the Difference?",
     description: 'A clear, visual comparison of reinstatement cost and market value, and why confusing them leads to over- or under-insuring your home.',
-    images: [{ url: '/rca-for-my-property-london-rebuild.png', width: 1200, height: 630, alt: 'Reinstatement cost vs market value comparison' }],
+    images: [{ url: '/rca-high-rise-residential.webp', width: 1200, height: 630, alt: 'Reinstatement cost vs market value comparison' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: "Reinstatement Cost vs Market Value: What's the Difference?",
     description: 'A clear comparison of reinstatement cost and market value for homeowners.',
-    images: ['/rca-for-my-property-london-rebuild.png'],
+    images: ['/rca-high-rise-residential.webp'],
   },
 }
 
@@ -50,45 +52,39 @@ export default function ReinstatementVsMarketValuePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* HERO */}
-      <section className="hero-bg py-10 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]/60">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-14 items-center">
-          <div>
-            <span className="badge badge-blue mb-4">Homeowner Guide</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0d1b3e] leading-[1.1] mb-5">
-              Reinstatement cost vs <span className="blue-keyword">market value</span>.
-            </h1>
-            <p className="text-[#64748b] text-lg leading-relaxed mb-8 max-w-lg">
-              These two figures are often assumed to be the same. They rarely are — and mixing them up is the single most common reason UK homes are wrongly insured.
-            </p>
-            <div className="flex flex-wrap items-center gap-3">
-              <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
-              <Link href="/what-happens-if-my-property-is-underinsured" className="btn-ghost">What If I'm Underinsured?</Link>
-            </div>
-          </div>
+      <GuideHero
+        image="/rca-high-rise-residential.webp"
+        imageAlt="Residential building - reinstatement cost vs market value"
+        headlineMain="Reinstatement cost vs"
+        headlineAccent="market value."
+        subtitle="These two figures are often assumed to be the same. They rarely are — and mixing them up is the single most common reason UK homes are wrongly insured."
+        secondaryHref="/what-happens-if-my-property-is-underinsured"
+        secondaryLabel="What If I'm Underinsured?"
+      />
 
-          <div className="hero-img-pulse relative rounded-3xl overflow-hidden h-52 sm:h-64 md:h-96 lg:h-[500px]">
-            <Image src="/rca-for-my-property-london-rebuild.png" alt="Reinstatement cost vs market value" fill className="object-cover" priority />
-            <div className="hero-electric-overlay" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-[#0d1b3e]/10 to-transparent" />
-          </div>
-        </div>
-      </section>
-
-      <TrustStrip />
+      <GuideOverview
+        kicker="Side By Side"
+        heading="Two questions,"
+        headingAccent="two different answers."
+        highlights={[
+          { icon: 'sell', title: 'Market Value', desc: 'Answers "what could I sell it for?" - driven by land, location and demand.' },
+          { icon: 'foundation', title: 'Reinstatement Cost', desc: 'Answers "what would it cost to rebuild?" - driven by construction cost per m² and materials.' },
+          { icon: 'balance', title: 'No Reliable Shortcut', desc: 'The two can diverge in either direction depending on the property - only a proper assessment tells you which.' },
+        ]}
+      />
 
       {/* COMPARISON TABLE */}
-      <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="bg-[#f0f4ff] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">Side by Side</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Comparison</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-8">
-            Two questions, <span className="blue-keyword">two different answers</span>.
+            Set side by side, the <span className="text-shine">difference is clear</span>.
           </h2>
 
-          <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0]" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
+          <div className="overflow-x-auto rounded-2xl border border-[#e2e8f0] bg-white" style={{boxShadow:'0 4px 16px rgba(0,87,255,0.08)'}}>
             <table className="w-full text-sm border-collapse min-w-[560px]">
               <thead>
-                <tr style={{background:'#f0f4ff'}}>
+                <tr className="bg-[#f0f4ff]">
                   <th className="text-left p-4 font-semibold text-[#0d1b3e]">&nbsp;</th>
                   <th className="text-left p-4 font-semibold text-[#0057FF]">Market Value</th>
                   <th className="text-left p-4 font-semibold text-[#0057FF]">Reinstatement Cost</th>
@@ -136,11 +132,11 @@ export default function ReinstatementVsMarketValuePage() {
       </section>
 
       {/* WHY IT MATTERS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#f0f4ff'}}>
+      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
-          <span className="badge badge-blue mb-4">Why It Matters</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#0057FF] block mb-4">Why It Matters</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0d1b3e] leading-tight mb-5">
-            Getting this wrong costs you <span className="blue-keyword">either way</span>.
+            Getting this wrong costs you <span className="text-shine">either way</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             Insure at market value when it's higher than reinstatement cost, and you're paying premium on cover you can never actually claim — insurers only ever pay out the cost to rebuild, never the market price of the land.
@@ -150,6 +146,10 @@ export default function ReinstatementVsMarketValuePage() {
           </p>
         </div>
       </section>
+
+      <GuideTrustBand />
+
+      <RelatedGuides currentSlug="/reinstatement-cost-vs-market-value" />
 
       <ContactSection heading="Get an accurate reinstatement figure for your home." />
       <FaqSection description="Common questions homeowners ask when comparing reinstatement cost and market value." items={faqItems} />
