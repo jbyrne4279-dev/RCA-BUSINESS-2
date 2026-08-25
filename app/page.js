@@ -59,11 +59,12 @@ export default function HomePage() {
         headlineAccent="for the right amount."
         subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
         primaryLabel="Get My Assessment"
-        secondaryHref="/what-is-a-reinstatement-cost-assessment"
-        secondaryLabel="What Is an RCA?"
       >
         <div className="bg-white rounded-2xl border border-[#e2e8f0] max-w-md mx-auto" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
           <QuizCard source="Hero Inline Quiz" embedded />
+        </div>
+        <div className="flex justify-center mt-6">
+          <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
         </div>
       </GuideHero>
 
