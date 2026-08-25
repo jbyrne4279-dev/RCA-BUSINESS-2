@@ -28,17 +28,17 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex flex-1 items-center justify-center gap-0.5">
+        <div className="hidden md:flex flex-1 items-center justify-center divide-x divide-[#7A1F3D]/30">
           {links.map(({ href, label }) => {
             const active = pathname === href || pathname.startsWith(href + '/')
             return (
               <Link
                 key={href}
                 href={href}
-                className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-all duration-150 ${
+                className={`px-4 py-2 text-sm font-medium transition-all duration-150 ${
                   active
-                    ? 'text-[#7A1F3D]'
-                    : 'text-[#64748b] hover:text-[#2b0b14]'
+                    ? 'text-white bg-[#7A1F3D]'
+                    : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
                 }`}
               >
                 {label}
