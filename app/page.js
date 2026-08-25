@@ -66,7 +66,7 @@ export default function HomePage() {
 
             {/* Inline quiz - quick underinsurance check */}
             <div className="mt-6 bg-white rounded-2xl border border-[#e2e8f0] max-w-md" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
-              <QuizCard source="Hero Inline Quiz" />
+              <QuizCard source="Hero Inline Quiz" embedded />
             </div>
 
             <div className="flex items-center gap-2 mt-6">

@@ -109,7 +109,7 @@ function computeResult(answers) {
   return { riskLevel, riskColor, riskScore, service }
 }
 
-export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = true }) {
+export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = true, embedded = false }) {
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState({})
 
@@ -126,7 +126,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
 
   return (
     <div className="relative">
-      <div className="p-6 md:p-7 max-h-[80vh] overflow-y-auto">
+      <div className={`p-6 md:p-7 ${embedded ? '' : 'max-h-[80vh] overflow-y-auto'}`}>
       {(showBack || onClose) && (
         <div className="flex items-center justify-between gap-2 mb-2">
           {showBack ? (
