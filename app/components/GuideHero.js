@@ -23,7 +23,6 @@ export default function GuideHero({
         priority
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#2b0b14]/55 via-[#2b0b14]/35 to-[#2b0b14]/65" aria-hidden="true" />
 
       <div className="relative z-10 w-full flex items-center justify-center px-5 py-16 md:py-24">
         <div className="w-full max-w-lg md:max-w-2xl bg-white/90 backdrop-blur-xl rounded-3xl px-7 py-9 md:px-14 md:py-14 border border-white/40 shadow-[0_12px_60px_rgba(0,0,0,0.25)] text-center">

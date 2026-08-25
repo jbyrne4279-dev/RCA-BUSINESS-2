@@ -45,7 +45,6 @@ export default function TiltCard() {
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2b0b14]/60 to-transparent" />
       </div>
       <div className="p-6">
         <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-3">Basis for your sum insured</p>
