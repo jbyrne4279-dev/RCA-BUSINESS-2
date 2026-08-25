@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu - left-anchored slide-out drawer */}
+      {/* Mobile menu - right-anchored slide-out drawer */}
       {open && (
         <>
           <div
@@ -83,8 +83,8 @@ export default function Navbar() {
             aria-hidden="true"
           />
           <div
-            className="md:hidden fixed top-16 left-0 bottom-0 w-[78vw] max-w-xs bg-white border-r border-[#e2e8f0] z-40 overflow-y-auto"
-            style={{ boxShadow: '2px 0 16px rgba(0,0,0,0.12)' }}
+            className="md:hidden fixed top-16 right-0 bottom-0 w-[78vw] max-w-xs bg-white border-l border-[#e2e8f0] z-40 overflow-y-auto"
+            style={{ boxShadow: '-2px 0 16px rgba(0,0,0,0.12)' }}
           >
             <div className="flex flex-col divide-y divide-[#7A1F3D]/20">
               <Link href="/" onClick={() => setOpen(false)}
