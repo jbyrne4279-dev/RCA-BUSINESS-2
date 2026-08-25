@@ -74,29 +74,39 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - left-anchored slide-out drawer */}
       {open && (
-        <div className="md:hidden bg-white border-t border-[#e2e8f0]">
-          <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col divide-y divide-[#7A1F3D]/20">
-            <Link href="/" onClick={() => setOpen(false)}
-              className={`px-3 py-3 text-sm font-medium transition-colors ${
-                pathname === '/' ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
-              }`}>
-              Home
-            </Link>
-            {links.map(({ href, label }) => {
-              const active = pathname === href || pathname.startsWith(href + '/')
-              return (
-                <Link key={href} href={href} onClick={() => setOpen(false)}
-                  className={`px-3 py-3 text-sm font-medium transition-colors ${
-                    active ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
-                  }`}>
-                  {label}
-                </Link>
-              )
-            })}
+        <>
+          <div
+            className="md:hidden fixed inset-0 top-16 bg-black/30 z-40"
+            onClick={() => setOpen(false)}
+            aria-hidden="true"
+          />
+          <div
+            className="md:hidden fixed top-16 left-0 bottom-0 w-[78vw] max-w-xs bg-white border-r border-[#e2e8f0] z-40 overflow-y-auto"
+            style={{ boxShadow: '2px 0 16px rgba(0,0,0,0.12)' }}
+          >
+            <div className="flex flex-col divide-y divide-[#7A1F3D]/20">
+              <Link href="/" onClick={() => setOpen(false)}
+                className={`px-4 py-3 text-sm font-medium transition-colors ${
+                  pathname === '/' ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
+                }`}>
+                Home
+              </Link>
+              {links.map(({ href, label }) => {
+                const active = pathname === href || pathname.startsWith(href + '/')
+                return (
+                  <Link key={href} href={href} onClick={() => setOpen(false)}
+                    className={`px-4 py-3 text-sm font-medium transition-colors ${
+                      active ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
+                    }`}>
+                    {label}
+                  </Link>
+                )
+              })}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   )
