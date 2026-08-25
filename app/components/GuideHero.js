@@ -35,11 +35,11 @@ export default function GuideHero({
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href={primaryHref} className="btn-shine px-8 py-4 rounded-full font-bold active:scale-[0.97] transition-transform text-center text-sm">
+            <Link href={primaryHref} className="btn-shine px-8 py-4 font-bold active:scale-[0.97] transition-transform text-center text-sm">
               {primaryLabel}
             </Link>
             {secondaryHref && (
-              <Link href={secondaryHref} className="bg-[#2b0b14]/8 border border-[#2b0b14]/15 text-[#2b0b14] px-6 py-4 rounded-full font-semibold text-sm hover:bg-[#2b0b14]/12 active:scale-[0.97] transition-all text-center">
+              <Link href={secondaryHref} className="bg-[#2b0b14]/8 border border-[#2b0b14]/15 text-[#2b0b14] px-6 py-4 rounded-md font-semibold text-sm hover:bg-[#2b0b14]/12 active:scale-[0.97] transition-all text-center">
                 {secondaryLabel}
               </Link>
             )}

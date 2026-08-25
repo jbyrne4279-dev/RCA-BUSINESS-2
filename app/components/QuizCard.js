@@ -134,7 +134,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
               type="button"
               aria-label="Back"
               onClick={() => setStep((s) => s - 1)}
-              className="-ml-2 shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-[#94a3b8] hover:text-[#7A1F3D] hover:bg-[#fbf0f2] transition-colors"
+              className="-ml-2 shrink-0 w-8 h-8 rounded-md flex items-center justify-center text-[#94a3b8] hover:text-[#7A1F3D] hover:bg-[#fbf0f2] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
             </button>
@@ -144,7 +144,7 @@ export default function QuizCard({ onClose, source = 'Risk Quiz', showIntro = tr
               type="button"
               aria-label="Close"
               onClick={onClose}
-              className="-mr-2 shrink-0 w-8 h-8 flex items-center justify-center rounded-full text-[#94a3b8] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors"
+              className="-mr-2 shrink-0 w-8 h-8 flex items-center justify-center rounded-md text-[#94a3b8] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
             </button>
