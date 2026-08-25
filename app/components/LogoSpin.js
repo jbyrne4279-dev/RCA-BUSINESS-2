@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useRef } from 'react'
 
-export default function LogoSpin({ width = 52, height = 52, className = '', priority = false }) {
+export default function LogoSpin({ width = 52, height = 52, className = '', priority = false, src = '/stearling-reinstatement-cost-assessmnet.png', alt = 'Stearling Reinstatement' }) {
   const wrapRef = useRef(null)
   const lastX = useRef(null)
   const rot = useRef(0)
@@ -61,8 +61,8 @@ export default function LogoSpin({ width = 52, height = 52, className = '', prio
         }}
       >
         <Image
-          src="/stearling-reinstatement-cost-assessmnet.png"
-          alt="Stearling Reinstatement"
+          src={src}
+          alt={alt}
           width={width}
           height={height}
           className={`object-contain ${className}`}
