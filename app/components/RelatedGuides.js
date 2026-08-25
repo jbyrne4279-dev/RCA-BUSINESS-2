@@ -2,11 +2,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const ALL_GUIDES = [
-  { slug: '/what-is-a-reinstatement-cost-assessment', title: 'What Is an RCA?', summary: "A plain-English explainer - what it is, and why it's not the same as market value.", img: '/rca-surveyor-site-visit.webp' },
-  { slug: '/reinstatement-cost-vs-market-value', title: 'RCA vs Market Value', summary: 'A clear, visual comparison of the two figures - and why they diverge.', img: '/rca-onsite-inspection-surveyor.png' },
-  { slug: '/do-i-need-a-reinstatement-cost-assessment', title: 'Do I Need One?', summary: "The specific situations that mean it's time to get an assessment.", img: '/continual-reinstatement-cost-assessment-plan.png' },
-  { slug: '/reinstatement-cost-assessment-cost', title: 'How Much Does It Cost?', summary: 'What determines price, and how to get a fixed quote.', img: '/rcs-desktop-reinstatemenet-cost-assessment.png' },
-  { slug: '/what-happens-if-my-property-is-underinsured', title: "What If I'm Underinsured?", summary: 'The average clause explained, with a worked example.', img: '/rca-onsite-inspection-surveyor.png' },
+  { slug: '/what-is-a-reinstatement-cost-assessment', title: 'What Is an RCA?', summary: "A plain-English explainer - what it is, and why it's not the same as market value.", img: '/rca-floor-plan-review.webp' },
+  { slug: '/reinstatement-cost-vs-market-value', title: 'RCA vs Market Value', summary: 'A clear, visual comparison of the two figures - and why they diverge.', img: '/rca-floor-plan-closeup.webp' },
+  { slug: '/do-i-need-a-reinstatement-cost-assessment', title: 'Do I Need One?', summary: "The specific situations that mean it's time to get an assessment.", img: '/rcs-desktop-reinstatemenet-cost-assessment.png' },
+  { slug: '/reinstatement-cost-assessment-cost', title: 'How Much Does It Cost?', summary: 'What determines price, and how to get a fixed quote.', img: '/rca-floor-plan-review.webp' },
+  { slug: '/what-happens-if-my-property-is-underinsured', title: "What If I'm Underinsured?", summary: 'The average clause explained, with a worked example.', img: '/rca-floor-plan-closeup.webp' },
 ]
 
 export default function RelatedGuides({ currentSlug }) {
