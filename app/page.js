@@ -61,12 +61,15 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
-              <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
             </div>
 
             {/* Inline quiz - quick underinsurance check */}
             <div className="mt-6 bg-white rounded-2xl border border-[#e2e8f0] max-w-md" style={{boxShadow:'0 8px 32px rgba(0,87,255,0.10)'}}>
               <QuizCard source="Hero Inline Quiz" embedded />
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 mt-6">
+              <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
             </div>
 
             <div className="flex items-center gap-2 mt-6">
