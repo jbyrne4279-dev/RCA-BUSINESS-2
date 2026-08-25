@@ -77,17 +77,24 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-white border-t border-[#e2e8f0]">
-          <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col gap-0.5">
+          <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col divide-y divide-[#7A1F3D]/20">
             <Link href="/" onClick={() => setOpen(false)}
-              className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors">
+              className={`px-3 py-3 text-sm font-medium transition-colors ${
+                pathname === '/' ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
+              }`}>
               Home
             </Link>
-            {links.map(({ href, label }) => (
-              <Link key={href} href={href} onClick={() => setOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-sm font-medium text-[#64748b] hover:text-[#2b0b14] hover:bg-[#fbf0f2] transition-colors">
-                {label}
-              </Link>
-            ))}
+            {links.map(({ href, label }) => {
+              const active = pathname === href || pathname.startsWith(href + '/')
+              return (
+                <Link key={href} href={href} onClick={() => setOpen(false)}
+                  className={`px-3 py-3 text-sm font-medium transition-colors ${
+                    active ? 'text-white bg-[#7A1F3D]' : 'text-[#64748b] hover:text-[#7A1F3D] hover:bg-[#fbf0f2]'
+                  }`}>
+                  {label}
+                </Link>
+              )
+            })}
           </div>
         </div>
       )}
