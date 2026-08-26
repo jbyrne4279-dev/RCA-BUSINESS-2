@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
-import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
 import HomeHero from './components/HomeHero'
 import GuideOverview from './components/GuideOverview'
@@ -262,37 +261,45 @@ export default function HomePage() {
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-          {/* Left: tilt card */}
-          <TiltCard />
-
-          {/* Right: text */}
+          {/* Left: text */}
           <div>
             <span className="badge badge-blue mb-5">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
               Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
             </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              After a loss, insurers pay out based on rebuild cost - not market value, and not what you paid for the property. Get the sum insured wrong, and the consequences land squarely on you:
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              After a loss, insurers pay out based on rebuild cost, not market value and not what you paid for the property. Get the sum insured wrong, and the insurer applies the average clause, cutting your payout in proportion to the shortfall on every claim, not just a total loss.
             </p>
-            <ul className="space-y-3 mb-8">
-              {[
-                'The insurer applies the average clause and cuts your payout in proportion to the shortfall - on every claim, not just a total loss.',
-                'A previous owner\'s figure, an online calculator or a rough guess offers no protection when the claim comes in.',
-                'You could be paying too much premium if you\'re insured at market value instead of true rebuild cost.',
-              ].map((point) => (
-                <li key={point} className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#7A1F3D'}} />
-                  <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-[#2b0b14] text-base font-semibold leading-relaxed mb-8">
+            <p className="text-[#64748b] text-base leading-relaxed mb-8">
               A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
             </p>
-            <Link href="/what-happens-if-my-property-is-underinsured" className="link-arrow cta-flash">
+            <Link href="/what-happens-if-my-property-is-underinsured" className="btn-shine inline-block">
               See what underinsurance actually costs
             </Link>
           </div>
+
+          {/* Right: comparison card */}
+          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
+            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-1">Basis for your sum insured</p>
+            {[
+              { label: 'Reinstatement Cost Assessment', sub: 'RICS-regulated - the only defensible figure.', ok: true },
+              { label: 'Market Value', sub: 'What it would sell for - irrelevant to insurers.', ok: false },
+              { label: 'Online Calculator', sub: 'Generic estimate - no RICS accountability.', ok: false },
+            ].map(({ label, sub, ok }) => (
+              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#16a34a]' : 'border-[#f87171]'}`} style={ok ? {background:'rgba(22,163,74,0.07)'} : {background:'rgba(239,68,68,0.05)'}}>
+                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
+                  {ok
+                    ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
+                    : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
+                  }
+                </span>
+                <div>
+                  <p className="font-medium text-[#2b0b14] text-sm">{label}</p>
+                  <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
+                </div>
+              </div>
+            ))}
+          </TiltWrapper>
         </div>
       </section>
 
