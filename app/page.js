@@ -4,8 +4,7 @@ import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
 import TiltCard from './components/TiltCard'
 import TiltWrapper from './components/TiltWrapper'
-import QuizCard from './components/QuizCard'
-import GuideHero from './components/GuideHero'
+import HomeHero from './components/HomeHero'
 import GuideOverview from './components/GuideOverview'
 import GuideTrustBand from './components/GuideTrustBand'
 
@@ -51,22 +50,7 @@ export default function HomePage() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      <GuideHero
-        image="/rca-for-my-property-london-rebuild.png"
-        imageAlt="Homeowner's Reinstatement Cost Assessment"
-        badge="Homeowners"
-        headlineMain="Make sure your home is insured"
-        headlineAccent="for the right amount."
-        subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
-        primaryLabel="Get My Assessment"
-      >
-        <div className="bg-white rounded-2xl border border-[#e2e8f0] max-w-md mx-auto" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
-          <QuizCard source="Hero Inline Quiz" embedded />
-        </div>
-        <div className="flex justify-center mt-6">
-          <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
-        </div>
-      </GuideHero>
+      <HomeHero />
 
       <GuideOverview
         kicker="Homeowner Guide"
@@ -78,6 +62,7 @@ export default function HomePage() {
           { icon: 'verified', title: 'RICS-Regulated', desc: 'A figure your insurer will rely on if you ever need to make a claim.' },
           { icon: 'update', title: 'Reviewed Every 3 Years', desc: 'RICS guidance recommends a full reassessment at least every three years.' },
         ]}
+        highlightTheme="burgundy"
       />
 
       <div className="text-center -mt-8 mb-4 md:mb-8">

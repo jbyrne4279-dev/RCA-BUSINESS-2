@@ -129,8 +129,12 @@ main {
 
 /* ── Badge pill ── */
 .badge {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  justify-content: center;
   border-radius: 4px;
   padding: 0.25rem 0.75rem;
   font-size: 0.7rem;
@@ -138,6 +142,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .badge-blue  { background: #ffffff; color: #2b0b14; border: 1px solid rgba(0,0,0,0.15); box-shadow: none; }
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
