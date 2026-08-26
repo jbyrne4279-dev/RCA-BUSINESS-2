@@ -21,7 +21,7 @@ const SERVICE_CARDS = [
     note: 'Listed or non-standard property? An On-Site Survey may be required instead.',
   },
   {
-    img: '/rca-onsite-inspection-surveyor.png',
+    img: '/onsite.jpg',
     imgAlt: 'RICS surveyor conducting an on-site Reinstatement Cost Assessment',
     imgPosition: 'center center',
     id: 'on-site-survey',

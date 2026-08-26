@@ -186,7 +186,7 @@ export default function HomePage() {
                 note: 'Listed or non-standard property? An On-Site Survey may be required instead.',
               },
               {
-                img: '/rca-onsite-inspection-surveyor.png',
+                img: '/onsite.jpg',
                 imgAlt: 'RICS surveyor conducting an on-site Reinstatement Cost Assessment',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
