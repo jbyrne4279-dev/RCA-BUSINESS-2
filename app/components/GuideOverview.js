@@ -11,7 +11,7 @@ export default function GuideOverview({ kicker = 'Overview', heading, headingAcc
     <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">{kicker}</span>
+          <span className="badge badge-blue mb-4">{kicker}</span>
           <h2 className="text-[2rem] sm:text-5xl font-semibold tracking-tight text-[#2b0b14] leading-[1.08]">
             {heading} {headingAccent && <span className="text-shine">{headingAccent}</span>}
           </h2>

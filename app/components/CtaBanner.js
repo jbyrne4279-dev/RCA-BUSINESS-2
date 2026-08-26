@@ -12,11 +12,7 @@ function PulsingPill() {
   return (
     <>
       <style>{`@keyframes rics-fade{0%,100%{opacity:1}50%{opacity:0.25}}`}</style>
-      <span
-        ref={ref}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest"
-        style={{background:'rgba(122,31,61,0.18)',color:'rgba(255,255,255,0.85)',border:'1px solid rgba(122,31,61,0.35)'}}
-      >
+      <span ref={ref} className="badge badge-dark gap-2">
         <span style={{width:6,height:6,borderRadius:'50%',background:'#4d9fff',display:'inline-block',boxShadow:'0 0 8px rgba(77,159,255,0.8)'}} />
         RICS-Regulated Assessments
       </span>

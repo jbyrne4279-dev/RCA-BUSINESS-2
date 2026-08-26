@@ -86,7 +86,7 @@ export default function RCACostPage() {
       <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">How It Works</span>
+            <span className="badge badge-blue mb-4">How It Works</span>
             <h2 className="text-[2rem] sm:text-5xl font-semibold tracking-tight text-[#2b0b14] leading-[1.08]">
               A clear price, agreed upfront.
             </h2>
@@ -98,7 +98,7 @@ export default function RCACostPage() {
       {/* WORTH IT */}
       <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-4xl mx-auto">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-4">Cost vs Risk</span>
+          <span className="badge badge-blue mb-4">Cost vs Risk</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
             A small cost against a <span className="text-shine">much larger risk</span>.
           </h2>

@@ -94,7 +94,7 @@ export default function ThankYouClient() {
               <polyline points="5,16 12,23 27,9"/>
             </svg>
           </div>
-          <span className="inline-flex items-center bg-[#fbf0f2] text-[#7A1F3D] text-xs font-semibold uppercase tracking-[0.08em] px-3 py-1 rounded-full mb-5">
+          <span className="badge badge-blue mb-5">
             Enquiry Received
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-[#202124] leading-tight mb-5">

@@ -119,8 +119,22 @@ export default function HomePage() {
             Free rebuild cost calculators and insurer-supplied estimators use generic per-square-metre averages. They don&apos;t account for your property&apos;s actual construction, specification or location - and they carry no RICS accountability if the figure is ever questioned after a claim.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed mb-6">
-            A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification. If an insurer questions your sum insured after a claim, an online calculator figure offers no defence - a RICS-regulated assessment does.
+            A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification.
           </p>
+          <div
+            className="flex items-start gap-4 rounded-2xl px-6 py-5 mb-6"
+            style={{ background: 'rgba(122,31,61,0.06)', border: '1.5px solid rgba(122,31,61,0.25)' }}
+          >
+            <span
+              className="w-9 h-9 rounded-full flex items-center justify-center shrink-0"
+              style={{ background: 'rgba(122,31,61,0.12)', color: '#7A1F3D' }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+            </span>
+            <p className="text-[#2b0b14] text-lg md:text-xl font-bold leading-snug">
+              An online calculator figure offers no defence. A RICS-regulated assessment does.
+            </p>
+          </div>
           <Link href="/reinstatement-cost-vs-market-value" className="link-arrow cta-flash">
             Reinstatement cost vs market value, explained
           </Link>

@@ -15,7 +15,7 @@ export default function RelatedGuides({ currentSlug }) {
     <section className="py-16 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-12">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7A1F3D] block mb-2">Explore Further</span>
+          <span className="badge badge-blue mb-2">Explore Further</span>
           <h2 className="text-[2rem] sm:text-4xl font-semibold tracking-tight text-[#2b0b14]">Related homeowner guides</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
