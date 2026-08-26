@@ -60,7 +60,8 @@ export default function QuizFunnel() {
         <button
           type="button"
           onClick={openFresh}
-          className="quiz-fab btn-shine !text-xs !py-3 !px-5 flex items-center gap-2"
+          className="quiz-fab !text-xs !py-3 !px-5 flex items-center gap-2 font-bold rounded-md active:scale-[0.97] transition-transform"
+          style={{ background: '#F5B800', color: '#2b0b14' }}
         >
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 2-3 4" /><path d="M12 17h.01" /><circle cx="12" cy="12" r="10" /></svg>
           Check If You&apos;re Underinsured

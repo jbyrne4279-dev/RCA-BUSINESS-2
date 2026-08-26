@@ -22,7 +22,7 @@ export default function ContactFormInner({ heading }) {
   return (
     <div>
       <div id="contact-form" className="mb-10 scroll-mt-20">
-        <span className="badge badge-blue mb-5">Get In Touch</span>
+        <span className="badge mb-5" style={{ background: '#F5B800', color: '#2b0b14', border: 'none' }}>Get In Touch</span>
         <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
           {heading}
         </h2>
@@ -57,7 +57,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-name" name="name" required type="text"
               placeholder="John Smith"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors"
             />
           </div>
           <div className="flex flex-col gap-1.5">
@@ -67,7 +67,7 @@ export default function ContactFormInner({ heading }) {
             <input
               id="contact-email" name="email" required type="email"
               placeholder="john@example.com"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
+              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors"
             />
           </div>
         </div>
@@ -79,7 +79,7 @@ export default function ContactFormInner({ heading }) {
           <input
             id="contact-phone" name="phone" required type="tel"
             placeholder="+44 7700 900000"
-            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors"
           />
         </div>
 
@@ -89,7 +89,7 @@ export default function ContactFormInner({ heading }) {
           </label>
           <select
             id="contact-service" name="service" defaultValue={preselected} required
-            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors appearance-none cursor-pointer"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors appearance-none cursor-pointer"
           >
             <option value="" disabled>Select a service</option>
             <option>Desktop Reinstatement Cost Assessment</option>
@@ -107,7 +107,7 @@ export default function ContactFormInner({ heading }) {
           <textarea
             id="contact-notes" name="notes" required rows="4"
             placeholder="Briefly describe your property and requirements..."
-            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors resize-none"
+            className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors resize-none"
           />
         </div>
 
