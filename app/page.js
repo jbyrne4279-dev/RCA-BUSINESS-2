@@ -176,18 +176,18 @@ export default function HomePage() {
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <span className="badge badge-blue mb-4">Common Reasons</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Not sure if it's <span className="blue-keyword">time to get one?</span></h2>
-            <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">These are the situations that most often mean your current figure needs checking.</p>
+            <span className="badge badge-blue mb-4">Just Bought a Property?</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Here's when new owners <span className="blue-keyword">need to check their figure.</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">The first few months after buying are exactly when your sum insured is most likely to be wrong.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { icon: 'apartment', title: 'Buying into a block', desc: "Ask when the block's assessment was last reviewed before you exchange. A missing or stale figure is often a sign the building is already underinsured." },
-              { icon: 'policy', title: 'Your insurer wants proof', desc: 'Older, listed or higher-value properties are often asked for an independent figure rather than a self-declared estimate.' },
-              { icon: 'event_repeat', title: 'Renewal is coming up', desc: 'Building costs move every year. A figure that was right a couple of years ago is unlikely to still be accurate.' },
-              { icon: 'gavel', title: "It's been three years or more", desc: 'RICS guidance calls for a full reassessment at least every three years, with smaller adjustments in between.' },
-              { icon: 'receipt_long', title: 'A claim paid out less than expected', desc: 'A reduced payout after a claim is usually a sign the sum insured was too low to begin with.' },
-              { icon: 'construction', title: "You've built, converted or renovated", desc: "Loft conversions, extensions and major renovations all change what it would actually cost to rebuild." },
+              { icon: 'home', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
+              { icon: 'account_balance', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
+              { icon: 'apartment', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
+              { icon: 'receipt_long', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
+              { icon: 'event_repeat', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
+              { icon: 'construction', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
             ].map(({ icon, title, desc }) => (
               <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>

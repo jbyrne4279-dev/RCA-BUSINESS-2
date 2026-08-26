@@ -8,7 +8,6 @@ import GuideHero from '../components/GuideHero'
 import GuideOverview from '../components/GuideOverview'
 import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
-import ChecklistGrid from '../components/ChecklistGrid'
 
 export const metadata = {
   title: 'Listed & Heritage Building Assessments',
@@ -128,52 +127,32 @@ export default function ListedBuildingsPage() {
         </div>
       </section>
 
-      {/* 3. SECTION B - On-site survey process (card left, text right) */}
+      {/* 3. SECTION B - On-site survey process (centered) */}
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          {/* Checklist card left */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
-            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What Our On-Site Survey Covers</p>
-            <ChecklistGrid
-              columns={1}
-              items={[
-                'Full physical inspection of structure, fabric and finishes',
-                'Identification of original and heritage materials - lime, stone, handmade brick, timber frame',
-                'Assessment of specialist trades required for authentic reinstatement',
-                'Conservation consent and professional fee allowances',
-                'VAT treatment - zero-rated total loss vs 20% partial damage',
-                'Extended programme costs and temporary accommodation where applicable',
-                'Curtilage structures, outbuildings and boundary features',
-                'BCIS-benchmarked cost build-up with full methodology note',
-              ]}
-            />
-          </TiltWrapper>
-          {/* Text right */}
-          <div>
-            <span className="badge badge-blue mb-4">Our On-Site Survey Process</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              The only <span className="blue-keyword">defensible method</span> for a listed property.
-            </h2>
-            <div className="space-y-5 mb-8">
-              {[
-                { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">01</span> },
-                { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">02</span> },
-                { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">03</span> },
-                { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
-              ].map(({ title, body, icon }) => (
-                <div key={title} className="flex gap-4 items-start step-reveal-item">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#7A1F3D'}}>
-                    {icon}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2b0b14] text-sm mb-1">{title}</p>
-                    <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
-                  </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="badge badge-blue mb-4">Our On-Site Survey Process</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
+            The only <span className="blue-keyword">defensible method</span> for a listed property.
+          </h2>
+          <div className="space-y-5 mb-8 text-left">
+            {[
+              { title: 'Booking and pre-survey research', body: 'We review planning history, listing description and any available drawings before attending. Pre-survey research means inspection time is spent on the building, not administration.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">01</span> },
+              { title: 'Physical site inspection', body: 'A RICS-regulated surveyor attends the property and records construction type, materials, condition and specialist features that inform the cost build-up.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">02</span> },
+              { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">03</span> },
+              { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
+            ].map(({ title, body, icon }) => (
+              <div key={title} className="flex gap-4 items-start step-reveal-item">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#7A1F3D'}}>
+                  {icon}
                 </div>
-              ))}
-            </div>
-            <Link href="/contact#contact-form" className="btn-shine inline-block">Book a Survey</Link>
+                <div>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-1">{title}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{body}</p>
+                </div>
+              </div>
+            ))}
           </div>
+          <Link href="/contact#contact-form" className="btn-shine inline-block">Book a Survey</Link>
         </div>
       </section>
 
