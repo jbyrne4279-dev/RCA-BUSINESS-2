@@ -21,9 +21,9 @@ const POINTS = [
   },
 ]
 
-export default function GuideTrustBand() {
+export default function GuideTrustBand({ background = '#fbf0f2' }) {
   return (
-    <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#fbf0f2' }}>
+    <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background }}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="badge badge-blue mb-4">Why Stearling Reinstatement</span>

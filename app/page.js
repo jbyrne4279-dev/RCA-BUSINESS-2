@@ -70,7 +70,7 @@ export default function HomePage() {
       </div>
 
       {/* 5c. COMMON REASONS - condensed version of the "Do I Need One?" triggers, reworded for the homepage */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.035)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Just Bought a Property?</span>
@@ -104,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. RCA VS CALCULATOR - answers "rics rebuilding cost calculator" searches */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.06)'}}>
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-5">Comparison</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
@@ -137,7 +137,7 @@ export default function HomePage() {
       </section>
 
       {/* 6. SERVICES - the solution, once the problem is established */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.085)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Services</span>
@@ -258,7 +258,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.11)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Left: text */}
@@ -304,7 +304,7 @@ export default function HomePage() {
       </section>
 
       {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.135)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Homeowner Guides</span>
@@ -335,7 +335,7 @@ export default function HomePage() {
       </section>
 
       {/* 7. WHO WE HELP - relevance to the visitor + how the process works */}
-      <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.16)'}}>
         <div className="max-w-6xl mx-auto">
 
           {/* Header */}
@@ -422,7 +422,7 @@ export default function HomePage() {
       </section>
 
       {/* 8. AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.19)'}}>
         <div className="max-w-4xl mx-auto text-center">
           <span className="badge badge-blue mb-5">Coverage</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
@@ -448,7 +448,7 @@ export default function HomePage() {
       </section>
 
       {/* 8b. BUILDINGS WE COVER - answers building-type searches (listed, period, extensions, new-build) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.22)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="badge badge-blue mb-5">Building Types</span>
@@ -492,7 +492,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <GuideTrustBand />
+      <GuideTrustBand background="rgba(122,31,61,0.25)" />
 
       {/* 9. CONTACT FORM - the conversion goal */}
       <ContactSection heading="Get your Reinstatement Cost Assessment." flip />
