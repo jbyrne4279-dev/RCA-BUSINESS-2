@@ -515,12 +515,6 @@ main {
   animation: marquee 40s linear infinite;
 }
 
-/* ── Display typeface (Cormorant Garamond — loaded in layout.js) ── */
-.font-display {
-  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
-  font-style: normal;
-}
-
 /* ── Trust strip items: staggered electric-blue pulse ── */
 @keyframes trust-light {
   0%, 100% { color: #94a3b8; }

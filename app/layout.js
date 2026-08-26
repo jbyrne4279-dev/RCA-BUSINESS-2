@@ -1,4 +1,4 @@
-﻿import { Inter, Cormorant_Garamond } from 'next/font/google'
+﻿import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -9,13 +9,6 @@ const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800'],
   variable: '-font-inter',
-})
-
-const cormorant = Cormorant_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'],
-  variable: '-font-display',
 })
 
 export const metadata = {
@@ -176,7 +169,7 @@ const orgSchema = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en-GB" className={`${inter.variable} ${cormorant.variable} light`}>
+    <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
         <script
           type="application/ld+json"
