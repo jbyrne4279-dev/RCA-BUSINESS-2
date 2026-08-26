@@ -65,6 +65,15 @@ const localBusinessSchema = {
   },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://stearlingreinstatement.com/contact' },
+  ],
+}
+
 const faqItems = [
   { question: 'How quickly will you respond to my enquiry?', answer: 'All enquiries receive a response within 24 hours on business days.' },
   { question: 'Is there any commitment when I make an enquiry?', answer: 'None. We provide a written fee estimate before any work begins - you instruct only when you are ready to proceed.' },
@@ -77,6 +86,7 @@ export default function ContactPage() {
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <GuideHero
         image="/AdobeStock_1956380728.jpeg"
