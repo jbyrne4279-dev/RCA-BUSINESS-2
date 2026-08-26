@@ -8,7 +8,6 @@ import GuideHero from '../components/GuideHero'
 import GuideOverview from '../components/GuideOverview'
 import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
-import ChecklistGrid from '../components/ChecklistGrid'
 
 export const metadata = {
   title: 'Reinstatement Assessments for Managing Agents',
@@ -126,53 +125,32 @@ export default function ManagingAgentsPage() {
         </div>
       </section>
 
-      {/* SECTION B - What We Deliver (visual left, text right) */}
+      {/* SECTION B - What managing agents get from us (centered) */}
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
-          {/* Left: What We Deliver checklist card */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7" style={{boxShadow:'0 2px 16px rgba(0,0,0,0.05)'}}>
-            <p className="text-xs font-semibold uppercase tracking-widest text-[#7A1F3D] mb-5">What We Deliver</p>
-            <ChecklistGrid
-              columns={1}
-              items={[
-                'Documented declared value - defensible at claim stage',
-                'Clear methodology statement for insurers and brokers',
-                'Review date and indexation guidance',
-                'Mixed-use itemisation for residential and commercial blocks',
-                'Professional indemnity backed assessment',
-                'Broker-ready format - forward directly, no rework',
-                'Phased portfolio scheduling to smooth service-charge cost',
-              ]}
-            />
-          </TiltWrapper>
-
-          {/* Right: What managing agents get from us */}
-          <div>
-            <span className="badge badge-blue">Managing Agents</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              A broker-ready report that <span className="blue-keyword">protects you</span>, your PI file, and your clients.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              We handle the technical assessment so you can demonstrate due diligence with confidence - to leaseholders, insurers, and regulators.
-            </p>
-            <div className="space-y-6">
-              {[
-                { title: 'PI protection', desc: 'A RICS-aligned assessment on the recommended three-year cycle is the defensible position that keeps a claim shortfall off your E&O file.' },
-                { title: 'Full lease compliance', desc: 'Discharge the insuring obligation under the lease and demonstrate fair value to leaseholders under FCA Consumer Duty.' },
-                { title: 'Portfolio efficiency', desc: 'Single instruction for multiple blocks; phased scheduling and a consolidated summary schedule included at no extra charge.' },
-              ].map(({ title, desc }, i) => (
-                <div key={title} className="flex gap-4 items-start step-reveal-item">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white text-xs font-bold" style={{background:'#7A1F3D'}}>
-                    {String(i + 1).padStart(2, '0')}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[#2b0b14] text-sm mb-1">{title}</p>
-                    <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-                  </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="badge badge-blue">Managing Agents</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
+            A broker-ready report that <span className="blue-keyword">protects you</span>, your PI file, and your clients.
+          </h2>
+          <p className="text-[#64748b] text-base leading-relaxed mb-8">
+            We handle the technical assessment so you can demonstrate due diligence with confidence - to leaseholders, insurers, and regulators.
+          </p>
+          <div className="space-y-6 text-left">
+            {[
+              { title: 'PI protection', desc: 'A RICS-aligned assessment on the recommended three-year cycle is the defensible position that keeps a claim shortfall off your E&O file.' },
+              { title: 'Full lease compliance', desc: 'Discharge the insuring obligation under the lease and demonstrate fair value to leaseholders under FCA Consumer Duty.' },
+              { title: 'Portfolio efficiency', desc: 'Single instruction for multiple blocks; phased scheduling and a consolidated summary schedule included at no extra charge.' },
+            ].map(({ title, desc }, i) => (
+              <div key={title} className="flex gap-4 items-start step-reveal-item">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5 text-white text-xs font-bold" style={{background:'#7A1F3D'}}>
+                  {String(i + 1).padStart(2, '0')}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <p className="font-semibold text-[#2b0b14] text-sm mb-1">{title}</p>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
