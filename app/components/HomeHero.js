@@ -29,7 +29,7 @@ export default function HomeHero() {
   return (
     <>
       <GuideHero
-        image="/desktop.png"
+        image="/building-plans-good.jpg"
         imageAlt="Homeowner's Reinstatement Cost Assessment"
         badge="Homeowners"
         headlineMain="Make sure your home is insured"

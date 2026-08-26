@@ -459,10 +459,10 @@ export default function HomePage() {
       <GuideTrustBand background="rgba(122,31,61,0.25)" />
 
       {/* 9. CONTACT FORM - the conversion goal */}
-      <ContactSection heading="Get your Reinstatement Cost Assessment." flip />
+      <ContactSection heading="Get your Reinstatement Cost Assessment." background="rgba(122,31,61,0.28)" />
 
       {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.30)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Homeowner Guides</span>
@@ -496,7 +496,7 @@ export default function HomePage() {
       <FaqSection
         description="Straightforward answers to the questions homeowners and property owners ask most about Reinstatement Cost Assessments."
         items={faqItems}
-        flip
+        background="rgba(122,31,61,0.33)"
       />
     </main>
   )
