@@ -61,7 +61,7 @@ const triggers = [
 ]
 
 const faqItems = [
-  { question: "I've never had a Reinstatement Cost Assessment and never had a problem — do I really need one?", answer: "Many homeowners never find out their sum insured is wrong until they make a claim - by which point it's too late to fix. An assessment is inexpensive relative to the risk of a reduced claim payout on a genuine loss." },
+  { question: "I've never had a Reinstatement Cost Assessment and never had a problem, so do I really need one?", answer: "Most homeowners only discover their sum insured is wrong when they come to make a claim, and by then it's too late to fix. An assessment costs very little compared with the risk of a reduced payout on a genuine loss." },
   { question: 'Does my mortgage lender require one?', answer: "Most lenders require buildings insurance sufficient for reinstatement cost as a condition of the mortgage, though they don't usually mandate a specific assessment provider. Some do request evidence of a professional assessment, particularly for non-standard properties." },
   { question: 'What if I just increase my sum insured by a guess to be safe?', answer: "Overestimating wastes money on premium for cover you can't claim beyond the true rebuild cost. Underestimating leaves you exposed under the average clause. A proper assessment is the only way to get the figure right in either direction." },
   { question: 'Is there a legal requirement to have one?', answer: "There's no single UK law mandating a Reinstatement Cost Assessment for private homeowners, but your lease (if you own a flat), your mortgage terms, and your insurer's policy conditions may all effectively require an accurate figure - which in practice means a professional assessment." },
@@ -138,7 +138,7 @@ export default function DoINeedRCAPage() {
 
       <RelatedGuides currentSlug="/do-i-need-a-reinstatement-cost-assessment" />
 
-      <ContactSection heading="Not sure? Ask us — it costs nothing to check." />
+      <ContactSection heading="Not sure? Ask us, it costs nothing to check." />
       <FaqSection description="Questions homeowners ask when deciding whether they need a Reinstatement Cost Assessment." items={faqItems} />
     </main>
   )

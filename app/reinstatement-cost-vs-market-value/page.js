@@ -58,7 +58,7 @@ export default function ReinstatementVsMarketValuePage() {
         imageAlt="Residential building - reinstatement cost vs market value"
         headlineMain="Reinstatement cost vs"
         headlineAccent="market value."
-        subtitle="These two figures are often assumed to be the same. They rarely are — and mixing them up is the single most common reason UK homes are wrongly insured."
+        subtitle="These two figures are often assumed to be the same. They rarely are, and mixing them up is the single most common reason UK homes are wrongly insured."
         secondaryHref="/what-happens-if-my-property-is-underinsured"
         secondaryLabel="What If I'm Underinsured?"
       />
@@ -95,7 +95,7 @@ export default function ReinstatementVsMarketValuePage() {
           />
 
           <p className="text-[#64748b] text-base leading-relaxed mt-8">
-            In central London and other high-value areas, land can account for well over half of a property's market price — so reinstatement cost is very often significantly lower than market value. In some rural or listed properties, the opposite is true: construction costs (especially for heritage materials and methods) can push reinstatement cost above market value. There's no reliable shortcut — it depends on the individual property, which is why a proper assessment matters more than a rule of thumb.
+            In central London and other high-value areas, land often makes up well over half of a property's asking price, so the reinstatement cost usually comes out much lower than the market value. In some rural or listed properties, it's the other way round: heritage materials and traditional building methods can push the rebuild cost above the market value. There's no reliable rule of thumb, either way. It comes down to the individual property, which is exactly why a proper assessment matters.
           </p>
         </div>
       </section>
@@ -108,10 +108,10 @@ export default function ReinstatementVsMarketValuePage() {
             Getting this wrong costs you <span className="text-shine">either way</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            Insure at market value when it's higher than reinstatement cost, and you're paying premium on cover you can never actually claim — insurers only ever pay out the cost to rebuild, never the market price of the land.
+            Insure at market value when it's higher than the reinstatement cost, and you end up paying premium on cover you could never actually claim, because insurers only ever pay out what it costs to rebuild, never the market price of the land.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
-            Insure below true reinstatement cost, and you're underinsured — meaning any claim, not just a total loss, gets reduced under the insurer's average clause. See exactly how that works in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
+            Insure below the true reinstatement cost, and you're underinsured. That means any claim, not just a total loss, gets reduced under the insurer's average clause. See exactly how that works in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
           </p>
         </div>
       </section>

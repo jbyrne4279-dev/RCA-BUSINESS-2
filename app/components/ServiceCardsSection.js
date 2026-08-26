@@ -46,7 +46,7 @@ const SERVICE_CARDS = [
     id: 'three-year-protection',
     badge: '03. Recommended',
     title: '3-Year Reinstatement Cost Assessment Plan',
-    desc: 'One instruction covers three years of RICS compliance — full Reinstatement Cost Assessment in year one, annual BCIS-indexed renewal reports before each renewal date.',
+    desc: 'One instruction covers three years of RICS compliance: a full Reinstatement Cost Assessment in year one, then an updated renewal report before each renewal date after that.',
     features: [
       'RICS-regulated, broker-ready report',
       'Full assessment year one, indexed updates years two & three',

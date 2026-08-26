@@ -71,9 +71,9 @@ export default function FreeholdersLeaseholdersPage() {
 
       <GuideOverview
         kicker="The Insuring Obligation"
-        heading="What freeholders owe leaseholders —"
+        heading="What freeholders owe leaseholders,"
         headingAccent="and what can go wrong."
-        description="Most leases place the insuring obligation squarely on the freeholder or the residents management company - not simply to arrange insurance, but to insure to the full reinstatement cost of the building."
+        description="Most leases place the insuring obligation squarely on the freeholder or the residents management company. That doesn't just mean arranging insurance, it means insuring the building for its full reinstatement cost."
         highlights={[
           { icon: 'gavel', title: 'Freeholder Liability', desc: 'Setting the figure without a professional assessment exposes the freeholder to personal liability if a claim shortfall arises.' },
           { icon: 'fact_check', title: 'Leaseholder Rights', desc: "Leaseholders who suffer a shortfall can pursue whoever is responsible for the declared value, not the insurer." },

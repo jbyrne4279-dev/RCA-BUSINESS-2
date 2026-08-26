@@ -65,9 +65,9 @@ export default function UnderinsuredPage() {
 
       <GuideOverview
         kicker="The Average Clause"
-        heading="Insurers don't just refuse to pay —"
+        heading="Insurers don't just refuse to pay,"
         headingAccent="they pay less on everything."
-        description="If your sum insured is lower than the true reinstatement cost of your property, most UK policies reduce every claim payout by the same proportion — not just on total losses, but on every claim, however small."
+        description="If your sum insured is lower than your property's true reinstatement cost, most UK policies reduce every claim payout by the same proportion. That applies to every claim, however small, not just total losses."
       />
 
       {/* THE FORMULA */}
@@ -92,7 +92,7 @@ export default function UnderinsuredPage() {
 
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 sm:p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-[#64748b] text-sm leading-relaxed">
-              Your home's true reinstatement cost is <strong className="text-[#2b0b14]">£400,000</strong>, but your policy's sum insured is only <strong className="text-[#2b0b14]">£300,000</strong> — you're insured for 75% of what it would actually cost to rebuild.
+              Your home's true reinstatement cost is <strong className="text-[#2b0b14]">£400,000</strong>, but your policy's sum insured is only <strong className="text-[#2b0b14]">£300,000</strong>. That means you're only insured for 75% of what it would actually cost to rebuild.
             </p>
             <p className="text-[#64748b] text-sm leading-relaxed">
               A kitchen fire causes <strong className="text-[#2b0b14]">£20,000</strong> of damage. You might expect your insurer to pay the full £20,000 since it's well within your sum insured. Under the average clause, they don't:
@@ -117,7 +117,7 @@ export default function UnderinsuredPage() {
             The fix is <span className="text-shine">straightforward</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            A RICS-regulated Reinstatement Cost Assessment gives you the true, current rebuild cost of your property, so you can set your sum insured correctly — protecting you from the average clause on every future claim.
+            A RICS-regulated Reinstatement Cost Assessment gives you the true, current rebuild cost of your property, so you can set your sum insured correctly and protect yourself from the average clause on every future claim.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
             Not sure if this applies to you? Start with <Link href="/do-i-need-a-reinstatement-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">Do I Need a Reinstatement Cost Assessment?</Link> or see <Link href="/reinstatement-cost-assessment-cost" className="text-[#7A1F3D] font-medium hover:underline">what it costs to find out</Link>.

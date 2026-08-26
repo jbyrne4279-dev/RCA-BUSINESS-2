@@ -103,7 +103,7 @@ export default function RCACostPage() {
             A small cost against a <span className="text-shine">much larger risk</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed">
-            An assessment is a modest, one-off (or periodic) cost. Being underinsured when a genuine claim happens can cost tens of thousands of pounds, because insurers reduce every payout proportionally under the average clause — not just on a total loss. See exactly how that plays out in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
+            An assessment is a modest cost, whether you have it done once or on a regular basis. Being underinsured when a genuine claim happens can cost tens of thousands of pounds, because insurers reduce every payout proportionally under the average clause, not just on a total loss. See exactly how that plays out in <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link>
           </p>
         </div>
       </section>

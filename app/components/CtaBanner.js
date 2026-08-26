@@ -46,7 +46,7 @@ export default function CtaBanner() {
 
         {/* Stat callout */}
         <p className="text-center text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Tell us about your property and we will send a written fee estimate — no contract, no commitment. If you proceed, your{' '}
+          Tell us about your property and we'll send a written fee estimate, with no contract and no commitment. If you go ahead, your{' '}
           <span style={{color:'#7db8ff'}} className="font-semibold">broker-ready RICS report</span>{' '}
           is with you within 24 hours.
         </p>
