@@ -5,10 +5,10 @@ export default function ComparisonTable({ columns, rows }) {
       <div className="hidden sm:block overflow-x-auto rounded-2xl">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="bg-[#fbf0f2]">
-              <th className="text-left p-4 font-semibold text-[#2b0b14]">&nbsp;</th>
+            <tr style={{ background: 'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)' }}>
+              <th className="text-left p-4 font-semibold text-white">&nbsp;</th>
               {columns.map((col) => (
-                <th key={col} className="text-left p-4 font-semibold text-[#7A1F3D]">{col}</th>
+                <th key={col} className="text-left p-4 font-semibold text-white">{col}</th>
               ))}
             </tr>
           </thead>
@@ -32,9 +32,9 @@ export default function ComparisonTable({ columns, rows }) {
             <p className="text-xs font-semibold text-[#2b0b14] uppercase tracking-wide mb-3">{label}</p>
             <div className="space-y-2.5">
               {columns.map((col, i) => (
-                <div key={col} className="flex flex-col gap-0.5 rounded-xl bg-[#fbf0f2] px-3 py-2.5">
-                  <span className="text-[10px] font-semibold text-[#7A1F3D] uppercase tracking-wide">{col}</span>
-                  <span className="text-sm text-[#64748b]">{values[i]}</span>
+                <div key={col} className="flex flex-col gap-0.5 rounded-xl px-3 py-2.5" style={{ background: 'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)' }}>
+                  <span className="text-[10px] font-semibold text-white/80 uppercase tracking-wide">{col}</span>
+                  <span className="text-sm text-white">{values[i]}</span>
                 </div>
               ))}
             </div>

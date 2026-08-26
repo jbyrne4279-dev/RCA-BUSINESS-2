@@ -141,7 +141,11 @@ export default function ListedBuildingsPage() {
               { title: 'Heritage-calibrated cost build-up', body: 'Costs are built from elemental rates calibrated for heritage construction - not standard BCIS tables. Professional fees, consents, VAT and programme premiums are each priced separately.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">03</span> },
               { title: 'Broker-ready report', body: 'The final report sets out the declared reinstatement cost with a full methodology note, ready for submission to your insurer at renewal.', icon: <span className="text-xs font-bold text-white flex items-center justify-center w-full h-full">04</span> },
             ].map(({ title, body, icon }) => (
-              <div key={title} className="flex gap-4 items-start step-reveal-item">
+              <div
+                key={title}
+                className="flex gap-4 items-start step-reveal-item rounded-2xl border border-[#e2e8f0] p-5"
+                style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
+              >
                 <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{background:'#7A1F3D'}}>
                   {icon}
                 </div>

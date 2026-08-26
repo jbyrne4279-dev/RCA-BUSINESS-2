@@ -74,8 +74,8 @@ export default function UnderinsuredPage() {
       <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#64748b] text-base leading-relaxed mb-6">The formula insurers use is straightforward:</p>
-          <div className="rounded-2xl border border-[#e2e8f0] bg-[#fbf0f2] p-6">
-            <p className="text-[#2b0b14] font-semibold text-base md:text-lg">
+          <div className="rounded-2xl p-6" style={{background:'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)'}}>
+            <p className="text-white font-semibold text-base md:text-lg">
               Payout = Claim Amount &times; (Sum Insured &divide; True Reinstatement Cost)
             </p>
           </div>
@@ -97,10 +97,10 @@ export default function UnderinsuredPage() {
             <p className="text-[#64748b] text-sm leading-relaxed">
               A kitchen fire causes <strong className="text-[#2b0b14]">£20,000</strong> of damage. You might expect your insurer to pay the full £20,000 since it's well within your sum insured. Under the average clause, they don't:
             </p>
-            <div className="rounded-xl p-5" style={{background:'rgba(122,31,61,0.08)'}}>
-              <p className="text-sm text-[#64748b] mb-1">£20,000 &times; (£300,000 &divide; £400,000)</p>
-              <p className="text-3xl font-bold text-[#7A1F3D] leading-none mt-2 mb-1">= £15,000</p>
-              <p className="text-sm text-[#64748b]">paid out, not £20,000</p>
+            <div className="rounded-xl p-5" style={{background:'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)'}}>
+              <p className="text-sm text-white/80 mb-1">£20,000 &times; (£300,000 &divide; £400,000)</p>
+              <p className="text-3xl font-bold text-white leading-none mt-2 mb-1">= £15,000</p>
+              <p className="text-sm text-white/80">paid out, not £20,000</p>
             </div>
             <p className="text-[#64748b] text-sm leading-relaxed">
               You're left to find the remaining <strong className="text-[#2b0b14]">£5,000</strong> yourself, out of pocket, for a claim that was well within your policy limit. The 25% shortfall in your sum insured cost you 25% of every claim you'll ever make on that policy.

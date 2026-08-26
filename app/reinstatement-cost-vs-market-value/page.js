@@ -54,7 +54,7 @@ export default function ReinstatementVsMarketValuePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/rca-high-rise-residential.webp"
+        image="/reinstatement-cost-assessment-uk.png"
         imageAlt="Residential building - reinstatement cost vs market value"
         headlineMain="Reinstatement cost vs"
         headlineAccent="market value."
