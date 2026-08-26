@@ -89,7 +89,7 @@ export default function ThankYouClient() {
 
       <section className="min-h-[80vh] bg-[#f8f9fa] flex items-center py-20 px-6 md:px-10 border-b border-[#dadce0]">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="w-16 h-16 rounded-full bg-[#fbf0f2] flex items-center justify-center mx-auto mb-6 text-[#7A1F3D]">
+          <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white" style={{ background: 'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)' }}>
             <svg className="tick-icon-anim" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <polyline points="5,16 12,23 27,9"/>
             </svg>
