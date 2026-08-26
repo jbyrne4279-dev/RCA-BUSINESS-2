@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import LogoSpin from './LogoSpin'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -52,6 +53,7 @@ export default function Navbar() {
           <Link href="/contact#contact-form" className="btn-shine !text-sm !py-2 !px-5">
             Get a Quote
           </Link>
+          <Image src="/rics-logo.png" alt="RICS Regulated Firm" width={80} height={53} className="h-9 w-auto object-contain" />
         </div>
 
         {/* Mobile toggle */}
