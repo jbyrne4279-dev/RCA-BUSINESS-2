@@ -92,18 +92,6 @@ export default function BlocksOfFlatsPage() {
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
               Blocks of flats involve cost elements that generic calculators and market-value approaches overlook entirely. Shared structures, communal services and leaseholder obligations create a unique risk profile that requires specialist assessment.
             </p>
-            <ul className="space-y-5 text-[#64748b] text-sm leading-relaxed">
-              {[
-                { num: '01', label: 'Shared structures', desc: 'External fabric, roof, foundations and structural elements shared between all leaseholders must be valued at full rebuild cost, not apportioned.' },
-                { num: '02', label: 'Communal services', desc: 'Lifts, boiler plant, communal lighting, entry systems and shared M&E infrastructure all carry reinstatement costs that generic tools miss.' },
-                { num: '03', label: 'Leaseholder obligations', desc: "A wrong declared value triggers the average clause and reduces every leaseholder's claim, not just the freeholder's. The legal exposure falls on whoever arranged the insurance." },
-              ].map(({ num, label, desc }) => (
-                <li key={num} className="flex gap-4 items-start step-reveal-item">
-                  <span className="text-xs font-bold text-[#7A1F3D] shrink-0 mt-0.5 w-6 text-right">{num}</span>
-                  <span><strong className="text-[#2b0b14]">{label}</strong>: {desc}</span>
-                </li>
-              ))}
-            </ul>
           </div>
           <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-8" style={{boxShadow:'0 4px 24px rgba(122,31,61,0.10)'}}>
             <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest mb-6">What's Included in a Block Assessment</p>

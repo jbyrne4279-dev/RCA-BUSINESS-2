@@ -158,6 +158,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 5c. COMMON REASONS - condensed version of the "Do I Need One?" triggers, reworded for the homepage */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Common Reasons</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Not sure if it's <span className="blue-keyword">time to get one?</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">These are the situations that most often mean your current figure needs checking.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { icon: 'apartment', title: 'Buying into a block', desc: "Ask when the block's assessment was last reviewed before you exchange. A missing or stale figure is often a sign the building is already underinsured." },
+              { icon: 'policy', title: 'Your insurer wants proof', desc: 'Older, listed or higher-value properties are often asked for an independent figure rather than a self-declared estimate.' },
+              { icon: 'event_repeat', title: 'Renewal is coming up', desc: 'Building costs move every year. A figure that was right a couple of years ago is unlikely to still be accurate.' },
+              { icon: 'gavel', title: "It's been three years or more", desc: 'RICS guidance calls for a full reassessment at least every three years, with smaller adjustments in between.' },
+              { icon: 'receipt_long', title: 'A claim paid out less than expected', desc: 'A reduced payout after a claim is usually a sign the sum insured was too low to begin with.' },
+              { icon: 'construction', title: "You've built, converted or renovated", desc: "Loft conversions, extensions and major renovations all change what it would actually cost to rebuild." },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
+                </div>
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/do-i-need-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+              See all six situations explained in full
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 6. SERVICES - the solution, once the problem is established */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
         <div className="max-w-6xl mx-auto">
