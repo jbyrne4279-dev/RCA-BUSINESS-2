@@ -56,11 +56,6 @@ export default function HomePage() {
         heading="What is a"
         headingAccent="Reinstatement Cost Assessment?"
         description="In plain English: it's a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch, not what you paid for it and not what it's worth on the market - and it's the figure your buildings insurance sum insured should be based on, because your insurer will only ever pay out up to that number. Get it wrong, and you could end up covering thousands of pounds of the rebuild yourself, even after years of paying your premiums."
-        highlights={[
-          { icon: 'not_interested', title: 'Not Market Value', desc: "It excludes the land - only the cost to demolish and rebuild the structure itself." },
-          { icon: 'verified', title: 'RICS-Regulated', desc: 'A figure your insurer will rely on if you ever need to make a claim.' },
-          { icon: 'update', title: 'Reviewed Every 3 Years', desc: 'RICS guidance recommends a full reassessment at least every three years.' },
-        ]}
       />
 
       <div className="text-center -mt-8 mb-4 md:mb-8">
@@ -303,37 +298,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.135)'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-blue mb-4">Homeowner Guides</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
-            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
-              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
-              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
-              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
-              { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
-            ].map(({ title, desc, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
-                style={{ boxShadow: '0 4px 16px rgba(122,31,61,0.08)', textDecoration: 'none' }}
-              >
-                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <span className="text-[#7A1F3D] text-sm font-semibold mt-2">Read the guide &rarr;</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 7. WHO WE HELP - relevance to the visitor + how the process works */}
       <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.16)'}}>
         <div className="max-w-6xl mx-auto">
@@ -496,6 +460,37 @@ export default function HomePage() {
 
       {/* 9. CONTACT FORM - the conversion goal */}
       <ContactSection heading="Get your Reinstatement Cost Assessment." flip />
+
+      {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Homeowner Guides</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
+              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
+              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
+              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
+              { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
+            ].map(({ title, desc, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
+                style={{ boxShadow: '0 4px 16px rgba(122,31,61,0.08)', textDecoration: 'none' }}
+              >
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
+                <span className="text-[#7A1F3D] text-sm font-semibold mt-2">Read the guide &rarr;</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* 10. FAQ - handle remaining objections, last thing before the footer */}
       <FaqSection
