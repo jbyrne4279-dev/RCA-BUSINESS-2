@@ -9,10 +9,10 @@ const ALL_GUIDES = [
   { slug: '/what-happens-if-my-property-is-underinsured', title: "What If I'm Underinsured?", summary: 'The average clause explained, with a worked example.', img: '/rca-flats-building.webp' },
 ]
 
-export default function RelatedGuides({ currentSlug }) {
+export default function RelatedGuides({ currentSlug, background = '#ffffff' }) {
   const items = ALL_GUIDES.filter((g) => g.slug !== currentSlug).slice(0, 3)
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="py-16 sm:py-24" style={{ background }}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-12">
           <span className="badge badge-blue mb-2">Explore Further</span>

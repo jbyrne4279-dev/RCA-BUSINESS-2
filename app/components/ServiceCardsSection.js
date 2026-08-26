@@ -61,9 +61,9 @@ const SERVICE_CARDS = [
   },
 ]
 
-export default function ServiceCardsSection({ flip = false }) {
+export default function ServiceCardsSection({ flip = false, background }) {
   return (
-    <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background: flip ? '#fbf0f2' : '#ffffff'}}>
+    <section id="service-cards" className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background: background ?? (flip ? 'rgba(122,31,61,0.08)' : '#ffffff')}}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <span className="badge badge-blue">Our Services</span>

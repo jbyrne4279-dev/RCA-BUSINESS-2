@@ -82,7 +82,7 @@ export default function BlocksOfFlatsPage() {
       />
 
       {/* SECTION A - Why block assessments are complex */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: '#fbf0f2' }}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background: 'rgba(122,31,61,0.08)' }}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue">Blocks of Flats</span>
@@ -153,9 +153,9 @@ export default function BlocksOfFlatsPage() {
 
       <ServiceCardsSection flip />
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/blocks-of-flats" />
+      <RelatedPages currentSlug="/blocks-of-flats" background="rgba(122,31,61,0.08)" />
 
       <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." flip />
       <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} flip />

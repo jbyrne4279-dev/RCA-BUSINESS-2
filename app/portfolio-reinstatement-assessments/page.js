@@ -77,7 +77,7 @@ export default function PortfolioPage() {
       />
 
       {/* 2. SECTION A - text left, stat card right */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* Text left */}
@@ -188,7 +188,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-b border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue">Portfolio Assessments</span>
@@ -247,9 +247,9 @@ export default function PortfolioPage() {
 
 
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/portfolio-reinstatement-assessments" />
+      <RelatedPages currentSlug="/portfolio-reinstatement-assessments" background="rgba(122,31,61,0.08)" />
 
       <ContactSection heading="Consolidate your portfolio. One instruction." flip />
       <FaqSection description="Common questions about portfolio Reinstatement Cost Assessments." items={faqItems} flip />

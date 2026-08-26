@@ -21,7 +21,7 @@ const POINTS = [
   },
 ]
 
-export default function GuideTrustBand({ background = '#fbf0f2' }) {
+export default function GuideTrustBand({ background = 'rgba(122,31,61,0.08)' }) {
   return (
     <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{ background }}>
       <div className="max-w-6xl mx-auto">

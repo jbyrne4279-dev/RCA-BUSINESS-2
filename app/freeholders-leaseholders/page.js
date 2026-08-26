@@ -82,7 +82,7 @@ export default function FreeholdersLeaseholdersPage() {
       />
 
       {/* 2. SECTION A - The insuring obligation (text left, card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-4">The Insuring Obligation</span>
@@ -159,7 +159,7 @@ export default function FreeholdersLeaseholdersPage() {
       </section>
 
       {/* 4. FEATURE CARDS - 3-col */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center">
             <span className="badge badge-blue mb-4">How We Help</span>

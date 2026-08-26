@@ -6,7 +6,7 @@ export default function ContactSection({ heading = 'Get In Touch', flip = false,
     <section className="py-12 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
       <div
         className="max-w-3xl mx-auto rounded-3xl p-6 md:p-12 border border-[#e2e8f0]"
-        style={{ background: background ?? (flip ? '#ffffff' : '#fbf0f2') }}
+        style={{ background: background ?? (flip ? '#ffffff' : 'rgba(122,31,61,0.08)') }}
       >
         <Suspense fallback={null}>
           <ContactFormInner heading={heading} />

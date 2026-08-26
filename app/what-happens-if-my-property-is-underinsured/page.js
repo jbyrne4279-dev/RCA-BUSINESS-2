@@ -71,7 +71,7 @@ export default function UnderinsuredPage() {
       />
 
       {/* THE FORMULA */}
-      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#64748b] text-base leading-relaxed mb-6">The formula insurers use is straightforward:</p>
           <div className="rounded-2xl border border-[#e2e8f0] bg-[#fbf0f2] p-6">
@@ -83,7 +83,7 @@ export default function UnderinsuredPage() {
       </section>
 
       {/* WORKED EXAMPLE */}
-      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-4">Worked Example</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-8">
@@ -110,7 +110,7 @@ export default function UnderinsuredPage() {
       </section>
 
       {/* PROTECT YOURSELF */}
-      <section className="bg-white py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-4">Protecting Yourself</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
@@ -125,12 +125,12 @@ export default function UnderinsuredPage() {
         </div>
       </section>
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedGuides currentSlug="/what-happens-if-my-property-is-underinsured" />
+      <RelatedGuides currentSlug="/what-happens-if-my-property-is-underinsured" background="rgba(122,31,61,0.08)" />
 
-      <ContactSection heading="Get an accurate figure before you need to claim." />
-      <FaqSection description="Questions homeowners ask about underinsurance and the average clause." items={faqItems} />
+      <ContactSection heading="Get an accurate figure before you need to claim." flip />
+      <FaqSection description="Questions homeowners ask about underinsurance and the average clause." items={faqItems} flip />
     </main>
   )
 }

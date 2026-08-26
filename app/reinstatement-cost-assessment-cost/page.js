@@ -83,7 +83,7 @@ export default function RCACostPage() {
       />
 
       {/* PROCESS */}
-      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-8">
             <span className="badge badge-blue mb-4">How It Works</span>
@@ -96,7 +96,7 @@ export default function RCACostPage() {
       </section>
 
       {/* WORTH IT */}
-      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-4">Cost vs Risk</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
@@ -108,14 +108,14 @@ export default function RCACostPage() {
         </div>
       </section>
 
-      <ServiceCardsSection />
+      <ServiceCardsSection flip />
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedGuides currentSlug="/reinstatement-cost-assessment-cost" />
+      <RelatedGuides currentSlug="/reinstatement-cost-assessment-cost" background="rgba(122,31,61,0.08)" />
 
-      <ContactSection heading="Tell us about your property for a fixed price." />
-      <FaqSection description="What homeowners ask about the cost of a Reinstatement Cost Assessment." items={faqItems} />
+      <ContactSection heading="Tell us about your property for a fixed price." flip />
+      <FaqSection description="What homeowners ask about the cost of a Reinstatement Cost Assessment." items={faqItems} flip />
     </main>
   )
 }

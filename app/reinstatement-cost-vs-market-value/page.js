@@ -75,7 +75,7 @@ export default function ReinstatementVsMarketValuePage() {
       />
 
       {/* COMPARISON TABLE */}
-      <section className="bg-[#fbf0f2] py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
+      <section className="py-16 sm:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-4">Comparison</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-8">

@@ -12,10 +12,10 @@ const ALL_PAGES = [
   { slug: '/portfolio-reinstatement-assessments', title: 'Portfolio Assessments', summary: 'One instruction, individual reports per asset, and a consolidated summary schedule.', img: '/AdobeStock_1477785304.jpeg' },
 ]
 
-export default function RelatedPages({ currentSlug, heading = 'Related services', count = 3 }) {
+export default function RelatedPages({ currentSlug, heading = 'Related services', count = 3, background = '#ffffff' }) {
   const items = ALL_PAGES.filter((g) => g.slug !== currentSlug).slice(0, count)
   return (
-    <section className="py-16 sm:py-24 bg-white">
+    <section className="py-16 sm:py-24" style={{ background }}>
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="text-center mb-12">
           <span className="badge badge-blue mb-2">Explore Further</span>

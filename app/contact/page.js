@@ -110,9 +110,9 @@ export default function ContactPage() {
 
       <ContactSection heading="Get a written fee estimate, no commitment required." />
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/contact" heading="Not sure who this is for?" />
+      <RelatedPages currentSlug="/contact" heading="Not sure who this is for?" background="rgba(122,31,61,0.08)" />
 
       <FaqSection description="Common questions about instructing Stearling Reinstatement." items={faqItems} />
     </main>

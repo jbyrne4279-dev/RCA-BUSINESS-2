@@ -78,7 +78,7 @@ export default function CommercialPage() {
       />
 
       {/* 2. SECTION A - Why commercial is complex (text left, comparison card right) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
@@ -146,7 +146,7 @@ export default function CommercialPage() {
       <section className="bg-white py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="bg-white rounded-2xl border border-[#e2e8f0] overflow-hidden" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
-            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+            <div className="px-6 py-4 border-b border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
               <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-widest">Property Types We Assess</p>
             </div>
             <ul className="divide-y divide-[#e2e8f0]">
@@ -191,7 +191,7 @@ export default function CommercialPage() {
       </section>
 
       {/* 4. 3-COL FEATURE CARDS */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Our Expertise</span>
@@ -245,9 +245,9 @@ export default function CommercialPage() {
 
 
 
-      <GuideTrustBand />
+      <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/commercial-reinstatement-costs" />
+      <RelatedPages currentSlug="/commercial-reinstatement-costs" background="rgba(122,31,61,0.08)" />
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." flip />
       <FaqSection description="Direct answers to the most common questions about commercial Reinstatement Cost Assessments." items={faqItems} flip />
