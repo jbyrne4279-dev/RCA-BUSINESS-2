@@ -69,7 +69,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="badge badge-blue mb-4">Just Bought a Property?</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Here's when new owners <span className="blue-keyword">need to check their figure.</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">When should <span className="blue-keyword">new owners check this?</span></h2>
             <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">The first few months after buying are exactly when your sum insured is most likely to be wrong.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto">
           <span className="badge badge-blue mb-5">Comparison</span>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-            A proper assessment vs <span className="blue-keyword">online rebuild cost calculators</span>
+            A RICS-regulated assessment vs <span className="blue-keyword">online rebuild cost calculators</span>
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
             Free rebuild cost calculators and insurer-supplied estimators use generic per-square-metre averages. They don&apos;t account for your property&apos;s actual construction, specification or location - and they carry no RICS accountability if the figure is ever questioned after a claim.
@@ -112,7 +112,7 @@ export default function HomePage() {
             A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification.
           </p>
           <div
-            className="flex items-start gap-4 rounded-2xl px-6 py-5 mb-6"
+            className="fade-pulse flex items-start gap-4 rounded-2xl px-6 py-5 mb-6"
             style={{ background: 'rgba(122,31,61,0.06)', border: '1.5px solid rgba(122,31,61,0.25)' }}
           >
             <span
@@ -387,27 +387,34 @@ export default function HomePage() {
 
       {/* 8. AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#ffffff'}}>
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="badge badge-blue mb-5">Coverage</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-            Areas <span className="blue-keyword">we cover</span>
-          </h2>
-          <p className="text-[#64748b] text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Stearling Reinstatement provides RICS Reinstatement Cost Assessments across the whole of the UK. Desktop assessments are available nationwide, typically within 24 hours; on-site surveys are carried out across England, Scotland, Wales and Northern Ireland - including London, the Midlands, Birmingham and Sussex.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
-              <span
-                key={area}
-                className="text-xs font-semibold text-[#2b0b14] border border-[#e2e8f0] rounded-full px-4 py-2 bg-white"
-              >
-                {area}
-              </span>
-            ))}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div>
+            <span className="badge badge-blue mb-5">Coverage</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
+              Reinstatement Cost Assessments <span className="blue-keyword">across the UK</span>.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-4">
+              Our desktop Reinstatement Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
+            </p>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              Wherever the property sits, every report is BCIS-indexed to local rebuild costs and accepted by all UK insurers.
+            </p>
+            <Link href="/contact#contact-form" className="btn-shine">Request an Assessment</Link>
           </div>
-          <p className="text-[#64748b] text-sm leading-relaxed">
-            Listed or heritage property? See our <Link href="/listed-buildings" className="link-arrow">dedicated Listed Buildings service</Link>.
-          </p>
+          <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 md:p-7" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
+            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-4">Regions we assess</p>
+            <div className="flex flex-wrap gap-3">
+              {['London', 'Midlands', 'Birmingham', 'Sussex', 'England', 'Scotland', 'Wales', 'Northern Ireland'].map((area) => (
+                <span
+                  key={area}
+                  className="text-xs font-semibold text-[#2b0b14] border border-[#e2e8f0] rounded-full px-4 py-2"
+                  style={{background:'#fbf0f2'}}
+                >
+                  {area}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
