@@ -129,12 +129,8 @@ main {
 
 /* ── Badge pill ── */
 .badge {
-  display: flex;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
   border-radius: 4px;
   padding: 0.25rem 0.75rem;
   font-size: 0.7rem;
@@ -142,7 +138,6 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
-  text-align: center;
 }
 .badge-blue  { background: #ffffff; color: #2b0b14; border: 1px solid rgba(0,0,0,0.15); box-shadow: none; }
 .badge-dark  { background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); }
@@ -923,17 +918,28 @@ a.link-amber:hover {
 @media (prefers-reduced-motion: reduce) {
   .quiz-step-in { animation: none !important; }
 }
+@keyframes quiz-fab-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.45; }
+}
 .quiz-fab {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
   z-index: 150;
+  animation: quiz-fab-pulse 4.5s ease-in-out infinite;
+}
+.quiz-fab:hover,
+.quiz-fab:focus-visible {
+  animation-play-state: paused;
+  opacity: 1;
 }
 @media (max-width: 639px) {
   .quiz-fab { right: 1rem; bottom: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .quiz-overlay, .quiz-panel { animation: none !important; }
+  .quiz-fab { animation: none !important; opacity: 1 !important; }
 }
 
 /* ── Prevent iOS Safari zoom on input focus ── */
