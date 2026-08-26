@@ -2,10 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ContactSection from './components/ContactSection'
 import FaqSection from './components/FaqSection'
-import TiltWrapper from './components/TiltWrapper'
 import HomeHero from './components/HomeHero'
 import GuideOverview from './components/GuideOverview'
-import GuideTrustBand from './components/GuideTrustBand'
 
 export const metadata = {
   title: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
@@ -254,139 +252,25 @@ export default function HomePage() {
 
       {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#ffffff'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-          {/* Left: text */}
-          <div>
-            <span className="badge badge-blue mb-5">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              After a loss, insurers pay out based on rebuild cost, not market value and not what you paid for the property. Get the sum insured wrong, and the insurer applies the average clause, cutting your payout in proportion to the shortfall on every claim, not just a total loss.
-            </p>
-            <p className="text-[#64748b] text-base leading-relaxed mb-8">
-              A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
-            </p>
-            <Link href="/what-happens-if-my-property-is-underinsured" className="btn-shine inline-block">
-              See what underinsurance actually costs
-            </Link>
-          </div>
-
-          {/* Right: comparison card */}
-          <TiltWrapper className="bg-white border border-[#e2e8f0] rounded-2xl p-7 space-y-3" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
-            <p className="text-[10px] font-semibold text-[#94a3b8] uppercase tracking-widest mb-1">Basis for your sum insured</p>
-            {[
-              { label: 'Reinstatement Cost Assessment', sub: 'RICS-regulated - the only defensible figure.', ok: true },
-              { label: 'Market Value', sub: 'What it would sell for - irrelevant to insurers.', ok: false },
-              { label: 'Online Calculator', sub: 'Generic estimate - no RICS accountability.', ok: false },
-            ].map(({ label, sub, ok }) => (
-              <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#16a34a]' : 'border-[#f87171]'}`} style={ok ? {background:'rgba(22,163,74,0.07)'} : {background:'rgba(239,68,68,0.05)'}}>
-                <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
-                  {ok
-                    ? <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
-                    : <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><line x1="2" y1="2" x2="12" y2="12"/><line x1="12" y1="2" x2="2" y2="12"/></svg>
-                  }
-                </span>
-                <div>
-                  <p className="font-medium text-[#2b0b14] text-sm">{label}</p>
-                  <p className="text-[#64748b] text-xs leading-relaxed mt-0.5">{sub}</p>
-                </div>
-              </div>
-            ))}
-          </TiltWrapper>
-        </div>
-      </section>
-
-      {/* 7. WHO WE HELP - relevance to the visitor + how the process works */}
-      <section className="py-16 md:py-28 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
-        <div className="max-w-6xl mx-auto">
-
-          {/* Header */}
-          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
-            <span className="badge badge-blue mb-5">Who We Help</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-4">
-              Whatever stage you're at, <span className="blue-keyword">we can help</span>.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed">
-              One practice, one specialisation - every instruction delivered as a RICS-regulated Reinstatement Cost Assessment.
-            </p>
-          </div>
-
-          {/* Audience cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16 md:mb-24">
-            {[
-              {
-                title: 'First-Time & New Buyers',
-                desc: "Just bought your first home? Make sure it's insured for the right amount from day one, not a guess carried over from the seller.",
-                href: '/do-i-need-a-reinstatement-cost-assessment',
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
-              },
-              {
-                title: 'Homeowners Renewing Cover',
-                desc: 'Coming up to renewal? Update your sum insured to reflect current build costs before you commit to another year.',
-                href: '/what-is-a-reinstatement-cost-assessment',
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>,
-              },
-              {
-                title: 'Leasehold Flat Owners',
-                desc: "Don't need the freeholder's permission - commission your own independent assessment to check or challenge the declared value.",
-                href: '/freeholders-leaseholders',
-                icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="6" height="14"/><rect x="9" y="3" width="6" height="18"/><rect x="16" y="10" width="6" height="11"/></svg>,
-              },
-            ].map(({ title, desc, href, icon }) => (
-              <Link
-                key={title}
-                href={href}
-                className="group bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
-                style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)', textDecoration: 'none' }}
-              >
-                <span
-                  className="w-12 h-12 rounded-full flex items-center justify-center text-white mb-5"
-                  style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow: '0 6px 18px rgba(122,31,61,0.3)' }}
-                >
-                  {icon}
-                </span>
-                <p className="text-base font-semibold text-[#2b0b14] mb-2 group-hover:text-[#7A1F3D] transition-colors">{title}</p>
-                <p className="text-sm text-[#64748b] leading-relaxed mb-4 flex-1">{desc}</p>
-                <span className="link-arrow !text-xs">Learn more</span>
-              </Link>
-            ))}
-          </div>
-
-          {/* Assessment process - horizontal timeline */}
-          <TiltWrapper className="bg-white rounded-2xl border border-[#e2e8f0] p-8 md:p-12" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
-            <p className="text-xs font-semibold text-[#64748b] uppercase tracking-widest text-center mb-10">Assessment Process</p>
-            <div className="relative">
-              <div className="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-px bg-[#e2e8f0]" />
-              <div className="circuit-steps grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6">
-                {[
-                  { n: '01', title: 'Tell us about your home', desc: 'Address, property type, approximate size and any previous valuation.' },
-                  { n: '02', title: 'We confirm scope and fee', desc: 'Desktop or on-site - a fixed price, agreed upfront.' },
-                  { n: '03', title: 'We carry out the assessment', desc: 'Structure, materials, services and fees - all captured.' },
-                  { n: '04', title: 'You receive your report', desc: 'A clear, broker-ready figure, ready for your insurer.' },
-                ].map(({ n, title, desc }, i) => (
-                  <div key={n} className={`step-light relative z-10 flex md:flex-col items-start md:items-center gap-4 md:gap-3 md:text-center ${i < 3 ? 'pb-6 mb-2 border-b border-[#e2e8f0] md:pb-0 md:mb-0 md:border-b-0 step-has-border' : ''}`}>
-                    <span className="circuit-num text-xs font-bold text-white w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{background:'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow:'0 0 14px rgba(122,31,61,0.45)'}}>{n}</span>
-                    <div>
-                      <p className="step-title text-sm font-semibold text-[#2b0b14]">{title}</p>
-                      <p className="text-xs text-[#64748b] mt-1 leading-relaxed">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </TiltWrapper>
-
-          {/* CTA */}
-          <div className="text-center mt-14">
-            <Link href="/contact#contact-form" className="btn-shine">Get My Assessment</Link>
-          </div>
+        <div className="max-w-3xl mx-auto text-center">
+          <span className="badge badge-blue mb-5">Why It Matters</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
+            Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
+          </h2>
+          <p className="text-[#64748b] text-base leading-relaxed mb-4">
+            After a loss, insurers pay out based on rebuild cost, not market value and not what you paid for the property. Get the sum insured wrong, and the insurer applies the average clause, cutting your payout in proportion to the shortfall on every claim, not just a total loss.
+          </p>
+          <p className="text-[#64748b] text-base leading-relaxed mb-8">
+            A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
+          </p>
+          <Link href="/what-happens-if-my-property-is-underinsured" className="btn-shine inline-block">
+            See what underinsurance actually costs
+          </Link>
         </div>
       </section>
 
       {/* 8. AREAS WE COVER - answers location-modified searches (London, Birmingham, Midlands, Sussex) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#ffffff'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
             <span className="badge badge-blue mb-5">Coverage</span>
@@ -419,7 +303,7 @@ export default function HomePage() {
       </section>
 
       {/* 8b. BUILDINGS WE COVER - answers building-type searches (listed, period, extensions, new-build) */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'rgba(122,31,61,0.08)'}}>
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#ffffff'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="badge badge-blue mb-5">Building Types</span>
@@ -462,8 +346,6 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
-      <GuideTrustBand background="#ffffff" />
 
       {/* 9. CONTACT FORM - the conversion goal */}
       <ContactSection heading="Get your Reinstatement Cost Assessment." background="rgba(122,31,61,0.08)" />
