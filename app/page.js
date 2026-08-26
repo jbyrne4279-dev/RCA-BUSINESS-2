@@ -70,39 +70,35 @@ export default function HomePage() {
         </Link>
       </div>
 
-      {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
+      {/* 5c. COMMON REASONS - condensed version of the "Do I Need One?" triggers, reworded for the homepage */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-          {/* Left: tilt card */}
-          <TiltCard />
-
-          {/* Right: text */}
-          <div>
-            <span className="badge badge-blue mb-5">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
-            </h2>
-            <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              After a loss, insurers pay out based on rebuild cost - not market value, and not what you paid for the property. Get the sum insured wrong, and the consequences land squarely on you:
-            </p>
-            <ul className="space-y-3 mb-8">
-              {[
-                'The insurer applies the average clause and cuts your payout in proportion to the shortfall - on every claim, not just a total loss.',
-                'A previous owner\'s figure, an online calculator or a rough guess offers no protection when the claim comes in.',
-                'You could be paying too much premium if you\'re insured at market value instead of true rebuild cost.',
-              ].map((point) => (
-                <li key={point} className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#7A1F3D'}} />
-                  <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-[#2b0b14] text-base font-semibold leading-relaxed mb-8">
-              A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
-            </p>
-            <Link href="/what-happens-if-my-property-is-underinsured" className="link-arrow cta-flash">
-              See what underinsurance actually costs
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Just Bought a Property?</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Here's when new owners <span className="blue-keyword">need to check their figure.</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">The first few months after buying are exactly when your sum insured is most likely to be wrong.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { icon: 'home', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
+              { icon: 'account_balance', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
+              { icon: 'apartment', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
+              { icon: 'receipt_long', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
+              { icon: 'event_repeat', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
+              { icon: 'construction', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
+            ].map(({ icon, title, desc }) => (
+              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>
+                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
+                </div>
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/do-i-need-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+              See all six situations explained in full
             </Link>
           </div>
         </div>
@@ -138,71 +134,6 @@ export default function HomePage() {
           <Link href="/reinstatement-cost-vs-market-value" className="link-arrow cta-flash">
             Reinstatement cost vs market value, explained
           </Link>
-        </div>
-      </section>
-
-      {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-blue mb-4">Homeowner Guides</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
-            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
-              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
-              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
-              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
-              { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
-            ].map(({ title, desc, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
-                style={{ boxShadow: '0 4px 16px rgba(122,31,61,0.08)', textDecoration: 'none' }}
-              >
-                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
-                <span className="text-[#7A1F3D] text-sm font-semibold mt-2">Read the guide &rarr;</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5c. COMMON REASONS - condensed version of the "Do I Need One?" triggers, reworded for the homepage */}
-      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="badge badge-blue mb-4">Just Bought a Property?</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Here's when new owners <span className="blue-keyword">need to check their figure.</span></h2>
-            <p className="text-[#64748b] text-sm mt-3 max-w-lg mx-auto">The first few months after buying are exactly when your sum insured is most likely to be wrong.</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { icon: 'home', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
-              { icon: 'account_balance', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
-              { icon: 'apartment', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
-              { icon: 'receipt_long', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
-              { icon: 'event_repeat', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
-              { icon: 'construction', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
-                </div>
-                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link href="/do-i-need-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
-              See all six situations explained in full
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -321,6 +252,75 @@ export default function HomePage() {
                   </span>
                   {note && <p className="text-[11px] text-[#94a3b8] leading-relaxed mt-3 text-center">{note}</p>}
                 </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. WHY IT MATTERS - the problem/risk that creates urgency */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#fbf0f2'}}>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+          {/* Left: tilt card */}
+          <TiltCard />
+
+          {/* Right: text */}
+          <div>
+            <span className="badge badge-blue mb-5">Why It Matters</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
+              Get this figure wrong, and <span className="blue-keyword">you</span> pay the price.
+            </h2>
+            <p className="text-[#64748b] text-base leading-relaxed mb-6">
+              After a loss, insurers pay out based on rebuild cost - not market value, and not what you paid for the property. Get the sum insured wrong, and the consequences land squarely on you:
+            </p>
+            <ul className="space-y-3 mb-8">
+              {[
+                'The insurer applies the average clause and cuts your payout in proportion to the shortfall - on every claim, not just a total loss.',
+                'A previous owner\'s figure, an online calculator or a rough guess offers no protection when the claim comes in.',
+                'You could be paying too much premium if you\'re insured at market value instead of true rebuild cost.',
+              ].map((point) => (
+                <li key={point} className="flex items-start gap-3">
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full shrink-0" style={{background:'#7A1F3D'}} />
+                  <span className="text-[#64748b] text-sm leading-relaxed">{point}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[#2b0b14] text-base font-semibold leading-relaxed mb-8">
+              A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
+            </p>
+            <Link href="/what-happens-if-my-property-is-underinsured" className="link-arrow cta-flash">
+              See what underinsurance actually costs
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
+      <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0] bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="badge badge-blue mb-4">Homeowner Guides</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight">Everything you need to <span className="blue-keyword">get it right</span></h2>
+            <p className="text-[#64748b] text-sm mt-3 max-w-md mx-auto">Plain-English guides covering every question homeowners ask us.</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
+              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
+              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
+              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
+              { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
+            ].map(({ title, desc, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="card-hover bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-2"
+                style={{ boxShadow: '0 4px 16px rgba(122,31,61,0.08)', textDecoration: 'none' }}
+              >
+                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
+                <p className="text-[#64748b] text-sm leading-relaxed flex-1">{desc}</p>
+                <span className="text-[#7A1F3D] text-sm font-semibold mt-2">Read the guide &rarr;</span>
               </Link>
             ))}
           </div>
