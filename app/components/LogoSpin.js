@@ -54,6 +54,7 @@ export default function LogoSpin({ width = 52, height = 52, className = '', prio
     >
       <div
         ref={wrapRef}
+        className="logo-rock-anim"
         style={{
           animation: 'logo-rock 4.5s ease-in-out infinite',
           transformStyle: 'preserve-3d',

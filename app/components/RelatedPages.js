@@ -5,7 +5,7 @@ const ALL_PAGES = [
   { slug: '/services', title: 'Our Services', summary: 'Desktop, on-site and 3-Year Protection Plan: pick the assessment that fits your property.', img: '/AdobeStock_158046067.jpeg' },
   { slug: '/blocks-of-flats', title: 'Blocks of Flats', summary: 'Specialist assessments protecting every leaseholder in a shared building from the average clause.', img: '/AdobeStock_208633670.jpeg' },
   { slug: '/managing-agents-insurance-valuations', title: 'Managing Agents', summary: 'Discharge your compliance obligation and protect your PI file with a defensible valuation.', img: '/surveyor-reinstatement-cost-assessment-rics.png' },
-  { slug: '/freeholders-leaseholders', title: 'Freeholders & Leaseholders', summary: 'Defend the insuring covenant, or challenge an inadequate sum insured independently.', img: '/rca-for-my-property-london-rebuild.png' },
+  { slug: '/freeholders-leaseholders', title: 'Freeholders & Leaseholders', summary: 'Defend the insuring covenant, or challenge an inadequate sum insured independently.', img: '/AdobeStock_763906298.jpeg' },
   { slug: '/listed-buildings', title: 'Listed Buildings', summary: 'On-site specialist assessment for Grade I, Grade II* and Grade II heritage properties.', img: '/AdobeStock_1064771096.jpeg' },
   { slug: '/block-managers-reinstatement-cost-assessments', title: 'Block Managers', summary: 'Consistent, compliant figures across every block you manage, on a rolling cycle.', img: '/AdobeStock_270155966.jpeg' },
   { slug: '/commercial-reinstatement-costs', title: 'Commercial Property', summary: 'Offices, retail, industrial and mixed-use, with tenant fitout and plant captured correctly.', img: '/commercial-reinstatement-cost-assessment.png' },

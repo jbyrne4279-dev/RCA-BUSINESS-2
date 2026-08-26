@@ -58,7 +58,7 @@ export default function FreeholdersLeaseholdersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/rca-for-my-property-london-rebuild.png"
+        image="/AdobeStock_208633670.jpeg"
         imageAlt="Freeholder Reinstatement Cost Assessment"
         badge="Freeholders & Leaseholders"
         headlineMain="Defend the"

@@ -609,6 +609,8 @@ select:focus { outline: none; border-color: #7A1F3D !important; box-shadow: 0 0 
   }
   /* Disable float-card animation on mobile for performance */
   .float-card { animation: none !important; opacity: 1 !important; }
+  /* Disable 3D tilt/rock animations on mobile */
+  .logo-rock-anim { animation: none !important; transform: none !important; }
   /* Reduce section vertical padding on small mobile */
   .section-py-mobile { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
   /* Card internal padding tighter on mobile */

@@ -5,6 +5,7 @@ export default function TiltWrapper({ children, className = '', style = {} }) {
   const ref = useRef(null)
 
   function onMouseMove(e) {
+    if (typeof window !== 'undefined' && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return
     const el = ref.current
     if (!el) return
     const rect = el.getBoundingClientRect()
