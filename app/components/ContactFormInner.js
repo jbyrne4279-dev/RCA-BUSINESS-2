@@ -84,19 +84,6 @@ export default function ContactFormInner({ heading }) {
             />
           </div>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-company" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
-              Company <span className="text-red-500">*</span>
-            </label>
-            <input
-              id="contact-company" name="company" required type="text"
-              placeholder="London Estates Ltd"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
-            />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className="flex flex-col gap-1.5">
             <label htmlFor="contact-property-type" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Property Type <span className="text-red-500">*</span>
             </label>
@@ -112,16 +99,6 @@ export default function ContactFormInner({ heading }) {
               <option>Mixed-Use</option>
               <option>Other</option>
             </select>
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-num-properties" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
-              No. of Properties <span className="text-red-500">*</span>
-            </label>
-            <input
-              id="contact-num-properties" name="num_properties" required type="number" min="1"
-              placeholder="1"
-              className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] placeholder:text-[#94a3b8] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 transition-colors"
-            />
           </div>
         </div>
 
