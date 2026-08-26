@@ -62,7 +62,6 @@ export default function HomePage() {
           { icon: 'verified', title: 'RICS-Regulated', desc: 'A figure your insurer will rely on if you ever need to make a claim.' },
           { icon: 'update', title: 'Reviewed Every 3 Years', desc: 'RICS guidance recommends a full reassessment at least every three years.' },
         ]}
-        highlightTheme="burgundy"
       />
 
       <div className="text-center -mt-8 mb-4 md:mb-8">

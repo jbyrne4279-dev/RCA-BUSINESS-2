@@ -1,5 +1,6 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 import Link from 'next/link'
 import GuideHero from './GuideHero'
 import QuizCard from './QuizCard'
@@ -7,6 +8,14 @@ import QuizCard from './QuizCard'
 export default function HomeHero() {
   const [open, setOpen] = useState(false)
   const [resetKey, setResetKey] = useState(0)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [open])
 
   function openQuiz() {
     setResetKey((k) => k + 1)
@@ -28,13 +37,11 @@ export default function HomeHero() {
         subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
         primaryLabel="Get My Assessment"
         onPrimaryClick={openQuiz}
-      >
-        <div className="flex justify-center">
-          <Link href="/what-is-a-reinstatement-cost-assessment" className="btn-ghost">What Is an RCA?</Link>
-        </div>
-      </GuideHero>
+        secondaryHref="/what-is-a-reinstatement-cost-assessment"
+        secondaryLabel="What Is an RCA?"
+      />
 
-      {open && (
+      {mounted && open && createPortal(
         <div className="quiz-overlay" onClick={close}>
           <div
             className="quiz-panel bg-white rounded-3xl max-w-md w-full shadow-2xl border border-[#e2e8f0]"
@@ -42,7 +49,8 @@ export default function HomeHero() {
           >
             <QuizCard key={resetKey} onClose={close} source="Hero Get My Assessment" />
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   )
