@@ -72,7 +72,7 @@ export default function HomePage() {
         kicker="Homeowner Guide"
         heading="What is a"
         headingAccent="Reinstatement Cost Assessment?"
-        description="In plain English: it's a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch - not what you paid for it, and not what it's worth on the market. It's the figure your buildings insurance sum insured should be based on."
+        description="In plain English: it's a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch - not what you paid for it, and not what it's worth on the market. It's the figure your buildings insurance sum insured should be based on. Getting it right matters because your insurer will only ever pay out up to that figure - if it's too low, you could be left covering thousands of pounds of the rebuild yourself, even after years of paying your premiums."
         highlights={[
           { icon: 'not_interested', title: 'Not Market Value', desc: "It excludes the land - only the cost to demolish and rebuild the structure itself." },
           { icon: 'verified', title: 'RICS-Regulated', desc: 'A figure your insurer will rely on if you ever need to make a claim.' },
