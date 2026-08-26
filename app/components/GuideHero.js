@@ -28,8 +28,8 @@ export default function GuideHero({
       <div className="relative z-10 w-full flex items-center justify-center px-5 py-16 md:py-24">
         <div className="w-full max-w-lg md:max-w-2xl bg-white/90 backdrop-blur-xl rounded-3xl px-7 py-9 md:px-14 md:py-14 border border-white/40 shadow-[0_12px_60px_rgba(0,0,0,0.25)] text-center">
           <span className="badge badge-blue mb-4">{badge}</span>
-          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-medium leading-[1.15] tracking-tight text-[#2b0b14] mb-4">
-            {headlineMain}{headlineAccent ? <> <span className="text-shine font-bold">{headlineAccent}</span></> : null}
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-normal leading-[1.15] tracking-tight text-[#2b0b14] mb-4">
+            {headlineMain}{headlineAccent ? <> <span className="text-shine">{headlineAccent}</span></> : null}
           </h1>
           <p className="text-sm sm:text-base text-[#64748b] leading-relaxed mb-8 max-w-md mx-auto">
             {subtitle}
