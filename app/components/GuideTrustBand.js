@@ -35,7 +35,7 @@ export default function GuideTrustBand({ background = 'rgba(122,31,61,0.08)' }) 
           {POINTS.map(({ icon, title, desc }, i) => (
             <div
               key={title}
-              className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
+              className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col hover:-translate-y-1 transition-all duration-300"
               style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
             >
               <span

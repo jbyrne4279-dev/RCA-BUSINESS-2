@@ -54,7 +54,7 @@ function ReviewCard({ review, visible }) {
   const { quote, name, role, reviewCount, avatar, fallback, fallbackBg } = review
   return (
     <div
-      className="bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4 absolute inset-0 transition-all duration-700"
+      className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-7 flex flex-col gap-4 absolute inset-0 transition-all duration-700"
       style={{
         boxShadow: '0 2px 12px rgba(0,0,0,0.06)',
         opacity: visible ? 1 : 0,

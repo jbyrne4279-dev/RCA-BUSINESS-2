@@ -108,7 +108,7 @@ main {
 }
 .card-glow:hover {
   border-color: #7A1F3D !important;
-  box-shadow: 0 0 0 3px rgba(122,31,61,0.12);
+  box-shadow: 0 0 0 1.5px #7A1F3D, 0 0 18px 3px rgba(122,31,61,0.5);
 }
 
 /* ── Logo shimmer ── */
@@ -484,10 +484,11 @@ main {
 
 /* ── Card hover utility ── */
 .card-hover {
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
 }
 .card-hover:hover {
-  box-shadow: 0 8px 32px rgba(122,31,61,0.12);
+  border-color: #7A1F3D !important;
+  box-shadow: 0 8px 32px rgba(122,31,61,0.12), 0 0 0 1.5px #7A1F3D, 0 0 18px 3px rgba(122,31,61,0.5);
   transform: translateY(-2px);
 }
 

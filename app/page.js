@@ -79,7 +79,7 @@ export default function HomePage() {
               { icon: 'event_repeat', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
               { icon: 'construction', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
             ].map(({ icon, title, desc }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+              <div key={title} className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.08)'}}>
                   <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
                 </div>
@@ -326,7 +326,7 @@ export default function HomePage() {
             ].map(({ title, desc }) => (
               <div
                 key={title}
-                className="bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 hover:border-[#7A1F3D]/30 transition-all duration-300"
+                className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300"
                 style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
               >
                 <span

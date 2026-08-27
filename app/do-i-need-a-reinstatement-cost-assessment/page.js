@@ -106,7 +106,7 @@ export default function DoINeedRCAPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {triggers.map(({ icon, title, body }) => (
-              <div key={title} className="bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+              <div key={title} className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.10)'}}>
                   <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
                 </div>

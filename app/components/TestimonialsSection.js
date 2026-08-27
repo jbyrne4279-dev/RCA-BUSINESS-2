@@ -138,7 +138,7 @@ const INTERVAL = 4000
 function ReviewCard({ name, role, photo, quote, visible }) {
   return (
     <div
-      className="review-card bg-white border border-[#e2e8f0] rounded-2xl p-4 md:p-6 flex flex-col transition-all duration-700"
+      className="review-card card-glow bg-white border border-[#e2e8f0] rounded-2xl p-4 md:p-6 flex flex-col transition-all duration-700"
       style={{
         boxShadow: '0 2px 16px rgba(0,0,0,0.05)',
         opacity: visible ? 1 : 0,
