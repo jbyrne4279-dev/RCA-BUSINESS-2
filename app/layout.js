@@ -171,6 +171,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-GB" className={`${inter.variable} light`}>
       <head>
+        <meta name="google-site-verification" content="OcKG60L9vRsiBOA8VmvQVbn9q86B2RZLVwvVzWRlEuo" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
