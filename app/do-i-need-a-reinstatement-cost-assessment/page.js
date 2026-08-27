@@ -8,7 +8,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'Do I Need a Reinstatement Cost Assessment?',
-  description: 'The specific situations that mean you should get a Reinstatement Cost Assessment - buying a leasehold flat, an insurer request, policy renewal, RICS 3-year guidance, or an underpaid claim.',
+  description: 'Buying a leasehold flat, renewing your policy or facing an insurer request? Here are the situations where a Reinstatement Cost Assessment is worth getting, and why.',
   alternates: { canonical: '/do-i-need-a-reinstatement-cost-assessment' },
   openGraph: {
     type: 'website',
@@ -16,13 +16,13 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/do-i-need-a-reinstatement-cost-assessment',
     siteName: 'Stearling Reinstatement',
     title: 'Do I Need a Reinstatement Cost Assessment?',
-    description: 'The specific situations that mean you should get a Reinstatement Cost Assessment.',
+    description: 'The specific situations that mean it is time to get a Reinstatement Cost Assessment - from a new purchase to an insurer request or an underpaid claim.',
     images: [{ url: '/rca-flats-building.webp', width: 1200, height: 630, alt: 'Do I need a Reinstatement Cost Assessment' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Do I Need a Reinstatement Cost Assessment?',
-    description: 'The specific situations that mean you should get a Reinstatement Cost Assessment.',
+    description: 'The specific situations that mean it is time to get a Reinstatement Cost Assessment.',
     images: ['/rca-flats-building.webp'],
   },
 }

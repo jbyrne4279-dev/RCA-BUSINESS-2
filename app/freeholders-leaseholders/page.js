@@ -11,22 +11,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Reinstatement Assessments for Freeholders',
-  description: 'Specialist Reinstatement Cost Assessments for freeholders and leaseholders. Discharge your lease obligation with a defensible declared value.',
+  title: 'Freeholders & Leaseholders: A Defensible Declared Value',
+  description: 'Freeholders and leaseholders need a declared value that stands up if challenged. A specialist Reinstatement Cost Assessment discharges the lease insuring obligation properly.',
   alternates: { canonical: '/freeholders-leaseholders' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/freeholders-leaseholders',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for freeholders, RMC directors and leaseholders. Defend the insuring covenant with a defensible declared value.',
+    title: 'Freeholders & Leaseholders: A Defensible Declared Value | Stearling Reinstatement',
+    description: 'Freeholders, RMC directors and leaseholders rely on a specialist Reinstatement Cost Assessment to defend the insuring covenant with a figure that holds up under scrutiny.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for freeholders and leaseholders - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessments for Freeholders and Leaseholders',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for freeholders and leaseholders. Defend the insuring covenant.',
+    title: 'Freeholders & Leaseholders: A Defensible Declared Value',
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for freeholders and leaseholders, defending the insuring covenant.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

@@ -26,22 +26,21 @@ const IcoShield = () => (
 )
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment Services',
-  description: 'Specialist RICS reinstatement and rebuild cost assessments for blocks of flats, managing agents, freeholders and leaseholders.',
-  keywords: ['Reinstatement Cost Assessment', 'RICS Reinstatement Cost Assessment', 'rebuild cost assessment', 'desktop Reinstatement Cost Assessment', 'on-site rebuild cost assessment', 'Reinstatement Cost Assessment services UK', 'RICS rebuild cost assessment UK', 'Reinstatement Cost Assessment London', 'Reinstatement Cost Assessment Birmingham', 'Reinstatement Cost Assessment Midlands', 'Reinstatement Cost Assessment Sussex'],
+  title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans',
+  description: 'Choose the assessment that fits your property: a desktop rebuild cost assessment, an on-site survey, or a 3-year plan with annual BCIS-indexed renewal reports.',
   alternates: { canonical: '/services' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/services',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessment Services | RICS Regulated | Stearling Reinstatement',
-    description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated Reinstatement Cost Assessments for UK residential and commercial property.',
+    title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans | Stearling Reinstatement',
+    description: 'Desktop assessments, on-site surveys and 3-year protection plans - RICS-regulated Reinstatement Cost Assessments for UK residential and commercial property.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment services - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessment Services | RICS Regulated',
+    title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans',
     description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated Reinstatement Cost Assessments for UK property.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },

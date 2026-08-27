@@ -8,22 +8,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Portfolio Reinstatement Cost Assessments',
-  description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. Consolidated reports with individual asset schedules.',
+  title: 'Property Portfolios: One Instruction, Every Asset Covered',
+  description: 'Landlords with multiple properties get a consolidated Reinstatement Cost Assessment in one instruction, with individual asset schedules and annual BCIS indexation.',
   alternates: { canonical: '/portfolio-reinstatement-assessments' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/portfolio-reinstatement-assessments',
     siteName: 'Stearling Reinstatement',
-    title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations | Stearling Reinstatement',
-    description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. One instruction, consolidated reports, individual asset schedules. Annual BCIS indexation included.',
+    title: 'Property Portfolios: One Instruction, Every Asset Covered | Stearling Reinstatement',
+    description: 'A single RICS-regulated Reinstatement Cost Assessment instruction covers your whole portfolio, with consolidated reporting and individual asset schedules.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Portfolio Reinstatement Cost Assessments - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portfolio Reinstatement Cost Assessments | Multi-Asset RICS Valuations',
-    description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios. One instruction covers every asset with consolidated reports and annual indexation.',
+    title: 'Property Portfolios: One Instruction, Every Asset Covered',
+    description: 'RICS-regulated Reinstatement Cost Assessments for property portfolios, consolidated into one instruction with annual BCIS indexation.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

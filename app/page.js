@@ -6,12 +6,12 @@ import HomeHero from './components/HomeHero'
 import GuideOverview from './components/GuideOverview'
 
 export const metadata = {
-  title: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
+  title: "Is Your Home Insured for the Right Amount? | Stearling Reinstatement",
   description: 'Make sure your home is insured for the right amount. RICS-regulated Reinstatement Cost Assessments for homeowners, first-time buyers and property owners, delivered in 24 hours.',
   keywords: ['Reinstatement Cost Assessment', 'reinstatement cost assessment for homeowners', 'what is a reinstatement cost assessment', 'reinstatement cost vs market value', 'am I underinsured', 'rebuild cost assessment', 'Reinstatement Cost Assessment UK', 'rebuild cost assessment UK', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'sum insured for my house', 'reinstatement cost assessment London', 'reinstatement cost assessment Birmingham', 'reinstatement cost assessment Midlands', 'reinstatement cost assessment Sussex'],
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Reinstatement Cost Assessment for Homeowners | RICS-Regulated | Stearling Reinstatement',
+    title: 'Is Your Home Insured for the Right Amount? | RICS-Regulated Reinstatement Cost Assessment | Stearling Reinstatement',
     description: '80% of UK homes are underinsured. Make sure your new home is insured for the right amount with a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
     url: 'https://stearlingreinstatement.com',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment for homeowners' }],

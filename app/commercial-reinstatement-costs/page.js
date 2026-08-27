@@ -8,22 +8,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Commercial Reinstatement Cost Assessment',
-  description: 'RICS-regulated Reinstatement Cost Assessments for commercial property - offices, retail, industrial and mixed-use.',
+  title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover',
+  description: 'Offices, retail units and industrial premises all need an accurate rebuild figure. Our RICS-regulated Reinstatement Cost Assessment gives commercial landlords a defensible number.',
   alternates: { canonical: '/commercial-reinstatement-costs' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/commercial-reinstatement-costs',
     siteName: 'Stearling Reinstatement',
-    title: 'Commercial Reinstatement Cost Assessment | RICS Regulated | Stearling Reinstatement',
-    description: 'RICS-regulated Reinstatement Cost Assessments for offices, retail, industrial and mixed-use commercial properties. Broker-ready reports accepted by all UK insurers.',
+    title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover | Stearling Reinstatement',
+    description: 'From offices to industrial units, our RICS-regulated Reinstatement Cost Assessment gives commercial property owners a broker-ready figure accepted by all UK insurers.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Commercial Reinstatement Cost Assessment - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Commercial Reinstatement Cost Assessment | RICS Regulated',
-    description: 'RICS-regulated Reinstatement Cost Assessments for offices, retail, industrial and mixed-use commercial property. Broker-ready, 24-hour turnaround.',
+    title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover',
+    description: 'RICS-regulated Reinstatement Cost Assessments for offices, retail, industrial and mixed-use commercial property, broker-ready in 24 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

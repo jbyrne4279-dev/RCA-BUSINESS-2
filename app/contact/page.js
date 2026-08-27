@@ -7,7 +7,7 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Contact Us & Request a Quote',
-  description: 'Contact Stearling Reinstatement to instruct a RICS-regulated assessment. 24-hour response. 17 Hanover Square, London.',
+  description: 'Get in touch to instruct a RICS-regulated Reinstatement Cost Assessment. We respond within 24 hours from our London office at 17 Hanover Square.',
   alternates: { canonical: '/contact' },
   openGraph: {
     type: 'website',
@@ -15,13 +15,13 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/contact',
     siteName: 'Stearling Reinstatement',
     title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
-    description: 'Speak with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours. No contract required. 17 Hanover Square, London.',
+    description: 'Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required. 17 Hanover Square, London.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Reinstatement Cost Assessment surveyors' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
-    description: 'Speak with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours. No contract required.',
+    title: 'Contact Stearling Reinstatement',
+    description: 'Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

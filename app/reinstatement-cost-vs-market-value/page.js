@@ -8,22 +8,22 @@ import FaqSection from '../components/FaqSection'
 import ComparisonTable from '../components/ComparisonTable'
 
 export const metadata = {
-  title: "Reinstatement Cost vs Market Value: What's the Difference?",
-  description: "Reinstatement cost and market value are not the same number. A clear, visual comparison for homeowners of what each figure means and why the difference matters for your insurance.",
+  title: "Market Value vs Reinstatement Cost: What's the Difference?",
+  description: "Confusing what your home could sell for with what it would cost to rebuild is the most common reason UK homes are wrongly insured. See how a Reinstatement Cost Assessment differs from market value.",
   alternates: { canonical: '/reinstatement-cost-vs-market-value' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/reinstatement-cost-vs-market-value',
     siteName: 'Stearling Reinstatement',
-    title: "Reinstatement Cost vs Market Value: What's the Difference?",
-    description: 'A clear, visual comparison of reinstatement cost and market value, and why confusing them leads to over- or under-insuring your home.',
+    title: "Market Value vs Reinstatement Cost: What's the Difference?",
+    description: 'A clear, visual comparison of market value and rebuild cost, and why confusing the two with your Reinstatement Cost Assessment figure leads to over- or under-insuring your home.',
     images: [{ url: '/rca-high-rise-residential.webp', width: 1200, height: 630, alt: 'Reinstatement cost vs market value comparison' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Reinstatement Cost vs Market Value: What's the Difference?",
-    description: 'A clear comparison of reinstatement cost and market value for homeowners.',
+    title: "Market Value vs Reinstatement Cost: What's the Difference?",
+    description: 'A clear comparison of market value and rebuild cost for homeowners, and why the two figures rarely match.',
     images: ['/rca-high-rise-residential.webp'],
   },
 }

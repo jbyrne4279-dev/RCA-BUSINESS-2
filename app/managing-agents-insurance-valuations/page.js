@@ -10,22 +10,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Reinstatement Assessments for Managing Agents',
-  description: 'Specialist Reinstatement Cost Assessments for managing agents and RTM companies. Protect your PI cover and discharge the lease obligation.',
+  title: 'Managing Agents & RTM Companies: Protect Your PI Cover',
+  description: 'Managing agents and RTM companies use our Reinstatement Cost Assessments to discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
   alternates: { canonical: '/managing-agents-insurance-valuations' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/managing-agents-insurance-valuations',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for managing agents and RTM companies. Discharge lease obligations, protect PI cover and meet FCA Consumer Duty requirements.',
+    title: 'Managing Agents & RTM Companies: Protect Your PI Cover | Stearling Reinstatement',
+    description: 'A specialist Reinstatement Cost Assessment for managing agents and RTM companies, built to discharge lease obligations and satisfy FCA Consumer Duty requirements.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessments for managing agents - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessments for Managing Agents | Stearling Reinstatement',
-    description: 'RICS-regulated Reinstatement Cost Assessments for managing agents. Discharge lease obligations, protect PI cover, meet FCA Consumer Duty.',
+    title: 'Managing Agents & RTM Companies: Protect Your PI Cover',
+    description: 'RICS-regulated Reinstatement Cost Assessments for managing agents, discharging lease obligations and protecting PI cover.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

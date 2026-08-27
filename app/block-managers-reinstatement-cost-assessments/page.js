@@ -9,22 +9,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Reinstatement Assessments for Block Managers',
-  description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent, compliant, accepted at renewal without question.',
+  title: 'Consistent, Compliant Assessments for Block Managers',
+  description: 'Block managers need declared values that hold up at renewal. Our RICS-regulated Reinstatement Cost Assessments stay consistent across every block you manage.',
   alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
-    description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent declared values across every block you manage. Compliant, broker-ready, 24-hour turnaround.',
+    title: 'Consistent, Compliant Assessments for Block Managers | Stearling Reinstatement',
+    description: 'Block managers rely on us for consistent, RICS-regulated Reinstatement Cost Assessments across every block, accepted by insurers at renewal without question.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessments for block managers - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessments for Block Managers | Stearling Reinstatement',
-    description: 'RICS-regulated Reinstatement Cost Assessments for block managers. Consistent, compliant declared values across every block you manage.',
+    title: 'Consistent, Compliant Assessments for Block Managers',
+    description: 'Block managers need declared values that hold up at renewal - our RICS-regulated assessments deliver consistency across every block you manage.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

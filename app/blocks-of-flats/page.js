@@ -11,22 +11,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Blocks of Flats Reinstatement Cost Assessments',
-  description: 'Specialist RICS Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause.',
+  title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder',
+  description: 'Every leaseholder in a block shares the risk of an inaccurate declared value. Our specialist Reinstatement Cost Assessments protect the whole building from the average clause.',
   alternates: { canonical: '/blocks-of-flats' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/blocks-of-flats',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause with an accurate declared value.',
+    title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder | Stearling Reinstatement',
+    description: 'A single wrong declared value puts every leaseholder at risk under the average clause. Our specialist Reinstatement Cost Assessments for blocks of flats get it right.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for blocks of flats - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessments for Blocks of Flats | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats. Protect every leaseholder from the average clause.',
+    title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder',
+    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats, protecting every leaseholder from the average clause.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }

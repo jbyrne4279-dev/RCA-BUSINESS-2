@@ -8,7 +8,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'What Happens If My Property Is Underinsured?',
-  description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example, and what to do to protect yourself.',
+  description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example - and how a Reinstatement Cost Assessment protects you from being caught out.',
   alternates: { canonical: '/what-happens-if-my-property-is-underinsured' },
   openGraph: {
     type: 'website',
@@ -16,7 +16,7 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/what-happens-if-my-property-is-underinsured',
     siteName: 'Stearling Reinstatement',
     title: 'What Happens If My Property Is Underinsured?',
-    description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example.',
+    description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example, and why an accurate Reinstatement Cost Assessment matters.',
     images: [{ url: '/rca-surveyor-site-visit.webp', width: 1200, height: 630, alt: 'What happens if my property is underinsured' }],
   },
   twitter: {

@@ -10,22 +10,22 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
-  title: 'Listed & Heritage Building Assessments',
-  description: 'Specialist Reinstatement Cost Assessments for listed buildings, which carry 20-50% higher rebuild costs than standard construction.',
+  title: 'Listed & Heritage Buildings: Specialist Rebuild Valuations',
+  description: 'Listed properties can cost 20-50% more to rebuild than standard construction. Our specialist Reinstatement Cost Assessment accounts for heritage materials and methods.',
   alternates: { canonical: '/listed-buildings' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/listed-buildings',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for listed and heritage buildings. Listed properties carry 20-50% higher rebuild costs. On-site surveys by specialist surveyors.',
+    title: 'Listed & Heritage Buildings: Specialist Rebuild Valuations | Stearling Reinstatement',
+    description: 'Listed and heritage buildings carry 20-50% higher rebuild costs than standard construction. Our specialist Reinstatement Cost Assessment includes an on-site survey.',
     images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for listed buildings - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessments for Listed Buildings | Stearling Reinstatement',
-    description: 'Specialist Reinstatement Cost Assessments for listed and heritage buildings. 20-50% higher rebuild costs require specialist on-site assessment.',
+    title: 'Listed & Heritage Buildings: Specialist Rebuild Valuations',
+    description: 'Specialist Reinstatement Cost Assessments for listed and heritage buildings, where rebuild costs run 20-50% above standard construction.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
