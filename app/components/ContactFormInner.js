@@ -23,10 +23,10 @@ export default function ContactFormInner({ heading }) {
     <div>
       <div id="contact-form" className="mb-10 scroll-mt-20">
         <span className="badge mb-5" style={{ background: '#F5B800', color: '#2b0b14', border: 'none' }}>Get In Touch</span>
-        <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-3">
           {heading}
         </h2>
-        <p className="text-white/80 text-base leading-relaxed max-w-xl mb-6">
+        <p className="text-[#64748b] text-base leading-relaxed max-w-xl mb-6">
           Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers.
         </p>
         <div className="flex flex-wrap gap-x-6 gap-y-3">
@@ -35,8 +35,8 @@ export default function ContactFormInner({ heading }) {
             'Written fee estimate in 24 hours',
             'No contract required',
           ].map((point) => (
-            <span key={point} className="flex items-center gap-2 text-xs font-semibold text-white">
-              <span className="w-5 h-5 rounded-full flex items-center justify-center bg-white/15 text-white shrink-0">
+            <span key={point} className="flex items-center gap-2 text-xs font-semibold text-[#2b0b14]">
+              <span className="w-5 h-5 rounded-full flex items-center justify-center shrink-0" style={{ background: 'rgba(122,31,61,0.1)', color: '#7A1F3D' }}>
                 <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><polyline points="1.5,7 5,10.5 12.5,3"/></svg>
               </span>
               {point}
@@ -51,7 +51,7 @@ export default function ContactFormInner({ heading }) {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-name" className="text-xs font-medium text-white/80 uppercase tracking-[0.08em]">
+            <label htmlFor="contact-name" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Full Name <span className="text-red-500">*</span>
             </label>
             <input
@@ -61,7 +61,7 @@ export default function ContactFormInner({ heading }) {
             />
           </div>
           <div className="flex flex-col gap-1.5">
-            <label htmlFor="contact-email" className="text-xs font-medium text-white/80 uppercase tracking-[0.08em]">
+            <label htmlFor="contact-email" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
               Email <span className="text-red-500">*</span>
             </label>
             <input
@@ -73,7 +73,7 @@ export default function ContactFormInner({ heading }) {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="contact-phone" className="text-xs font-medium text-white/80 uppercase tracking-[0.08em]">
+          <label htmlFor="contact-phone" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
             Phone <span className="text-red-500">*</span>
           </label>
           <input
@@ -84,7 +84,7 @@ export default function ContactFormInner({ heading }) {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="contact-service" className="text-xs font-medium text-white/80 uppercase tracking-[0.08em]">
+          <label htmlFor="contact-service" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
             Service Needed <span className="text-red-500">*</span>
           </label>
           <select
@@ -101,7 +101,7 @@ export default function ContactFormInner({ heading }) {
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <label htmlFor="contact-notes" className="text-xs font-medium text-white/80 uppercase tracking-[0.08em]">
+          <label htmlFor="contact-notes" className="text-xs font-medium text-[#64748b] uppercase tracking-[0.08em]">
             Notes <span className="text-red-500">*</span>
           </label>
           <textarea
@@ -111,17 +111,17 @@ export default function ContactFormInner({ heading }) {
           />
         </div>
 
-        <p className="text-xs text-white/70">All fields are required.</p>
+        <p className="text-xs text-[#94a3b8]">All fields are required.</p>
 
-        <button type="submit" className="w-full justify-center !py-3 !text-sm inline-flex items-center font-bold rounded-md bg-white text-[#7A1F3D] hover:bg-white/90 active:scale-[0.97] transition-all">
+        <button type="submit" className="btn-shine w-full justify-center !py-3 !text-sm">
           Request Your Assessment
         </button>
 
-        <div className="flex items-center gap-3 pt-4 border-t border-white/15 mt-2">
+        <div className="flex items-center gap-3 pt-4 border-t border-[#e2e8f0] mt-2">
           <span className="shrink-0">
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={64} height={32} className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={64} height={32} className="object-contain" />
           </span>
-          <p className="text-xs text-white/70 leading-snug">RICS-regulated assessments. Every instruction supervised by a registered member.</p>
+          <p className="text-xs text-[#94a3b8] leading-snug">RICS-regulated assessments. Every instruction supervised by a registered member.</p>
         </div>
       </form>
     </div>
