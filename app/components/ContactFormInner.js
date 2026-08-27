@@ -118,8 +118,8 @@ export default function ContactFormInner({ heading }) {
         </button>
 
         <div className="flex items-center gap-3 pt-4 border-t border-white/15 mt-2">
-          <span className="bg-white rounded-md p-1.5 shrink-0">
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={64} height={32} className="object-contain" />
+          <span className="shrink-0">
+            <Image src="/rics-logo.png" alt="RICS Regulated" width={64} height={32} className="object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
           </span>
           <p className="text-xs text-white/70 leading-snug">RICS-regulated assessments. Every instruction supervised by a registered member.</p>
         </div>
