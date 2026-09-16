@@ -12,7 +12,7 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder',
-  description: 'Every leaseholder in a block shares the risk of an inaccurate declared value. Our specialist Reinstatement Cost Assessments protect the whole building from the average clause.',
+  description: 'Every leaseholder in a block shares the risk of an inaccurate declared value. Our specialist Rebuild Cost Assessments protect the whole building from the average clause.',
   alternates: { canonical: '/blocks-of-flats' },
   openGraph: {
     type: 'website',
@@ -20,24 +20,24 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/blocks-of-flats',
     siteName: 'Stearling Reinstatement',
     title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder | Stearling Reinstatement',
-    description: 'A single wrong declared value puts every leaseholder at risk under the average clause. Our specialist Reinstatement Cost Assessments for blocks of flats get it right.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for blocks of flats - Stearling Reinstatement' }],
+    description: 'A single wrong declared value puts every leaseholder at risk under the average clause. Our specialist Rebuild Cost Assessments for blocks of flats get it right.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for blocks of flats - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for blocks of flats, protecting every leaseholder from the average clause.',
+    description: 'Specialist RICS-regulated Rebuild Cost Assessments for blocks of flats, protecting every leaseholder from the average clause.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Why do blocks of flats need a specialist Reinstatement Cost Assessment?', answer: 'Blocks of flats carry rebuild costs that generic online calculators miss entirely communal areas, lifts, shared services, external fabric, professional fees, and VAT on partial-damage repairs. A RICS-regulated Reinstatement Cost Assessment captures every cost layer specific to your block. When multiple leaseholders share one insurance policy, a wrong declared value puts every one of them at risk simultaneously.' },
-  { question: 'What is the average clause and how does it affect leaseholders in a block?', answer: 'If the declared value in a buildings insurance policy is inadequate at claim time, the insurer applies the average clause and reduces every payout proportionally. A block insured for 70% of its true reinstatement cost has every claim escape of water, fire, subsidence paid at 70p in the pound. An up-to-date Reinstatement Cost Assessment (rebuild cost assessment) is the primary protection against this.' },
-  { question: 'What does a Reinstatement Cost Assessment for a block of flats include?', answer: 'A RICS-regulated Reinstatement Cost Assessment for a block covers demolition and site clearance, structure, external envelope, communal areas, lifts, building services, professional fees, statutory fees, and VAT where applicable. It produces a single declared value covering the full cost of rebuilding the block from cleared ground the figure your insurer needs at renewal.' },
-  { question: 'Could my block be over-insured rather than underinsured?', answer: 'Yes particularly for central-London blocks where market value substantially exceeds reinstatement cost. Owners insuring toward market value pay inflated premiums every year for unnecessary cover. A professional Reinstatement Cost Assessment right-sizes the declared value in both directions, removing overpayment as well as underinsurance risk.' },
-  { question: 'Can a managing agent commission a Reinstatement Cost Assessment on behalf of the freeholder?', answer: 'Yes. We regularly work with managing agents, RTM companies and resident management companies commissioning Reinstatement Cost Assessments on behalf of freeholders. If you manage multiple blocks, our portfolio Reinstatement Cost Assessment service covers every property under a single instruction with a consolidated summary schedule.' },
-  { question: 'How often should the rebuild cost assessment for a block of flats be updated?', answer: 'RICS guidance requires a formal Reinstatement Cost Assessment at least every three years, with annual BCIS-indexed inflation adjustment in between. Our 3-Year Protection Plan covers both requirements under one instruction full Reinstatement Cost Assessment in year one, indexed rebuild cost updates before each renewal, no re-instructing required.' },
+  { question: 'Why do blocks of flats need a specialist Rebuild Cost Assessment?', answer: 'Blocks of flats carry rebuild costs that generic online calculators miss entirely communal areas, lifts, shared services, external fabric, professional fees, and VAT on partial-damage repairs. A RICS-regulated Rebuild Cost Assessment captures every cost layer specific to your block. When multiple leaseholders share one insurance policy, a wrong declared value puts every one of them at risk simultaneously.' },
+  { question: 'What is the average clause and how does it affect leaseholders in a block?', answer: 'If the declared value in a buildings insurance policy is inadequate at claim time, the insurer applies the average clause and reduces every payout proportionally. A block insured for 70% of its true rebuild cost has every claim escape of water, fire, subsidence paid at 70p in the pound. An up-to-date Rebuild Cost Assessment (rebuild cost assessment) is the primary protection against this.' },
+  { question: 'What does a Rebuild Cost Assessment for a block of flats include?', answer: 'A RICS-regulated Rebuild Cost Assessment for a block covers demolition and site clearance, structure, external envelope, communal areas, lifts, building services, professional fees, statutory fees, and VAT where applicable. It produces a single declared value covering the full cost of rebuilding the block from cleared ground the figure your insurer needs at renewal.' },
+  { question: 'Could my block be over-insured rather than underinsured?', answer: 'Yes particularly for central-London blocks where market value substantially exceeds rebuild cost. Owners insuring toward market value pay inflated premiums every year for unnecessary cover. A professional Rebuild Cost Assessment right-sizes the declared value in both directions, removing overpayment as well as underinsurance risk.' },
+  { question: 'Can a managing agent commission a Rebuild Cost Assessment on behalf of the freeholder?', answer: 'Yes. We regularly work with managing agents, RTM companies and resident management companies commissioning Rebuild Cost Assessments on behalf of freeholders. If you manage multiple blocks, our portfolio Rebuild Cost Assessment service covers every property under a single instruction with a consolidated summary schedule.' },
+  { question: 'How often should the rebuild cost assessment for a block of flats be updated?', answer: 'RICS guidance requires a formal Rebuild Cost Assessment at least every three years, with annual BCIS-indexed inflation adjustment in between. Our 3-Year Protection Plan covers both requirements under one instruction full Rebuild Cost Assessment in year one, indexed rebuild cost updates before each renewal, no re-instructing required.' },
 ]
 
 export default function BlocksOfFlatsPage() {
@@ -59,7 +59,7 @@ export default function BlocksOfFlatsPage() {
 
       <GuideHero
         image="/AdobeStock_208633670.jpeg"
-        imageAlt="London block of flats, Reinstatement Cost Assessment"
+        imageAlt="London block of flats, Rebuild Cost Assessment"
         badge="Blocks of Flats"
         headlineMain="Specialist assessments"
         headlineAccent="for every block type."
@@ -98,7 +98,7 @@ export default function BlocksOfFlatsPage() {
             <ChecklistGrid
               columns={1}
               items={[
-                'Full structural reinstatement cost - walls, roof, foundations, external fabric',
+                'Full structural rebuild cost - walls, roof, foundations, external fabric',
                 'Communal areas and shared circulation space',
                 'Lifts, plant rooms and shared M&E services',
                 'Professional fees - architects, engineers, project managers',
@@ -130,8 +130,8 @@ export default function BlocksOfFlatsPage() {
               { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_763906298.jpeg' },
               { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_208633670.jpeg' },
               { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_270155966.jpeg' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1477785304.jpeg' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-reinstatement-assessments', img: '/AdobeStock_1064771096.jpeg' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1477785304.jpeg' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1064771096.jpeg' },
             ].map(({ title, desc, href, img }) => (
               <Link key={title} href={href} className="brix-card card-hover" style={{textDecoration:'none', display:'block'}}>
                 <div className="relative h-40 overflow-hidden">
@@ -145,7 +145,7 @@ export default function BlocksOfFlatsPage() {
               </Link>
             ))}
           </div>
-          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-reinstatement-assessments" className="text-[#7A1F3D] font-semibold hover:text-[#5C1730]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
+          <p className="text-center text-[#64748b] text-sm mt-8">Managing multiple blocks? Our <Link href="/portfolio-rebuild-assessments" className="text-[#7A1F3D] font-semibold hover:text-[#5C1730]">portfolio assessment service</Link> covers all properties under a single instruction with a consolidated compliance schedule.</p>
         </div>
       </section>
 
@@ -157,8 +157,8 @@ export default function BlocksOfFlatsPage() {
 
       <RelatedPages currentSlug="/blocks-of-flats" background="rgba(122,31,61,0.08)" />
 
-      <ContactSection heading="Get an accurate reinstatement cost for your block and protect every leaseholder in it." flip />
-      <FaqSection description="Common questions about Reinstatement Cost Assessments for blocks of flats." items={faqItems} flip />
+      <ContactSection heading="Get an accurate rebuild cost for your block and protect every leaseholder in it." flip />
+      <FaqSection description="Common questions about Rebuild Cost Assessments for blocks of flats." items={faqItems} flip />
     </main>
   )
 }

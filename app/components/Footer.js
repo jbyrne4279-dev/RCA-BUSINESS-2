@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="py-8 px-6 md:px-10" style={{ background: 'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)' }}>
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
-            <p className="font-semibold text-white text-base mb-1">Need a Reinstatement Cost Assessment?</p>
+            <p className="font-semibold text-white text-base mb-1">Need a Rebuild Cost Assessment?</p>
             <p className="text-white/70 text-sm">We respond within 24 hours on business days.</p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
@@ -26,11 +26,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 md:col-span-2 space-y-4">
             <div className="flex items-center gap-3 step-reveal-item">
-              <LogoSpin width={52} height={52} src="/stearling-reinstatement-logo-white.png" className="h-13 w-13 opacity-90" />
+              <LogoSpin width={52} height={52} src="/stearling-rebuild-logo-white.png" className="h-13 w-13 opacity-90" />
               <span className="text-white font-semibold text-sm tracking-wide">Stearling Reinstatement</span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
+              RICS-regulated Rebuild Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.
             </p>
             <div className="flex items-center gap-3 pt-1">
               <Image
@@ -51,7 +51,7 @@ export default function Footer() {
               <li><Link href="/services#desktop-rca" className="hover:text-[#7A1F3D] transition-colors">Desktop Assessment</Link></li>
               <li><Link href="/services#on-site-survey" className="hover:text-[#7A1F3D] transition-colors">On-Site Survey</Link></li>
               <li><Link href="/services#three-year-protection" className="hover:text-[#7A1F3D] transition-colors">3-Year Protection</Link></li>
-              <li><Link href="/portfolio-reinstatement-assessments" className="hover:text-[#7A1F3D] transition-colors">Portfolio Assessment</Link></li>
+              <li><Link href="/portfolio-rebuild-assessments" className="hover:text-[#7A1F3D] transition-colors">Portfolio Assessment</Link></li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
             <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-4">Who We Help</p>
             <ul className="space-y-3 text-sm text-white/60">
               <li><Link href="/managing-agents-insurance-valuations" className="hover:text-[#7A1F3D] transition-colors">Managing Agents</Link></li>
-              <li><Link href="/block-managers-reinstatement-cost-assessments" className="hover:text-[#7A1F3D] transition-colors">Block Managers</Link></li>
+              <li><Link href="/block-managers-rebuild-cost-assessments" className="hover:text-[#7A1F3D] transition-colors">Block Managers</Link></li>
               <li><Link href="/blocks-of-flats" className="hover:text-[#7A1F3D] transition-colors">Blocks of Flats</Link></li>
               <li><Link href="/freeholders-leaseholders" className="hover:text-[#7A1F3D] transition-colors">Freeholders &amp; Leaseholders</Link></li>
               <li><Link href="/listed-buildings" className="hover:text-[#7A1F3D] transition-colors">Listed Buildings</Link></li>
@@ -71,10 +71,10 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-white/40 uppercase tracking-[0.15em] mb-4">Homeowner Guides</p>
             <ul className="space-y-3 text-sm text-white/60">
-              <li><Link href="/what-is-a-reinstatement-cost-assessment" className="hover:text-[#7A1F3D] transition-colors">What Is an RCA?</Link></li>
-              <li><Link href="/reinstatement-cost-vs-market-value" className="hover:text-[#7A1F3D] transition-colors">Rebuild Cost vs Market Value</Link></li>
-              <li><Link href="/do-i-need-a-reinstatement-cost-assessment" className="hover:text-[#7A1F3D] transition-colors">Do I Need One?</Link></li>
-              <li><Link href="/reinstatement-cost-assessment-cost" className="hover:text-[#7A1F3D] transition-colors">Pricing</Link></li>
+              <li><Link href="/what-is-a-rebuild-cost-assessment" className="hover:text-[#7A1F3D] transition-colors">What Is an RCA?</Link></li>
+              <li><Link href="/rebuild-cost-vs-market-value" className="hover:text-[#7A1F3D] transition-colors">Rebuild Cost vs Market Value</Link></li>
+              <li><Link href="/do-i-need-a-rebuild-cost-assessment" className="hover:text-[#7A1F3D] transition-colors">Do I Need One?</Link></li>
+              <li><Link href="/rebuild-cost-assessment-cost" className="hover:text-[#7A1F3D] transition-colors">Pricing</Link></li>
               <li><Link href="/what-happens-if-my-property-is-underinsured" className="hover:text-[#7A1F3D] transition-colors">If You're Underinsured</Link></li>
             </ul>
           </div>

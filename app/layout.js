@@ -14,31 +14,31 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL('https://stearlingreinstatement.com'),
   title: {
-    default: 'RICS Reinstatement Cost Assessment UK | Stearling Reinstatement',
+    default: 'RICS Rebuild Cost Assessment UK | Stearling Reinstatement',
     template: '%s | Stearling Reinstatement',
   },
   description:
-    'London-based RICS-regulated Reinstatement Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
+    'London-based RICS-regulated Rebuild Cost Assessments for UK properties, delivered in 24 hours. Trusted by managing agents, RTM companies, freeholders and portfolio landlords across England.',
   keywords: [
-    'Reinstatement Cost Assessment',
+    'Rebuild Cost Assessment',
     'rebuild cost assessment',
-    'Reinstatement Cost Assessment UK',
+    'Rebuild Cost Assessment UK',
     'rebuild cost assessment UK',
-    'Reinstatement Cost Assessment London',
+    'Rebuild Cost Assessment London',
     'rebuild cost assessment London',
-    'managing agents Reinstatement Cost Assessment',
+    'managing agents Rebuild Cost Assessment',
     'RTM company insurance valuation',
-    'block of flats reinstatement cost',
+    'block of flats rebuild cost',
     'RICS surveyor London',
     'building insurance valuation London',
-    'RICS regulated Reinstatement Cost Assessment',
+    'RICS regulated Rebuild Cost Assessment',
     'building insurance valuation UK',
     'underinsurance UK',
     'BCIS rebuild cost',
-    'commercial property reinstatement London',
+    'commercial property rebuild London',
     'desktop rebuild cost assessment',
-    'on-site reinstatement survey London',
-    'Reinstatement Cost Assessment London',
+    'on-site rebuild survey London',
+    'Rebuild Cost Assessment London',
     'professional indemnity surveyor',
   ],
   icons: {
@@ -54,23 +54,23 @@ export const metadata = {
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com',
     siteName: 'Stearling Reinstatement',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
+    title: 'Rebuild Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
-      '80% of UK buildings are underinsured. RICS-regulated Reinstatement Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
+      '80% of UK buildings are underinsured. RICS-regulated Rebuild Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     images: [
       {
         url: '/rebuild-cost-assessment-london.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Reinstatement Cost Assessment of a London property',
+        alt: 'Rebuild Cost Assessment of a London property',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Reinstatement Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
+    title: 'Rebuild Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
-      '80% of UK buildings are underinsured. Get a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
+      '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment, delivered in 24 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
   robots: {
@@ -100,7 +100,7 @@ const orgSchema = {
         height: 1254,
       },
       description:
-        'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+        'RICS-regulated Rebuild Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
       address: {
         '@type': 'PostalAddress',
         streetAddress: '17 Hanover Square',
@@ -113,22 +113,22 @@ const orgSchema = {
       areaServed: { '@type': 'Country', name: 'United Kingdom' },
       priceRange: '££',
       knowsAbout: [
-        'Reinstatement Cost Assessment',
+        'Rebuild Cost Assessment',
         'RICS Rebuild Cost Assessment',
         'Buildings Insurance Valuation',
         'Listed Buildings Assessment',
         'Block of Flats Insurance Valuation',
-        'Commercial Property Reinstatement',
+        'Commercial Property Rebuild',
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'Reinstatement Cost Assessment Services',
+        name: 'Rebuild Cost Assessment Services',
         itemListElement: [
           {
             '@type': 'Offer',
             itemOffered: {
               '@type': 'Service',
-              name: 'Desktop Reinstatement Cost Assessment',
+              name: 'Desktop Rebuild Cost Assessment',
               description:
                 'BCIS-indexed rebuild cost modelling for standard residential and commercial property. Delivered within 24 hours of instruction.',
             },
@@ -137,7 +137,7 @@ const orgSchema = {
             '@type': 'Offer',
             itemOffered: {
               '@type': 'Service',
-              name: 'On-Site Reinstatement Cost Survey',
+              name: 'On-Site Rebuild Cost Survey',
               description:
                 'RICS surveyor attends in person for full measurement and material assessment. Required for listed, heritage and complex buildings.',
             },
@@ -160,7 +160,7 @@ const orgSchema = {
       url: 'https://stearlingreinstatement.com',
       name: 'Stearling Reinstatement',
       description:
-        'RICS-regulated Reinstatement Cost Assessments for UK properties.',
+        'RICS-regulated Rebuild Cost Assessments for UK properties.',
       publisher: { '@id': 'https://stearlingreinstatement.com/#organization' },
       inLanguage: 'en-GB',
     },

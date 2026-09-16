@@ -7,22 +7,22 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'Do I Need a Reinstatement Cost Assessment?',
-  description: 'Buying a leasehold flat, renewing your policy or facing an insurer request? Here are the situations where a Reinstatement Cost Assessment is worth getting, and why.',
-  alternates: { canonical: '/do-i-need-a-reinstatement-cost-assessment' },
+  title: 'Do I Need a Rebuild Cost Assessment?',
+  description: 'Buying a leasehold flat, renewing your policy or facing an insurer request? Here are the situations where a Rebuild Cost Assessment is worth getting, and why.',
+  alternates: { canonical: '/do-i-need-a-rebuild-cost-assessment' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://stearlingreinstatement.com/do-i-need-a-reinstatement-cost-assessment',
+    url: 'https://stearlingreinstatement.com/do-i-need-a-rebuild-cost-assessment',
     siteName: 'Stearling Reinstatement',
-    title: 'Do I Need a Reinstatement Cost Assessment?',
-    description: 'The specific situations that mean it is time to get a Reinstatement Cost Assessment - from a new purchase to an insurer request or an underpaid claim.',
-    images: [{ url: '/rca-flats-building.webp', width: 1200, height: 630, alt: 'Do I need a Reinstatement Cost Assessment' }],
+    title: 'Do I Need a Rebuild Cost Assessment?',
+    description: 'The specific situations that mean it is time to get a Rebuild Cost Assessment - from a new purchase to an insurer request or an underpaid claim.',
+    images: [{ url: '/rca-flats-building.webp', width: 1200, height: 630, alt: 'Do I need a Rebuild Cost Assessment' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Do I Need a Reinstatement Cost Assessment?',
-    description: 'The specific situations that mean it is time to get a Reinstatement Cost Assessment.',
+    title: 'Do I Need a Rebuild Cost Assessment?',
+    description: 'The specific situations that mean it is time to get a Rebuild Cost Assessment.',
     images: ['/rca-flats-building.webp'],
   },
 }
@@ -31,12 +31,12 @@ const triggers = [
   {
     icon: 'apartment',
     title: "You're buying a leasehold flat",
-    body: "Before you exchange, check when the block's Reinstatement Cost Assessment was last updated. An outdated or missing assessment is a red flag for future service charge disputes and a sign the building may already be underinsured.",
+    body: "Before you exchange, check when the block's Rebuild Cost Assessment was last updated. An outdated or missing assessment is a red flag for future service charge disputes and a sign the building may already be underinsured.",
   },
   {
     icon: 'policy',
     title: 'Your insurer has requested one',
-    body: "Some insurers ask for an independent Reinstatement Cost Assessment directly - usually for older, listed, non-standard construction, or higher-value properties where they want more certainty than a self-declared figure gives them.",
+    body: "Some insurers ask for an independent Rebuild Cost Assessment directly - usually for older, listed, non-standard construction, or higher-value properties where they want more certainty than a self-declared figure gives them.",
   },
   {
     icon: 'event_repeat',
@@ -46,7 +46,7 @@ const triggers = [
   {
     icon: 'gavel',
     title: 'RICS guidance recommends a reassessment (every 3 years)',
-    body: 'RICS professional guidance recommends a full Reinstatement Cost Assessment at least every three years, with annual index-linked adjustments in between. If you can\'t remember your last one, it\'s overdue.',
+    body: 'RICS professional guidance recommends a full Rebuild Cost Assessment at least every three years, with annual index-linked adjustments in between. If you can\'t remember your last one, it\'s overdue.',
   },
   {
     icon: 'receipt_long',
@@ -61,10 +61,10 @@ const triggers = [
 ]
 
 const faqItems = [
-  { question: "I've never had a Reinstatement Cost Assessment and never had a problem, so do I really need one?", answer: "Most homeowners only discover their sum insured is wrong when they come to make a claim, and by then it's too late to fix. An assessment costs very little compared with the risk of a reduced payout on a genuine loss." },
-  { question: 'Does my mortgage lender require one?', answer: "Most lenders require buildings insurance sufficient for reinstatement cost as a condition of the mortgage, though they don't usually mandate a specific assessment provider. Some do request evidence of a professional assessment, particularly for non-standard properties." },
+  { question: "I've never had a Rebuild Cost Assessment and never had a problem, so do I really need one?", answer: "Most homeowners only discover their sum insured is wrong when they come to make a claim, and by then it's too late to fix. An assessment costs very little compared with the risk of a reduced payout on a genuine loss." },
+  { question: 'Does my mortgage lender require one?', answer: "Most lenders require buildings insurance sufficient for rebuild cost as a condition of the mortgage, though they don't usually mandate a specific assessment provider. Some do request evidence of a professional assessment, particularly for non-standard properties." },
   { question: 'What if I just increase my sum insured by a guess to be safe?', answer: "Overestimating wastes money on premium for cover you can't claim beyond the true rebuild cost. Underestimating leaves you exposed under the average clause. A proper assessment is the only way to get the figure right in either direction." },
-  { question: 'Is there a legal requirement to have one?', answer: "There's no single UK law mandating a Reinstatement Cost Assessment for private homeowners, but your lease (if you own a flat), your mortgage terms, and your insurer's policy conditions may all effectively require an accurate figure - which in practice means a professional assessment." },
+  { question: 'Is there a legal requirement to have one?', answer: "There's no single UK law mandating a Rebuild Cost Assessment for private homeowners, but your lease (if you own a flat), your mortgage terms, and your insurer's policy conditions may all effectively require an accurate figure - which in practice means a professional assessment." },
 ]
 
 export default function DoINeedRCAPage() {
@@ -75,7 +75,7 @@ export default function DoINeedRCAPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Do I Need a Reinstatement Cost Assessment?', item: 'https://stearlingreinstatement.com/do-i-need-a-reinstatement-cost-assessment' },
+          { '@type': 'ListItem', position: 2, name: 'Do I Need a Rebuild Cost Assessment?', item: 'https://stearlingreinstatement.com/do-i-need-a-rebuild-cost-assessment' },
         ],
       },
     ],
@@ -87,11 +87,11 @@ export default function DoINeedRCAPage() {
 
       <GuideHero
         image="/rca-flats-building.webp"
-        imageAlt="Block of flats - do I need a Reinstatement Cost Assessment"
+        imageAlt="Block of flats - do I need a Rebuild Cost Assessment"
         headlineMain="Do I need a"
-        headlineAccent="Reinstatement Cost Assessment?"
+        headlineAccent="Rebuild Cost Assessment?"
         subtitle="If any of the situations below apply to you, the honest answer is almost certainly yes."
-        secondaryHref="/reinstatement-cost-assessment-cost"
+        secondaryHref="/rebuild-cost-assessment-cost"
         secondaryLabel="See Pricing"
       />
 
@@ -126,7 +126,7 @@ export default function DoINeedRCAPage() {
             Still worth a <span className="text-shine">quick sense-check</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            If you're not sure whether your current sum insured is right, start with <Link href="/what-is-a-reinstatement-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">What Is a Reinstatement Cost Assessment?</Link> and <Link href="/reinstatement-cost-vs-market-value" className="text-[#7A1F3D] font-medium hover:underline">Reinstatement Cost vs Market Value</Link> to understand what the figure should actually reflect.
+            If you're not sure whether your current sum insured is right, start with <Link href="/what-is-a-rebuild-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">What Is a Rebuild Cost Assessment?</Link> and <Link href="/rebuild-cost-vs-market-value" className="text-[#7A1F3D] font-medium hover:underline">Rebuild Cost vs Market Value</Link> to understand what the figure should actually reflect.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
             Getting a professional opinion is inexpensive relative to what an underinsured claim can cost you - see <Link href="/what-happens-if-my-property-is-underinsured" className="text-[#7A1F3D] font-medium hover:underline">What Happens If My Property Is Underinsured?</Link> for a worked example.
@@ -136,10 +136,10 @@ export default function DoINeedRCAPage() {
 
       <GuideTrustBand />
 
-      <RelatedGuides currentSlug="/do-i-need-a-reinstatement-cost-assessment" />
+      <RelatedGuides currentSlug="/do-i-need-a-rebuild-cost-assessment" />
 
       <ContactSection heading="Not sure? Ask us, it costs nothing to check." />
-      <FaqSection description="Questions homeowners ask when deciding whether they need a Reinstatement Cost Assessment." items={faqItems} />
+      <FaqSection description="Questions homeowners ask when deciding whether they need a Rebuild Cost Assessment." items={faqItems} />
     </main>
   )
 }

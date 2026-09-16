@@ -10,16 +10,16 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Consistent, Compliant Assessments for Block Managers',
-  description: 'Block managers need declared values that hold up at renewal. Our RICS-regulated Reinstatement Cost Assessments stay consistent across every block you manage.',
-  alternates: { canonical: '/block-managers-reinstatement-cost-assessments' },
+  description: 'Block managers need declared values that hold up at renewal. Our RICS-regulated Rebuild Cost Assessments stay consistent across every block you manage.',
+  alternates: { canonical: '/block-managers-rebuild-cost-assessments' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments',
+    url: 'https://stearlingreinstatement.com/block-managers-rebuild-cost-assessments',
     siteName: 'Stearling Reinstatement',
     title: 'Consistent, Compliant Assessments for Block Managers | Stearling Reinstatement',
-    description: 'Block managers rely on us for consistent, RICS-regulated Reinstatement Cost Assessments across every block, accepted by insurers at renewal without question.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessments for block managers - Stearling Reinstatement' }],
+    description: 'Block managers rely on us for consistent, RICS-regulated Rebuild Cost Assessments across every block, accepted by insurers at renewal without question.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessments for block managers - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -30,11 +30,11 @@ export const metadata = {
 }
 
 const faqItems = [
-  { question: 'As a block manager, am I personally liable for underinsurance if no Reinstatement Cost Assessment has been carried out?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full reinstatement cost, failure to commission a current RICS-regulated Reinstatement Cost Assessment exposes you to a personal negligence claim from leaseholders if a claim shortfall arises. A current Reinstatement Cost Assessment is the documented evidence that you discharged that duty correctly.' },
-  { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated Reinstatement Cost Assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
-  { question: 'How do block managers instruct Reinstatement Cost Assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated Reinstatement Cost Assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
-  { question: 'Can leaseholders or a tribunal challenge a RICS Reinstatement Cost Assessment figure?', answer: 'A RICS-regulated Reinstatement Cost Assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our Reinstatement Cost Assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
-  { question: 'What information does Stearling Reinstatement need to produce a Reinstatement Cost Assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation. The process takes minutes and we can work with estimates at the enquiry stage.' },
+  { question: 'As a block manager, am I personally liable for underinsurance if no Rebuild Cost Assessment has been carried out?', answer: 'Yes. Where your management agreement requires you to arrange buildings insurance at full rebuild cost, failure to commission a current RICS-regulated Rebuild Cost Assessment exposes you to a personal negligence claim from leaseholders if a claim shortfall arises. A current Rebuild Cost Assessment is the documented evidence that you discharged that duty correctly.' },
+  { question: 'Why does an online insurer rebuild calculator not protect a block manager?', answer: 'Online insurer rebuild tools and calculators carry no professional accountability, no RICS regulation and no professional indemnity insurance. In any underinsurance dispute they provide no documented methodology and offer no legal defence. Only a RICS-regulated Rebuild Cost Assessment (rebuild cost assessment) gives you a professionally defensible declared value.' },
+  { question: 'How do block managers instruct Rebuild Cost Assessments for multiple blocks under one instruction?', answer: 'Contact us with your portfolio details. We issue a consolidated Rebuild Cost Assessment quote covering all blocks, with individual RICS-regulated reports per property and a portfolio summary schedule under a single engagement letter no repeat admin, no separate invoices per block.' },
+  { question: 'Can leaseholders or a tribunal challenge a RICS Rebuild Cost Assessment figure?', answer: 'A RICS-regulated Rebuild Cost Assessment is the standard of evidence accepted by UK courts, the First-tier Tribunal (Property Chamber) and the Property Ombudsman. Our Rebuild Cost Assessment reports are produced to that standard and are defensible to that level of scrutiny providing the block manager with a documented, professional position.' },
+  { question: 'What information does Stearling Reinstatement need to produce a Rebuild Cost Assessment for a block?', answer: 'Property address, approximate gross internal floor area, construction type, number of storeys, and any specialist features such as listed status or non-standard construction. We issue a simple instruction form on confirmation. The process takes minutes and we can work with estimates at the enquiry stage.' },
 ]
 
 export default function BlockManagersPage() {
@@ -45,7 +45,7 @@ export default function BlockManagersPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Block Managers', item: 'https://stearlingreinstatement.com/block-managers-reinstatement-cost-assessments' },
+          { '@type': 'ListItem', position: 2, name: 'Block Managers', item: 'https://stearlingreinstatement.com/block-managers-rebuild-cost-assessments' },
         ],
       },
     ],
@@ -56,11 +56,11 @@ export default function BlockManagersPage() {
 
       <GuideHero
         image="/AdobeStock_208633670.jpeg"
-        imageAlt="Block manager Reinstatement Cost Assessment"
+        imageAlt="Block manager Rebuild Cost Assessment"
         badge="Block Managers"
         headlineMain="Compliant figures across"
         headlineAccent="every block you manage."
-        subtitle="As block manager, the obligation to insure at full reinstatement cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge."
+        subtitle="As block manager, the obligation to insure at full rebuild cost sits with you. RICS-regulated assessments across every block you manage - documented, defensible, and accepted at renewal without challenge."
         primaryLabel="Request an Assessment"
         secondaryHref="/services"
         secondaryLabel="Our Services"
@@ -105,7 +105,7 @@ export default function BlockManagersPage() {
             </div>
             <div className="circuit-steps p-7 flex flex-col gap-5">
               {[
-                { year: 'Year 1', title: 'Full RICS Assessment', desc: 'Base reinstatement cost established by a RICS-regulated surveyor. Report issued in broker-ready format.' },
+                { year: 'Year 1', title: 'Full RICS Assessment', desc: 'Base rebuild cost established by a RICS-regulated surveyor. Report issued in broker-ready format.' },
                 { year: 'Year 2', title: 'BCIS-Indexed Update', desc: 'Annual inflation uplift applied using BCIS data. Renewal-ready report issued before your renewal date.' },
                 { year: 'Year 3', title: 'BCIS-Indexed Update', desc: 'Second annual uplift. Three-year RICS compliance maintained - no re-instruction required.' },
               ].map(({ year, title, desc }) => (
@@ -230,11 +230,11 @@ export default function BlockManagersPage() {
 
       <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/block-managers-reinstatement-cost-assessments" background="rgba(122,31,61,0.08)" />
+      <RelatedPages currentSlug="/block-managers-rebuild-cost-assessments" background="rgba(122,31,61,0.08)" />
 
       {/* 6. CONTACT + FAQ */}
       <ContactSection heading="Remove the liability. Instruct today." flip />
-      <FaqSection description="Questions from block management firms about Reinstatement Cost Assessments." items={faqItems} flip />
+      <FaqSection description="Questions from block management firms about Rebuild Cost Assessments." items={faqItems} flip />
 
     </main>
   )

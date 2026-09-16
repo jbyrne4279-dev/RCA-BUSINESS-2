@@ -12,7 +12,7 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Freeholders & Leaseholders: A Defensible Declared Value',
-  description: 'Freeholders and leaseholders need a declared value that stands up if challenged. A specialist Reinstatement Cost Assessment discharges the lease insuring obligation properly.',
+  description: 'Freeholders and leaseholders need a declared value that stands up if challenged. A specialist Rebuild Cost Assessment discharges the lease insuring obligation properly.',
   alternates: { canonical: '/freeholders-leaseholders' },
   openGraph: {
     type: 'website',
@@ -20,24 +20,24 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/freeholders-leaseholders',
     siteName: 'Stearling Reinstatement',
     title: 'Freeholders & Leaseholders: A Defensible Declared Value | Stearling Reinstatement',
-    description: 'Freeholders, RMC directors and leaseholders rely on a specialist Reinstatement Cost Assessment to defend the insuring covenant with a figure that holds up under scrutiny.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment for freeholders and leaseholders - Stearling Reinstatement' }],
+    description: 'Freeholders, RMC directors and leaseholders rely on a specialist Rebuild Cost Assessment to defend the insuring covenant with a figure that holds up under scrutiny.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for freeholders and leaseholders - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Freeholders & Leaseholders: A Defensible Declared Value',
-    description: 'Specialist RICS-regulated Reinstatement Cost Assessments for freeholders and leaseholders, defending the insuring covenant.',
+    description: 'Specialist RICS-regulated Rebuild Cost Assessments for freeholders and leaseholders, defending the insuring covenant.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the reinstatement cost the full cost to rebuild the property from scratch. That is what a Reinstatement Cost Assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20–50%. Confusing the two figures is one of the most common causes of underinsurance.' },
-  { question: 'Who is responsible for commissioning a Reinstatement Cost Assessment?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC or RTM company holds the insuring obligation and the duty to arrange a current Reinstatement Cost Assessment but the practical work is often delegated to a managing agent. Whoever is responsible for setting the declared value carries the personal liability if the figure is wrong and a claim shortfall arises.' },
-  { question: 'What happens if the building is underinsured and there is a claim?', answer: 'The insurer applies the average clause and pays out only in proportion to how much of the true reinstatement cost is covered. If the rebuild cost assessment shows the true reinstatement cost is £1.5m but the building is only insured for £1m, a £300,000 claim pays out just £200,000. The leaseholders and freeholder must fund the gap. A current RICS-regulated Reinstatement Cost Assessment is the primary protection against this.' },
-  { question: 'As a leaseholder, can I commission my own independent Reinstatement Cost Assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent Reinstatement Cost Assessment. The report can be used as evidence in a formal challenge to the declared value, a service charge dispute at the First-tier Tribunal, or a complaint to the Property Ombudsman.' },
-  { question: 'How often should the Reinstatement Cost Assessment be updated?', answer: 'RICS guidance requires a formal Reinstatement Cost Assessment (rebuild cost assessment) at least every three years. Annual BCIS-indexed inflation adjustment between assessments is good practice but does not replace a full reassessment it only adjusts the existing figure without catching structural changes or errors in the original declared value.' },
-  { question: 'What information does Stearling Reinstatement need to provide a Reinstatement Cost Assessment?', answer: 'Just the address, property type, approximate gross internal floor area, and any previous Reinstatement Cost Assessment report if you have one. We can work with estimates at enquiry stage and will let you know if we need anything further before instruction.' },
+  { question: 'What is the difference between the declared value and the sum insured in a buildings insurance policy?', answer: 'The declared value is the rebuild cost the full cost to rebuild the property from scratch. That is what a Rebuild Cost Assessment (rebuild cost assessment) establishes, and it is what the freeholder or managing agent is legally responsible for setting correctly. The sum insured shown on the policy schedule is higher: the insurer adds an inflation buffer of typically 20–50%. Confusing the two figures is one of the most common causes of underinsurance.' },
+  { question: 'Who is responsible for commissioning a Rebuild Cost Assessment?', answer: 'Your lease sets this out. In most blocks the freeholder, RMC or RTM company holds the insuring obligation and the duty to arrange a current Rebuild Cost Assessment but the practical work is often delegated to a managing agent. Whoever is responsible for setting the declared value carries the personal liability if the figure is wrong and a claim shortfall arises.' },
+  { question: 'What happens if the building is underinsured and there is a claim?', answer: 'The insurer applies the average clause and pays out only in proportion to how much of the true rebuild cost is covered. If the rebuild cost assessment shows the true rebuild cost is £1.5m but the building is only insured for £1m, a £300,000 claim pays out just £200,000. The leaseholders and freeholder must fund the gap. A current RICS-regulated Rebuild Cost Assessment is the primary protection against this.' },
+  { question: 'As a leaseholder, can I commission my own independent Rebuild Cost Assessment?', answer: 'Yes. You do not need the freeholder\'s permission to commission an independent Rebuild Cost Assessment. The report can be used as evidence in a formal challenge to the declared value, a service charge dispute at the First-tier Tribunal, or a complaint to the Property Ombudsman.' },
+  { question: 'How often should the Rebuild Cost Assessment be updated?', answer: 'RICS guidance requires a formal Rebuild Cost Assessment (rebuild cost assessment) at least every three years. Annual BCIS-indexed inflation adjustment between assessments is good practice but does not replace a full reassessment it only adjusts the existing figure without catching structural changes or errors in the original declared value.' },
+  { question: 'What information does Stearling Reinstatement need to provide a Rebuild Cost Assessment?', answer: 'Just the address, property type, approximate gross internal floor area, and any previous Rebuild Cost Assessment report if you have one. We can work with estimates at enquiry stage and will let you know if we need anything further before instruction.' },
 ]
 
 export default function FreeholdersLeaseholdersPage() {
@@ -59,7 +59,7 @@ export default function FreeholdersLeaseholdersPage() {
 
       <GuideHero
         image="/AdobeStock_208633670.jpeg"
-        imageAlt="Freeholder Reinstatement Cost Assessment"
+        imageAlt="Freeholder Rebuild Cost Assessment"
         badge="Freeholders & Leaseholders"
         headlineMain="Defend the"
         headlineAccent="insuring covenant."
@@ -73,7 +73,7 @@ export default function FreeholdersLeaseholdersPage() {
         kicker="The Insuring Obligation"
         heading="What freeholders owe leaseholders,"
         headingAccent="and what can go wrong."
-        description="Most leases place the insuring obligation squarely on the freeholder or the residents management company. That doesn't just mean arranging insurance, it means insuring the building for its full reinstatement cost."
+        description="Most leases place the insuring obligation squarely on the freeholder or the residents management company. That doesn't just mean arranging insurance, it means insuring the building for its full rebuild cost."
         highlights={[
           { icon: 'gavel', title: 'Freeholder Liability', desc: 'Setting the figure without a professional assessment exposes the freeholder to personal liability if a claim shortfall arises.' },
           { icon: 'fact_check', title: 'Leaseholder Rights', desc: "Leaseholders who suffer a shortfall can pursue whoever is responsible for the declared value, not the insurer." },
@@ -90,7 +90,7 @@ export default function FreeholdersLeaseholdersPage() {
               What freeholders owe leaseholders - and what can <span className="blue-keyword">go wrong</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance - it is to insure to the full reinstatement cost of the building.
+              Most leases place the insuring obligation squarely on the freeholder or the residents management company. That obligation is not simply to arrange insurance - it is to insure to the full rebuild cost of the building.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed">
               Setting the figure without a professional assessment exposes the freeholder to personal liability if an underinsured claim arises. Leaseholders who suffer a shortfall can pursue the party responsible for the declared value, not the insurer.
@@ -146,7 +146,7 @@ export default function FreeholdersLeaseholdersPage() {
               How to challenge an <span className="blue-keyword">inadequate sum insured</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Leaseholders do not need the freeholder's permission to commission their own independent Reinstatement Cost Assessment. The report provides a factual basis for raising a formal concern with the freeholder or managing agent.
+              Leaseholders do not need the freeholder's permission to commission their own independent Rebuild Cost Assessment. The report provides a factual basis for raising a formal concern with the freeholder or managing agent.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
               If the matter is not resolved, the assessment can be submitted as evidence in a service charge dispute at the First-tier Tribunal (Property Chamber). Tribunal panels give weight to RICS-regulated figures over unsubstantiated schedules.
@@ -218,7 +218,7 @@ export default function FreeholdersLeaseholdersPage() {
       <RelatedPages currentSlug="/freeholders-leaseholders" />
 
       <ContactSection heading="Speak to a specialist about your declared value." />
-      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about Reinstatement Cost Assessments and buildings insurance." items={faqItems} />
+      <FaqSection description="Common questions from freeholders, RMC directors and leaseholders about Rebuild Cost Assessments and buildings insurance." items={faqItems} />
     </main>
   )
 }

@@ -65,7 +65,7 @@ const UNIT_COUNTS = [
 
 const SERVICE_INFO = {
   desktop: {
-    label: 'Desktop Reinstatement Cost Assessment',
+    label: 'Desktop Rebuild Cost Assessment',
     desc: 'BCIS-indexed rebuild cost modelling, delivered within 24 hours. No site visit required.',
   },
   onsite: {
@@ -73,7 +73,7 @@ const SERVICE_INFO = {
     desc: 'A RICS surveyor attends in person for full measurement and construction analysis - required for listed and heritage buildings.',
   },
   '3year': {
-    label: '3-Year Reinstatement Cost Assessment Plan',
+    label: '3-Year Rebuild Cost Assessment Plan',
     desc: 'One instruction covers three years of RICS compliance across your portfolio, with annual BCIS-indexed renewal reports.',
   },
 }
@@ -81,7 +81,7 @@ const SERVICE_INFO = {
 const STEPS = [
   { key: 'propertyType', question: 'What type of property needs insuring?', options: PROPERTY_TYPES },
   { key: 'role', question: 'What is your role?', options: ROLES },
-  { key: 'lastAssessed', question: 'When was the last Reinstatement Cost Assessment carried out?', options: LAST_ASSESSED },
+  { key: 'lastAssessed', question: 'When was the last Rebuild Cost Assessment carried out?', options: LAST_ASSESSED },
   { key: 'units', question: 'How many properties or units does this cover?', options: UNIT_COUNTS },
 ]
 

@@ -4,16 +4,16 @@ const items = [
   { label: 'Managing Agents',    href: '/managing-agents-insurance-valuations' },
   { label: 'RTM Companies',      href: '/managing-agents-insurance-valuations' },
   { label: 'Freeholders',        href: '/freeholders-leaseholders' },
-  { label: 'Block Managers',     href: '/block-managers-reinstatement-cost-assessments' },
-  { label: 'Portfolio Landlords', href: '/portfolio-reinstatement-assessments' },
+  { label: 'Block Managers',     href: '/block-managers-rebuild-cost-assessments' },
+  { label: 'Portfolio Landlords', href: '/portfolio-rebuild-assessments' },
 ]
 
 const homeownerItems = [
-  { label: 'First-Time Buyers',   href: '/do-i-need-a-reinstatement-cost-assessment' },
-  { label: 'Homeowners',          href: '/what-is-a-reinstatement-cost-assessment' },
+  { label: 'First-Time Buyers',   href: '/do-i-need-a-rebuild-cost-assessment' },
+  { label: 'Homeowners',          href: '/what-is-a-rebuild-cost-assessment' },
   { label: 'Leasehold Flat Owners', href: '/freeholders-leaseholders' },
   { label: 'Freeholders',         href: '/freeholders-leaseholders' },
-  { label: 'Property Owners',     href: '/reinstatement-cost-assessment-cost' },
+  { label: 'Property Owners',     href: '/rebuild-cost-assessment-cost' },
 ]
 
 export default function TrustStrip({ variant = 'professional' }) {

@@ -26,7 +26,7 @@ const IcoShield = () => (
 )
 
 export const metadata = {
-  title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans',
+  title: 'Desktop, On-Site & 3-Year Rebuild Cost Assessment Plans',
   description: 'Choose the assessment that fits your property: a desktop rebuild cost assessment, an on-site survey, or a 3-year plan with annual BCIS-indexed renewal reports.',
   alternates: { canonical: '/services' },
   openGraph: {
@@ -34,25 +34,25 @@ export const metadata = {
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/services',
     siteName: 'Stearling Reinstatement',
-    title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans | Stearling Reinstatement',
-    description: 'Desktop assessments, on-site surveys and 3-year protection plans - RICS-regulated Reinstatement Cost Assessments for UK residential and commercial property.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment services - Stearling Reinstatement' }],
+    title: 'Desktop, On-Site & 3-Year Rebuild Cost Assessment Plans | Stearling Reinstatement',
+    description: 'Desktop assessments, on-site surveys and 3-year protection plans - RICS-regulated Rebuild Cost Assessments for UK residential and commercial property.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment services - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Desktop, On-Site & 3-Year Reinstatement Cost Assessment Plans',
-    description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated Reinstatement Cost Assessments for UK property.',
+    title: 'Desktop, On-Site & 3-Year Rebuild Cost Assessment Plans',
+    description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated Rebuild Cost Assessments for UK property.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Which Reinstatement Cost Assessment service is right for my property?', answer: 'A desktop Reinstatement Cost Assessment covers most standard residential and commercial properties and is delivered within 24 hours. An on-site rebuild cost assessment is required for listed buildings, non-standard construction and high-value or complex assets. If you manage multiple properties or need ongoing RICS compliance, the 3-Year Protection Plan provides a full Reinstatement Cost Assessment in year one, with annual BCIS-indexed renewal reports before each renewal date. Contact us and we will recommend the right service.' },
-  { question: 'How quickly will I receive my Reinstatement Cost Assessment report?', answer: 'Desktop Reinstatement Cost Assessments are delivered within 24 hours of instruction for standard residential and commercial properties. On-site rebuild cost assessment programmes are confirmed and scheduled on instruction contact us to discuss your timeline.' },
-  { question: 'Are your Reinstatement Cost Assessment reports accepted by all UK insurers?', answer: 'Yes. Every Reinstatement Cost Assessment and rebuild cost assessment we produce is RICS-aligned and broker-ready, accepted across the UK insurance market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect.' },
-  { question: 'Do you carry out Reinstatement Cost Assessments for listed and heritage buildings?', answer: 'Yes. Our on-site Reinstatement Cost Assessment service covers all listed building categories Grade I, Grade II* and Grade II. Listed properties cannot be assessed by desktop: they require physical inspection by a specialist surveyor to capture heritage materials, conservation consent costs, specialist trades and extended programme costs that generic rebuild cost tools cannot account for.' },
-  { question: 'Can you provide Reinstatement Cost Assessments for a portfolio of properties under one instruction?', answer: 'Yes. We produce individual RICS-regulated Reinstatement Cost Assessment reports per property with a consolidated portfolio summary schedule, all under a single engagement letter. Under the 3-Year Protection Plan, annual BCIS-indexed rebuild cost updates are delivered across the entire portfolio before each renewal no re-instructing required.' },
-  { question: 'What does a RICS Reinstatement Cost Assessment include?', answer: 'A full Reinstatement Cost Assessment covers demolition and site clearance, structure, external fabric, internal finishes, communal areas, lifts and services, professional fees, statutory fees (planning, Building Regulations, party wall), and VAT where applicable. The report documents the declared value, the methodology, all key assumptions, and the date a reassessment is due.' },
+  { question: 'Which Rebuild Cost Assessment service is right for my property?', answer: 'A desktop Rebuild Cost Assessment covers most standard residential and commercial properties and is delivered within 24 hours. An on-site rebuild cost assessment is required for listed buildings, non-standard construction and high-value or complex assets. If you manage multiple properties or need ongoing RICS compliance, the 3-Year Protection Plan provides a full Rebuild Cost Assessment in year one, with annual BCIS-indexed renewal reports before each renewal date. Contact us and we will recommend the right service.' },
+  { question: 'How quickly will I receive my Rebuild Cost Assessment report?', answer: 'Desktop Rebuild Cost Assessments are delivered within 24 hours of instruction for standard residential and commercial properties. On-site rebuild cost assessment programmes are confirmed and scheduled on instruction contact us to discuss your timeline.' },
+  { question: 'Are your Rebuild Cost Assessment reports accepted by all UK insurers?', answer: 'Yes. Every Rebuild Cost Assessment and rebuild cost assessment we produce is RICS-aligned and broker-ready, accepted across the UK insurance market without amendment. Each report documents the declared value, methodology, assumptions and review date in the format brokers and loss adjusters expect.' },
+  { question: 'Do you carry out Rebuild Cost Assessments for listed and heritage buildings?', answer: 'Yes. Our on-site Rebuild Cost Assessment service covers all listed building categories Grade I, Grade II* and Grade II. Listed properties cannot be assessed by desktop: they require physical inspection by a specialist surveyor to capture heritage materials, conservation consent costs, specialist trades and extended programme costs that generic rebuild cost tools cannot account for.' },
+  { question: 'Can you provide Rebuild Cost Assessments for a portfolio of properties under one instruction?', answer: 'Yes. We produce individual RICS-regulated Rebuild Cost Assessment reports per property with a consolidated portfolio summary schedule, all under a single engagement letter. Under the 3-Year Protection Plan, annual BCIS-indexed rebuild cost updates are delivered across the entire portfolio before each renewal no re-instructing required.' },
+  { question: 'What does a RICS Rebuild Cost Assessment include?', answer: 'A full Rebuild Cost Assessment covers demolition and site clearance, structure, external fabric, internal finishes, communal areas, lifts and services, professional fees, statutory fees (planning, Building Regulations, party wall), and VAT where applicable. The report documents the declared value, the methodology, all key assumptions, and the date a reassessment is due.' },
 ]
 
 export default function ServicesPage() {
@@ -69,15 +69,15 @@ export default function ServicesPage() {
       {
         '@type': 'Service',
         provider: { '@id': 'https://stearlingreinstatement.com/#organization' },
-        name: 'Reinstatement Cost Assessment',
-        serviceType: 'RICS Reinstatement Cost Assessment',
+        name: 'Rebuild Cost Assessment',
+        serviceType: 'RICS Rebuild Cost Assessment',
         areaServed: { '@type': 'Country', name: 'United Kingdom' },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
           name: 'Assessment Services',
           itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Desktop Reinstatement Cost Assessment', description: 'BCIS-indexed rebuild cost modelling delivered within 24 hours.' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'On-Site Reinstatement Cost Survey', description: 'RICS surveyor attends in person. Required for listed and complex buildings.' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Desktop Rebuild Cost Assessment', description: 'BCIS-indexed rebuild cost modelling delivered within 24 hours.' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'On-Site Rebuild Cost Survey', description: 'RICS surveyor attends in person. Required for listed and complex buildings.' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '3-Year Protection Plan', description: 'Three years of RICS compliance under a single instruction.' } },
           ],
         },
@@ -90,7 +90,7 @@ export default function ServicesPage() {
 
       <GuideHero
         image="/AdobeStock_158046067.jpeg"
-        imageAlt="RICS Reinstatement Cost Assessment building survey"
+        imageAlt="RICS Rebuild Cost Assessment building survey"
         badge="Our Services"
         headlineMain="Three tiers,"
         headlineAccent="one specialist firm."
@@ -103,7 +103,7 @@ export default function ServicesPage() {
       <GuideOverview
         kicker="Why It Matters"
         heading="Generic tools cannot replace a"
-        headingAccent="RICS Reinstatement Cost Assessment."
+        headingAccent="RICS Rebuild Cost Assessment."
         description="UK construction costs rose over 30% between 2020 and 2024 - any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer."
         highlights={[
           { icon: 'home_work', title: 'Desktop Assessment', desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours, no site visit required.' },
@@ -118,7 +118,7 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Generic tools cannot replace a <span className="blue-keyword">RICS Reinstatement Cost Assessment</span>.
+              Generic tools cannot replace a <span className="blue-keyword">RICS Rebuild Cost Assessment</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               UK construction costs rose over 30% between 2020 and 2024 - any figure not formally reviewed in that period is materially inaccurate. Only a RICS-aligned assessment is defensible with your insurer.
@@ -130,7 +130,7 @@ export default function ServicesPage() {
               { label: 'Online calculators', sub: 'No accountability. Not defensible in a dispute.', ok: false },
               { label: 'Index-linking alone', sub: 'Adjusts the figure. Does not replace a review.', ok: false },
               { label: 'Old or inherited valuations', sub: 'Stale figures create underinsurance risk.', ok: false },
-              { label: 'RICS-aligned Reinstatement Cost Assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
+              { label: 'RICS-aligned Rebuild Cost Assessment', sub: 'Specialist, documented. Accepted by every UK insurer.', ok: true },
             ].map(({ label, sub, ok }) => (
               <div key={label} className={`flex gap-3 items-start p-4 rounded-xl border ${ok ? 'border-[#16a34a]' : 'border-[#f87171]'}`} style={ok ? {background:'rgba(22,163,74,0.07)'} : {background:'rgba(239,68,68,0.05)'}}>
                 <span className={`shrink-0 mt-0.5 ${ok ? 'text-[#16a34a]' : 'text-[#d93025]'}`}>
@@ -164,7 +164,7 @@ export default function ServicesPage() {
               Every assessment we deliver is a formal RICS-compliant report the recognised standard accepted by all UK insurers, loss adjusters and courts. It documents the correct sum insured, the methodology used, and the review date, creating a defensible paper trail that protects you at every stage.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
-              Under UK insurance law, the obligation to insure at full reinstatement cost falls on the building owner or managing agent. A professionally prepared RICS report is the evidence that you discharged that duty it limits personal liability if a claim arises and prevents insurers from applying the average clause to reduce a payout.
+              Under UK insurance law, the obligation to insure at full rebuild cost falls on the building owner or managing agent. A professionally prepared RICS report is the evidence that you discharged that duty it limits personal liability if a claim arises and prevents insurers from applying the average clause to reduce a payout.
             </p>
             <Link href="/contact#contact-form" className="btn-shine">Get Your RICS Report</Link>
           </div>
@@ -202,10 +202,10 @@ export default function ServicesPage() {
           <div>
             <span className="badge badge-blue mb-5">Coverage</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Reinstatement Cost Assessments <span className="blue-keyword">across the UK</span>.
+              Rebuild Cost Assessments <span className="blue-keyword">across the UK</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Our desktop Reinstatement Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
+              Our desktop Rebuild Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Wherever the property sits, every report is BCIS-indexed to local rebuild costs and accepted by all UK insurers.

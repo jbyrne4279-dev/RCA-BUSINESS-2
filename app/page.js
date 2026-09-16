@@ -7,24 +7,24 @@ import GuideOverview from './components/GuideOverview'
 
 export const metadata = {
   title: "Is Your Home Insured for the Right Amount? | Stearling Reinstatement",
-  description: 'Make sure your home is insured for the right amount. RICS-regulated Reinstatement Cost Assessments for homeowners, first-time buyers and property owners, delivered in 24 hours.',
-  keywords: ['Reinstatement Cost Assessment', 'reinstatement cost assessment for homeowners', 'what is a reinstatement cost assessment', 'reinstatement cost vs market value', 'am I underinsured', 'rebuild cost assessment', 'Reinstatement Cost Assessment UK', 'rebuild cost assessment UK', 'building insurance valuation UK', 'buildings insurance reinstatement cost', 'sum insured for my house', 'reinstatement cost assessment London', 'reinstatement cost assessment Birmingham', 'reinstatement cost assessment Midlands', 'reinstatement cost assessment Sussex'],
+  description: 'Make sure your home is insured for the right amount. RICS-regulated Rebuild Cost Assessments for homeowners, first-time buyers and property owners, delivered in 24 hours.',
+  keywords: ['Rebuild Cost Assessment', 'rebuild cost assessment for homeowners', 'what is a rebuild cost assessment', 'rebuild cost vs market value', 'am I underinsured', 'rebuild cost assessment', 'Rebuild Cost Assessment UK', 'rebuild cost assessment UK', 'building insurance valuation UK', 'buildings insurance rebuild cost', 'sum insured for my house', 'rebuild cost assessment London', 'rebuild cost assessment Birmingham', 'rebuild cost assessment Midlands', 'rebuild cost assessment Sussex'],
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Is Your Home Insured for the Right Amount? | RICS-Regulated Reinstatement Cost Assessment | Stearling Reinstatement',
-    description: '80% of UK homes are underinsured. Make sure your new home is insured for the right amount with a RICS-regulated Reinstatement Cost Assessment, delivered in 24 hours.',
+    title: 'Is Your Home Insured for the Right Amount? | RICS-Regulated Rebuild Cost Assessment | Stearling Reinstatement',
+    description: '80% of UK homes are underinsured. Make sure your new home is insured for the right amount with a RICS-regulated Rebuild Cost Assessment, delivered in 24 hours.',
     url: 'https://stearlingreinstatement.com',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Reinstatement Cost Assessment for homeowners' }],
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Rebuild Cost Assessment for homeowners' }],
   },
 }
 
 const faqItems = [
-  { question: 'What is a Reinstatement Cost Assessment?', answer: 'A Reinstatement Cost Assessment (RCA) also called a rebuild cost assessment is a formal RICS-regulated calculation of the full cost to rebuild your home from scratch, used to set your buildings insurance sum insured. It covers demolition and site clearance, structure, finishes, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current Reinstatement Cost Assessment produces a figure your insurer will rely on if you ever need to claim.' },
-  { question: 'How is reinstatement cost different from market value?', answer: 'Market value is what a buyer would pay on the open market. Reinstatement cost or rebuild cost is what it costs to reconstruct the building from cleared ground, excluding the land. In many locations they diverge significantly: a central-London flat may be worth £800,000 on the market but cost £350,000 to rebuild. Insuring at market value wastes money on excess premium; insuring below true reinstatement cost triggers the average clause and cuts every claim payout.' },
-  { question: 'Do I need a Reinstatement Cost Assessment as a first-time buyer?', answer: "It's one of the most overlooked steps after buying. Your mortgage lender requires buildings insurance sufficient for full reinstatement cost, and the sum insured suggested by comparison sites or a previous owner's policy is often wrong. Getting an accurate figure before you insure protects you from day one." },
+  { question: 'What is a Rebuild Cost Assessment?', answer: 'A Rebuild Cost Assessment (RCA) also called a rebuild cost assessment is a formal RICS-regulated calculation of the full cost to rebuild your home from scratch, used to set your buildings insurance sum insured. It covers demolition and site clearance, structure, finishes, professional fees, statutory fees, and VAT where applicable. It is not the same as market value, and only a current Rebuild Cost Assessment produces a figure your insurer will rely on if you ever need to claim.' },
+  { question: 'How is rebuild cost different from market value?', answer: 'Market value is what a buyer would pay on the open market. Rebuild cost or rebuild cost is what it costs to reconstruct the building from cleared ground, excluding the land. In many locations they diverge significantly: a central-London flat may be worth £800,000 on the market but cost £350,000 to rebuild. Insuring at market value wastes money on excess premium; insuring below true rebuild cost triggers the average clause and cuts every claim payout.' },
+  { question: 'Do I need a Rebuild Cost Assessment as a first-time buyer?', answer: "It's one of the most overlooked steps after buying. Your mortgage lender requires buildings insurance sufficient for full rebuild cost, and the sum insured suggested by comparison sites or a previous owner's policy is often wrong. Getting an accurate figure before you insure protects you from day one." },
   { question: 'What happens if my home is underinsured?', answer: "The insurer applies the condition of average and reduces every claim payout proportionally - not just on a total loss. If your home's true rebuild cost is £400,000 but you're insured for £300,000, a £20,000 claim pays out only £15,000. You'd have to find the remaining £5,000 yourself." },
-  { question: 'How often should a Reinstatement Cost Assessment be updated?', answer: 'RICS guidance recommends a formal reassessment at least every three years, with annual BCIS-indexed inflation adjustment in between. If you\'ve extended, converted or significantly renovated your home, or can\'t remember your last assessment, it\'s worth updating before your next renewal.' },
-  { question: 'How much does a Reinstatement Cost Assessment cost?', answer: "It depends on your property's size, type and whether a desktop or on-site assessment is needed. Tell us about your home and we'll confirm a fixed price before you commit to anything - see our full pricing guide for homeowners." },
+  { question: 'How often should a Rebuild Cost Assessment be updated?', answer: 'RICS guidance recommends a formal reassessment at least every three years, with annual BCIS-indexed inflation adjustment in between. If you\'ve extended, converted or significantly renovated your home, or can\'t remember your last assessment, it\'s worth updating before your next renewal.' },
+  { question: 'How much does a Rebuild Cost Assessment cost?', answer: "It depends on your property's size, type and whether a desktop or on-site assessment is needed. Tell us about your home and we'll confirm a fixed price before you commit to anything - see our full pricing guide for homeowners." },
 ]
 
 export default function HomePage() {
@@ -35,10 +35,10 @@ export default function HomePage() {
         '@type': 'WebPage',
         '@id': 'https://stearlingreinstatement.com/#webpage',
         url: 'https://stearlingreinstatement.com/',
-        name: 'Reinstatement Cost Assessment for Homeowners | Stearling Reinstatement',
+        name: 'Rebuild Cost Assessment for Homeowners | Stearling Reinstatement',
         isPartOf: { '@id': 'https://stearlingreinstatement.com/#website' },
         about: { '@id': 'https://stearlingreinstatement.com/#organization' },
-        description: 'RICS-regulated Reinstatement Cost Assessments for homeowners, first-time buyers and property owners across the UK.',
+        description: 'RICS-regulated Rebuild Cost Assessments for homeowners, first-time buyers and property owners across the UK.',
         inLanguage: 'en-GB',
       },
     ],
@@ -52,12 +52,12 @@ export default function HomePage() {
       <GuideOverview
         kicker="Homeowner Guide"
         heading="What is a"
-        headingAccent="Reinstatement Cost Assessment?"
+        headingAccent="Rebuild Cost Assessment?"
         description="In plain English: it's a RICS-regulated calculation of what it would actually cost to rebuild your home from scratch, not what you paid for it and not what it's worth on the market - and it's the figure your buildings insurance sum insured should be based on, because your insurer will only ever pay out up to that number. Get it wrong, and you could end up covering thousands of pounds of the rebuild yourself, even after years of paying your premiums."
       />
 
       <div className="text-center -mt-8 mb-4 md:mb-8">
-        <Link href="/what-is-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+        <Link href="/what-is-a-rebuild-cost-assessment" className="link-arrow cta-flash">
           Read the full homeowner guide
         </Link>
       </div>
@@ -89,7 +89,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link href="/do-i-need-a-reinstatement-cost-assessment" className="link-arrow cta-flash">
+            <Link href="/do-i-need-a-rebuild-cost-assessment" className="link-arrow cta-flash">
               See all six situations explained in full
             </Link>
           </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
             Free rebuild cost calculators and insurer-supplied estimators use generic per-square-metre averages. They don&apos;t account for your property&apos;s actual construction, specification or location - and they carry no RICS accountability if the figure is ever questioned after a claim.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed mb-6">
-            A RICS Reinstatement Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification.
+            A RICS Rebuild Cost Assessment is different: it&apos;s a regulated valuation, carried out by a chartered surveyor, indexed to BCIS build cost data for your property&apos;s actual location and specification.
           </p>
           <div
             className="fade-pulse flex items-start gap-4 rounded-2xl px-6 py-5 mb-6"
@@ -123,8 +123,8 @@ export default function HomePage() {
               An online calculator figure offers no defence. A RICS-regulated assessment does.
             </p>
           </div>
-          <Link href="/reinstatement-cost-vs-market-value" className="link-arrow cta-flash">
-            Reinstatement cost vs market value, explained
+          <Link href="/rebuild-cost-vs-market-value" className="link-arrow cta-flash">
+            Rebuild cost vs market value, explained
           </Link>
         </div>
       </section>
@@ -141,10 +141,10 @@ export default function HomePage() {
             {[
               {
                 img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
-                imgAlt: 'Desktop Reinstatement Cost Assessment service',
+                imgAlt: 'Desktop Rebuild Cost Assessment service',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
-                title: 'Desktop Reinstatement Cost Assessment',
+                title: 'Desktop Rebuild Cost Assessment',
                 desc: 'BCIS-indexed rebuild cost modelling delivered within 24 hours. No site visit required. Ideal for standard houses, bungalows and flats.',
                 features: [
                   'RICS-regulated, broker-ready report',
@@ -158,7 +158,7 @@ export default function HomePage() {
               },
               {
                 img: '/AdobeStock_270155966.jpeg',
-                imgAlt: 'RICS surveyor conducting an on-site Reinstatement Cost Assessment',
+                imgAlt: 'RICS surveyor conducting an on-site Rebuild Cost Assessment',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
                 title: 'On-Site Rebuild Cost Assessment',
@@ -175,12 +175,12 @@ export default function HomePage() {
                 note: 'Managing more than one property? Ask about the 3-Year Protection Plan.',
               },
               {
-                img: '/continual-reinstatement-cost-assessment-plan.png',
-                imgAlt: '3-Year RICS Reinstatement Cost Assessment protection plan',
+                img: '/continual-rebuild-cost-assessment-plan.png',
+                imgAlt: '3-Year RICS Rebuild Cost Assessment protection plan',
                 id: 'three-year-protection',
                 badge: '03. Recommended',
-                title: '3-Year Reinstatement Cost Assessment Plan',
-                desc: 'One instruction covers three years of RICS compliance. Full Reinstatement Cost Assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
+                title: '3-Year Rebuild Cost Assessment Plan',
+                desc: 'One instruction covers three years of RICS compliance. Full Rebuild Cost Assessment in year one, annual BCIS-indexed renewal reports delivered before each renewal date.',
                 features: [
                   'RICS-regulated, broker-ready report',
                   'Full assessment year one, indexed updates years two & three',
@@ -261,7 +261,7 @@ export default function HomePage() {
             After a loss, insurers pay out based on rebuild cost, not market value and not what you paid for the property. Get the sum insured wrong, and the insurer applies the average clause, cutting your payout in proportion to the shortfall on every claim, not just a total loss.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed mb-8">
-            A RICS-regulated Reinstatement Cost Assessment is the only reliable basis for your buildings sum insured.
+            A RICS-regulated Rebuild Cost Assessment is the only reliable basis for your buildings sum insured.
           </p>
           <Link href="/what-happens-if-my-property-is-underinsured" className="btn-shine inline-block">
             See what underinsurance actually costs
@@ -275,10 +275,10 @@ export default function HomePage() {
           <div>
             <span className="badge badge-blue mb-5">Coverage</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Reinstatement Cost Assessments <span className="blue-keyword">across the UK</span>.
+              Rebuild Cost Assessments <span className="blue-keyword">across the UK</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-4">
-              Our desktop Reinstatement Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
+              Our desktop Rebuild Cost Assessment is available for any property nationwide, typically delivered within 24 hours. On-site rebuild cost surveys are carried out across England, Scotland, Wales and Northern Ireland - including established demand in London, the Midlands, Birmingham and Sussex.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Wherever the property sits, every report is BCIS-indexed to local rebuild costs and accepted by all UK insurers.
@@ -311,7 +311,7 @@ export default function HomePage() {
               The buildings <span className="blue-keyword">we cover</span>
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed">
-              From a Grade II listed cottage with a modern extension to a purpose-built block of flats, we assess every type of property. Whatever the age, construction or use, we produce a RICS-regulated reinstatement cost figure - we cover all building types.
+              From a Grade II listed cottage with a modern extension to a purpose-built block of flats, we assess every type of property. Whatever the age, construction or use, we produce a RICS-regulated rebuild cost figure - we cover all building types.
             </p>
           </div>
 
@@ -348,7 +348,7 @@ export default function HomePage() {
       </section>
 
       {/* 9. CONTACT FORM - the conversion goal */}
-      <ContactSection heading="Get your Reinstatement Cost Assessment." background="rgba(122,31,61,0.08)" />
+      <ContactSection heading="Get your Rebuild Cost Assessment." background="rgba(122,31,61,0.08)" />
 
       {/* 5b. HOMEOWNER GUIDES - quick links to every guide page */}
       <section className="py-12 md:py-24 px-6 md:px-10 border-t border-[#e2e8f0]" style={{background:'#ffffff'}}>
@@ -360,10 +360,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-reinstatement-cost-assessment' },
-              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/reinstatement-cost-vs-market-value' },
-              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-reinstatement-cost-assessment' },
-              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/reinstatement-cost-assessment-cost' },
+              { title: 'What Is an RCA?', desc: "A plain-English explainer - what it is, and why it's not the same as market value.", href: '/what-is-a-rebuild-cost-assessment' },
+              { title: 'RCA vs Market Value', desc: 'A clear, visual comparison of the two figures - and why they diverge.', href: '/rebuild-cost-vs-market-value' },
+              { title: 'Do I Need One?', desc: 'The specific situations that mean it\'s time to get an assessment.', href: '/do-i-need-a-rebuild-cost-assessment' },
+              { title: 'How Much Does It Cost?', desc: 'What determines price, and how to get a fixed quote.', href: '/rebuild-cost-assessment-cost' },
               { title: "What If I'm Underinsured?", desc: 'The average clause explained, with a worked example.', href: '/what-happens-if-my-property-is-underinsured' },
             ].map(({ title, desc, href }) => (
               <Link
@@ -383,7 +383,7 @@ export default function HomePage() {
 
       {/* 10. FAQ - handle remaining objections, last thing before the footer */}
       <FaqSection
-        description="Straightforward answers to the questions homeowners and property owners ask most about Reinstatement Cost Assessments."
+        description="Straightforward answers to the questions homeowners and property owners ask most about Rebuild Cost Assessments."
         items={faqItems}
         background="rgba(122,31,61,0.08)"
       />

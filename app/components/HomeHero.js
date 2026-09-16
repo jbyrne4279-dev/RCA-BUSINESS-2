@@ -29,15 +29,15 @@ export default function HomeHero() {
   return (
     <>
       <GuideHero
-        image="/reinstatement-cost-assessment-uk.png"
-        imageAlt="Homeowner's Reinstatement Cost Assessment"
+        image="/rebuild-cost-assessment-uk.png"
+        imageAlt="Homeowner's Rebuild Cost Assessment"
         badge="Homeowners"
         headlineMain="Make sure your home is insured"
         headlineAccent="for the right amount."
-        subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Reinstatement Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
+        subtitle="Bought a new home? Renewing your insurance? A RICS-regulated Rebuild Cost Assessment tells you the true cost to rebuild your property - so you're never caught out by a reduced claim payout. Broker-ready reports in 24 hours."
         primaryLabel="Get My Assessment"
         onPrimaryClick={openQuiz}
-        secondaryHref="/what-is-a-reinstatement-cost-assessment"
+        secondaryHref="/what-is-a-rebuild-cost-assessment"
         secondaryLabel="What Is an RCA?"
       />
 

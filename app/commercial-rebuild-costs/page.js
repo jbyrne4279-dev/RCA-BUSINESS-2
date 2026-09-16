@@ -9,31 +9,31 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover',
-  description: 'Offices, retail units and industrial premises all need an accurate rebuild figure. Our RICS-regulated Reinstatement Cost Assessment gives commercial landlords a defensible number.',
-  alternates: { canonical: '/commercial-reinstatement-costs' },
+  description: 'Offices, retail units and industrial premises all need an accurate rebuild figure. Our RICS-regulated Rebuild Cost Assessment gives commercial landlords a defensible number.',
+  alternates: { canonical: '/commercial-rebuild-costs' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://stearlingreinstatement.com/commercial-reinstatement-costs',
+    url: 'https://stearlingreinstatement.com/commercial-rebuild-costs',
     siteName: 'Stearling Reinstatement',
     title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover | Stearling Reinstatement',
-    description: 'From offices to industrial units, our RICS-regulated Reinstatement Cost Assessment gives commercial property owners a broker-ready figure accepted by all UK insurers.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Commercial Reinstatement Cost Assessment - Stearling Reinstatement' }],
+    description: 'From offices to industrial units, our RICS-regulated Rebuild Cost Assessment gives commercial property owners a broker-ready figure accepted by all UK insurers.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Commercial Rebuild Cost Assessment - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover',
-    description: 'RICS-regulated Reinstatement Cost Assessments for offices, retail, industrial and mixed-use commercial property, broker-ready in 24 hours.',
+    description: 'RICS-regulated Rebuild Cost Assessments for offices, retail, industrial and mixed-use commercial property, broker-ready in 24 hours.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
 
 const faqItems = [
-  { question: 'Why does a commercial property need a RICS Reinstatement Cost Assessment rather than an online calculator?', answer: 'Online calculators cannot account for tenant fitout, specialist plant, complex M&E services, or bespoke construction all of which form part of the commercial reinstatement cost. A RICS-regulated Reinstatement Cost Assessment captures the full rebuild cost specific to your building. Any shortfall at claim triggers the average clause, and insurers apply it without exception.' },
-  { question: 'How often should a commercial Reinstatement Cost Assessment be updated?', answer: 'A formal RICS rebuild cost assessment is required at least every three years, with annual BCIS-indexed adjustment in between. UK construction costs rose over 30% between 2020 and 2024 any commercial Reinstatement Cost Assessment not formally reviewed in that period is likely to be materially inaccurate. Our 3-Year Protection Plan handles both requirements under a single instruction.' },
-  { question: 'Do you carry out Reinstatement Cost Assessments for listed commercial buildings?', answer: 'Yes. Our on-site Reinstatement Cost Assessment service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises. Listed commercial properties require physical inspection a desktop rebuild cost assessment cannot capture heritage materials, conservation consent costs or specialist trades.' },
-  { question: 'Can you provide a Reinstatement Cost Assessment for a mixed-use development?', answer: 'Yes. Mixed-use developments containing both residential and commercial elements are assessed under a single Reinstatement Cost Assessment instruction, with the declared value output separated by use class for the insurer. This ensures the commercial reinstatement cost and the residential rebuild cost are each correctly declared.' },
-  { question: 'Are your commercial Reinstatement Cost Assessment reports accepted by all UK insurers?', answer: 'Yes. Every RICS-regulated Reinstatement Cost Assessment and rebuild cost assessment we produce is accepted without amendment by all UK commercial insurers and brokers. Each report documents the declared value, methodology, key assumptions and review date in the format the market expects.' },
+  { question: 'Why does a commercial property need a RICS Rebuild Cost Assessment rather than an online calculator?', answer: 'Online calculators cannot account for tenant fitout, specialist plant, complex M&E services, or bespoke construction all of which form part of the commercial rebuild cost. A RICS-regulated Rebuild Cost Assessment captures the full rebuild cost specific to your building. Any shortfall at claim triggers the average clause, and insurers apply it without exception.' },
+  { question: 'How often should a commercial Rebuild Cost Assessment be updated?', answer: 'A formal RICS rebuild cost assessment is required at least every three years, with annual BCIS-indexed adjustment in between. UK construction costs rose over 30% between 2020 and 2024 any commercial Rebuild Cost Assessment not formally reviewed in that period is likely to be materially inaccurate. Our 3-Year Protection Plan handles both requirements under a single instruction.' },
+  { question: 'Do you carry out Rebuild Cost Assessments for listed commercial buildings?', answer: 'Yes. Our on-site Rebuild Cost Assessment service covers all listed property categories, including Grade I, Grade II* and Grade II commercial premises. Listed commercial properties require physical inspection a desktop rebuild cost assessment cannot capture heritage materials, conservation consent costs or specialist trades.' },
+  { question: 'Can you provide a Rebuild Cost Assessment for a mixed-use development?', answer: 'Yes. Mixed-use developments containing both residential and commercial elements are assessed under a single Rebuild Cost Assessment instruction, with the declared value output separated by use class for the insurer. This ensures the commercial rebuild cost and the residential rebuild cost are each correctly declared.' },
+  { question: 'Are your commercial Rebuild Cost Assessment reports accepted by all UK insurers?', answer: 'Yes. Every RICS-regulated Rebuild Cost Assessment and rebuild cost assessment we produce is accepted without amendment by all UK commercial insurers and brokers. Each report documents the declared value, methodology, key assumptions and review date in the format the market expects.' },
 ]
 
 export default function CommercialPage() {
@@ -44,7 +44,7 @@ export default function CommercialPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Commercial Reinstatement Costs', item: 'https://stearlingreinstatement.com/commercial-reinstatement-costs' },
+          { '@type': 'ListItem', position: 2, name: 'Commercial Rebuild Costs', item: 'https://stearlingreinstatement.com/commercial-rebuild-costs' },
         ],
       },
     ],
@@ -55,11 +55,11 @@ export default function CommercialPage() {
 
       <GuideHero
         image="/AdobeStock_158046067.jpeg"
-        imageAlt="Commercial Reinstatement Cost Assessment"
+        imageAlt="Commercial Rebuild Cost Assessment"
         badge="Commercial Property"
         headlineMain="Underinsurance starts"
         headlineAccent="with the wrong figure."
-        subtitle="Tenant fitout, specialist plant and non-standard construction make commercial reinstatement costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured."
+        subtitle="Tenant fitout, specialist plant and non-standard construction make commercial rebuild costs uniquely complex - and uniquely easy to understate. A RICS assessment is the only defensible way to establish the correct sum insured."
         primaryLabel="Request an Assessment"
         secondaryHref="/services"
         secondaryLabel="Our Services"
@@ -67,7 +67,7 @@ export default function CommercialPage() {
 
       <GuideOverview
         kicker="The Problem"
-        heading="Why commercial reinstatement is so"
+        heading="Why commercial rebuild is so"
         headingAccent="complex to get right."
         description="Commercial buildings carry hidden cost layers that generic tools ignore entirely. Three drivers account for the majority of commercial underinsurance in the UK."
         highlights={[
@@ -83,7 +83,7 @@ export default function CommercialPage() {
           <div>
             <span className="badge badge-blue mb-4">The Problem</span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#2b0b14] leading-tight mb-5">
-              Why commercial reinstatement is so <span className="blue-keyword">complex to get right</span>.
+              Why commercial rebuild is so <span className="blue-keyword">complex to get right</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-6">
               Commercial buildings carry hidden cost layers that generic tools ignore entirely. Three drivers account for the majority of commercial underinsurance in the UK:
@@ -114,7 +114,7 @@ export default function CommercialPage() {
               { title: 'Online calculators', sub: 'Miss fitout, plant and M&E - wrong for most commercial properties.', ok: false },
               { title: 'Index-linking alone', sub: 'If the base figure was wrong, index-linking compounds the error.', ok: false },
               { title: 'Old or inherited valuations', sub: 'Build costs rose 30%+ since 2020 - pre-pandemic figures mislead.', ok: false },
-              { title: 'RICS Reinstatement Cost Assessment', sub: 'Captures all cost layers. Accepted by all UK insurers. PI-insured and defensible.', ok: true },
+              { title: 'RICS Rebuild Cost Assessment', sub: 'Captures all cost layers. Accepted by all UK insurers. PI-insured and defensible.', ok: true },
             ].map(({ title, sub, ok }) => (
               <div
                 key={title}
@@ -137,7 +137,7 @@ export default function CommercialPage() {
                 </div>
               </div>
             ))}
-            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-reinstatement-assessments" className="link-arrow cta-flash">See our portfolio assessment service ?</Link></p>
+            <p className="text-[#64748b] text-sm pt-2">Own multiple commercial properties? <Link href="/portfolio-rebuild-assessments" className="link-arrow cta-flash">See our portfolio assessment service ?</Link></p>
           </div>
         </div>
       </section>
@@ -177,7 +177,7 @@ export default function CommercialPage() {
               Every commercial property type, <span className="blue-keyword">covered</span>.
             </h2>
             <p className="text-[#64748b] text-base leading-relaxed mb-5">
-              From single-tenant industrial units to multi-let city centre offices, our RICS-regulated assessors have the sector knowledge to establish an accurate reinstatement cost - whatever the asset class.
+              From single-tenant industrial units to multi-let city centre offices, our RICS-regulated assessors have the sector knowledge to establish an accurate rebuild cost - whatever the asset class.
             </p>
             <p className="text-[#64748b] text-base leading-relaxed mb-8">
               Mixed-use developments are assessed under a single instruction, with the output separated by use class so your insurer has clean, compliant figures for each element.
@@ -247,10 +247,10 @@ export default function CommercialPage() {
 
       <GuideTrustBand background="#ffffff" />
 
-      <RelatedPages currentSlug="/commercial-reinstatement-costs" background="rgba(122,31,61,0.08)" />
+      <RelatedPages currentSlug="/commercial-rebuild-costs" background="rgba(122,31,61,0.08)" />
 
       <ContactSection heading="Ready to protect your commercial asset? Instruct today." flip />
-      <FaqSection description="Direct answers to the most common questions about commercial Reinstatement Cost Assessments." items={faqItems} flip />
+      <FaqSection description="Direct answers to the most common questions about commercial Rebuild Cost Assessments." items={faqItems} flip />
     </main>
   )
 }

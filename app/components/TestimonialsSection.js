@@ -105,7 +105,7 @@ const reviews = [
     name: 'Rachel B.',
     role: 'Insurance Broker, Birmingham',
     photo: 'https://randomuser.me/api/portraits/women/55.jpg',
-    quote: 'The RICS certificate meant our underwriters accepted the sum insured without question. Great to have a reliable partner for reinstatement assessments.',
+    quote: 'The RICS certificate meant our underwriters accepted the sum insured without question. Great to have a reliable partner for rebuild assessments.',
   },
   {
     name: 'Tom H.',

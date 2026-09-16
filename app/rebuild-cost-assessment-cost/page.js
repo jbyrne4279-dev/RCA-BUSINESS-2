@@ -9,22 +9,22 @@ import ContactSection from '../components/ContactSection'
 import FaqSection from '../components/FaqSection'
 
 export const metadata = {
-  title: 'How Much Does a Reinstatement Cost Assessment Cost?',
-  description: 'What determines the price of a Reinstatement Cost Assessment, the difference between desktop and on-site pricing, and how to get an accurate quote for your property.',
-  alternates: { canonical: '/reinstatement-cost-assessment-cost' },
+  title: 'How Much Does a Rebuild Cost Assessment Cost?',
+  description: 'What determines the price of a Rebuild Cost Assessment, the difference between desktop and on-site pricing, and how to get an accurate quote for your property.',
+  alternates: { canonical: '/rebuild-cost-assessment-cost' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://stearlingreinstatement.com/reinstatement-cost-assessment-cost',
+    url: 'https://stearlingreinstatement.com/rebuild-cost-assessment-cost',
     siteName: 'Stearling Reinstatement',
-    title: 'How Much Does a Reinstatement Cost Assessment Cost?',
-    description: 'What determines the price of a Reinstatement Cost Assessment, and how to get an accurate quote.',
-    images: [{ url: '/rca-heritage-building.webp', width: 1200, height: 630, alt: 'Reinstatement Cost Assessment pricing' }],
+    title: 'How Much Does a Rebuild Cost Assessment Cost?',
+    description: 'What determines the price of a Rebuild Cost Assessment, and how to get an accurate quote.',
+    images: [{ url: '/rca-heritage-building.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessment pricing' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Much Does a Reinstatement Cost Assessment Cost?',
-    description: 'What determines the price of a Reinstatement Cost Assessment.',
+    title: 'How Much Does a Rebuild Cost Assessment Cost?',
+    description: 'What determines the price of a Rebuild Cost Assessment.',
     images: ['/rca-heritage-building.webp'],
   },
 }
@@ -39,7 +39,7 @@ const process = [
 const faqItems = [
   { question: 'Is a desktop assessment as reliable as an on-site survey?', answer: 'For standard, modern-construction residential properties, a desktop assessment using accurate floor area and BCIS data is generally sufficient and is accepted by all UK insurers. Listed, heritage, or structurally unusual properties need an on-site survey because desktop data can\'t capture bespoke materials or complex construction accurately.' },
   { question: 'Will I know the exact price before I commit to anything?', answer: "Yes. Tell us your property type, approximate size and location and we'll confirm a fixed price before you instruct anything - there are no hidden fees or surprise add-ons." },
-  { question: 'Is the cost of the assessment worth it compared to the risk?', answer: "A Reinstatement Cost Assessment is a one-off (or periodic) cost measured in the low hundreds of pounds. Being underinsured on a real claim can cost you tens of thousands under the average clause - see the worked example in What Happens If My Property Is Underinsured?" },
+  { question: 'Is the cost of the assessment worth it compared to the risk?', answer: "A Rebuild Cost Assessment is a one-off (or periodic) cost measured in the low hundreds of pounds. Being underinsured on a real claim can cost you tens of thousands under the average clause - see the worked example in What Happens If My Property Is Underinsured?" },
   { question: 'Do you charge more for leasehold flats in a block?', answer: 'Pricing is based on the specific unit or building being assessed, not tenure type. Whether you need an assessment for a single flat or the whole block depends on who holds the insuring obligation under the lease.' },
 ]
 
@@ -51,7 +51,7 @@ export default function RCACostPage() {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stearlingreinstatement.com/' },
-          { '@type': 'ListItem', position: 2, name: 'How Much Does a Reinstatement Cost Assessment Cost?', item: 'https://stearlingreinstatement.com/reinstatement-cost-assessment-cost' },
+          { '@type': 'ListItem', position: 2, name: 'How Much Does a Rebuild Cost Assessment Cost?', item: 'https://stearlingreinstatement.com/rebuild-cost-assessment-cost' },
         ],
       },
     ],
@@ -63,7 +63,7 @@ export default function RCACostPage() {
 
       <GuideHero
         image="/rca-heritage-building.webp"
-        imageAlt="Reinstatement Cost Assessment pricing for homeowners"
+        imageAlt="Rebuild Cost Assessment pricing for homeowners"
         headlineMain="How much does it"
         headlineAccent="cost?"
         subtitle="We're upfront about pricing before you enquire. The exact figure depends on your property, but here's what actually drives the cost."
@@ -112,10 +112,10 @@ export default function RCACostPage() {
 
       <GuideTrustBand background="#ffffff" />
 
-      <RelatedGuides currentSlug="/reinstatement-cost-assessment-cost" background="rgba(122,31,61,0.08)" />
+      <RelatedGuides currentSlug="/rebuild-cost-assessment-cost" background="rgba(122,31,61,0.08)" />
 
       <ContactSection heading="Tell us about your property for a fixed price." flip />
-      <FaqSection description="What homeowners ask about the cost of a Reinstatement Cost Assessment." items={faqItems} flip />
+      <FaqSection description="What homeowners ask about the cost of a Rebuild Cost Assessment." items={faqItems} flip />
     </main>
   )
 }

@@ -4,11 +4,11 @@ import Image from 'next/image'
 const SERVICE_CARDS = [
   {
     img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
-    imgAlt: 'Desktop Reinstatement Cost Assessment service',
+    imgAlt: 'Desktop Rebuild Cost Assessment service',
     imgPosition: 'center top',
     id: 'desktop-rca',
     badge: '01. Desktop',
-    title: 'Desktop Reinstatement Cost Assessment',
+    title: 'Desktop Rebuild Cost Assessment',
     desc: 'BCIS-indexed rebuild cost modelling without a site visit. Delivered within 24 hours of instruction. Accepted by all UK insurers.',
     features: [
       'RICS-regulated, broker-ready report',
@@ -22,7 +22,7 @@ const SERVICE_CARDS = [
   },
   {
     img: '/AdobeStock_270155966.jpeg',
-    imgAlt: 'RICS surveyor conducting an on-site Reinstatement Cost Assessment',
+    imgAlt: 'RICS surveyor conducting an on-site Rebuild Cost Assessment',
     imgPosition: 'center center',
     id: 'on-site-survey',
     badge: '02. On-Site',
@@ -40,13 +40,13 @@ const SERVICE_CARDS = [
     note: 'Managing more than one property? Ask about the 3-Year Protection Plan.',
   },
   {
-    img: '/continual-reinstatement-cost-assessment-plan.png',
-    imgAlt: '3-Year RICS Reinstatement Cost Assessment protection plan',
+    img: '/continual-rebuild-cost-assessment-plan.png',
+    imgAlt: '3-Year RICS Rebuild Cost Assessment protection plan',
     imgPosition: 'center center',
     id: 'three-year-protection',
     badge: '03. Recommended',
-    title: '3-Year Reinstatement Cost Assessment Plan',
-    desc: 'One instruction covers three years of RICS compliance: a full Reinstatement Cost Assessment in year one, then an updated renewal report before each renewal date after that.',
+    title: '3-Year Rebuild Cost Assessment Plan',
+    desc: 'One instruction covers three years of RICS compliance: a full Rebuild Cost Assessment in year one, then an updated renewal report before each renewal date after that.',
     features: [
       'RICS-regulated, broker-ready report',
       'Full assessment year one, indexed updates years two & three',

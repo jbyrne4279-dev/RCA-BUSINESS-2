@@ -7,21 +7,21 @@ import RelatedPages from '../components/RelatedPages'
 
 export const metadata = {
   title: 'Contact Us & Request a Quote',
-  description: 'Get in touch to instruct a RICS-regulated Reinstatement Cost Assessment. We respond within 24 hours from our London office at 17 Hanover Square.',
+  description: 'Get in touch to instruct a RICS-regulated Rebuild Cost Assessment. We respond within 24 hours from our London office at 17 Hanover Square.',
   alternates: { canonical: '/contact' },
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: 'https://stearlingreinstatement.com/contact',
     siteName: 'Stearling Reinstatement',
-    title: 'Contact Stearling Reinstatement | RICS Reinstatement Cost Assessment',
-    description: 'Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required. 17 Hanover Square, London.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Reinstatement Cost Assessment surveyors' }],
+    title: 'Contact Stearling Reinstatement | RICS Rebuild Cost Assessment',
+    description: 'Speak directly with a RICS-regulated Rebuild Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required. 17 Hanover Square, London.',
+    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Rebuild Cost Assessment surveyors' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Stearling Reinstatement',
-    description: 'Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required.',
+    description: 'Speak directly with a RICS-regulated Rebuild Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required.',
     images: ['/rebuild-cost-assessment-london.jpeg'],
   },
 }
@@ -31,7 +31,7 @@ const localBusinessSchema = {
   '@type': ['LocalBusiness', 'ProfessionalService'],
   '@id': 'https://stearlingreinstatement.com/#organization',
   name: 'Stearling Reinstatement',
-  description: 'RICS-regulated Reinstatement Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
+  description: 'RICS-regulated Rebuild Cost Assessments for managing agents, freeholders, leaseholders and property professionals across the UK.',
   url: 'https://stearlingreinstatement.com',
   telephone: '+442031788099',
   email: 'info@stearlingreinstatement.com',
@@ -90,7 +90,7 @@ export default function ContactPage() {
 
       <GuideHero
         image="/AdobeStock_1956380728.jpeg"
-        imageAlt="Stearling Reinstatement Reinstatement Cost Assessment surveyors"
+        imageAlt="Stearling Reinstatement Rebuild Cost Assessment surveyors"
         badge="Get In Touch"
         headlineMain="We respond within"
         headlineAccent="24 hours."

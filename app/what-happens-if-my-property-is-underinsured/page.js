@@ -8,7 +8,7 @@ import FaqSection from '../components/FaqSection'
 
 export const metadata = {
   title: 'What Happens If My Property Is Underinsured?',
-  description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example - and how a Reinstatement Cost Assessment protects you from being caught out.',
+  description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example - and how a Rebuild Cost Assessment protects you from being caught out.',
   alternates: { canonical: '/what-happens-if-my-property-is-underinsured' },
   openGraph: {
     type: 'website',
@@ -16,7 +16,7 @@ export const metadata = {
     url: 'https://stearlingreinstatement.com/what-happens-if-my-property-is-underinsured',
     siteName: 'Stearling Reinstatement',
     title: 'What Happens If My Property Is Underinsured?',
-    description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example, and why an accurate Reinstatement Cost Assessment matters.',
+    description: 'A plain-English explanation of the average clause and proportional claim settlement, with a worked example, and why an accurate Rebuild Cost Assessment matters.',
     images: [{ url: '/rca-surveyor-site-visit.webp', width: 1200, height: 630, alt: 'What happens if my property is underinsured' }],
   },
   twitter: {
@@ -29,9 +29,9 @@ export const metadata = {
 
 const faqItems = [
   { question: 'Does the average clause apply to every claim, or only total losses?', answer: 'Every claim. It applies proportionally regardless of the size of the loss, which surprises most homeowners - even a relatively minor claim, like a burst pipe causing a few thousand pounds of damage, gets reduced by the same percentage as your underinsurance.' },
-  { question: "How do I find out if my current sum insured is right?", answer: "The only reliable way is a professional Reinstatement Cost Assessment. Comparing your sum insured to what you paid for the property or its current market value won't tell you anything useful - see Reinstatement Cost vs Market Value for why." },
+  { question: "How do I find out if my current sum insured is right?", answer: "The only reliable way is a professional Rebuild Cost Assessment. Comparing your sum insured to what you paid for the property or its current market value won't tell you anything useful - see Rebuild Cost vs Market Value for why." },
   { question: 'Do all UK insurers apply the average clause?', answer: "Most standard UK buildings insurance policies include an average clause, though the exact wording varies. Always check your policy document, but assume it applies unless you've specifically confirmed otherwise." },
-  { question: 'What should I do right now if I think I might be underinsured?', answer: "Get a current Reinstatement Cost Assessment. It's a fixed, modest cost that either confirms your existing sum insured is correct, or gives you an accurate figure to update it - either way, you'll know where you stand before you ever need to make a claim." },
+  { question: 'What should I do right now if I think I might be underinsured?', answer: "Get a current Rebuild Cost Assessment. It's a fixed, modest cost that either confirms your existing sum insured is correct, or gives you an accurate figure to update it - either way, you'll know where you stand before you ever need to make a claim." },
 ]
 
 export default function UnderinsuredPage() {
@@ -59,7 +59,7 @@ export default function UnderinsuredPage() {
         headlineAccent="underinsured?"
         subtitle={`Most homeowners have never heard of the "average clause" until they make a claim and find out their payout has been cut. Here's exactly how it works.`}
         primaryLabel="Check My Cover"
-        secondaryHref="/what-is-a-reinstatement-cost-assessment"
+        secondaryHref="/what-is-a-rebuild-cost-assessment"
         secondaryLabel="What Is an RCA?"
       />
 
@@ -67,7 +67,7 @@ export default function UnderinsuredPage() {
         kicker="The Average Clause"
         heading="Insurers don't just refuse to pay,"
         headingAccent="they pay less on everything."
-        description="If your sum insured is lower than your property's true reinstatement cost, most UK policies reduce every claim payout by the same proportion. That applies to every claim, however small, not just total losses."
+        description="If your sum insured is lower than your property's true rebuild cost, most UK policies reduce every claim payout by the same proportion. That applies to every claim, however small, not just total losses."
       />
 
       {/* THE FORMULA */}
@@ -76,7 +76,7 @@ export default function UnderinsuredPage() {
           <p className="text-[#64748b] text-base leading-relaxed mb-6">The formula insurers use is straightforward:</p>
           <div className="rounded-2xl p-6" style={{background:'linear-gradient(135deg, #7A1F3D 0%, #5C1730 100%)'}}>
             <p className="text-white font-semibold text-base md:text-lg">
-              Payout = Claim Amount &times; (Sum Insured &divide; True Reinstatement Cost)
+              Payout = Claim Amount &times; (Sum Insured &divide; True Rebuild Cost)
             </p>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function UnderinsuredPage() {
 
           <div className="bg-white rounded-2xl border border-[#e2e8f0] p-6 sm:p-8 space-y-5" style={{boxShadow:'0 8px 32px rgba(122,31,61,0.10)'}}>
             <p className="text-[#64748b] text-sm leading-relaxed">
-              Your home's true reinstatement cost is <strong className="text-[#2b0b14]">£400,000</strong>, but your policy's sum insured is only <strong className="text-[#2b0b14]">£300,000</strong>. That means you're only insured for 75% of what it would actually cost to rebuild.
+              Your home's true rebuild cost is <strong className="text-[#2b0b14]">£400,000</strong>, but your policy's sum insured is only <strong className="text-[#2b0b14]">£300,000</strong>. That means you're only insured for 75% of what it would actually cost to rebuild.
             </p>
             <p className="text-[#64748b] text-sm leading-relaxed">
               A kitchen fire causes <strong className="text-[#2b0b14]">£20,000</strong> of damage. You might expect your insurer to pay the full £20,000 since it's well within your sum insured. Under the average clause, they don't:
@@ -117,10 +117,10 @@ export default function UnderinsuredPage() {
             The fix is <span className="text-shine">straightforward</span>.
           </h2>
           <p className="text-[#64748b] text-base leading-relaxed mb-4">
-            A RICS-regulated Reinstatement Cost Assessment gives you the true, current rebuild cost of your property, so you can set your sum insured correctly and protect yourself from the average clause on every future claim.
+            A RICS-regulated Rebuild Cost Assessment gives you the true, current rebuild cost of your property, so you can set your sum insured correctly and protect yourself from the average clause on every future claim.
           </p>
           <p className="text-[#64748b] text-base leading-relaxed">
-            Not sure if this applies to you? Start with <Link href="/do-i-need-a-reinstatement-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">Do I Need a Reinstatement Cost Assessment?</Link> or see <Link href="/reinstatement-cost-assessment-cost" className="text-[#7A1F3D] font-medium hover:underline">what it costs to find out</Link>.
+            Not sure if this applies to you? Start with <Link href="/do-i-need-a-rebuild-cost-assessment" className="text-[#7A1F3D] font-medium hover:underline">Do I Need a Rebuild Cost Assessment?</Link> or see <Link href="/rebuild-cost-assessment-cost" className="text-[#7A1F3D] font-medium hover:underline">what it costs to find out</Link>.
           </p>
         </div>
       </section>

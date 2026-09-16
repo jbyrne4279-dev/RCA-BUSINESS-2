@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { useRef } from 'react'
 
 const SERVICE_MAP = {
-  desktop: 'Desktop Reinstatement Cost Assessment',
+  desktop: 'Desktop Rebuild Cost Assessment',
   onsite: 'On-Site Survey',
-  '3year': '3-Year Reinstatement Cost Assessment',
+  '3year': '3-Year Rebuild Cost Assessment',
 }
 
 export default function ContactFormInner({ heading }) {
@@ -27,7 +27,7 @@ export default function ContactFormInner({ heading }) {
           {heading}
         </h2>
         <p className="text-[#64748b] text-base leading-relaxed max-w-xl mb-6">
-          Speak directly with a RICS-regulated Reinstatement Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers.
+          Speak directly with a RICS-regulated Rebuild Cost Assessment surveyor. We provide BCIS-indexed rebuild cost assessments for residential blocks, commercial property and listed buildings, accepted by all UK insurers.
         </p>
         <div className="flex flex-wrap gap-x-6 gap-y-3">
           {[
@@ -92,8 +92,8 @@ export default function ContactFormInner({ heading }) {
             className="bg-white border border-[#e2e8f0] rounded-lg px-4 py-2.5 text-sm text-[#2b0b14] focus:outline-none focus:border-[#7A1F3D] focus:ring-2 focus:ring-[#7A1F3D]/20 valid:border-[#16a34a] valid:bg-[#f0fdf4] transition-colors appearance-none cursor-pointer"
           >
             <option value="" disabled>Select a service</option>
-            <option>Desktop Reinstatement Cost Assessment</option>
-            <option>3-Year Reinstatement Cost Assessment</option>
+            <option>Desktop Rebuild Cost Assessment</option>
+            <option>3-Year Rebuild Cost Assessment</option>
             <option>On-Site Survey</option>
             <option>Portfolio Assessment</option>
             <option>Not Sure</option>
