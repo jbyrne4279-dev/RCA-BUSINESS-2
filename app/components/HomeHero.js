@@ -39,6 +39,7 @@ export default function HomeHero() {
         onPrimaryClick={openQuiz}
         secondaryHref="/what-is-a-rebuild-cost-assessment"
         secondaryLabel="What Is an RCA?"
+        sideForm={<QuizCard source="Hero Get My Assessment" embedded />}
       />
 
       {mounted && open && createPortal(

@@ -14,6 +14,7 @@ export default function GuideHero({
   secondaryHref,
   secondaryLabel,
   children,
+  sideForm,
 }) {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -25,8 +26,9 @@ export default function GuideHero({
         className="object-cover object-center"
       />
 
-      <div className="relative z-10 w-full flex items-center justify-center px-5 py-16 md:py-24">
-        <div className="w-full max-w-lg md:max-w-2xl bg-white/90 backdrop-blur-xl rounded-3xl px-7 py-9 md:px-14 md:py-14 border border-white/40 shadow-[0_12px_60px_rgba(0,0,0,0.25)] text-center">
+      <div className={`relative z-10 w-full flex items-center justify-center px-5 py-16 md:py-24 ${sideForm ? 'lg:items-stretch' : ''}`}>
+        <div className={sideForm ? 'w-full max-w-lg md:max-w-2xl lg:max-w-5xl lg:flex lg:items-center lg:gap-8' : 'w-full max-w-lg md:max-w-2xl'}>
+        <div className={`w-full ${sideForm ? 'lg:flex-1' : 'max-w-lg md:max-w-2xl mx-auto'} bg-white/90 backdrop-blur-xl rounded-3xl px-7 py-9 md:px-14 md:py-14 border border-white/40 shadow-[0_12px_60px_rgba(0,0,0,0.25)] text-center`}>
           <span className="badge badge-blue mb-4">{badge}</span>
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-[2.6rem] font-bold leading-[1.15] tracking-tight text-[#2b0b14] mb-4">
             {headlineMain}{headlineAccent ? <> <span className="text-shine">{headlineAccent}</span></> : null}
@@ -61,6 +63,13 @@ export default function GuideHero({
           <div className="flex flex-col items-center gap-1 mt-8">
             <Image src="/rics-logo.png" alt="RICS Regulated Firm" width={120} height={80} className="w-24 h-auto object-contain" />
           </div>
+        </div>
+
+        {sideForm && (
+          <div className="hidden lg:block lg:flex-1 lg:max-w-md bg-white rounded-3xl shadow-[0_12px_60px_rgba(0,0,0,0.25)] border border-white/40 overflow-hidden self-stretch">
+            {sideForm}
+          </div>
+        )}
         </div>
       </div>
     </section>
