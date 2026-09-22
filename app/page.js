@@ -72,19 +72,21 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { icon: 'home', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
-              { icon: 'account_balance', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
-              { icon: 'apartment', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
-              { icon: 'receipt_long', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
-              { icon: 'event_repeat', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
-              { icon: 'construction', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 flex flex-col gap-3" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{background:'rgba(122,31,61,0.08)'}}>
-                  <span className="material-symbols-outlined" style={{ fontSize: '1.1rem', color: '#7A1F3D' }}>{icon}</span>
+              { img: '/youve-just-moved-in.png', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
+              { img: '/your-lender-required-cover-not-a-figure.png', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
+              { img: '/youve-bought-a-leasehold-flat.png', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
+              { img: '/you-kept-the-sellers-policy-details.png', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
+              { img: '/your-first-renewal-is-coming-up.png', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
+              { img: '/youre-planning-to-extend-or-renovate.png', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
+            ].map(({ img, title, desc }) => (
+              <div key={title} className="card-glow bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
+                <div className="relative w-full aspect-[16/9]">
+                  <Image src={img} alt={title} fill className="object-cover" />
                 </div>
-                <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
-                <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                <div className="p-6 flex flex-col gap-3">
+                  <h3 className="text-base font-bold text-[#2b0b14]">{title}</h3>
+                  <p className="text-[#64748b] text-sm leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -317,26 +319,25 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Listed & Heritage Buildings', desc: 'Grade I, Grade II* and Grade II listed properties, assessed with traditional materials and craftsmanship costed in.' },
-              { title: 'Period & Traditional Homes', desc: 'Victorian, Georgian, Edwardian and older properties, including solid-wall and non-standard construction.' },
-              { title: 'Extensions & Alterations', desc: 'Extended, converted or refurbished buildings where a previous valuation no longer reflects the current structure.' },
-              { title: 'Blocks of Flats & Apartments', desc: 'Purpose-built and converted blocks, including communal areas, shared services and multi-storey structures.' },
-              { title: 'Commercial & Mixed-Use', desc: 'Offices, retail, industrial units and mixed residential-commercial premises of every size.' },
-              { title: 'New-Build & Modern Construction', desc: 'Contemporary homes, developments and non-traditional builds indexed to current BCIS rebuild cost data.' },
-            ].map(({ title, desc }) => (
+              { img: '/listed-heritage-buildings.png', title: 'Listed & Heritage Buildings', desc: 'Grade I, Grade II* and Grade II listed properties, assessed with traditional materials and craftsmanship costed in.' },
+              { img: '/period-traditional-homes.png', title: 'Period & Traditional Homes', desc: 'Victorian, Georgian, Edwardian and older properties, including solid-wall and non-standard construction.' },
+              { img: '/extensions-alterations.png', title: 'Extensions & Alterations', desc: 'Extended, converted or refurbished buildings where a previous valuation no longer reflects the current structure.' },
+              { img: '/blocks-of-flats-apartments.png', title: 'Blocks of Flats & Apartments', desc: 'Purpose-built and converted blocks, including communal areas, shared services and multi-storey structures.' },
+              { img: '/commercial-mixed-use.png', title: 'Commercial & Mixed-Use', desc: 'Offices, retail, industrial units and mixed residential-commercial premises of every size.' },
+              { img: '/new-build-modern-construction.png', title: 'New-Build & Modern Construction', desc: 'Contemporary homes, developments and non-traditional builds indexed to current BCIS rebuild cost data.' },
+            ].map(({ img, title, desc }) => (
               <div
                 key={title}
-                className="card-glow bg-white border border-[#e2e8f0] rounded-2xl p-6 md:p-7 flex flex-col hover:-translate-y-1 transition-all duration-300"
+                className="card-glow bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 transition-all duration-300"
                 style={{ boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}
               >
-                <span
-                  className="w-11 h-11 rounded-full flex items-center justify-center text-white mb-5"
-                  style={{ background: 'linear-gradient(135deg,#7A1F3D,#5C1730)', boxShadow: '0 6px 18px rgba(122,31,61,0.3)' }}
-                >
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01"/><path d="M9 12v.01"/><path d="M9 15v.01"/><path d="M9 18v.01"/></svg>
-                </span>
-                <h3 className="text-base font-semibold text-[#2b0b14] mb-2">{title}</h3>
-                <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
+                <div className="relative w-full aspect-[16/9]">
+                  <Image src={img} alt={title} fill className="object-cover" />
+                </div>
+                <div className="p-6 md:p-7 flex flex-col">
+                  <h3 className="text-base font-semibold text-[#2b0b14] mb-2">{title}</h3>
+                  <p className="text-sm text-[#64748b] leading-relaxed">{desc}</p>
+                </div>
               </div>
             ))}
           </div>
