@@ -12,7 +12,7 @@ import GuideTrustBand from '../components/GuideTrustBand'
 import RelatedPages from '../components/RelatedPages'
 
 const IcoDesktop = () => (
-  <Image src="/rcs-desktop-reinstatemenet-cost-assessment.png" alt="Desktop Assessment" width={20} height={20} className="object-contain rounded" />
+  <Image src="/rcs-desktop-reinstatemenet-cost-assessment.webp" alt="Desktop Assessment" width={20} height={20} className="object-contain rounded" />
 )
 const IcoSurvey = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -36,13 +36,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Desktop, On-Site & 3-Year Rebuild Cost Assessment Plans | Stearling Reinstatement',
     description: 'Desktop assessments, on-site surveys and 3-year protection plans - RICS-regulated Rebuild Cost Assessments for UK residential and commercial property.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment services - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessment services - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Desktop, On-Site & 3-Year Rebuild Cost Assessment Plans',
     description: 'Desktop assessments, on-site surveys and 3-year protection plans. RICS-regulated Rebuild Cost Assessments for UK property.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -89,7 +89,7 @@ export default function ServicesPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_158046067.jpeg"
+        image="/AdobeStock_158046067.webp"
         imageAlt="RICS Rebuild Cost Assessment building survey"
         badge="Our Services"
         headlineMain="Three tiers,"

@@ -20,13 +20,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Listed & Heritage Buildings: Specialist Rebuild Valuations | Stearling Reinstatement',
     description: 'Listed and heritage buildings carry 20-50% higher rebuild costs than standard construction. Our specialist Rebuild Cost Assessment includes an on-site survey.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for listed buildings - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for listed buildings - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Listed & Heritage Buildings: Specialist Rebuild Valuations',
     description: 'Specialist Rebuild Cost Assessments for listed and heritage buildings, where rebuild costs run 20-50% above standard construction.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -57,7 +57,7 @@ export default function ListedBuildingsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_1064771096.jpeg"
+        image="/AdobeStock_1064771096.webp"
         imageAlt="Listed building specialist assessment"
         badge="Listed Buildings"
         headlineMain="Listed buildings demand"

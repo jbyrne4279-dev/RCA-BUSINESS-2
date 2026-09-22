@@ -14,7 +14,7 @@ export const metadata = {
     title: 'Is Your Home Insured for the Right Amount? | RICS-Regulated Rebuild Cost Assessment | Stearling Reinstatement',
     description: '80% of UK homes are underinsured. Make sure your new home is insured for the right amount with a RICS-regulated Rebuild Cost Assessment, delivered in 24 hours.',
     url: 'https://stearlingreinstatement.com',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'RICS Rebuild Cost Assessment for homeowners' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'RICS Rebuild Cost Assessment for homeowners' }],
   },
 }
 
@@ -72,12 +72,12 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { img: '/youve-just-moved-in.png', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
-              { img: '/your-lender-required-cover-not-a-figure.png', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
-              { img: '/youve-bought-a-leasehold-flat.png', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
-              { img: '/you-kept-the-sellers-policy-details.png', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
-              { img: '/your-first-renewal-is-coming-up.png', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
-              { img: '/youre-planning-to-extend-or-renovate.png', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
+              { img: '/youve-just-moved-in.webp', title: "You've just moved in", desc: "New owners often inherit whatever sum insured the previous policy happened to have - not a figure calculated for your property's actual rebuild cost." },
+              { img: '/your-lender-required-cover-not-a-figure.webp', title: 'Your lender required cover, not a figure', desc: "Mortgage lenders insist you're insured to full rebuild value, but they don't tell you what that value actually is - working it out is down to you." },
+              { img: '/youve-bought-a-leasehold-flat.webp', title: "You've bought a leasehold flat", desc: "Check when the block's assessment was last reviewed. A missing or outdated figure is often a sign the building is already underinsured." },
+              { img: '/you-kept-the-sellers-policy-details.webp', title: "You kept the seller's policy details", desc: "A figure carried over from the previous owner's cover was set for their circumstances, and may already be years out of date." },
+              { img: '/your-first-renewal-is-coming-up.webp', title: 'Your first renewal is coming up', desc: 'Renewal is the natural point to swap a guessed or inherited figure for one calculated properly for your home.' },
+              { img: '/youre-planning-to-extend-or-renovate.webp', title: "You're planning to extend or renovate", desc: 'Any work carried out after moving in changes what it would actually cost to rebuild - the original figure will fall behind fast.' },
             ].map(({ img, title, desc }) => (
               <div key={title} className="card-glow bg-white border border-[#e2e8f0] rounded-2xl overflow-hidden flex flex-col" style={{boxShadow:'0 4px 16px rgba(122,31,61,0.08)'}}>
                 <div className="relative w-full aspect-[16/9]">
@@ -142,7 +142,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {[
               {
-                img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
+                img: '/rcs-desktop-reinstatemenet-cost-assessment.webp',
                 imgAlt: 'Desktop Rebuild Cost Assessment service',
                 id: 'desktop-rca',
                 badge: '01. Desktop',
@@ -159,7 +159,7 @@ export default function HomePage() {
                 note: 'Listed or non-standard property? An On-Site Survey may be required instead.',
               },
               {
-                img: '/AdobeStock_270155966.jpeg',
+                img: '/AdobeStock_270155966.webp',
                 imgAlt: 'RICS surveyor conducting an on-site Rebuild Cost Assessment',
                 id: 'on-site-survey',
                 badge: '02. On-Site',
@@ -177,7 +177,7 @@ export default function HomePage() {
                 note: 'Managing more than one property? Ask about the 3-Year Protection Plan.',
               },
               {
-                img: '/continual-rebuild-cost-assessment-plan.png',
+                img: '/continual-rebuild-cost-assessment-plan.webp',
                 imgAlt: '3-Year RICS Rebuild Cost Assessment protection plan',
                 id: 'three-year-protection',
                 badge: '03. Recommended',
@@ -224,7 +224,7 @@ export default function HomePage() {
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide">{badge}</p>
                     <span className="shrink-0">
-                      <Image src="/rics-logo.png" alt="RICS Regulated" width={36} height={24} className="object-contain" />
+                      <Image src="/rics-logo.webp" alt="RICS Regulated" width={36} height={24} className="object-contain" />
                     </span>
                   </div>
                   <h3 className="text-lg md:text-xl font-bold text-[#2b0b14] mb-3">{title}</h3>
@@ -319,12 +319,12 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: '/listed-heritage-buildings.png', title: 'Listed & Heritage Buildings', desc: 'Grade I, Grade II* and Grade II listed properties, assessed with traditional materials and craftsmanship costed in.' },
-              { img: '/period-traditional-homes.png', title: 'Period & Traditional Homes', desc: 'Victorian, Georgian, Edwardian and older properties, including solid-wall and non-standard construction.' },
-              { img: '/extensions-alterations.png', title: 'Extensions & Alterations', desc: 'Extended, converted or refurbished buildings where a previous valuation no longer reflects the current structure.' },
-              { img: '/blocks-of-flats-apartments.png', title: 'Blocks of Flats & Apartments', desc: 'Purpose-built and converted blocks, including communal areas, shared services and multi-storey structures.' },
-              { img: '/commercial-mixed-use.png', title: 'Commercial & Mixed-Use', desc: 'Offices, retail, industrial units and mixed residential-commercial premises of every size.' },
-              { img: '/new-build-modern-construction.png', title: 'New-Build & Modern Construction', desc: 'Contemporary homes, developments and non-traditional builds indexed to current BCIS rebuild cost data.' },
+              { img: '/listed-heritage-buildings.webp', title: 'Listed & Heritage Buildings', desc: 'Grade I, Grade II* and Grade II listed properties, assessed with traditional materials and craftsmanship costed in.' },
+              { img: '/period-traditional-homes.webp', title: 'Period & Traditional Homes', desc: 'Victorian, Georgian, Edwardian and older properties, including solid-wall and non-standard construction.' },
+              { img: '/extensions-alterations.webp', title: 'Extensions & Alterations', desc: 'Extended, converted or refurbished buildings where a previous valuation no longer reflects the current structure.' },
+              { img: '/blocks-of-flats-apartments.webp', title: 'Blocks of Flats & Apartments', desc: 'Purpose-built and converted blocks, including communal areas, shared services and multi-storey structures.' },
+              { img: '/commercial-mixed-use.webp', title: 'Commercial & Mixed-Use', desc: 'Offices, retail, industrial units and mixed residential-commercial premises of every size.' },
+              { img: '/new-build-modern-construction.webp', title: 'New-Build & Modern Construction', desc: 'Contemporary homes, developments and non-traditional builds indexed to current BCIS rebuild cost data.' },
             ].map(({ img, title, desc }) => (
               <div
                 key={title}

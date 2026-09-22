@@ -19,13 +19,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Consistent, Compliant Assessments for Block Managers | Stearling Reinstatement',
     description: 'Block managers rely on us for consistent, RICS-regulated Rebuild Cost Assessments across every block, accepted by insurers at renewal without question.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessments for block managers - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessments for block managers - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Consistent, Compliant Assessments for Block Managers',
     description: 'Block managers need declared values that hold up at renewal - our RICS-regulated assessments deliver consistency across every block you manage.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -55,7 +55,7 @@ export default function BlockManagersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_208633670.jpeg"
+        image="/AdobeStock_208633670.webp"
         imageAlt="Block manager Rebuild Cost Assessment"
         badge="Block Managers"
         headlineMain="Compliant figures across"

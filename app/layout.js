@@ -59,7 +59,7 @@ export const metadata = {
       '80% of UK buildings are underinsured. RICS-regulated Rebuild Cost Assessment for managing agents, freeholders and leaseholders, delivered in 24 hours.',
     images: [
       {
-        url: '/rebuild-cost-assessment-london.jpeg',
+        url: '/rebuild-cost-assessment-london.webp',
         width: 1200,
         height: 630,
         alt: 'Rebuild Cost Assessment of a London property',
@@ -71,7 +71,7 @@ export const metadata = {
     title: 'Rebuild Cost Assessment UK | RICS-Regulated | Stearling Reinstatement',
     description:
       '80% of UK buildings are underinsured. Get a RICS-regulated Rebuild Cost Assessment, delivered in 24 hours.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
   robots: {
     index: true,
@@ -95,7 +95,7 @@ const orgSchema = {
       url: 'https://stearlingreinstatement.com',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://stearlingreinstatement.com/sr-logo.png',
+        url: 'https://stearlingreinstatement.com/sr-logo.webp',
         width: 1254,
         height: 1254,
       },

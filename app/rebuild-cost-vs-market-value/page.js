@@ -54,7 +54,7 @@ export default function ReinstatementVsMarketValuePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/rebuild-cost-assessment-uk.png"
+        image="/rebuild-cost-assessment-uk.webp"
         imageAlt="Residential building - rebuild cost vs market value"
         headlineMain="Rebuild cost vs"
         headlineAccent="market value."

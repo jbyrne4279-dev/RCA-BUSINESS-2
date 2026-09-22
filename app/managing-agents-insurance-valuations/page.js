@@ -20,13 +20,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Managing Agents & RTM Companies: Protect Your PI Cover | Stearling Reinstatement',
     description: 'A specialist Rebuild Cost Assessment for managing agents and RTM companies, built to discharge lease obligations and satisfy FCA Consumer Duty requirements.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessments for managing agents - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessments for managing agents - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Managing Agents & RTM Companies: Protect Your PI Cover',
     description: 'RICS-regulated Rebuild Cost Assessments for managing agents, discharging lease obligations and protecting PI cover.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -57,7 +57,7 @@ export default function ManagingAgentsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/surveyor-rebuild-cost-assessment-rics.png"
+        image="/surveyor-rebuild-cost-assessment-rics.webp"
         imageAlt="RICS surveyor carrying out Rebuild Cost Assessment for managing agents"
         badge="Managing Agents"
         headlineMain="Discharge your"

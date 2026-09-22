@@ -18,13 +18,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Property Portfolios: One Instruction, Every Asset Covered | Stearling Reinstatement',
     description: 'A single RICS-regulated Rebuild Cost Assessment instruction covers your whole portfolio, with consolidated reporting and individual asset schedules.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Portfolio Rebuild Cost Assessments - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Portfolio Rebuild Cost Assessments - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Property Portfolios: One Instruction, Every Asset Covered',
     description: 'RICS-regulated Rebuild Cost Assessments for property portfolios, consolidated into one instruction with annual BCIS indexation.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_1477785304.jpeg"
+        image="/AdobeStock_1477785304.webp"
         imageAlt="Portfolio Rebuild Cost Assessment"
         badge="Portfolio Assessments"
         headlineMain="Right-size every declared value"

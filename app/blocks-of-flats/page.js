@@ -21,13 +21,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder | Stearling Reinstatement',
     description: 'A single wrong declared value puts every leaseholder at risk under the average clause. Our specialist Rebuild Cost Assessments for blocks of flats get it right.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for blocks of flats - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for blocks of flats - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Blocks of Flats: Specialist Assessments for Every Leaseholder',
     description: 'Specialist RICS-regulated Rebuild Cost Assessments for blocks of flats, protecting every leaseholder from the average clause.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -58,7 +58,7 @@ export default function BlocksOfFlatsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_208633670.jpeg"
+        image="/AdobeStock_208633670.webp"
         imageAlt="London block of flats, Rebuild Cost Assessment"
         badge="Blocks of Flats"
         headlineMain="Specialist assessments"
@@ -126,12 +126,12 @@ export default function BlocksOfFlatsPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact', img: '/AdobeStock_258095379.jpeg' },
-              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_763906298.jpeg' },
-              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_208633670.jpeg' },
-              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_270155966.jpeg' },
-              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1477785304.jpeg' },
-              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1064771096.jpeg' },
+              { title: 'Purpose-built apartment blocks', desc: 'Modern and traditional flat developments across the UK, assessed to current BCIS construction cost indices.', href: '/contact', img: '/AdobeStock_258095379.webp' },
+              { title: 'Converted houses', desc: 'Victorian and Edwardian houses converted into flats. Shared areas, services and original fabric all require assessment.', href: '/contact', img: '/AdobeStock_763906298.webp' },
+              { title: 'Mansion blocks', desc: 'Large-scale residential buildings with multiple units and extensive communal facilities.', href: '/contact', img: '/AdobeStock_208633670.webp' },
+              { title: 'Mixed-use developments', desc: 'Buildings with residential flats above commercial or retail premises. Residential and commercial elements itemised separately for correct VAT treatment and service-charge recharging.', href: '/contact', img: '/AdobeStock_270155966.webp' },
+              { title: 'Leasehold estates', desc: 'Multiple buildings on a single estate under common management or ownership, with a consolidated portfolio schedule.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1477785304.webp' },
+              { title: 'Portfolio instructions', desc: 'Multiple blocks assessed under a single instruction with individual reports and a consolidated schedule. Staggered scheduling keeps all blocks on a compliant review cycle simultaneously.', href: '/portfolio-rebuild-assessments', img: '/AdobeStock_1064771096.webp' },
             ].map(({ title, desc, href, img }) => (
               <Link key={title} href={href} className="brix-card card-hover" style={{textDecoration:'none', display:'block'}}>
                 <div className="relative h-40 overflow-hidden">

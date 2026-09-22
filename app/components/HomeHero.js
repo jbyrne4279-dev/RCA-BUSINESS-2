@@ -29,7 +29,7 @@ export default function HomeHero() {
   return (
     <>
       <GuideHero
-        image="/rebuild-cost-assessment-uk.png"
+        image="/rebuild-cost-assessment-uk.webp"
         imageAlt="Homeowner's Rebuild Cost Assessment"
         badge="Homeowners"
         headlineMain="Make sure your home is insured"

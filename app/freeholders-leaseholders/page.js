@@ -21,13 +21,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Freeholders & Leaseholders: A Defensible Declared Value | Stearling Reinstatement',
     description: 'Freeholders, RMC directors and leaseholders rely on a specialist Rebuild Cost Assessment to defend the insuring covenant with a figure that holds up under scrutiny.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for freeholders and leaseholders - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Rebuild Cost Assessment for freeholders and leaseholders - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Freeholders & Leaseholders: A Defensible Declared Value',
     description: 'Specialist RICS-regulated Rebuild Cost Assessments for freeholders and leaseholders, defending the insuring covenant.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -58,7 +58,7 @@ export default function FreeholdersLeaseholdersPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_208633670.jpeg"
+        image="/AdobeStock_208633670.webp"
         imageAlt="Freeholder Rebuild Cost Assessment"
         badge="Freeholders & Leaseholders"
         headlineMain="Defend the"

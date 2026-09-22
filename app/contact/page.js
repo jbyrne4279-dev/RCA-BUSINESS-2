@@ -16,13 +16,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Contact Stearling Reinstatement | RICS Rebuild Cost Assessment',
     description: 'Speak directly with a RICS-regulated Rebuild Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required. 17 Hanover Square, London.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Rebuild Cost Assessment surveyors' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Contact Stearling Reinstatement - RICS Rebuild Cost Assessment surveyors' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Stearling Reinstatement',
     description: 'Speak directly with a RICS-regulated Rebuild Cost Assessment surveyor. Written fee estimate within 24 hours, no contract required.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <GuideHero
-        image="/AdobeStock_1956380728.jpeg"
+        image="/AdobeStock_1956380728.webp"
         imageAlt="Stearling Reinstatement Rebuild Cost Assessment surveyors"
         badge="Get In Touch"
         headlineMain="We respond within"

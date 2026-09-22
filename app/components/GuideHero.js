@@ -61,7 +61,7 @@ export default function GuideHero({
           {children && <div className="mt-6 text-left">{children}</div>}
 
           <div className="flex flex-col items-center gap-1 mt-8">
-            <Image src="/rics-logo.png" alt="RICS Regulated Firm" width={120} height={80} className="w-24 h-auto object-contain" />
+            <Image src="/rics-logo.webp" alt="RICS Regulated Firm" width={120} height={80} className="w-24 h-auto object-contain" />
           </div>
         </div>
 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const SERVICE_CARDS = [
   {
-    img: '/rcs-desktop-reinstatemenet-cost-assessment.png',
+    img: '/rcs-desktop-reinstatemenet-cost-assessment.webp',
     imgAlt: 'Desktop Rebuild Cost Assessment service',
     imgPosition: 'center top',
     id: 'desktop-rca',
@@ -21,7 +21,7 @@ const SERVICE_CARDS = [
     note: 'Listed or non-standard property? An On-Site Survey may be required instead.',
   },
   {
-    img: '/AdobeStock_270155966.jpeg',
+    img: '/AdobeStock_270155966.webp',
     imgAlt: 'RICS surveyor conducting an on-site Rebuild Cost Assessment',
     imgPosition: 'center center',
     id: 'on-site-survey',
@@ -40,7 +40,7 @@ const SERVICE_CARDS = [
     note: 'Managing more than one property? Ask about the 3-Year Protection Plan.',
   },
   {
-    img: '/continual-rebuild-cost-assessment-plan.png',
+    img: '/continual-rebuild-cost-assessment-plan.webp',
     imgAlt: '3-Year RICS Rebuild Cost Assessment protection plan',
     imgPosition: 'center center',
     id: 'three-year-protection',
@@ -102,7 +102,7 @@ export default function ServiceCardsSection({ flip = false, background }) {
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <p className="text-xs font-semibold text-[#7A1F3D] uppercase tracking-wide">{badge}</p>
                   <span className="shrink-0">
-                    <Image src="/rics-logo.png" alt="RICS Regulated" width={36} height={24} className="object-contain" />
+                    <Image src="/rics-logo.webp" alt="RICS Regulated" width={36} height={24} className="object-contain" />
                   </span>
                 </div>
                 <h3 className="text-lg md:text-xl font-bold text-[#2b0b14] mb-3">{title}</h3>

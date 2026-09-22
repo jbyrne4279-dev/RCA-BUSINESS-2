@@ -18,13 +18,13 @@ export const metadata = {
     siteName: 'Stearling Reinstatement',
     title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover | Stearling Reinstatement',
     description: 'From offices to industrial units, our RICS-regulated Rebuild Cost Assessment gives commercial property owners a broker-ready figure accepted by all UK insurers.',
-    images: [{ url: '/rebuild-cost-assessment-london.jpeg', width: 1200, height: 630, alt: 'Commercial Rebuild Cost Assessment - Stearling Reinstatement' }],
+    images: [{ url: '/rebuild-cost-assessment-london.webp', width: 1200, height: 630, alt: 'Commercial Rebuild Cost Assessment - Stearling Reinstatement' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Offices, Retail & Industrial: Commercial Rebuild Cost Cover',
     description: 'RICS-regulated Rebuild Cost Assessments for offices, retail, industrial and mixed-use commercial property, broker-ready in 24 hours.',
-    images: ['/rebuild-cost-assessment-london.jpeg'],
+    images: ['/rebuild-cost-assessment-london.webp'],
   },
 }
 
@@ -54,7 +54,7 @@ export default function CommercialPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <GuideHero
-        image="/AdobeStock_158046067.jpeg"
+        image="/AdobeStock_158046067.webp"
         imageAlt="Commercial Rebuild Cost Assessment"
         badge="Commercial Property"
         headlineMain="Underinsurance starts"

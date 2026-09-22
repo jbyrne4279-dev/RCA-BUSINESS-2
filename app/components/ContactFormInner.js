@@ -119,7 +119,7 @@ export default function ContactFormInner({ heading }) {
 
         <div className="flex items-center gap-3 pt-4 border-t border-[#e2e8f0] mt-2">
           <span className="shrink-0">
-            <Image src="/rics-logo.png" alt="RICS Regulated" width={64} height={32} className="object-contain" />
+            <Image src="/rics-logo.webp" alt="RICS Regulated" width={64} height={32} className="object-contain" />
           </span>
           <p className="text-xs text-[#94a3b8] leading-snug">RICS-regulated assessments. Every instruction supervised by a registered member.</p>
         </div>
